@@ -1,0 +1,58 @@
+{
+  "id": "3_pred_rec__0163_d2498_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "belief_before": "Before this turn, the recommender has no information about the seeker or the seeker's intent.",
+      "belief_update": "The seeker has initiated contact with a greeting.",
+      "belief_after": "The seeker is addressing the recommender and is likely open to conversation, but their purpose is unknown.",
+      "emotion": "Neutral to mildly friendly.",
+      "intention": "Acknowledge the greeting and invite further conversation.",
+      "conversational_goal": "Respond politely to establish contact.",
+      "preferences": "No seeker movie preferences are known yet.",
+      "reaction": "Friendly and receptive.",
+      "changes_previous_interpretation": "No previous interpretation exists; this is the initial contact."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello!...What kind of movie do you like?",
+      "belief_before": "The seeker has greeted the recommender, but no topic or preference is known.",
+      "belief_update": "The recommender greets back and introduces movie preference as the topic.",
+      "belief_after": "The recommender has begun a movie-oriented conversation and is waiting to learn the seeker's taste.",
+      "emotion": "Friendly, helpful, and welcoming.",
+      "intention": "Engage the seeker and elicit their movie preferences.",
+      "conversational_goal": "Move from greeting to a recommendation context by asking what movies the seeker likes.",
+      "preferences": "The seeker's movie preferences are still unknown; the recommender is asking for them.",
+      "reaction": "Positive and reciprocal to the seeker's greeting.",
+      "changes_previous_interpretation": "Yes; the interaction shifts from a generic greeting to a movie-preference inquiry."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)",
+      "belief_before": "The recommender had asked about the seeker's movie preferences, but no concrete preference was known.",
+      "belief_update": "The seeker explicitly requests movie recommendations and reveals that they liked Good Will Hunting (1997).",
+      "belief_after": "The seeker wants recommendations for great movies and has at least one stated preference: Good Will Hunting (1997). This may suggest a taste for character-driven or intelligent drama, but only as a tentative inference.",
+      "emotion": "Interested, positive, and ready to help.",
+      "intention": "Recommend great movies tailored to the seeker's stated preference.",
+      "conversational_goal": "Satisfy the seeker's request by suggesting suitable movie recommendations.",
+      "preferences": "Seeker likes Good Will Hunting (1997) and wants great movies to watch.",
+      "reaction": "Receptive and willing to assist.",
+      "changes_previous_interpretation": "Yes; the seeker's goal is now clearly a recommendation request, and a concrete movie preference has been provided."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"belief_before\": \"Before this turn, the recommender has no information about the seeker or the seeker's intent.\",\n    \"belief_update\": \"The seeker has initiated contact with a greeting.\",\n    \"belief_after\": \"The seeker is addressing the recommender and is likely open to conversation, but their purpose is unknown.\",\n    \"emotion\": \"Neutral to mildly friendly.\",\n    \"intention\": \"Acknowledge the greeting and invite further conversation.\",\n    \"conversational_goal\": \"Respond politely to establish contact.\",\n    \"preferences\": \"No seeker movie preferences are known yet.\",\n    \"reaction\": \"Friendly and receptive.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists; this is the initial contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello!...What kind of movie do you like?\",\n    \"belief_before\": \"The seeker has greeted the recommender, but no topic or preference is known.\",\n    \"belief_update\": \"The recommender greets back and introduces movie preference as the topic.\",\n    \"belief_after\": \"The recommender has begun a movie-oriented conversation and is waiting to learn the seeker's taste.\",\n    \"emotion\": \"Friendly, helpful, and welcoming.\",\n    \"intention\": \"Engage the seeker and elicit their movie preferences.\",\n    \"conversational_goal\": \"Move from greeting to a recommendation context by asking what movies the seeker likes.\",\n    \"preferences\": \"The seeker's movie preferences are still unknown; the recommender is asking for them.\",\n    \"reaction\": \"Positive and reciprocal to the seeker's greeting.\",\n    \"changes_previous_interpretation\": \"Yes; the interaction shifts from a generic greeting to a movie-preference inquiry.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)\",\n    \"belief_before\": \"The recommender had asked about the seeker's movie preferences, but no concrete preference was known.\",\n    \"belief_update\": \"The seeker explicitly requests movie recommendations and reveals that they liked Good Will Hunting (1997).\",\n    \"belief_after\": \"The seeker wants recommendations for great movies and has at least one stated preference: Good Will Hunting (1997). This may suggest a taste for character-driven or intelligent drama, but only as a tentative inference.\",\n    \"emotion\": \"Interested, positive, and ready to help.\",\n    \"intention\": \"Recommend great movies tailored to the seeker's stated preference.\",\n    \"conversational_goal\": \"Satisfy the seeker's request by suggesting suitable movie recommendations.\",\n    \"preferences\": \"Seeker likes Good Will Hunting (1997) and wants great movies to watch.\",\n    \"reaction\": \"Receptive and willing to assist.\",\n    \"changes_previous_interpretation\": \"Yes; the seeker's goal is now clearly a recommendation request, and a concrete movie preference has been provided.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

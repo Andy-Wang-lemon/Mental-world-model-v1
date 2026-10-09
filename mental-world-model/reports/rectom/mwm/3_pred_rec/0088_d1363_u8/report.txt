@@ -1,0 +1,29 @@
+数据：3_pred_rec
+题号：88  d1363_u8
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hi...What kind of movies are you into?\nSEEKER says: I'm really into mystery movies....Maybe a good psychological thriller.\nRECOMMENDER says: Okay well Seven  (1995)  is a great thriller with Brad Pitt\nSEEKER says: Do you have any recomendations?\nRECOMMENDER says: Along with Black Swan  (2010) \nSEEKER says: Oh great! I love Brad Pitt....I heard black swan was more of drama. DO you have any other suggestions?\nRECOMMENDER says: That movie is amazing. It starrs brad pitt and morgan；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hi...What kind of movies are you into?\nSEEKER says: I'm really into mystery movies....Maybe a good psychological thriller.\nRECOMMENDER says: Okay well Seven  (1995)  is a great thriller with Brad Pitt\nSEEKER says: Do you have any recomendations?\nRECOMMENDER says: Along with Black Swan  (2010) \nSEEKER says: Oh great! I love Brad Pitt....I heard black swan was more of drama. DO you have any other suggestions?\nRECOMMENDER says: That movie is amazing. It starrs brad pitt and morgan；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：D: Explains a recommendation with background or reasoning
+分数：{"a": 0.2, "b": 0.3, "c": 0.4, "d": 0.9, "e": 0.1}
+选择说明：The recommender's last utterance already elaborates on a recommended movie's cast and appeal, so continuing explanation is most directly supported.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：No predicted next action is provided, so the strategy can only be guessed from the past chit-chat utterance.

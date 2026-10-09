@@ -1,0 +1,800 @@
+{
+  "events": [
+    {
+      "focus_person": "王磊",
+      "yuanwen": "半年后，在陈老师长期指导下，王磊已经从班级三十多名进步到前十。一次重要考试，他却发挥失常，又掉到了二十多名。放学后，王磊经过办公室，发现陈老师还在那里，桌上摊着他的试卷。陈老师看到他，只把旁边的椅子拉出来：“今天还讲吗？”",
+      "stimulus_text": "半年后，在陈老师长期指导下，王磊已经从班级三十多名进步到前十。一次重要考试，他却发挥失常，又掉到了二十多名。放学后，王磊经过办公室，发现陈老师还在那里，桌上摊着他的试卷。陈老师看到他，只把旁边的椅子拉出来：“今天还讲吗？”",
+      "stimulus_action_split": {
+        "stimulus_text": "半年后，在陈老师长期指导下，王磊已经从班级三十多名进步到前十。一次重要考试，他却发挥失常，又掉到了二十多名。放学后，王磊经过办公室，发现陈老师还在那里，桌上摊着他的试卷。陈老师看到他，只把旁边的椅子拉出来：“今天还讲吗？”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "陈老师",
+          "王磊"
+        ],
+        "action": "陈老师面向王磊，把旁边的椅子拉出来，并对王磊说：“今天还讲吗？”",
+        "object": "旁边的椅子；王磊（说话对象）",
+        "scene": "一次重要考试后，放学后，办公室；桌上摊着王磊的试卷",
+        "outcome_changes": [],
+        "role_changes": [],
+        "relationship_changes": [],
+        "constraint_changes": [],
+        "resource_changes": [
+          "办公室内王磊的试卷摊在桌上",
+          "陈老师旁边的椅子被拉出"
+        ]
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "王磊把“在陈老师长期指导下从三十多名进步到前十”的这个位置当成自己不可分割的一部分；重要考试发挥失常、掉到二十多名，且试卷摊在办公室桌上，使这个位置受到直接冲击。",
+          "confidence": 0.8253050000000001,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f2",
+          "text": "王磊把“陈老师单独给我讲题、每周三放学的那段关系”放在我这边，不能当成与我无关；陈老师拉出旁边椅子并问“今天还讲吗”，直接触及这段关系是否还在自己这里。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "王磊把陈老师当初“敢不敢试试”的托付与每周单独辅导的期待当成自己必须承接的我方责任；陈老师仍在办公室、桌上摊着他的试卷、仍问“今天还讲吗”，使这份托付被重新点亮。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "王磊把“基础差、不是学习的料”的旧自我认定当成与我分不开；重要考试掉到二十多名、试卷摊在陈老师桌上，使这个认定重新贴回自身。",
+          "confidence": 0.7379574999999999,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "王磊把“周三放学找陈老师单独讲题”理解成理应继续、只能继续的固定安排；陈老师拉出旁边椅子并问“今天还讲吗”，被王磊当作这一安排照旧启动。",
+          "confidence": 0.8253050000000001,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f2",
+          "text": "王磊把“重要考试发挥失常、掉到二十多名”固定理解为自己退步、需要讲题补救的失败，而不是一次可波动的结果；桌上摊着他的试卷、陈老师问还讲吗，使这一理解被坐实。",
+          "confidence": 0.8253050000000001,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f3",
+          "text": "王磊把“从三十多名到前十”固定理解为陈老师单独指导带来的必然路径，因此当前掉下去也只能沿同一路径恢复；陈老师仍在、椅子拉出、问“今天还讲吗”，激活“只有继续让陈老师讲才能回去”的理解。",
+          "confidence": 0.8253050000000001,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "王磊把“前十”当成成绩本来应当处的位置，掉到二十多名是不应发生、必须被纠正的偏离；重要考试后的排名变化与办公室场景使这一标尺被激活。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "王磊把陈老师“只拉椅子、只问今天还讲吗”固定理解为“陈老师仍认为我该来、没有放弃我”的确定信号；陈老师不提成绩，桌上摊着试卷，这一沉默被执成关系照旧的应然确认。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3403965736334333,
+          "alambana_prior_probability": 0.3403965736334333,
+          "activation_alignment": 0.94,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6402606424435001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "combo_activation_probability": 0.33315409334336027,
+          "alambana_prior_probability": 0.33315409334336027,
+          "activation_alignment": 0.92,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6266380755830001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.32644933302320644,
+          "alambana_prior_probability": 0.32644933302320644,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.61402692
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "王磊此刻经验到，自己在陈老师长期指导下从三十多名进步到前十的那个位置，已被重要考试发挥失常、掉到二十多名直接冲击；桌上摊着自己的试卷，陈老师拉出旁边椅子并问“今天还讲吗”，在他这里不是普通询问，而是把“发挥失常、掉到二十多名”固定成退步和需要讲题补救的失败，而不是一次可波动的结果。于是，陈老师旁边的椅子、摊开的试卷和那句问话，共同坐实“退步—需要补讲”的理解，并让这一理解成为眼前唯一成立的关系形式。",
+          "prior_probability": 0.3403965736334333,
+          "posterior_probability": 0.3403965736334333,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6402606424435001,
+          "activation_alignment": 0.94,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的陈老师拉椅、发问、桌上试卷等均来自客观刺激，其余为对王磊主观理解的内容，未伪造他人言行；同时保留了考试退步、办公室相遇、拉椅和“今天还讲吗”的核心变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "王磊此刻经验到：半年来在陈老师长期指导下从班级三十多名进步到前十的那个位置，已经成了自己不可分割的一部分；这次重要考试发挥失常、又掉到二十多名，桌上摊开的试卷把这一偏离直接摆在他眼前。陈老师还在办公室，旁边的椅子被拉出来，并且问“今天还讲吗？”，这使眼前情形被理解成：要从二十多名回到前十，只能继续沿着陈老师单独指导这条路走。这条路由他固定理解为当初从三十多名到前十的必然路径，因此当前掉下去后，也只有继续让陈老师讲，才能回到那个不可分割的前十位置。试卷仍摊在桌上、陈老师仍在、椅子被拉出、问话仍在，都只指向这一点：此刻要恢复的不是别的，而是继续让陈老师讲。",
+          "prior_probability": 0.33315409334336027,
+          "posterior_probability": 0.33315409334336027,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6266380755830001,
+          "activation_alignment": 0.92,
+          "grounding_valid": true,
+          "grounding_reason": "所缘提到的长期指导、进步后考试失常、桌上试卷、陈老师仍在、拉椅和问话均来自刺激文本，未添加不存在的事实；核心情境变化被保留，主观固定为继续讲题路径属于解释而非伪造。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "王磊此刻经验到，陈老师拉出旁边椅子并问“今天还讲吗”，把他心里那段陈老师给自己讲题的关系直接拉到面前：这段关系被他放在自己这一边，不能当作与自己无关，因而这一问触及的是这段关系是否仍在自己这里。与此同时，桌上摊着自己的试卷、这次重要考试掉到二十多名，被他固定理解为自己退步、需要讲题补救的失败，而不是一次可波动的结果；陈老师这一拉椅和发问，使这个理解在他这里被坐实。眼前局面于是同时是：讲题关系是否还属于自己的确认，和退步需要补救的延续。",
+          "prior_probability": 0.32644933302320644,
+          "posterior_probability": 0.32644933302320644,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.61402692,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的陈老师拉椅发问、桌上试卷、考试掉到二十多名均来自客观刺激，未伪造他人言行；对关系是否仍属于自己的经验及退步需要补救为王磊主观所缘，且未忽略关键事件。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.3403965736334333,
+          "alambana": {
+            "id": "O_C1",
+            "text": "王磊此刻经验到，自己在陈老师长期指导下从三十多名进步到前十的那个位置，已被重要考试发挥失常、掉到二十多名直接冲击；桌上摊着自己的试卷，陈老师拉出旁边椅子并问“今天还讲吗”，在他这里不是普通询问，而是把“发挥失常、掉到二十多名”固定成退步和需要讲题补救的失败，而不是一次可波动的结果。于是，陈老师旁边的椅子、摊开的试卷和那句问话，共同坐实“退步—需要补讲”的理解，并让这一理解成为眼前唯一成立的关系形式。",
+            "prior_probability": 0.3403965736334333,
+            "posterior_probability": 0.3403965736334333,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.6402606424435001,
+            "activation_alignment": 0.94,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的陈老师拉椅、发问、桌上试卷等均来自客观刺激，其余为对王磊主观理解的内容，未伪造他人言行；同时保留了考试退步、办公室相遇、拉椅和“今天还讲吗”的核心变化。"
+          },
+          "xiang": {
+            "text": "在此所缘下：王磊此刻经验到，自己在陈老师长期指导下从三十多名进步到前十的那个位置，已被重要考试发挥失常、掉到二十多名直接冲击；桌上摊着自己的试卷，陈老师拉出旁边椅子并问“今天还讲吗”，在他这里不是普通询问，而是把“发挥失常、掉到二十多名”固定成退步和需要讲题补救的失败，而不是一次可波动的结果。于是，陈老师旁边的椅子、摊开的试卷和那句问话，共同坐实“退步—需要补讲”的理解，并让这一理解成为眼前唯一成立的关系形式。",
+            "source": "推理",
+            "confidence": 0.4
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "精进": 0.32036296523517377,
+            "疑": 0.06580384458077708,
+            "恶见": 0.3410334049079755,
+            "不慢": 0.23334999999999995,
+            "不信": 0.37337298568507155,
+            "无瞋": 0.08056895705521472,
+            "贪": 0.31546970347648257,
+            "慢": 0.11120353783231082,
+            "放逸": 0.06690339468302658,
+            "懈怠": 0.06692646216768915,
+            "瞋": 0.07539,
+            "不覆": 0.22569312883435583,
+            "不正知": 0.6628598670756647,
+            "不放逸": 0.3672461349693251,
+            "无明": 0.7765716871165643,
+            "行舍": 0.4397401533742331,
+            "昏沉": 0.046618425357873215,
+            "惭": 0.26925
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "接受讲解并准备听讲",
+              "probability": 0.62,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "拒绝当前讲解并离开",
+              "probability": 0.28,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "询问是否退步",
+              "probability": 0.1,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.33315409334336027,
+          "alambana": {
+            "id": "O_C2",
+            "text": "王磊此刻经验到：半年来在陈老师长期指导下从班级三十多名进步到前十的那个位置，已经成了自己不可分割的一部分；这次重要考试发挥失常、又掉到二十多名，桌上摊开的试卷把这一偏离直接摆在他眼前。陈老师还在办公室，旁边的椅子被拉出来，并且问“今天还讲吗？”，这使眼前情形被理解成：要从二十多名回到前十，只能继续沿着陈老师单独指导这条路走。这条路由他固定理解为当初从三十多名到前十的必然路径，因此当前掉下去后，也只有继续让陈老师讲，才能回到那个不可分割的前十位置。试卷仍摊在桌上、陈老师仍在、椅子被拉出、问话仍在，都只指向这一点：此刻要恢复的不是别的，而是继续让陈老师讲。",
+            "prior_probability": 0.33315409334336027,
+            "posterior_probability": 0.33315409334336027,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f3"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.6266380755830001,
+            "activation_alignment": 0.92,
+            "grounding_valid": true,
+            "grounding_reason": "所缘提到的长期指导、进步后考试失常、桌上试卷、陈老师仍在、拉椅和问话均来自刺激文本，未添加不存在的事实；核心情境变化被保留，主观固定为继续讲题路径属于解释而非伪造。"
+          },
+          "xiang": {
+            "text": "在此所缘下：王磊此刻经验到：半年来在陈老师长期指导下从班级三十多名进步到前十的那个位置，已经成了自己不可分割的一部分；这次重要考试发挥失常、又掉到二十多名，桌上摊开的试卷把这一偏离直接摆在他眼前。陈老师还在办公室，旁边的椅子被拉出来，并且问“今天还讲吗？”，这使眼前情形被理解成：要从二十多名回到前十，只能继续沿着陈老师单独指导这条路走。这条路由他固定理解为当初从三十多名到前十的必然路径，因此当前掉下去后，也只有继续让陈老师讲，才能回到那个不可分割的前十位置。试卷仍摊在桌上、陈老师仍在、椅子被拉出、问话仍在，都只指向这一点：此刻要恢复的不是别的，而是继续让陈老师讲。",
+            "source": "推理",
+            "confidence": 0.4
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "不害": 0.43798,
+            "精进": 0.3185679652351738,
+            "疑": 0.06580384458077708,
+            "恶见": 0.5995134049079754,
+            "憍": 0.09693,
+            "不信": 0.15438298568507156,
+            "无瞋": 0.3911039570552147,
+            "贪": 0.7265247034764826,
+            "慢": 0.3840435378323108,
+            "放逸": 0.06690339468302658,
+            "懈怠": 0.06692646216768915,
+            "掉举": 0.19027,
+            "不覆": 0.03183312883435582,
+            "不正知": 0.6323448670756646,
+            "不放逸": 0.37442613496932514,
+            "无明": 0.8699116871165643,
+            "行舍": 0.09151015337423314,
+            "昏沉": 0.046618425357873215
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "坐下并要求陈老师讲题",
+              "probability": 0.92,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "暂停讲解并离开",
+              "probability": 0.08,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.32644933302320644,
+          "alambana": {
+            "id": "O_C3",
+            "text": "王磊此刻经验到，陈老师拉出旁边椅子并问“今天还讲吗”，把他心里那段陈老师给自己讲题的关系直接拉到面前：这段关系被他放在自己这一边，不能当作与自己无关，因而这一问触及的是这段关系是否仍在自己这里。与此同时，桌上摊着自己的试卷、这次重要考试掉到二十多名，被他固定理解为自己退步、需要讲题补救的失败，而不是一次可波动的结果；陈老师这一拉椅和发问，使这个理解在他这里被坐实。眼前局面于是同时是：讲题关系是否还属于自己的确认，和退步需要补救的延续。",
+            "prior_probability": 0.32644933302320644,
+            "posterior_probability": 0.32644933302320644,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.61402692,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的陈老师拉椅发问、桌上试卷、考试掉到二十多名均来自客观刺激，未伪造他人言行；对关系是否仍属于自己的经验及退步需要补救为王磊主观所缘，且未忽略关键事件。"
+          },
+          "xiang": {
+            "text": "在此所缘下：王磊此刻经验到，陈老师拉出旁边椅子并问“今天还讲吗”，把他心里那段陈老师给自己讲题的关系直接拉到面前：这段关系被他放在自己这一边，不能当作与自己无关，因而这一问触及的是这段关系是否仍在自己这里。与此同时，桌上摊着自己的试卷、这次重要考试掉到二十多名，被他固定理解为自己退步、需要讲题补救的失败，而不是一次可波动的结果；陈老师这一拉椅和发问，使这个理解在他这里被坐实。眼前局面于是同时是：讲题关系是否还属于自己的确认，和退步需要补救的延续。",
+            "source": "推理",
+            "confidence": 0.4
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "精进": 0.2665129652351738,
+            "疑": 0.23094384458077705,
+            "恶见": 0.38590840490797546,
+            "不信": 0.15438298568507156,
+            "无瞋": 0.4970089570552147,
+            "贪": 0.5721547034764826,
+            "慢": 0.3589135378323108,
+            "放逸": 0.06690339468302658,
+            "懈怠": 0.06692646216768915,
+            "不覆": 0.1395331288343558,
+            "不正知": 0.7544048670756647,
+            "不放逸": 0.4013511349693251,
+            "无明": 0.8160616871165642,
+            "行舍": 0.09151015337423314,
+            "昏沉": 0.046618425357873215
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "坐下并请老师讲",
+              "probability": 0.5777777777777778,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "站着询问老师是否愿意讲",
+              "probability": 0.22222222222222224,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "坐下并拒绝现在讲卷，要自己看错题",
+              "probability": 0.19999999999999998,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "接受讲解并准备听讲",
+          "probability": 0.706162811719806,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33315409334336027,
+              "conditional_probability": 0.92,
+              "contribution": 0.30650176587589145
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3403965736334333,
+              "conditional_probability": 0.62,
+              "contribution": 0.21104587565272864
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32644933302320644,
+              "conditional_probability": 0.5777777777777778,
+              "contribution": 0.18861517019118595
+            }
+          ]
+        },
+        {
+          "text": "拒绝当前讲解并离开",
+          "probability": 0.16785533684474055,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3403965736334333,
+              "conditional_probability": 0.28,
+              "contribution": 0.09531104061736133
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32644933302320644,
+              "conditional_probability": 0.22222222222222224,
+              "contribution": 0.07254429622737922
+            }
+          ]
+        },
+        {
+          "text": "暂停讲解并离开",
+          "probability": 0.0919421940721101,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32644933302320644,
+              "conditional_probability": 0.19999999999999998,
+              "contribution": 0.06528986660464128
+            },
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33315409334336027,
+              "conditional_probability": 0.08,
+              "contribution": 0.02665232746746882
+            }
+          ]
+        },
+        {
+          "text": "询问是否退步",
+          "probability": 0.03403965736334333,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3403965736334333,
+              "conditional_probability": 0.1,
+              "contribution": 0.03403965736334333
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "精进": 0.3196834147899011,
+        "惭": 0.12764871511253748,
+        "无瞋": 0.33342975852446305,
+        "不放逸": 0.4988378842520359,
+        "行舍": 0.16509233821221514,
+        "不害": 0.20322399693944976,
+        "不慢": 0.1106288864308658,
+        "不覆": 0.14087447483450796,
+        "贪": 0.62993635499487,
+        "瞋": 0.035741640231510496,
+        "慢": 0.2392235753634831,
+        "无明": 0.7862647454509131,
+        "疑": 0.07508334659533748,
+        "恶见": 0.3503385569175601,
+        "憍": 0.04497580260135364,
+        "不信": 0.10382095495819715,
+        "掉举": 0.08828583473599047,
+        "不正知": 0.647463240993366
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 12,
+        "distinct_candidate_count": 9,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 2,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+            "mass": 0.3615
+          },
+          {
+            "id": "bf_2",
+            "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+            "mass": 0.327
+          },
+          {
+            "id": "bf_3",
+            "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+            "mass": 0.3114
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+              "mass": 0.3615
+            },
+            {
+              "id": "bf_2",
+              "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+              "mass": 0.327
+            },
+            {
+              "id": "bf_3",
+              "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+              "mass": 0.3114
+            }
+          ],
+          "triggered_ids": [
+            "bf_1"
+          ],
+          "bindings": {
+            "bf_1": [
+              "sg_f1",
+              "sg_f4",
+              "dg_f1",
+              "dg_f2",
+              "dg_f3"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.282
+        }
+      }
+    }
+  ],
+  "focus_person": "王磊",
+  "llm_usage": {
+    "total_calls": 245,
+    "total_duration_ms": 2677075.6368780406,
+    "wall_clock_ms": 479908.33229701093
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S02",
+    "event_index": 2,
+    "stimulus": "半年后，在陈老师长期指导下，王磊已经从班级三十多名进步到前十。一次重要考试，他却发挥失常，又掉到了二十多名。放学后，王磊经过办公室，发现陈老师还在那里，桌上摊着他的试卷。陈老师看到他，只把旁边的椅子拉出来：“今天还讲吗？”",
+    "top_action": "接受讲解并准备听讲",
+    "top_probability": 0.706162811719806,
+    "top_k": [
+      {
+        "text": "接受讲解并准备听讲",
+        "probability": 0.706162811719806
+      },
+      {
+        "text": "拒绝当前讲解并离开",
+        "probability": 0.16785533684474055
+      },
+      {
+        "text": "暂停讲解并离开",
+        "probability": 0.0919421940721101
+      },
+      {
+        "text": "询问是否退步",
+        "probability": 0.03403965736334333
+      }
+    ],
+    "continuity_before": {
+      "person_id": "王磊",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 3
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+        "mass": 0.3615
+      },
+      {
+        "id": "bf_2",
+        "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+        "mass": 0.327
+      },
+      {
+        "id": "bf_3",
+        "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+        "mass": 0.3114
+      }
+    ],
+    "fresh_count_raw": 9,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 9,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 12,
+      "distinct_candidate_count": 9,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 2,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

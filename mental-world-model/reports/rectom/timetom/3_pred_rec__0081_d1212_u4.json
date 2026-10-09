@@ -1,0 +1,72 @@
+{
+  "id": "3_pred_rec__0081_d1212_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets the seeker and asks what kind of movies they are looking for.",
+      "information_available": "No seeker preferences have been stated yet; only the recommender's opening question is available.",
+      "preferences": "Unknown.",
+      "belief_before": "Recommender assumes a recommendation dialogue is beginning and has no information about the seeker's movie tastes.",
+      "belief_update": "Initiates the exchange by asking for genre or type preferences; no new belief about the seeker's taste yet.",
+      "belief_after": "Recommender believes the seeker's movie preferences are still unknown and must be elicited.",
+      "emotion": "Polite, neutral, helpful.",
+      "intention": "Open the recommendation conversation and elicit the seeker's preferences.",
+      "reaction_to_other": "No other-speaker content has occurred yet.",
+      "conversational_goal": "Establish what kind of movie the seeker wants.",
+      "changes_previous_interpretation": "N/A; baseline opening turn."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says they want good science fiction movies that do not deal with superheroes.",
+      "information_available": "Seeker prefers good science fiction and explicitly excludes superhero movies.",
+      "preferences": "Good science fiction; no superheroes.",
+      "belief_before": "Recommender had no stated genre or content preferences from the seeker.",
+      "belief_update": "Learns that the seeker's request is constrained to non-superhero science fiction with an emphasis on quality.",
+      "belief_after": "Recommender believes the seeker wants high-quality science fiction outside the superhero subgenre.",
+      "emotion": "Attentive, interested, receptive.",
+      "intention": "Find or propose science fiction movies that are not superhero films.",
+      "reaction_to_other": "Accepts the seeker's stated constraint and prepares to recommend within it.",
+      "conversational_goal": "Identify a suitable non-superhero science fiction recommendation.",
+      "changes_previous_interpretation": "Yes; the previous open-ended preference request is now narrowed to non-superhero science fiction."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender suggests Soylent Green (1973) and calls it a classic.",
+      "information_available": "Recommender knows the seeker wants good non-superhero science fiction; no familiarity with Soylent Green has been stated yet.",
+      "preferences": "Good science fiction; no superheroes; possibly open to classics.",
+      "belief_before": "Recommender believes the seeker wants a quality science fiction film that is not a superhero movie.",
+      "belief_update": "Selects Soylent Green as a candidate, treating it as a classic science fiction film that fits the non-superhero constraint.",
+      "belief_after": "Recommender believes Soylent Green may be a suitable recommendation pending whether the seeker has seen it.",
+      "emotion": "Helpful, confident in the classic recommendation.",
+      "intention": "Offer a specific science fiction candidate and check whether it is viable.",
+      "reaction_to_other": "Responds to the seeker's non-superhero science fiction preference with a classic genre title.",
+      "conversational_goal": "Determine whether Soylent Green is a viable recommendation for the seeker.",
+      "changes_previous_interpretation": "No major change; this follows directly from the previously stated preference."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have not seen Soylent Green, but already know the twist.",
+      "information_available": "Seeker has not seen Soylent Green, but is already familiar with its twist.",
+      "preferences": "Still good non-superhero science fiction; possible but unconfirmed concern about already-known twists.",
+      "belief_before": "Recommender believed Soylent Green could be suitable if the seeker had not seen it.",
+      "belief_update": "Learns that the seeker has not seen the film but knows its twist, so the surprise element is already spoiled.",
+      "belief_after": "Recommender believes Soylent Green is less clearly ideal as a recommendation, though it may still be acceptable as a classic.",
+      "emotion": "Mildly uncertain, considerate, possibly disappointed.",
+      "intention": "Decide whether the known twist still allows Soylent Green to be recommended or whether to pivot to another non-superhero science fiction film.",
+      "reaction_to_other": "Acknowledges the seeker's partial familiarity and treats the known twist as a possible obstacle.",
+      "conversational_goal": "Clarify whether the spoiled twist matters and, if needed, adjust the recommendation.",
+      "changes_previous_interpretation": "Yes; Soylent Green's prior status as a viable candidate is weakened by the seeker already knowing its twist."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets the seeker and asks what kind of movies they are looking for.\",\n    \"information_available\": \"No seeker preferences have been stated yet; only the recommender's opening question is available.\",\n    \"preferences\": \"Unknown.\",\n    \"belief_before\": \"Recommender assumes a recommendation dialogue is beginning and has no information about the seeker's movie tastes.\",\n    \"belief_update\": \"Initiates the exchange by asking for genre or type preferences; no new belief about the seeker's taste yet.\",\n    \"belief_after\": \"Recommender believes the seeker's movie preferences are still unknown and must be elicited.\",\n    \"emotion\": \"Polite, neutral, helpful.\",\n    \"intention\": \"Open the recommendation conversation and elicit the seeker's preferences.\",\n    \"reaction_to_other\": \"No other-speaker content has occurred yet.\",\n    \"conversational_goal\": \"Establish what kind of movie the seeker wants.\",\n    \"changes_previous_interpretation\": \"N/A; baseline opening turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says they want good science fiction movies that do not deal with superheroes.\",\n    \"information_available\": \"Seeker prefers good science fiction and explicitly excludes superhero movies.\",\n    \"preferences\": \"Good science fiction; no superheroes.\",\n    \"belief_before\": \"Recommender had no stated genre or content preferences from the seeker.\",\n    \"belief_update\": \"Learns that the seeker's request is constrained to non-superhero science fiction with an emphasis on quality.\",\n    \"belief_after\": \"Recommender believes the seeker wants high-quality science fiction outside the superhero subgenre.\",\n    \"emotion\": \"Attentive, interested, receptive.\",\n    \"intention\": \"Find or propose science fiction movies that are not superhero films.\",\n    \"reaction_to_other\": \"Accepts the seeker's stated constraint and prepares to recommend within it.\",\n    \"conversational_goal\": \"Identify a suitable non-superhero science fiction recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; the previous open-ended preference request is now narrowed to non-superhero science fiction.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender suggests Soylent Green (1973) and calls it a classic.\",\n    \"information_available\": \"Recommender knows the seeker wants good non-superhero science fiction; no familiarity with Soylent Green has been stated yet.\",\n    \"preferences\": \"Good science fiction; no superheroes; possibly open to classics.\",\n    \"belief_before\": \"Recommender believes the seeker wants a quality science fiction film that is not a superhero movie.\",\n    \"belief_update\": \"Selects Soylent Green as a candidate, treating it as a classic science fiction film that fits the non-superhero constraint.\",\n    \"belief_after\": \"Recommender believes Soylent Green may be a suitable recommendation pending whether the seeker has seen it.\",\n    \"emotion\": \"Helpful, confident in the classic recommendation.\",\n    \"intention\": \"Offer a specific science fiction candidate and check whether it is viable.\",\n    \"reaction_to_other\": \"Responds to the seeker's non-superhero science fiction preference with a classic genre title.\",\n    \"conversational_goal\": \"Determine whether Soylent Green is a viable recommendation for the seeker.\",\n    \"changes_previous_interpretation\": \"No major change; this follows directly from the previously stated preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have not seen Soylent Green, but already know the twist.\",\n    \"information_available\": \"Seeker has not seen Soylent Green, but is already familiar with its twist.\",\n    \"preferences\": \"Still good non-superhero science fiction; possible but unconfirmed concern about already-known twists.\",\n    \"belief_before\": \"Recommender believed Soylent Green could be suitable if the seeker had not seen it.\",\n    \"belief_update\": \"Learns that the seeker has not seen the film but knows its twist, so the surprise element is already spoiled.\",\n    \"belief_after\": \"Recommender believes Soylent Green is less clearly ideal as a recommendation, though it may still be acceptable as a classic.\",\n    \"emotion\": \"Mildly uncertain, considerate, possibly disappointed.\",\n    \"intention\": \"Decide whether the known twist still allows Soylent Green to be recommended or whether to pivot to another non-superhero science fiction film.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's partial familiarity and treats the known twist as a possible obstacle.\",\n    \"conversational_goal\": \"Clarify whether the spoiled twist matters and, if needed, adjust the recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; Soylent Green's prior status as a viable candidate is weakened by the seeker already knowing its twist.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

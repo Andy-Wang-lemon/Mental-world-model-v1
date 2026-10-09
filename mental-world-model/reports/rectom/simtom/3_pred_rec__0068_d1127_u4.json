@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0068_d1127_u4",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "From RECOMMENDER’s perspective, the available information is:\n\n- RECOMMENDER greeted SEEKER and asked what movies SEEKER likes.\n- SEEKER replied: “Hello I’m looking for a good Christmas movie, any genre.”\n- RECOMMENDER recommended:\n  - *Elf* (2003), describing it as a funny Christmas movie with Will Ferrel.\n  - *Home Alone* (1990), describing it as another classic.\n- SEEKER replied: “I haven’t seen *Elf* (2003) but I love *Home Alone* (1990).”\n\nThus RECOMMENDER knows SEEKER is looking for a good Christmas movie of any genre, has not seen *Elf* (2003), and loves *Home Alone* (1990). RECOMMENDER also knows their own recommendations and statements in this interaction. No other prior interactions or hidden information are available to RECOMMENDER.",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0060_d1057_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello!",
+      "information_available": "SEEKER knows they have initiated a greeting; no information has yet been received from the recommender within this turn.",
+      "preferences": "No recommendation preferences are expressed or inferable yet.",
+      "belief_before": "No recommender-specific beliefs are established in this turn; the SEEKER expects a response after greeting.",
+      "belief_update": "SEEKER has opened the dialogue with a greeting.",
+      "belief_after": "SEEKER has greeted the recommender and is awaiting a response.",
+      "emotion": "Neutral, polite, expectant.",
+      "intention": "Initiate contact and elicit a response from the recommender.",
+      "reaction": "No other-speaker utterance has occurred yet, so there is no reaction to the recommender.",
+      "conversational_goal": "Open the dialogue and establish contact.",
+      "changes_previous_interpretation": "N/A; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello~",
+      "information_available": "The recommender is present and has returned a greeting. The tilde suggests a friendly or informal tone.",
+      "preferences": "Still no preference information about recommendation targets is available.",
+      "belief_before": "SEEKER had greeted the recommender and was awaiting a response.",
+      "belief_update": "The recommender has responded promptly with a reciprocal greeting.",
+      "belief_after": "SEEKER believes the recommender is responsive, available, and at least politely friendly/cooperative.",
+      "emotion": "Positive, reassured, comfortable.",
+      "intention": "Continue the greeting exchange and prepare to state the recommendation need.",
+      "reaction": "SEEKER favorably receives the reciprocal greeting and may perceive the recommender as friendly.",
+      "conversational_goal": "Maintain rapport and transition toward making a recommendation request.",
+      "changes_previous_interpretation": "Confirms the earlier expectation of a response and adds responsiveness/friendliness; it does not contradict the prior interpretation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello!\",\n    \"information_available\": \"SEEKER knows they have initiated a greeting; no information has yet been received from the recommender within this turn.\",\n    \"preferences\": \"No recommendation preferences are expressed or inferable yet.\",\n    \"belief_before\": \"No recommender-specific beliefs are established in this turn; the SEEKER expects a response after greeting.\",\n    \"belief_update\": \"SEEKER has opened the dialogue with a greeting.\",\n    \"belief_after\": \"SEEKER has greeted the recommender and is awaiting a response.\",\n    \"emotion\": \"Neutral, polite, expectant.\",\n    \"intention\": \"Initiate contact and elicit a response from the recommender.\",\n    \"reaction\": \"No other-speaker utterance has occurred yet, so there is no reaction to the recommender.\",\n    \"conversational_goal\": \"Open the dialogue and establish contact.\",\n    \"changes_previous_interpretation\": \"N/A; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello~\",\n    \"information_available\": \"The recommender is present and has returned a greeting. The tilde suggests a friendly or informal tone.\",\n    \"preferences\": \"Still no preference information about recommendation targets is available.\",\n    \"belief_before\": \"SEEKER had greeted the recommender and was awaiting a response.\",\n    \"belief_update\": \"The recommender has responded promptly with a reciprocal greeting.\",\n    \"belief_after\": \"SEEKER believes the recommender is responsive, available, and at least politely friendly/cooperative.\",\n    \"emotion\": \"Positive, reassured, comfortable.\",\n    \"intention\": \"Continue the greeting exchange and prepare to state the recommendation need.\",\n    \"reaction\": \"SEEKER favorably receives the reciprocal greeting and may perceive the recommender as friendly.\",\n    \"conversational_goal\": \"Maintain rapport and transition toward making a recommendation request.\",\n    \"changes_previous_interpretation\": \"Confirms the earlier expectation of a response and adds responsiveness/friendliness; it does not contradict the prior interpretation.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

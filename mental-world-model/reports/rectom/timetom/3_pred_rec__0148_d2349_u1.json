@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0148_d2349_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greeted the recommender and said they are looking for a children's movie for their little brother because they are babysitting him tonight.",
+      "belief_before": "The recommender had no prior information about the seeker's request, preferences, or context in this dialogue.",
+      "belief_update": "The recommender learns the seeker needs a children's movie for a little brother and that the occasion is babysitting tonight. This first turn establishes the initial request context; there was no earlier interpretation to revise.",
+      "belief_after": "The recommender believes the seeker wants a child-appropriate movie to watch tonight with a young brother. Specific age, genre, and platform preferences are still unknown, but the content should likely be safe and entertaining for a child.",
+      "emotion": "Attentive, friendly, and receptive to the seeker's request; no strong emotional reaction yet.",
+      "intention": "To help the seeker find a suitable children's movie, likely by acknowledging the request and possibly asking clarifying questions before recommending.",
+      "conversational_goal": "Clarify relevant details such as the child's age, movie preferences, and viewing constraints, then recommend an appropriate children's movie for tonight."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greeted the recommender and said they are looking for a children's movie for their little brother because they are babysitting him tonight.\",\n    \"belief_before\": \"The recommender had no prior information about the seeker's request, preferences, or context in this dialogue.\",\n    \"belief_update\": \"The recommender learns the seeker needs a children's movie for a little brother and that the occasion is babysitting tonight. This first turn establishes the initial request context; there was no earlier interpretation to revise.\",\n    \"belief_after\": \"The recommender believes the seeker wants a child-appropriate movie to watch tonight with a young brother. Specific age, genre, and platform preferences are still unknown, but the content should likely be safe and entertaining for a child.\",\n    \"emotion\": \"Attentive, friendly, and receptive to the seeker's request; no strong emotional reaction yet.\",\n    \"intention\": \"To help the seeker find a suitable children's movie, likely by acknowledging the request and possibly asking clarifying questions before recommending.\",\n    \"conversational_goal\": \"Clarify relevant details such as the child's age, movie preferences, and viewing constraints, then recommend an appropriate children's movie for tonight.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "e",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

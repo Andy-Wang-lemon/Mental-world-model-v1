@@ -1,0 +1,76 @@
+{
+  "id": "3_pred_rec__0009_d622_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender initiates with 'Hi.' Information available: no prior dialogue or seeker details.",
+      "belief_before": "No beliefs about the seeker or task.",
+      "belief_update": "Conversation is opened; recommender is now awaiting a response.",
+      "belief_after": "Recommender has only greeted; seeker's preferences, goals, and constraints are unknown.",
+      "emotion": "Neutral/positive, polite.",
+      "intention": "Greet the seeker and open the interaction.",
+      "conversational_goal": "Start the conversation."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says 'hi...want to help me find a fun movie for all ages?' Information available: seeker greets and requests help finding a fun all-ages movie.",
+      "belief_before": "Recommender had only greeted; no task or preferences known.",
+      "belief_update": "Seeker wants a fun movie suitable for all ages, likely for family/children.",
+      "belief_after": "Task: recommend a fun movie appropriate for all ages. No format, genre, or specific title preferences yet.",
+      "emotion": "Helpful, attentive, receptive.",
+      "intention": "Assist with the movie recommendation request.",
+      "conversational_goal": "Acknowledge the request and begin considering all-ages options."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says 'Let me think....The Lego Batman Movie (2017)?' Information available: seeker wants a fun all-ages movie; no other constraints.",
+      "belief_before": "Seeker wants a fun, all-ages movie; no format or genre preference stated.",
+      "belief_update": "Recommender judges The Lego Batman Movie as a fun, all-ages-appropriate candidate and proposes it.",
+      "belief_after": "Candidate recommendation is The Lego Batman Movie. Recommender awaits feedback; seeker's deeper preferences remain unknown.",
+      "emotion": "Thoughtful, helpful, slightly tentative due to question mark.",
+      "intention": "Offer a plausible all-ages movie.",
+      "conversational_goal": "Test whether The Lego Batman Movie fits and elicit preferences."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they like things like The Parent Trap (1998), that it was good and the kids enjoyed it, and maybe wants something not animated. Information available: seeker likes Parent Trap-style films, kids enjoyed it, and does not want animated.",
+      "belief_before": "Recommender had proposed The Lego Batman Movie for a fun all-ages movie; no format preference was known.",
+      "belief_update": "Seeker prefers live-action/family films like The Parent Trap, values kids' enjoyment, and excludes animated movies. The Lego Batman suggestion is likely less suitable because it is animated.",
+      "belief_after": "Preferences: non-animated, family/all-ages fun, similar to The Parent Trap; kids' enjoyment matters. Belief: seeker wants a revised recommendation.",
+      "emotion": "Attentive, adjusting, perhaps slightly corrected.",
+      "intention": "Revise recommendations toward non-animated family films.",
+      "conversational_goal": "Find a non-animated all-ages movie matching the seeker's taste."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says 'I think Avatar (2009) is good for a family movie....The Goonies (1985) was good.' Information available: seeker wants non-animated, family/all-ages fun similar to The Parent Trap; animation excluded.",
+      "belief_before": "Seeker wants a non-animated, fun, all-ages/family movie; likes The Parent Trap; kids enjoyed it; animation is excluded.",
+      "belief_update": "Recommender considers Avatar and The Goonies to be good family/non-animated options and offers them.",
+      "belief_after": "Candidates: Avatar and The Goonies. Recommender believes these fit the non-animated family request; no further age-sensitivity beyond 'all ages' is known yet.",
+      "emotion": "Helpful, confident, trying to satisfy the stated constraints.",
+      "intention": "Provide non-animated family movie alternatives.",
+      "conversational_goal": "Offer options and learn which candidate works for the seeker."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says one suggested option is a little scary for their littles, that The Goonies would be good for them, and that they have seen The Goonies but not with the family. Information available: littles are sensitive to scary content; Goonies is likely acceptable; seeker has seen Goonies but not as a family.",
+      "belief_before": "Recommender had offered Avatar and The Goonies as non-animated family options.",
+      "belief_update": "Avatar is too scary for the seeker's little kids. The Goonies would be good for them. Seeker has seen The Goonies but not with family. Recommender should avoid scary-for-littles options and address whether Goonies still fits despite prior viewing.",
+      "belief_after": "Age suitability and scariness matter: little kids are sensitive. The Goonies is a viable family-watch candidate but not new to the seeker. Need to refine toward non-scary, non-animated, all-ages family films, possibly similar to Goonies or Parent Trap.",
+      "emotion": "Attentive, corrective, adjusting to new age constraint.",
+      "intention": "Update recommendations to respect scariness/age concerns and clarify Goonies fit.",
+      "conversational_goal": "Determine whether seeker wants a new family film or is open to The Goonies despite having seen it, then recommend accordingly."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender initiates with 'Hi.' Information available: no prior dialogue or seeker details.\",\n    \"belief_before\": \"No beliefs about the seeker or task.\",\n    \"belief_update\": \"Conversation is opened; recommender is now awaiting a response.\",\n    \"belief_after\": \"Recommender has only greeted; seeker's preferences, goals, and constraints are unknown.\",\n    \"emotion\": \"Neutral/positive, polite.\",\n    \"intention\": \"Greet the seeker and open the interaction.\",\n    \"conversational_goal\": \"Start the conversation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says 'hi...want to help me find a fun movie for all ages?' Information available: seeker greets and requests help finding a fun all-ages movie.\",\n    \"belief_before\": \"Recommender had only greeted; no task or preferences known.\",\n    \"belief_update\": \"Seeker wants a fun movie suitable for all ages, likely for family/children.\",\n    \"belief_after\": \"Task: recommend a fun movie appropriate for all ages. No format, genre, or specific title preferences yet.\",\n    \"emotion\": \"Helpful, attentive, receptive.\",\n    \"intention\": \"Assist with the movie recommendation request.\",\n    \"conversational_goal\": \"Acknowledge the request and begin considering all-ages options.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says 'Let me think....The Lego Batman Movie (2017)?' Information available: seeker wants a fun all-ages movie; no other constraints.\",\n    \"belief_before\": \"Seeker wants a fun, all-ages movie; no format or genre preference stated.\",\n    \"belief_update\": \"Recommender judges The Lego Batman Movie as a fun, all-ages-appropriate candidate and proposes it.\",\n    \"belief_after\": \"Candidate recommendation is The Lego Batman Movie. Recommender awaits feedback; seeker's deeper preferences remain unknown.\",\n    \"emotion\": \"Thoughtful, helpful, slightly tentative due to question mark.\",\n    \"intention\": \"Offer a plausible all-ages movie.\",\n    \"conversational_goal\": \"Test whether The Lego Batman Movie fits and elicit preferences.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they like things like The Parent Trap (1998), that it was good and the kids enjoyed it, and maybe wants something not animated. Information available: seeker likes Parent Trap-style films, kids enjoyed it, and does not want animated.\",\n    \"belief_before\": \"Recommender had proposed The Lego Batman Movie for a fun all-ages movie; no format preference was known.\",\n    \"belief_update\": \"Seeker prefers live-action/family films like The Parent Trap, values kids' enjoyment, and excludes animated movies. The Lego Batman suggestion is likely less suitable because it is animated.\",\n    \"belief_after\": \"Preferences: non-animated, family/all-ages fun, similar to The Parent Trap; kids' enjoyment matters. Belief: seeker wants a revised recommendation.\",\n    \"emotion\": \"Attentive, adjusting, perhaps slightly corrected.\",\n    \"intention\": \"Revise recommendations toward non-animated family films.\",\n    \"conversational_goal\": \"Find a non-animated all-ages movie matching the seeker's taste.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says 'I think Avatar (2009) is good for a family movie....The Goonies (1985) was good.' Information available: seeker wants non-animated, family/all-ages fun similar to The Parent Trap; animation excluded.\",\n    \"belief_before\": \"Seeker wants a non-animated, fun, all-ages/family movie; likes The Parent Trap; kids enjoyed it; animation is excluded.\",\n    \"belief_update\": \"Recommender considers Avatar and The Goonies to be good family/non-animated options and offers them.\",\n    \"belief_after\": \"Candidates: Avatar and The Goonies. Recommender believes these fit the non-animated family request; no further age-sensitivity beyond 'all ages' is known yet.\",\n    \"emotion\": \"Helpful, confident, trying to satisfy the stated constraints.\",\n    \"intention\": \"Provide non-animated family movie alternatives.\",\n    \"conversational_goal\": \"Offer options and learn which candidate works for the seeker.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says one suggested option is a little scary for their littles, that The Goonies would be good for them, and that they have seen The Goonies but not with the family. Information available: littles are sensitive to scary content; Goonies is likely acceptable; seeker has seen Goonies but not as a family.\",\n    \"belief_before\": \"Recommender had offered Avatar and The Goonies as non-animated family options.\",\n    \"belief_update\": \"Avatar is too scary for the seeker's little kids. The Goonies would be good for them. Seeker has seen The Goonies but not with family. Recommender should avoid scary-for-littles options and address whether Goonies still fits despite prior viewing.\",\n    \"belief_after\": \"Age suitability and scariness matter: little kids are sensitive. The Goonies is a viable family-watch candidate but not new to the seeker. Need to refine toward non-scary, non-animated, all-ages family films, possibly similar to Goonies or Parent Trap.\",\n    \"emotion\": \"Attentive, corrective, adjusting to new age constraint.\",\n    \"intention\": \"Update recommendations to respect scariness/age concerns and clarify Goonies fit.\",\n    \"conversational_goal\": \"Determine whether seeker wants a new family film or is open to The Goonies despite having seen it, then recommend accordingly.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

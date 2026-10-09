@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0042_d1003_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets me as 'friend' and asks: 'Can you recommend some good classic movies?' No specific genre, era, mood, or preferences are provided.",
+      "belief_before": "No prior context about SEEKER's taste, familiarity with classic movies, or what they mean by 'classic.'",
+      "belief_update": "SEEKER wants recommendations for good classic movies and is addressing me as someone who can help. This is the initial turn, so it establishes the conversation context rather than revising an earlier interpretation.",
+      "belief_after": "SEEKER is interested in classic movies and expects me to offer suggestions, possibly after clarifying preferences or providing a broad set of well-regarded classics.",
+      "emotion": "Friendly and attentive; likely willing to help.",
+      "intention": "Respond helpfully to the request, either by recommending classic movies or by asking clarifying questions to tailor recommendations.",
+      "conversational_goal": "Satisfy SEEKER's request for classic movie recommendations while keeping the interaction helpful and friendly."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets me as 'friend' and asks: 'Can you recommend some good classic movies?' No specific genre, era, mood, or preferences are provided.\",\n    \"belief_before\": \"No prior context about SEEKER's taste, familiarity with classic movies, or what they mean by 'classic.'\",\n    \"belief_update\": \"SEEKER wants recommendations for good classic movies and is addressing me as someone who can help. This is the initial turn, so it establishes the conversation context rather than revising an earlier interpretation.\",\n    \"belief_after\": \"SEEKER is interested in classic movies and expects me to offer suggestions, possibly after clarifying preferences or providing a broad set of well-regarded classics.\",\n    \"emotion\": \"Friendly and attentive; likely willing to help.\",\n    \"intention\": \"Respond helpfully to the request, either by recommending classic movies or by asking clarifying questions to tailor recommendations.\",\n    \"conversational_goal\": \"Satisfy SEEKER's request for classic movie recommendations while keeping the interaction helpful and friendly.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

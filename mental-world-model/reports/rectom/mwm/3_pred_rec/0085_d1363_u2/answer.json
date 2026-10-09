@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 85,
+  "item_id": "d1363_u2",
+  "dialogue_id": "1363",
+  "utterance_pos": 2,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在这段由我发起的互动中，对方说出“喜欢神秘电影”这件事，被我经验为一个明确、固定的偏好标签，正落在我这个推荐者面前，成为此刻需要我去承接和处理的对象。",
+        "probability": 0.3768
+      },
+      {
+        "content": "这场对话是我带起的，对方的回应正向着我而来，我无法把自己与这场互动分开；对方说出的“喜欢神秘电影”在我这里成为一个明确的固定标签，正等着我作为发起者去处理。",
+        "probability": 0.3341
+      },
+      {
+        "content": "在这段由我发起的互动中，对方说出的“神秘电影”和“心理惊悚片”被我不加分辨地合成同一个偏好类别，成为一个整体性的推荐依据，正作为一件统一的事情呈现在我眼前。",
+        "probability": 0.2891
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "对方明确地说喜欢神秘电影，这句话在我这里变成了一个固定的偏好标签。既然我已经主动开启了对话，那么眼下这个标签就是我需要接住的东西，我围绕着它来调整接下来的思路。",
+        "activation": 0.3941
+      },
+      {
+        "content": "对方说的“神秘电影”和“心理惊悚片”在我这里自然地合拢成同一个偏好方向，成了一个整体性的推荐依据。既然这是对方明确给出的喜好，那么在这次互动中，我就可以按这个统一的类别来考虑接下来该推荐什么。",
+        "activation": 0.3103
+      },
+      {
+        "content": "既然是我先开口问起电影，那么现在对方给的回答就像是专门递到我面前的一个线索。她说喜欢神秘电影、也可能是心理惊悚，这个说法在我心里立刻凝成一个明确的方向，好像我接下来就该顺着这个标签去帮她找片。这个标签让我觉得对话有了抓手，也让我更确认自己作为发起者得把话接住、把推荐做下去。",
+        "activation": 0.2956
+      }
+    ],
+    "observed_action": "RECOMMENDER询问SEEKER喜欢什么类型的电影。",
+    "predicted_actions": [
+      {
+        "content": "推荐影片",
+        "probability": 0.3887
+      },
+      {
+        "content": "推荐具体电影",
+        "probability": 0.2752
+      },
+      {
+        "content": "开始检索",
+        "probability": 0.1347
+      },
+      {
+        "content": "反问用户偏好",
+        "probability": 0.1013
+      },
+      {
+        "content": "复述确认对方偏好",
+        "probability": 0.1001
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.2014,
+    "b": 0,
+    "c": 0.6639,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.2014 = 反问用户偏好 0.1013 + 复述确认对方偏好 0.1001；B 0.0000；C 0.6639 = 推荐影片 0.3887 + 推荐具体电影 0.2752；D 0.0000；E 0.0000。Actions asking/confirming preferences map to A, and direct recommendations map to C; retrieval lacks a matching strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

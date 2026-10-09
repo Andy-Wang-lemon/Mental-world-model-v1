@@ -1,0 +1,69 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 36,
+  "item_id": "d957_u23",
+  "dialogue_id": "957",
+  "utterance_pos": 23,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "RECOMMENDER每报出一个片名，SEEKER都感觉自己站在“这部我也看过”的位置上，像是自己早已把这一片海都看完了。而RECOMMENDER那句“要继续推荐直到找到你没看过的”像一条不可断开的轨道，让这场对话变成一种必须持续下去的循环：对面不断抛出电影，自己则不断在心里把它们归入“看过”，并且这个循环在出现一个真正“没看过”的片子之前，不能由自己结束。",
+        "probability": 0.563
+      },
+      {
+        "content": "RECOMMENDER提到的每一部电影，在SEEKER心中都被压成一个最简单的二选一：“看过”还是“没看过”。什么主演、是不是脱口秀、讲什么故事，都只是浮在表面的噪音，真正重要的只有那个标签。整个对话世界成了一条等待检验的片名清单，每个片名的意义仅仅在于它是否已经被自己看过，除此之外再没有别的评价尺度。",
+        "probability": 0.437
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "他每听到一个片名，心里几乎都会自动冒出一个标记：这部我也看过。这些标记不断累积，让他觉得自己好像早已把这一片喜剧的海都游遍了。同时，他把对方那句“要继续推荐直到找到你没看过的”当作一条默认的轨道，认为自己不能在中途主动停下，只能配合这场循环，对方抛出一个，他就在心里归入“看过”那一边。直到一个从未听说的片名出现，那条“全都看过”的惯性才被打破，他心里生出一丝新鲜和好奇——原来还有我没见过的。他对这部片产生了兴趣，内心想要去了解它、确认它，让这场循环终于有机会走完。",
+        "activation": 0.5435
+      },
+      {
+        "content": "在SEEKER心里，RECOMMENDER报出的每一个片名都不需要真正展开，它只是被快速丢进“看过”或“没看过”的格子里。看过就意味着这一轮已经通过，没看过才是需要留一点注意力的东西。什么主演、是不是脱口秀、故事讲什么，都只是表面浮着的杂音，只有在那个片名还没被归类时，他才会多问两句，但问来问去还是为了判断它值不值得变成下一个“看过”。整个对话就像一场清点自己已看过片单的过程，直到“Midnight Madness”这个名字掉出来，他才觉得终于碰到一个漏网的，心里顿时有点兴趣，可那种兴趣也仍然带着一个更底层的念头：这个也可以变成我看过的。",
+        "activation": 0.4565
+      }
+    ],
+    "observed_action": "SEEKER said he was looking for funny comedy movies similar to She's Out of My League; said Daddy's Home was good, that he had never seen the movies suggested, and that he had seen Deuce Bigalo but did not like those movies; said he loved Step Brothers and Life as We Know It; said he had seen the other one mentioned and found it funny, and also loved the movie with James Franco called Why Him?; said Talladega Nights was a funny movie and said thank you; said he was open to suggestions; said he had seen Eddie Murphy Raw but it was not one of his favorites; said he usually enjoys movies with Seth Rogen and Jonah Hill; said he had never heard of Midnight Madness, that it sounded good, and asked if there were any well-known actors in it; asked if it was a comedy; said he loved Michael J Fox and would definitely check that movie out.",
+    "predicted_actions": [
+      {
+        "content": "在视频平台搜索并查看预告片",
+        "probability": 0.2989
+      },
+      {
+        "content": "在聊天记录和主屏幕之间滑动切换",
+        "probability": 0.2698
+      },
+      {
+        "content": "在备忘录中写下片名并凝视",
+        "probability": 0.2433
+      },
+      {
+        "content": "微笑着道别但仍看着电影列表",
+        "probability": 0.188
+      }
+    ]
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 0.188
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.0000；D 0.1880 = 微笑着道别但仍看着电影列表 0.1880。仅动作3直接包含道别，对应D；其他动作未直接表达这些策略。",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

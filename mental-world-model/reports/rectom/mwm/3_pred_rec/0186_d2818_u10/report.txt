@@ -1,0 +1,29 @@
+数据：3_pred_rec
+题号：186  d2818_u10
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick\nRECOMMENDER says: Bright (2017)  is a Netflix；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick\nRECOMMENDER says: Bright (2017)  is a Netflix；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：D: Explains a recommendation with background or reasoning
+分数：{"a": 0.15, "b": 0.25, "c": 0.55, "d": 0.9, "e": 0.1}
+选择说明：The last recommender turn continues explaining the recommended movie as available on Netflix, directly supporting an explanation strategy.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+B: Responds to the seeker's question or statement
+结果：对

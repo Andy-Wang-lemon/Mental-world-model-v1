@@ -1,0 +1,49 @@
+数据：4_pred_seeker
+题号：193  d3089_u1
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER经验到的世界是：一声“Hello”直接落在自己身上，把自己置于“被对方招呼、被纳入这次交谈”的位置；这声招呼同时呈现为一个已经被打开的寒暄开场，仿佛天然带着要被接住并继续下去的招呼—回应结构。",
+      "probability": 0.6364
+    },
+    {
+      "content": "此刻，SEEKER经验到的世界是：RECOMMENDER先开口的“Hello”直接指向自己，把“我”固定为被招呼的一方；这声招呼同时显为一种关系状态的既定确认，仿佛双方已处在某种可互相招呼的关系之中，而不是单纯的陌生外部声音。",
+      "probability": 0.3636
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这声“Hello”不是旁处的声响，它直接落到我身上，使我感到自己被对方点到、被放进这次交谈之内；与此同时，这个招呼像是已经替我打开了一道口子，天然带着要被接住并延续下去的结构。我若顺着这一瞬的领纳，就会把“被招呼”当成与自己分不开的位置，并觉得这个开场不应悬在那里，内在有将它承接下去、不让它落空的趋向。",
+      "activation": 0.6364
+    },
+    {
+      "content": "SEEKER 听到这声“Hello”时，先把它接成直接朝自己而来的招呼，于是把自己安放在“被对方招呼、被纳入这次交谈”的位置上；同时在心里把这声招呼读作彼此已经处在某种可互相招呼的关系中的确认，而不是陌生人的普通声响。由此，SEEKER 倾向于把这个关系框架当作眼前已经成立的事，并顺着它来理解对方与自己的距离。",
+      "activation": 0.3636
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": [
+    {
+      "content": "简短回应",
+      "probability": 0.5744
+    },
+    {
+      "content": "回应并询问",
+      "probability": 0.2954
+    },
+    {
+      "content": "点头",
+      "probability": 0.1303
+    }
+  ]
+}
+选择：D: Greetings, gratitude expression, or chit-chat utterances
+分数：{"a": 0.05, "b": 0.05, "c": 0.05, "d": 0.95}
+选择说明：The record centers on a direct 'Hello' and an opened greeting exchange, so the next strategy is greeting/chit-chat response.
+标准：D: Greetings, gratitude expression, or chit-chat utterances
+C: Asks for a recommendation or expresses their preference
+结果：对

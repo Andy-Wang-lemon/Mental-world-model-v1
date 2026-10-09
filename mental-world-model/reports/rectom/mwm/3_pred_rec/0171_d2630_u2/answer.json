@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 171,
+  "item_id": "d2630_u2",
+  "dialogue_id": "2630",
+  "utterance_pos": 2,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d",
+    "a"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning\nA: Ask for preference or seeks feedback from the seeker",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi...What genre do you like?\nSEEKER says: I like dramas；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi...What genre do you like?\nSEEKER says: I like dramas；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.35,
+    "b": 0.3,
+    "c": 0.9,
+    "d": 0.3,
+    "e": 0.1
+  },
+  "score_reason": "After the seeker gives a genre preference, the recommender most directly proceeds to recommend or inquire further to narrow options.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

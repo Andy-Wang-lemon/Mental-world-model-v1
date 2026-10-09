@@ -1,0 +1,196 @@
+{
+  "id": "3_pred_rec__0190_d2818_u18",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender initiates: 'Good evening!'; no information about the seeker yet.",
+      "belief_before": "No prior knowledge of the seeker or their preferences.",
+      "belief_update": "A conversational partner is present/available.",
+      "belief_after": "Dialogue has started; seeker's tastes and goals unknown.",
+      "emotion": "polite, neutral",
+      "intention": "greet and open the conversation",
+      "conversational_goal": "establish contact"
+    },
+    {
+      "time": 2,
+      "observed": "Seeker asks whether there are new movies out that are worth watching.",
+      "belief_before": "Recommender only knows the seeker greeted them.",
+      "belief_update": "Seeker wants recent movie recommendations and is open to suggestions.",
+      "belief_after": "Seeker is seeking new worthwhile films; specific genres are unknown.",
+      "emotion": "helpful, neutral",
+      "intention": "learn genre preferences or propose movies",
+      "conversational_goal": "elicit preferences and offer recommendations"
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks what genres the seeker is interested in and says Bright (2017) was really good even without the back story.",
+      "belief_before": "Seeker wants new movies; genre preference is unknown.",
+      "belief_update": "Recommender asks for genre information and offers Bright as a personal positive recommendation.",
+      "belief_after": "Bright is on the table as a suggestion; the seeker's genre preference is still unknown.",
+      "emotion": "positive, helpful",
+      "intention": "narrow preferences while sharing a favorite recent film",
+      "conversational_goal": "find a compatible genre and recommend Bright"
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says 'hmm never heard of that one' about Bright.",
+      "belief_before": "Recommender believes the seeker wants new movies; genre unknown; Bright has been suggested.",
+      "belief_update": "Seeker is unfamiliar with Bright, so the recommendation may need explanation or replacement.",
+      "belief_after": "Bright is not known to the seeker.",
+      "emotion": "mild surprise, neutral",
+      "intention": "clarify Bright or pivot to another recent title",
+      "conversational_goal": "overcome unfamiliarity with the recommendation"
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says they saw Star Wars: Episode VIII – The Last Jedi (2017).",
+      "belief_before": "Seeker is unfamiliar with Bright; genre preference is unknown.",
+      "belief_update": "Recommender offers another recent film they saw, perhaps as an alternative option.",
+      "belief_after": "Star Wars: Episode VIII has been mentioned as a movie the recommender saw; seeker's response is not yet known.",
+      "emotion": "neutral, helpful",
+      "intention": "provide another option",
+      "conversational_goal": "keep recommendation options open"
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says they really like all kinds of movies and will watch a kids movie followed by a horror flick.",
+      "belief_before": "Seeker wants new movies; was unfamiliar with Bright; Star Wars was mentioned; genre preference was unknown.",
+      "belief_update": "Seeker has broad taste and specifically mentions kids movies and horror; there is no single genre restriction.",
+      "belief_after": "Recommender can recommend across genres, including kids and horror.",
+      "emotion": "pleased, engaged",
+      "intention": "tailor suggestions to broad, kids, and horror tastes",
+      "conversational_goal": "use stated preferences to recommend"
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says Bright is a Netflix original starring Will Smith.",
+      "belief_before": "Seeker has broad taste including kids and horror; was unfamiliar with Bright.",
+      "belief_update": "Recommender provides factual context for Bright to make it recognizable.",
+      "belief_after": "Bright has been explained; it is still unknown whether the seeker will want to watch it.",
+      "emotion": "helpful",
+      "intention": "explain Bright",
+      "conversational_goal": "make Bright concrete and appealing"
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says except for Star Wars they are not a fan, and adds 'oh yeah I did see that may have to watch that one.'",
+      "belief_before": "Seeker has broad taste; Bright was explained; Star Wars was mentioned.",
+      "belief_update": "Seeker rules out Star Wars and gives a mixed or possibly positive signal about one of the discussed titles, likely Bright. Recommender should adjust away from Star Wars.",
+      "belief_after": "Star Wars is deprioritized; Bright or another discussed title may still be possible.",
+      "emotion": "slightly corrective, redirecting",
+      "intention": "avoid Star Wars and focus on other genres or titles",
+      "conversational_goal": "re-align recommendations with the seeker's preferences"
+    },
+    {
+      "time": 9,
+      "observed": "Recommender suggests Coco (2017) if the seeker likes animation or kids movies.",
+      "belief_before": "Seeker likes all kinds of movies including kids and horror; is not a Star Wars fan; Bright may still be possible.",
+      "belief_update": "Recommender uses the seeker's kids/animation preference to recommend Coco.",
+      "belief_after": "Coco is offered as a tailored recommendation.",
+      "emotion": "positive, helpful",
+      "intention": "recommend Coco",
+      "conversational_goal": "match the known kids/animation preference"
+    },
+    {
+      "time": 10,
+      "observed": "Seeker says Coco is on their short list and they may check it out tonight.",
+      "belief_before": "Recommender suggested Coco based on kids/animation preference; seeker has broad taste.",
+      "belief_update": "Coco is already under consideration and may be watched; the recommendation receives a positive response.",
+      "belief_after": "Coco is a strong match; recommender's recommendation credibility is reinforced.",
+      "emotion": "pleased, encouraged",
+      "intention": "continue recommending compatible titles",
+      "conversational_goal": "build on a successful recommendation"
+    },
+    {
+      "time": 11,
+      "observed": "Recommender suggests Wonder Woman (2017) if the seeker likes action, and shares that they will watch a horror movie then an animation kids movie to calm their nerves.",
+      "belief_before": "Seeker likes broad genres including kids and horror; Coco was well received; seeker is not a Star Wars fan.",
+      "belief_update": "Recommender expands to action and builds rapport by mirroring the seeker's horror/animation viewing pattern.",
+      "belief_after": "Wonder Woman is offered; a shared viewing habit has been established.",
+      "emotion": "playful, amused",
+      "intention": "recommend action and bond with the seeker",
+      "conversational_goal": "expand recommendations and strengthen rapport"
+    },
+    {
+      "time": 12,
+      "observed": "Seeker says they have heard great things about Wonder Woman and agrees the horror-then-animation method is good.",
+      "belief_before": "Recommender suggested Wonder Woman and shared a viewing habit; Coco was accepted.",
+      "belief_update": "Wonder Woman receives positive social proof; the shared viewing habit is validated.",
+      "belief_after": "Seeker likely is open to action; rapport has increased.",
+      "emotion": "pleased, validated",
+      "intention": "continue with more recommendations",
+      "conversational_goal": "maintain positive rapport and momentum"
+    },
+    {
+      "time": 13,
+      "observed": "Recommender says they watched It (2017) in theatres and the seeker might like it as well.",
+      "belief_before": "Seeker likes broad genres including horror; agreed with the horror/animation routine; responded positively to Wonder Woman.",
+      "belief_update": "Recommender leverages the seeker's horror preference to recommend It.",
+      "belief_after": "It is offered as a horror recommendation.",
+      "emotion": "enthusiastic, helpful",
+      "intention": "recommend horror",
+      "conversational_goal": "match the seeker's horror interest"
+    },
+    {
+      "time": 14,
+      "observed": "Seeker says they fell asleep to It the other night and need to watch it again.",
+      "belief_before": "Recommender recommended It based on the seeker's horror preference.",
+      "belief_update": "Seeker has started or seen It but fell asleep; the reaction is ambiguous and may require a rewatch.",
+      "belief_after": "It is familiar but not fully experienced; the reason for falling asleep is unknown.",
+      "emotion": "amused, curious",
+      "intention": "clarify the seeker's reaction to It",
+      "conversational_goal": "understand whether It fit the seeker's horror taste"
+    },
+    {
+      "time": 15,
+      "observed": "Recommender asks, 'Not scary enough for you?'",
+      "belief_before": "Seeker fell asleep during It and wants to rewatch; horror preference is known.",
+      "belief_update": "Recommender hypothesizes that the film was not scary enough for the seeker.",
+      "belief_after": "Recommender is awaiting clarification about the seeker's horror threshold.",
+      "emotion": "teasing, curious",
+      "intention": "probe the seeker's horror preference",
+      "conversational_goal": "gauge whether the horror recommendation was too mild"
+    },
+    {
+      "time": 16,
+      "observed": "Seeker says no, they were just tired; they are weird about sleeping during movies they love; they mention Waiting for Armageddon (2009) then correct it to Armageddon (1997).",
+      "belief_before": "Recommender suspected It may not have been scary enough.",
+      "belief_update": "Sleep was due to fatigue or a personal habit, not scariness; seeker likes Armageddon (1997).",
+      "belief_after": "The horror threshold is not clarified as an issue; seeker has an unusual sleep habit and an Armageddon preference.",
+      "emotion": "amused, understanding",
+      "intention": "respond to the personal anecdote and relate to it",
+      "conversational_goal": "acknowledge the anecdote and build rapport"
+    },
+    {
+      "time": 17,
+      "observed": "Recommender says they haven't seen Armageddon, might check it out, and have been told to watch it and Braveheart (1995).",
+      "belief_before": "Seeker likes Armageddon and sleeps during movies they love.",
+      "belief_update": "Recommender reveals they have not seen Armageddon or Braveheart and that both are on their should-watch list.",
+      "belief_after": "A shared watchlist gap is established; the seeker may encourage the recommender.",
+      "emotion": "laughing, self-deprecating",
+      "intention": "reciprocate personal information and note a watchlist",
+      "conversational_goal": "maintain rapport through shared media gaps"
+    },
+    {
+      "time": 18,
+      "observed": "Seeker says 'oh wow yeah you need to on both' about Armageddon and Braveheart.",
+      "belief_before": "Recommender has not seen Armageddon or Braveheart and has been told to watch both.",
+      "belief_update": "Seeker strongly endorses both as must-watch films for the recommender.",
+      "belief_after": "Both are reinforced as recommendations for the recommender.",
+      "emotion": "pleased, amused",
+      "intention": "accept or plan to watch them and continue the friendly exchange",
+      "conversational_goal": "acknowledge the recommendation and close or continue rapport"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender initiates: 'Good evening!'; no information about the seeker yet.\",\n    \"belief_before\": \"No prior knowledge of the seeker or their preferences.\",\n    \"belief_update\": \"A conversational partner is present/available.\",\n    \"belief_after\": \"Dialogue has started; seeker's tastes and goals unknown.\",\n    \"emotion\": \"polite, neutral\",\n    \"intention\": \"greet and open the conversation\",\n    \"conversational_goal\": \"establish contact\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker asks whether there are new movies out that are worth watching.\",\n    \"belief_before\": \"Recommender only knows the seeker greeted them.\",\n    \"belief_update\": \"Seeker wants recent movie recommendations and is open to suggestions.\",\n    \"belief_after\": \"Seeker is seeking new worthwhile films; specific genres are unknown.\",\n    \"emotion\": \"helpful, neutral\",\n    \"intention\": \"learn genre preferences or propose movies\",\n    \"conversational_goal\": \"elicit preferences and offer recommendations\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks what genres the seeker is interested in and says Bright (2017) was really good even without the back story.\",\n    \"belief_before\": \"Seeker wants new movies; genre preference is unknown.\",\n    \"belief_update\": \"Recommender asks for genre information and offers Bright as a personal positive recommendation.\",\n    \"belief_after\": \"Bright is on the table as a suggestion; the seeker's genre preference is still unknown.\",\n    \"emotion\": \"positive, helpful\",\n    \"intention\": \"narrow preferences while sharing a favorite recent film\",\n    \"conversational_goal\": \"find a compatible genre and recommend Bright\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says 'hmm never heard of that one' about Bright.\",\n    \"belief_before\": \"Recommender believes the seeker wants new movies; genre unknown; Bright has been suggested.\",\n    \"belief_update\": \"Seeker is unfamiliar with Bright, so the recommendation may need explanation or replacement.\",\n    \"belief_after\": \"Bright is not known to the seeker.\",\n    \"emotion\": \"mild surprise, neutral\",\n    \"intention\": \"clarify Bright or pivot to another recent title\",\n    \"conversational_goal\": \"overcome unfamiliarity with the recommendation\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says they saw Star Wars: Episode VIII – The Last Jedi (2017).\",\n    \"belief_before\": \"Seeker is unfamiliar with Bright; genre preference is unknown.\",\n    \"belief_update\": \"Recommender offers another recent film they saw, perhaps as an alternative option.\",\n    \"belief_after\": \"Star Wars: Episode VIII has been mentioned as a movie the recommender saw; seeker's response is not yet known.\",\n    \"emotion\": \"neutral, helpful\",\n    \"intention\": \"provide another option\",\n    \"conversational_goal\": \"keep recommendation options open\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says they really like all kinds of movies and will watch a kids movie followed by a horror flick.\",\n    \"belief_before\": \"Seeker wants new movies; was unfamiliar with Bright; Star Wars was mentioned; genre preference was unknown.\",\n    \"belief_update\": \"Seeker has broad taste and specifically mentions kids movies and horror; there is no single genre restriction.\",\n    \"belief_after\": \"Recommender can recommend across genres, including kids and horror.\",\n    \"emotion\": \"pleased, engaged\",\n    \"intention\": \"tailor suggestions to broad, kids, and horror tastes\",\n    \"conversational_goal\": \"use stated preferences to recommend\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says Bright is a Netflix original starring Will Smith.\",\n    \"belief_before\": \"Seeker has broad taste including kids and horror; was unfamiliar with Bright.\",\n    \"belief_update\": \"Recommender provides factual context for Bright to make it recognizable.\",\n    \"belief_after\": \"Bright has been explained; it is still unknown whether the seeker will want to watch it.\",\n    \"emotion\": \"helpful\",\n    \"intention\": \"explain Bright\",\n    \"conversational_goal\": \"make Bright concrete and appealing\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says except for Star Wars they are not a fan, and adds 'oh yeah I did see that may have to watch that one.'\",\n    \"belief_before\": \"Seeker has broad taste; Bright was explained; Star Wars was mentioned.\",\n    \"belief_update\": \"Seeker rules out Star Wars and gives a mixed or possibly positive signal about one of the discussed titles, likely Bright. Recommender should adjust away from Star Wars.\",\n    \"belief_after\": \"Star Wars is deprioritized; Bright or another discussed title may still be possible.\",\n    \"emotion\": \"slightly corrective, redirecting\",\n    \"intention\": \"avoid Star Wars and focus on other genres or titles\",\n    \"conversational_goal\": \"re-align recommendations with the seeker's preferences\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Recommender suggests Coco (2017) if the seeker likes animation or kids movies.\",\n    \"belief_before\": \"Seeker likes all kinds of movies including kids and horror; is not a Star Wars fan; Bright may still be possible.\",\n    \"belief_update\": \"Recommender uses the seeker's kids/animation preference to recommend Coco.\",\n    \"belief_after\": \"Coco is offered as a tailored recommendation.\",\n    \"emotion\": \"positive, helpful\",\n    \"intention\": \"recommend Coco\",\n    \"conversational_goal\": \"match the known kids/animation preference\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"Seeker says Coco is on their short list and they may check it out tonight.\",\n    \"belief_before\": \"Recommender suggested Coco based on kids/animation preference; seeker has broad taste.\",\n    \"belief_update\": \"Coco is already under consideration and may be watched; the recommendation receives a positive response.\",\n    \"belief_after\": \"Coco is a strong match; recommender's recommendation credibility is reinforced.\",\n    \"emotion\": \"pleased, encouraged\",\n    \"intention\": \"continue recommending compatible titles\",\n    \"conversational_goal\": \"build on a successful recommendation\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"Recommender suggests Wonder Woman (2017) if the seeker likes action, and shares that they will watch a horror movie then an animation kids movie to calm their nerves.\",\n    \"belief_before\": \"Seeker likes broad genres including kids and horror; Coco was well received; seeker is not a Star Wars fan.\",\n    \"belief_update\": \"Recommender expands to action and builds rapport by mirroring the seeker's horror/animation viewing pattern.\",\n    \"belief_after\": \"Wonder Woman is offered; a shared viewing habit has been established.\",\n    \"emotion\": \"playful, amused\",\n    \"intention\": \"recommend action and bond with the seeker\",\n    \"conversational_goal\": \"expand recommendations and strengthen rapport\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"Seeker says they have heard great things about Wonder Woman and agrees the horror-then-animation method is good.\",\n    \"belief_before\": \"Recommender suggested Wonder Woman and shared a viewing habit; Coco was accepted.\",\n    \"belief_update\": \"Wonder Woman receives positive social proof; the shared viewing habit is validated.\",\n    \"belief_after\": \"Seeker likely is open to action; rapport has increased.\",\n    \"emotion\": \"pleased, validated\",\n    \"intention\": \"continue with more recommendations\",\n    \"conversational_goal\": \"maintain positive rapport and momentum\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"Recommender says they watched It (2017) in theatres and the seeker might like it as well.\",\n    \"belief_before\": \"Seeker likes broad genres including horror; agreed with the horror/animation routine; responded positively to Wonder Woman.\",\n    \"belief_update\": \"Recommender leverages the seeker's horror preference to recommend It.\",\n    \"belief_after\": \"It is offered as a horror recommendation.\",\n    \"emotion\": \"enthusiastic, helpful\",\n    \"intention\": \"recommend horror\",\n    \"conversational_goal\": \"match the seeker's horror interest\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"Seeker says they fell asleep to It the other night and need to watch it again.\",\n    \"belief_before\": \"Recommender recommended It based on the seeker's horror preference.\",\n    \"belief_update\": \"Seeker has started or seen It but fell asleep; the reaction is ambiguous and may require a rewatch.\",\n    \"belief_after\": \"It is familiar but not fully experienced; the reason for falling asleep is unknown.\",\n    \"emotion\": \"amused, curious\",\n    \"intention\": \"clarify the seeker's reaction to It\",\n    \"conversational_goal\": \"understand whether It fit the seeker's horror taste\"\n  },\n  {\n    \"time\": 15,\n    \"observed\": \"Recommender asks, 'Not scary enough for you?'\",\n    \"belief_before\": \"Seeker fell asleep during It and wants to rewatch; horror preference is known.\",\n    \"belief_update\": \"Recommender hypothesizes that the film was not scary enough for the seeker.\",\n    \"belief_after\": \"Recommender is awaiting clarification about the seeker's horror threshold.\",\n    \"emotion\": \"teasing, curious\",\n    \"intention\": \"probe the seeker's horror preference\",\n    \"conversational_goal\": \"gauge whether the horror recommendation was too mild\"\n  },\n  {\n    \"time\": 16,\n    \"observed\": \"Seeker says no, they were just tired; they are weird about sleeping during movies they love; they mention Waiting for Armageddon (2009) then correct it to Armageddon (1997).\",\n    \"belief_before\": \"Recommender suspected It may not have been scary enough.\",\n    \"belief_update\": \"Sleep was due to fatigue or a personal habit, not scariness; seeker likes Armageddon (1997).\",\n    \"belief_after\": \"The horror threshold is not clarified as an issue; seeker has an unusual sleep habit and an Armageddon preference.\",\n    \"emotion\": \"amused, understanding\",\n    \"intention\": \"respond to the personal anecdote and relate to it\",\n    \"conversational_goal\": \"acknowledge the anecdote and build rapport\"\n  },\n  {\n    \"time\": 17,\n    \"observed\": \"Recommender says they haven't seen Armageddon, might check it out, and have been told to watch it and Braveheart (1995).\",\n    \"belief_before\": \"Seeker likes Armageddon and sleeps during movies they love.\",\n    \"belief_update\": \"Recommender reveals they have not seen Armageddon or Braveheart and that both are on their should-watch list.\",\n    \"belief_after\": \"A shared watchlist gap is established; the seeker may encourage the recommender.\",\n    \"emotion\": \"laughing, self-deprecating\",\n    \"intention\": \"reciprocate personal information and note a watchlist\",\n    \"conversational_goal\": \"maintain rapport through shared media gaps\"\n  },\n  {\n    \"time\": 18,\n    \"observed\": \"Seeker says 'oh wow yeah you need to on both' about Armageddon and Braveheart.\",\n    \"belief_before\": \"Recommender has not seen Armageddon or Braveheart and has been told to watch both.\",\n    \"belief_update\": \"Seeker strongly endorses both as must-watch films for the recommender.\",\n    \"belief_after\": \"Both are reinforced as recommendations for the recommender.\",\n    \"emotion\": \"pleased, amused\",\n    \"intention\": \"accept or plan to watch them and continue the friendly exchange\",\n    \"conversational_goal\": \"acknowledge the recommendation and close or continue rapport\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "e",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

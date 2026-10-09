@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 157,
+  "item_id": "d2369_u4",
+  "dialogue_id": "2369",
+  "utterance_pos": 4,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi\nSEEKER says: Hello...I love comedy movies...Bridesmaids  (2011)   and How to Lose a Guy in 10 Days (2003)  are some of my favorite movies\nRECOMMENDER says: Sister Act (1992)  is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.\nSEEKER says: I have seen those, both really good choices；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi\nSEEKER says: Hello...I love comedy movies...Bridesmaids  (2011)   and How to Lose a Guy in 10 Days (2003)  are some of my favorite movies\nRECOMMENDER says: Sister Act (1992)  is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.\nSEEKER says: I have seen those, both really good choices；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.72,
+    "b": 0.64,
+    "c": 0.88,
+    "d": 0.35,
+    "e": 0.1
+  },
+  "score_reason": "The recommender has been suggesting films, so continuing to recommend or inquire further is most directly supported.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

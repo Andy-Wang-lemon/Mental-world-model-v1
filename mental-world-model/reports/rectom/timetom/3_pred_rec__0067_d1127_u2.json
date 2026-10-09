@@ -1,0 +1,39 @@
+{
+  "id": "3_pred_rec__0067_d1127_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: 'Hi, what movies you do like?' Information available: the dialogue has just started; the recommender has no information yet from the seeker about movie likes, needs, genre, or occasion.",
+      "belief_before": "At the start of the dialogue, the recommender has no specific belief about the seeker's movie preferences.",
+      "belief_update": "No update from another speaker yet; the recommender is initiating information gathering. No previous interpretation to change.",
+      "belief_after": "The recommender believes the seeker likely has movie preferences and that these preferences are currently unknown and should be elicited.",
+      "emotion": "Friendly, neutral, inquisitive.",
+      "intention": "Elicit the seeker's movie preferences so a recommendation can be made later.",
+      "conversational_goal": "Open the recommendation dialogue and gather initial preference information."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'Hello I'm looking for a good Christmas movie, any genre.' Information available: the recommender now knows the seeker wants a Christmas movie and does not restrict genre.",
+      "belief_before": "The recommender believed the seeker had unspecified movie preferences and needed to be asked what they like.",
+      "belief_update": "The seeker's reply updates the recommender: the target is a good Christmas movie, and genre is open. This changes the previous interpretation from general movie preference elicitation to a specific Christmas-movie request.",
+      "belief_after": "The recommender believes the seeker seeks a good Christmas movie of any genre, so the recommendation space is broad but focused on Christmas films.",
+      "emotion": "Attentive, helpful, receptive to the request.",
+      "intention": "Recommend a suitable Christmas movie or, if needed, narrow down non-genre constraints such as tone, era, or audience.",
+      "conversational_goal": "Provide a Christmas movie recommendation that fits the seeker's stated open-genre request."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: 'Hi, what movies you do like?' Information available: the dialogue has just started; the recommender has no information yet from the seeker about movie likes, needs, genre, or occasion.\",\n    \"belief_before\": \"At the start of the dialogue, the recommender has no specific belief about the seeker's movie preferences.\",\n    \"belief_update\": \"No update from another speaker yet; the recommender is initiating information gathering. No previous interpretation to change.\",\n    \"belief_after\": \"The recommender believes the seeker likely has movie preferences and that these preferences are currently unknown and should be elicited.\",\n    \"emotion\": \"Friendly, neutral, inquisitive.\",\n    \"intention\": \"Elicit the seeker's movie preferences so a recommendation can be made later.\",\n    \"conversational_goal\": \"Open the recommendation dialogue and gather initial preference information.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'Hello I'm looking for a good Christmas movie, any genre.' Information available: the recommender now knows the seeker wants a Christmas movie and does not restrict genre.\",\n    \"belief_before\": \"The recommender believed the seeker had unspecified movie preferences and needed to be asked what they like.\",\n    \"belief_update\": \"The seeker's reply updates the recommender: the target is a good Christmas movie, and genre is open. This changes the previous interpretation from general movie preference elicitation to a specific Christmas-movie request.\",\n    \"belief_after\": \"The recommender believes the seeker seeks a good Christmas movie of any genre, so the recommendation space is broad but focused on Christmas films.\",\n    \"emotion\": \"Attentive, helpful, receptive to the request.\",\n    \"intention\": \"Recommend a suitable Christmas movie or, if needed, narrow down non-genre constraints such as tone, era, or audience.\",\n    \"conversational_goal\": \"Provide a Christmas movie recommendation that fits the seeker's stated open-genre request.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

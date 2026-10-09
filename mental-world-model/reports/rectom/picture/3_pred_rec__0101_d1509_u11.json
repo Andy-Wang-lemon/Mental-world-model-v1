@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0101_d1509_u11",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- SEEKER likes suspense/thriller films, citing *Seven*.\n- SEEKER dislikes gory films like *Saw*.\n- SEEKER likes *Double Jeopardy* and *Gone Girl*.\n- SEEKER has seen and likes *The Zodiac* and likes murder mysteries.\n- RECOMMENDER suggested *Rear Window* (1954).\n- SEEKER has never heard of *Rear Window* and has just asked what it is about.\n\nRECOMMENDER does not know:\n- Whether SEEKER generally likes older films.\n- Whether SEEKER will like *Rear Window*.\n- Other specific movie preferences beyond those mentioned.\n- What exactly SEEKER wants to know about *Rear Window* beyond a plot/background explanation.\n\nGiven SEEKER directly asked what *Rear Window* is about, the natural next strategy is for RECOMMENDER to explain the recommended movie, likely giving a plot summary or background/reasoning for why it fits SEEKER’s tastes. This matches choice D.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

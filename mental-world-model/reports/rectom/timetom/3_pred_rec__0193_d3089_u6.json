@@ -1,0 +1,103 @@
+{
+  "id": "3_pred_rec__0193_d3089_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: Hello",
+      "information_available": "No prior dialogue; only the recommender's own greeting is present.",
+      "preferences": "Not yet stated.",
+      "belief_before": "No beliefs about the seeker or topic.",
+      "belief_update": "None; the recommender is opening the conversation.",
+      "belief_after": "The conversation is open, and the seeker has not yet stated any need.",
+      "emotion": "Neutral/polite.",
+      "intention": "Greet the seeker and invite conversation.",
+      "reaction_to_other": "N/A; no other speaker has spoken yet.",
+      "conversational_goal": "Initiate dialogue and create space for the seeker's request.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: Hi, I'm looking for a good super hero movie",
+      "information_available": "The recommender has heard that the seeker wants a good superhero movie.",
+      "preferences": "Recommender's own preferences are not yet stated; seeker's stated preference is for a good superhero movie.",
+      "belief_before": "The conversation is open, and the seeker has not yet stated any need.",
+      "belief_update": "The seeker is looking for a superhero movie recommendation.",
+      "belief_after": "The seeker wants a good superhero movie; the recommender should provide a suggestion.",
+      "emotion": "Attentive/helpful.",
+      "intention": "Understand the request and prepare a suitable recommendation.",
+      "reaction_to_other": "Receptive to the seeker's request.",
+      "conversational_goal": "Acknowledge the request and move toward recommending a superhero movie.",
+      "interpretation_change": "Yes; the interaction shifts from simple greeting to a concrete recommendation task."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: Ok, my personal favorite is Spider-Man (2002)",
+      "information_available": "The recommender knows the seeker wants a good superhero movie. The recommender has now stated a personal favorite.",
+      "preferences": "Recommender personally prefers Spider-Man (2002).",
+      "belief_before": "The seeker wants a good superhero movie.",
+      "belief_update": "The recommender offers Spider-Man (2002) as a recommendation based on personal preference.",
+      "belief_after": "The recommender believes Spider-Man (2002) is a strong candidate and hopes the seeker will like it.",
+      "emotion": "Enthusiastic/positive.",
+      "intention": "Recommend Spider-Man (2002).",
+      "reaction_to_other": "Responds to the seeker's request with a specific superhero movie suggestion.",
+      "conversational_goal": "Provide a superhero movie recommendation.",
+      "interpretation_change": "No new information about the seeker's taste; the recommendation is based on the recommender's own preference."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says: I have to admit Spider-Man (2002) didn't do it for me.",
+      "information_available": "The recommender learns that the seeker did not like Spider-Man (2002).",
+      "preferences": "Recommender still favors Spider-Man (2002); seeker dislikes it.",
+      "belief_before": "The recommender believed Spider-Man (2002) was a strong candidate for the seeker.",
+      "belief_update": "The seeker rejects Spider-Man (2002); the recommendation missed.",
+      "belief_after": "Spider-Man (2002) is not a good fit for the seeker, so another suggestion is needed.",
+      "emotion": "Surprised/disappointed.",
+      "intention": "Acknowledge the rejection and pivot to another recommendation.",
+      "reaction_to_other": "Notes the seeker's negative feedback without yet responding verbally.",
+      "conversational_goal": "Adjust the recommendation strategy after rejection.",
+      "interpretation_change": "Yes; the previous belief that Spider-Man (2002) would satisfy the seeker is revised downward."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says: Oh wow. Well, how about Superman (1978)? I prefer the one with Christopher Reeve.",
+      "information_available": "The recommender knows the seeker disliked Spider-Man (2002) and still wants a superhero movie. The recommender now offers Superman (1978) and states a preference for the Christopher Reeve version.",
+      "preferences": "Recommender prefers Superman (1978) with Christopher Reeve.",
+      "belief_before": "Spider-Man (2002) was not a fit; the seeker wants a superhero movie.",
+      "belief_update": "The recommender proposes Superman (1978) as an alternative based on a classic preference.",
+      "belief_after": "The recommender believes Superman (1978) may be more acceptable, though uncertain and hopeful.",
+      "emotion": "Surprised, then hopeful/helpful.",
+      "intention": "Recover from the rejection and recommend an alternative.",
+      "reaction_to_other": "Acknowledges the seeker's rejection with 'Oh wow' and responds constructively.",
+      "conversational_goal": "Offer a new superhero movie recommendation.",
+      "interpretation_change": "Yes; the strategy shifts from Spider-Man to Superman, adding a classic/Christopher Reeve preference."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says: I do love a good classic! Love superman as a character too.",
+      "information_available": "The recommender learns that the seeker likes classic movies and likes Superman as a character.",
+      "preferences": "Recommender prefers Superman (1978) with Christopher Reeve; seeker likes classics and the Superman character.",
+      "belief_before": "The recommender believed Superman (1978) might be more acceptable but was uncertain.",
+      "belief_update": "The seeker responds positively to classics and to Superman as a character, increasing the likelihood that Superman (1978) is a good fit.",
+      "belief_after": "The recommender believes Superman (1978) is promising and the seeker may accept or like it.",
+      "emotion": "Pleased/relieved/encouraged.",
+      "intention": "Build on the positive reaction and possibly confirm or proceed.",
+      "reaction_to_other": "Positive; the seeker's enthusiasm is encouraging.",
+      "conversational_goal": "Capitalize on positive feedback and move toward agreement or further recommendation.",
+      "interpretation_change": "Yes; prior uncertainty about whether the Superman suggestion fits is updated positively."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: Hello\",\n    \"information_available\": \"No prior dialogue; only the recommender's own greeting is present.\",\n    \"preferences\": \"Not yet stated.\",\n    \"belief_before\": \"No beliefs about the seeker or topic.\",\n    \"belief_update\": \"None; the recommender is opening the conversation.\",\n    \"belief_after\": \"The conversation is open, and the seeker has not yet stated any need.\",\n    \"emotion\": \"Neutral/polite.\",\n    \"intention\": \"Greet the seeker and invite conversation.\",\n    \"reaction_to_other\": \"N/A; no other speaker has spoken yet.\",\n    \"conversational_goal\": \"Initiate dialogue and create space for the seeker's request.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: Hi, I'm looking for a good super hero movie\",\n    \"information_available\": \"The recommender has heard that the seeker wants a good superhero movie.\",\n    \"preferences\": \"Recommender's own preferences are not yet stated; seeker's stated preference is for a good superhero movie.\",\n    \"belief_before\": \"The conversation is open, and the seeker has not yet stated any need.\",\n    \"belief_update\": \"The seeker is looking for a superhero movie recommendation.\",\n    \"belief_after\": \"The seeker wants a good superhero movie; the recommender should provide a suggestion.\",\n    \"emotion\": \"Attentive/helpful.\",\n    \"intention\": \"Understand the request and prepare a suitable recommendation.\",\n    \"reaction_to_other\": \"Receptive to the seeker's request.\",\n    \"conversational_goal\": \"Acknowledge the request and move toward recommending a superhero movie.\",\n    \"interpretation_change\": \"Yes; the interaction shifts from simple greeting to a concrete recommendation task.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: Ok, my personal favorite is Spider-Man (2002)\",\n    \"information_available\": \"The recommender knows the seeker wants a good superhero movie. The recommender has now stated a personal favorite.\",\n    \"preferences\": \"Recommender personally prefers Spider-Man (2002).\",\n    \"belief_before\": \"The seeker wants a good superhero movie.\",\n    \"belief_update\": \"The recommender offers Spider-Man (2002) as a recommendation based on personal preference.\",\n    \"belief_after\": \"The recommender believes Spider-Man (2002) is a strong candidate and hopes the seeker will like it.\",\n    \"emotion\": \"Enthusiastic/positive.\",\n    \"intention\": \"Recommend Spider-Man (2002).\",\n    \"reaction_to_other\": \"Responds to the seeker's request with a specific superhero movie suggestion.\",\n    \"conversational_goal\": \"Provide a superhero movie recommendation.\",\n    \"interpretation_change\": \"No new information about the seeker's taste; the recommendation is based on the recommender's own preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says: I have to admit Spider-Man (2002) didn't do it for me.\",\n    \"information_available\": \"The recommender learns that the seeker did not like Spider-Man (2002).\",\n    \"preferences\": \"Recommender still favors Spider-Man (2002); seeker dislikes it.\",\n    \"belief_before\": \"The recommender believed Spider-Man (2002) was a strong candidate for the seeker.\",\n    \"belief_update\": \"The seeker rejects Spider-Man (2002); the recommendation missed.\",\n    \"belief_after\": \"Spider-Man (2002) is not a good fit for the seeker, so another suggestion is needed.\",\n    \"emotion\": \"Surprised/disappointed.\",\n    \"intention\": \"Acknowledge the rejection and pivot to another recommendation.\",\n    \"reaction_to_other\": \"Notes the seeker's negative feedback without yet responding verbally.\",\n    \"conversational_goal\": \"Adjust the recommendation strategy after rejection.\",\n    \"interpretation_change\": \"Yes; the previous belief that Spider-Man (2002) would satisfy the seeker is revised downward.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says: Oh wow. Well, how about Superman (1978)? I prefer the one with Christopher Reeve.\",\n    \"information_available\": \"The recommender knows the seeker disliked Spider-Man (2002) and still wants a superhero movie. The recommender now offers Superman (1978) and states a preference for the Christopher Reeve version.\",\n    \"preferences\": \"Recommender prefers Superman (1978) with Christopher Reeve.\",\n    \"belief_before\": \"Spider-Man (2002) was not a fit; the seeker wants a superhero movie.\",\n    \"belief_update\": \"The recommender proposes Superman (1978) as an alternative based on a classic preference.\",\n    \"belief_after\": \"The recommender believes Superman (1978) may be more acceptable, though uncertain and hopeful.\",\n    \"emotion\": \"Surprised, then hopeful/helpful.\",\n    \"intention\": \"Recover from the rejection and recommend an alternative.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's rejection with 'Oh wow' and responds constructively.\",\n    \"conversational_goal\": \"Offer a new superhero movie recommendation.\",\n    \"interpretation_change\": \"Yes; the strategy shifts from Spider-Man to Superman, adding a classic/Christopher Reeve preference.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says: I do love a good classic! Love superman as a character too.\",\n    \"information_available\": \"The recommender learns that the seeker likes classic movies and likes Superman as a character.\",\n    \"preferences\": \"Recommender prefers Superman (1978) with Christopher Reeve; seeker likes classics and the Superman character.\",\n    \"belief_before\": \"The recommender believed Superman (1978) might be more acceptable but was uncertain.\",\n    \"belief_update\": \"The seeker responds positively to classics and to Superman as a character, increasing the likelihood that Superman (1978) is a good fit.\",\n    \"belief_after\": \"The recommender believes Superman (1978) is promising and the seeker may accept or like it.\",\n    \"emotion\": \"Pleased/relieved/encouraged.\",\n    \"intention\": \"Build on the positive reaction and possibly confirm or proceed.\",\n    \"reaction_to_other\": \"Positive; the seeker's enthusiasm is encouraging.\",\n    \"conversational_goal\": \"Capitalize on positive feedback and move toward agreement or further recommendation.\",\n    \"interpretation_change\": \"Yes; prior uncertainty about whether the Superman suggestion fits is updated positively.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

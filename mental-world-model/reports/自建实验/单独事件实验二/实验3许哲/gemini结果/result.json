@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3许哲.txt",
+  "agent": "许哲",
+  "stimulus": "许哲刚进公司时做算法，曾两次申请转产品岗，都没有通过。后来团队临时缺人，他接手一个产品并做得很好，此后正式转岗。几年后，领导向新人介绍他：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+  "thoughts": [
+    {
+      "text": "当年分明驳回了我两次申请，现在倒成了顺理成章的‘早就知道’。",
+      "probability": 0.5
+    },
+    {
+      "text": "虽然当时被卡了两次，不过也确实证明了我当初的坚持是对的。",
+      "probability": 0.35
+    },
+    {
+      "text": "典型的职场话术，只要结果是好的，过去的波折和阻力就被粉饰掉了。",
+      "probability": 0.15
+    }
+  ],
+  "top1": "当年分明驳回了我两次申请，现在倒成了顺理成章的‘早就知道’。",
+  "llm": {
+    "client": "http",
+    "model": "gemini-3.8-flash",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  }
+}

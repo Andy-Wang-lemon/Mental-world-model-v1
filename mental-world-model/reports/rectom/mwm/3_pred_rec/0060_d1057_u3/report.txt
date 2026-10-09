@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：60  d1057_u3
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "SEEKER 说出想找一部好喜剧并点出 Super Troopers 和 Beerfest 时，这个请求在 RECOMMENDER 心中立刻成为一个必须由自己接住的任务；同时，一个由那两部电影校准出的“好喜剧”刻度浮现出来，仿佛存在一个固定标准正等着他去匹配。",
+      "probability": 0.4486
+    },
+    {
+      "content": "RECOMMENDER 没有把 SEEKER 的喜好当作一则与自己无关的外部信息，而是把 Super Troopers 和 Beerfest 纳入自己必须承接的领域；这两部电影在 RECOMMENDER 的经验里变成需要被自己处理的对象，并且从其中升起一个固定的“好喜剧”定义，成为当前情境中一个有待满足的尺度。",
+      "probability": 0.3128
+    },
+    {
+      "content": "RECOMMENDER 感到 SEEKER 的喜剧请求完全落在自己肩上，眼前浮现出一个以 Super Troopers 和 Beerfest 为边界的推荐范围；在这个范围内，好喜剧只按照这两部电影的样子展开，而这两部电影之外的可能性被排除在视野之外，不成为可被考虑的对象。",
+      "probability": 0.2385
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "Hello 说出口的同时，RECOMMENDER 心里已经把这个请求接住了：这是落到我身上的事，得由我来回应。那两部电影在脑中立刻校准出一把尺子——好喜剧就该是 Super Troopers、Beerfest 那种味道。一个固定的标准像刻度一样摆在那里，等着他去对照、去匹配，仿佛只要按这个尺子找，就能给出让对方满意的答案。",
+      "activation": 0.4352
+    },
+    {
+      "content": "RECOMMENDER 把 SEEKER 的喜好接过来，当作自己需要回应的内容；Super Troopers 和 Beerfest 在 RECOMMENDER 心里不再是普通的两部电影，而是用来衡量“好喜剧”的参照。RECOMMENDER 感到接下来需要按这两部电影所代表的味道去寻找，并把这个由对方喜好撑起的尺度当作当前任务里必须满足的标准。",
+      "activation": 0.3109
+    },
+    {
+      "content": "RECOMMENDER感到这个找喜剧的请求已经落到自己身上，觉得必须由自己来满足。眼前自然浮现出以那两部电影为标杆的范围，认为只有符合对方喜好的那种搞笑风格才算合适，除此之外的喜剧片都不值得纳入考虑。回应一声“Hello~”时，心里已经把推荐方向锁定在这类作品上。",
+      "activation": 0.2539
+    }
+  ],
+  "observed_action": "RECOMMENDER 说出“Hello~”",
+  "predicted_actions": [
+    {
+      "content": "推荐电影",
+      "probability": 0.3389
+    },
+    {
+      "content": "答应帮忙寻找",
+      "probability": 0.1244
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.1088
+    },
+    {
+      "content": "确认偏好并追问条件",
+      "probability": 0.1088
+    },
+    {
+      "content": "暂未给出推荐",
+      "probability": 0.0653
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.2176, "b": 0.1897, "c": 0.3389, "d": 0, "e": 0}
+选择说明：A 0.2176 = 询问偏好 0.1088 + 确认偏好并追问条件 0.1088；B 0.1897 = 答应帮忙寻找 0.1244 + 暂未给出推荐 0.0653；C 0.3389 = 推荐电影 0.3389；D 0.0000；E 0.0000。推荐电影属于直接推荐，询问偏好和确认偏好属于询问偏好，其余为回应或未推荐。
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

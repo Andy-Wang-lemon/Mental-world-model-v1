@@ -1,0 +1,44 @@
+{
+  "id": "3_pred_rec__0024_d957_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "No prior user utterance is available; RECOMMENDER initiates with a greeting and offers help finding a comedy like Beerfest (2006) or The Blues Brothers (1980).",
+      "information_available": "No seeker-specific request, preference, or constraint yet; only the recommender's own opening and the two example comedy titles.",
+      "preferences": "Recommender presents Beerfest and The Blues Brothers as comedy reference points, but no seeker preference is known.",
+      "belief_before": "Before speaking, the recommender has no known seeker preferences or specific request.",
+      "belief_update": "No information from the seeker yet; the recommender's own turn introduces an open offer and comedy examples.",
+      "belief_after": "The recommender believes the seeker may want help finding a comedy and that Beerfest or The Blues Brothers can serve as possible anchors.",
+      "emotion": "Friendly, welcoming, helpful.",
+      "intention": "Open a recommendation dialogue and invite the seeker to state their comedy interests.",
+      "reaction_to_other_speaker": "Not applicable; no other speaker has spoken yet.",
+      "conversational_goal": "Establish contact and elicit the seeker's movie request or preferences.",
+      "changes_previous_interpretation": "Not applicable; this is the first turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Hi! I'm looking for some funny comedy movies. Something similar to She's Out of My League (2010).'",
+      "information_available": "The seeker confirms they want funny comedy movies and gives She's Out of My League (2010) as the similarity target.",
+      "preferences": "Seeker prefers funny comedies similar to She's Out of My League; this is more specific and may not align exactly with Beerfest/The Blues Brothers.",
+      "belief_before": "From time 1, the recommender had no specific seeker preference, only an open comedy offer with Beerfest and The Blues Brothers as examples.",
+      "belief_update": "The seeker's reply confirms comedy interest and supplies a specific reference movie: She's Out of My League (2010).",
+      "belief_after": "The recommender believes the seeker wants funny comedy recommendations in the vein of She's Out of My League, so recommendations should be adjusted toward that reference.",
+      "emotion": "Attentive, positive, ready to help; possibly recalibrating from the earlier generic comedy examples.",
+      "intention": "Acknowledge the request and prepare to recommend or discuss comedies similar to She's Out of My League.",
+      "reaction_to_other_speaker": "Receptive and responsive to the seeker's greeting and clarified request.",
+      "conversational_goal": "Narrow the recommendation space to funny comedies like She's Out of My League and provide useful suggestions or ask clarifying questions.",
+      "changes_previous_interpretation": "Yes. The earlier generic comedy framing is narrowed by the specific She's Out of My League anchor, so the recommender should not rely only on Beerfest/The Blues Brothers."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"No prior user utterance is available; RECOMMENDER initiates with a greeting and offers help finding a comedy like Beerfest (2006) or The Blues Brothers (1980).\",\n    \"information_available\": \"No seeker-specific request, preference, or constraint yet; only the recommender's own opening and the two example comedy titles.\",\n    \"preferences\": \"Recommender presents Beerfest and The Blues Brothers as comedy reference points, but no seeker preference is known.\",\n    \"belief_before\": \"Before speaking, the recommender has no known seeker preferences or specific request.\",\n    \"belief_update\": \"No information from the seeker yet; the recommender's own turn introduces an open offer and comedy examples.\",\n    \"belief_after\": \"The recommender believes the seeker may want help finding a comedy and that Beerfest or The Blues Brothers can serve as possible anchors.\",\n    \"emotion\": \"Friendly, welcoming, helpful.\",\n    \"intention\": \"Open a recommendation dialogue and invite the seeker to state their comedy interests.\",\n    \"reaction_to_other_speaker\": \"Not applicable; no other speaker has spoken yet.\",\n    \"conversational_goal\": \"Establish contact and elicit the seeker's movie request or preferences.\",\n    \"changes_previous_interpretation\": \"Not applicable; this is the first turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Hi! I'm looking for some funny comedy movies. Something similar to She's Out of My League (2010).'\",\n    \"information_available\": \"The seeker confirms they want funny comedy movies and gives She's Out of My League (2010) as the similarity target.\",\n    \"preferences\": \"Seeker prefers funny comedies similar to She's Out of My League; this is more specific and may not align exactly with Beerfest/The Blues Brothers.\",\n    \"belief_before\": \"From time 1, the recommender had no specific seeker preference, only an open comedy offer with Beerfest and The Blues Brothers as examples.\",\n    \"belief_update\": \"The seeker's reply confirms comedy interest and supplies a specific reference movie: She's Out of My League (2010).\",\n    \"belief_after\": \"The recommender believes the seeker wants funny comedy recommendations in the vein of She's Out of My League, so recommendations should be adjusted toward that reference.\",\n    \"emotion\": \"Attentive, positive, ready to help; possibly recalibrating from the earlier generic comedy examples.\",\n    \"intention\": \"Acknowledge the request and prepare to recommend or discuss comedies similar to She's Out of My League.\",\n    \"reaction_to_other_speaker\": \"Receptive and responsive to the seeker's greeting and clarified request.\",\n    \"conversational_goal\": \"Narrow the recommendation space to funny comedies like She's Out of My League and provide useful suggestions or ask clarifying questions.\",\n    \"changes_previous_interpretation\": \"Yes. The earlier generic comedy framing is narrowed by the specific She's Out of My League anchor, so the recommender should not rely only on Beerfest/The Blues Brothers.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

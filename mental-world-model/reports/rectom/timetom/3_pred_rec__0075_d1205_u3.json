@@ -1,0 +1,61 @@
+{
+  "id": "3_pred_rec__0075_d1205_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hey How are you'",
+      "information_available_to_target": "Only the seeker's greeting. No recommendation topic, movie preference, or other substantive information has been disclosed yet.",
+      "preferences": "No known seeker preferences. No explicit target movie preferences are available.",
+      "belief_before": "Initial state: no prior information about the seeker.",
+      "belief_update": "The seeker is initiating a social greeting and appears willing to interact.",
+      "belief_after": "The seeker has greeted the recommender; no substantive preference information is known.",
+      "emotion": "Neutral to politely welcoming.",
+      "intention": "Respond socially and keep the conversation open while learning what the seeker wants.",
+      "reaction_to_other": "Positive/neutral acknowledgment of the greeting.",
+      "conversational_goal": "Return the greeting and establish rapport.",
+      "changes_previous_interpretation": "Not applicable; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hello, how are you? What kind of movies do you like?'",
+      "information_available_to_target": "The seeker's greeting from turn 1 plus the recommender's own utterance introducing movie preferences as the topic.",
+      "preferences": "The seeker's movie preferences are still unknown. The recommender shows an immediate preference to learn the seeker's movie taste before recommending.",
+      "belief_before": "The seeker has greeted and seems open to conversation; no movie preferences are known.",
+      "belief_update": "The recommender elects to ask about movie preferences, indicating that movies are the intended recommendation domain.",
+      "belief_after": "The recommender has asked for movie preferences and is awaiting the seeker's response; no preference information is known yet.",
+      "emotion": "Friendly, polite, and helpful.",
+      "intention": "Greet back, check on the seeker, and elicit movie preferences to guide a recommendation.",
+      "reaction_to_other": "Friendly and engaged with the seeker's greeting.",
+      "conversational_goal": "Move from social greeting to preference elicitation for a movie recommendation.",
+      "changes_previous_interpretation": "No new fact about the seeker's taste is learned, but the conversational frame changes from greeting-only to active preference elicitation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I amreally into everything...I really like foreign movies as well...it is really my thing'",
+      "information_available_to_target": "All prior turns plus the seeker's stated preferences: they like a broad range of movies and especially like foreign movies.",
+      "preferences": "The seeker reports being open to everything/broad genres and has a strong preference for foreign movies.",
+      "belief_before": "The seeker's movie preferences were unknown; the recommender had just asked what kinds of movies the seeker likes.",
+      "belief_update": "The seeker is broad-minded across genres and has a particularly strong interest in foreign films.",
+      "belief_after": "The recommender can consider broad recommendations but should emphasize foreign films; further narrowing may be useful.",
+      "emotion": "Interested, positive, and encouraged by the useful preference information.",
+      "intention": "Use the newly disclosed preferences to form recommendation options and possibly ask follow-up questions.",
+      "reaction_to_other": "Positive and engaged; treats the seeker's response as useful preference information.",
+      "conversational_goal": "Acknowledge the preference and proceed toward recommendations, likely with foreign-film emphasis.",
+      "changes_previous_interpretation": "Yes: the previous belief of unknown preferences updates to broad taste with a strong foreign-film preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hey How are you'\",\n    \"information_available_to_target\": \"Only the seeker's greeting. No recommendation topic, movie preference, or other substantive information has been disclosed yet.\",\n    \"preferences\": \"No known seeker preferences. No explicit target movie preferences are available.\",\n    \"belief_before\": \"Initial state: no prior information about the seeker.\",\n    \"belief_update\": \"The seeker is initiating a social greeting and appears willing to interact.\",\n    \"belief_after\": \"The seeker has greeted the recommender; no substantive preference information is known.\",\n    \"emotion\": \"Neutral to politely welcoming.\",\n    \"intention\": \"Respond socially and keep the conversation open while learning what the seeker wants.\",\n    \"reaction_to_other\": \"Positive/neutral acknowledgment of the greeting.\",\n    \"conversational_goal\": \"Return the greeting and establish rapport.\",\n    \"changes_previous_interpretation\": \"Not applicable; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hello, how are you? What kind of movies do you like?'\",\n    \"information_available_to_target\": \"The seeker's greeting from turn 1 plus the recommender's own utterance introducing movie preferences as the topic.\",\n    \"preferences\": \"The seeker's movie preferences are still unknown. The recommender shows an immediate preference to learn the seeker's movie taste before recommending.\",\n    \"belief_before\": \"The seeker has greeted and seems open to conversation; no movie preferences are known.\",\n    \"belief_update\": \"The recommender elects to ask about movie preferences, indicating that movies are the intended recommendation domain.\",\n    \"belief_after\": \"The recommender has asked for movie preferences and is awaiting the seeker's response; no preference information is known yet.\",\n    \"emotion\": \"Friendly, polite, and helpful.\",\n    \"intention\": \"Greet back, check on the seeker, and elicit movie preferences to guide a recommendation.\",\n    \"reaction_to_other\": \"Friendly and engaged with the seeker's greeting.\",\n    \"conversational_goal\": \"Move from social greeting to preference elicitation for a movie recommendation.\",\n    \"changes_previous_interpretation\": \"No new fact about the seeker's taste is learned, but the conversational frame changes from greeting-only to active preference elicitation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I amreally into everything...I really like foreign movies as well...it is really my thing'\",\n    \"information_available_to_target\": \"All prior turns plus the seeker's stated preferences: they like a broad range of movies and especially like foreign movies.\",\n    \"preferences\": \"The seeker reports being open to everything/broad genres and has a strong preference for foreign movies.\",\n    \"belief_before\": \"The seeker's movie preferences were unknown; the recommender had just asked what kinds of movies the seeker likes.\",\n    \"belief_update\": \"The seeker is broad-minded across genres and has a particularly strong interest in foreign films.\",\n    \"belief_after\": \"The recommender can consider broad recommendations but should emphasize foreign films; further narrowing may be useful.\",\n    \"emotion\": \"Interested, positive, and encouraged by the useful preference information.\",\n    \"intention\": \"Use the newly disclosed preferences to form recommendation options and possibly ask follow-up questions.\",\n    \"reaction_to_other\": \"Positive and engaged; treats the seeker's response as useful preference information.\",\n    \"conversational_goal\": \"Acknowledge the preference and proceed toward recommendations, likely with foreign-film emphasis.\",\n    \"changes_previous_interpretation\": \"Yes: the previous belief of unknown preferences updates to broad taste with a strong foreign-film preference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

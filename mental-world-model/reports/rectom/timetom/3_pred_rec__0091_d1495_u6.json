@@ -1,0 +1,80 @@
+{
+  "id": "3_pred_rec__0091_d1495_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets seeker: 'Hi...How are you?...What kind of movies are you looking for?' Information available: no prior context or stated genre/title preference.",
+      "belief_before": "No prior beliefs about this seeker; assumes seeker is a user seeking a movie recommendation but genre is unknown.",
+      "belief_update": "Opening establishes contact and requests preferences; no substantive preference learned yet. Interpretation change: none (initial turn).",
+      "belief_after": "Seeker wants a movie recommendation; genre and taste unknown. Recommender's own preference: be helpful/welcoming.",
+      "emotion": "Friendly, welcoming, curious.",
+      "intention": "Greet the seeker, build rapport, and elicit movie preferences.",
+      "conversational_goal": "Open the recommendation dialogue and gather enough information to suggest a movie."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says hello, is good, and asks for 'a drama like Extremely Loud and Incredibly Close (2011)'. Information available to recommender: seeker wants a drama similar to that film.",
+      "belief_before": "Recommender believes seeker wants a movie recommendation; genre unknown.",
+      "belief_update": "Learns seeker's requested genre is drama and the desired similarity is to 'Extremely Loud and Incredibly Close' (2011). Previous unknown-genre interpretation changes to a specific drama/emotional-similarity request.",
+      "belief_after": "Seeker wants a drama akin to 'Extremely Loud and Incredibly Close'; likely values poignant/emotional drama. Inferred seeker preference: drama, emotional similarity.",
+      "emotion": "Attentive and receptive to the request.",
+      "intention": "Identify dramas similar to the seeker's stated example.",
+      "conversational_goal": "Find a drama recommendation that matches 'Extremely Loud and Incredibly Close'."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says 'Okay' and recommends Road to Perdition (2002) as a good drama with Tom Hanks.",
+      "belief_before": "Seeker wants a drama like 'Extremely Loud and Incredibly Close'; no further preferences known.",
+      "belief_update": "Recommender proposes Road to Perdition as a candidate drama with Tom Hanks. No new seeker preference is learned from the recommender's own utterance. Interpretation change: no major change; adds a candidate.",
+      "belief_after": "Road to Perdition is offered as a possible drama recommendation; recommender believes it fits the drama request and features Tom Hanks. Recommender's own view: it is a good drama.",
+      "emotion": "Helpful and affirmative.",
+      "intention": "Offer a concrete drama recommendation to satisfy the seeker's request.",
+      "conversational_goal": "Test whether Road to Perdition appeals to the seeker and move toward a suitable recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says he hasn't seen Road to Perdition but loves Tom Hanks.",
+      "belief_before": "Recommender has proposed Road to Perdition; seeker wants a drama like 'Extremely Loud and Incredibly Close'.",
+      "belief_update": "Learns seeker has not seen Road to Perdition and has a strong positive preference for Tom Hanks. Previous interpretation changes by adding Tom Hanks as a salient preference.",
+      "belief_after": "Seeker likes Tom Hanks; Road to Perdition remains an unseen candidate; Tom Hanks is now a useful feature for future recommendations. Inferred seeker preferences: drama, Tom Hanks.",
+      "emotion": "Encouraged and pleased by the seeker's Tom Hanks enthusiasm.",
+      "intention": "Use the newly learned Tom Hanks preference to refine recommendations.",
+      "conversational_goal": "Recommend or highlight Tom Hanks dramas that fit the seeker's drama request."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender suggests It's Kind of a Funny Story (2010) as a funny drama, then says Tom Hanks is great in Cast Away (2000), calling it another classic.",
+      "belief_before": "Seeker wants a drama like 'Extremely Loud and Incredibly Close', loves Tom Hanks, and hasn't seen Road to Perdition.",
+      "belief_update": "Recommender offers two additional options and leverages the known Tom Hanks preference with Cast Away; also presents It's Kind of a Funny Story as a funny drama. Interpretation change: recommendation strategy shifts toward Tom Hanks and broader drama options.",
+      "belief_after": "Candidates now include It's Kind of a Funny Story and Cast Away; Tom Hanks is a salient factor. Recommender's own views: Cast Away is a classic and Tom Hanks is great in it. Inferred seeker preferences: drama, Tom Hanks.",
+      "emotion": "Helpful and enthusiastic about Tom Hanks.",
+      "intention": "Propose alternatives that align with the seeker's drama request and Tom Hanks preference.",
+      "conversational_goal": "Find a movie the seeker will accept, likely a Tom Hanks drama or a comparable drama."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says no, he hasn't seen that one either, and exclaims 'Ooh yeah I really liked Cast Away (2000).'",
+      "belief_before": "Recommender has proposed It's Kind of a Funny Story and Cast Away; knows seeker loves Tom Hanks.",
+      "belief_update": "Learns seeker has not seen It's Kind of a Funny Story, and has seen and really liked Cast Away. Cast Away is therefore no longer a new recommendation; It's Kind of a Funny Story remains an unseen candidate. Previous interpretation changes: Cast Away moves from possible new recommendation to already-seen/liked.",
+      "belief_after": "It's Kind of a Funny Story is still an unseen candidate; Cast Away is liked but already seen, so not a new watch option; seeker's Tom Hanks preference is confirmed. Inferred seeker preferences: drama, Tom Hanks, and apparently liked Cast Away.",
+      "emotion": "Pleased by the shared liking of Cast Away, while remaining helpful.",
+      "intention": "Adjust the next recommendation toward unseen films, likely Tom Hanks or suitable dramas, and avoid offering Cast Away as new.",
+      "conversational_goal": "Narrow toward an unwatched film that matches the seeker's drama and Tom Hanks preferences."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets seeker: 'Hi...How are you?...What kind of movies are you looking for?' Information available: no prior context or stated genre/title preference.\",\n    \"belief_before\": \"No prior beliefs about this seeker; assumes seeker is a user seeking a movie recommendation but genre is unknown.\",\n    \"belief_update\": \"Opening establishes contact and requests preferences; no substantive preference learned yet. Interpretation change: none (initial turn).\",\n    \"belief_after\": \"Seeker wants a movie recommendation; genre and taste unknown. Recommender's own preference: be helpful/welcoming.\",\n    \"emotion\": \"Friendly, welcoming, curious.\",\n    \"intention\": \"Greet the seeker, build rapport, and elicit movie preferences.\",\n    \"conversational_goal\": \"Open the recommendation dialogue and gather enough information to suggest a movie.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says hello, is good, and asks for 'a drama like Extremely Loud and Incredibly Close (2011)'. Information available to recommender: seeker wants a drama similar to that film.\",\n    \"belief_before\": \"Recommender believes seeker wants a movie recommendation; genre unknown.\",\n    \"belief_update\": \"Learns seeker's requested genre is drama and the desired similarity is to 'Extremely Loud and Incredibly Close' (2011). Previous unknown-genre interpretation changes to a specific drama/emotional-similarity request.\",\n    \"belief_after\": \"Seeker wants a drama akin to 'Extremely Loud and Incredibly Close'; likely values poignant/emotional drama. Inferred seeker preference: drama, emotional similarity.\",\n    \"emotion\": \"Attentive and receptive to the request.\",\n    \"intention\": \"Identify dramas similar to the seeker's stated example.\",\n    \"conversational_goal\": \"Find a drama recommendation that matches 'Extremely Loud and Incredibly Close'.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says 'Okay' and recommends Road to Perdition (2002) as a good drama with Tom Hanks.\",\n    \"belief_before\": \"Seeker wants a drama like 'Extremely Loud and Incredibly Close'; no further preferences known.\",\n    \"belief_update\": \"Recommender proposes Road to Perdition as a candidate drama with Tom Hanks. No new seeker preference is learned from the recommender's own utterance. Interpretation change: no major change; adds a candidate.\",\n    \"belief_after\": \"Road to Perdition is offered as a possible drama recommendation; recommender believes it fits the drama request and features Tom Hanks. Recommender's own view: it is a good drama.\",\n    \"emotion\": \"Helpful and affirmative.\",\n    \"intention\": \"Offer a concrete drama recommendation to satisfy the seeker's request.\",\n    \"conversational_goal\": \"Test whether Road to Perdition appeals to the seeker and move toward a suitable recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says he hasn't seen Road to Perdition but loves Tom Hanks.\",\n    \"belief_before\": \"Recommender has proposed Road to Perdition; seeker wants a drama like 'Extremely Loud and Incredibly Close'.\",\n    \"belief_update\": \"Learns seeker has not seen Road to Perdition and has a strong positive preference for Tom Hanks. Previous interpretation changes by adding Tom Hanks as a salient preference.\",\n    \"belief_after\": \"Seeker likes Tom Hanks; Road to Perdition remains an unseen candidate; Tom Hanks is now a useful feature for future recommendations. Inferred seeker preferences: drama, Tom Hanks.\",\n    \"emotion\": \"Encouraged and pleased by the seeker's Tom Hanks enthusiasm.\",\n    \"intention\": \"Use the newly learned Tom Hanks preference to refine recommendations.\",\n    \"conversational_goal\": \"Recommend or highlight Tom Hanks dramas that fit the seeker's drama request.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender suggests It's Kind of a Funny Story (2010) as a funny drama, then says Tom Hanks is great in Cast Away (2000), calling it another classic.\",\n    \"belief_before\": \"Seeker wants a drama like 'Extremely Loud and Incredibly Close', loves Tom Hanks, and hasn't seen Road to Perdition.\",\n    \"belief_update\": \"Recommender offers two additional options and leverages the known Tom Hanks preference with Cast Away; also presents It's Kind of a Funny Story as a funny drama. Interpretation change: recommendation strategy shifts toward Tom Hanks and broader drama options.\",\n    \"belief_after\": \"Candidates now include It's Kind of a Funny Story and Cast Away; Tom Hanks is a salient factor. Recommender's own views: Cast Away is a classic and Tom Hanks is great in it. Inferred seeker preferences: drama, Tom Hanks.\",\n    \"emotion\": \"Helpful and enthusiastic about Tom Hanks.\",\n    \"intention\": \"Propose alternatives that align with the seeker's drama request and Tom Hanks preference.\",\n    \"conversational_goal\": \"Find a movie the seeker will accept, likely a Tom Hanks drama or a comparable drama.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says no, he hasn't seen that one either, and exclaims 'Ooh yeah I really liked Cast Away (2000).'\",\n    \"belief_before\": \"Recommender has proposed It's Kind of a Funny Story and Cast Away; knows seeker loves Tom Hanks.\",\n    \"belief_update\": \"Learns seeker has not seen It's Kind of a Funny Story, and has seen and really liked Cast Away. Cast Away is therefore no longer a new recommendation; It's Kind of a Funny Story remains an unseen candidate. Previous interpretation changes: Cast Away moves from possible new recommendation to already-seen/liked.\",\n    \"belief_after\": \"It's Kind of a Funny Story is still an unseen candidate; Cast Away is liked but already seen, so not a new watch option; seeker's Tom Hanks preference is confirmed. Inferred seeker preferences: drama, Tom Hanks, and apparently liked Cast Away.\",\n    \"emotion\": \"Pleased by the shared liking of Cast Away, while remaining helpful.\",\n    \"intention\": \"Adjust the next recommendation toward unseen films, likely Tom Hanks or suitable dramas, and avoid offering Cast Away as new.\",\n    \"conversational_goal\": \"Narrow toward an unwatched film that matches the seeker's drama and Tom Hanks preferences.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

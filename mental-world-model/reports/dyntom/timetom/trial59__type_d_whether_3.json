@@ -1,0 +1,61 @@
+{
+  "id": "trial59__type_d_whether_3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Ethan Mohamud",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Gary has been working excessively long hours at the hospital, often skipping meals and sacrificing sleep. When Ethan invites him to a weekend retreat, Gary declines, saying there is too much to do at the hospital.",
+      "belief_before": "Ethan believes Gary is a dedicated hospital worker and longtime friend, but does not yet know the full reasons for Gary's overwork.",
+      "belief_update": "Yes; Ethan's concern is confirmed and deepened: Gary's overwork is serious, and Gary feels unable to step away because of hospital obligations.",
+      "belief_after": "Gary is overworked, neglecting his health, and currently unwilling or unable to take a break because of work demands.",
+      "emotion": "Concerned and worried",
+      "intention": "To intervene supportively and help Gary find a way to rest and protect his health."
+    },
+    {
+      "time": 2,
+      "observed": "During the retreat, Gary is restless and avoids discussions about work. When Ethan confronts him, Gary says it is complicated and that he did not want to burden Ethan.",
+      "belief_before": "Gary is overworked due to hospital demands, is neglecting his health, and initially resisted taking a break.",
+      "belief_update": "Yes; Ethan now suspects Gary's overwork involves deeper, complicated issues beyond routine professional obligations, and Gary has been withholding them to avoid burdening him.",
+      "belief_after": "Gary is carrying complicated problems he has not shared; his overwork is not just a simple scheduling issue, and he may need nonjudgmental support to open up.",
+      "emotion": "Worried, concerned, and empathetic",
+      "intention": "To encourage Gary to open up and reassure him that he can share without judgment."
+    },
+    {
+      "time": 3,
+      "observed": "Gary opens up about the pressures of managing a new department and the personal challenges he is facing. Gary agrees to try prioritizing tasks and delegating responsibilities.",
+      "belief_before": "Gary is hiding complicated personal and professional burdens and needs help to open up.",
+      "belief_update": "Yes; Ethan learns the specific reasons behind Gary's overwork: new department pressures and personal challenges. He also sees a practical path to help Gary rebalance.",
+      "belief_after": "Gary's overwork is understandable given concrete pressures and personal challenges; with planning and delegation, Gary can begin to find better balance.",
+      "emotion": "Relief and empathy",
+      "intention": "To help Gary organize his schedule, prioritize tasks, delegate responsibilities, and find a healthier work-life balance."
+    },
+    {
+      "time": 4,
+      "observed": "Over the following months, Ethan regularly checks in with Gary and sees Gary making efforts to change. Gary reports feeling better, less overwhelmed, and having had time for a movie.",
+      "belief_before": "Gary is working toward better balance with Ethan's support, but still faces challenges and needs ongoing encouragement.",
+      "belief_update": "Yes; Ethan sees that Gary's efforts are producing real progress and that Gary is becoming less overwhelmed.",
+      "belief_after": "Gary is making meaningful progress toward a healthier balance and is benefiting from Ethan's ongoing support.",
+      "emotion": "Hopeful and proud",
+      "intention": "To continue checking in, offering support and encouragement, and discussing challenges as Gary progresses."
+    },
+    {
+      "time": 5,
+      "observed": "After a year, Gary has successfully adjusted to a healthier work-life balance and is managing on his own. Gary thanks Ethan and says he feels more in control.",
+      "belief_before": "Gary has been improving and still benefits from Ethan's support and check-ins, though he is increasingly capable.",
+      "belief_update": "Yes; Ethan concludes that Gary can now maintain his healthier balance independently and no longer needs active intervention.",
+      "belief_after": "Gary has successfully adjusted, is capable of managing on his own, and knows Ethan remains available if needed.",
+      "emotion": "Satisfied and happy",
+      "intention": "To step back from active support while letting Gary know he can still call if needed."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Gary has been working excessively long hours at the hospital, often skipping meals and sacrificing sleep. When Ethan invites him to a weekend retreat, Gary declines, saying there is too much to do at the hospital.\",\n    \"belief_before\": \"Ethan believes Gary is a dedicated hospital worker and longtime friend, but does not yet know the full reasons for Gary's overwork.\",\n    \"belief_update\": \"Yes; Ethan's concern is confirmed and deepened: Gary's overwork is serious, and Gary feels unable to step away because of hospital obligations.\",\n    \"belief_after\": \"Gary is overworked, neglecting his health, and currently unwilling or unable to take a break because of work demands.\",\n    \"emotion\": \"Concerned and worried\",\n    \"intention\": \"To intervene supportively and help Gary find a way to rest and protect his health.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"During the retreat, Gary is restless and avoids discussions about work. When Ethan confronts him, Gary says it is complicated and that he did not want to burden Ethan.\",\n    \"belief_before\": \"Gary is overworked due to hospital demands, is neglecting his health, and initially resisted taking a break.\",\n    \"belief_update\": \"Yes; Ethan now suspects Gary's overwork involves deeper, complicated issues beyond routine professional obligations, and Gary has been withholding them to avoid burdening him.\",\n    \"belief_after\": \"Gary is carrying complicated problems he has not shared; his overwork is not just a simple scheduling issue, and he may need nonjudgmental support to open up.\",\n    \"emotion\": \"Worried, concerned, and empathetic\",\n    \"intention\": \"To encourage Gary to open up and reassure him that he can share without judgment.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Gary opens up about the pressures of managing a new department and the personal challenges he is facing. Gary agrees to try prioritizing tasks and delegating responsibilities.\",\n    \"belief_before\": \"Gary is hiding complicated personal and professional burdens and needs help to open up.\",\n    \"belief_update\": \"Yes; Ethan learns the specific reasons behind Gary's overwork: new department pressures and personal challenges. He also sees a practical path to help Gary rebalance.\",\n    \"belief_after\": \"Gary's overwork is understandable given concrete pressures and personal challenges; with planning and delegation, Gary can begin to find better balance.\",\n    \"emotion\": \"Relief and empathy\",\n    \"intention\": \"To help Gary organize his schedule, prioritize tasks, delegate responsibilities, and find a healthier work-life balance.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Over the following months, Ethan regularly checks in with Gary and sees Gary making efforts to change. Gary reports feeling better, less overwhelmed, and having had time for a movie.\",\n    \"belief_before\": \"Gary is working toward better balance with Ethan's support, but still faces challenges and needs ongoing encouragement.\",\n    \"belief_update\": \"Yes; Ethan sees that Gary's efforts are producing real progress and that Gary is becoming less overwhelmed.\",\n    \"belief_after\": \"Gary is making meaningful progress toward a healthier balance and is benefiting from Ethan's ongoing support.\",\n    \"emotion\": \"Hopeful and proud\",\n    \"intention\": \"To continue checking in, offering support and encouragement, and discussing challenges as Gary progresses.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"After a year, Gary has successfully adjusted to a healthier work-life balance and is managing on his own. Gary thanks Ethan and says he feels more in control.\",\n    \"belief_before\": \"Gary has been improving and still benefits from Ethan's support and check-ins, though he is increasingly capable.\",\n    \"belief_update\": \"Yes; Ethan concludes that Gary can now maintain his healthier balance independently and no longer needs active intervention.\",\n    \"belief_after\": \"Gary has successfully adjusted, is capable of managing on his own, and knows Ethan remains available if needed.\",\n    \"emotion\": \"Satisfied and happy\",\n    \"intention\": \"To step back from active support while letting Gary know he can still call if needed.\"\n  }\n]",
+  "final_response": "ANSWER: d",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial59"
+}

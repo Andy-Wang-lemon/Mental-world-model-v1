@@ -1,0 +1,54 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在RECOMMENDER的体验中，SEEKER最初那句‘帮我找一部好喜剧’像一份落到自己手上的委托，变成一件必须完成的事；随后SEEKER对Super Troopers、Beerfest的喜欢和对Friday的不喜欢则化作一组固定条目，这些条目像任务说明书上的硬性筛选条件，使每一部电影都在RECOMMENDER眼前显露出‘符合’或‘不符合’的明暗。",
+      "probability": 0.3663
+    },
+    {
+      "content": "在RECOMMENDER的体验中，SEEKER那句‘Awesome I love that one’像一束聚光灯打在RECOMMENDER身上，把他照成‘推荐得好’的那个人；而SEEKER对Super Troopers、Beerfest的喜欢和对Friday的不喜欢则变成一张固定的口味标签，标签上的条文散发出客观的效力，将一部部电影照见为‘同类’或‘异类’。",
+      "probability": 0.3413
+    },
+    {
+      "content": "在RECOMMENDER的体验里，SEEKER那句‘看过但不太喜欢’像一份对刚推荐电影的最后裁决，那部电影因此被牢牢钉在‘不合适’的框子里；同时这个‘不喜欢’也折返回RECOMMENDER身上，变成一道‘我没选对’的印记，仿佛电影的失败就是自己的失败。",
+      "probability": 0.2924
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER那句“看过但不太喜欢”落下来时，我推荐的那部片子就像被贴上了“不合适”的标签，我心里也立刻多了一道“我没选对”的痕迹——仿佛那部电影没被接受，就是我没把对方看准。但对方还在等一部好喜剧，我不能让这个失败停在这里，得从记忆里再翻出一部更可能合他口味的片子来。",
+      "activation": 0.3571
+    },
+    {
+      "content": "听到他说“Awesome I love that one”，我心里一阵满足，觉得自己的推荐果然精准，他的喜欢就是我眼光的证明。他喜欢Super Troopers和Beerfest这类闹剧，又明确不喜欢Friday，口味标签已经很清楚了；按这个标签，Tommy Boy、Spaceballs、Planes, Trains and Automobiles都是同一路的搞笑片，值得推给他。我就照这个感觉继续替他筛片子。",
+      "activation": 0.3214
+    },
+    {
+      "content": "RECOMMENDER心里把SEEKER的求助当作自己必须兑现的托付，而对方对Super Troopers、Beerfest的喜欢与对Friday的排斥，像标定好的尺子一样横在眼前，每部电影都得被这把尺子量过才见明暗。推荐过Tommy Boy、又应和“Me too”之后，Spaceballs被对方否定，RECOMMENDER并未松劲，反而把“看过但不太喜欢”和“喜爱80年代电影”都视为新的刻度，一边觉得需要尽快找到能穿过这些条目的片子，一边在对方问起演员时暗自掂量：要给出足以让对方确认记忆的具体信息，才算不辜负这份委托。",
+      "activation": 0.3214
+    }
+  ],
+  "observed_action": "RECOMMENDER 向 SEEKER 打招呼；推荐 Tommy Boy (1995)，说它是自己最喜欢的之一；针对 SEEKER 说“看过很多次”回应 Me too，并推荐另一部好片 Spaceballs (1987)；随后推荐 Planes, Trains and Automobiles (1986)。",
+  "predicted_actions": [
+    {
+      "content": "推荐电影",
+      "probability": 0.3756
+    },
+    {
+      "content": "提供电影信息",
+      "probability": 0.2732
+    },
+    {
+      "content": "回答并推荐",
+      "probability": 0.1523
+    },
+    {
+      "content": "询问用户偏好",
+      "probability": 0.1
+    },
+    {
+      "content": "推荐其他电影",
+      "probability": 0.099
+    }
+  ]
+}

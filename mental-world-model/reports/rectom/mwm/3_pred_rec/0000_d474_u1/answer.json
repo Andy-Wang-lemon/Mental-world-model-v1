@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 0,
+  "item_id": "d474_u1",
+  "dialogue_id": "474",
+  "utterance_pos": 1,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的“can you help me find a movie to watch”不是可搁置的闲话，而是直接落到自己身上的请求，被请求方这个位置使注意力收束到“电影”这个对象上；同时，“找电影”已被对象化为一个必须交出具体可看片名或结果的封闭任务，而不是可以一起缩小范围或只回应需求的过程。",
+        "probability": 0.4251
+      },
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的请求直接落到自己身上，被请求方这个位置不能视为与己无关；而“help”被对象化为替 SEEKER 做出观看选择，眼前的问题因此成为“由我来决定看什么”的选择权交接，而不是共同筛选或只回应需求的过程。",
+        "probability": 0.2981
+      },
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的“can you help me find a movie to watch”问到自己这边能拿出的电影判断与品味上，自己与“帮人找到可看的电影”这件事被绑在一起；同时，“找电影”被对象化为必须给出具体可看片名或结果的封闭任务，而不是可以一起缩小范围或只回应需求的过程。",
+        "probability": 0.2768
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 这声求助是直接落到我这里的，不能当成可以搁置的闲话；被请求方这个位置让我把注意收在“电影”上。找电影在这里被当成必须交出具体可看片名或结果的封闭任务，不能只停在陪他缩小范围或只回应需求。我得往一个确定的片名上收束，先把局面变成能给出的答案。",
+        "activation": 0.4251
+      },
+      {
+        "content": "在 RECOMMENDER 的经验里，SEEKER 的请求已经把“找一部电影”直接压到自己身上，自己作为被请求的人不能把这当成与己无关。与此同时，“help”被领会成替 SEEKER 拿定看什么，于是眼前的事不是一起筛选、也不是只弄清对方想要什么，而是一份选择权的交接：由自己来替他把片子定下来。这个整理使 RECOMMENDER 倾向于把接下来的处境看作一项需要自己拍板的选择任务，并围绕“我来决定看什么”来组织内心的应对。",
+        "activation": 0.2981
+      },
+      {
+        "content": "RECOMMENDER 把 SEEKER 的求助听成是对自己电影判断与品味的直接索取，觉得此刻要交出的不是一次可以慢慢商量的事，而是一个能立刻被采用的片名或结果；‘找电影’因此被压成一个必须由自己落地的封闭答案，缩小范围、追问偏好或只回应需求都显得不够像帮忙，内心于是偏向先在自己的储备里搜出一个可推荐的片名，以承接这份被问到的信任。",
+        "activation": 0.2768
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "报出电影名",
+        "probability": 0.547
+      },
+      {
+        "content": "推荐电影",
+        "probability": 0.2123
+      },
+      {
+        "content": "询问偏好",
+        "probability": 0.1233
+      },
+      {
+        "content": "推迟帮SEEKER选片",
+        "probability": 0.0693
+      },
+      {
+        "content": "询问偏好",
+        "probability": 0.0481
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 0.8,
+    "d": 0.0,
+    "e": 0.0
+  },
+  "score_reason": "The record predicts direct recommendation and some inquiring about preferences, matching the option.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

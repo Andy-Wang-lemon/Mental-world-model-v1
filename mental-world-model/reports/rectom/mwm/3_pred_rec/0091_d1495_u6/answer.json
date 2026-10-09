@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 91,
+  "item_id": "d1495_u6",
+  "dialogue_id": "1495",
+  "utterance_pos": 6,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement\nC: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi...How are you?...What kind of movies are you looking for?\nSEEKER says: Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close  (2011) \nRECOMMENDER says: Okay, well Road to Perdition (2002)  is a good drama with Tom Hanks\nSEEKER says: I haven't seen that one, but I love Tom Hanks\nRECOMMENDER says: Or have you seen It's Kind of a Funny Story  (2010)  is funny drama...But Tom Hanks is great in Cast Away (2000)   it’s another classic\nSEEKER says；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi...How are you?...What kind of movies are you looking for?\nSEEKER says: Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close  (2011) \nRECOMMENDER says: Okay, well Road to Perdition (2002)  is a good drama with Tom Hanks\nSEEKER says: I haven't seen that one, but I love Tom Hanks\nRECOMMENDER says: Or have you seen It's Kind of a Funny Story  (2010)  is funny drama...But Tom Hanks is great in Cast Away (2000)   it’s another classic\nSEEKER says；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.4,
+    "b": 0.3,
+    "c": 0.95,
+    "d": 0.6,
+    "e": 0.1
+  },
+  "score_reason": "The record shows the recommender actively offering movie options and asking if the seeker has seen them, so providing a recommendation or inquiring further is most directly supported.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

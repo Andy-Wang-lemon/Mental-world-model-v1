@@ -1,0 +1,36 @@
+{
+  "id": "4_pred_seeker__0149_d2349_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER states: 'Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight.' Information available to SEEKER is only their own situation and request. Preferences: a children's movie suitable for their little brother, useful for babysitting tonight.",
+      "belief_before": "No specific beliefs about the recommender yet; SEEKER only has their own need and context.",
+      "belief_update": "SEEKER explicitly forms and communicates a request for a children's movie recommendation.",
+      "belief_after": "SEEKER believes the recommender has been told the need and may be able to suggest a suitable children's movie.",
+      "emotion": "Friendly and hopeful, with possible urgency because they are babysitting tonight.",
+      "intention": "Obtain a children's movie recommendation suitable for their little brother tonight.",
+      "conversational_goal": "Initiate the request and get suggestions for a children's movie."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hi happy new year.' SEEKER hears a greeting and holiday wish, but no movie recommendation and no direct response to the request. Preferences remain a children's movie suitable for their little brother tonight.",
+      "belief_before": "SEEKER believes the recommender has been told the request and may respond with a recommendation.",
+      "belief_update": "SEEKER learns the recommender has responded with a greeting and New Year wish, but has not yet addressed the movie request. This does not change the core need, but updates the expectation that a recommendation has not yet been provided.",
+      "belief_after": "SEEKER believes the recommender is present and friendly, but still needs to answer the request or may need a follow-up.",
+      "emotion": "Polite acknowledgment of the greeting, with possible mild uncertainty or waiting because the request was not addressed.",
+      "intention": "Still wants to obtain a children's movie recommendation; may wait, acknowledge the greeting, or re-ask.",
+      "conversational_goal": "Redirect to or restate the children's movie request so the recommender provides suitable suggestions."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER states: 'Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight.' Information available to SEEKER is only their own situation and request. Preferences: a children's movie suitable for their little brother, useful for babysitting tonight.\",\n    \"belief_before\": \"No specific beliefs about the recommender yet; SEEKER only has their own need and context.\",\n    \"belief_update\": \"SEEKER explicitly forms and communicates a request for a children's movie recommendation.\",\n    \"belief_after\": \"SEEKER believes the recommender has been told the need and may be able to suggest a suitable children's movie.\",\n    \"emotion\": \"Friendly and hopeful, with possible urgency because they are babysitting tonight.\",\n    \"intention\": \"Obtain a children's movie recommendation suitable for their little brother tonight.\",\n    \"conversational_goal\": \"Initiate the request and get suggestions for a children's movie.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hi happy new year.' SEEKER hears a greeting and holiday wish, but no movie recommendation and no direct response to the request. Preferences remain a children's movie suitable for their little brother tonight.\",\n    \"belief_before\": \"SEEKER believes the recommender has been told the request and may respond with a recommendation.\",\n    \"belief_update\": \"SEEKER learns the recommender has responded with a greeting and New Year wish, but has not yet addressed the movie request. This does not change the core need, but updates the expectation that a recommendation has not yet been provided.\",\n    \"belief_after\": \"SEEKER believes the recommender is present and friendly, but still needs to answer the request or may need a follow-up.\",\n    \"emotion\": \"Polite acknowledgment of the greeting, with possible mild uncertainty or waiting because the request was not addressed.\",\n    \"intention\": \"Still wants to obtain a children's movie recommendation; may wait, acknowledge the greeting, or re-ask.\",\n    \"conversational_goal\": \"Redirect to or restate the children's movie request so the recommender provides suitable suggestions.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "d",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

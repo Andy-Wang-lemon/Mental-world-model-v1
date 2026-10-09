@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0044_d1003_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "No prior dialogue. SEEKER initiates by asking the friend for good classic movie recommendations.",
+      "information_available": "Only SEEKER's own request and the fact that no recommender response has occurred yet.",
+      "preferences": "Wants 'good classic movies'; era, genre, and specific taste are unspecified.",
+      "belief_before": "Treats the other person as a friend who may be able to recommend movies.",
+      "belief_update": "No incoming information from another speaker yet; SEEKER forms and expresses a recommendation request.",
+      "belief_after": "The friend may be able to recommend classic movies, and SEEKER expects a response.",
+      "emotion": "Friendly, curious, neutral-positive.",
+      "intention": "Ask for movie recommendations.",
+      "reaction_to_other_speaker": null,
+      "conversational_goal": "Initiate a recommendation request and get suggestions.",
+      "interpretation_change": "None; this is the initial turn establishing the request."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER replies: 'Sure! But by classic do you mean before the 70s or after?'",
+      "information_available": "Recommender is willing to help and is asking SEEKER to clarify what 'classic' means by era: before the 70s or after.",
+      "preferences": "Still under-specified: SEEKER has not yet stated whether they prefer pre-70s or post-70s classics.",
+      "belief_before": "From turn 1: the friend may be able to recommend classic movies; SEEKER expects a response.",
+      "belief_update": "Learns that 'classic' is ambiguous and that the recommender needs an era distinction before recommending.",
+      "belief_after": "The recommender is cooperative but requires SEEKER to specify whether classic means before the 70s or after; clarification is needed to proceed.",
+      "emotion": "Cooperative, mildly uncertain/considering, still positive.",
+      "intention": "Clarify what SEEKER means by 'classic' or otherwise answer the recommender's clarification question.",
+      "reaction_to_other_speaker": "Accepts the clarifying question as reasonable and helpful.",
+      "conversational_goal": "Resolve the ambiguity about 'classic' so the recommendation process can continue.",
+      "interpretation_change": "Yes; the earlier broad request is now understood as needing an era scope before recommendations can be made."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"No prior dialogue. SEEKER initiates by asking the friend for good classic movie recommendations.\",\n    \"information_available\": \"Only SEEKER's own request and the fact that no recommender response has occurred yet.\",\n    \"preferences\": \"Wants 'good classic movies'; era, genre, and specific taste are unspecified.\",\n    \"belief_before\": \"Treats the other person as a friend who may be able to recommend movies.\",\n    \"belief_update\": \"No incoming information from another speaker yet; SEEKER forms and expresses a recommendation request.\",\n    \"belief_after\": \"The friend may be able to recommend classic movies, and SEEKER expects a response.\",\n    \"emotion\": \"Friendly, curious, neutral-positive.\",\n    \"intention\": \"Ask for movie recommendations.\",\n    \"reaction_to_other_speaker\": null,\n    \"conversational_goal\": \"Initiate a recommendation request and get suggestions.\",\n    \"interpretation_change\": \"None; this is the initial turn establishing the request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER replies: 'Sure! But by classic do you mean before the 70s or after?'\",\n    \"information_available\": \"Recommender is willing to help and is asking SEEKER to clarify what 'classic' means by era: before the 70s or after.\",\n    \"preferences\": \"Still under-specified: SEEKER has not yet stated whether they prefer pre-70s or post-70s classics.\",\n    \"belief_before\": \"From turn 1: the friend may be able to recommend classic movies; SEEKER expects a response.\",\n    \"belief_update\": \"Learns that 'classic' is ambiguous and that the recommender needs an era distinction before recommending.\",\n    \"belief_after\": \"The recommender is cooperative but requires SEEKER to specify whether classic means before the 70s or after; clarification is needed to proceed.\",\n    \"emotion\": \"Cooperative, mildly uncertain/considering, still positive.\",\n    \"intention\": \"Clarify what SEEKER means by 'classic' or otherwise answer the recommender's clarification question.\",\n    \"reaction_to_other_speaker\": \"Accepts the clarifying question as reasonable and helpful.\",\n    \"conversational_goal\": \"Resolve the ambiguity about 'classic' so the recommendation process can continue.\",\n    \"interpretation_change\": \"Yes; the earlier broad request is now understood as needing an era scope before recommendations can be made.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,54 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "RECOMMENDER 此刻所缘的，是 SEEKER 这句‘Can you recommend some good classic movies?’被经验为对自己‘懂经典电影、能给出好推荐’的确认；于是‘经典电影推荐者/有品味者’成为他当下所占的位置。与此同时，‘经典电影’显为一个边界明确、客观存在的片单，一批公认的‘good classic movies’仿佛本就客观地摆在那里。",
+      "probability": 0.3533
+    },
+    {
+      "content": "RECOMMENDER 此刻所缘的，是 SEEKER 口中的‘friend’被经验为落回自己这一边的关系；因此这个‘Can you recommend...’不再是与我无关的外部请求，而成了我这边应当承接的一份情分。‘经典电影’则仍显为一个边界明确、客观存在的片单，一批公认的‘good classic movies’仿佛本就摆在那里。",
+      "probability": 0.3261
+    },
+    {
+      "content": "RECOMMENDER 此刻所缘的，是 SEEKER 的‘Can you recommend’被经验为对自己懂经典电影、能给出好推荐的确认，于是‘经典电影推荐者/有品味者’成为他当下所占的位置。同时，‘推荐’被执为一种应当给出片名清单或标准答案的行为；只有列出经典片目，才算真正回应了这个请求。",
+      "probability": 0.3206
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER这一问，在他听来不只是要片名，更像是在确认他懂经典电影、能给出好推荐。他心里因此升起一种被认可的满足，觉得自己正处在‘经典电影推荐者/有品味者’的位置上。与此同时，他认定‘经典电影’是一份边界明确、客观存在的片单，一批公认的‘good classic movies’就摆在那里，自己只需从中挑选出合适的来回应。他倾向于认真对待这个请求，想给出几个能撑住这个位置、也符合对方期待的片名。",
+      "activation": 0.3533
+    },
+    {
+      "content": "RECOMMENDER把SEEKER口中的‘friend’收进自己这一边，觉得这声称呼带着亲近，于是‘Can you recommend...’不再只是外来的询问，而是自己这边该承接的一份情分；同时，他认定‘经典电影’是一张边界清楚、公认存在的片单，一批‘good classic movies’仿佛本就摆在那里，心里开始顺着这个无形目录去估量哪些片子算得上经典。",
+      "activation": 0.3261
+    },
+    {
+      "content": "RECOMMENDER 听到 SEEKER 的‘Can you recommend’，当下把它读作对自己懂经典电影、能给好推荐的确认，于是‘经典电影推荐者/有品味者’的位置感在他心里立了起来。随之，‘推荐’被整理成应当给出片名清单或标准答案的事；他觉得只有列出足够经典的片目才算真正回应，泛泛而谈并不算数，内心趋向于按这个标准去搜罗、权衡并组织可拿出的经典片名。",
+      "activation": 0.3206
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": [
+    {
+      "content": "列出多个片名",
+      "probability": 0.4193
+    },
+    {
+      "content": "推荐经典电影",
+      "probability": 0.2008
+    },
+    {
+      "content": "给出分档片单并附理由",
+      "probability": 0.1977
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.1086
+    },
+    {
+      "content": "推荐一部并暂缓其余",
+      "probability": 0.0736
+    }
+  ]
+}

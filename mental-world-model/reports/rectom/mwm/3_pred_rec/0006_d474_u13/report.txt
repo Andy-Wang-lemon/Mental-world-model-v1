@@ -1,0 +1,67 @@
+数据：3_pred_rec
+题号：6  d474_u13
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER直接来请我帮他找电影，这件事把‘能替人找片并给出推荐’的推荐者身份整个放到我这边；他一路说出的偏好，尤其 The Number 23 (2007) 和 The Sixth Sense (1999)，不是散落的信息，而是成为我寻找相似影片的基准；他追问类似推荐，正是这种基准在起作用。到他表示会去看 The Conjuring (2013) 并致谢时，眼前的对象就是一个由我的推荐者身份所承接、并由已喜欢影片延伸出来的找片请求。",
+      "probability": 0.3718
+    },
+    {
+      "content": "此刻，SEEKER直接请求我帮他找片，并交代已看过、不喜欢 Halloween (2007) 等片；这些交代在我这里不是留给他自己筛的清单，而是变成我作为推荐者必须替他绕开的边界。另一方面，The Number 23 (2007) 和 The Sixth Sense (1999) 作为他喜欢的惊悚片，被用来衡量什么样的片算‘类似’；他最后说会查看 The Conjuring (2013) 并致谢，使这个找片对象呈现为：在我负责避开他不要的影片、并从他喜欢的影片延伸出去的框架内，推荐关系已经落到一个可承接的结果上。",
+      "probability": 0.3567
+    },
+    {
+      "content": "此刻，SEEKER说他不喜欢 Halloween (2007) 系列，这在我这里不是一个可以再商量的偏好，而像一条不可违背的筛选规则：这类片必须先被排除在推荐之外。我的推荐者身份也因此被绑在这条排除规则上；同时他给出 The Number 23 (2007)、The Sixth Sense (1999)、Annabelle (2014)、Curse of Chucky (2013) 以及询问类似推荐，仍在为当前找片划定范围。到他表示会查看 The Conjuring (2013) 并致谢时，眼前的对象是一个已经被‘Halloween 必须排除’这条规则过滤过的推荐场。",
+      "probability": 0.2714
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他直接开口让我帮他找电影，这件事把我能替人找片、给出推荐的那一面整个推到我面前；他说的偏好不是零散闲聊，尤其 The Number 23 和 The Sixth Sense，已经成了我该沿着去找相似影片的尺子。他追问类似推荐时，这尺子就在起作用。The Number 23 我没看过，但 The Sixth Sense 我熟，可以当桥；他说 Annabelle 能接受，那 The Conjuring 自然接得上，Dolls 也像同一路数。中间我自己的恐怖偏好总冒出来，Halloween 系列和 Child's Play 那些也是我真正喜欢的东西。到最后他说会去看 The Conjuring 并道谢，我就觉得这次找片确实接上了，我这个推荐者的位置也被他接住了。",
+      "activation": 0.386
+    },
+    {
+      "content": "SEEKER把找片的事交给我，还摆出看过和不喜欢的片子；这些在我这里不是留给他自己筛的清单，而是我得替他绕开的边界。他喜欢The Number 23和The Sixth Sense，那‘类似’就该从这类惊悚片里找。我虽然更爱恐怖片，连Halloween系列都是我最喜欢的，但他说不喜欢，我就不能硬推，得把它搁一边。后来我提了The Conjuring，他说会看还道谢，这让我觉得推荐落到了他能接住的地方，心里也松下来，想继续沿着这个方向给他找。",
+      "activation": 0.3274
+    },
+    {
+      "content": "他这句“不喜欢 Halloween (2007) 系列”在我这里不是可以再商量的偏好，而是一条已经落定的排除线：这一类片先不能进入我给他的推荐里。虽然 Halloween 系列是我自己最喜欢的，甚至 Resurrection 我也喜欢，但此刻我的推荐者身份被这条排除线绑住，不能把它混进给他的选项里。他给出的 The Number 23、The Sixth Sense、Annabelle、Curse of Chucky 和“类似”的请求，继续把范围收窄；我把 Annabelle 和 Curse of Chucky 当作可接上的线索，因此 The Conjuring 作为 Annabelle 的来源显得合理，Dolls 也落在这个被过滤后的恐怖/惊悚框架内。到他表示会查看 The Conjuring 并致谢时，我眼前的推荐场已经是被“Halloween 必须排除”整理过的场，而不是我自己偏好的直接投射。",
+      "activation": 0.2866
+    }
+  ],
+  "observed_action": "RECOMMENDER 回应可以帮忙找电影，提议《It (2017)》；随后提议《The Silence of the Lambs (1991)》；说自己没看过《The Number 23 (2007)》，但喜欢《The Sixth Sense (1999)》，并表示自己更偏好恐怖片；说那（《Halloween (2007)》系列）literally是自己最喜欢的电影系列，哈哈……一直如此；说自己喜欢《Halloween: Resurrection (2002)》，也喜欢原版《Child's Play (1988)》；还说喜欢《The Conjuring (2013)》，并提到 Annabelle (2014) 出自该片，以及《Dolls (1987)》。",
+  "predicted_actions": [
+    {
+      "content": "回应道谢并请求观影后反馈",
+      "probability": 0.35
+    },
+    {
+      "content": "补充推荐电影",
+      "probability": 0.3187
+    },
+    {
+      "content": "回应感谢并提议后续推荐",
+      "probability": 0.1916
+    },
+    {
+      "content": "仅回应道谢且未新增推荐",
+      "probability": 0.07
+    },
+    {
+      "content": "请求观影反馈",
+      "probability": 0.0697
+    }
+  ]
+}
+选择：A: Ask for preference or seeks feedback from the seeker
+分数：{"a": 0.9, "b": 0.1, "c": 0.2, "d": 0.0, "e": 0.0}
+选择说明：The seeker just accepted a recommendation and thanked the recommender, so asking for feedback is the most direct next strategy.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+结果：对
+人工判定：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：下一步预测里写了回应道谢、仅回应道谢，这就是问候、道谢或闲聊。

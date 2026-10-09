@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 112,
+  "item_id": "d1751_u3",
+  "dialogue_id": "1751",
+  "utterance_pos": 3,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.35,
+    "b": 0.55,
+    "c": 0.9,
+    "d": 0.2,
+    "e": 0.4
+  },
+  "score_reason": "The recommender still needs to address the seeker's original horror-movie request after the misunderstanding.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

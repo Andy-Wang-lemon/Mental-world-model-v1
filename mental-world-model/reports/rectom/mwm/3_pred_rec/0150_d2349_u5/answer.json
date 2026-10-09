@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 150,
+  "item_id": "d2349_u5",
+  "dialogue_id": "2349",
+  "utterance_pos": 5,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\nRECOMMENDER says: Hi happy new year\nSEEKER says: Happy New Year\nRECOMMENDER says: Have you seen The Secret Life of Pets (2016) \nSEEKER says: I'm not really a fan of that one. I like the first half hour but then I thought it got a little weird；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\nRECOMMENDER says: Hi happy new year\nSEEKER says: Happy New Year\nRECOMMENDER says: Have you seen The Secret Life of Pets (2016) \nSEEKER says: I'm not really a fan of that one. I like the first half hour but then I thought it got a little weird；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Ask for preference or seeks feedback from the seeker",
+  "option_scores": {
+    "a": 0.82,
+    "b": 0.55,
+    "c": 0.74,
+    "d": 0.33,
+    "e": 0.15
+  },
+  "score_reason": "Seeker's negative feedback about the movie makes asking for preferences or seeking feedback the most directly supported next move.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "No predicted next action or thought about what to do next is provided, so the next strategy cannot be directly supported.",
+  "audit_level": "inferred"
+}

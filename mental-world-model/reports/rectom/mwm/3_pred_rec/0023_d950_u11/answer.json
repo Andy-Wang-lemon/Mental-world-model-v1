@@ -1,0 +1,79 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 23,
+  "item_id": "d950_u11",
+  "dialogue_id": "950",
+  "utterance_pos": 11,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b",
+    "e"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement\nE: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "此刻，RECOMMENDER所经验到的对象世界是：SEEKER的请求与最后致谢把“替SEEKER找一部好电影”的推荐者位置安放在自己这边，这件事不是与自己无关的信息流；同时，SEEKER说“喜欢Jonah Hill”被当作一条应推荐该演员相关或同调电影的通用法则，The Wolf of Wall Street、This Is the End、Pineapple Express则作为这条法则的实例被聚合在一起，成为当前电影推荐对象的主轴。",
+        "probability": 0.404
+      },
+      {
+        "content": "此刻，RECOMMENDER所经验到的对象世界是：SEEKER的请求与最后致谢把推荐者位置留在自己这边，于是“好推荐”不是任意片单，而是必须依据SEEKER已列出的喜欢/不喜欢来匹配的固定坐标——Wedding Crashers、It、Superbad落在喜欢一侧，Star Wars、Horrible Bosses落在不喜欢一侧；这些片名不再是普通谈资，而是当前可据此推算推荐对象的确定坐标系。",
+        "probability": 0.3316
+      },
+      {
+        "content": "此刻，RECOMMENDER所经验到的对象世界是：SEEKER说“我没听说过这部”以及最后说会去看并致谢，被绑定在自己这一边的电影见识/品味上，成为对自己所持品味的确认；同时，“喜欢Jonah Hill”被当作一条通则，The Wolf of Wall Street、This Is the End、Pineapple Express作为该通则的证据围绕电影推荐对象排列。",
+        "probability": 0.2644
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER的请求与最后致谢，让“替SEEKER找一部好电影”这件事落在自己这边，不是与自己无关的信息流；既然SEEKER明确说喜欢Jonah Hill，那就应当沿着这个演员去找相关或同调的电影，The Wolf of Wall Street、This Is the End、Pineapple Express正好是这条通则的实例，可以聚合起来作为推荐的主轴；因此内心倾向于继续以Jonah Hill为线索，把The Sitter这类同调作品视为对方会喜欢的候选，并预期对方若喜欢他在Superbad中的表现，也会喜欢他在其他电影中的表现。",
+        "activation": 0.3571
+      },
+      {
+        "content": "我这边接住了SEEKER找好片的请求和最后致谢；在我这里，好推荐不是随手给片名，而是要从他给出的坐标里推——Wedding Crashers、It、Superbad、Jonah Hill、Pineapple Express、This Is the End 落在喜欢一侧，Star Wars、Horrible Bosses 落在不喜欢一侧，所以《The Sitter》和Seth Rogen相关片能被放进这条线；我对他喜欢Jonah Hill这一点有把握，觉得沿着Superbad到《The Sitter》的相似性讲，他应该能接受；最后他致谢，让我确认这条推荐线没有偏，我愿意继续按这个坐标系把选择收束到他会喜欢的片子上。",
+        "activation": 0.3383
+      },
+      {
+        "content": "RECOMMENDER在心里把SEEKER说“我没听说过这部”当作一个正面信号，觉得自己的片单能给出对方不知道但可能合口味的东西；又把最后“会去看”和致谢当作自己推荐的品味与判断被接受的证据。于是，“喜欢Jonah Hill”被整理成一条可反复使用的推荐线索：只要找该演员出演的、或气质相近的喜剧，就值得推，对方大概率会喜欢。内心因此更笃定地沿着这条线索组织电影对象，并倾向于用“你已经喜欢他在这部里的表现，就会喜欢他在另一部里的表现”来稳住自己的推荐理由。",
+        "activation": 0.3045
+      }
+    ],
+    "observed_action": "询问对方喜欢的电影类型；提出《Horrible Bosses (2011)》或《Superbad (2007)》；回应对方关于《The Wolf of Wall Street (2013)》中 Jonah Hill 的说法，提出《The Sitter (2011)》，说他也出演该片，询问对方是否喜欢 Seth Rogen，并说《This Is the End (2013)》是搞笑电影；说《Pineapple Express (2008)》也一样，说《The Sitter (2011)》好笑，并说如果对方喜欢 Jonah Hill 就会喜欢它；说如果对方喜欢他在《Superbad (2007)》中的表现，就会喜欢他在另一部电影中的表现。",
+    "predicted_actions": [
+      {
+        "content": "回应感谢并祝愿",
+        "probability": 0.7213
+      },
+      {
+        "content": "询问观后反馈",
+        "probability": 0.1438
+      },
+      {
+        "content": "请求反馈",
+        "probability": 0.1015
+      },
+      {
+        "content": "说明推荐理由",
+        "probability": 0.0335
+      }
+    ]
+  },
+  "predicted_answer": "e",
+  "adapter_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0.2453,
+    "b": 0,
+    "c": 0,
+    "d": 0.0335,
+    "e": 0.7213
+  },
+  "score_reason": "A 0.2453 = 询问观后反馈 0.1438 + 请求反馈 0.1015；B 0.0000；C 0.0000；D 0.0335 = 说明推荐理由 0.0335；E 0.7213 = 回应感谢并祝愿 0.7213。Actions 1-2 seek feedback (A), 3 explains reasoning (D), and 0 is social thanks/wishes (E); no B or C.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

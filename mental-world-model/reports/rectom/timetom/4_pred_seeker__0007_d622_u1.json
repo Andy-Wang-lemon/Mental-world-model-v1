@@ -1,0 +1,29 @@
+{
+  "id": "4_pred_seeker__0007_d622_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi. Only a greeting is available; no recommendation content or preference information has been disclosed.",
+      "belief_before": "SEEKER may expect a recommendation dialogue, but has no specific prior beliefs about this recommender's intent or any preferences.",
+      "belief_update": "The recommender has initiated contact with a greeting, indicating presence and willingness to converse.",
+      "belief_after": "The recommender is available and the dialogue has started; no recommendation content or preferences have been established.",
+      "emotion": "Neutral, mildly attentive and expectant; likely inclined to reciprocate the greeting politely.",
+      "intention": "Acknowledge the greeting and remain ready to engage in the recommendation dialogue.",
+      "conversational_goal": "Respond to the greeting and establish or maintain a cooperative interaction. No previous interpretation exists to change."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi. Only a greeting is available; no recommendation content or preference information has been disclosed.\",\n    \"belief_before\": \"SEEKER may expect a recommendation dialogue, but has no specific prior beliefs about this recommender's intent or any preferences.\",\n    \"belief_update\": \"The recommender has initiated contact with a greeting, indicating presence and willingness to converse.\",\n    \"belief_after\": \"The recommender is available and the dialogue has started; no recommendation content or preferences have been established.\",\n    \"emotion\": \"Neutral, mildly attentive and expectant; likely inclined to reciprocate the greeting politely.\",\n    \"intention\": \"Acknowledge the greeting and remain ready to engage in the recommendation dialogue.\",\n    \"conversational_goal\": \"Respond to the greeting and establish or maintain a cooperative interaction. No previous interpretation exists to change.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

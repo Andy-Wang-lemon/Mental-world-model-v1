@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：29  d957_u12
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的“funny comedy movies / something similar to She's Out of My League (2010)”被固定成一把相似性标尺；SEEKER 提到 Daddy's Home、Deuce Bigalo、Step Brothers、Life as We Know It、Why Him?，以及说“I'm open to suggestions”“Thank you so much!”，都落在这把标尺上，成为对“我能否推荐对味喜剧”这一推荐者身份的确认或检验。世界呈现为一个由 SEEKER 的口味信号与 She's Out of My League 基准共同构成的对象场，其中 SEEKER 是等待被读准口味的人，而我的推荐者身份正被这些信号丈量。",
+      "probability": 0.3488
+    },
+    {
+      "content": "RECOMMENDER 把“替 SEEKER 找到合适喜剧”收进自己这边，于是 SEEKER 的“I'm open to suggestions”与“Thank you so much!”被经验为一个尚未闭合、仍由我承担匹配任务的空间；“She's Out of My League (2010)”继续作为相似性基准，SEEKER 提到的 Daddy's Home、Step Brothers、Life as We Know It、Why Him? 等喜欢项，则被组织成待匹配的口味线索。世界呈现为 SEEKER 敞开接受、而“我”的匹配能力仍在其中被需要的对象化场景。",
+      "probability": 0.3261
+    },
+    {
+      "content": "RECOMMENDER 把先前说出的推荐片名（the movies you suggested）经验为自己这边的延伸，因此 SEEKER 说“never seen the movies you suggested”“Deuce Bigalo I have seen but I don't like those movies”时，并不是无关的观影反馈，而是对我所提供的推荐供给的评判；同时，“She's Out of My League (2010)”仍作为好喜剧相似性的固定基准，SEEKER 对 Step Brothers、Life as We Know It、Why Him? 的喜欢也被放在同一基准旁，显出我的供给与 SEEKER 口味之间的对位。世界被对象化为：我的推荐物被 SEEKER 逐一验收，而基准片名规定着何谓对味。",
+      "probability": 0.3251
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在 RECOMMENDER 看来，SEEKER 要的“类似 She's Out of My League 的搞笑喜剧”已经成了一把固定标尺；SEEKER 说爱 Step Brothers、Life as We Know It、Why Him?，说不喜欢 Deuce Bigalo，说没看过之前提的片，都被 RECOMMENDER 收进来，用来丈量自己推荐得对不对。RECOMMENDER 把这些反馈评价为对“我能不能推荐对味喜剧”的确认或检验，心里更倾向继续在同类喜剧里挑片、试探 SEEKER 看过没有，直到找到一部 SEEKER 没看过且合口味的，好把这次推荐做成。",
+      "activation": 0.3722
+    },
+    {
+      "content": "RECOMMENDER 把先前说出的片名（the movies you suggested）经验为自己这边递出的推荐物，因此 SEEKER 说没看过这些片名、看过 Deuce Bigalo 但不 don't like those movies，被收进来当作对“我的供给”的验收与评判，而非无关反馈；She's Out of My League (2010) 仍是判定“好喜剧相似性”的固定基准，SEEKER 对 Step Brothers、Life as We Know It、Why Him? 的喜欢则被放在这基准旁比对，显出哪些供给已对上口味、哪些还需调整。由此生起的是继续探问、继续递出候选，直到找出 SEEKER 没看过的东西的内心造作趋向，并把这条推进理解为受规则约束的未完成事项。",
+      "activation": 0.3262
+    },
+    {
+      "content": "SEEKER 的“I'm open to suggestions”和“Thank you so much!”落进来，不像收束，而像把尚未完成的匹配任务继续留在我这边；对方越是敞开，我越感到这件事仍由我承担。She's Out of My League (2010) 继续作为相似基准，SEEKER 提到的 Daddy's Home、Step Brothers、Life as We Know It、Why Him? 等喜欢项，被我看成可继续逼近其口味的线索。那句“according to the rules”更让我觉得，没找到对方没看过的之前，这个空间还没合上；于是我心里承认，这仍是一个需要我继续配、继续筛、继续把相似性对齐的未闭合场景。",
+      "activation": 0.3017
+    }
+  ],
+  "observed_action": "RECOMMENDER greeted and asked whether RECOMMENDER could help find a good comedy like Beerfest (2006) or The Blues Brothers (1980); said okay and that RECOMMENDER could help, asked whether SEEKER had seen the ones RECOMMENDER mentioned, and suggested Deuce Bigalow: Male Gigolo (1999); said that was a good one and asked whether SEEKER had seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007); said that was so good, asked whether SEEKER had seen the other one RECOMMENDER mentioned, and said it was somewhat on the same plane as Step Brothers (2008); said it made RECOMMENDER laugh too, asked about Talladega Nights: The Ballad of Ricky Bobby (2006), and said RECOMMENDER had not seen that one; said they had to keep going until RECOMMENDER found something SEEKER had not seen, according to the rules.",
+  "predicted_actions": [
+    {
+      "content": "suggest movies",
+      "probability": 0.3149
+    },
+    {
+      "content": "询问对方可尝试的未看影片并说明对照片",
+      "probability": 0.2458
+    },
+    {
+      "content": "推荐一部电影并询问是否现在观看",
+      "probability": 0.1714
+    },
+    {
+      "content": "列出多部影片并提问",
+      "probability": 0.1475
+    },
+    {
+      "content": "询问喜欢的笑点或关系线",
+      "probability": 0.1204
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.3662, "b": 0, "c": 0.6338, "d": 0, "e": 0}
+选择说明：A 0.3662 = 询问对方可尝试的未看影片并说明对照片 0.2458 + 询问喜欢的笑点或关系线 0.1204；B 0.0000；C 0.6338 = suggest movies 0.3149 + 推荐一部电影并询问是否现在观看 0.1714 + 列出多部影片并提问 0.1475；D 0.0000；E 0.0000。Actions 1 and 4 ask about the seeker's preferences, while 0, 2, and 3 suggest or recommend movies.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

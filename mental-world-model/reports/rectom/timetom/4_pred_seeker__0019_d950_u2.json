@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0019_d950_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says 'Hey!' at the opening of the dialogue; no reply from RECOMMENDER has been received yet.",
+      "information_available": "Only that SEEKER has initiated contact. No information from RECOMMENDER is available yet.",
+      "preferences": "No movie preferences have been expressed or inferred.",
+      "belief_before": "SEEKER has no specific beliefs about RECOMMENDER or the conversation topic because the dialogue has not yet started.",
+      "belief_update": "SEEKER produces a greeting, setting up an expectation that RECOMMENDER may respond.",
+      "belief_after": "SEEKER believes the conversation is open and awaits a response from RECOMMENDER.",
+      "emotion": "Neutral to friendly.",
+      "intention": "Greet and initiate conversation.",
+      "reaction_to_other_speaker": "Not applicable; RECOMMENDER has not spoken yet.",
+      "conversational_goal": "Get RECOMMENDER's attention and open the dialogue.",
+      "interpretation_change": "No prior interpretation to change; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER replies: 'Hi, what kind of movies do you like?' SEEKER now observes a greeting and a question about movie preferences.",
+      "information_available": "SEEKER has received a greeting from RECOMMENDER and knows RECOMMENDER is asking about SEEKER's movie preferences.",
+      "preferences": "SEEKER has not yet stated any specific movie preferences; the recommender's question invites SEEKER to reveal them.",
+      "belief_before": "SEEKER believed the conversation was open and was awaiting a response from RECOMMENDER.",
+      "belief_update": "RECOMMENDER responded, is engaged, and is steering the conversation toward movies by asking about SEEKER's preferences.",
+      "belief_after": "SEEKER believes RECOMMENDER is willing to interact and likely wants to learn SEEKER's movie tastes, possibly to recommend movies.",
+      "emotion": "Positive and attentive; ready to engage.",
+      "intention": "Answer RECOMMENDER's question and share movie preferences.",
+      "reaction_to_other_speaker": "Favorable and engaged; RECOMMENDER's reply satisfies the expected response and introduces a relevant topic.",
+      "conversational_goal": "Provide movie preference information so RECOMMENDER can continue the conversation or make recommendations.",
+      "interpretation_change": "Yes. The initial bare greeting is now understood as the start of a movie-related exchange, and SEEKER's goal shifts from merely opening contact to responding about movie preferences."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says 'Hey!' at the opening of the dialogue; no reply from RECOMMENDER has been received yet.\",\n    \"information_available\": \"Only that SEEKER has initiated contact. No information from RECOMMENDER is available yet.\",\n    \"preferences\": \"No movie preferences have been expressed or inferred.\",\n    \"belief_before\": \"SEEKER has no specific beliefs about RECOMMENDER or the conversation topic because the dialogue has not yet started.\",\n    \"belief_update\": \"SEEKER produces a greeting, setting up an expectation that RECOMMENDER may respond.\",\n    \"belief_after\": \"SEEKER believes the conversation is open and awaits a response from RECOMMENDER.\",\n    \"emotion\": \"Neutral to friendly.\",\n    \"intention\": \"Greet and initiate conversation.\",\n    \"reaction_to_other_speaker\": \"Not applicable; RECOMMENDER has not spoken yet.\",\n    \"conversational_goal\": \"Get RECOMMENDER's attention and open the dialogue.\",\n    \"interpretation_change\": \"No prior interpretation to change; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER replies: 'Hi, what kind of movies do you like?' SEEKER now observes a greeting and a question about movie preferences.\",\n    \"information_available\": \"SEEKER has received a greeting from RECOMMENDER and knows RECOMMENDER is asking about SEEKER's movie preferences.\",\n    \"preferences\": \"SEEKER has not yet stated any specific movie preferences; the recommender's question invites SEEKER to reveal them.\",\n    \"belief_before\": \"SEEKER believed the conversation was open and was awaiting a response from RECOMMENDER.\",\n    \"belief_update\": \"RECOMMENDER responded, is engaged, and is steering the conversation toward movies by asking about SEEKER's preferences.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER is willing to interact and likely wants to learn SEEKER's movie tastes, possibly to recommend movies.\",\n    \"emotion\": \"Positive and attentive; ready to engage.\",\n    \"intention\": \"Answer RECOMMENDER's question and share movie preferences.\",\n    \"reaction_to_other_speaker\": \"Favorable and engaged; RECOMMENDER's reply satisfies the expected response and introduces a relevant topic.\",\n    \"conversational_goal\": \"Provide movie preference information so RECOMMENDER can continue the conversation or make recommendations.\",\n    \"interpretation_change\": \"Yes. The initial bare greeting is now understood as the start of a movie-related exchange, and SEEKER's goal shifts from merely opening contact to responding about movie preferences.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,61 @@
+数据：4_pred_seeker
+题号：20  d950_u4
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在SEEKER此刻的经验里，‘what kind of movies do you like’像是对‘有明确电影偏好的人’这一自我位置的查验，电影类型成为标明这一偏好身份的坐标；自己的喜好被对象化为一个可指认、可归类的偏好身份。RECOMMENDER随后给出的两个片名作为外部候选，呈现为可能被纳入或排除出这个偏好身份坐标的片名。",
+      "probability": 0.3473
+    },
+    {
+      "content": "在SEEKER此刻的经验里，RECOMMENDER问‘喜欢什么类型的电影’被对象化为一个必须由自己这边确认并持有的类型归属问题：自己的电影喜好是一个需要被归入某类、并由自己说出的对象；随后出现的《Horrible Bosses》或《Superbad》只是外来的片名，不能替他确定这个类型归属。",
+      "probability": 0.3413
+    },
+    {
+      "content": "在SEEKER此刻的经验里，‘喜欢什么类型’仍是一个需要由自己确认并持有的偏好归类；同时，《Horrible Bosses (2011)》和《Superbad (2007)》被对象化为两部理应以‘喜欢/不喜欢’来归类的候选电影，与类型归属一起收束到自己这一侧，形成一组需由自己评价和安放的对象。",
+      "probability": 0.3113
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER问的是我喜欢的电影类型，这等于要我自己交代一个类型归属；这个归属不能由对方塞过来的片名替我决定。我心里其实没有现成的类型标签，只能用《Wedding Crashers》和《It》说明我喜欢的某些点，用不喜欢《Star Wars》说明另一边；这些例子才是我这边的东西。《Horrible Bosses》或《Superbad》只是外来的片名，不能替我确定我属于哪一类。类型这件事得由我自己确认和持有，我倾向于继续拿自己的喜好例子来界定，而不是接受一个别人给的分类。",
+      "activation": 0.3763
+    },
+    {
+      "content": "SEEKER觉得‘what kind of movies do you like’像是在查验自己是否有一个拿得出手的偏好身份；电影类型因此成了标明这个身份的坐标，但他不愿被单一类型框住，于是用‘任何类型都行’打开范围，再用《Wedding Crashers (2005)》《It (2017)》和不喜欢《Star Wars》这类片例，给自己的偏好划出可辨认又不封闭的边界。RECOMMENDER提出的《Horrible Bosses (2011)》《Superbad (2007)》则被SEEKER当作可否纳入这个偏好坐标的外部候选，需凭它们与已举片例的接近程度来决定接纳还是排除。",
+      "activation": 0.3164
+    },
+    {
+      "content": "在SEEKER这里，喜欢什么类型不是RECOMMENDER能替他定下的，得由他自己确认并守住；《Horrible Bosses (2011)》和《Superbad (2007)》也只是被摆到眼前、理应用自己的喜欢/不喜欢来归类的候选。他会拿它们和自己已经说过的偏好对照——接近《Wedding Crashers (2005)》和《It (2017)》那种才可能算对味，像《Star Wars》那种则要排除——并倾向于由自己来判断这两部值不值得纳入可看范围，而不是直接接受别人的归类。",
+      "activation": 0.3073
+    }
+  ],
+  "observed_action": "SEEKER 说“Hey!”，并请求帮助寻找任何类型的优秀电影；表示喜欢《Wedding Crashers (2005)》和《It (2017)》这类，但不喜欢《Star Wars》这类。",
+  "predicted_actions": [
+    {
+      "content": "用正反例说明偏好",
+      "probability": 0.4142
+    },
+    {
+      "content": "要求按例子推荐类似电影",
+      "probability": 0.2721
+    },
+    {
+      "content": "有条件接受任一推荐",
+      "probability": 0.2044
+    },
+    {
+      "content": "询问候选与例子的相似点",
+      "probability": 0.1093
+    }
+  ]
+}
+选择：B: Add more information about their preferences, such as genres, actors, or past favorites
+分数：{"a": 0.2044, "b": 0.4142, "c": 0.2721, "d": 0}
+选择说明：A 0.2044 = 有条件接受任一推荐 0.2044；B 0.4142 = 用正反例说明偏好 0.4142；C 0.2721 = 要求按例子推荐类似电影 0.2721；D 0.0000。2 conditionally accepts a recommendation (feedback), 0 adds preference information, 1 requests a recommendation, and 3 matches none.
+标准：A: Give feedback on the previously recommended movie or suggestion
+B: Add more information about their preferences, such as genres, actors, or past favorites
+结果：对

@@ -1,0 +1,61 @@
+{
+  "id": "trial63__type_d_how_4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Jose Castillo",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Jose notices Patricia is more withdrawn than usual at work; she confirms it is personal but does not share details, and she appreciates his offer to listen.",
+      "belief_before": "Patricia is usually vibrant and seems fine; Jose has no specific concern about her.",
+      "belief_update": "Yes – Jose moves from no specific concern to suspecting Patricia is dealing with personal troubles she is not ready to discuss.",
+      "belief_after": "Patricia seems to have personal troubles she is not ready to share, but she appreciates Jose's offer to listen.",
+      "emotion": "Concerned, empathetic, slightly worried.",
+      "intention": "Be available to listen and support Patricia without pressuring her to share."
+    },
+    {
+      "time": 2,
+      "observed": "Jose overhears Patricia on the phone worried about bills and financial commitments; she later admits she is overwhelmed by bills and says discussing financial planning could help.",
+      "belief_before": "Patricia may be dealing with personal troubles and appreciates his support, but Jose does not know the specifics.",
+      "belief_update": "Yes – Jose learns that financial stress is a concrete concern and that Patricia is receptive to discussing budgeting or financial planning.",
+      "belief_after": "Patricia is specifically stressed by bills and financial commitments, and she is open to financial-planning or budgeting help.",
+      "emotion": "Deepened concern, sympathy, and desire to help.",
+      "intention": "Offer to discuss budgeting and financial-planning strategies when Patricia feels ready."
+    },
+    {
+      "time": 3,
+      "observed": "Jose worries he may have overstepped by raising financial planning; Patricia reassures him that he was not prying and says she is grateful for his offer.",
+      "belief_before": "Patricia is financially stressed and receptive to help, but Jose is uncertain whether his offer felt intrusive.",
+      "belief_update": "Yes – Patricia's reassurance resolves his worry; he learns she welcomes his support rather than feeling he crossed a boundary.",
+      "belief_after": "Patricia does not think Jose overstepped; she is grateful for his offer and sees him as a supportive friend.",
+      "emotion": "Initially anxious or worried, then relieved and reassured.",
+      "intention": "Respect Patricia's privacy, clarify his supportive intent, and continue being a reliable friend."
+    },
+    {
+      "time": 4,
+      "observed": "Jose checks in casually; Patricia says everything is good and that she plans a quiet weekend. Jose senses she appreciates his concern but prefers to handle her issues privately.",
+      "belief_before": "Patricia welcomes Jose's support and does not view him as prying.",
+      "belief_update": "Yes – Jose refines his understanding: Patricia appreciates concern, but she seems to prefer privacy and may not want active involvement in her personal issues.",
+      "belief_after": "Patricia appreciates his support but prefers to handle her issues privately; she will likely reach out if she needs anything.",
+      "emotion": "Respectful concern, supportive, slightly cautious about overstepping.",
+      "intention": "Maintain friendly check-ins without prying, and let Patricia know he remains available if she needs him."
+    },
+    {
+      "time": 5,
+      "observed": "Jose continues checking in; Patricia says she is busy but handling things, thanks him for checking in, and says his support is great.",
+      "belief_before": "Patricia appreciates his support but likely prefers privacy and may not want pressure.",
+      "belief_update": "Minor/reinforcing – Jose learns Patricia is busy but coping, and his regular supportive check-ins are welcomed as long as they remain non-intrusive.",
+      "belief_after": "Patricia is busy but handling things, and she values Jose's supportive presence without needing immediate help.",
+      "emotion": "Supportive, reassured, warm.",
+      "intention": "Continue maintaining a supportive presence, offering practical help like coffee or an ear when needed, without pushing."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Jose notices Patricia is more withdrawn than usual at work; she confirms it is personal but does not share details, and she appreciates his offer to listen.\",\n    \"belief_before\": \"Patricia is usually vibrant and seems fine; Jose has no specific concern about her.\",\n    \"belief_update\": \"Yes – Jose moves from no specific concern to suspecting Patricia is dealing with personal troubles she is not ready to discuss.\",\n    \"belief_after\": \"Patricia seems to have personal troubles she is not ready to share, but she appreciates Jose's offer to listen.\",\n    \"emotion\": \"Concerned, empathetic, slightly worried.\",\n    \"intention\": \"Be available to listen and support Patricia without pressuring her to share.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Jose overhears Patricia on the phone worried about bills and financial commitments; she later admits she is overwhelmed by bills and says discussing financial planning could help.\",\n    \"belief_before\": \"Patricia may be dealing with personal troubles and appreciates his support, but Jose does not know the specifics.\",\n    \"belief_update\": \"Yes – Jose learns that financial stress is a concrete concern and that Patricia is receptive to discussing budgeting or financial planning.\",\n    \"belief_after\": \"Patricia is specifically stressed by bills and financial commitments, and she is open to financial-planning or budgeting help.\",\n    \"emotion\": \"Deepened concern, sympathy, and desire to help.\",\n    \"intention\": \"Offer to discuss budgeting and financial-planning strategies when Patricia feels ready.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Jose worries he may have overstepped by raising financial planning; Patricia reassures him that he was not prying and says she is grateful for his offer.\",\n    \"belief_before\": \"Patricia is financially stressed and receptive to help, but Jose is uncertain whether his offer felt intrusive.\",\n    \"belief_update\": \"Yes – Patricia's reassurance resolves his worry; he learns she welcomes his support rather than feeling he crossed a boundary.\",\n    \"belief_after\": \"Patricia does not think Jose overstepped; she is grateful for his offer and sees him as a supportive friend.\",\n    \"emotion\": \"Initially anxious or worried, then relieved and reassured.\",\n    \"intention\": \"Respect Patricia's privacy, clarify his supportive intent, and continue being a reliable friend.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Jose checks in casually; Patricia says everything is good and that she plans a quiet weekend. Jose senses she appreciates his concern but prefers to handle her issues privately.\",\n    \"belief_before\": \"Patricia welcomes Jose's support and does not view him as prying.\",\n    \"belief_update\": \"Yes – Jose refines his understanding: Patricia appreciates concern, but she seems to prefer privacy and may not want active involvement in her personal issues.\",\n    \"belief_after\": \"Patricia appreciates his support but prefers to handle her issues privately; she will likely reach out if she needs anything.\",\n    \"emotion\": \"Respectful concern, supportive, slightly cautious about overstepping.\",\n    \"intention\": \"Maintain friendly check-ins without prying, and let Patricia know he remains available if she needs him.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Jose continues checking in; Patricia says she is busy but handling things, thanks him for checking in, and says his support is great.\",\n    \"belief_before\": \"Patricia appreciates his support but likely prefers privacy and may not want pressure.\",\n    \"belief_update\": \"Minor/reinforcing – Jose learns Patricia is busy but coping, and his regular supportive check-ins are welcomed as long as they remain non-intrusive.\",\n    \"belief_after\": \"Patricia is busy but handling things, and she values Jose's supportive presence without needing immediate help.\",\n    \"emotion\": \"Supportive, reassured, warm.\",\n    \"intention\": \"Continue maintaining a supportive presence, offering practical help like coffee or an ear when needed, without pushing.\"\n  }\n]",
+  "final_response": "ANSWER: c",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial63"
+}

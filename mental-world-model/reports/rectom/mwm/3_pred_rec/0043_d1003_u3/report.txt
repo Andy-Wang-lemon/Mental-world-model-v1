@@ -1,0 +1,61 @@
+数据：3_pred_rec
+题号：43  d1003_u3
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER 用“friend”称呼 RECOMMENDER，这个称呼被收进“我这边”，像是一种与自己分不开的亲近关系，不能当作与己无关的普通叫法；而“Can you recommend some good classic movies?”则显现为一个要求具体片名或片单的推荐任务，仿佛不给出具体片名就不算真正回应。SEEKER 随后说出的“After”只是叠在这个请求之后的声音，并未改变眼前这个由亲近称呼与具体片单要求共同构成的对象化世界。",
+      "probability": 0.3745
+    },
+    {
+      "content": "SEEKER 直接问“Can you recommend some good classic movies?”，在 RECOMMENDER 这里，“能推荐经典电影的人/懂经典电影的人”这一位置不像对话中的临时角色，而像是对自身品味或知识身份的确认；同时“有人问推荐”被对象化为必须给出具体片名或片单才能算回应的要求，否则这个请求就悬在那里。SEEKER 之后的“After”只是让这个被确认的身份位置继续暴露在推荐请求之下。",
+      "probability": 0.3343
+    },
+    {
+      "content": "SEEKER 用“friend”称呼 RECOMMENDER，这份朋友式亲近被放在“我这边”，视为与自己分不开、不能当作与己无关的普通称呼；而“good classic movies”则显现为指向一个固定、公认的经典片目，仿佛存在一个标准答案或正确清单。于是当前所缘境成为：在亲近关系里，被要求从这个固定经典体系中给出片目；SEEKER 随后的“After”并未让这个固定清单或亲近要求消失。",
+      "probability": 0.2913
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 以“friend”相称，被 RECOMMENDER 纳入自身亲近的一侧，使这个请求不再是无关路人的询问；同时“推荐经典电影”在 RECOMMENDER 认知中固化成一个需落到具体片名的任务，若只泛泛而谈便像没有真正回应。可是“classic”的时段边界尚不清楚，70 年代之前与之后指向不同的片单，必须先辨明这一边界，才能让具体片名的给出成为稳妥的回应。随后“After”虽已说出，但在这里仍只是叠在原先请求上的限定声音，尚未改变这个由亲近称呼与具体片单要求共同构成的对象。",
+      "activation": 0.3541
+    },
+    {
+      "content": "他一被问推荐经典电影，就觉得这是在确认他懂不懂经典片，这个位置不能含糊。可“classic”到底指哪一段，他又不愿装懂，也不肯随便丢几个片名充数；先问清是70年代前还是后，才能既守住懂片人的位置，又给出配得上这个位置的推荐。SEEKER 答“After”后，他更觉得这个身份还悬在对方眼下，范围必须继续钉准。",
+      "activation": 0.336
+    },
+    {
+      "content": "对方叫我“friend”，这份亲近不是随口客套，而是落在我身上、与我分不开的联结；因此他问“good classic movies”时，我不能冷淡处理。与此同时，“经典电影”在我这里像是一套本就存在、公认的固定片目，“好”经典片目应有标准答案。可“classic”的边界并不清楚，他后来的“After”也没有让这个固定体系或亲近要求消失；我得先把年份范围问明，才能在认准的那套经典片目里给出推荐，否则怕给错、辜负这份朋友式的信任。",
+      "activation": 0.3099
+    }
+  ],
+  "observed_action": "RECOMMENDER 回应 Sure，并询问 SEEKER 所说的 classic 是指 70 年代之前还是之后。",
+  "predicted_actions": [
+    {
+      "content": "推荐影片",
+      "probability": 0.5092
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.4089
+    },
+    {
+      "content": "告知稍后提供核对后的片单",
+      "probability": 0.0465
+    },
+    {
+      "content": "询问已看影片",
+      "probability": 0.0354
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.4089, "b": 0.0465, "c": 0.5446, "d": 0, "e": 0}
+选择说明：A 0.4089 = 询问偏好 0.4089；B 0.0465 = 告知稍后提供核对后的片单 0.0465；C 0.5446 = 推荐影片 0.5092 + 询问已看影片 0.0354；D 0.0000；E 0.0000。询问偏好属于A；推荐影片和询问已看影片属于C；告知稍后提供片单属于B。
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

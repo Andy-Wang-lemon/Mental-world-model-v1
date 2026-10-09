@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：25  d957_u4
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER 要找的搞笑喜剧被放在「类似《She's Out of My League》(2010)」这条相似性标尺上，这条标尺仿佛是筛选推荐时理应如此的首要规则。与此同时，我之前提出过的那些片名不是公共候选，而是挂在我名下的「我的建议」；SEEKER 说从未看过它们，这个事实首先呈现为我的建议尚未被验看。他说看过《Deuce Bigalo》但不合口味，也被按同一标尺摆到与我的建议范围相对的位置。",
+      "probability": 0.4304
+    },
+    {
+      "content": "此刻，SEEKER 用《She's Out of My League》(2010) 作参照、又说明不喜欢《Deuce Bigalo》这类片，这整个场面被我经验为检验「我能否读懂他的喜剧口味并给出合适推荐」的场合。相似于《She's Out of My League》成为固定标准，而他说没看过我建议的电影、对《Deuce Bigalo》不合口味，都是用来衡量我的口味判断是否正确的材料。",
+      "probability": 0.3283
+    },
+    {
+      "content": "此刻，SEEKER 要找与《She's Out of My League》相似的搞笑喜剧，又把《Daddy's Home》说成好片，同时告知从未看过我先前建议的电影，且看过《Deuce Bigalo》但不喜那类。在我的经验里，这不是几段彼此无关的偏好陈述：他说没看过我建议的电影，使先前的推荐无法被他的观看经验确认；而“不喜欢《Deuce Bigalo》这类”被我与自己的推荐选择绑在一起——若这类片落在我建议的范围内，他的不喜就像对我选片眼光的否定，不能当作与我无关的类型偏好。并且，我把他的喜剧偏好执为已由片单固定：《She's Out of My League》《Daddy's Home》在一端，《Deuce Bigalo》一类在另一端；他要找与《She's Out of My League》相似的搞笑喜剧，这个要求便只能在这张坐标内被我经验到，后续推荐也似乎只能落在这个口味坐标内。",
+      "probability": 0.2414
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他要找的是贴近《She's Out of My League》(2010) 的搞笑喜剧，这个相似点一出来，就变成我替他筛片时最顺手的尺子，别的片名都要先摆到这尺子下比一比。我之前说的 Beerfest 和 The Blues Brothers 不是随便放出去的公示例，而是我名下的建议；他说从没看过，在我这里先落成“还没验看”，不是被否掉。至于《Deuce Bigalo》他看过又不合口味，这让我觉得那一类方向未必对他胃口，但我仍倾向于先把已提的片名拿回来问他看过没有，再按是否贴近《She's Out of My League》这标准给他换一部更可能合适的喜剧。",
+      "activation": 0.4044
+    },
+    {
+      "content": "我心里把眼前这个场面当成在检验我能不能读懂他的喜剧口味：他用《She's Out of My League》作参照，说没看过我提的那些，又不喜欢《Deuce Bigalo》这类，这些都是在告诉我，我的推荐得紧紧贴着那个参照的搞笑路子，同时避开他嫌弃的那类。相似性在我这里成了首要标准，我倾向于顺着它重新筛片子，并且有点在意自己这次判断得准不准。",
+      "activation": 0.3458
+    },
+    {
+      "content": "他接收到 SEEKER 要找与《She's Out of My League》相似的搞笑喜剧，并把《Daddy's Home》归为好片；同时得知对方从未看过自己先前建议的《Beerfest》《The Blues Brothers》，这让他觉得先前的推荐没有被对方的观看经验确认，心里不太踏实。而 SEEKER 说看过《Deuce Bigalow》但不喜那类，他把这句话与自己的推荐选择绑在一起，感到这像是对自己选片眼光的否定，不能只当作对方无关的类型偏好。于是他把对方的喜剧口味整理成一张固定坐标：一端是《She's Out of My League》《Daddy's Home》，另一端是《Deuce Bigalow》那类；要找相似片就只能在这张坐标内搜寻。他内心倾向于继续在这坐标内找与《She's Out of My League》相近的喜剧，并希望新的推荐能落进对方认可的那一端，以确认自己的推荐是有效的。",
+      "activation": 0.2498
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 hey there，并询问能否帮对方找一部类似 Beerfest (2006) 或 The Blues Brothers (1980) 的好喜剧；随后说 Oh cool ok I can help，询问对方是否看过自己提到的影片，或提议 Deuce Bigalow: Male Gigolo (1999)。",
+  "predicted_actions": [
+    {
+      "content": "重新筛选推荐",
+      "probability": 0.2559
+    },
+    {
+      "content": "询问偏好原因",
+      "probability": 0.2463
+    },
+    {
+      "content": "询问是否看过电影",
+      "probability": 0.1877
+    },
+    {
+      "content": "推荐相似风格的电影",
+      "probability": 0.1609
+    },
+    {
+      "content": "推荐电影",
+      "probability": 0.1491
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.2463, "b": 0, "c": 0.7536, "d": 0, "e": 0}
+选择说明：A 0.2463 = 询问偏好原因 0.2463；B 0.0000；C 0.7536 = 重新筛选推荐 0.2559 + 询问是否看过电影 0.1877 + 推荐相似风格的电影 0.1609 + 推荐电影 0.1491；D 0.0000；E 0.0000。Action 1 asks for preference reason (A), while actions 0, 2, 3, and 4 involve recommending or inquiring further toward a recommendation (C).
+标准：D: Explains a recommendation with background or reasoning
+C: Provides a recommendation directly or by inquiring further
+结果：对

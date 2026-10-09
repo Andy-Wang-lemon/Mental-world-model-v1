@@ -1,0 +1,89 @@
+{
+  "id": "3_pred_rec__0076_d1205_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hey How are you'",
+      "information_available": "Recommender only knows that the seeker has initiated a greeting; no movie preferences or other context yet.",
+      "preferences": "Recommender's own stance: be polite and helpful. No information yet about the seeker's movie preferences.",
+      "belief_before": "No prior information about this seeker in the dialogue.",
+      "belief_update": "The seeker is greeting and appears open to conversation.",
+      "belief_after": "Seeker has greeted; movie tastes unknown.",
+      "emotion": "Neutral to mildly positive.",
+      "intention": "Respond politely and begin recommendation-oriented conversation.",
+      "reaction_to_other": "Friendly greeting; no preference cues yet.",
+      "conversational_goal": "Acknowledge the greeting and elicit the seeker's movie preferences.",
+      "changes_previous_interpretation": "Not applicable; initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hello, how are you? What kind of movies do you like?'",
+      "information_available": "Recommender has only the prior greeting from the seeker; no genre or movie preferences have been provided.",
+      "preferences": "Recommender prefers to be courteous and to gather preference information before recommending.",
+      "belief_before": "Seeker greeted; movie tastes unknown.",
+      "belief_update": "Recommender chooses to greet back and ask about movie preferences; no new preference information from seeker is gained.",
+      "belief_after": "Seeker is still only known as friendly/greeting; movie preferences remain unknown.",
+      "emotion": "Polite, warm, helpful.",
+      "intention": "Build rapport and prompt the seeker to state movie preferences.",
+      "reaction_to_other": "Responds positively to the greeting; no negative reaction.",
+      "conversational_goal": "Get enough preference information to make relevant movie recommendations.",
+      "changes_previous_interpretation": "No change; prior uncertainty about movie preferences remains."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I amreally into everything...I really like foreign movies as well...it is really my thing'",
+      "information_available": "Recommender now has self-reported movie taste: broad/everything and especially foreign movies.",
+      "preferences": "Seeker's stated preferences: broad genre openness and strong liking for foreign movies. Recommender's stance: use this to tailor recommendations.",
+      "belief_before": "Seeker likes movies but specific genres are unknown.",
+      "belief_update": "Seeker likes a wide range of movies and has a particular enthusiasm for foreign films.",
+      "belief_after": "Seeker is broadly open and especially interested in foreign movies.",
+      "emotion": "Interested, positive, engaged.",
+      "intention": "Use the newly stated preferences to propose suitable movies.",
+      "reaction_to_other": "Positive; the preference disclosure is useful and actionable.",
+      "conversational_goal": "Recommend films that match broad and foreign-film interests.",
+      "changes_previous_interpretation": "Yes; unknown movie preferences are updated to broad/foreign preference."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'Because of the holidays, I would recommend Dr. Seuss' How the Grinch Stole Christmas (2000) and Christmas with the Kranks (2004). Have you seen either of these?'",
+      "information_available": "Recommender knows seeker is broadly open and likes foreign movies; does not yet know whether seeker has seen these holiday films or likes holiday themes.",
+      "preferences": "Recommender's inferred seeker preferences: broad and foreign-film interest. Recommender's own stance/preference: offer holiday-themed options and check familiarity.",
+      "belief_before": "Seeker likes many movies, especially foreign films.",
+      "belief_update": "Recommender chooses holiday-themed recommendations and asks whether seeker has seen them.",
+      "belief_after": "Recommender believes holiday films may be acceptable given the holiday context, but seeker's familiarity/interest in them is unconfirmed.",
+      "emotion": "Helpful, enthusiastic, holiday-context-aware.",
+      "intention": "Recommend specific films and determine whether they have already been seen.",
+      "reaction_to_other": "Acts on prior preference disclosure; no new reaction from seeker in this turn.",
+      "conversational_goal": "Offer concrete options and narrow the recommendation set by checking seen status.",
+      "changes_previous_interpretation": "No change to belief about seeker's broad/foreign preference; adds a tentative holiday-theme recommendation strategy."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'no, I am not really a holiday's person...do you have any other suggestions?'",
+      "information_available": "Recommender learns that seeker says no, likely has not seen the recommended films, is not a holiday-themed movie person, and requests other suggestions.",
+      "preferences": "Seeker's updated preferences: not holiday-themed; still presumably broad and foreign-film oriented from earlier. Recommender's stance: adapt to non-holiday options.",
+      "belief_before": "Seeker likes many movies, especially foreign films; holiday recommendations were offered and seen status was unknown.",
+      "belief_update": "Seeker rejects or does not favor holiday themes and asks for alternatives; the holiday recommendation assumption is not a good fit.",
+      "belief_after": "Seeker prefers non-holiday movies and still needs recommendations matching broad/foreign interests.",
+      "emotion": "Attentive, adapting, possibly mildly apologetic or regrouped.",
+      "intention": "Pivot away from holiday films and provide alternative suggestions.",
+      "reaction_to_other": "Accepts the seeker's correction; no defensiveness.",
+      "conversational_goal": "Offer new non-holiday recommendations that align with seeker's broad and foreign-film taste.",
+      "changes_previous_interpretation": "Yes; prior holiday-theme recommendation is invalidated/updated by seeker's stated dislike of holiday movies."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hey How are you'\",\n    \"information_available\": \"Recommender only knows that the seeker has initiated a greeting; no movie preferences or other context yet.\",\n    \"preferences\": \"Recommender's own stance: be polite and helpful. No information yet about the seeker's movie preferences.\",\n    \"belief_before\": \"No prior information about this seeker in the dialogue.\",\n    \"belief_update\": \"The seeker is greeting and appears open to conversation.\",\n    \"belief_after\": \"Seeker has greeted; movie tastes unknown.\",\n    \"emotion\": \"Neutral to mildly positive.\",\n    \"intention\": \"Respond politely and begin recommendation-oriented conversation.\",\n    \"reaction_to_other\": \"Friendly greeting; no preference cues yet.\",\n    \"conversational_goal\": \"Acknowledge the greeting and elicit the seeker's movie preferences.\",\n    \"changes_previous_interpretation\": \"Not applicable; initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hello, how are you? What kind of movies do you like?'\",\n    \"information_available\": \"Recommender has only the prior greeting from the seeker; no genre or movie preferences have been provided.\",\n    \"preferences\": \"Recommender prefers to be courteous and to gather preference information before recommending.\",\n    \"belief_before\": \"Seeker greeted; movie tastes unknown.\",\n    \"belief_update\": \"Recommender chooses to greet back and ask about movie preferences; no new preference information from seeker is gained.\",\n    \"belief_after\": \"Seeker is still only known as friendly/greeting; movie preferences remain unknown.\",\n    \"emotion\": \"Polite, warm, helpful.\",\n    \"intention\": \"Build rapport and prompt the seeker to state movie preferences.\",\n    \"reaction_to_other\": \"Responds positively to the greeting; no negative reaction.\",\n    \"conversational_goal\": \"Get enough preference information to make relevant movie recommendations.\",\n    \"changes_previous_interpretation\": \"No change; prior uncertainty about movie preferences remains.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I amreally into everything...I really like foreign movies as well...it is really my thing'\",\n    \"information_available\": \"Recommender now has self-reported movie taste: broad/everything and especially foreign movies.\",\n    \"preferences\": \"Seeker's stated preferences: broad genre openness and strong liking for foreign movies. Recommender's stance: use this to tailor recommendations.\",\n    \"belief_before\": \"Seeker likes movies but specific genres are unknown.\",\n    \"belief_update\": \"Seeker likes a wide range of movies and has a particular enthusiasm for foreign films.\",\n    \"belief_after\": \"Seeker is broadly open and especially interested in foreign movies.\",\n    \"emotion\": \"Interested, positive, engaged.\",\n    \"intention\": \"Use the newly stated preferences to propose suitable movies.\",\n    \"reaction_to_other\": \"Positive; the preference disclosure is useful and actionable.\",\n    \"conversational_goal\": \"Recommend films that match broad and foreign-film interests.\",\n    \"changes_previous_interpretation\": \"Yes; unknown movie preferences are updated to broad/foreign preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'Because of the holidays, I would recommend Dr. Seuss' How the Grinch Stole Christmas (2000) and Christmas with the Kranks (2004). Have you seen either of these?'\",\n    \"information_available\": \"Recommender knows seeker is broadly open and likes foreign movies; does not yet know whether seeker has seen these holiday films or likes holiday themes.\",\n    \"preferences\": \"Recommender's inferred seeker preferences: broad and foreign-film interest. Recommender's own stance/preference: offer holiday-themed options and check familiarity.\",\n    \"belief_before\": \"Seeker likes many movies, especially foreign films.\",\n    \"belief_update\": \"Recommender chooses holiday-themed recommendations and asks whether seeker has seen them.\",\n    \"belief_after\": \"Recommender believes holiday films may be acceptable given the holiday context, but seeker's familiarity/interest in them is unconfirmed.\",\n    \"emotion\": \"Helpful, enthusiastic, holiday-context-aware.\",\n    \"intention\": \"Recommend specific films and determine whether they have already been seen.\",\n    \"reaction_to_other\": \"Acts on prior preference disclosure; no new reaction from seeker in this turn.\",\n    \"conversational_goal\": \"Offer concrete options and narrow the recommendation set by checking seen status.\",\n    \"changes_previous_interpretation\": \"No change to belief about seeker's broad/foreign preference; adds a tentative holiday-theme recommendation strategy.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'no, I am not really a holiday's person...do you have any other suggestions?'\",\n    \"information_available\": \"Recommender learns that seeker says no, likely has not seen the recommended films, is not a holiday-themed movie person, and requests other suggestions.\",\n    \"preferences\": \"Seeker's updated preferences: not holiday-themed; still presumably broad and foreign-film oriented from earlier. Recommender's stance: adapt to non-holiday options.\",\n    \"belief_before\": \"Seeker likes many movies, especially foreign films; holiday recommendations were offered and seen status was unknown.\",\n    \"belief_update\": \"Seeker rejects or does not favor holiday themes and asks for alternatives; the holiday recommendation assumption is not a good fit.\",\n    \"belief_after\": \"Seeker prefers non-holiday movies and still needs recommendations matching broad/foreign interests.\",\n    \"emotion\": \"Attentive, adapting, possibly mildly apologetic or regrouped.\",\n    \"intention\": \"Pivot away from holiday films and provide alternative suggestions.\",\n    \"reaction_to_other\": \"Accepts the seeker's correction; no defensiveness.\",\n    \"conversational_goal\": \"Offer new non-holiday recommendations that align with seeker's broad and foreign-film taste.\",\n    \"changes_previous_interpretation\": \"Yes; prior holiday-theme recommendation is invalidated/updated by seeker's stated dislike of holiday movies.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

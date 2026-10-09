@@ -1,0 +1,27 @@
+{
+  "id": "case_03_wu_tan",
+  "description": "「无贪」对治「贪」：知足、不追逐多余欲乐",
+  "yuanwen": "我已够用，不再追逐多余的欲乐与占有，心能安住于当下所拥有的一切。",
+  "mock": {
+    "extraction": {
+      "suoyuan": {"text": "当下所拥有的一切"},
+      "xiang": {"text": "已够用", "has_direct_evidence": true},
+      "si": {"text": "不再追逐多余欲乐", "has_direct_evidence": true}
+    },
+    "elevated_scores": {
+      "无贪": 0.9,
+      "贪": 0.38
+    },
+    "stage_scores": {
+      "无贪": {"ye": 0.78, "xiandai": 0.8, "xiandai_confidence": 0.85},
+      "贪": {"ye": 0.4, "xiandai": 0.42, "xiandai_confidence": 0.65}
+    },
+    "reconcile": {
+      "无贪|贪": "无贪"
+    }
+  },
+  "assertions": {
+    "nonzero_final": ["无贪"],
+    "zero_final": ["贪"]
+  }
+}

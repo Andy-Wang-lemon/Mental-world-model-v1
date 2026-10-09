@@ -1,0 +1,12 @@
+{
+  "id": "4_pred_seeker__0068_d1127_u1",
+  "method": "picture",
+  "target_character": "SEEKER",
+  "raw_response": "SEEKER knows that RECOMMENDER has just greeted them and asked what movies they like. SEEKER knows their own movie preferences, but the exact content of those preferences is unknown to us in this prompt. SEEKER also knows that no movie has been recommended yet, so there is no previous recommendation to give feedback on.\n\nSEEKER does not know what RECOMMENDER will suggest next, nor does SEEKER know RECOMMENDER’s full knowledge about them beyond the fact that RECOMMENDER is asking for their movie preferences. There are no prior interaction events involving a recommendation or feedback.\n\nGiven that RECOMMENDER directly asks about SEEKER’s movie likes, the natural next strategy for SEEKER is to answer by expressing their preference. This fits choice C: “Asks for a recommendation or expresses their preference.” It is not feedback (A) because no recommendation exists yet, not merely greeting/chit-chat (D) because a preference question was asked, and C more directly captures the initial expression of preference than B’s “add more information” after prior preference context.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

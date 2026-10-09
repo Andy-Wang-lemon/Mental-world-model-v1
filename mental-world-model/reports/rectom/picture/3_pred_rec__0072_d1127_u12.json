@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0072_d1127_u12",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "From RECOMMENDER’s perspective, the relevant known information is:\n\n- The seeker wants a good Christmas movie, any genre.\n- The seeker loves *Home Alone*, has not seen *Elf*, did not like the 2000 *Grinch* and prefers the original.\n- The seeker has not seen *The Holiday*.\n- The seeker has not seen *This Christmas* but loves dramas, so they probably would like it.\n- The seeker has not seen *The Night Before* and does not like adult humor, so they probably would not like it.\n- The seeker has not seen *The Family Stone* but likes Rachel McAdams.\n- RECOMMENDER has already recommended several Christmas movies, including *The Family Stone*, and has been adding details to support recommendations.\n\nUnknown to RECOMMENDER:\n\n- Whether the seeker will actually like *The Family Stone*.\n- Whether the seeker likes other Rachel McAdams movies or wants more Rachel McAdams recommendations.\n- Whether the seeker is ready to choose a movie or wants more options.\n- The seeker’s exact next intention beyond what has been stated.\n\nThe last turn gives positive feedback: the seeker likes Rachel McAdams, and *The Family Stone* was just recommended with Rachel McAdams. The most likely next strategy is for RECOMMENDER to elaborate on that recommendation by giving more background or reasoning, such as cast details, genre, or why it fits the seeker’s preferences. This matches strategy D.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

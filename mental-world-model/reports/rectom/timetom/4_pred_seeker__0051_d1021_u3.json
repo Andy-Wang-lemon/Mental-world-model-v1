@@ -1,0 +1,46 @@
+{
+  "id": "4_pred_seeker__0051_d1021_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets SEEKER and asks what kind of movie SEEKER is looking for. No SEEKER preference has been stated yet.",
+      "belief_before": "The dialogue has just begun; SEEKER has no specific belief about this recommender yet.",
+      "belief_update": "Recommender wants to understand SEEKER's movie criteria before suggesting anything.",
+      "belief_after": "Recommender is waiting for SEEKER to specify a genre or type of film.",
+      "emotion": "Neutral/attentive; open to starting the interaction.",
+      "intention": "Respond to the greeting and question, and begin searching for a suitable movie.",
+      "conversational_goal": "Provide movie preferences so the recommender can help."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says they want a film of any genre, with a woman in the lead, and is in the mood for a good heroine.",
+      "belief_before": "Recommender is asking for SEEKER's movie preferences so they can make a recommendation.",
+      "belief_update": "SEEKER expresses explicit criteria: any genre, female lead, and a heroic female character.",
+      "belief_after": "Recommender now knows SEEKER wants a female-led film with a good heroine, regardless of genre.",
+      "emotion": "Positive and enthusiastic, indicated by the smiley and the stated mood for a heroine.",
+      "intention": "Get recommendations that match the stated preference for a female lead/heroine.",
+      "conversational_goal": "Clarify preferences so the recommender can suggest an appropriate film."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks whether SEEKER has seen The Blind Side (2009) with Sandra Bullock.",
+      "belief_before": "SEEKER has provided criteria and expects the recommender to use them to propose a film.",
+      "belief_update": "Recommender treats The Blind Side and Sandra Bullock as a possible match for the female-lead/heroine request. This shifts the dialogue from open preference expression to evaluating a concrete candidate.",
+      "belief_after": "SEEKER has a candidate film to consider and must decide whether it is seen, matches the 'good heroine' criterion, or should be accepted/rejected.",
+      "emotion": "Curious/evaluative; no explicit positive or negative reaction yet.",
+      "intention": "Assess the suggested film and respond to whether it fits the request.",
+      "conversational_goal": "Answer the recommender's question about The Blind Side and move toward accepting, rejecting, or refining the recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets SEEKER and asks what kind of movie SEEKER is looking for. No SEEKER preference has been stated yet.\",\n    \"belief_before\": \"The dialogue has just begun; SEEKER has no specific belief about this recommender yet.\",\n    \"belief_update\": \"Recommender wants to understand SEEKER's movie criteria before suggesting anything.\",\n    \"belief_after\": \"Recommender is waiting for SEEKER to specify a genre or type of film.\",\n    \"emotion\": \"Neutral/attentive; open to starting the interaction.\",\n    \"intention\": \"Respond to the greeting and question, and begin searching for a suitable movie.\",\n    \"conversational_goal\": \"Provide movie preferences so the recommender can help.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says they want a film of any genre, with a woman in the lead, and is in the mood for a good heroine.\",\n    \"belief_before\": \"Recommender is asking for SEEKER's movie preferences so they can make a recommendation.\",\n    \"belief_update\": \"SEEKER expresses explicit criteria: any genre, female lead, and a heroic female character.\",\n    \"belief_after\": \"Recommender now knows SEEKER wants a female-led film with a good heroine, regardless of genre.\",\n    \"emotion\": \"Positive and enthusiastic, indicated by the smiley and the stated mood for a heroine.\",\n    \"intention\": \"Get recommendations that match the stated preference for a female lead/heroine.\",\n    \"conversational_goal\": \"Clarify preferences so the recommender can suggest an appropriate film.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks whether SEEKER has seen The Blind Side (2009) with Sandra Bullock.\",\n    \"belief_before\": \"SEEKER has provided criteria and expects the recommender to use them to propose a film.\",\n    \"belief_update\": \"Recommender treats The Blind Side and Sandra Bullock as a possible match for the female-lead/heroine request. This shifts the dialogue from open preference expression to evaluating a concrete candidate.\",\n    \"belief_after\": \"SEEKER has a candidate film to consider and must decide whether it is seen, matches the 'good heroine' criterion, or should be accepted/rejected.\",\n    \"emotion\": \"Curious/evaluative; no explicit positive or negative reaction yet.\",\n    \"intention\": \"Assess the suggested film and respond to whether it fits the request.\",\n    \"conversational_goal\": \"Answer the recommender's question about The Blind Side and move toward accepting, rejecting, or refining the recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

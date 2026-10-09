@@ -1,0 +1,89 @@
+{
+  "id": "3_pred_rec__0144_d2335_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hello! Happy New Year!'",
+      "information_available": "Only a New Year greeting from SEEKER; no movie preferences or request yet.",
+      "preferences": "No explicit target or seeker movie preferences known.",
+      "belief_before": "No prior context about SEEKER's intent or preferences.",
+      "belief_update": "SEEKER is initiating a friendly New Year greeting.",
+      "belief_after": "SEEKER is friendly and expects a reciprocal greeting.",
+      "emotion": "Pleasant/neutral.",
+      "intention": "Acknowledge the greeting politely.",
+      "reaction_to_other": "Positive/neutral; greeting accepted.",
+      "conversational_goal": "Reciprocate the greeting and maintain a friendly tone.",
+      "interpretation_change": "Initializes the social context; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Happy New year!'",
+      "information_available": "SEEKER has greeted RECOMMENDER; no recommendation topic yet.",
+      "preferences": "No explicit movie preferences known.",
+      "belief_before": "SEEKER is friendly and has greeted me.",
+      "belief_update": "I have reciprocated the greeting; the social opening is complete.",
+      "belief_after": "We are on friendly terms; SEEKER may now make a request.",
+      "emotion": "Warm/polite.",
+      "intention": "Return the New Year greeting.",
+      "reaction_to_other": "Positive; responds in kind.",
+      "conversational_goal": "Establish rapport and invite the next part of the conversation.",
+      "interpretation_change": "No substantive change; still a social greeting phase."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I am hoping for you to give me some recommendations for a comedy...I like Step Brothers (2008) and The Hangover (2009) if that is helpful'",
+      "information_available": "SEEKER wants comedy recommendations and cites Step Brothers (2008) and The Hangover (2009) as liked examples.",
+      "preferences": "Inferred seeker preferences: comedy, especially examples like Step Brothers and The Hangover; RECOMMENDER's own movie preferences not stated.",
+      "belief_before": "SEEKER is friendly; no request or taste information yet.",
+      "belief_update": "SEEKER is asking for a comedy recommendation and likes Step Brothers and The Hangover.",
+      "belief_after": "A suitable recommendation should be a comedy aligned with those liked examples, though exact fit is uncertain.",
+      "emotion": "Attentive/helpful.",
+      "intention": "Understand the request and search for a comedy recommendation.",
+      "reaction_to_other": "Engaged and positively oriented toward helping SEEKER.",
+      "conversational_goal": "Provide or prepare a comedy recommendation based on SEEKER's stated likes.",
+      "interpretation_change": "Changes context from social greeting to an active recommendation task."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'I heard that Daddy's Home (2015) was funny'",
+      "information_available": "SEEKER wants a comedy and likes Step Brothers and The Hangover; RECOMMENDER remembers hearing Daddy's Home was funny.",
+      "preferences": "No explicit RECOMMENDER movie preference; uses remembered reputation of Daddy's Home as candidate. Seeker preferences remain comedy, Step Brothers, The Hangover.",
+      "belief_before": "SEEKER wants a comedy and likes Step Brothers and The Hangover.",
+      "belief_update": "Daddy's Home was heard to be funny, so it may be a plausible comedy recommendation.",
+      "belief_after": "Daddy's Home is a candidate recommendation for SEEKER's comedy request, though based on hearsay and not confirmed to match their taste.",
+      "emotion": "Hopeful/helpful.",
+      "intention": "Offer Daddy's Home as a comedy suggestion.",
+      "reaction_to_other": "Responsive to SEEKER's request; tries to help.",
+      "conversational_goal": "Satisfy SEEKER's request by proposing a comedy film.",
+      "interpretation_change": "Shifts from receiving the request to actively proposing a recommendation."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'I hated that movie. I did not even crack a smile once...Do you have a different suggestion, perhaps?'",
+      "information_available": "SEEKER strongly disliked Daddy's Home, did not find it funny, and asks for a different suggestion. Previously known: SEEKER wants comedy and likes Step Brothers and The Hangover.",
+      "preferences": "SEEKER dislikes Daddy's Home and wants a different comedy; likes Step Brothers and The Hangover. RECOMMENDER's own movie preferences still not stated.",
+      "belief_before": "Daddy's Home might be a suitable comedy recommendation.",
+      "belief_update": "SEEKER hated Daddy's Home and it failed to amuse them; they want another suggestion.",
+      "belief_after": "Daddy's Home is unsuitable; a new comedy recommendation is needed, preferably more aligned with Step Brothers and The Hangover.",
+      "emotion": "Apologetic/awkward/concerned.",
+      "intention": "Acknowledge the failed recommendation and offer a different suggestion.",
+      "reaction_to_other": "Receptive to negative feedback; concerned about SEEKER's dissatisfaction.",
+      "conversational_goal": "Recover from the rejected recommendation and provide a better alternative.",
+      "interpretation_change": "Invalidates the previous interpretation of Daddy's Home as a good candidate; recalibrates toward a different comedy."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hello! Happy New Year!'\",\n    \"information_available\": \"Only a New Year greeting from SEEKER; no movie preferences or request yet.\",\n    \"preferences\": \"No explicit target or seeker movie preferences known.\",\n    \"belief_before\": \"No prior context about SEEKER's intent or preferences.\",\n    \"belief_update\": \"SEEKER is initiating a friendly New Year greeting.\",\n    \"belief_after\": \"SEEKER is friendly and expects a reciprocal greeting.\",\n    \"emotion\": \"Pleasant/neutral.\",\n    \"intention\": \"Acknowledge the greeting politely.\",\n    \"reaction_to_other\": \"Positive/neutral; greeting accepted.\",\n    \"conversational_goal\": \"Reciprocate the greeting and maintain a friendly tone.\",\n    \"interpretation_change\": \"Initializes the social context; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Happy New year!'\",\n    \"information_available\": \"SEEKER has greeted RECOMMENDER; no recommendation topic yet.\",\n    \"preferences\": \"No explicit movie preferences known.\",\n    \"belief_before\": \"SEEKER is friendly and has greeted me.\",\n    \"belief_update\": \"I have reciprocated the greeting; the social opening is complete.\",\n    \"belief_after\": \"We are on friendly terms; SEEKER may now make a request.\",\n    \"emotion\": \"Warm/polite.\",\n    \"intention\": \"Return the New Year greeting.\",\n    \"reaction_to_other\": \"Positive; responds in kind.\",\n    \"conversational_goal\": \"Establish rapport and invite the next part of the conversation.\",\n    \"interpretation_change\": \"No substantive change; still a social greeting phase.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I am hoping for you to give me some recommendations for a comedy...I like Step Brothers (2008) and The Hangover (2009) if that is helpful'\",\n    \"information_available\": \"SEEKER wants comedy recommendations and cites Step Brothers (2008) and The Hangover (2009) as liked examples.\",\n    \"preferences\": \"Inferred seeker preferences: comedy, especially examples like Step Brothers and The Hangover; RECOMMENDER's own movie preferences not stated.\",\n    \"belief_before\": \"SEEKER is friendly; no request or taste information yet.\",\n    \"belief_update\": \"SEEKER is asking for a comedy recommendation and likes Step Brothers and The Hangover.\",\n    \"belief_after\": \"A suitable recommendation should be a comedy aligned with those liked examples, though exact fit is uncertain.\",\n    \"emotion\": \"Attentive/helpful.\",\n    \"intention\": \"Understand the request and search for a comedy recommendation.\",\n    \"reaction_to_other\": \"Engaged and positively oriented toward helping SEEKER.\",\n    \"conversational_goal\": \"Provide or prepare a comedy recommendation based on SEEKER's stated likes.\",\n    \"interpretation_change\": \"Changes context from social greeting to an active recommendation task.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'I heard that Daddy's Home (2015) was funny'\",\n    \"information_available\": \"SEEKER wants a comedy and likes Step Brothers and The Hangover; RECOMMENDER remembers hearing Daddy's Home was funny.\",\n    \"preferences\": \"No explicit RECOMMENDER movie preference; uses remembered reputation of Daddy's Home as candidate. Seeker preferences remain comedy, Step Brothers, The Hangover.\",\n    \"belief_before\": \"SEEKER wants a comedy and likes Step Brothers and The Hangover.\",\n    \"belief_update\": \"Daddy's Home was heard to be funny, so it may be a plausible comedy recommendation.\",\n    \"belief_after\": \"Daddy's Home is a candidate recommendation for SEEKER's comedy request, though based on hearsay and not confirmed to match their taste.\",\n    \"emotion\": \"Hopeful/helpful.\",\n    \"intention\": \"Offer Daddy's Home as a comedy suggestion.\",\n    \"reaction_to_other\": \"Responsive to SEEKER's request; tries to help.\",\n    \"conversational_goal\": \"Satisfy SEEKER's request by proposing a comedy film.\",\n    \"interpretation_change\": \"Shifts from receiving the request to actively proposing a recommendation.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'I hated that movie. I did not even crack a smile once...Do you have a different suggestion, perhaps?'\",\n    \"information_available\": \"SEEKER strongly disliked Daddy's Home, did not find it funny, and asks for a different suggestion. Previously known: SEEKER wants comedy and likes Step Brothers and The Hangover.\",\n    \"preferences\": \"SEEKER dislikes Daddy's Home and wants a different comedy; likes Step Brothers and The Hangover. RECOMMENDER's own movie preferences still not stated.\",\n    \"belief_before\": \"Daddy's Home might be a suitable comedy recommendation.\",\n    \"belief_update\": \"SEEKER hated Daddy's Home and it failed to amuse them; they want another suggestion.\",\n    \"belief_after\": \"Daddy's Home is unsuitable; a new comedy recommendation is needed, preferably more aligned with Step Brothers and The Hangover.\",\n    \"emotion\": \"Apologetic/awkward/concerned.\",\n    \"intention\": \"Acknowledge the failed recommendation and offer a different suggestion.\",\n    \"reaction_to_other\": \"Receptive to negative feedback; concerned about SEEKER's dissatisfaction.\",\n    \"conversational_goal\": \"Recover from the rejected recommendation and provide a better alternative.\",\n    \"interpretation_change\": \"Invalidates the previous interpretation of Daddy's Home as a good candidate; recalibrates toward a different comedy.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

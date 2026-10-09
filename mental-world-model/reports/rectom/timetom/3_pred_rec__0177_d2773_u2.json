@@ -1,0 +1,36 @@
+{
+  "id": "3_pred_rec__0177_d2773_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello",
+      "belief_before": "No prior context about the other speaker or their request; conversation has not yet begun.",
+      "belief_update": "RECOMMENDER initiates contact with a greeting.",
+      "belief_after": "A conversation has been opened; the other speaker is present and may respond.",
+      "emotion": "Neutral and polite",
+      "intention": "Greet the other speaker and start the interaction.",
+      "conversational_goal": "Establish contact and invite the other speaker to state what they need."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hi I am looking for a good drama any ideas?",
+      "belief_before": "The conversation has just been opened by RECOMMENDER; RECOMMENDER does not yet know the other speaker's request or preferences.",
+      "belief_update": "SEEKER is asking for recommendations for a good drama, with no specific genre, mood, platform, or other constraints specified yet.",
+      "belief_after": "SEEKER wants drama recommendations and may benefit from either broad suggestions or clarifying questions about their tastes.",
+      "emotion": "Attentive and helpful",
+      "intention": "Respond to the request by offering drama ideas or asking clarifying questions to narrow the recommendation.",
+      "conversational_goal": "Help SEEKER find a suitable drama recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello\",\n    \"belief_before\": \"No prior context about the other speaker or their request; conversation has not yet begun.\",\n    \"belief_update\": \"RECOMMENDER initiates contact with a greeting.\",\n    \"belief_after\": \"A conversation has been opened; the other speaker is present and may respond.\",\n    \"emotion\": \"Neutral and polite\",\n    \"intention\": \"Greet the other speaker and start the interaction.\",\n    \"conversational_goal\": \"Establish contact and invite the other speaker to state what they need.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hi I am looking for a good drama any ideas?\",\n    \"belief_before\": \"The conversation has just been opened by RECOMMENDER; RECOMMENDER does not yet know the other speaker's request or preferences.\",\n    \"belief_update\": \"SEEKER is asking for recommendations for a good drama, with no specific genre, mood, platform, or other constraints specified yet.\",\n    \"belief_after\": \"SEEKER wants drama recommendations and may benefit from either broad suggestions or clarifying questions about their tastes.\",\n    \"emotion\": \"Attentive and helpful\",\n    \"intention\": \"Respond to the request by offering drama ideas or asking clarifying questions to narrow the recommendation.\",\n    \"conversational_goal\": \"Help SEEKER find a suitable drama recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

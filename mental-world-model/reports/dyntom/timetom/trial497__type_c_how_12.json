@@ -1,0 +1,61 @@
+{
+  "id": "trial497__type_c_how_12",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Henry Lozano",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "While reviewing security footage, Henry notices a group in the hotel lobby acting suspiciously.",
+      "belief_before": "No specific security threat was known; hotel activity was assumed to be normal.",
+      "belief_update": "Yes, he forms a new suspicion that the group may pose a threat.",
+      "belief_after": "The suspicious group may be a safety risk to guests and the hotel's reputation.",
+      "emotion": "Growing anxiety, worry, and concern.",
+      "intention": "To raise the concern with Charles and review the footage together to address the possible threat discreetly."
+    },
+    {
+      "time": 2,
+      "observed": "After reviewing the footage, Charles seems unconvinced and suggests it may be a misunderstanding; Henry points to footage of suspicious objects being passed around.",
+      "belief_before": "The group may pose a threat and requires further attention.",
+      "belief_update": "Yes, his suspicion is reinforced, and he comes to believe Charles is underestimating the danger.",
+      "belief_after": "The group likely represents a real danger, and action is needed rather than dismissal.",
+      "emotion": "Frustration and concern.",
+      "intention": "To persuade Charles to take the threat seriously and act, while keeping a closer eye on the group."
+    },
+    {
+      "time": 3,
+      "observed": "Further analysis and additional information from hotel staff reveal that the suspicious activity was a scavenger hunt organized by a local event company.",
+      "belief_before": "The group was likely dangerous and required action.",
+      "belief_update": "Yes, his threat belief is disconfirmed; he realizes the situation was benign.",
+      "belief_after": "The activity was innocent, and his earlier assumption was a mistake.",
+      "emotion": "Relief mixed with slight embarrassment.",
+      "intention": "To apologize, maintain open communication with Charles, and continue ensuring the hotel's safety."
+    },
+    {
+      "time": 4,
+      "observed": "A hotel staff member gives Henry a tip about possible internal thefts.",
+      "belief_before": "The earlier suspicious group was innocent; there was no active internal theft concern yet.",
+      "belief_update": "Yes, a new suspicion arises that the real issue may involve hotel staff.",
+      "belief_after": "Possible internal thefts involving staff need discreet investigation, without false accusations or alerting a suspect.",
+      "emotion": "Caution, concern, and wariness.",
+      "intention": "To investigate discreetly by reviewing internal security logs and employee records and handling the matter delicately."
+    },
+    {
+      "time": 5,
+      "observed": "His investigation identifies a staff member manipulating inventory records, and he confronts the staff member with evidence in a controlled environment; the staff member is willing to cooperate.",
+      "belief_before": "Possible internal theft involving hotel staff was suspected but not yet confirmed.",
+      "belief_update": "Yes, his suspicion is confirmed regarding a specific staff member's manipulation of inventory records.",
+      "belief_after": "The identified staff member has been manipulating inventory records, and the situation is serious but the staff member is cooperating.",
+      "emotion": "A mix of vindication and concern.",
+      "intention": "To address the situation properly with the evidence and decide how to proceed while managing the confrontation in a controlled manner."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"While reviewing security footage, Henry notices a group in the hotel lobby acting suspiciously.\",\n    \"belief_before\": \"No specific security threat was known; hotel activity was assumed to be normal.\",\n    \"belief_update\": \"Yes, he forms a new suspicion that the group may pose a threat.\",\n    \"belief_after\": \"The suspicious group may be a safety risk to guests and the hotel's reputation.\",\n    \"emotion\": \"Growing anxiety, worry, and concern.\",\n    \"intention\": \"To raise the concern with Charles and review the footage together to address the possible threat discreetly.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"After reviewing the footage, Charles seems unconvinced and suggests it may be a misunderstanding; Henry points to footage of suspicious objects being passed around.\",\n    \"belief_before\": \"The group may pose a threat and requires further attention.\",\n    \"belief_update\": \"Yes, his suspicion is reinforced, and he comes to believe Charles is underestimating the danger.\",\n    \"belief_after\": \"The group likely represents a real danger, and action is needed rather than dismissal.\",\n    \"emotion\": \"Frustration and concern.\",\n    \"intention\": \"To persuade Charles to take the threat seriously and act, while keeping a closer eye on the group.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Further analysis and additional information from hotel staff reveal that the suspicious activity was a scavenger hunt organized by a local event company.\",\n    \"belief_before\": \"The group was likely dangerous and required action.\",\n    \"belief_update\": \"Yes, his threat belief is disconfirmed; he realizes the situation was benign.\",\n    \"belief_after\": \"The activity was innocent, and his earlier assumption was a mistake.\",\n    \"emotion\": \"Relief mixed with slight embarrassment.\",\n    \"intention\": \"To apologize, maintain open communication with Charles, and continue ensuring the hotel's safety.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"A hotel staff member gives Henry a tip about possible internal thefts.\",\n    \"belief_before\": \"The earlier suspicious group was innocent; there was no active internal theft concern yet.\",\n    \"belief_update\": \"Yes, a new suspicion arises that the real issue may involve hotel staff.\",\n    \"belief_after\": \"Possible internal thefts involving staff need discreet investigation, without false accusations or alerting a suspect.\",\n    \"emotion\": \"Caution, concern, and wariness.\",\n    \"intention\": \"To investigate discreetly by reviewing internal security logs and employee records and handling the matter delicately.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"His investigation identifies a staff member manipulating inventory records, and he confronts the staff member with evidence in a controlled environment; the staff member is willing to cooperate.\",\n    \"belief_before\": \"Possible internal theft involving hotel staff was suspected but not yet confirmed.\",\n    \"belief_update\": \"Yes, his suspicion is confirmed regarding a specific staff member's manipulation of inventory records.\",\n    \"belief_after\": \"The identified staff member has been manipulating inventory records, and the situation is serious but the staff member is cooperating.\",\n    \"emotion\": \"A mix of vindication and concern.\",\n    \"intention\": \"To address the situation properly with the evidence and decide how to proceed while managing the confrontation in a controlled manner.\"\n  }\n]",
+  "final_response": "ANSWER: a",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial497"
+}

@@ -1,0 +1,66 @@
+数据：4_pred_seeker
+题号：194  d3089_u3
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在 SEEKER 这里，RECOMMENDER 说出的「my personal favorite is Spider-Man (2002)」不是一条普通信息，而是一个稳定的、属于个人自身的口味标记被摆出来；「personal favorite」这个说法让 SEEKER 自己的喜好也浮现为不能与我无关的自我标记，仿佛个人的最爱本来就是人身上已然确定的东西，说出口就等于把这种固定喜好放到「我」这一边。",
+      "probability": 0.3495
+    },
+    {
+      "content": "SEEKER 经验到，RECOMMENDER 的 Hello 与随后那句「my personal favorite is Spider-Man (2002)」都是对「我」这个在场者说的，这轮对话的位置与「我」分不开。紧接着 personal favorite 一出现，对话在 SEEKER 这里就呈现为一种固定规则：一方报出自己的最爱后，理应转向交换或比较各自的 personal favorite，这个规则像已经成立一样压在当下。",
+      "probability": 0.3419
+    },
+    {
+      "content": "在 SEEKER 的所缘里，RECOMMENDER 说出的「Spider-Man (2002)」已经不是一个可以完全与我无关的片名，而像一件被提起后就和自己的记忆、立场或偏好绑在一起的参照物；同时 personal favorite 一出，对话按固定规则转入交换或比较各自最爱，这个片名因此被放到需要与「我」的偏好相对照的位置上。",
+      "probability": 0.3087
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 说出「my personal favorite」时，SEEKER 感到这不像随口一提，而像把一个人身上已经定型的口味标记摆到台面上；这个说法让 SEEKER 也不由得把自己的喜爱当作属于「我」的、不能随便让渡的东西来对待。他一边把 Spider-Man (2002) 听成对方个人历史里稳固的一项，一边意识到自己寻找超级英雄电影时的偏好同样带着「我的」分量，于是心里生出一种要将自己的口味确认下来的倾向，既想掂量这份推荐是否合自己的路数，又不愿把自己的喜好混同于别人的。",
+      "activation": 0.3757
+    },
+    {
+      "content": "SEEKER 心里把 RECOMMENDER 的 Hello 和随后那句 personal favorite 收拢到一起：这些话是对着在场的「我」说的，这个来回像围着「我」展开。personal favorite 一出现，当下就不只是听到一部片名，而是感到对话已经被推到「各自报出最爱、再互相比较」的既定轨道上；自己原先要找超级英雄电影的问法，也因此像被这条轨道压住。于是 SEEKER 一边把 Spider-Man (2002) 放到「对方的最爱」与「可供我参照的超级英雄片」之间掂量，一边觉得自己的需求还没有被正面回应，内心倾向于顺着这个比较框架继续接住话头。",
+      "activation": 0.3405
+    },
+    {
+      "content": "他一说出 Spider-Man (2002)，这个片名在我这里就不再只是别人的一句偏好，而像被放进了一个需要和我自己记忆、口味相照面的位置。既然我是来找一部好的超级英雄电影，它自然会被我拿来掂量：这片名算不算一个可采信的参照？同时 personal favorite 一出口，对话就按我熟悉的规则滑向各自的偏好交换或比较，所以我不能只把它当作与我无关的信息，而会下意识地把它与我心里对超级英雄片的偏好和标准放在一起称量。",
+      "activation": 0.2838
+    }
+  ],
+  "observed_action": "SEEKER 说：你好，我在找一部好的超级英雄电影。",
+  "predicted_actions": [
+    {
+      "content": "ask if Spider-Man is favorite superhero movie or favorite overall",
+      "probability": 0.3405
+    },
+    {
+      "content": "追问推荐理由细节",
+      "probability": 0.2402
+    },
+    {
+      "content": "表明自己选片更看重个人口味，不盲从他人最爱",
+      "probability": 0.2296
+    },
+    {
+      "content": "询问是否有其他推荐",
+      "probability": 0.096
+    },
+    {
+      "content": "说明偏好并询问是否符合",
+      "probability": 0.0936
+    }
+  ]
+}
+选择：D: Greetings, gratitude expression, or chit-chat utterances
+分数：{"a": 0.2402, "b": 0.0936, "c": 0.3256, "d": 0.3405}
+选择说明：A 0.2402 = 追问推荐理由细节 0.2402；B 0.0936 = 说明偏好并询问是否符合 0.0936；C 0.3256 = 表明自己选片更看重个人口味，不盲从他人最爱 0.2296 + 询问是否有其他推荐 0.0960；D 0.3405 = ask if Spider-Man is favorite superhero movie or favorite overall 0.3405。Assigned each action to its closest strategy: 1 follows up on the recommendation, 4 adds preference details, 2 and 3 express or ask for preferences, and 0 is chit-chat.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：The predicted action that SEEKER will state he values personal taste and not blindly follow others' favorite is a feedback response to the suggested favorite.

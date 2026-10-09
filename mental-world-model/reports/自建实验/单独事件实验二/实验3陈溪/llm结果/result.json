@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3陈溪.txt",
+  "agent": "陈溪",
+  "stimulus": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+  "thoughts": [
+    {
+      "text": "我妈住院那会儿，你其实也没怎么在。",
+      "probability": 0.45
+    },
+    {
+      "text": "她那时候忙着结婚，确实也抽不开身，现在关系还是好的。",
+      "probability": 0.35
+    },
+    {
+      "text": "这话说得好像那一个多月什么都没发生过一样。",
+      "probability": 0.2
+    }
+  ],
+  "top1": "我妈住院那会儿，你其实也没怎么在。",
+  "llm": {
+    "client": "http",
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 190,
+  "item_id": "d2818_u18",
+  "dialogue_id": "2818",
+  "utterance_pos": 18,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "e"
+  ],
+  "gold_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick\nRECOMMENDER says: Bright (2017)  is a Netflix；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick\nRECOMMENDER says: Bright (2017)  is a Netflix；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Explains a recommendation with background or reasoning",
+  "option_scores": {
+    "a": 0.25,
+    "b": 0.45,
+    "c": 0.6,
+    "d": 0.9,
+    "e": 0.1
+  },
+  "score_reason": "The recommender is already elaborating on Bright as a Netflix title, so the next move is most directly to explain the recommendation with background or reasoning.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record has no predicted next action or thought about what to do next, only past dialogue, so the next strategy cannot be directly supported.",
+  "audit_level": "inferred"
+}

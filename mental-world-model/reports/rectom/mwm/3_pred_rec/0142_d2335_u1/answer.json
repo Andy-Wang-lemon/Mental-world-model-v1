@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 142,
+  "item_id": "d2335_u1",
+  "dialogue_id": "2335",
+  "utterance_pos": 1,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "e"
+  ],
+  "gold_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello! Happy New Year!；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello! Happy New Year!；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "e",
+  "adapter_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0.1,
+    "b": 0.2,
+    "c": 0.1,
+    "d": 0.1,
+    "e": 0.9
+  },
+  "score_reason": "The seeker's utterance is a greeting/New Year wish, so the recommender most directly responds with greetings or chit-chat.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

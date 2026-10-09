@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3陈溪.txt",
+  "agent": "陈溪",
+  "stimulus": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+  "thoughts": [
+    {
+      "text": "何雨的话让我觉得我们的友谊很珍贵",
+      "probability": 0.5
+    },
+    {
+      "text": "那段时间我们确实没怎么见面",
+      "probability": 0.3
+    },
+    {
+      "text": "现在一切都恢复正常了",
+      "probability": 0.2
+    }
+  ],
+  "top1": "何雨的话让我觉得我们的友谊很珍贵",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  }
+}

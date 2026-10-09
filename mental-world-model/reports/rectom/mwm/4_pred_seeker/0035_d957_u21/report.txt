@@ -1,0 +1,64 @@
+数据：4_pred_seeker
+题号：35  d957_u21
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "RECOMMENDER推荐过来的每部电影，都在SEEKER心里被自动归入两个格子之一：看过，或没看过。这种划分如此自然，以至于下一部该推荐什么，就取决于这部片子落在哪个格子里。电影世界因此成了一排待分类的条目，自己的观影历史则是唯一的分类标准。",
+      "probability": 0.3773
+    },
+    {
+      "content": "SEEKER觉得整个对话围绕自己的需求转动：找一部好喜剧就是此刻的核心，RECOMMENDER的每一句推荐都是围绕这个需要展开的尝试。同时，一条规则把这场寻找固定下来：必须继续推荐，直到找到一部自己未看过的。于是全过程被经验成一条以自己需要为起点的必经之路。",
+      "probability": 0.3163
+    },
+    {
+      "content": "当RECOMMENDER问起是否看过那些电影时，SEEKER感到自己的观影历史一张张翻过，看过什么成了此刻界定自己是谁的凭据；同时一股明确的规则感浮现：必须继续推荐下去，直到找到一部没看过的。这个规则像一条轨道，让眼前的对话变成一场有方向的寻找。",
+      "probability": 0.3065
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "当RECOMMENDER一次次报出片名并问我看过没有，我感觉自己像在翻动一部只属于我的观影史；每一部看过的电影都成了此刻界定我是谁的注脚，而没看过的则像尚未踏足的地带。我确实借着这些“看过/没看过、喜欢/不喜欢”来确认自己的位置。与此同时，我清楚感到一条规则压在眼前：必须继续推荐下去，直到找到一部我没看过的。这个规则让对话有了一条明确的轨道，我也愿意顺着它走——通过诚实给出对每部电影的反应，我既在守护自己这份观影身份，也在帮我们更快找到那个真正的目标。",
+      "activation": 0.3625
+    },
+    {
+      "content": "每部被推荐来的电影，在我心里都自动落进两个格子之一：看过，或没看过。看过的，我会立刻用喜欢或不喜欢再分一层；没看过的，我就用对方给的剧情和演员信息来判断值不值得留意。我的观影历史就是唯一的尺子，推荐就像在翻我自己的记忆清单。我自然地用这个标准回应每一部片子，也指望对方按这个分类继续往下找。",
+      "activation": 0.3359
+    },
+    {
+      "content": "SEEKER感到这场对话正围绕自己的需要展开，自己的喜好是推进的中心；RECOMMENDER的每次推荐都是为满足这个需要而做的尝试。同时他心里认定了有一条规则：必须一直推荐到找到自己没看过的电影为止，所以自己完全可以继续给出评价、表达偏好、提出疑问，整个过程理所当然地沿着这条路径走下去。",
+      "activation": 0.3016
+    }
+  ],
+  "observed_action": "SEEKER表示在找类似《She's Out of My League》的喜剧；提到《Daddy's Home》也是好片，但没看过对方建议的几部，看过《Deuce Bigalow》但不喜欢；说喜欢《Step Brothers》和《Life as We Know It》；确认看过另一部并说它好笑，还喜欢James Franco的《Why Him?》；说《Talladega Nights》好笑并道谢；表示愿意接受建议；说《Eddie Murphy Raw》看过但不算是特别喜欢的；说通常喜欢Seth Rogen和Jonah Hill的电影；对《Midnight Madness》说没听说过、听起来不错，并询问有没有知名演员；最后问它是不是喜剧。",
+  "predicted_actions": [
+    {
+      "content": "点头表示想看",
+      "probability": 0.3283
+    },
+    {
+      "content": "询问更多推荐",
+      "probability": 0.2396
+    },
+    {
+      "content": "眼睛一亮说要看",
+      "probability": 0.1944
+    },
+    {
+      "content": "点头搜索信息",
+      "probability": 0.1296
+    },
+    {
+      "content": "舒气坐直说选它",
+      "probability": 0.108
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.6307, "b": 0, "c": 0.2396, "d": 0}
+选择说明：A 0.6307 = 点头表示想看 0.3283 + 眼睛一亮说要看 0.1944 + 舒气坐直说选它 0.1080；B 0.0000；C 0.2396 = 询问更多推荐 0.2396；D 0.0000。Nodding to watch, saying yes, and choosing the recommendation are feedback; asking for more recommendations fits option C.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

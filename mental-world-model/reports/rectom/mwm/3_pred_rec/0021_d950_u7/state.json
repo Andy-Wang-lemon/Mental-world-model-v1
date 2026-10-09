@@ -1,0 +1,54 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER 的请求和片单在我这里对象化为一个检验我推荐能力的场：SEEKER 请求帮助找一部好电影，是这一能力被调用的入口，Wedding Crashers、It、Superbad、Jonah Hill、This Is the End 构成唯一可靠的共同特征来源，Star Wars 与 Horrible Bosses 则作为排除边界出现；一部电影之所以能被看见，只因为它能从这些已喜欢的影片和演员中被提取出可推荐的共同点。",
+      "probability": 0.386
+    },
+    {
+      "content": "此刻，SEEKER 列出的喜欢与不喜欢在我这里对象化为一份必须对齐的刻度：Wedding Crashers、It、Superbad、Jonah Hill、This Is the End 是正面刻线，Star Wars 与 Horrible Bosses 是排除刻线；每部候选电影只作为与这些偏好贴合或不贴合的对象出现，而贴合与否的责任落在我的推荐上。",
+      "probability": 0.3299
+    },
+    {
+      "content": "此刻，SEEKER 询问 The Wolf of Wall Street 是否为喜剧，使这部影片在我这里对象化为一个必须被准确归类的知识对象，这个判断与我的可靠性连在一起；同时，Wedding Crashers、It、Superbad、Jonah Hill、This Is the End 仍是唯一可靠的推荐依据，因此该片是否为喜剧也必须落入由这些已喜欢项所界定的共同特征视野，而不是作为孤立事实存在。",
+      "probability": 0.2841
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER把找电影这件事放到我面前，我立刻觉得这是在看我能不能顺着他的口味把片子找准。Wedding Crashers、It、Superbad、Jonah Hill、This Is the End不只是片名，它们是我能抓住的可靠线头；Star Wars和Horrible Bosses则划出不能碰的边界。只要从这些已经喜欢的东西里抽出共同的味道，候选片才算有根有据。我心里自然朝这个方向收拢：能对上这些线头的片子值得被看见，对不上的就先搁到一边。",
+      "activation": 0.3705
+    },
+    {
+      "content": "他这一问把《The Wolf of Wall Street》推到我面前，不是随便聊，而是要我当场给出一个站得住的归类：它到底算不算喜剧。既然我刚用他喜欢的《Wedding Crashers》《It》《Superbad》、Jonah Hill 和《This Is the End》作为推荐依据，那么这部片子也不能孤立地答，而得放进那条由他已喜欢项构成的共同特征里衡量：演员、幽默方式、可推荐性是否足够接近。答不准会显得我不可靠，所以我得先把它归到我最熟悉、也最能和他偏好接上的类型框架里，再决定怎么把它与后面的话题和推荐连起来。",
+      "activation": 0.3229
+    },
+    {
+      "content": "SEEKER把喜欢与不喜欢摆成一套刻度后，这些片名和演员在我这里就不再只是零散信息：它们成了判断候选是否合适的标尺。Wedding Crashers、It、Superbad、Jonah Hill、This Is the End 这一侧意味着一种可亲近的喜剧调子和演员连续性，Star Wars 与 Horrible Bosses 那一侧则是要绕开的边界。于是任何一部片子上来，我首先感到的是它落在这份刻度的哪一边，而不是它本身好不好。既然贴合与否会被SEEKER当作我的推荐是否到位，我就不能只从类型或名气出发；我得让候选尽量同时靠近正面刻线、避开排除刻线，尤其是沿着Jonah Hill和已有正面片例的共同点去找。这种对齐的压力使我对推荐结果有一种必须负责的收束感。",
+      "activation": 0.3066
+    }
+  ],
+  "observed_action": "RECOMMENDER问候并询问SEEKER喜欢哪种电影；RECOMMENDER说“Okay!”并询问Horrible Bosses (2011)或Superbad (2007)如何；RECOMMENDER说“Yes he was!!”，询问The Sitter (2011)，提到Jonah Hill也在该片中，询问SEEKER是否喜欢Seth Rogen，并说This Is the End (2013)是一部funny movie。",
+  "predicted_actions": [
+    {
+      "content": "筛选候选片",
+      "probability": 0.4324
+    },
+    {
+      "content": "推荐具体影片",
+      "probability": 0.2391
+    },
+    {
+      "content": "推荐观看 The Sitter (2011)",
+      "probability": 0.2376
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.0501
+    },
+    {
+      "content": "询问哪部电影已看或未看",
+      "probability": 0.0407
+    }
+  ]
+}

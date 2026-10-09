@@ -1,0 +1,669 @@
+{
+  "events": [
+    {
+      "focus_person": "许哲",
+      "yuanwen": "许哲刚进公司时做算法，曾两次申请转产品岗，都没有通过。后来团队临时缺人，他接手一个产品并做得很好，此后正式转岗。几年后，领导向新人介绍他：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+      "stimulus_text": "许哲刚进公司时做算法，曾两次申请转产品岗，都没有通过。后来团队临时缺人，他接手一个产品并做得很好，此后正式转岗。几年后，领导向新人介绍他：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+      "stimulus_action_split": {
+        "stimulus_text": "许哲刚进公司时做算法，曾两次申请转产品岗，都没有通过。后来团队临时缺人，他接手一个产品并做得很好，此后正式转岗。几年后，领导向新人介绍他：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "领导",
+          "新人",
+          "许哲"
+        ],
+        "action": "领导向新人介绍许哲，说：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+        "object": "许哲（被介绍对象）",
+        "scene": "几年后，许哲已正式转岗产品岗，领导向新人介绍许哲的场合",
+        "outcome_changes": [
+          "团队临时缺人",
+          "新人接收到领导对许哲转岗经历的介绍"
+        ],
+        "role_changes": [
+          "许哲从算法岗转为产品岗",
+          "许哲接手一个产品"
+        ],
+        "relationship_changes": [],
+        "constraint_changes": [
+          "团队临时缺人"
+        ],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f3",
+          "text": "把“接手产品并做得很好、最终正式转岗”的成果与功劳收归为自己，不能把它仅仅看作与“团队临时缺人”这一外部条件相关的过程。",
+          "confidence": 0.857,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f2",
+          "text": "把“产品岗/产品人”当成自己这边的位置与归宿，因而领导向新人把许哲作为已正式转岗的产品人介绍时，这个身份被再次确认为“我之所以为我”的一部分。",
+          "confidence": 0.831,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f1",
+          "text": "把“我其实很早就知道自己更适合产品”这一自我认识当成自己不可分割的一部分，因此难以把它只当作领导事后转述的一种说法，也难以把“曾两次申请未通过”纳入同一个自我故事。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "把“领导在介绍场合中正面讲述我的转岗经历”所带来的认可和位置感当成我的，不能把它只当作领导对新人说的一段话。",
+          "confidence": 0.753,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f2",
+          "text": "执取职业转岗理应遵循“先明确知道自己适合什么，再果然转过去”的线性顺序；两次申请未通过和临时缺人只是不应进入主线的杂音。",
+          "confidence": 0.8505,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "执取“产品岗比算法岗更适合我”是一条唯一正确的自我实现路径，算法阶段只能被解释为过渡或错误匹配。",
+          "confidence": 0.8049999999999999,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f1",
+          "text": "执取“适合产品”是许哲身上早已固定、可以提前知道的本质属性，而不是在临时缺人、接手做事和正式转岗中逐渐被验证的关系性判断。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "执取“正式转岗到产品岗”才是适合与否的最终证明，之前申请未通过不算数，或只能被看作弯路。",
+          "confidence": 0.792,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f4",
+          "text": "执取领导在公开场合给出的经历版本就是应当被新人接受的既定事实，难以把它仅看作一种简化的介绍口径。",
+          "confidence": 0.766,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3363411149888791,
+          "alambana_prior_probability": 0.5052803151210568,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6327720000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3343474801540659,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.89,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.629021295
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.329311404857055,
+          "alambana_prior_probability": 0.4947196848789432,
+          "activation_alignment": 0.85,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.619546725
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "许哲听到领导向新人介绍“他其实很早就知道自己更适合产品，后来果然转过来了”时，这句话被许哲经验为对自己内在自我认识的公开确证：那个“很早知道自己适合产品”的自我，不只是领导事后转述的一种说法，而是他自身不可分割的一部分。顺着这一确证，职业转岗在许哲这里只能呈现为“先明确知道自己适合什么，再果然转过去”的直线，因此当前介绍中“果然转过来了”被当成这条直线的落点；而曾两次申请未通过、团队临时缺人这些线索，则被挤到主线之外，成为无法安放进同一自我故事的杂音。于是许哲所缘的，是一个被领导的话确认却也被它删简的自己：新人与领导共同在场听到的是“早知—果然”的许哲，而他记忆里那些未通过和偶然缺口却在这个版本中找不到位置。",
+          "prior_probability": 0.5052803151210568,
+          "posterior_probability": 0.5052803151210568,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6327720000000001,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的领导向新人介绍、许哲转岗、两次申请未通过、团队临时缺人等均对应客观刺激，未添加不存在的他人言行；同时保留了领导介绍这一当前核心事件及关键经历变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C3",
+          "text": "许哲听到领导向新人介绍“他其实很早就知道自己更适合产品，后来果然转过来了”时，经验到的是对自己成果与功劳的公开确认：接手产品并做得很好、最终正式转岗，被收归为“我早就适合产品并果然实现”的证明。顺着“先明确知道自己适合什么，再果然转过去”的线性顺序，当前介绍把“果然转过来”当成他自身能力与选择的必然落点；而“团队临时缺人”这一外部条件、以及曾两次申请未通过，则被降格为不应进入主线的杂音，不能分享这个成果的归属。于是许哲所缘的，是一个由自己早知、自己做好、自己转成所构成的转岗叙事，领导的话正把这个叙事讲给新人听，临时缺人被排除在因果主线之外。",
+          "prior_probability": 0.4947196848789432,
+          "posterior_probability": 0.4947196848789432,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.619546725,
+          "activation_alignment": 0.85,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的领导向新人介绍、接手产品并做得好、正式转岗、团队临时缺人、两次申请未通过均来自刺激，未添加不存在事实；同时保留了当前介绍事件与关键约束变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.5052803151210568,
+          "alambana": {
+            "id": "O_C1",
+            "text": "许哲听到领导向新人介绍“他其实很早就知道自己更适合产品，后来果然转过来了”时，这句话被许哲经验为对自己内在自我认识的公开确证：那个“很早知道自己适合产品”的自我，不只是领导事后转述的一种说法，而是他自身不可分割的一部分。顺着这一确证，职业转岗在许哲这里只能呈现为“先明确知道自己适合什么，再果然转过去”的直线，因此当前介绍中“果然转过来了”被当成这条直线的落点；而曾两次申请未通过、团队临时缺人这些线索，则被挤到主线之外，成为无法安放进同一自我故事的杂音。于是许哲所缘的，是一个被领导的话确认却也被它删简的自己：新人与领导共同在场听到的是“早知—果然”的许哲，而他记忆里那些未通过和偶然缺口却在这个版本中找不到位置。",
+            "prior_probability": 0.5052803151210568,
+            "posterior_probability": 0.5052803151210568,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.6327720000000001,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的领导向新人介绍、许哲转岗、两次申请未通过、团队临时缺人等均对应客观刺激，未添加不存在的他人言行；同时保留了领导介绍这一当前核心事件及关键经历变化。"
+          },
+          "xiang": {
+            "text": "许哲听到领导对新人说“他其实很早就知道自己更适合产品，后来果然转过来了”，心里先按既有的警觉去接：这话像是在公开确证他，也像是在替他裁定资格。他承认“我确实很早就知道自己更适合产品”，并把这个认识收进自身不可分割的部分，于是职业转岗只能被整理成“先明确知道自己适合什么，再果然转过去”的直线；两次申请未通过和团队临时缺人因此被挤到主线之外，成了无法安放进同一自我故事的杂音。但正因为对方当众把这条直线说定，许哲又感到自己的资格与自我解释权被触碰：他趋向于把领导的转述认下来，同时守住“不是别人一句话才使我成为这样，而是我本来就知道”的连续性，不愿让那些未通过与偶然缺口在这个版本中取得位置。",
+            "source": "推理",
+            "confidence": 0.6
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "行舍": 0.3575,
+            "不慢": 0.22,
+            "贪": 0.47,
+            "瞋": 0.265,
+            "无明": 0.73,
+            "恶见": 0.595,
+            "覆": 0.39,
+            "不正知": 0.7325
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "附和领导对转岗的介绍",
+              "probability": 0.62,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "回避转岗话题并转向新人工作",
+              "probability": 0.22,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "澄清/更正转岗真实经过",
+              "probability": 0.16,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.4947196848789432,
+          "alambana": {
+            "id": "O_C3",
+            "text": "许哲听到领导向新人介绍“他其实很早就知道自己更适合产品，后来果然转过来了”时，经验到的是对自己成果与功劳的公开确认：接手产品并做得很好、最终正式转岗，被收归为“我早就适合产品并果然实现”的证明。顺着“先明确知道自己适合什么，再果然转过去”的线性顺序，当前介绍把“果然转过来”当成他自身能力与选择的必然落点；而“团队临时缺人”这一外部条件、以及曾两次申请未通过，则被降格为不应进入主线的杂音，不能分享这个成果的归属。于是许哲所缘的，是一个由自己早知、自己做好、自己转成所构成的转岗叙事，领导的话正把这个叙事讲给新人听，临时缺人被排除在因果主线之外。",
+            "prior_probability": 0.4947196848789432,
+            "posterior_probability": 0.4947196848789432,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.619546725,
+            "activation_alignment": 0.85,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的领导向新人介绍、接手产品并做得好、正式转岗、团队临时缺人、两次申请未通过均来自刺激，未添加不存在事实；同时保留了当前介绍事件与关键约束变化。"
+          },
+          "xiang": {
+            "text": "领导向新人这样介绍，等于把我的转岗讲成一条早就由我自己看清并走通的路：我适合产品，我接手后做好，我最终正式转过去。这个功劳和判断都在我身上，“团队临时缺人”不过是恰好出现的入口，不该被拿来解释成我转岗的原因。可“他其实很早就知道”这句话被当众说出来，也像在检验我当初两次没通过时到底有没有这个资格；我不能让那两次未通过或临时缺人的说法，把这条线从我手里拆走。这个叙事只能以我早知、我能做、我转成为主干。",
+            "source": "推理",
+            "confidence": 0.6
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "行舍": 0.41,
+            "贪": 0.845,
+            "瞋": 0.19499999999999998,
+            "慢": 0.7975,
+            "无明": 0.795,
+            "恶见": 0.6375,
+            "覆": 0.42,
+            "诳": 0.51,
+            "憍": 0.8150000000000001,
+            "悭": 0.5675,
+            "无愧": 0.15499999999999997,
+            "不信": 0.24499999999999997,
+            "不正知": 0.765
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "当场笑着接话/补充，强调自己早就想转产品",
+              "probability": 0.55,
+              "supporting_mental_factors": [
+                "贪",
+                "憍",
+                "慢",
+                "无明",
+                "不正知",
+                "恶见",
+                "诳",
+                "覆"
+              ]
+            },
+            {
+              "text": "会后单独找新人讲述产品成果并证明自己适合产品",
+              "probability": 0.31,
+              "supporting_mental_factors": [
+                "贪",
+                "憍",
+                "慢",
+                "诳",
+                "覆",
+                "悭",
+                "恶见"
+              ]
+            },
+            {
+              "text": "简短道谢后转移话题",
+              "probability": 0.14,
+              "supporting_mental_factors": [
+                "行舍",
+                "不信",
+                "瞋"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "附和领导对转岗的介绍",
+          "probability": 0.5853696220584739,
+          "dominant_mental_factors": [
+            "贪",
+            "憍",
+            "慢",
+            "无明",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5052803151210568,
+              "conditional_probability": 0.62,
+              "contribution": 0.3132737953750552
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.4947196848789432,
+              "conditional_probability": 0.55,
+              "contribution": 0.27209582668341875
+            }
+          ]
+        },
+        {
+          "text": "回避转岗话题并转向新人工作",
+          "probability": 0.26452477163910487,
+          "dominant_mental_factors": [
+            "贪",
+            "憍",
+            "慢",
+            "诳",
+            "覆"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.4947196848789432,
+              "conditional_probability": 0.31,
+              "contribution": 0.15336310231247238
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5052803151210568,
+              "conditional_probability": 0.22,
+              "contribution": 0.11116166932663249
+            }
+          ]
+        },
+        {
+          "text": "澄清/更正转岗真实经过",
+          "probability": 0.15010560630242115,
+          "dominant_mental_factors": [
+            "行舍",
+            "不信",
+            "瞋"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5052803151210568,
+              "conditional_probability": 0.16,
+              "contribution": 0.08084485041936908
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.4947196848789432,
+              "conditional_probability": 0.14,
+              "contribution": 0.06926075588305206
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "行舍": 0.38347278345614444,
+        "不慢": 0.11116166932663249,
+        "贪": 0.6555198818296036,
+        "瞋": 0.23036962205847394,
+        "慢": 0.3945389486909572,
+        "无明": 0.7621567795171313,
+        "恶见": 0.616025586607355,
+        "覆": 0.40484159054636826,
+        "诳": 0.25230703928826104,
+        "憍": 0.40319654317633874,
+        "悭": 0.28075342116880025,
+        "无愧": 0.07668155115623618,
+        "不信": 0.12120632279534106,
+        "不正知": 0.7485783897585656
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 8,
+        "distinct_candidate_count": 6,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_2",
+            "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_3",
+            "text": "朋友骗了我，我对他不满，以及不信任",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_4",
+            "text": "组织评价标准可能正在偏向新人",
+            "mass": 0.7285
+          },
+          {
+            "id": "bf_5",
+            "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+            "mass": 0.6758
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_2",
+              "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_3",
+              "text": "朋友骗了我，我对他不满，以及不信任",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_4",
+              "text": "组织评价标准可能正在偏向新人",
+              "mass": 0.7285
+            },
+            {
+              "id": "bf_5",
+              "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+              "mass": 0.6758
+            }
+          ],
+          "triggered_ids": [
+            "bf_1"
+          ],
+          "bindings": {
+            "bf_1": [
+              "sg_f2",
+              "sg_f3",
+              "sg_f4",
+              "dg_f2",
+              "dg_f3",
+              "dg_f4",
+              "dg_f5"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.0
+        }
+      }
+    }
+  ],
+  "focus_person": "许哲",
+  "llm_usage": {
+    "total_calls": 155,
+    "total_duration_ms": 7196005.211490992,
+    "wall_clock_ms": 671673.6172249948
+  },
+  "_experiment": {
+    "name": "单独事件实验二",
+    "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3许哲.txt",
+    "agent": "许哲",
+    "stimulus": "许哲刚进公司时做算法，曾两次申请转产品岗，都没有通过。后来团队临时缺人，他接手一个产品并做得很好，此后正式转岗。几年后，领导向新人介绍他：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+    "xiangs": [
+      {
+        "branch_id": "branch_O_C1",
+        "activation": 0.5052803151210568,
+        "alambana": "许哲听到领导向新人介绍“他其实很早就知道自己更适合产品，后来果然转过来了”时，这句话被许哲经验为对自己内在自我认识的公开确证：那个“很早知道自己适合产品”的自我，不只是领导事后转述的一种说法，而是他自身不可分割的一部分。顺着这一确证，职业转岗在许哲这里只能呈现为“先明确知道自己适合什么，再果然转过去”的直线，因此当前介绍中“果然转过来了”被当成这条直线的落点；而曾两次申请未通过、团队临时缺人这些线索，则被挤到主线之外，成为无法安放进同一自我故事的杂音。于是许哲所缘的，是一个被领导的话确认却也被它删简的自己：新人与领导共同在场听到的是“早知—果然”的许哲，而他记忆里那些未通过和偶然缺口却在这个版本中找不到位置。",
+        "xiang": "许哲听到领导对新人说“他其实很早就知道自己更适合产品，后来果然转过来了”，心里先按既有的警觉去接：这话像是在公开确证他，也像是在替他裁定资格。他承认“我确实很早就知道自己更适合产品”，并把这个认识收进自身不可分割的部分，于是职业转岗只能被整理成“先明确知道自己适合什么，再果然转过去”的直线；两次申请未通过和团队临时缺人因此被挤到主线之外，成了无法安放进同一自我故事的杂音。但正因为对方当众把这条直线说定，许哲又感到自己的资格与自我解释权被触碰：他趋向于把领导的转述认下来，同时守住“不是别人一句话才使我成为这样，而是我本来就知道”的连续性，不愿让那些未通过与偶然缺口在这个版本中取得位置。"
+      },
+      {
+        "branch_id": "branch_O_C3",
+        "activation": 0.4947196848789432,
+        "alambana": "许哲听到领导向新人介绍“他其实很早就知道自己更适合产品，后来果然转过来了”时，经验到的是对自己成果与功劳的公开确认：接手产品并做得很好、最终正式转岗，被收归为“我早就适合产品并果然实现”的证明。顺着“先明确知道自己适合什么，再果然转过去”的线性顺序，当前介绍把“果然转过来”当成他自身能力与选择的必然落点；而“团队临时缺人”这一外部条件、以及曾两次申请未通过，则被降格为不应进入主线的杂音，不能分享这个成果的归属。于是许哲所缘的，是一个由自己早知、自己做好、自己转成所构成的转岗叙事，领导的话正把这个叙事讲给新人听，临时缺人被排除在因果主线之外。",
+        "xiang": "领导向新人这样介绍，等于把我的转岗讲成一条早就由我自己看清并走通的路：我适合产品，我接手后做好，我最终正式转过去。这个功劳和判断都在我身上，“团队临时缺人”不过是恰好出现的入口，不该被拿来解释成我转岗的原因。可“他其实很早就知道”这句话被当众说出来，也像在检验我当初两次没通过时到底有没有这个资格；我不能让那两次未通过或临时缺人的说法，把这条线从我手里拆走。这个叙事只能以我早知、我能做、我转成为主干。"
+      }
+    ],
+    "predicted_actions": [
+      {
+        "text": "附和领导对转岗的介绍",
+        "probability": 0.5853696220584739
+      },
+      {
+        "text": "回避转岗话题并转向新人工作",
+        "probability": 0.26452477163910487
+      },
+      {
+        "text": "澄清/更正转岗真实经过",
+        "probability": 0.15010560630242115
+      }
+    ]
+  }
+}

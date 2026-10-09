@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 51,
+  "item_id": "d1021_u3",
+  "dialogue_id": "1021",
+  "utterance_pos": 3,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello, what kind of movie are you looking for?\nSEEKER says: I'm looking for a film of any genre, with a woman in the lead....I'm in the mood for a good heroine today. :)\nRECOMMENDER says: Have you seen The Blind Side  (2009)  with Sandra Bullock?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello, what kind of movie are you looking for?\nSEEKER says: I'm looking for a film of any genre, with a woman in the lead....I'm in the mood for a good heroine today. :)\nRECOMMENDER says: Have you seen The Blind Side  (2009)  with Sandra Bullock?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.25,
+    "c": 0.35,
+    "d": 0.2
+  },
+  "score_reason": "The recommender directly asked whether SEEKER has seen the suggested movie, so giving feedback on that recommendation is the most directly supported next strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

@@ -1,0 +1,919 @@
+{
+  "events": [
+    {
+      "focus_person": "沈川",
+      "yuanwen": "工作一段时间后，沈川得到转去产品部门的机会，但需要放弃目前稳定的岗位。父亲认为没有必要冒险，不仅反复劝他留下，还私下联系领导，希望对方不要轻易放人。沈川得知这件事后，父亲仍说：“你现在觉得我多管，过几年就知道我为什么拦你。”",
+      "stimulus_text": "工作一段时间后，沈川得到转去产品部门的机会，但需要放弃目前稳定的岗位。父亲认为没有必要冒险，不仅反复劝他留下，还私下联系领导，希望对方不要轻易放人。沈川得知这件事后，父亲仍说：“你现在觉得我多管，过几年就知道我为什么拦你。”",
+      "stimulus_action_split": {
+        "stimulus_text": "工作一段时间后，沈川得到转去产品部门的机会，但需要放弃目前稳定的岗位。父亲认为没有必要冒险，不仅反复劝他留下，还私下联系领导，希望对方不要轻易放人。沈川得知这件事后，父亲仍说：“你现在觉得我多管，过几年就知道我为什么拦你。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "沈川",
+          "父亲沈建国",
+          "沈川的领导"
+        ],
+        "action": "父亲沈建国反复劝沈川留在目前岗位，并私下联系沈川的领导沟通不要轻易放人；其后父亲对沈川说：‘过几年就知道我为什么拦你。’",
+        "object": "沈川及其领导",
+        "scene": "沈川工作一段时间后，出现转去产品部门的机会，但需放弃目前稳定岗位；父亲沈建国介入该事项。",
+        "outcome_changes": [
+          "沈川得到转去产品部门的机会。",
+          "该转岗机会附有放弃目前稳定岗位的条件。",
+          "父亲沈建国与沈川的领导发生私下联系。",
+          "父亲沈建国对沈川说出劝阻其留下来的话语。"
+        ],
+        "role_changes": [
+          "沈川的岗位事项中新增转去产品部门的可选机会；该机会要求放弃当前稳定岗位。"
+        ],
+        "relationship_changes": [
+          "父亲沈建国就沈川的转岗事项私下联系沈川的领导。"
+        ],
+        "constraint_changes": [
+          "转去产品部门需放弃目前稳定岗位。",
+          "父亲沈建国私下联系沈川的领导沟通不要轻易放人。"
+        ],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f2",
+          "text": "沈川把“自己的职业去向由自己决定”当成不可让渡的自我边界；当前刺激中父亲反复劝他留下，并私下联系他的领导希望对方不要轻易放人，直接触及这一边界。",
+          "confidence": 0.824584,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f3",
+          "text": "沈川把“在领导面前由自己处理职业事务的成年位置”放在我这边；当前刺激中父亲私下联系他的领导沟通不要放人，使这一位置被绕过。",
+          "confidence": 0.824584,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f1",
+          "text": "沈川把“转去产品部门”这一机会放在我这边，视为与自己分不开的职业方向，不能把它当成可随意放弃的外部选项；当前刺激中该机会正好要求放弃目前稳定岗位，父亲又劝阻他留下。",
+          "confidence": 0.823569,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2"
+          ]
+        },
+        {
+          "id": "sg_f4",
+          "text": "沈川把“父亲尊重并承认自己的职业判断”当成与自己分不开的关系期待；当前刺激中父亲仍说“过几年就知道我为什么拦你”，并未承认他的当下判断。",
+          "confidence": 0.8059259,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2"
+          ]
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "沈川固定地认为“职业转岗应由本人与公司流程决定，父亲不应私下联系领导施压”；当前刺激中父亲私下联系领导沟通不要轻易放人。",
+          "confidence": 0.824584,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f4",
+          "text": "沈川固定地认为“领导应只按职场规则和本人意愿处理转岗，不应受父亲私人关系影响”；当前刺激中父亲与他的领导发生私下联系。",
+          "confidence": 0.824584,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "沈川固定地认为“父子关系中，父亲不应以‘为你好’的方式介入成年子女的工作决定”；当前刺激中父亲反复劝留、私下联系领导并说“过几年就知道我为什么拦你”。",
+          "confidence": 0.824584,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f2",
+          "text": "沈川固定地认为“转去产品部门是应当走的方向，为它放弃稳定岗位是合理选择”；当前刺激中该机会附带放弃稳定岗位的条件，父亲却认为没有必要冒险。",
+          "confidence": 0.823569,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2"
+          ]
+        },
+        {
+          "id": "dg_f3",
+          "text": "沈川固定地认为“父亲用‘过几年就知道’来否定自己现在的判断，是一种越位的经验压制”；当前刺激中父亲说出“过几年就知道我为什么拦你”。",
+          "confidence": 0.823569,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2"
+          ]
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3442227027595098,
+          "alambana_prior_probability": 0.3442227027595098,
+          "activation_alignment": 0.96,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.65274122213376
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f5"
+          ],
+          "combo_activation_probability": 0.3334657432982751,
+          "alambana_prior_probability": 0.3334657432982751,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.63234305894208
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.32231155394221517,
+          "alambana_prior_probability": 0.32231155394221517,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6111916382664
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在沈川此刻的经验里，转去产品部门的机会与必须放弃目前稳定岗位的条件同时出现；父亲反复劝他留下，并私下联系他的领导，希望对方不要轻易放人。这件事不再只是他对职业方向的权衡：它直接触到沈川视作不可让渡的边界——自己的职业去向应由自己决定。父亲说“你现在觉得我多管，过几年就知道我为什么拦你”，在沈川这里不是普通建议，而是再次替他判定哪条路安全、哪条路正确。父亲私下联系领导这一动作，也正落在他固定认定的规则上：职业转岗应由本人与公司流程决定，父亲不应私下联系领导施压。由此，转岗机会、需放弃稳定岗位的条件、父亲劝留、私下联系领导以及那句“过几年就知道我为什么拦你”，在沈川的主观所缘中被串成同一件事：原本属于他与公司流程之间的职业选择，被父亲以替他判断安全正确的方式介入。",
+          "prior_probability": 0.3442227027595098,
+          "posterior_probability": 0.3442227027595098,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.65274122213376,
+          "activation_alignment": 0.96,
+          "grounding_valid": true,
+          "grounding_reason": "所缘包含转岗机会、放弃稳定岗位条件、父亲反复劝留、私下联系领导及原话，均属刺激事实；其余如不可让渡边界、越界判定安全正确等为主观解释，未伪造他人言行，且保留了核心情境变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "在沈川此刻的经验里，转去产品部门的机会及放弃目前稳定岗位的条件，本应是由他在领导面前以成年人的位置来处理的事；但父亲反复劝他留下，并私下联系他的领导沟通不要轻易放人，使这个位置被绕过——事情不再只是他与领导、流程之间的事，父亲已经先于他站到领导那边。父亲随后说“过几年就知道我为什么拦你”，在沈川这里正落在他固定的认为：父子关系中，父亲不应以“为你好”的名义介入成年子女的工作决定。这次父亲介入转岗、联系领导并拦他的去留，正是该固定认为所对应的事件；沈川对当前处境的把握，因此集中在自己作为成年人的处理位置被父亲先行替代、以及父亲以“为你好”介入其工作决定这两点上。",
+          "prior_probability": 0.3334657432982751,
+          "posterior_probability": 0.3334657432982751,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f5"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.63234305894208,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "所缘保留转岗机会、放弃稳定岗位条件、父亲反复劝留、私下联系领导及后续话语；以成年人位置被绕过、父亲站在领导那边、‘为你好’介入等均为沈川的主观解释，不构成对客观刺激的伪造，核心事件未遗漏。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在沈川这里，转去产品部门不是一个可以随意搁置或放弃的外部选项，而是与他自己的职业方向连在一起、不能分割的一部分；而这个机会恰恰以放弃目前稳定岗位为条件，父亲又反复劝他留下。与此同时，沈川认定职业转岗应当由本人与公司流程决定，父亲不该私下联系领导施压；当前父亲已经私下联系领导沟通不要轻易放人，并说“过几年就知道我为什么拦你”。于是父亲的行为在沈川的经验里不是在两个选择之间做普通建议，而是越过他本人的决定位置，把他想走的产品方向压回稳定岗位这一边，并用“以后你会明白”的说法把这种干预正当化。",
+          "prior_probability": 0.32231155394221517,
+          "posterior_probability": 0.32231155394221517,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6111916382664,
+          "activation_alignment": 0.9,
+          "grounding_valid": true,
+          "grounding_reason": "所缘包含转岗与放弃稳定岗位的条件、父亲劝留、私下联系领导及原话含义；职业方向相连、越过本人决定位置、压回稳定岗位、把干预正当化等为主观理解，‘以后你会明白’只是对父亲原话的转述，未添加新事实，且保留了关键变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.3442227027595098,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在沈川此刻的经验里，转去产品部门的机会与必须放弃目前稳定岗位的条件同时出现；父亲反复劝他留下，并私下联系他的领导，希望对方不要轻易放人。这件事不再只是他对职业方向的权衡：它直接触到沈川视作不可让渡的边界——自己的职业去向应由自己决定。父亲说“你现在觉得我多管，过几年就知道我为什么拦你”，在沈川这里不是普通建议，而是再次替他判定哪条路安全、哪条路正确。父亲私下联系领导这一动作，也正落在他固定认定的规则上：职业转岗应由本人与公司流程决定，父亲不应私下联系领导施压。由此，转岗机会、需放弃稳定岗位的条件、父亲劝留、私下联系领导以及那句“过几年就知道我为什么拦你”，在沈川的主观所缘中被串成同一件事：原本属于他与公司流程之间的职业选择，被父亲以替他判断安全正确的方式介入。",
+            "prior_probability": 0.3442227027595098,
+            "posterior_probability": 0.3442227027595098,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.65274122213376,
+            "activation_alignment": 0.96,
+            "grounding_valid": true,
+            "grounding_reason": "所缘包含转岗机会、放弃稳定岗位条件、父亲反复劝留、私下联系领导及原话，均属刺激事实；其余如不可让渡边界、越界判定安全正确等为主观解释，未伪造他人言行，且保留了核心情境变化。"
+          },
+          "xiang": {
+            "text": "在沈川这里，转去产品部门的机会和放弃稳定岗位的条件，本应是他自己权衡的职业选择；父亲反复劝留、私下联系领导，再加上那句“过几年就知道我为什么拦你”，被他整理成同一件事：父亲又一次越过他，替他判定哪条路安全、哪条路正确。这直接触到他一直守着的边界——职业去向应由本人决定；也让他早先形成的看法再次生效：父母提前托关系、当面施压的安排，不是可供自己权衡的求职资源，而是对自我决定权的越界。因此，他不会把父亲的话只当作经验之谈，而会把它看作以安全为名替他做决定；他内心倾向于不接受这种代替判断，并坚持转岗与否应由自己与公司流程来定。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "慢": 0.4559474999999999,
+            "行舍": 0.10225250000000001,
+            "忿": 0.330475,
+            "善见": 0.4841875,
+            "无惭": 0.22805999999999996,
+            "无愧": 0.1760875,
+            "瞋": 0.4077575,
+            "不嫉": 0.024937499999999994,
+            "精进": 0.322985,
+            "不害": 0.04691,
+            "贪": 0.335435,
+            "恶见": 0.039380000000000005,
+            "无瞋": 0.0427025,
+            "无贪": 0.11411249999999999,
+            "不放逸": 0.5819799999999999,
+            "惭": 0.08940250000000001,
+            "无痴": 0.5720649999999999,
+            "昏沉": 0.25339999999999996,
+            "诳": 0.009240000000000002,
+            "无明": 0.05148,
+            "信": 0.584735
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "向领导澄清父亲联系非己意并请求按流程处理",
+              "probability": 0.3780487804878048,
+              "supporting_mental_factors": [
+                "无痴",
+                "善见",
+                "信",
+                "不放逸",
+                "精进"
+              ]
+            },
+            {
+              "text": "要求父亲停止干预转岗",
+              "probability": 0.32926829268292684,
+              "supporting_mental_factors": [
+                "慢",
+                "瞋",
+                "忿",
+                "信",
+                "无痴",
+                "善见"
+              ]
+            },
+            {
+              "text": "提交转岗申请并整理交接材料",
+              "probability": 0.2926829268292683,
+              "supporting_mental_factors": [
+                "信",
+                "不放逸",
+                "精进",
+                "无痴",
+                "善见"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.3334657432982751,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在沈川此刻的经验里，转去产品部门的机会及放弃目前稳定岗位的条件，本应是由他在领导面前以成年人的位置来处理的事；但父亲反复劝他留下，并私下联系他的领导沟通不要轻易放人，使这个位置被绕过——事情不再只是他与领导、流程之间的事，父亲已经先于他站到领导那边。父亲随后说“过几年就知道我为什么拦你”，在沈川这里正落在他固定的认为：父子关系中，父亲不应以“为你好”的名义介入成年子女的工作决定。这次父亲介入转岗、联系领导并拦他的去留，正是该固定认为所对应的事件；沈川对当前处境的把握，因此集中在自己作为成年人的处理位置被父亲先行替代、以及父亲以“为你好”介入其工作决定这两点上。",
+            "prior_probability": 0.3334657432982751,
+            "posterior_probability": 0.3334657432982751,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f5"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.63234305894208,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "所缘保留转岗机会、放弃稳定岗位条件、父亲反复劝留、私下联系领导及后续话语；以成年人位置被绕过、父亲站在领导那边、‘为你好’介入等均为沈川的主观解释，不构成对客观刺激的伪造，核心事件未遗漏。"
+          },
+          "xiang": {
+            "text": "在沈川看来，转岗本是他和领导、流程之间的事，应由他以成年人的身份自己处理；父亲反复劝留并私下联系领导，等于先他一步站到领导那边，把他从这件事的处理位置上挪开。父亲那句“过几年就知道我为什么拦你”，在他这里不是单纯的预见，而是又一次用“为你好”来替他判断、替他决定——就像当年把联系人电话放到他面前、说“这件事听我的”一样，都是把成年子女的职业选择收回到父亲手里。因此，他不会把这次阻拦当作可供自己权衡的一个外部意见，而会把它看作父子规则被再次踩线的证据：父亲仍不承认他的工作决定该由他本人作出。他此刻更倾向守住自己作决定的资格，不愿让这份被绕过的位置继续被父亲替代。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "慢": 0.48526949999999996,
+            "行舍": 0.3737525,
+            "忿": 0.355815,
+            "善见": 0.1149475,
+            "无愧": 0.32812749999999996,
+            "瞋": 0.38422749999999994,
+            "不嫉": 0.024937499999999994,
+            "精进": 0.35556499999999996,
+            "不害": 0.24963,
+            "贪": 0.29561499999999996,
+            "恶见": 0.039380000000000005,
+            "无瞋": 0.0427025,
+            "无贪": 0.11411249999999999,
+            "不放逸": 0.54397,
+            "惭": 0.08940250000000001,
+            "无痴": 0.13223500000000002,
+            "不信": 0.17013999999999999,
+            "诳": 0.009240000000000002,
+            "无明": 0.05148,
+            "信": 0.17929499999999998
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "按转岗流程提交申请材料并准备面试和岗位交接",
+              "probability": 0.44,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "向父亲和领导声明转岗由本人按流程决定并要求直接沟通",
+              "probability": 0.42,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "停止与父亲争辩并出门去公司继续工作",
+              "probability": 0.14,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.32231155394221517,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在沈川这里，转去产品部门不是一个可以随意搁置或放弃的外部选项，而是与他自己的职业方向连在一起、不能分割的一部分；而这个机会恰恰以放弃目前稳定岗位为条件，父亲又反复劝他留下。与此同时，沈川认定职业转岗应当由本人与公司流程决定，父亲不该私下联系领导施压；当前父亲已经私下联系领导沟通不要轻易放人，并说“过几年就知道我为什么拦你”。于是父亲的行为在沈川的经验里不是在两个选择之间做普通建议，而是越过他本人的决定位置，把他想走的产品方向压回稳定岗位这一边，并用“以后你会明白”的说法把这种干预正当化。",
+            "prior_probability": 0.32231155394221517,
+            "posterior_probability": 0.32231155394221517,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_2",
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_2",
+              "bf_1"
+            ],
+            "raw_combo_score": 0.6111916382664,
+            "activation_alignment": 0.9,
+            "grounding_valid": true,
+            "grounding_reason": "所缘包含转岗与放弃稳定岗位的条件、父亲劝留、私下联系领导及原话含义；职业方向相连、越过本人决定位置、压回稳定岗位、把干预正当化等为主观理解，‘以后你会明白’只是对父亲原话的转述，未添加新事实，且保留了关键变化。"
+          },
+          "xiang": {
+            "text": "在沈川这里，转去产品部门不是摆在旁边、可要可不要的外部选项，而是和他自己想走的职业方向连在一起的事；正因为转过去要以放弃现在的稳定为条件，这个选择更应由他本人和公司流程来定。父亲反复劝他留下、私下联系领导，还说“过几年就知道我为什么拦你”，在他经验里就不是在两个方案之间给普通建议，而是又一次越过他的决定位置，伸手把他往稳定岗位那边按回去。尤其是“以后你会明白”这种说法，他听来不是解释，倒像把干预说成替他负责、把已经越界的事包装成早晚会被感激的安排。于是他很自然地把这件事归入以往那种以“以后有机会”为由推后他当前选择、再代以既定岗位的做法里，很难把父亲的话当作能平静权衡的条件。他内心不愿认下这种安排，想守住转岗这件事上由自己拍板的空间，也不接受父亲用领导关系来改变他面前的选项。",
+            "source": "推理",
+            "confidence": 0.82
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "慢": 0.41431749999999995,
+            "行舍": 0.10225250000000001,
+            "忿": 0.386585,
+            "善见": 0.46608749999999993,
+            "不正知": 0.53214,
+            "无愧": 0.40052750000000004,
+            "瞋": 0.5561775,
+            "不嫉": 0.024937499999999994,
+            "精进": 0.268685,
+            "不害": 0.26954,
+            "贪": 0.43860499999999997,
+            "恶见": 0.039380000000000005,
+            "无瞋": 0.0427025,
+            "无贪": 0.11411249999999999,
+            "不放逸": 0.49148000000000003,
+            "惭": 0.08940250000000001,
+            "无痴": 0.13223500000000002,
+            "掉举": 0.24796999999999997,
+            "诳": 0.009240000000000002,
+            "无明": 0.50036,
+            "信": 0.17929499999999998
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "提交产品部门转岗申请及作品",
+              "probability": 0.4,
+              "supporting_mental_factors": [
+                "贪",
+                "精进",
+                "不放逸",
+                "善见",
+                "无痴"
+              ]
+            },
+            {
+              "text": "给公司领导发消息要求按流程处理转岗",
+              "probability": 0.35,
+              "supporting_mental_factors": [
+                "善见",
+                "不放逸",
+                "精进",
+                "慢",
+                "瞋"
+              ]
+            },
+            {
+              "text": "对父亲声明自主决定后离开",
+              "probability": 0.25,
+              "supporting_mental_factors": [
+                "瞋",
+                "忿",
+                "慢",
+                "不正知",
+                "无愧"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "按转岗流程提交申请材料并准备面试和岗位交接",
+          "probability": 0.3158449542745738,
+          "dominant_mental_factors": [
+            "贪",
+            "精进",
+            "不放逸",
+            "善见",
+            "无痴"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3334657432982751,
+              "conditional_probability": 0.44,
+              "contribution": 0.14672492705124104
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32231155394221517,
+              "conditional_probability": 0.4,
+              "contribution": 0.12892462157688608
+            }
+          ]
+        },
+        {
+          "text": "向父亲和领导声明转岗由本人按流程决定并要求直接沟通",
+          "probability": 0.2897375530995966,
+          "dominant_mental_factors": [
+            "善见",
+            "不放逸",
+            "精进",
+            "慢",
+            "瞋"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3334657432982751,
+              "conditional_probability": 0.42,
+              "contribution": 0.14005561218527554
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32231155394221517,
+              "conditional_probability": 0.35,
+              "contribution": 0.1128090438797753
+            }
+          ]
+        },
+        {
+          "text": "向领导澄清父亲联系非己意并请求按流程处理",
+          "probability": 0.14910905209025263,
+          "dominant_mental_factors": [
+            "无痴",
+            "善见",
+            "信",
+            "不放逸",
+            "精进"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3442227027595098,
+              "conditional_probability": 0.3780487804878048,
+              "contribution": 0.13013297299444881
+            }
+          ]
+        },
+        {
+          "text": "要求父亲停止干预转岗",
+          "probability": 0.12986917440118778,
+          "dominant_mental_factors": [
+            "慢",
+            "瞋",
+            "忿",
+            "信",
+            "无痴"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3442227027595098,
+              "conditional_probability": 0.32926829268292684,
+              "contribution": 0.11334162164032639
+            }
+          ]
+        },
+        {
+          "text": "提交转岗申请并整理交接材料",
+          "probability": 0.11543926613438914,
+          "dominant_mental_factors": [
+            "信",
+            "不放逸",
+            "精进",
+            "无痴",
+            "善见"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3442227027595098,
+              "conditional_probability": 0.2926829268292683,
+              "contribution": 0.10074810812473456
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "信": 0.19276471354532548,
+        "精进": 0.28583259190275623,
+        "无痴": 0.20911529192640216,
+        "不放逸": 0.49720410423406364,
+        "行舍": 0.12504965373685317,
+        "不害": 0.19248121096074816,
+        "善见": 0.33187468206932436,
+        "贪": 0.43758878055536055,
+        "瞋": 0.4952362319009602,
+        "慢": 0.4824724482519028,
+        "无明": 0.1998331634441734,
+        "忿": 0.3941504464459613,
+        "无惭": 0.10843015136924557,
+        "无愧": 0.3749443878147245,
+        "不信": 0.07836444967509465,
+        "昏沉": 0.12047794596582842,
+        "掉举": 0.11039170722520869,
+        "不正知": 0.23689899214752813
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 12,
+        "distinct_candidate_count": 10,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+            "mass": 0.3512
+          },
+          {
+            "id": "bf_2",
+            "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+            "mass": 0.3367
+          },
+          {
+            "id": "bf_3",
+            "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+            "mass": 0.3121
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+              "mass": 0.3512
+            },
+            {
+              "id": "bf_2",
+              "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+              "mass": 0.3367
+            },
+            {
+              "id": "bf_3",
+              "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+              "mass": 0.3121
+            }
+          ],
+          "triggered_ids": [
+            "bf_1",
+            "bf_2"
+          ],
+          "bindings": {
+            "bf_2": [
+              "sg_f1",
+              "sg_f4",
+              "dg_f2",
+              "dg_f3"
+            ],
+            "bf_1": [
+              "sg_f2",
+              "sg_f3",
+              "dg_f1",
+              "dg_f4",
+              "dg_f5"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.276
+        }
+      }
+    }
+  ],
+  "focus_person": "沈川",
+  "llm_usage": {
+    "total_calls": 260,
+    "total_duration_ms": 2417362.124646068,
+    "wall_clock_ms": 418308.7161260046
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S02",
+    "event_index": 2,
+    "stimulus": "工作一段时间后，沈川得到转去产品部门的机会，但需要放弃目前稳定的岗位。父亲认为没有必要冒险，不仅反复劝他留下，还私下联系领导，希望对方不要轻易放人。沈川得知这件事后，父亲仍说：“你现在觉得我多管，过几年就知道我为什么拦你。”",
+    "top_action": "按转岗流程提交申请材料并准备面试和岗位交接",
+    "top_probability": 0.3158449542745738,
+    "top_k": [
+      {
+        "text": "按转岗流程提交申请材料并准备面试和岗位交接",
+        "probability": 0.3158449542745738
+      },
+      {
+        "text": "向父亲和领导声明转岗由本人按流程决定并要求直接沟通",
+        "probability": 0.2897375530995966
+      },
+      {
+        "text": "向领导澄清父亲联系非己意并请求按流程处理",
+        "probability": 0.14910905209025263
+      },
+      {
+        "text": "要求父亲停止干预转岗",
+        "probability": 0.12986917440118778
+      },
+      {
+        "text": "提交转岗申请并整理交接材料",
+        "probability": 0.11543926613438914
+      }
+    ],
+    "continuity_before": {
+      "person_id": "沈川",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 3
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+        "mass": 0.3512
+      },
+      {
+        "id": "bf_2",
+        "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+        "mass": 0.3367
+      },
+      {
+        "id": "bf_3",
+        "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+        "mass": 0.3121
+      }
+    ],
+    "fresh_count_raw": 9,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 9,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 12,
+      "distinct_candidate_count": 10,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

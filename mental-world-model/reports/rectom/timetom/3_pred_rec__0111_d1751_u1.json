@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0111_d1751_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The seeker says: \"HI i'm looking for a really god horror movie....Sorry Good!\" The recommender sees a typo ('god' instead of 'good') and a self-correction.",
+      "belief_before": "I am at the beginning of the dialogue. I do not yet know what the seeker wants or what kind of recommendation they are looking for.",
+      "belief_update": "The seeker is interested in horror movies and is asking for a 'good' one. The word 'god' appears to be a typo, and the seeker corrects it to 'good'.",
+      "belief_after": "The seeker wants a good horror movie recommendation. They are likely open to suggestions and expect me, as the recommender, to help them find one.",
+      "emotion": "Attentive and slightly amused by the typo, but focused and ready to assist.",
+      "intention": "To identify the seeker’s horror movie preferences and prepare a suitable recommendation.",
+      "conversational_goal": "To respond helpfully by recommending a good horror movie, while possibly asking clarifying questions about what kind of horror they enjoy. This first turn establishes the dialogue frame, so there is no previous interpretation to change."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The seeker says: \\\"HI i'm looking for a really god horror movie....Sorry Good!\\\" The recommender sees a typo ('god' instead of 'good') and a self-correction.\",\n    \"belief_before\": \"I am at the beginning of the dialogue. I do not yet know what the seeker wants or what kind of recommendation they are looking for.\",\n    \"belief_update\": \"The seeker is interested in horror movies and is asking for a 'good' one. The word 'god' appears to be a typo, and the seeker corrects it to 'good'.\",\n    \"belief_after\": \"The seeker wants a good horror movie recommendation. They are likely open to suggestions and expect me, as the recommender, to help them find one.\",\n    \"emotion\": \"Attentive and slightly amused by the typo, but focused and ready to assist.\",\n    \"intention\": \"To identify the seeker’s horror movie preferences and prepare a suitable recommendation.\",\n    \"conversational_goal\": \"To respond helpfully by recommending a good horror movie, while possibly asking clarifying questions about what kind of horror they enjoy. This first turn establishes the dialogue frame, so there is no previous interpretation to change.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "c",
+    "e"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

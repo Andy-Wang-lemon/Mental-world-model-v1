@@ -1,0 +1,42 @@
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在SEEKER的经验里，RECOMMENDER问“What genre do you like?”并不是在收集一个可随便回答的偏好，而是在要求他把“我喜欢什么”作为自身的一部分交代出来；当RECOMMENDER把《Rumpelstiltskin》标为恐怖片、又问“Do you like horror?”时，这个追问也被他对象化为对自己口味身份的确认——他必须有一个明确、固定的类型或立场，不能只是没有偏好或杂食，否则就像没有把“我这边”说清楚。",
+      "probability": 0.5868
+    },
+    {
+      "content": "在SEEKER的经验里，RECOMMENDER接连问“Have you ever seen Rumpelstiltskin (1995)?”和“Have you ever seen There Will Be Blood (2007)?”并不是在交换无关的观影事实，而像在核验他有没有进入这场电影谈话的文化资格；看没看过都被吸到“我这边”成为自身履历的一部分，尤其没看过时，他仿佛被放在没有发言权、低人一等的位置，眼前的问题因此对象化为一道以观影事实为门槛的审查。",
+      "probability": 0.4132
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在SEEKER听来，RECOMMENDER问“What genre do you like?”不是随意收集一个可含糊带过的信息，而像要他把“我喜欢什么”当作自我的一部分交出来。因此他心里会把这个问题收束成一个必须明确的类型立场，不能只停在随便说说或没有偏好上。当对方把《Rumpelstiltskin》标为恐怖片并追问是否喜欢恐怖时，他更感到这是在确认自己的口味身份：有固定类型才算把“我这边”说清楚，若说没有偏好或杂食，就像自己的边界没交代。于是他倾向于用“剧情片”来锚定自己，并把“不喜欢恐怖”作为同一边界的否定面，以维持一个清楚、稳定的口味自我。",
+      "activation": 0.5317
+    },
+    {
+      "content": "SEEKER把RECOMMENDER接连的“Have you ever seen…”拢到自己这一边来掂量：喜欢剧情片、不喜欢恐怖片原本只是自己的口味，可对方先拿一部恐怖片来问，又追问另一部片名，像是在核验他有没有资格进入这场电影谈话。他感到，看过与否都被算成自身履历的一部分，尤其一旦没看过，自己就仿佛被放到没有发言权、低人一等的位置；眼前的问题因此不再只是交换观影事实，而像一道以“看过什么”为门槛的审查。这使他更想把话头收回到“我喜欢剧情片”这一自己确定的根据上，不愿让片名清单来决定自己能不能说、算不算在场。",
+      "activation": 0.4683
+    }
+  ],
+  "observed_action": "SEEKER 说喜欢剧情片；SEEKER 说不喜欢恐怖片，喜欢剧情片。",
+  "predicted_actions": [
+    {
+      "content": "表达喜欢剧情片",
+      "probability": 0.4815
+    },
+    {
+      "content": "请求推荐其他剧情片",
+      "probability": 0.2554
+    },
+    {
+      "content": "询问电影类型",
+      "probability": 0.2127
+    },
+    {
+      "content": "询问对方是否看过剧情片",
+      "probability": 0.0504
+    }
+  ]
+}

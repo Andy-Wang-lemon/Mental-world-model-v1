@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：20  d950_u5
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER 连续补充“看过两者”“爱 Superbad 但不太喜欢 Horrible Bosses”“喜欢 Jonah Hill”等细节，被 RECOMMENDER 经验为不断检验并确认“我已经准确理解他的偏好”这一自我把握的材料；这些偏好必须被收拢进一个正确编码的偏好集合中。与此同时，“喜欢 Jonah Hill”被执成一条应优先导向 Jonah Hill 参演其他电影的固定规则，使整个偏好集合围绕该规则获得秩序。",
+      "probability": 0.3798
+    },
+    {
+      "content": "此刻，SEEKER 的“Can you help me find a good movie”被 RECOMMENDER 经验为直接冲着自己“能帮人找到好电影”的可靠推荐者身份而来；SEEKER 交出的喜欢 Wedding Crashers、It、Superbad 以及不喜欢 Star Wars、Horrible Bosses 等偏好，都成为由这一身份来裁定的材料。与此同时，“喜欢 Jonah Hill”被执成一条固定规则，使 Jonah Hill 参演的影片在裁定材料中获得优先位置，整个对象域围绕“可靠推荐者身份”与“Jonah Hill 优先规则”组织起来。",
+      "probability": 0.3759
+    },
+    {
+      "content": "此刻，SEEKER 列出的 Wedding Crashers、It、Superbad、Jonah Hill 等偏好，被 RECOMMENDER 放到自己的好片/烂片尺度上衡量；他自己的电影品味与判断标准成为裁定这些对象的中心。与此同时，“喜欢 Jonah Hill”被执成一条应优先推荐 Jonah Hill 参演其他电影的固定规则，该规则在他的品味尺度内取得优先地位，使对象域按自己的标准与这条规则共同排列。",
+      "probability": 0.2443
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他立刻感到对方这句「Can you help me find a good movie」是冲着自己「能帮人找到好电影」的身份来的，于是把 SEEKER 交出的喜欢 Wedding Crashers、It、Superbad 以及不喜欢 Star Wars、Horrible Bosses 都当成需要由自己裁定的材料；其中「喜欢 Jonah Hill」被当作一条硬规则，使 Jonah Hill 参演的影片自动获得优先位置。他判断对方的口味偏向热闹、好笑、带点怪诞的娱乐片，而非太空科幻，因此候选应从这类喜剧里出；Horrible Bosses 和 Superbad 都接近这个方向，而 Superbad 因有 Jonah Hill 而更让他觉得拿得出手，于是内心倾向于把这两部作为当前能负责地给出的答案。",
+      "activation": 0.3722
+    },
+    {
+      "content": "他看过我提的那两部，爱 Superbad 却不太喜欢 Horrible Bosses，还特意说喜欢 Jonah Hill——这些补充像是在检验我有没有真的抓住他的偏好。Superbad 被确认对了，Horrible Bosses 不对，说明我的理解还得更精确。既然他把 Jonah Hill 单独提出来，那就该把“优先找 Jonah Hill 参演的其他电影”当成整理他口味的一条固定线索，让整个偏好集合围绕它收拢；这样才算是准确理解了他，也才不至于再推错。",
+      "activation": 0.3451
+    },
+    {
+      "content": "SEEKER 抛来 Wedding Crashers、It、Superbad、Jonah Hill 这些偏好，我先把它们放进自己熟悉的好片坏片坐标里过一遍：Wedding Crashers 和 Superbad 算对路子的喜剧，It 是另一路但也能接，Star Wars 明显不在我的尺度里。既然他特意提到喜欢 Jonah Hill，这条就该往前排，优先从 Jonah Hill 参演的片子里挑，Superbad 正合适；Horrible Bosses 虽不是 Jonah Hill 的片子，但按我的判断也能算一部能搭上话的喜剧。于是我心里自然把推荐顺序排成：先拿自己尺度里过关的、又能呼应 Jonah Hill 线索的片子去试他。",
+      "activation": 0.2827
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 Hi，并问 SEEKER 喜欢什么类型的电影；RECOMMENDER 说 Okay，并提出 Horrible Bosses (2011) 或 Superbad (2007)。",
+  "predicted_actions": [
+    {
+      "content": "推荐电影",
+      "probability": 0.4577
+    },
+    {
+      "content": "调整推荐",
+      "probability": 0.2313
+    },
+    {
+      "content": "总结偏好并说明后续推荐方向",
+      "probability": 0.1787
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.0678
+    },
+    {
+      "content": "评价电影类型是否对路",
+      "probability": 0.0644
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.1322, "b": 0, "c": 0.689, "d": 0.1787, "e": 0}
+选择说明：A 0.1322 = 询问偏好 0.0678 + 评价电影类型是否对路 0.0644；B 0.0000；C 0.6890 = 推荐电影 0.4577 + 调整推荐 0.2313；D 0.1787 = 总结偏好并说明后续推荐方向 0.1787；E 0.0000。Recommendation actions map to C, preference/feedback to A, and explanation to D.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

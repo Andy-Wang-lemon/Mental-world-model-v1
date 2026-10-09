@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 7,
+  "item_id": "d622_u2",
+  "dialogue_id": "622",
+  "utterance_pos": 2,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "SEEKER 的求助直接落在我身上，我此刻处在被请求的帮手位置；“fun”和“all ages”被我看成两个清楚且可以同时满足的客观筛选条件，于是眼前这件事呈现为：应该存在一部电影，能同时通过这两道条件。",
+        "probability": 0.3862
+      },
+      {
+        "content": "SEEKER 这句直接对我的“want to help me”把我放在一个不能推开的帮手位置上；找电影这件事在我这里被收束成一个必须由我产出具体电影推荐才算回应的空位——它天然指向片名或片单，而不是可以先泛泛接住的话题。",
+        "probability": 0.3753
+      },
+      {
+        "content": "SEEKER 的求助直接落在我身上，我处在不能当作与己无关的帮手位置；“all ages”在我这里固定成一套统一的内容安全尺度，某些元素必须被排除，不必再追问具体年龄、场合或观看者差异——全年龄电影首先被经验为一条排除线下的对象。",
+        "probability": 0.2385
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 这句直接冲我来的“want to help me”，把帮手的位置按在我身上，我不能把它轻轻推开。找电影也随之收成一个我该填上的空位：得给出具体片名或片单，才算真正接住。眼下我只应了声“Hi”，还没回应这个请求，所以这个空位更实、更急；我倾向于把它认下来，并朝“要拿出具体电影”的方向去组织接下来的回答。",
+        "activation": 0.3928
+      },
+      {
+        "content": "他这一问直接落到我身上，我就该认下这个帮他找片的帮手位置，不能把它推成与我无关；而“fun”和“all ages”既然是两条清楚的条件，那就该有一部电影能同时合上这两点，眼前这件事就是照着这两条去把合适的那部确认出来。",
+        "activation": 0.3721
+      },
+      {
+        "content": "对方这一问直接落到我身上，我不好把它当作与己无关；先应了一声之后，我心里已经把“帮忙找一部全年龄的欢快电影”接了过来。“全年龄”在我这里先成了一条统一的安全排除线：有些元素不用多想就该先剔出去，不必再追问具体年龄、场合或观看者有什么差别——我眼前要找的，首先是一部在这条线下面不会出问题的片子。",
+        "activation": 0.2351
+      }
+    ],
+    "observed_action": "RECOMMENDER 说：Hi。",
+    "predicted_actions": [
+      {
+        "content": "直接给出一个具体片名并说明理由",
+        "probability": 0.3176
+      },
+      {
+        "content": "列出多个候选片单供选择",
+        "probability": 0.2202
+      },
+      {
+        "content": "推荐具体电影",
+        "probability": 0.2131
+      },
+      {
+        "content": "询问观影偏好",
+        "probability": 0.1279
+      },
+      {
+        "content": "询问偏好和可用平台",
+        "probability": 0.1213
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.25,
+    "b": 0.4,
+    "c": 0.85,
+    "d": 0.35,
+    "e": 0.0
+  },
+  "score_reason": "The record most directly supports moving toward a concrete movie recommendation, either by providing it or asking the minimal follow-up needed.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

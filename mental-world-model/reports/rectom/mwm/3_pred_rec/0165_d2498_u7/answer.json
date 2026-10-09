@@ -1,0 +1,76 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 165,
+  "item_id": "d2498_u7",
+  "dialogue_id": "2498",
+  "utterance_pos": 7,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "此刻，SEEKER的提问被经验为一次对“我”的观影品味本身的直接索取：他问的是“you think”和“you like and would recommend”，于是推荐不再只是信息，而必须是“我”这个人的真实喜好的延伸；同时“top three”的明确排序像一把尺，衡量我能不能把真实喜好整理成合格的前三。Good Will Hunting被当作一个参照点，用来确认我的推荐是否出自与自我一致的品味，而不是随便凑数。",
+        "probability": 0.4554
+      },
+      {
+        "content": "此刻，SEEKER的请求被经验为对我鉴赏力的一次承认与检验：他专门来问“you think”和“you like and would recommend”，这使“被请求推荐”的位置本身像在确认我“懂电影/有品味”；而“top three”的排序要求，则把这次回应变成展示鉴赏力的刻度。Good Will Hunting被当作一个可供比对的品味线索，我必须在真实喜好基础上排出明确前三，否则这个“有品味”的形象就会显得不成立。",
+        "probability": 0.3193
+      },
+      {
+        "content": "此刻，SEEKER提到自己喜欢Good Will Hunting，被经验为我们之间品味相投的联结证据，仿佛“我们喜欢同一部电影”就说明关系更亲近；他的“top three”请求则被看成在这个共同喜好上确认彼此是否合拍。推荐必须出自我的真实喜好并排出明确前三，因为只有这样，这份共同品味才像是真实可信的联结，而不是表面的巧合。",
+        "probability": 0.2253
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "他问的是‘你认为’和‘你喜欢并推荐’，这不像只要一份片单，更像要我把自己对电影的真实喜好摆出来；Good Will Hunting 是他给我的参照，提醒我不能拿随便凑数的片子应付。‘前三名’像一把尺，逼我把喜好整理成有排序的合格答案。我的最爱 The Outsiders 可以说，但他已经看过，再推就少了分量；不如先弄清他此刻想看什么类型，这样我给出的推荐才既出自真心，又能对他有用。若只丢一个片名，既不能代表我，也不够负责。",
+        "activation": 0.429
+      },
+      {
+        "content": "他专门问“you think”和“you like and would recommend”，这让我觉得自己的鉴赏力被摆到台面上，既像承认，也像检验。“top three”不是随口一问，而是在要求我给出可比较的刻度；Good Will Hunting 则像一条线索，提醒我对方在拿具体片子试探我的品味。我确实把 The Outsiders 当作一直以来的最爱，可对方已经看过，这使我能拿出的最真实证据一下子失去了展示力；若硬排前三，又违背我认为推荐必须出自真实喜好的标准。于是我更愿意把话题拉回类型：先知道他想看什么，才好在真实喜好里排出明确顺序，也才不至于让“懂电影/有品味”的形象显得虚浮。这里既有被认可的受用，也有怕露怯的紧绷，整体趋向是守住真实偏好，不为了排名而编造，同时用类型条件来安置这次检验。",
+        "activation": 0.329
+      },
+      {
+        "content": "RECOMMENDER把SEEKER喜欢Good Will Hunting读作两人品味相投的亲近信号，因此面对“top three”时，觉得应当拿出自己真实的最爱与明确排序，来验证这份联结是否成立；但SEEKER说已看过The Outsiders，又让这份共同喜好显得不够牢靠，于是他转而先确认SEEKER想看的类型，不愿用勉强拼出的排序把表面的巧合说成真正的合拍。",
+        "activation": 0.2419
+      }
+    ],
+    "observed_action": "RECOMMENDER 先打招呼并询问 SEEKER 喜欢什么类型的电影；在 SEEKER 请求推荐并提到喜欢 Good Will Hunting (1997) 后，RECOMMENDER 说如果 SEEKER 想要其一直以来的最爱，那是 The Outsiders (1983)；在 SEEKER 说看过该片后，RECOMMENDER 说取决于 SEEKER 想看的电影类型。",
+    "predicted_actions": [
+      {
+        "content": "暂不列前三并询问对方偏好类型或心情",
+        "probability": 0.6146
+      },
+      {
+        "content": "列出自己的前三名",
+        "probability": 0.2272
+      },
+      {
+        "content": "说明自己偏爱的类型并询问是否合对方口味",
+        "probability": 0.1582
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Ask for preference or seeks feedback from the seeker",
+  "option_scores": {
+    "a": 0.7728,
+    "b": 0,
+    "c": 0.2272,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.7728 = 暂不列前三并询问对方偏好类型或心情 0.6146 + 说明自己偏爱的类型并询问是否合对方口味 0.1582；B 0.0000；C 0.2272 = 列出自己的前三名 0.2272；D 0.0000；E 0.0000。Action 0 and 2 ask for preference/feedback, while action 1 directly lists a top-three recommendation.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "The top predicted next action is to hold off on a top-three list and ask about the other person's preferred genre or mood, which directly restates inquiring further to provide a recommendation.",
+  "audit_level": "direct"
+}

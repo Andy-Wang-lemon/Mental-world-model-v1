@@ -1,0 +1,27 @@
+数据：3_pred_rec
+题号：173  d2630_u6
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hi...What genre do you like?\nSEEKER says: I like dramas\nRECOMMENDER says: Have you ever seen Rumpelstiltskin  (1995)  ?...That is more of a horror move though. Do you like horror?\nSEEKER says: no, i don't like horror...i like dramas\nRECOMMENDER says: Have you ever seen There Will Be Blood (2007)  ?\nSEEKER says: yes, love that one；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hi...What genre do you like?\nSEEKER says: I like dramas\nRECOMMENDER says: Have you ever seen Rumpelstiltskin  (1995)  ?...That is more of a horror move though. Do you like horror?\nSEEKER says: no, i don't like horror...i like dramas\nRECOMMENDER says: Have you ever seen There Will Be Blood (2007)  ?\nSEEKER says: yes, love that one；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.4, "b": 0.3, "c": 0.9, "d": 0.2, "e": 0.1}
+选择说明：The recommender is mid-recommendation and just received confirmation of a seen drama, so continuing to provide or inquire about recommendations is most direct.
+标准：C: Provides a recommendation directly or by inquiring further
+结果：对

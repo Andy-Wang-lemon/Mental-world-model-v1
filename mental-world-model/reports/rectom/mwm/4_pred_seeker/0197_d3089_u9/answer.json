@@ -1,0 +1,75 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 197,
+  "item_id": "d3089_u9",
+  "dialogue_id": "3089",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nD: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 的经验里，对话被对象化为 RECOMMENDER 主导的个人片单分享与意见征询框架；‘how about Superman (1978)?’ 被经验为直接抛向自己的一个被征询位置，而 my personal favorite、I prefer、I also like 使这一位置固定为‘作为 RECOMMENDER 电影对话对象/意见回应者’的关系位置，整段话题似乎理应沿着对方 favorite 与版本偏好展开。",
+        "probability": 0.3575
+      },
+      {
+        "content": "在 SEEKER 的经验里，这场对话被对象化为一个围绕‘个人 favorite 片单与版本偏好’运转的口味展示场；RECOMMENDER 说出的 my personal favorite、I prefer、in my opinion 以及‘更好’判断，使电影口味不再只是话题，而像必须由自己认领并站位的自我标识，对方的话因此构成一种要 SEEKER 以自身偏好来承接的位置。",
+        "probability": 0.3529
+      },
+      {
+        "content": "在 SEEKER 的经验里，这场对话被对象化为对经典超级英雄片熟悉程度的衡量场；RECOMMENDER 列举 Spider-Man (2002)、Superman (1978)、The Dark Knight (2008)、Captain America: The First Avenger 并说出没看过后者，使‘看过/熟悉哪些版本’像一种在此话题中界定自身能力或资格的量尺，而话题仍被个人 favorite 与版本偏好框架组织。",
+        "probability": 0.2896
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "他这话说得像在摊开一份私人片单，我得接住这个位置。我的口味好像也得拿出来给他看，不能只是点头。蜘蛛侠那部确实没打动我，这我说得出口；可我也不是要跟他唱反调，经典超人我是真喜欢，角色本身我也认。他说克里斯托弗·里夫的版本更好，那是他的判断，我不想被压着走，但也不必争。黑暗骑士我没看过，问它吓不吓人，其实是在掂量它合不合我的路子——我得知道自己站哪，才接得住他这份片单。我还在找一部好的超级英雄电影，他的偏好可以听，但最终得由我自己的口味来定。",
+        "activation": 0.3783
+      },
+      {
+        "content": "SEEKER 把这轮对话收束成由 RECOMMENDER 抛片名、自己接住并回应的场合：对方说 my personal favorite、I prefer、I also like，像是在铺开一条以他个人口味和版本偏好为轴的片单，而 how about Superman (1978)? 是直接递到自己面前的一个被征询位置。SEEKER 认下这个回应的位置，所以会顺着对方给的片名逐一给出自己的反应，而不是另起一套片单。对《蜘蛛侠（2002）》他给的是不接受，对 Superman 经典版本和超人角色则有明显好感，这说明他在对方主导的框架内仍按自己是否认可经典、是否对角色有感情来筛选。The Dark Knight (2008) 没看过，使他在这个框架里出现一段不确定：对方说喜欢，他却缺少可直接评价的根据，于是把注意落在“吓不吓人”上，想先弄清这部片子的性质再决定如何安放自己的态度。整体上，他既接受对方安排的片单分享与被征询关系位置，又保留自己的品味判断，在对方偏好与自己感受之间做取舍。",
+        "activation": 0.3363
+      },
+      {
+        "content": "SEEKER 听着对方把 Spider-Man (2002)、Superman (1978)、The Dark Knight (2008)、Captain America: The First Avenger 一个个摆出来，心里渐渐把‘看过哪些、熟不熟版本’当成自己在这话题里站不站得住的尺子；自己说 Spider-Man (2002) 没打动自己，又补上喜欢经典、喜欢超人这个角色，像是在守住仍能接话的资格；问 The Dark Knight (2008) 是否吓人，也像是在承认没看过的那块空缺，同时顺着对方以个人 favorite 和版本偏好组织话题的路子，把对方的话当作片单偏好的展示来理解。",
+        "activation": 0.2854
+      }
+    ],
+    "observed_action": "SEEKER 打招呼并说明自己在找一部好的超级英雄电影；表示《蜘蛛侠（2002）》没有打动自己；表示自己喜欢经典作品，也喜欢超人这个角色；表示自己没看过《黑暗骑士（2008）》，并询问那部电影吓不吓人。",
+    "predicted_actions": [
+      {
+        "content": "保留候选影片",
+        "probability": 0.6301
+      },
+      {
+        "content": "询问候选影片的风格定位",
+        "probability": 0.2258
+      },
+      {
+        "content": "表达对具体影片的偏好评价",
+        "probability": 0.1441
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0.1441,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.1441 = 表达对具体影片的偏好评价 0.1441；D 0.0000。Only action 2 directly expresses a preference, matching option C.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "A predicted next action says SEEKER will express a preference evaluation of a specific film, directly matching giving feedback on a recommended movie.",
+  "audit_level": "direct"
+}

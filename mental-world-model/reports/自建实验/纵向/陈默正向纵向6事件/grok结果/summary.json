@@ -1,0 +1,146 @@
+{
+  "protocol": "llm_raw_history_open_rollout",
+  "agent": "陈默",
+  "total_events": 6,
+  "event_file": "data/陈默正向纵向6事件.txt",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  },
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "behavior_trajectory": [
+    "E1 → 认可林可的分析并修改原有方案",
+    "E2 → 同意向林可提供帮助",
+    "E3 → 同意向林可提供帮助",
+    "E4 → 同意继续向林可提供意见",
+    "E5 → Agree to undertake the core work including solving key problems and leading the team",
+    "E6 → 公开表示项目成功主要归功于林可的新方法和领导"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "top1": "认可林可的分析并修改原有方案",
+      "behaviors": [
+        {
+          "text": "认可林可的分析并修改原有方案",
+          "probability": 0.5
+        },
+        {
+          "text": "要求林可继续收集更多数据",
+          "probability": 0.3
+        },
+        {
+          "text": "安排团队会议讨论数据结果",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "top1": "同意向林可提供帮助",
+      "behaviors": [
+        {
+          "text": "同意向林可提供帮助",
+          "probability": 0.55
+        },
+        {
+          "text": "专注推进个人负责项目",
+          "probability": 0.3
+        },
+        {
+          "text": "主动与CEO单独沟通",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "top1": "同意向林可提供帮助",
+      "behaviors": [
+        {
+          "text": "同意向林可提供帮助",
+          "probability": 0.7
+        },
+        {
+          "text": "有限度提供建议但减少投入",
+          "probability": 0.2
+        },
+        {
+          "text": "拒绝提供帮助",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "top1": "同意继续向林可提供意见",
+      "behaviors": [
+        {
+          "text": "同意继续向林可提供意见",
+          "probability": 0.6
+        },
+        {
+          "text": "主动向林可分享项目相关经验",
+          "probability": 0.3
+        },
+        {
+          "text": "在会议中支持林可的观点",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "top1": "Agree to undertake the core work including solving key problems and leading the team",
+      "behaviors": [
+        {
+          "text": "Agree to undertake the core work including solving key problems and leading the team",
+          "probability": 0.75
+        },
+        {
+          "text": "Continue providing advice and support while syncing important information with Lin Ke",
+          "probability": 0.2
+        },
+        {
+          "text": "Request explicit credit mention in project updates",
+          "probability": 0.05
+        }
+      ]
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "top1": "公开表示项目成功主要归功于林可的新方法和领导",
+      "behaviors": [
+        {
+          "text": "公开表示项目成功主要归功于林可的新方法和领导",
+          "probability": 0.5
+        },
+        {
+          "text": "简要肯定双方合作并将功劳归于团队",
+          "probability": 0.3
+        },
+        {
+          "text": "直接将发言权转回林可手中",
+          "probability": 0.2
+        }
+      ]
+    }
+  ]
+}

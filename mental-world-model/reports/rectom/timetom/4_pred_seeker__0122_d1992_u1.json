@@ -1,0 +1,33 @@
+{
+  "id": "4_pred_seeker__0122_d1992_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'hi what kind of movies do you like'",
+      "information_available": "The target speaker SEEKER hears a greeting and a direct question asking what kinds of movies they like. No other context has been provided yet.",
+      "preferences": "No explicit movie preferences have been stated by SEEKER or revealed to the recommender yet. Any private preferences SEEKER may have are not available from this turn.",
+      "belief_before": "No specific prior belief about the recommender or the dialogue topic; the interaction has just begun.",
+      "belief_update": "Learns that the recommender is asking about SEEKER's movie preferences.",
+      "belief_after": "The recommender appears interested in SEEKER's movie tastes, likely to guide a movie recommendation conversation.",
+      "emotion": "Neutral and attentive; possibly mildly curious because a preference question has been asked.",
+      "intention": "To respond to the recommender's question, likely by sharing movie preferences or asking for clarification.",
+      "reaction_to_other_speaker": "Receptive to the greeting and question; no negative or positive evaluation yet beyond recognizing an opening.",
+      "conversational_goal": "Answer the recommender's question about movie preferences and begin establishing what kinds of movies they like.",
+      "changes_previous_interpretation": "N/A: this is the first turn, so it establishes the initial interpretation rather than changing a previous one."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'hi what kind of movies do you like'\",\n    \"information_available\": \"The target speaker SEEKER hears a greeting and a direct question asking what kinds of movies they like. No other context has been provided yet.\",\n    \"preferences\": \"No explicit movie preferences have been stated by SEEKER or revealed to the recommender yet. Any private preferences SEEKER may have are not available from this turn.\",\n    \"belief_before\": \"No specific prior belief about the recommender or the dialogue topic; the interaction has just begun.\",\n    \"belief_update\": \"Learns that the recommender is asking about SEEKER's movie preferences.\",\n    \"belief_after\": \"The recommender appears interested in SEEKER's movie tastes, likely to guide a movie recommendation conversation.\",\n    \"emotion\": \"Neutral and attentive; possibly mildly curious because a preference question has been asked.\",\n    \"intention\": \"To respond to the recommender's question, likely by sharing movie preferences or asking for clarification.\",\n    \"reaction_to_other_speaker\": \"Receptive to the greeting and question; no negative or positive evaluation yet beyond recognizing an opening.\",\n    \"conversational_goal\": \"Answer the recommender's question about movie preferences and begin establishing what kinds of movies they like.\",\n    \"changes_previous_interpretation\": \"N/A: this is the first turn, so it establishes the initial interpretation rather than changing a previous one.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

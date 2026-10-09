@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 102,
+  "item_id": "d1509_u8",
+  "dialogue_id": "1509",
+  "utterance_pos": 8,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello, what kind of movie are you looking for?\nSEEKER says: I’m looking for some good thriller movies...I love he suspense sort of films like Seven  (1995) \nRECOMMENDER says: Ok, do you like Saw  (2004)  ?\nSEEKER says: That’s more gorey which I don’t like...I like Double Jeopardy  (1999) \nRECOMMENDER says: Oh ok. I've never seen Double Jeopardy  (1999) \nSEEKER says: I like that along with Gone Girl  (2014) \nRECOMMENDER says: Have you seen The Zodiac  (2005)  ?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello, what kind of movie are you looking for?\nSEEKER says: I’m looking for some good thriller movies...I love he suspense sort of films like Seven  (1995) \nRECOMMENDER says: Ok, do you like Saw  (2004)  ?\nSEEKER says: That’s more gorey which I don’t like...I like Double Jeopardy  (1999) \nRECOMMENDER says: Oh ok. I've never seen Double Jeopardy  (1999) \nSEEKER says: I like that along with Gone Girl  (2014) \nRECOMMENDER says: Have you seen The Zodiac  (2005)  ?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.4,
+    "c": 0.3,
+    "d": 0.1
+  },
+  "score_reason": "The recommender just suggested The Zodiac, so SEEKER most directly responds with feedback on that suggestion.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

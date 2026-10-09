@@ -1,0 +1,79 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 196,
+  "item_id": "d5802_u2",
+  "dialogue_id": "5802",
+  "utterance_pos": 2,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "RECOMMENDER经验到，SEEKER是把“可询问、可信赖的推荐者”这个位置安放在我身上；当前请求只指向我，于是这个被求助的位置被当作我的。与此同时，“好的喜剧电影”被对象化为存在固定公认品质标准的一类对象，请求就是让我从这个标准出发来给出符合者。",
+        "probability": 0.3746
+      },
+      {
+        "content": "在RECOMMENDER此刻的经验里，SEEKER的“could you please recommend”不是一个与我无关的泛问，而是直接落向“我会推荐、能给出好推荐”这一自身资格；推荐因此被经验为从我这里发出的东西。与此同时，“好的喜剧电影”被对象化为一个已有固定公认标准、可据以筛选的类别，眼前的请求就是要把某个片目纳入该标准之下。",
+        "probability": 0.339
+      },
+      {
+        "content": "在RECOMMENDER的经验里，SEEKER的please和good把“让SEEKER满意、不辜负这个请求”化成自己这边的责任；请求不是旁人的事。与此同时，“好的喜剧电影”被对象化为一个已有固定公认标准、等待被选中的品质类别，因此满足期待被理解为按该标准给出符合者。",
+        "probability": 0.2864
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "他这一句直接落到我身上：推荐不是与我无关的泛问，而是要我用自己会挑片、能给出好推荐的资格来接。‘好的喜剧电影’在我这里像早就有一套公认的尺子，找片就是从符合尺子的片目里挑；可他又说可以带动作，这尺子似乎不止一条。心里先认下这件事该由我完成，同时觉得得弄清他今天具体想要哪一路喜剧，才能把那部既算好喜剧、又合他口味的片子定下来。",
+        "activation": 0.3987
+      },
+      {
+        "content": "他把对方的请求听成：眼前这个人正把“可询问、可信赖的推荐者”这个位置交给自己，而且只交给自己；于是“好的喜剧电影”不再只是随口一说，而像有一个公认的尺子，等着自己从尺子底下挑出符合者。他对这个位置并不排斥，反而顺势认下，心里把“可带动作”并入对“好喜剧片”的理解，并倾向于先弄清对方要的是哪一路喜剧，再往既定标准里去找。",
+        "activation": 0.3305
+      },
+      {
+        "content": "他感到对方话里的 please 和 good 把‘让 SEEKER 满意、不辜负这个请求’压成了自己这边必须担起来的事，不能当成旁人的请求随便应付；同时心里把‘好的喜剧电影’看成一个早已有公认标准、只等着被选中的品质类别，于是开始按这个类别去衡量，并觉得得先弄清楚对方今天具体想找什么类型，才能对准标准、从符合者里给出推荐，免得辜负了对方的期待。",
+        "activation": 0.2707
+      }
+    ],
+    "observed_action": "RECOMMENDER 向对方打招呼，并询问对方今天想找什么类型的电影。",
+    "predicted_actions": [
+      {
+        "content": "询问偏好",
+        "probability": 0.4441
+      },
+      {
+        "content": "推荐影片",
+        "probability": 0.375
+      },
+      {
+        "content": "提供选项",
+        "probability": 0.0997
+      },
+      {
+        "content": "询问澄清需求",
+        "probability": 0.0812
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.4441,
+    "b": 0,
+    "c": 0.4562,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.4441 = 询问偏好 0.4441；B 0.0000；C 0.4562 = 推荐影片 0.3750 + 询问澄清需求 0.0812；D 0.0000；E 0.0000。0 matches ask preference, 1 matches direct recommendation, 3 matches inquiring further, and 2 matches no option.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

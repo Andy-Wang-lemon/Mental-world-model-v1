@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：52  d1021_u8
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "RECOMMENDER听到SEEKER对那几部电影的回应——否认看过、确认情节、说今晚会租、说太悲伤没看完——每一句都像是对他自己推荐成果的回应。那些电影成了他不可分割的一部分；SEEKER的每一点接受或拒绝都被他收纳为对自己推荐的肯定或否定。而在这之中，“女主角主演”仍然是他衡量这些推荐是否成立的标准，不能满足这一条件的电影从一开始就不会被算作真正的推荐。",
+      "probability": 0.3914
+    },
+    {
+      "content": "在RECOMMENDER的所缘中，SEEKER那句“想找一部女主角主演电影”的话变成了一块压在自己身上的责任牌：他必须为对方找到符合“女性主角、不限类型”的影片。眼前浮现的电影都被自动分成两栏——有女主角的才是合格推荐，没有女主角的则被排除在外；SEEKER的需求不是对方的喜好，而是他自己必须兑现的指令。",
+      "probability": 0.3548
+    },
+    {
+      "content": "RECOMMENDER一边把“找一部女主角电影”当作自己必须完成的责任，一边在SEEKER说出“我二十出头时超重，那部电影让我想起太多回忆”之后，将某些悲伤电影划为绝对的禁区。那些带有类似个人经历创伤的影片，在RECOMMENDER眼中成了不能再放到SEEKER面前的危险之物；即使它们符合女主角条件，也可能因为悲伤而被排除。SEEKER的过往经历像一个过滤器，把所有可能引起同样回忆的电影都染上了“不可看”的标记。",
+      "probability": 0.2538
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "听到她想要一部女主角主演的电影，我立刻把它当成一个必须完成的指令。脑海里出现的片子似乎自动被分成了两类：有女主角的才值得提，没有的连浮现出来都显得多余。我已经把满足这个条件当作自己作为推荐者的本分，感到一种无形的压力，必须从记忆中仔细翻找所有符合“女性主角”的影片，还要确保它们足够好、足够动人，否则就不算真正满足了她的要求。这种筛选不是随意的喜好，而是我要对她兑现的责任。",
+      "activation": 0.3542
+    },
+    {
+      "content": "听到SEEKER的这几句话，我心里立刻把它们都系在了我推荐的那几部电影上：她没看过《弱点》、确认情节、说今晚要租《相助》、又因太悲伤而没看《珍爱》——这些反应都成了对我推荐成果的回应，仿佛那些电影就是我自己的一部分，她的接受或拒绝都在肯定或否定我。同时，“女主角主演”这个标准依然横在心头，我拿它来衡量刚才的每一部推荐：符合这个条件的才算真正推荐，不满足的从一开始就不算数。",
+      "activation": 0.3358
+    },
+    {
+      "content": "听到SEEKER说Precious太悲伤、因为早年超重的回忆而无法看完，RECOMMENDER内心猛地一沉，意识到自己刚才推荐的电影竟然触及了对方最私密的伤痛。它立刻将“满足女主角需求”的责任与“避开悲伤电影”的警示合在一起，在脑海中把许多带有类似个人经历创伤的影片都划上了“不可看”的标记。它感到那些电影即使再优秀、再符合条件，一旦可能唤起同样的回忆，就绝不能放到对方面前。SEEKER的过往经历像一个无形的过滤器，悄然改变了它后续筛选影片的标准，让它在心里暗暗提醒自己：推荐时要更小心，更体贴，绝不能再让这类悲伤内容成为对方的负担。",
+      "activation": 0.3099
+    }
+  ],
+  "observed_action": "RECOMMENDER asks what movie the seeker is looking for; asks if the seeker has seen The Blind Side, says it is really good, and asks about The Help; then says yes definitely, loved that one, and also really likes Precious.",
+  "predicted_actions": [
+    {
+      "content": "推荐电影",
+      "probability": 0.2732
+    },
+    {
+      "content": "肯定对方喜好",
+      "probability": 0.2295
+    },
+    {
+      "content": "总结推荐标准",
+      "probability": 0.203
+    },
+    {
+      "content": "推荐另一部轻松电影",
+      "probability": 0.1606
+    },
+    {
+      "content": "询问对方偏好或感受",
+      "probability": 0.1338
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.1338, "b": 0.2295, "c": 0.4338, "d": 0.203, "e": 0}
+选择说明：A 0.1338 = 询问对方偏好或感受 0.1338；B 0.2295 = 肯定对方喜好 0.2295；C 0.4338 = 推荐电影 0.2732 + 推荐另一部轻松电影 0.1606；D 0.2030 = 总结推荐标准 0.2030；E 0.0000。Actions are grouped by matching direct recommendation, response, reasoning, and preference-seeking strategies.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

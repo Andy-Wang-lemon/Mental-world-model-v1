@@ -1,0 +1,108 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "陈默",
+  "total_events": 7,
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "behavior_trajectory": [
+    "E1 → 指出数据不足",
+    "E2 → 以经验和数据不足为由反对新方案",
+    "E3 → 以当前失败证明对方否定经验方法有误",
+    "E4 → 搬出过去的成功经验回应",
+    "E5 → 贬低林可的独立探索",
+    "E6 → 用当前项目困难反驳林可关于经验过时的说法",
+    "E7 → 口头反驳贡献评价"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "predicted_action": "指出数据不足",
+      "probability": 0.7037037037037037,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 3,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "predicted_action": "以经验和数据不足为由反对新方案",
+      "probability": 0.45952660180703986,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 2,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "predicted_action": "以当前失败证明对方否定经验方法有误",
+      "probability": 0.5064935064935066,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 8,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "predicted_action": "搬出过去的成功经验回应",
+      "probability": 0.32374948137470466,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 2,
+      "historical_branch_count": 4,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "predicted_action": "贬低林可的独立探索",
+      "probability": 0.3002986596736597,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 6,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "predicted_action": "用当前项目困难反驳林可关于经验过时的说法",
+      "probability": 0.288750965375642,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 6,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E7",
+      "predicted_action": "口头反驳贡献评价",
+      "probability": 0.30340455905754155,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 7,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ],
+  "final_continuity": {
+    "person_id": "陈默",
+    "event_count": 7,
+    "mental_episode_count": 7,
+    "cognitive_frame_count": 15
+  }
+}

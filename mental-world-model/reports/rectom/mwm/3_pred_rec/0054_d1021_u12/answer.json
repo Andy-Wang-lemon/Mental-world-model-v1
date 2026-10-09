@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 54,
+  "item_id": "d1021_u12",
+  "dialogue_id": "1021",
+  "utterance_pos": 12,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "RECOMMENDER 的所缘中，SEEKER 是否看过某部电影、能否承受悲伤内容、是否因过去的超重回忆而难以观看、是否读过并喜欢同名小说，全都成为判断一部电影合不合格的固定标准；这些反应像刻度一样贴在电影上，而判断电影是否值得给 SEEKER，被 RECOMMENDER 当成自己无法推开的责任。",
+        "probability": 0.3744
+      },
+      {
+        "content": "RECOMMENDER 的所缘中，SEEKER 那句“找一部任何类型、女性主演的电影”不再只是对方的一句话，而是落到自己身上、必须被承接的一项题目；眼前关于电影的所有信息都被这个条件框成候选对象，仿佛只有符合“女性主角”与“任意类型”的电影才成为可见的推荐目标。",
+        "probability": 0.3312
+      },
+      {
+        "content": "RECOMMENDER 的所缘中，SEEKER 的每一次回应都成为自己无法绕开的参照点：没有看过某部电影、确认收养孩子的剧情、会去租片、为另一部影片又哭又笑、因太悲伤而中断观看、读过同名小说却没看过电影；这些反应被组织成一张关于 SEEKER 的电影评价坐标，而 RECOMMENDER 的推荐立场就站在由这些坐标构成的地形里。",
+        "probability": 0.2944
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "她这句话在我这里变成一项必须接住的题目：她想找女性主演、类型不限的片子，那我就得把接下来所有可能的片名都放进这个框里过一遍。每一部浮现出来的电影，我都在心里问：是不是女人挑大梁？类型会不会让她觉得还算对路？她说没看过，我就记下来，继续往前推；她说那部太难过、看不下去，我就知道这个方向不能强推，得换一部她更能接受的。聊到小说和电影时，我其实不太确定原著对应关系，但更在意的是这故事能不能匹配她给的条件、能不能回应她对一位好女主角的期待。整段对话里我不停地在筛选、调整、补充，因为她把这件事交给了我，我想把这份托付接好。",
+        "activation": 0.3625
+      },
+      {
+        "content": "我看到SEEKER的每一次反应——没看过、怕悲伤、因超重回忆看不下去、读过原著——都像贴在一部电影上的合格标签；某部电影值不值得推荐，几乎就由这些反应来决定。与此同时，我又觉得自己必须接着推荐下去，这个任务是我接下的，不能就这样放下。于是这些反应既是判断依据，也成了压在我身上的标准：我得照着这些刻度不断寻找下一部可能合适的电影，哪怕对方被勾起难受回忆，我也只能先认可那种难过，再换一个方向继续。",
+        "activation": 0.3518
+      },
+      {
+        "content": "RECOMMENDER 把 SEEKER 的每一次回应都织进了自己的推荐坐标：没看过《The Blind Side》就放进“可以推荐”的位置，对方确认收养剧情时又感到自己对题材的猜测被印证；SEEKER 说会租《The Help》并又哭又笑，让这部片子在她口味地图上显得很高；而《Precious》让她想起自身经历、看不下去，RECOMMENDER 便在心里迅速调整尺度，觉得不能再把同样沉重的故事推给她，要转向更能带来触动却不过分刺痛的片子。这些反应在 RECOMMENDER 的心里形成一张不断更新的地形图，自己的推荐仿佛是在这张图里小心翼翼地移动，既要照顾到 SEEKER 的承受边界，也保留着自己对这些影片本身的喜爱与判断。",
+        "activation": 0.2857
+      }
+    ],
+    "observed_action": "RECOMMENDER先询问SEEKER想找什么样的电影，然后推荐了《The Blind Side》（2009），在SEEKER表示未看过并确认剧情后，推荐了《The Help》（2011），随后提到自己很喜欢《Precious》，在SEEKER表示看不下去后，又推荐了《Extremely Loud and Incredibly Close》（2011），并说明该片内容，同时表示不确定它是否改编自同名小说。",
+    "predicted_actions": [
+      {
+        "content": "推荐电影",
+        "probability": 0.4243
+      },
+      {
+        "content": "推荐",
+        "probability": 0.2972
+      },
+      {
+        "content": "回应感受并沉默",
+        "probability": 0.1561
+      },
+      {
+        "content": "承认不了解",
+        "probability": 0.0652
+      },
+      {
+        "content": "阐述电影主题",
+        "probability": 0.0571
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0,
+    "b": 0.2213,
+    "c": 0.7215,
+    "d": 0.0571,
+    "e": 0
+  },
+  "score_reason": "A 0.0000；B 0.2213 = 回应感受并沉默 0.1561 + 承认不了解 0.0652；C 0.7215 = 推荐电影 0.4243 + 推荐 0.2972；D 0.0571 = 阐述电影主题 0.0571；E 0.0000。Recommendation actions map to C, responses to B, and explaining theme maps to D.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "一个预测的下一步行动是“阐述电影主题”，这相当于用背景或理由来解释推荐。",
+  "audit_level": "direct"
+}

@@ -1,0 +1,156 @@
+{
+  "id": "4_pred_seeker__0139_d2214_u14",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hello. I've been hoping to find a movie similar to Alien (1979) or Halloween (1978).' Available to SEEKER: no prior recommender history in this dialogue; own preferences for Alien and Halloween.",
+      "belief_before": "SEEKER has no beliefs about this RECOMMENDER yet; knows own desire for horror/sci-fi similar to Alien or Halloween.",
+      "belief_update": "SEEKER states the request, establishing an intention to get recommendations and revealing preferences for Alien and Halloween. No previous interpretation to change.",
+      "belief_after": "SEEKER believes the recommender may help find similar movies; preferences are anchored on Alien and Halloween.",
+      "emotion": "hopeful/eager",
+      "intention": "ask for movie recommendations similar to Alien/Halloween",
+      "conversational_goal": "find a satisfying similar movie and signal taste"
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER hears RECOMMENDER suggest: 'How about A Nightmare on Elm Street (1984)?' Available: earlier request for Alien/Halloween.",
+      "belief_before": "SEEKER believes recommender may offer horror suggestions; SEEKER prefers Alien and Halloween.",
+      "belief_update": "Recommender proposes A Nightmare on Elm Street; SEEKER privately recalls having loved that series, so the suggestion is familiar and positively received. This updates the candidate set.",
+      "belief_after": "SEEKER thinks the recommender is aligned with horror taste; A Nightmare on Elm Street is a liked/familiar candidate.",
+      "emotion": "positive/curious",
+      "intention": "evaluate and respond to the suggestion",
+      "conversational_goal": "continue toward a similar-movie recommendation"
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I loved that series as well.' Available: recommender's Elm Street suggestion; SEEKER's own memory of liking it.",
+      "belief_before": "SEEKER knows they like A Nightmare on Elm Street; recommender has suggested it.",
+      "belief_update": "SEEKER explicitly confirms love for the series, letting recommender know this preference. The previous positive interpretation is reinforced.",
+      "belief_after": "Recommender likely knows SEEKER likes A Nightmare on Elm Street; SEEKER still seeks similar movies.",
+      "emotion": "enthusiastic/positive",
+      "intention": "share approval and guide recommender",
+      "conversational_goal": "refine recommendations using confirmed preferences"
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER hears RECOMMENDER ask: 'Have you seen the Friday the 13th (1980) series?' Available: SEEKER liked Elm Street; recommender now probes Friday the 13th.",
+      "belief_before": "SEEKER believes recommender knows SEEKER liked A Nightmare on Elm Street.",
+      "belief_update": "Recommender suggests Friday the 13th; SEEKER privately has seen it but was not into it as much. This introduces a less preferred candidate.",
+      "belief_after": "SEEKER regards Friday the 13th as seen but not a strong preference; recommender may still be testing slasher fits.",
+      "emotion": "mild disinterest/polite",
+      "intention": "decide how to respond honestly about Friday the 13th",
+      "conversational_goal": "steer away from a less liked option without rejecting the exchange"
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'I've watched it though I just wasn't into it as much.' Available: Friday the 13th question; own memory of it.",
+      "belief_before": "SEEKER knows they have seen Friday the 13th but did not enjoy it as much.",
+      "belief_update": "SEEKER reports the lukewarm view, updating recommender's model of SEEKER's tastes. This narrows the fit away from Friday the 13th.",
+      "belief_after": "Recommender likely knows Friday the 13th is less preferred; SEEKER remains open to other horror.",
+      "emotion": "polite disinterest",
+      "intention": "decline or de-prioritize Friday the 13th",
+      "conversational_goal": "refine recommendations toward better-fitting films"
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER hears RECOMMENDER say: 'Yeah I can understand that. It was a little different. What about The Thing (1982)?' Available: Friday the 13th was not a favorite.",
+      "belief_before": "SEEKER believes recommender knows Friday the 13th was less appealing; SEEKER still wants similar movies.",
+      "belief_update": "Recommender adapts and suggests The Thing; SEEKER privately recalls liking The Thing, so this is a positive candidate. This changes the direction toward sci-fi/creature horror.",
+      "belief_after": "SEEKER sees The Thing as a liked/familiar potential match; recommender appears responsive.",
+      "emotion": "positive/curious",
+      "intention": "evaluate and likely affirm The Thing",
+      "conversational_goal": "confirm a good recommendation path"
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: 'Yes that was a fun one! Also The Blob (1988) was fun.' Available: The Thing suggestion; own memories of The Thing and The Blob.",
+      "belief_before": "SEEKER likes The Thing; recommender has suggested it.",
+      "belief_update": "SEEKER confirms The Thing and adds The Blob as another liked film, expanding recommender's knowledge of SEEKER's preference for sci-fi/creature horror.",
+      "belief_after": "Recommender likely knows SEEKER enjoys The Thing and The Blob; SEEKER's taste includes fun sci-fi/creature features.",
+      "emotion": "positive/engaged",
+      "intention": "share preferences and keep the recommendation loop going",
+      "conversational_goal": "guide recommender toward similar fun sci-fi/horror"
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER hears RECOMMENDER say: 'I have not seen The Blob (1988). What about Life (2017)?' Available: SEEKER liked The Thing and The Blob; recommender has not seen The Blob.",
+      "belief_before": "SEEKER believes recommender knows SEEKER liked The Thing and The Blob.",
+      "belief_update": "Recommender suggests Life; SEEKER privately has not seen Life. This adds an unseen modern sci-fi/horror candidate and reveals recommender lacks knowledge of The Blob.",
+      "belief_after": "SEEKER considers Life as an unseen option; recommender's familiarity with older Blob is limited.",
+      "emotion": "curious/neutral",
+      "intention": "consider whether Life interests them",
+      "conversational_goal": "find a new unwatched movie that fits taste"
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: 'I haven't seen that one yet. I liked Happy Death Day (2017).' Available: Life suggestion; own memory of not seeing Life and liking Happy Death Day.",
+      "belief_before": "SEEKER has not seen Life; recommender suggested it. SEEKER knows they liked Happy Death Day.",
+      "belief_update": "SEEKER reports Life is unseen and introduces Happy Death Day as a liked 2017 horror film. This shifts recommender's model toward modern horror and horror-comedy/slasher elements.",
+      "belief_after": "Recommender likely knows SEEKER liked Happy Death Day and has not seen Life; SEEKER remains open to 2017 horror.",
+      "emotion": "positive/engaged",
+      "intention": "share a current preference and keep options open",
+      "conversational_goal": "guide recommendations toward modern horror that matches Happy Death Day"
+    },
+    {
+      "time": 10,
+      "observed": "SEEKER hears RECOMMENDER say: 'I tried watching that but the movie malfunctioned...You could try 10 Cloverfield Lane (2016).' Available: SEEKER liked Happy Death Day; recommender could not watch it.",
+      "belief_before": "SEEKER believes recommender knows SEEKER liked Happy Death Day.",
+      "belief_update": "Recommender reports a malfunction while trying Happy Death Day and suggests 10 Cloverfield Lane. This adds a new candidate and reveals recommender did not actually watch Happy Death Day.",
+      "belief_after": "SEEKER sees 10 Cloverfield Lane as a new option; recommender's experience with Happy Death Day is limited by malfunction.",
+      "emotion": "mild amusement/curious",
+      "intention": "evaluate 10 Cloverfield Lane and perhaps react to the malfunction",
+      "conversational_goal": "continue the recommendation exchange with a new candidate"
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says: 'lol. It's really entertaining. Probably my favorite movie of the year...I want to watch that one.' Available: 10 Cloverfield Lane suggestion; own strong liking of Happy Death Day.",
+      "belief_before": "SEEKER knows they loved Happy Death Day and is considering 10 Cloverfield Lane.",
+      "belief_update": "SEEKER reacts with amusement, reaffirms Happy Death Day as highly entertaining/favorite of the year, and expresses desire to watch 10 Cloverfield Lane. This strengthens the positive modern-horror preference and accepts the new candidate as interesting.",
+      "belief_after": "Recommender likely knows SEEKER strongly likes Happy Death Day and wants to watch 10 Cloverfield Lane.",
+      "emotion": "amused/excited",
+      "intention": "share enthusiasm and express interest in 10 Cloverfield Lane",
+      "conversational_goal": "confirm mutual interest and keep the recommendation on track"
+    },
+    {
+      "time": 12,
+      "observed": "SEEKER hears RECOMMENDER say: 'Yeah I was really bummed I couldn't watch it...Yeah 10 Cloverfield Lane (2016) was pretty good, I think you would like it.' Available: SEEKER wants to watch 10 Cloverfield Lane; recommender endorses it.",
+      "belief_before": "SEEKER believes recommender knows SEEKER wants to watch 10 Cloverfield Lane and liked Happy Death Day.",
+      "belief_update": "Recommender endorses 10 Cloverfield Lane and predicts SEEKER will like it. This raises SEEKER's expectation that 10 Cloverfield Lane is a good fit.",
+      "belief_after": "SEEKER considers 10 Cloverfield Lane a likely good match, reinforced by recommender's approval.",
+      "emotion": "positive/anticipatory",
+      "intention": "consider or plan to watch 10 Cloverfield Lane",
+      "conversational_goal": "validate the recommendation before closing"
+    },
+    {
+      "time": 13,
+      "observed": "SEEKER says: 'I have seen Cloverfield (2008) and liked that though.' Available: recommender's endorsement of 10 Cloverfield Lane; own memory of liking Cloverfield (2008).",
+      "belief_before": "SEEKER is considering 10 Cloverfield Lane and knows they liked Cloverfield (2008).",
+      "belief_update": "SEEKER reveals they have seen and liked the original Cloverfield, providing a related preference. This may strengthen interest in 10 Cloverfield Lane or clarify prior experience with the franchise.",
+      "belief_after": "Recommender likely knows SEEKER liked Cloverfield (2008); SEEKER's franchise familiarity is now explicit.",
+      "emotion": "positive",
+      "intention": "relate prior experience and clarify taste",
+      "conversational_goal": "connect the recommendation to an already liked related film"
+    },
+    {
+      "time": 14,
+      "observed": "SEEKER hears RECOMMENDER say: 'I have not seen that yet. Thank you, have a good rest of your day and happy new year.' Available: SEEKER liked Cloverfield (2008); recommender has not seen it and is closing.",
+      "belief_before": "SEEKER believes recommender knows SEEKER liked Cloverfield (2008) and was considering 10 Cloverfield Lane.",
+      "belief_update": "Recommender reveals they have not seen Cloverfield (2008) and closes the conversation with a friendly sign-off. This ends the recommendation exchange without a further candidate.",
+      "belief_after": "SEEKER understands the dialogue is concluding; recommender is friendly but has not seen the related film.",
+      "emotion": "polite/satisfied",
+      "intention": "acknowledge the sign-off and close politely",
+      "conversational_goal": "end the conversation on good terms"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hello. I've been hoping to find a movie similar to Alien (1979) or Halloween (1978).' Available to SEEKER: no prior recommender history in this dialogue; own preferences for Alien and Halloween.\",\n    \"belief_before\": \"SEEKER has no beliefs about this RECOMMENDER yet; knows own desire for horror/sci-fi similar to Alien or Halloween.\",\n    \"belief_update\": \"SEEKER states the request, establishing an intention to get recommendations and revealing preferences for Alien and Halloween. No previous interpretation to change.\",\n    \"belief_after\": \"SEEKER believes the recommender may help find similar movies; preferences are anchored on Alien and Halloween.\",\n    \"emotion\": \"hopeful/eager\",\n    \"intention\": \"ask for movie recommendations similar to Alien/Halloween\",\n    \"conversational_goal\": \"find a satisfying similar movie and signal taste\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER hears RECOMMENDER suggest: 'How about A Nightmare on Elm Street (1984)?' Available: earlier request for Alien/Halloween.\",\n    \"belief_before\": \"SEEKER believes recommender may offer horror suggestions; SEEKER prefers Alien and Halloween.\",\n    \"belief_update\": \"Recommender proposes A Nightmare on Elm Street; SEEKER privately recalls having loved that series, so the suggestion is familiar and positively received. This updates the candidate set.\",\n    \"belief_after\": \"SEEKER thinks the recommender is aligned with horror taste; A Nightmare on Elm Street is a liked/familiar candidate.\",\n    \"emotion\": \"positive/curious\",\n    \"intention\": \"evaluate and respond to the suggestion\",\n    \"conversational_goal\": \"continue toward a similar-movie recommendation\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I loved that series as well.' Available: recommender's Elm Street suggestion; SEEKER's own memory of liking it.\",\n    \"belief_before\": \"SEEKER knows they like A Nightmare on Elm Street; recommender has suggested it.\",\n    \"belief_update\": \"SEEKER explicitly confirms love for the series, letting recommender know this preference. The previous positive interpretation is reinforced.\",\n    \"belief_after\": \"Recommender likely knows SEEKER likes A Nightmare on Elm Street; SEEKER still seeks similar movies.\",\n    \"emotion\": \"enthusiastic/positive\",\n    \"intention\": \"share approval and guide recommender\",\n    \"conversational_goal\": \"refine recommendations using confirmed preferences\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER hears RECOMMENDER ask: 'Have you seen the Friday the 13th (1980) series?' Available: SEEKER liked Elm Street; recommender now probes Friday the 13th.\",\n    \"belief_before\": \"SEEKER believes recommender knows SEEKER liked A Nightmare on Elm Street.\",\n    \"belief_update\": \"Recommender suggests Friday the 13th; SEEKER privately has seen it but was not into it as much. This introduces a less preferred candidate.\",\n    \"belief_after\": \"SEEKER regards Friday the 13th as seen but not a strong preference; recommender may still be testing slasher fits.\",\n    \"emotion\": \"mild disinterest/polite\",\n    \"intention\": \"decide how to respond honestly about Friday the 13th\",\n    \"conversational_goal\": \"steer away from a less liked option without rejecting the exchange\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'I've watched it though I just wasn't into it as much.' Available: Friday the 13th question; own memory of it.\",\n    \"belief_before\": \"SEEKER knows they have seen Friday the 13th but did not enjoy it as much.\",\n    \"belief_update\": \"SEEKER reports the lukewarm view, updating recommender's model of SEEKER's tastes. This narrows the fit away from Friday the 13th.\",\n    \"belief_after\": \"Recommender likely knows Friday the 13th is less preferred; SEEKER remains open to other horror.\",\n    \"emotion\": \"polite disinterest\",\n    \"intention\": \"decline or de-prioritize Friday the 13th\",\n    \"conversational_goal\": \"refine recommendations toward better-fitting films\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER hears RECOMMENDER say: 'Yeah I can understand that. It was a little different. What about The Thing (1982)?' Available: Friday the 13th was not a favorite.\",\n    \"belief_before\": \"SEEKER believes recommender knows Friday the 13th was less appealing; SEEKER still wants similar movies.\",\n    \"belief_update\": \"Recommender adapts and suggests The Thing; SEEKER privately recalls liking The Thing, so this is a positive candidate. This changes the direction toward sci-fi/creature horror.\",\n    \"belief_after\": \"SEEKER sees The Thing as a liked/familiar potential match; recommender appears responsive.\",\n    \"emotion\": \"positive/curious\",\n    \"intention\": \"evaluate and likely affirm The Thing\",\n    \"conversational_goal\": \"confirm a good recommendation path\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: 'Yes that was a fun one! Also The Blob (1988) was fun.' Available: The Thing suggestion; own memories of The Thing and The Blob.\",\n    \"belief_before\": \"SEEKER likes The Thing; recommender has suggested it.\",\n    \"belief_update\": \"SEEKER confirms The Thing and adds The Blob as another liked film, expanding recommender's knowledge of SEEKER's preference for sci-fi/creature horror.\",\n    \"belief_after\": \"Recommender likely knows SEEKER enjoys The Thing and The Blob; SEEKER's taste includes fun sci-fi/creature features.\",\n    \"emotion\": \"positive/engaged\",\n    \"intention\": \"share preferences and keep the recommendation loop going\",\n    \"conversational_goal\": \"guide recommender toward similar fun sci-fi/horror\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER hears RECOMMENDER say: 'I have not seen The Blob (1988). What about Life (2017)?' Available: SEEKER liked The Thing and The Blob; recommender has not seen The Blob.\",\n    \"belief_before\": \"SEEKER believes recommender knows SEEKER liked The Thing and The Blob.\",\n    \"belief_update\": \"Recommender suggests Life; SEEKER privately has not seen Life. This adds an unseen modern sci-fi/horror candidate and reveals recommender lacks knowledge of The Blob.\",\n    \"belief_after\": \"SEEKER considers Life as an unseen option; recommender's familiarity with older Blob is limited.\",\n    \"emotion\": \"curious/neutral\",\n    \"intention\": \"consider whether Life interests them\",\n    \"conversational_goal\": \"find a new unwatched movie that fits taste\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: 'I haven't seen that one yet. I liked Happy Death Day (2017).' Available: Life suggestion; own memory of not seeing Life and liking Happy Death Day.\",\n    \"belief_before\": \"SEEKER has not seen Life; recommender suggested it. SEEKER knows they liked Happy Death Day.\",\n    \"belief_update\": \"SEEKER reports Life is unseen and introduces Happy Death Day as a liked 2017 horror film. This shifts recommender's model toward modern horror and horror-comedy/slasher elements.\",\n    \"belief_after\": \"Recommender likely knows SEEKER liked Happy Death Day and has not seen Life; SEEKER remains open to 2017 horror.\",\n    \"emotion\": \"positive/engaged\",\n    \"intention\": \"share a current preference and keep options open\",\n    \"conversational_goal\": \"guide recommendations toward modern horror that matches Happy Death Day\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"SEEKER hears RECOMMENDER say: 'I tried watching that but the movie malfunctioned...You could try 10 Cloverfield Lane (2016).' Available: SEEKER liked Happy Death Day; recommender could not watch it.\",\n    \"belief_before\": \"SEEKER believes recommender knows SEEKER liked Happy Death Day.\",\n    \"belief_update\": \"Recommender reports a malfunction while trying Happy Death Day and suggests 10 Cloverfield Lane. This adds a new candidate and reveals recommender did not actually watch Happy Death Day.\",\n    \"belief_after\": \"SEEKER sees 10 Cloverfield Lane as a new option; recommender's experience with Happy Death Day is limited by malfunction.\",\n    \"emotion\": \"mild amusement/curious\",\n    \"intention\": \"evaluate 10 Cloverfield Lane and perhaps react to the malfunction\",\n    \"conversational_goal\": \"continue the recommendation exchange with a new candidate\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says: 'lol. It's really entertaining. Probably my favorite movie of the year...I want to watch that one.' Available: 10 Cloverfield Lane suggestion; own strong liking of Happy Death Day.\",\n    \"belief_before\": \"SEEKER knows they loved Happy Death Day and is considering 10 Cloverfield Lane.\",\n    \"belief_update\": \"SEEKER reacts with amusement, reaffirms Happy Death Day as highly entertaining/favorite of the year, and expresses desire to watch 10 Cloverfield Lane. This strengthens the positive modern-horror preference and accepts the new candidate as interesting.\",\n    \"belief_after\": \"Recommender likely knows SEEKER strongly likes Happy Death Day and wants to watch 10 Cloverfield Lane.\",\n    \"emotion\": \"amused/excited\",\n    \"intention\": \"share enthusiasm and express interest in 10 Cloverfield Lane\",\n    \"conversational_goal\": \"confirm mutual interest and keep the recommendation on track\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"SEEKER hears RECOMMENDER say: 'Yeah I was really bummed I couldn't watch it...Yeah 10 Cloverfield Lane (2016) was pretty good, I think you would like it.' Available: SEEKER wants to watch 10 Cloverfield Lane; recommender endorses it.\",\n    \"belief_before\": \"SEEKER believes recommender knows SEEKER wants to watch 10 Cloverfield Lane and liked Happy Death Day.\",\n    \"belief_update\": \"Recommender endorses 10 Cloverfield Lane and predicts SEEKER will like it. This raises SEEKER's expectation that 10 Cloverfield Lane is a good fit.\",\n    \"belief_after\": \"SEEKER considers 10 Cloverfield Lane a likely good match, reinforced by recommender's approval.\",\n    \"emotion\": \"positive/anticipatory\",\n    \"intention\": \"consider or plan to watch 10 Cloverfield Lane\",\n    \"conversational_goal\": \"validate the recommendation before closing\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"SEEKER says: 'I have seen Cloverfield (2008) and liked that though.' Available: recommender's endorsement of 10 Cloverfield Lane; own memory of liking Cloverfield (2008).\",\n    \"belief_before\": \"SEEKER is considering 10 Cloverfield Lane and knows they liked Cloverfield (2008).\",\n    \"belief_update\": \"SEEKER reveals they have seen and liked the original Cloverfield, providing a related preference. This may strengthen interest in 10 Cloverfield Lane or clarify prior experience with the franchise.\",\n    \"belief_after\": \"Recommender likely knows SEEKER liked Cloverfield (2008); SEEKER's franchise familiarity is now explicit.\",\n    \"emotion\": \"positive\",\n    \"intention\": \"relate prior experience and clarify taste\",\n    \"conversational_goal\": \"connect the recommendation to an already liked related film\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"SEEKER hears RECOMMENDER say: 'I have not seen that yet. Thank you, have a good rest of your day and happy new year.' Available: SEEKER liked Cloverfield (2008); recommender has not seen it and is closing.\",\n    \"belief_before\": \"SEEKER believes recommender knows SEEKER liked Cloverfield (2008) and was considering 10 Cloverfield Lane.\",\n    \"belief_update\": \"Recommender reveals they have not seen Cloverfield (2008) and closes the conversation with a friendly sign-off. This ends the recommendation exchange without a further candidate.\",\n    \"belief_after\": \"SEEKER understands the dialogue is concluding; recommender is friendly but has not seen the related film.\",\n    \"emotion\": \"polite/satisfied\",\n    \"intention\": \"acknowledge the sign-off and close politely\",\n    \"conversational_goal\": \"end the conversation on good terms\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

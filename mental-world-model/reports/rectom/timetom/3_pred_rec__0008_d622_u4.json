@@ -1,0 +1,75 @@
+{
+  "id": "3_pred_rec__0008_d622_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: \"Hi.\"",
+      "information_available": "No task, preferences, or constraints from the seeker yet; only that a conversation has been initiated.",
+      "preferences": "No known seeker preferences.",
+      "belief_before": "No specific beliefs about the seeker or any movie request.",
+      "belief_update": "A conversation partner is present and the dialogue is starting.",
+      "belief_after": "The recommender is in an initial greeting state with no movie request yet.",
+      "emotion": "Neutral/polite.",
+      "intention": "Greet the seeker and open the conversation.",
+      "reaction_to_other": "None yet; no other speaker utterance has occurred.",
+      "conversational_goal": "Establish contact and await the seeker's request.",
+      "changes_previous_interpretation": "Not applicable; first turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: \"hi...want to help me find a fun movie for all ages?\"",
+      "information_available": "Seeker wants help finding a fun movie suitable for all ages; no genre or animation preference is specified.",
+      "preferences": "Fun movie; suitable for all ages.",
+      "belief_before": "Conversation just opened; no request is known.",
+      "belief_update": "Seeker is asking for a family/all-ages movie recommendation and wants assistance.",
+      "belief_after": "The recommender should propose a fun, all-ages movie; animation status is unconstrained at this point.",
+      "emotion": "Helpful/attentive.",
+      "intention": "Assist the seeker by identifying a suitable movie.",
+      "reaction_to_other": "Responds positively to the seeker's request for help.",
+      "conversational_goal": "Accept the task and produce a recommendation candidate.",
+      "changes_previous_interpretation": "Yes; a movie recommendation task and an all-ages fun constraint are now introduced."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: \"Let me think....The Lego Batman Movie (2017) ?\"",
+      "information_available": "Seeker wants a fun all-ages movie; no format or genre restriction has been given yet.",
+      "preferences": "Seeker prefers fun and all-ages suitability; the recommender treats animation as acceptable based on available information.",
+      "belief_before": "Seeker wants a fun, all-ages movie.",
+      "belief_update": "The Lego Batman Movie is a plausible fun, all-ages recommendation candidate.",
+      "belief_after": "Lego Batman may satisfy the current request; the recommender awaits seeker feedback.",
+      "emotion": "Considerate/tentative, inviting confirmation.",
+      "intention": "Recommend a movie that fits fun and all-ages criteria.",
+      "reaction_to_other": "Responsive to the seeker's request by offering a suggestion.",
+      "conversational_goal": "Provide a recommendation and check whether it works for the seeker.",
+      "changes_previous_interpretation": "No; it acts on the prior request without adding new seeker constraints."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: \"I like things like The Parent Trap (1998) ...Oh yeah that was a good one. the kids enjoyed it too....maybe something not animated\"",
+      "information_available": "Seeker liked The Parent Trap (1998), says the kids enjoyed it, and suggests something not animated; still wants fun/all-ages content.",
+      "preferences": "Family/all-ages fun; live-action rather than animated; likely similar to The Parent Trap, possibly classic family comedy.",
+      "belief_before": "Seeker wanted a fun all-ages movie; Lego Batman was offered and feedback is awaited.",
+      "belief_update": "Animation may be less desired; seeker prefers non-animated family movies like The Parent Trap, which children also enjoy.",
+      "belief_after": "The recommender should pivot away from animated suggestions and offer a non-animated, fun, all-ages movie similar in feel to The Parent Trap.",
+      "emotion": "Understanding/adapting, possibly mildly corrective or accommodating.",
+      "intention": "Revise the recommendation based on the newly stated format preference.",
+      "reaction_to_other": "Accepts the feedback and treats the clarification as guidance for the next suggestion.",
+      "conversational_goal": "Acknowledge the preference and propose a non-animated all-ages movie.",
+      "changes_previous_interpretation": "Yes; the earlier interpretation that any fun all-ages movie, including animated, would fit is updated to include a non-animated/live-action preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: \\\"Hi.\\\"\",\n    \"information_available\": \"No task, preferences, or constraints from the seeker yet; only that a conversation has been initiated.\",\n    \"preferences\": \"No known seeker preferences.\",\n    \"belief_before\": \"No specific beliefs about the seeker or any movie request.\",\n    \"belief_update\": \"A conversation partner is present and the dialogue is starting.\",\n    \"belief_after\": \"The recommender is in an initial greeting state with no movie request yet.\",\n    \"emotion\": \"Neutral/polite.\",\n    \"intention\": \"Greet the seeker and open the conversation.\",\n    \"reaction_to_other\": \"None yet; no other speaker utterance has occurred.\",\n    \"conversational_goal\": \"Establish contact and await the seeker's request.\",\n    \"changes_previous_interpretation\": \"Not applicable; first turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: \\\"hi...want to help me find a fun movie for all ages?\\\"\",\n    \"information_available\": \"Seeker wants help finding a fun movie suitable for all ages; no genre or animation preference is specified.\",\n    \"preferences\": \"Fun movie; suitable for all ages.\",\n    \"belief_before\": \"Conversation just opened; no request is known.\",\n    \"belief_update\": \"Seeker is asking for a family/all-ages movie recommendation and wants assistance.\",\n    \"belief_after\": \"The recommender should propose a fun, all-ages movie; animation status is unconstrained at this point.\",\n    \"emotion\": \"Helpful/attentive.\",\n    \"intention\": \"Assist the seeker by identifying a suitable movie.\",\n    \"reaction_to_other\": \"Responds positively to the seeker's request for help.\",\n    \"conversational_goal\": \"Accept the task and produce a recommendation candidate.\",\n    \"changes_previous_interpretation\": \"Yes; a movie recommendation task and an all-ages fun constraint are now introduced.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: \\\"Let me think....The Lego Batman Movie (2017) ?\\\"\",\n    \"information_available\": \"Seeker wants a fun all-ages movie; no format or genre restriction has been given yet.\",\n    \"preferences\": \"Seeker prefers fun and all-ages suitability; the recommender treats animation as acceptable based on available information.\",\n    \"belief_before\": \"Seeker wants a fun, all-ages movie.\",\n    \"belief_update\": \"The Lego Batman Movie is a plausible fun, all-ages recommendation candidate.\",\n    \"belief_after\": \"Lego Batman may satisfy the current request; the recommender awaits seeker feedback.\",\n    \"emotion\": \"Considerate/tentative, inviting confirmation.\",\n    \"intention\": \"Recommend a movie that fits fun and all-ages criteria.\",\n    \"reaction_to_other\": \"Responsive to the seeker's request by offering a suggestion.\",\n    \"conversational_goal\": \"Provide a recommendation and check whether it works for the seeker.\",\n    \"changes_previous_interpretation\": \"No; it acts on the prior request without adding new seeker constraints.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: \\\"I like things like The Parent Trap (1998) ...Oh yeah that was a good one. the kids enjoyed it too....maybe something not animated\\\"\",\n    \"information_available\": \"Seeker liked The Parent Trap (1998), says the kids enjoyed it, and suggests something not animated; still wants fun/all-ages content.\",\n    \"preferences\": \"Family/all-ages fun; live-action rather than animated; likely similar to The Parent Trap, possibly classic family comedy.\",\n    \"belief_before\": \"Seeker wanted a fun all-ages movie; Lego Batman was offered and feedback is awaited.\",\n    \"belief_update\": \"Animation may be less desired; seeker prefers non-animated family movies like The Parent Trap, which children also enjoy.\",\n    \"belief_after\": \"The recommender should pivot away from animated suggestions and offer a non-animated, fun, all-ages movie similar in feel to The Parent Trap.\",\n    \"emotion\": \"Understanding/adapting, possibly mildly corrective or accommodating.\",\n    \"intention\": \"Revise the recommendation based on the newly stated format preference.\",\n    \"reaction_to_other\": \"Accepts the feedback and treats the clarification as guidance for the next suggestion.\",\n    \"conversational_goal\": \"Acknowledge the preference and propose a non-animated all-ages movie.\",\n    \"changes_previous_interpretation\": \"Yes; the earlier interpretation that any fun all-ages movie, including animated, would fit is updated to include a non-animated/live-action preference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

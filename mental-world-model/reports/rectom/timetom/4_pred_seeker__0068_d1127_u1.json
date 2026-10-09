@@ -1,0 +1,30 @@
+{
+  "id": "4_pred_seeker__0068_d1127_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: \"Hi, what movies you do like?\"",
+      "information_available_to_target": "SEEKER hears RECOMMENDER greet them and ask what movies they like. No other conversational context is available.",
+      "preferences": "SEEKER's movie preferences are not specified in this turn.",
+      "belief_before": "No prior dialogue turn is available, so SEEKER has no dialogue-specific beliefs about RECOMMENDER yet.",
+      "belief_update": "SEEKER learns that RECOMMENDER is initiating a movie-related conversation and is asking about SEEKER's movie likes.",
+      "belief_after": "SEEKER believes RECOMMENDER wants to know their movie preferences, likely to continue a recommendation-oriented dialogue.",
+      "emotion": "Neutral/attentive; no emotion is explicitly stated.",
+      "intention": "Likely to respond by sharing movie preferences, though no explicit intention is given.",
+      "reaction_to_other_speaker": "Neutral or receptive to the opening question; no explicit reaction is provided.",
+      "conversational_goal": "Answer the question about liked movies and continue the dialogue.",
+      "changes_previous_interpretation": "No previous turn exists for SEEKER to reinterpret; this turn establishes the initial context."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: \\\"Hi, what movies you do like?\\\"\",\n    \"information_available_to_target\": \"SEEKER hears RECOMMENDER greet them and ask what movies they like. No other conversational context is available.\",\n    \"preferences\": \"SEEKER's movie preferences are not specified in this turn.\",\n    \"belief_before\": \"No prior dialogue turn is available, so SEEKER has no dialogue-specific beliefs about RECOMMENDER yet.\",\n    \"belief_update\": \"SEEKER learns that RECOMMENDER is initiating a movie-related conversation and is asking about SEEKER's movie likes.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER wants to know their movie preferences, likely to continue a recommendation-oriented dialogue.\",\n    \"emotion\": \"Neutral/attentive; no emotion is explicitly stated.\",\n    \"intention\": \"Likely to respond by sharing movie preferences, though no explicit intention is given.\",\n    \"reaction_to_other_speaker\": \"Neutral or receptive to the opening question; no explicit reaction is provided.\",\n    \"conversational_goal\": \"Answer the question about liked movies and continue the dialogue.\",\n    \"changes_previous_interpretation\": \"No previous turn exists for SEEKER to reinterpret; this turn establishes the initial context.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

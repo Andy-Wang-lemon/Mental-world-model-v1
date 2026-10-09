@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0102_d1509_u13",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The seeker wants thriller/suspense movies.\n- The seeker likes Seven, Double Jeopardy, Gone Girl, Zodiac, and murder mysteries.\n- The seeker dislikes gory movies like Saw.\n- The seeker had never heard of Rear Window before it was recommended.\n- After the plot explanation, the seeker says Rear Window “sounds good” and compares it to Disturbia.\n- The recommender previously recommended Rear Window and explained its plot.\n\nRECOMMENDER does not know:\n- Whether the seeker has actually seen Rear Window (likely no, since they had never heard of it).\n- Whether the seeker has seen or liked Disturbia; the seeker only mentions it as a comparison.\n- The seeker’s exact next intent—whether they want another recommendation, more details, or just to chat.\n- The seeker’s broader movie preferences beyond what has been stated.\n\nFrom the recommender’s perspective, the seeker has given positive feedback and mentioned a similar movie. The recommender’s role is to keep suggesting relevant movies. The prior pattern shows the recommender often follows a preference statement with another movie suggestion or an inquiry leading to a suggestion. Therefore, the most likely next strategy is to provide another recommendation directly or by asking about a related movie.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

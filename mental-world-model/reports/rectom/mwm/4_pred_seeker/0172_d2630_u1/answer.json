@@ -1,0 +1,77 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 172,
+  "item_id": "d2630_u1",
+  "dialogue_id": "2630",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "SEEKER听见RECOMMENDER问喜欢什么类型，经验到「genre」是一个边界清楚、可单选、能一句概括一个人的稳定类别；同时「我喜欢的类型」被对象化为属于SEEKER自己的自我内容，不能由对方代填或模糊带过，因而眼前的问题落在自己身上，成为必须由SEEKER亲自界定的东西。",
+        "probability": 0.4292
+      },
+      {
+        "content": "SEEKER听见RECOMMENDER问喜欢什么类型，经验到「genre」是一个边界清楚、可单选的固定类别；而具体「是什么类型」的定义权与SEEKER自身分不开，对方可以提问，但那个类型只能由SEEKER来说，不能被对方的猜测或示例替代。",
+        "probability": 0.298
+      },
+      {
+        "content": "SEEKER听见RECOMMENDER问喜欢什么类型，经验到「genre」是一个边界清楚、可单选的稳定类别；同时这个提问被对象化为寒暄后社交展开的固定第一步——先交换genre标签，才谈得上继续对话或判断彼此合不合。与此同时，「我喜欢的类型」仍属于SEEKER自己，不能由他人代填或模糊化处理。",
+        "probability": 0.2728
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "听见这句问话，SEEKER当下把“genre”当作一个边界清楚、可单选、能一句话说明的类别；既然问的是“我喜欢的类型”，这就不是别人能替我填或含糊带过的事，而是落在自己身上、必须由自己来确认和界定的自我内容。于是内心自然朝“我得把这个类型认准，并给出一个明确说法”的方向收拢，同时对模糊、多选或说不清感到不安。",
+        "activation": 0.4292
+      },
+      {
+        "content": "他这一问把「类型」摆到我面前，像是边界清楚、只能单选、能概括固定口味的格子；我可以听见、可以回答，但这个格子该填什么，定义权只在我这里，不在他的猜测或举例里。因此我会把他的猜测先搁置，只等我自己认定的那个类型浮现，并以它为准。",
+        "activation": 0.298
+      },
+      {
+        "content": "SEEKER听见这个问题时，genre被整理成一个边界清楚、可以单选的稳定类别，而不是可随意含混带过的内容；这个提问也被看成寒暄之后社交展开的固定第一步——先交换genre标签，才谈得上继续对话或判断彼此合不合。与此同时，「我喜欢的类型」被确认为属于SEEKER自己的自我内容，不能让RECOMMENDER代填，也不愿把它模糊化。于是内心倾向于先把答案收束为一个明确类别，并以此作为能否继续谈下去的前提。",
+        "activation": 0.2728
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "说出单一类型名称后停住",
+        "probability": 0.4235
+      },
+      {
+        "content": "说出类型名称并附加不确定",
+        "probability": 0.4129
+      },
+      {
+        "content": "以“都行/杂”回应，不给出明确类型",
+        "probability": 0.1254
+      },
+      {
+        "content": "反问确认问题后沉默",
+        "probability": 0.0382
+      }
+    ]
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "option_scores": {
+    "a": 0,
+    "b": 0.8364,
+    "c": 0.1254,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.8364 = 说出单一类型名称后停住 0.4235 + 说出类型名称并附加不确定 0.4129；C 0.1254 = 以“都行/杂”回应，不给出明确类型 0.1254；D 0.0000。Saying genre names adds preference information (B), while responding 'anything/misc' expresses a preference (C); other actions don't match the options.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

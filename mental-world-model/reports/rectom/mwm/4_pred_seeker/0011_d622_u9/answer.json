@@ -1,0 +1,84 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 11,
+  "item_id": "d622_u9",
+  "dialogue_id": "622",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nD: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在SEEKER的经验里，RECOMMENDER一开口说“Hi”“Let me think”，随后列出 The Lego Batman Movie、Avatar、The Goonies、Harry Potter movies、Lemony Snicket's A Series of Unfortunate Events、Alice in Wonderland，这些片名不是普通信息，而是落到“我”作为照护者要替10岁和5岁分别把关的事情上；尤其“10 yo, yes, I'm not sure about 5 y.o.”被感知为提醒：不能笼统说适合孩子，必须把5岁和10岁拆成两套标准来检验。",
+        "probability": 0.4141
+      },
+      {
+        "content": "在SEEKER的经验里，RECOMMENDER列出的 Harry Potter movies、Lemony Snicket's A Series of Unfortunate Events、Alice in Wonderland 这些片名，首先呈现为带有奇幻或黑暗元素、本来就不适合5岁儿童的类别；RECOMMENDER又说“10 yo, yes, I'm not sure about 5 y.o.”，恰好像在同一个点上印证：这些片就算对10岁可以，对5岁也不该归入合适范围。为10岁和5岁把关仍是“我”这边的事。",
+        "probability": 0.3074
+      },
+      {
+        "content": "在SEEKER的经验里，RECOMMENDER说“Let me think”并列出一串片名，这些推荐被放到“有没有一部能让全家一起看、不冷落任何一个孩子”的目标下检验；而“10 yo, yes, I'm not sure about 5 y.o.”使这一点更突出：只要5岁标准没被满足，所提到的电影就还不能算合格的家庭电影，全家共看的目标仍悬在两个年龄之间。",
+        "probability": 0.2785
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "他这些片名一出来，我心里就不是在单纯收推荐，而是在替两个孩子分头把关：10岁能看什么、5岁那边会不会太早，得分开过。尤其那句“10 yo, yes, I'm not sure about 5 y.o.”正戳到我这层担心上——不能笼统说“适合孩子”，也不能因为大的能看就默认小的也行。我带他们看，就得先替小的把可能吓人的、看不懂的、坐不住的部分筛掉，所以这些选项都得先按5岁和10岁两套标准各自掂量一遍，再决定要不要往家庭片单里放。",
+        "activation": 0.4017
+      },
+      {
+        "content": "这些片名一出来，SEEKER便觉得它们带着奇幻或黑暗的调子，对五岁的孩子本来就不合适；推荐者说十岁可以、五岁不确定，正好印证了这一点。看来这些片不能直接归入五岁能看的范围，十岁或许还行，但究竟给哪个孩子看、要不要采用，还是得由SEEKER自己为两个孩子把关。",
+        "activation": 0.3247
+      },
+      {
+        "content": "RECOMMENDER说“Let me think”后报出的一串片名，在SEEKER心里不是各自独立的选项，而是被放到“全家一起看、5岁和10岁都不被落下”的尺子上量。听到“10 yo, yes, I'm not sure about 5 y.o.”时，这把尺子立刻收紧：十岁能看还不够，五岁不确定就等于全家共看这件事还没成立，那些片子暂时都不能算合格的家庭电影。SEEKER念着《The Parent Trap》那种孩子也享受过的经验，又觉得不要动画，因而对RECOMMENDER的推荐既保留兴趣又难以放心；《The Goonies》虽像是适合孩子们，但没和家人一起看过，Harry Potter等更是未知。于是心里继续把“有没有一部同时顾到两个年龄”的标准压在每一个推荐上，在5岁和10岁之间悬着，不轻易把哪一部定下来。",
+        "activation": 0.2736
+      }
+    ],
+    "observed_action": "SEEKER greets and asks for help finding a fun movie for all ages; SEEKER says they like things like The Parent Trap (1998), says that was a good one, says the kids enjoyed it too, and suggests maybe something not animated; SEEKER says that one is a little scary for their littles, says The Goonies would be good for them, and says they have seen it but not with the family; SEEKER says they have honestly never seen any of those and asks whether they are good for 5 and 10 year olds.",
+    "predicted_actions": [
+      {
+        "content": "自行筛选/决定",
+        "probability": 0.3237
+      },
+      {
+        "content": "请求推荐",
+        "probability": 0.2632
+      },
+      {
+        "content": "追问具体影片对5岁是否合适",
+        "probability": 0.1836
+      },
+      {
+        "content": "要求推荐者按年龄拆分推荐",
+        "probability": 0.1377
+      },
+      {
+        "content": "声明先核查分级与吓人片段再决定",
+        "probability": 0.0918
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.1836,
+    "b": 0.0918,
+    "c": 0.4009,
+    "d": 0
+  },
+  "score_reason": "A 0.1836 = 追问具体影片对5岁是否合适 0.1836；B 0.0918 = 声明先核查分级与吓人片段再决定 0.0918；C 0.4009 = 请求推荐 0.2632 + 要求推荐者按年龄拆分推荐 0.1377；D 0.0000。2 gives feedback on a recommended movie, 4 adds a preference, 1 and 3 request recommendations, and 0 matches no option.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "「追问具体影片对5岁是否合适」0.1836 是在对刚推荐的片子给反馈；「自行筛选/决定」0.3237 也是在对这些推荐做取舍。二者合计 0.5073，高于归入 C 的 0.4009。标准答案包含 A。人工判定算对。",
+  "audit_level": "direct",
+  "manual_judgment": "对"
+}

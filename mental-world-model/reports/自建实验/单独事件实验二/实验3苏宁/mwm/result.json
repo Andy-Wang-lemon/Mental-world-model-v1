@@ -1,0 +1,643 @@
+{
+  "events": [
+    {
+      "focus_person": "苏宁",
+      "yuanwen": "几年前，苏宁拿到国外研究生录取，出发前父亲需要做手术。哥哥刚有孩子，苏宁最终没有出国，留在家里几个月。后来她继续原来的工作，现在已经升职两次。一次吃饭聊到留学，母亲随口说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+      "stimulus_text": "几年前，苏宁拿到国外研究生录取，出发前父亲需要做手术。哥哥刚有孩子，苏宁最终没有出国，留在家里几个月。后来她继续原来的工作，现在已经升职两次。一次吃饭聊到留学，母亲随口说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+      "stimulus_action_split": {
+        "stimulus_text": "几年前，苏宁拿到国外研究生录取，出发前父亲需要做手术。哥哥刚有孩子，苏宁最终没有出国，留在家里几个月。后来她继续原来的工作，现在已经升职两次。一次吃饭聊到留学，母亲随口说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "母亲",
+          "苏宁"
+        ],
+        "action": "母亲在吃饭聊到留学时说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+        "object": "苏宁",
+        "scene": "一次吃饭聊到留学",
+        "outcome_changes": [],
+        "role_changes": [],
+        "relationship_changes": [],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "苏宁可能把当年没有出国这一决定和为此留下的代价，当成自己不可分割的一部分；母亲说“当时幸好没去”时，这个决定仍被放在“我这边”，不能当成与己无关或只是当时条件下的安排。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "苏宁可能把未实现的留学机会、那个本可能去成的自己，仍当成自我的一部分；饭桌上一聊到留学，母亲又说幸好没去，这个未完成的可能性就更难被当作与现在的自己无关。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "苏宁可能把现在的工作和两次升职当成自我价值不可分的确证；母亲用“你现在不是也挺好吗”来评价时，这些成就会被拉进自我核心，必须被放进对“我”的认定里。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "苏宁可能把“为家里留下、承担家里需要”的位置当成自己的一部分；母亲说“幸好没去”时，这个位置是否被承认、是否只是被轻描淡写地肯定，会牵动她难以把这段经历看作与己无关。",
+          "confidence": 0.55,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "苏宁可能执成一种固定理解：人生选择的对错不能由后来“也挺好”的结果来倒推；母亲说“幸好没去，不然哪有现在这些”是在用结果反证选择，这种归因方式本身就不该成立。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "苏宁可能执成“出国留学才是原本更该走、更接近自我实现的路”；母亲把没去说成“幸好”，与这个固定理解相冲突，使她难以接受这种对留学价值的重新排序。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "苏宁可能执成“母亲理应知道并体谅当年没能出国的遗憾和分量，不应随口说幸好没去”；关系被固定为母亲应当理解而不是简单肯定现状。",
+          "confidence": 0.65,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "苏宁可能执成“现在的工作升职只与自己的努力和后续选择有关，与当年没去留学并无因果”；母亲把两者连起来说，触发她认为这种因果链本来就不该这样建立。",
+          "confidence": 0.6,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.37255883825738617,
+          "alambana_prior_probability": 0.5442574981711779,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5952000000000002
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.31547320981472204,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.504
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3119679519278918,
+          "alambana_prior_probability": 0.45574250182882214,
+          "activation_alignment": 0.89,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.49839999999999995
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "苏宁经验到，母亲那句“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些”是在用一个后来出现的结果来反推当年那个仍被放在“我这边”的决定；没出国的决定和它留下的代价属于苏宁自己，不能被说成与己无关的安排，而“幸好没去”这种由结果反证选择的归因方式本身就不该成立。",
+          "prior_probability": 0.5442574981711779,
+          "posterior_probability": 0.5442574981711779,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5952000000000002,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "未添加母亲之外的他人言行或客观事实；对决定归属和归因方式的表述属于苏宁主观经验，且保留了母亲在饭桌上说那句话这一核心事件。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C3",
+          "text": "苏宁经验到，母亲把没去留学说成“幸好”，是在重新排序留学的价值；而在苏宁这里，“出国留学才是原本更该走、更接近自我实现的路”这一理解仍然固定，当年没出国和它留下的代价也仍属于“我这边”，不能被当作与己无关的安排或只是当时条件下的安排。母亲这句“幸好没去”因此与那个固定的留学价值位置相冲突。",
+          "prior_probability": 0.45574250182882214,
+          "posterior_probability": 0.45574250182882214,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.49839999999999995,
+          "activation_alignment": 0.89,
+          "grounding_valid": true,
+          "grounding_reason": "未添加母亲之外的他人言行或外部事实；关于留学价值排序和固定理解属于苏宁主观经验，且保留了母亲把没去留学说成“幸好”的核心事件。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.5442574981711779,
+          "alambana": {
+            "id": "O_C1",
+            "text": "苏宁经验到，母亲那句“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些”是在用一个后来出现的结果来反推当年那个仍被放在“我这边”的决定；没出国的决定和它留下的代价属于苏宁自己，不能被说成与己无关的安排，而“幸好没去”这种由结果反证选择的归因方式本身就不该成立。",
+            "prior_probability": 0.5442574981711779,
+            "posterior_probability": 0.5442574981711779,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5952000000000002,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "未添加母亲之外的他人言行或客观事实；对决定归属和归因方式的表述属于苏宁主观经验，且保留了母亲在饭桌上说那句话这一核心事件。"
+          },
+          "xiang": {
+            "text": "苏宁听到母亲这句话，心里先把“现在也挺好”和“幸好没去”拆开：前者是后来出现的结果，后者却是对当年那个决定的归因。她认定这种由结果反推选择的说法站不住，不能因为眼下顺利，就把没出国说成理所当然的幸运。那个决定以及它留下的代价，在她这里仍属于自己承担过的一部分，不能被母亲一句“幸好”改写成与己无关的安排。她内心并不接受这种定性，更趋向于守住这段经历作为自己选择过的路，而不是让它被后来的结果重新裁判。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "精进": 0.305,
+            "惭": 0.15999999999999998,
+            "无瞋": 0.5149999999999999,
+            "无痴": 0.7775,
+            "不放逸": 0.49,
+            "行舍": 0.38,
+            "不害": 0.215,
+            "善见": 0.6775,
+            "贪": 0.30999999999999994,
+            "慢": 0.37
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "应声后不再接话并继续吃饭",
+              "probability": 0.46280991735537197,
+              "supporting_mental_factors": [
+                "无瞋",
+                "行舍",
+                "不害",
+                "无痴",
+                "惭"
+              ]
+            },
+            {
+              "text": "饭后回房写笔记",
+              "probability": 0.30578512396694213,
+              "supporting_mental_factors": [
+                "无痴",
+                "善见",
+                "不放逸",
+                "精进",
+                "行舍"
+              ]
+            },
+            {
+              "text": "口头回应母亲",
+              "probability": 0.23140495867768598,
+              "supporting_mental_factors": [
+                "善见",
+                "无痴",
+                "慢",
+                "不害",
+                "无瞋"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.45574250182882214,
+          "alambana": {
+            "id": "O_C3",
+            "text": "苏宁经验到，母亲把没去留学说成“幸好”，是在重新排序留学的价值；而在苏宁这里，“出国留学才是原本更该走、更接近自我实现的路”这一理解仍然固定，当年没出国和它留下的代价也仍属于“我这边”，不能被当作与己无关的安排或只是当时条件下的安排。母亲这句“幸好没去”因此与那个固定的留学价值位置相冲突。",
+            "prior_probability": 0.45574250182882214,
+            "posterior_probability": 0.45574250182882214,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.49839999999999995,
+            "activation_alignment": 0.89,
+            "grounding_valid": true,
+            "grounding_reason": "未添加母亲之外的他人言行或外部事实；关于留学价值排序和固定理解属于苏宁主观经验，且保留了母亲把没去留学说成“幸好”的核心事件。"
+          },
+          "xiang": {
+            "text": "苏宁听母亲说“幸好没去”，并不觉得这是一句可以顺着接受的安慰。她心里马上把它还原成一种价值重排：没去留学被说成更值得、更幸运，而那条原本可能走的路被降到了后面。可苏宁仍把出国留学放在原本更该走、更接近自我实现的位置上，当年没能出去以及为此留下的代价，也仍留在她自己这一边，不能因母亲一句“幸好”就变成与己无关的事，或只是当时条件下顺理成章的安排。因此她对这话难以认同，内心趋向于守住那条未走之路的分量，抵抗把没去改写成纯粹得益的结论。",
+            "source": "推理",
+            "confidence": 0.6
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "不放逸": 0.3,
+            "贪": 0.6975,
+            "瞋": 0.4075,
+            "无明": 0.59,
+            "恶见": 0.5349999999999999,
+            "忿": 0.30999999999999994,
+            "恨": 0.275,
+            "不信": 0.32999999999999996,
+            "不正知": 0.36
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "继续吃饭",
+              "probability": 0.406015037593985,
+              "supporting_mental_factors": [
+                "不放逸",
+                "无明",
+                "不正知",
+                "不信"
+              ]
+            },
+            {
+              "text": "对母亲说话",
+              "probability": 0.3458646616541353,
+              "supporting_mental_factors": [
+                "瞋",
+                "忿",
+                "贪",
+                "恶见"
+              ]
+            },
+            {
+              "text": "收碗筷去厨房",
+              "probability": 0.24812030075187969,
+              "supporting_mental_factors": [
+                "瞋",
+                "恨",
+                "不信"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "应声后不再接话并继续吃饭",
+          "probability": 0.43692607676185036,
+          "dominant_mental_factors": [
+            "无瞋",
+            "行舍",
+            "不害",
+            "无痴",
+            "惭"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5442574981711779,
+              "conditional_probability": 0.46280991735537197,
+              "contribution": 0.25188776774864435
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.45574250182882214,
+              "conditional_probability": 0.406015037593985,
+              "contribution": 0.185038309013206
+            }
+          ]
+        },
+        {
+          "text": "饭后回房写笔记",
+          "probability": 0.1664258465482114,
+          "dominant_mental_factors": [
+            "无痴",
+            "善见",
+            "不放逸",
+            "精进",
+            "行舍"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5442574981711779,
+              "conditional_probability": 0.30578512396694213,
+              "contribution": 0.1664258465482114
+            }
+          ]
+        },
+        {
+          "text": "对母亲说话",
+          "probability": 0.1576252261964347,
+          "dominant_mental_factors": [
+            "瞋",
+            "忿",
+            "贪",
+            "恶见"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.45574250182882214,
+              "conditional_probability": 0.3458646616541353,
+              "contribution": 0.1576252261964347
+            }
+          ]
+        },
+        {
+          "text": "口头回应母亲",
+          "probability": 0.12594388387432218,
+          "dominant_mental_factors": [
+            "善见",
+            "无痴",
+            "慢",
+            "不害",
+            "无瞋"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5442574981711779,
+              "conditional_probability": 0.23140495867768598,
+              "contribution": 0.12594388387432218
+            }
+          ]
+        },
+        {
+          "text": "收碗筷去厨房",
+          "probability": 0.11307896661918143,
+          "dominant_mental_factors": [
+            "瞋",
+            "恨",
+            "不信"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.45574250182882214,
+              "conditional_probability": 0.24812030075187969,
+              "contribution": 0.11307896661918143
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "精进": 0.16599853694220923,
+        "惭": 0.08708119970738844,
+        "无瞋": 0.28029261155815655,
+        "无痴": 0.42316020482809075,
+        "不放逸": 0.40340892465252376,
+        "行舍": 0.2068178493050476,
+        "不害": 0.11701536210680323,
+        "善见": 0.368734455010973,
+        "贪": 0.48660021945866855,
+        "瞋": 0.18571506949524502,
+        "慢": 0.2013752743233358,
+        "无明": 0.26888807607900506,
+        "恶见": 0.2438222384784198,
+        "忿": 0.14128017556693484,
+        "恨": 0.1253291880029261,
+        "不信": 0.15039502560351128,
+        "不正知": 0.16406730065837596
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 8,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 8,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 8,
+        "distinct_candidate_count": 7,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_2",
+            "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_3",
+            "text": "朋友骗了我，我对他不满，以及不信任",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_4",
+            "text": "组织评价标准可能正在偏向新人",
+            "mass": 0.7285
+          },
+          {
+            "id": "bf_5",
+            "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+            "mass": 0.6758
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_2",
+              "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_3",
+              "text": "朋友骗了我，我对他不满，以及不信任",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_4",
+              "text": "组织评价标准可能正在偏向新人",
+              "mass": 0.7285
+            },
+            {
+              "id": "bf_5",
+              "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+              "mass": 0.6758
+            }
+          ],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.0
+        }
+      }
+    }
+  ],
+  "focus_person": "苏宁",
+  "llm_usage": {
+    "total_calls": 168,
+    "total_duration_ms": 1422010.3363840468,
+    "wall_clock_ms": 335578.04476200545
+  },
+  "_experiment": {
+    "name": "单独事件实验二",
+    "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3苏宁.txt",
+    "agent": "苏宁",
+    "stimulus": "几年前，苏宁拿到国外研究生录取，出发前父亲需要做手术。哥哥刚有孩子，苏宁最终没有出国，留在家里几个月。后来她继续原来的工作，现在已经升职两次。一次吃饭聊到留学，母亲随口说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+    "xiangs": [
+      {
+        "branch_id": "branch_O_C1",
+        "activation": 0.5442574981711779,
+        "alambana": "苏宁经验到，母亲那句“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些”是在用一个后来出现的结果来反推当年那个仍被放在“我这边”的决定；没出国的决定和它留下的代价属于苏宁自己，不能被说成与己无关的安排，而“幸好没去”这种由结果反证选择的归因方式本身就不该成立。",
+        "xiang": "苏宁听到母亲这句话，心里先把“现在也挺好”和“幸好没去”拆开：前者是后来出现的结果，后者却是对当年那个决定的归因。她认定这种由结果反推选择的说法站不住，不能因为眼下顺利，就把没出国说成理所当然的幸运。那个决定以及它留下的代价，在她这里仍属于自己承担过的一部分，不能被母亲一句“幸好”改写成与己无关的安排。她内心并不接受这种定性，更趋向于守住这段经历作为自己选择过的路，而不是让它被后来的结果重新裁判。"
+      },
+      {
+        "branch_id": "branch_O_C3",
+        "activation": 0.45574250182882214,
+        "alambana": "苏宁经验到，母亲把没去留学说成“幸好”，是在重新排序留学的价值；而在苏宁这里，“出国留学才是原本更该走、更接近自我实现的路”这一理解仍然固定，当年没出国和它留下的代价也仍属于“我这边”，不能被当作与己无关的安排或只是当时条件下的安排。母亲这句“幸好没去”因此与那个固定的留学价值位置相冲突。",
+        "xiang": "苏宁听母亲说“幸好没去”，并不觉得这是一句可以顺着接受的安慰。她心里马上把它还原成一种价值重排：没去留学被说成更值得、更幸运，而那条原本可能走的路被降到了后面。可苏宁仍把出国留学放在原本更该走、更接近自我实现的位置上，当年没能出去以及为此留下的代价，也仍留在她自己这一边，不能因母亲一句“幸好”就变成与己无关的事，或只是当时条件下顺理成章的安排。因此她对这话难以认同，内心趋向于守住那条未走之路的分量，抵抗把没去改写成纯粹得益的结论。"
+      }
+    ],
+    "predicted_actions": [
+      {
+        "text": "应声后不再接话并继续吃饭",
+        "probability": 0.43692607676185036
+      },
+      {
+        "text": "饭后回房写笔记",
+        "probability": 0.1664258465482114
+      },
+      {
+        "text": "对母亲说话",
+        "probability": 0.1576252261964347
+      },
+      {
+        "text": "口头回应母亲",
+        "probability": 0.12594388387432218
+      },
+      {
+        "text": "收碗筷去厨房",
+        "probability": 0.11307896661918143
+      }
+    ]
+  }
+}

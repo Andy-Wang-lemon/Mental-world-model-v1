@@ -1,0 +1,130 @@
+{
+  "id": "3_pred_rec__0147_d2335_u11",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello! Happy New Year!",
+      "belief_before": "No prior context with SEEKER; neutral.",
+      "belief_update": "SEEKER offers a friendly New Year greeting.",
+      "belief_after": "SEEKER is friendly and greeting me socially; no recommendation task yet.",
+      "emotion": "Polite/neutral.",
+      "intention": "Reciprocate the greeting.",
+      "conversational_goal": "Maintain social pleasantry."
+    },
+    {
+      "time": 2,
+      "observed": "I (RECOMMENDER) say: Happy New year!",
+      "belief_before": "SEEKER greeted me with Happy New Year.",
+      "belief_update": "I return the New Year greeting.",
+      "belief_after": "Social greeting exchange is complete.",
+      "emotion": "Friendly/cheerful.",
+      "intention": "Acknowledge SEEKER's greeting.",
+      "conversational_goal": "Be polite and keep conversation open."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER asks for comedy recommendations and says she likes Step Brothers (2008) and The Hangover (2009).",
+      "belief_before": "SEEKER is friendly; no recommendation request yet.",
+      "belief_update": "SEEKER wants comedy recommendations and reveals two liked comedies. This shifts the interaction from greeting to recommendation task.",
+      "belief_after": "SEEKER's preferences include Step Brothers and The Hangover; she likely enjoys buddy/raunchy comedies. I should suggest a comedy.",
+      "emotion": "Attentive/helpful.",
+      "intention": "Think of a comedy recommendation.",
+      "conversational_goal": "Satisfy SEEKER's request with a relevant comedy."
+    },
+    {
+      "time": 4,
+      "observed": "I (RECOMMENDER) say: I heard that Daddy's Home (2015) was funny.",
+      "belief_before": "SEEKER wants a comedy and likes Step Brothers and The Hangover.",
+      "belief_update": "I offer Daddy's Home as a possible comedy based on hearsay.",
+      "belief_after": "Daddy's Home is my current recommendation; I hope it matches SEEKER's taste.",
+      "emotion": "Tentatively helpful.",
+      "intention": "Recommend Daddy's Home.",
+      "conversational_goal": "Provide a comedy suggestion aligned with SEEKER's request."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says she hated Daddy's Home, did not crack a smile, and asks for a different suggestion.",
+      "belief_before": "Daddy's Home might be a fitting comedy.",
+      "belief_update": "SEEKER strongly rejects Daddy's Home; my suggestion failed and a new one is needed.",
+      "belief_after": "Daddy's Home is ruled out; SEEKER's taste is not matched by that movie. I need an alternative comedy.",
+      "emotion": "Apologetic/awkward/concerned.",
+      "intention": "Offer a different recommendation.",
+      "conversational_goal": "Recover from the failed suggestion and satisfy SEEKER."
+    },
+    {
+      "time": 6,
+      "observed": "I (RECOMMENDER) say: Comedy is not my kind of movie...what about Bad Moms (2016)?",
+      "belief_before": "Daddy's Home was rejected; SEEKER wants another comedy.",
+      "belief_update": "I disclose limited comedy expertise and propose Bad Moms as an alternative.",
+      "belief_after": "Bad Moms is my current suggestion; my confidence is limited because comedy is not my kind of movie.",
+      "emotion": "Self-deprecating/uncertain.",
+      "intention": "Pivot to Bad Moms despite limited comedy knowledge.",
+      "conversational_goal": "Offer another comedy while managing expectations about my expertise."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says she has never seen Bad Moms and asks what it is about.",
+      "belief_before": "Bad Moms is a tentative suggestion; I am unsure if SEEKER will like it.",
+      "belief_update": "SEEKER does not know Bad Moms and asks for a description, showing possible curiosity.",
+      "belief_after": "SEEKER is open to learning about Bad Moms; I need to describe it.",
+      "emotion": "Encouraged/helpful.",
+      "intention": "Explain what Bad Moms is about.",
+      "conversational_goal": "Give SEEKER enough information to evaluate Bad Moms."
+    },
+    {
+      "time": 8,
+      "observed": "I (RECOMMENDER) say: It's about moms acting badly...typical...I's still stuck with Elf (2003) lol.",
+      "belief_before": "SEEKER wants to know what Bad Moms is about.",
+      "belief_update": "I describe Bad Moms and mention being stuck on Elf as a personal aside.",
+      "belief_after": "Bad Moms has been described; Elf is now introduced as a movie I am thinking about.",
+      "emotion": "Playful/amused/distracted.",
+      "intention": "Answer SEEKER's question and share a personal movie association.",
+      "conversational_goal": "Inform SEEKER about Bad Moms while keeping the conversation light."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says she will check out Bad Moms since she is a mom herself; she says Elf is her all-time favorite, just so funny, and she watched it recently.",
+      "belief_before": "Bad Moms was described; Elf was mentioned as an aside.",
+      "belief_update": "SEEKER is a mom, so Bad Moms may resonate; she loves Elf and recently watched it, creating common ground.",
+      "belief_after": "Bad Moms is more likely to appeal to SEEKER because she is a mom; SEEKER and I share appreciation for Elf; conversation is engaged and positive.",
+      "emotion": "Pleased/validated.",
+      "intention": "Acknowledge shared taste and continue the friendly rapport.",
+      "conversational_goal": "Build connection around shared movie preferences and support Bad Moms as a recommendation."
+    },
+    {
+      "time": 10,
+      "observed": "I (RECOMMENDER) say: I did, too. Also just watched the Anchorman again....Sorry, I wish I had more suggestions for you...",
+      "belief_before": "SEEKER loves Elf and is a mom; we have common ground.",
+      "belief_update": "I say I also watched Elf recently, mention Anchorman, and apologize for having limited suggestions.",
+      "belief_after": "I feel connected through shared movies but limited as a recommender; I hope SEEKER is not disappointed.",
+      "emotion": "Warm/apologetic/self-critical.",
+      "intention": "Relate to SEEKER and apologize for limited suggestions.",
+      "conversational_goal": "Maintain rapport while acknowledging that I may not have many new recommendations."
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says Anchorman is a classic, that she could not stop laughing the first time, that I need not apologize, that I was quite helpful, and that I reminded her of some great movies.",
+      "belief_before": "I worried I had not been helpful enough and had limited suggestions.",
+      "belief_update": "SEEKER says I was helpful, no apology is needed, and I reminded her of great movies. This reverses my self-critical interpretation.",
+      "belief_after": "SEEKER is satisfied and considers me helpful.",
+      "emotion": "Relieved/grateful/pleased.",
+      "intention": "Accept the thanks and close the exchange warmly.",
+      "conversational_goal": "End the conversation on a positive, appreciative note."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello! Happy New Year!\",\n    \"belief_before\": \"No prior context with SEEKER; neutral.\",\n    \"belief_update\": \"SEEKER offers a friendly New Year greeting.\",\n    \"belief_after\": \"SEEKER is friendly and greeting me socially; no recommendation task yet.\",\n    \"emotion\": \"Polite/neutral.\",\n    \"intention\": \"Reciprocate the greeting.\",\n    \"conversational_goal\": \"Maintain social pleasantry.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I (RECOMMENDER) say: Happy New year!\",\n    \"belief_before\": \"SEEKER greeted me with Happy New Year.\",\n    \"belief_update\": \"I return the New Year greeting.\",\n    \"belief_after\": \"Social greeting exchange is complete.\",\n    \"emotion\": \"Friendly/cheerful.\",\n    \"intention\": \"Acknowledge SEEKER's greeting.\",\n    \"conversational_goal\": \"Be polite and keep conversation open.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER asks for comedy recommendations and says she likes Step Brothers (2008) and The Hangover (2009).\",\n    \"belief_before\": \"SEEKER is friendly; no recommendation request yet.\",\n    \"belief_update\": \"SEEKER wants comedy recommendations and reveals two liked comedies. This shifts the interaction from greeting to recommendation task.\",\n    \"belief_after\": \"SEEKER's preferences include Step Brothers and The Hangover; she likely enjoys buddy/raunchy comedies. I should suggest a comedy.\",\n    \"emotion\": \"Attentive/helpful.\",\n    \"intention\": \"Think of a comedy recommendation.\",\n    \"conversational_goal\": \"Satisfy SEEKER's request with a relevant comedy.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I (RECOMMENDER) say: I heard that Daddy's Home (2015) was funny.\",\n    \"belief_before\": \"SEEKER wants a comedy and likes Step Brothers and The Hangover.\",\n    \"belief_update\": \"I offer Daddy's Home as a possible comedy based on hearsay.\",\n    \"belief_after\": \"Daddy's Home is my current recommendation; I hope it matches SEEKER's taste.\",\n    \"emotion\": \"Tentatively helpful.\",\n    \"intention\": \"Recommend Daddy's Home.\",\n    \"conversational_goal\": \"Provide a comedy suggestion aligned with SEEKER's request.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says she hated Daddy's Home, did not crack a smile, and asks for a different suggestion.\",\n    \"belief_before\": \"Daddy's Home might be a fitting comedy.\",\n    \"belief_update\": \"SEEKER strongly rejects Daddy's Home; my suggestion failed and a new one is needed.\",\n    \"belief_after\": \"Daddy's Home is ruled out; SEEKER's taste is not matched by that movie. I need an alternative comedy.\",\n    \"emotion\": \"Apologetic/awkward/concerned.\",\n    \"intention\": \"Offer a different recommendation.\",\n    \"conversational_goal\": \"Recover from the failed suggestion and satisfy SEEKER.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"I (RECOMMENDER) say: Comedy is not my kind of movie...what about Bad Moms (2016)?\",\n    \"belief_before\": \"Daddy's Home was rejected; SEEKER wants another comedy.\",\n    \"belief_update\": \"I disclose limited comedy expertise and propose Bad Moms as an alternative.\",\n    \"belief_after\": \"Bad Moms is my current suggestion; my confidence is limited because comedy is not my kind of movie.\",\n    \"emotion\": \"Self-deprecating/uncertain.\",\n    \"intention\": \"Pivot to Bad Moms despite limited comedy knowledge.\",\n    \"conversational_goal\": \"Offer another comedy while managing expectations about my expertise.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says she has never seen Bad Moms and asks what it is about.\",\n    \"belief_before\": \"Bad Moms is a tentative suggestion; I am unsure if SEEKER will like it.\",\n    \"belief_update\": \"SEEKER does not know Bad Moms and asks for a description, showing possible curiosity.\",\n    \"belief_after\": \"SEEKER is open to learning about Bad Moms; I need to describe it.\",\n    \"emotion\": \"Encouraged/helpful.\",\n    \"intention\": \"Explain what Bad Moms is about.\",\n    \"conversational_goal\": \"Give SEEKER enough information to evaluate Bad Moms.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"I (RECOMMENDER) say: It's about moms acting badly...typical...I's still stuck with Elf (2003) lol.\",\n    \"belief_before\": \"SEEKER wants to know what Bad Moms is about.\",\n    \"belief_update\": \"I describe Bad Moms and mention being stuck on Elf as a personal aside.\",\n    \"belief_after\": \"Bad Moms has been described; Elf is now introduced as a movie I am thinking about.\",\n    \"emotion\": \"Playful/amused/distracted.\",\n    \"intention\": \"Answer SEEKER's question and share a personal movie association.\",\n    \"conversational_goal\": \"Inform SEEKER about Bad Moms while keeping the conversation light.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says she will check out Bad Moms since she is a mom herself; she says Elf is her all-time favorite, just so funny, and she watched it recently.\",\n    \"belief_before\": \"Bad Moms was described; Elf was mentioned as an aside.\",\n    \"belief_update\": \"SEEKER is a mom, so Bad Moms may resonate; she loves Elf and recently watched it, creating common ground.\",\n    \"belief_after\": \"Bad Moms is more likely to appeal to SEEKER because she is a mom; SEEKER and I share appreciation for Elf; conversation is engaged and positive.\",\n    \"emotion\": \"Pleased/validated.\",\n    \"intention\": \"Acknowledge shared taste and continue the friendly rapport.\",\n    \"conversational_goal\": \"Build connection around shared movie preferences and support Bad Moms as a recommendation.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"I (RECOMMENDER) say: I did, too. Also just watched the Anchorman again....Sorry, I wish I had more suggestions for you...\",\n    \"belief_before\": \"SEEKER loves Elf and is a mom; we have common ground.\",\n    \"belief_update\": \"I say I also watched Elf recently, mention Anchorman, and apologize for having limited suggestions.\",\n    \"belief_after\": \"I feel connected through shared movies but limited as a recommender; I hope SEEKER is not disappointed.\",\n    \"emotion\": \"Warm/apologetic/self-critical.\",\n    \"intention\": \"Relate to SEEKER and apologize for limited suggestions.\",\n    \"conversational_goal\": \"Maintain rapport while acknowledging that I may not have many new recommendations.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says Anchorman is a classic, that she could not stop laughing the first time, that I need not apologize, that I was quite helpful, and that I reminded her of some great movies.\",\n    \"belief_before\": \"I worried I had not been helpful enough and had limited suggestions.\",\n    \"belief_update\": \"SEEKER says I was helpful, no apology is needed, and I reminded her of great movies. This reverses my self-critical interpretation.\",\n    \"belief_after\": \"SEEKER is satisfied and considers me helpful.\",\n    \"emotion\": \"Relieved/grateful/pleased.\",\n    \"intention\": \"Accept the thanks and close the exchange warmly.\",\n    \"conversational_goal\": \"End the conversation on a positive, appreciative note.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": [
+    "c",
+    "d",
+    "e"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

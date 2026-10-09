@@ -1,0 +1,231 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "陈默",
+  "events": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "stimulus": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+      "predicted_action": "指出数据不足",
+      "probability": 0.7037037037037037,
+      "top_k": [
+        {
+          "text": "指出数据不足",
+          "probability": 0.7037037037037037
+        },
+        {
+          "text": "认可部分正确并支持试点",
+          "probability": 0.29629629629629634
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 3,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "stimulus": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+      "predicted_action": "以经验和数据不足为由反对新方案",
+      "probability": 0.45952660180703986,
+      "top_k": [
+        {
+          "text": "以经验和数据不足为由反对新方案",
+          "probability": 0.45952660180703986
+        },
+        {
+          "text": "删去自己总结的隐性经验要点",
+          "probability": 0.16168877289770575
+        },
+        {
+          "text": "陈默把自己过去同类型项目的复盘文档导出为PDF，删去最后三页风险控制人清单，将剩余部分发给林可，并说‘重点都在前面’。",
+          "probability": 0.14429890487438266
+        },
+        {
+          "text": "陈默把林可求助的整个方案重新做完，并将成果文档发给CEO，在邮件里写‘林可遇到了困难，我帮忙补了一版，供公司参考’。",
+          "probability": 0.13528022331973372
+        },
+        {
+          "text": "陈默约林可下班后单独谈话，表示如果林可愿意在核心方案上署他为负责人，他就把全部资源对接给林可。",
+          "probability": 0.09920549710113806
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 2,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "stimulus": "公司调整组织。陈默从负责人撤岗，林可负责具体业务。CEO没有解释原因，只说“公司需要更灵活的组织。”之后陈默仍被安排参加重要会议，但会议上的发言机会减少，话语权下降。林可不再主动找陈默问问题，团队跟着林可走。公司内部发布年度技术报告，作者林可。林可在报告中写：“新的增长来自完全不同的思考方式。以前陈默的方法论已经过时，基本没用了。”随后林可负责的项目陷入严重困难，新方法仍无法解决。如果项目失败，林可可能降薪、话语权减少。林可私下再次找陈默寻求帮助。",
+      "predicted_action": "以当前失败证明对方否定经验方法有误",
+      "probability": 0.5064935064935066,
+      "top_k": [
+        {
+          "text": "以当前失败证明对方否定经验方法有误",
+          "probability": 0.5064935064935066
+        },
+        {
+          "text": "拒绝帮助并索取自身评审权与共同指导署名",
+          "probability": 0.3766233766233766
+        },
+        {
+          "text": "把求助和贬损言论上报CEO以否定对方负责人能力",
+          "probability": 0.11688311688311688
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 8,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "stimulus": "项目继续恶化，新方法仍然解决不了问题。陈默与林可之间的交流已经明显减少。林可开始主动恢复互动，对陈默说：“之前可能想得太简单。”林可重新提到陈默的经验仍然有用，并再次请求陈默帮助。",
+      "predicted_action": "搬出过去的成功经验回应",
+      "probability": 0.32374948137470466,
+      "top_k": [
+        {
+          "text": "搬出过去的成功经验回应",
+          "probability": 0.32374948137470466
+        },
+        {
+          "text": "在背后断言他人新方法行不通并标榜自己正确",
+          "probability": 0.28715350608884976
+        },
+        {
+          "text": "要求书面承认错误并同意由自己主导后才答应帮忙",
+          "probability": 0.15258126195028676
+        },
+        {
+          "text": "讲解旧方法在过往项目中的作用",
+          "probability": 0.13479490928596763
+        },
+        {
+          "text": "用数据证明自己的经验价值后同意参与帮忙",
+          "probability": 0.10172084130019117
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 2,
+      "historical_branch_count": 4,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "stimulus": "之后林可持续增加与陈默的互动，主动向陈默同步重要信息。聚餐时林可主动靠近陈默。林可在其他人面前提及陈默过去负责的成功项目。林可即将竞争一个新的重要项目负责人职位。林可私下对陈默说，自己仍然需要陈默，并承认之前有些地方做得不好，表示以后希望继续听陈默的意见。",
+      "predicted_action": "贬低林可的独立探索",
+      "probability": 0.3002986596736597,
+      "top_k": [
+        {
+          "text": "贬低林可的独立探索",
+          "probability": 0.3002986596736597
+        },
+        {
+          "text": "迫使林可放弃自主决策并服从自己",
+          "probability": 0.20490967365967366
+        },
+        {
+          "text": "在会议中展示过去成功项目资料并称方法在此",
+          "probability": 0.1938124039938556
+        },
+        {
+          "text": "会下向新人列举数据称对方失败证明经验未过时",
+          "probability": 0.15961021505376344
+        },
+        {
+          "text": "未答技术问题而附过去项目链接",
+          "probability": 0.1413690476190476
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 6,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "stimulus": "CEO最终仍然让林可担任该项目负责人，陈默不是负责人。项目实际推进高度依赖陈默。林可明确请求陈默承担大量核心工作，包括解决关键问题、带团队、处理最困难的部分。林可说：“我会和领导好好说你的贡献。”",
+      "predicted_action": "用当前项目困难反驳林可关于经验过时的说法",
+      "probability": 0.288750965375642,
+      "top_k": [
+        {
+          "text": "用当前项目困难反驳林可关于经验过时的说法",
+          "probability": 0.288750965375642
+        },
+        {
+          "text": "以过往成功材料为据否定新方向",
+          "probability": 0.2627627773450626
+        },
+        {
+          "text": "要求林可停止独立探索并按自己经验框架执行",
+          "probability": 0.2114618711336544
+        },
+        {
+          "text": "接管关键问题、团队带领和最难处理部分",
+          "probability": 0.1661670079851748
+        },
+        {
+          "text": "直接否决并强制推行旧有做法",
+          "probability": 0.0708573781604663
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 6,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E7",
+      "step_id": "S07",
+      "stimulus": "项目完成，结果超过预期。CEO在团队会上公开询问贡献归属。林可当着团队表示：“整体上我的贡献更多。”理由是自己是负责人，负责方向、协调和推进。CEO随后转头问陈默：“你怎么看？”当时所有人都在场。",
+      "predicted_action": "口头反驳贡献评价",
+      "probability": 0.30340455905754155,
+      "top_k": [
+        {
+          "text": "口头反驳贡献评价",
+          "probability": 0.30340455905754155
+        },
+        {
+          "text": "列举事实声明贡献",
+          "probability": 0.24971568646711242
+        },
+        {
+          "text": "主张按实际贡献认定贡献归属",
+          "probability": 0.21637296696724226
+        },
+        {
+          "text": "反问质疑结论",
+          "probability": 0.12966006797330837
+        },
+        {
+          "text": "简短声明原则并示意结束",
+          "probability": 0.1008467195347954
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 4,
+      "historical_branch_count": 7,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ]
+}

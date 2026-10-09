@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0077_d1205_u7",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER:\n- Likes “everything” and especially foreign movies.\n- Is not a holiday person and rejected holiday recommendations.\n- Is not really into scary movies.\n- Loves Mike Myers, specifically his comedic work.\n- Has not seen *Halloween: The Curse of Michael Myers*.\n- Asked for other suggestions after rejecting the holiday films.\n\nRECOMMENDER does **not** know:\n- Which Mike Myers comedies SEEKER has seen or likes.\n- SEEKER’s other genre preferences beyond “everything” and foreign films.\n- Any specific constraints like mood, streaming availability, or content restrictions.\n- Whether SEEKER would like a particular Mike Myers comedy.\n\nGiven the latest seeker statement, the recommender’s most useful next move is to use the newly stated preference for Mike Myers comedies and suggest a relevant movie, likely by asking if the seeker has seen it. This fits “Provides a recommendation directly or by inquiring further.”\n\nANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

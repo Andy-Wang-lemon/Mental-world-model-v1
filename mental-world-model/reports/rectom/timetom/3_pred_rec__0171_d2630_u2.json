@@ -1,0 +1,48 @@
+{
+  "id": "3_pred_rec__0171_d2630_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'Hi...What genre do you like?'",
+      "information_available": "The recommender has only their own greeting/question; no preference information from the seeker yet.",
+      "preferences": "No explicit recommender preference. The seeker's genre preference is unknown.",
+      "belief_before": "No known information about the seeker's genre preference; recommender assumes there is some preference to discover.",
+      "belief_update": "No update from the seeker. The recommender's own question sets up a request for genre information.",
+      "belief_after": "The seeker's genre preference remains unknown; recommender is waiting for an answer.",
+      "emotion": "Friendly, polite, inquisitive.",
+      "intention": "Elicit the seeker's preferred genre to guide recommendations.",
+      "reaction_to_other": "No other-speaker turn has occurred yet; no reaction available.",
+      "conversational_goal": "Start the recommendation dialogue and gather a key preference.",
+      "changes_previous_interpretation": "N/A: this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'I like dramas'",
+      "information_available": "The recommender hears that the seeker likes dramas, answering the genre question from turn 1.",
+      "preferences": "Seeker's known genre preference: dramas. Recommender can use drama as a recommendation constraint.",
+      "belief_before": "Before this turn, the recommender believed the seeker's genre preference was still unknown and awaited an answer.",
+      "belief_update": "The seeker states a preference for dramas.",
+      "belief_after": "The recommender believes the seeker likes dramas and should receive drama-oriented recommendations.",
+      "emotion": "Pleased, attentive, cooperative.",
+      "intention": "Use the drama preference to recommend dramas or ask a follow-up to narrow the drama subgenre.",
+      "reaction_to_other": "Positive; the seeker cooperatively answered the recommender's question with a clear preference.",
+      "conversational_goal": "Acknowledge the preference and move toward tailored drama recommendations.",
+      "changes_previous_interpretation": "Yes: the previous uncertainty about genre is resolved, narrowing the recommendation space to dramas."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'Hi...What genre do you like?'\",\n    \"information_available\": \"The recommender has only their own greeting/question; no preference information from the seeker yet.\",\n    \"preferences\": \"No explicit recommender preference. The seeker's genre preference is unknown.\",\n    \"belief_before\": \"No known information about the seeker's genre preference; recommender assumes there is some preference to discover.\",\n    \"belief_update\": \"No update from the seeker. The recommender's own question sets up a request for genre information.\",\n    \"belief_after\": \"The seeker's genre preference remains unknown; recommender is waiting for an answer.\",\n    \"emotion\": \"Friendly, polite, inquisitive.\",\n    \"intention\": \"Elicit the seeker's preferred genre to guide recommendations.\",\n    \"reaction_to_other\": \"No other-speaker turn has occurred yet; no reaction available.\",\n    \"conversational_goal\": \"Start the recommendation dialogue and gather a key preference.\",\n    \"changes_previous_interpretation\": \"N/A: this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'I like dramas'\",\n    \"information_available\": \"The recommender hears that the seeker likes dramas, answering the genre question from turn 1.\",\n    \"preferences\": \"Seeker's known genre preference: dramas. Recommender can use drama as a recommendation constraint.\",\n    \"belief_before\": \"Before this turn, the recommender believed the seeker's genre preference was still unknown and awaited an answer.\",\n    \"belief_update\": \"The seeker states a preference for dramas.\",\n    \"belief_after\": \"The recommender believes the seeker likes dramas and should receive drama-oriented recommendations.\",\n    \"emotion\": \"Pleased, attentive, cooperative.\",\n    \"intention\": \"Use the drama preference to recommend dramas or ask a follow-up to narrow the drama subgenre.\",\n    \"reaction_to_other\": \"Positive; the seeker cooperatively answered the recommender's question with a clear preference.\",\n    \"conversational_goal\": \"Acknowledge the preference and move toward tailored drama recommendations.\",\n    \"changes_previous_interpretation\": \"Yes: the previous uncertainty about genre is resolved, narrowing the recommendation space to dramas.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

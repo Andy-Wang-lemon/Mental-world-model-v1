@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0081_d1212_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: Hello, what kind of movies are you looking for?",
+      "information_available": "The target speaker only has the recommender's greeting and request for movie preferences.",
+      "preferences": "Not yet stated in the dialogue; target's specific movie preferences are not observable from this turn.",
+      "belief_before": "No prior dialogue context established.",
+      "belief_update": "The recommender is asking for the target's movie preferences and appears willing to make recommendations.",
+      "belief_after": "The recommender can help find movies if the target provides criteria.",
+      "emotion": "Attentive, neutral.",
+      "intention": "Respond to the recommender's request for movie preferences.",
+      "conversational_goal": "Engage in the recommendation dialogue by providing movie criteria.",
+      "reaction_to_other": "Receptive; the question is relevant and prompts a response.",
+      "changes_previous_interpretation": "No previous interpretation to change; this turn establishes the recommendation task."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: I suppose good science fiction movies that don't deal with superheroes.",
+      "information_available": "The recommender's prior question, plus the target's own stated preference.",
+      "preferences": "Good science fiction movies; does not want superhero movies. The phrase 'I suppose' suggests a tentative or open-ended preference.",
+      "belief_before": "The recommender is waiting for the target to specify what kind of movies they want.",
+      "belief_update": "The target makes their movie criteria explicit, narrowing the recommendation space to science fiction without superheroes.",
+      "belief_after": "The recommender now knows the target's criteria and should use them when suggesting movies.",
+      "emotion": "Cooperative, mildly tentative.",
+      "intention": "Communicate the desired movie criteria so the recommender can suggest suitable options.",
+      "conversational_goal": "Guide the recommender toward good science fiction films that avoid superheroes.",
+      "reaction_to_other": "Cooperative answer to the recommender's prompt.",
+      "changes_previous_interpretation": "Yes; the target moves from having no stated preference to an explicit genre and exclusion criterion."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: Have you seen Soylent Green (1973) ? It's a classic",
+      "information_available": "The prior dialogue, including the target's stated preference for good non-superhero science fiction, plus the recommender's suggestion of Soylent Green (1973) as a classic.",
+      "preferences": "Good science fiction movies; not superhero movies.",
+      "belief_before": "The recommender knows the target wants good science fiction that does not deal with superheroes.",
+      "belief_update": "The recommender proposes Soylent Green (1973) as a specific candidate and asks whether the target has seen it; the recommender frames it as a classic.",
+      "belief_after": "Soylent Green is a possible recommendation to evaluate. The target must judge whether it fits their criteria and whether they have already seen it.",
+      "emotion": "Curious, interested, possibly uncertain pending evaluation.",
+      "intention": "Assess the proposed film against their preferences and decide how to respond about familiarity or interest.",
+      "conversational_goal": "Determine whether Soylent Green matches the target's preferences and continue narrowing the recommendation.",
+      "reaction_to_other": "Considers the recommendation; open to evaluating it but not yet committed.",
+      "changes_previous_interpretation": "Yes; the dialogue shifts from general criteria-setting to evaluating a specific suggested film."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: Hello, what kind of movies are you looking for?\",\n    \"information_available\": \"The target speaker only has the recommender's greeting and request for movie preferences.\",\n    \"preferences\": \"Not yet stated in the dialogue; target's specific movie preferences are not observable from this turn.\",\n    \"belief_before\": \"No prior dialogue context established.\",\n    \"belief_update\": \"The recommender is asking for the target's movie preferences and appears willing to make recommendations.\",\n    \"belief_after\": \"The recommender can help find movies if the target provides criteria.\",\n    \"emotion\": \"Attentive, neutral.\",\n    \"intention\": \"Respond to the recommender's request for movie preferences.\",\n    \"conversational_goal\": \"Engage in the recommendation dialogue by providing movie criteria.\",\n    \"reaction_to_other\": \"Receptive; the question is relevant and prompts a response.\",\n    \"changes_previous_interpretation\": \"No previous interpretation to change; this turn establishes the recommendation task.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: I suppose good science fiction movies that don't deal with superheroes.\",\n    \"information_available\": \"The recommender's prior question, plus the target's own stated preference.\",\n    \"preferences\": \"Good science fiction movies; does not want superhero movies. The phrase 'I suppose' suggests a tentative or open-ended preference.\",\n    \"belief_before\": \"The recommender is waiting for the target to specify what kind of movies they want.\",\n    \"belief_update\": \"The target makes their movie criteria explicit, narrowing the recommendation space to science fiction without superheroes.\",\n    \"belief_after\": \"The recommender now knows the target's criteria and should use them when suggesting movies.\",\n    \"emotion\": \"Cooperative, mildly tentative.\",\n    \"intention\": \"Communicate the desired movie criteria so the recommender can suggest suitable options.\",\n    \"conversational_goal\": \"Guide the recommender toward good science fiction films that avoid superheroes.\",\n    \"reaction_to_other\": \"Cooperative answer to the recommender's prompt.\",\n    \"changes_previous_interpretation\": \"Yes; the target moves from having no stated preference to an explicit genre and exclusion criterion.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: Have you seen Soylent Green (1973) ? It's a classic\",\n    \"information_available\": \"The prior dialogue, including the target's stated preference for good non-superhero science fiction, plus the recommender's suggestion of Soylent Green (1973) as a classic.\",\n    \"preferences\": \"Good science fiction movies; not superhero movies.\",\n    \"belief_before\": \"The recommender knows the target wants good science fiction that does not deal with superheroes.\",\n    \"belief_update\": \"The recommender proposes Soylent Green (1973) as a specific candidate and asks whether the target has seen it; the recommender frames it as a classic.\",\n    \"belief_after\": \"Soylent Green is a possible recommendation to evaluate. The target must judge whether it fits their criteria and whether they have already seen it.\",\n    \"emotion\": \"Curious, interested, possibly uncertain pending evaluation.\",\n    \"intention\": \"Assess the proposed film against their preferences and decide how to respond about familiarity or interest.\",\n    \"conversational_goal\": \"Determine whether Soylent Green matches the target's preferences and continue narrowing the recommendation.\",\n    \"reaction_to_other\": \"Considers the recommendation; open to evaluating it but not yet committed.\",\n    \"changes_previous_interpretation\": \"Yes; the dialogue shifts from general criteria-setting to evaluating a specific suggested film.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

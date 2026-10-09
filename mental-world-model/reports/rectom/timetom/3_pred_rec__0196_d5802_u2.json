@@ -1,0 +1,39 @@
+{
+  "id": "3_pred_rec__0196_d5802_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender greets the seeker and asks what kind of movies the seeker is looking for today. No seeker response has been observed yet.",
+      "belief_before": "The recommender assumes a seeker is present and may want movie recommendations, but has no information about the seeker's genre or viewing preferences.",
+      "belief_update": "No new information from the other speaker yet; the recommender initiates the recommendation dialogue by requesting movie preferences.",
+      "belief_after": "The recommender believes the seeker's preferences are still unknown and is waiting for the seeker to specify what kind of movies they want.",
+      "emotion": "Polite, welcoming, and curious.",
+      "intention": "Open the conversation and elicit the seeker's movie preferences.",
+      "conversational_goal": "Start the recommendation process by asking for the seeker's desired movie type."
+    },
+    {
+      "time": 2,
+      "observed": "The seeker replies: they ask for a good comedy movie and note that it can also have action in it.",
+      "belief_before": "The recommender believes the seeker's movie preferences are unknown and is awaiting a response to the earlier question about what kind of movies they want.",
+      "belief_update": "The seeker's reply provides concrete genre preferences: comedy is requested, and action is an acceptable additional element. The prior open-ended interpretation changes to a comedy/action-comedy recommendation context. The seeker appears cooperative and clear.",
+      "belief_after": "The recommender believes the seeker wants a good comedy movie, possibly with action elements, and should now recommend an appropriate comedy or action-comedy title.",
+      "emotion": "Attentive, positive, and helpful.",
+      "intention": "Recommend a good comedy movie that may also include action, or offer suitable options in that genre.",
+      "conversational_goal": "Satisfy the seeker's request by providing a relevant comedy or action-comedy recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender greets the seeker and asks what kind of movies the seeker is looking for today. No seeker response has been observed yet.\",\n    \"belief_before\": \"The recommender assumes a seeker is present and may want movie recommendations, but has no information about the seeker's genre or viewing preferences.\",\n    \"belief_update\": \"No new information from the other speaker yet; the recommender initiates the recommendation dialogue by requesting movie preferences.\",\n    \"belief_after\": \"The recommender believes the seeker's preferences are still unknown and is waiting for the seeker to specify what kind of movies they want.\",\n    \"emotion\": \"Polite, welcoming, and curious.\",\n    \"intention\": \"Open the conversation and elicit the seeker's movie preferences.\",\n    \"conversational_goal\": \"Start the recommendation process by asking for the seeker's desired movie type.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"The seeker replies: they ask for a good comedy movie and note that it can also have action in it.\",\n    \"belief_before\": \"The recommender believes the seeker's movie preferences are unknown and is awaiting a response to the earlier question about what kind of movies they want.\",\n    \"belief_update\": \"The seeker's reply provides concrete genre preferences: comedy is requested, and action is an acceptable additional element. The prior open-ended interpretation changes to a comedy/action-comedy recommendation context. The seeker appears cooperative and clear.\",\n    \"belief_after\": \"The recommender believes the seeker wants a good comedy movie, possibly with action elements, and should now recommend an appropriate comedy or action-comedy title.\",\n    \"emotion\": \"Attentive, positive, and helpful.\",\n    \"intention\": \"Recommend a good comedy movie that may also include action, or offer suitable options in that genre.\",\n    \"conversational_goal\": \"Satisfy the seeker's request by providing a relevant comedy or action-comedy recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

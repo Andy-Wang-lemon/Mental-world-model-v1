@@ -1,0 +1,188 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "陈默",
+  "events": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "stimulus": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+      "predicted_action": "有限认可数据并要求进一步验证，暂不调整现有方案",
+      "probability": 0.2718926553672316,
+      "top_k": [
+        {
+          "text": "有限认可数据并要求进一步验证，暂不调整现有方案",
+          "probability": 0.2718926553672316
+        },
+        {
+          "text": "将判断列为待检验，不纳入主方案调整",
+          "probability": 0.24396507447354907
+        },
+        {
+          "text": "承认部分判断成立，限定条件并要求继续验证适用范围",
+          "probability": 0.20544427324088343
+        },
+        {
+          "text": "会上不表态，会后请资深同事评估数据并反馈意见",
+          "probability": 0.16313559322033896
+        },
+        {
+          "text": "要求补充数据，约定数据齐备后判断是否调整",
+          "probability": 0.11556240369799692
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "stimulus": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+      "predicted_action": "要求补充材料后再讨论或答复",
+      "probability": 0.25312500000000004,
+      "top_k": [
+        {
+          "text": "要求补充材料后再讨论或答复",
+          "probability": 0.25312500000000004
+        },
+        {
+          "text": "提议将观点转为小范围试点并设定验证指标",
+          "probability": 0.25000000000000006
+        },
+        {
+          "text": "转发过往处理记录并附条件说明",
+          "probability": 0.1875
+        },
+        {
+          "text": "对部分环节给出判断，要求林可主导其余并署名",
+          "probability": 0.16875
+        },
+        {
+          "text": "搁置求助，转而整理自己的案例清单",
+          "probability": 0.140625
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 10,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "stimulus": "公司调整组织。陈默从负责人撤岗，林可负责具体业务。CEO没有解释原因，只说“公司需要更灵活的组织。”之后陈默仍被安排参加重要会议，但会议上的发言机会减少，话语权下降。公司内部发布年度技术报告，作者林可。林可在报告中写：“这些成果的进步，离不开陈默的帮助，他的经验发挥了很重要的作用。”随后林可负责的项目陷入严重困难，新方法仍无法解决。如果项目失败，林可可能降薪、话语权减少。林可私下再次找陈默寻求帮助。",
+      "predicted_action": "要求林可整理书面材料后再决定下一步",
+      "probability": 0.32438585970694356,
+      "top_k": [
+        {
+          "text": "要求林可整理书面材料后再决定下一步",
+          "probability": 0.32438585970694356
+        },
+        {
+          "text": "要求明确技术贡献与署名归属",
+          "probability": 0.2774222857318841
+        },
+        {
+          "text": "提出公开归因并参与决策的条件",
+          "probability": 0.2543086738310876
+        },
+        {
+          "text": "口头建议参考老办法但不给细节、不承诺介入",
+          "probability": 0.14388318073008483
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 12,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "stimulus": "之后林可持续增加与陈默的互动，主动向陈默同步重要信息。聚餐时林可主动靠近陈默。林可在其他人面前提及陈默过去负责的成功项目。林可即将竞争一个新的重要项目负责人职位。林可私下对陈默说，自己仍然需要陈默，表示以后希望继续听陈默的意见。",
+      "predicted_action": "要求林可先自行整理/核对材料后再沟通",
+      "probability": 0.65,
+      "top_k": [
+        {
+          "text": "要求林可先自行整理/核对材料后再沟通",
+          "probability": 0.65
+        },
+        {
+          "text": "拒绝为林可公开背书并要求其自行判断",
+          "probability": 0.25
+        },
+        {
+          "text": "公开澄清旧项目经验的适用条件",
+          "probability": 0.1
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 10,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "stimulus": "CEO最终仍然让林可担任该项目负责人，陈默不是负责人。项目实际推进高度依赖陈默。林可明确请求陈默承担大量核心工作，包括解决关键问题、带团队、处理最困难的部分。林可说：“我会和领导好好说你的贡献。”",
+      "predicted_action": "要求书面明确贡献、责任与汇报/署名规则",
+      "probability": 0.6545454545454545,
+      "top_k": [
+        {
+          "text": "要求书面明确贡献、责任与汇报/署名规则",
+          "probability": 0.6545454545454545
+        },
+        {
+          "text": "提供书面清单模板并声明只按节点审核、不接手",
+          "probability": 0.34545454545454546
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "stimulus": "项目完成，结果超过预期。CEO在团队会上公开询问贡献归属。林可当着团队表示：“陈默的经验在这里发挥了重要作用，当然，新方法也确实提高了效率。”CEO随后转头问陈默：“你怎么看？”当时所有人都在场。",
+      "predicted_action": "要求先以书面或公开方式确认贡献、署名和汇报关系再继续参与",
+      "probability": 0.36444444444444446,
+      "top_k": [
+        {
+          "text": "要求先以书面或公开方式确认贡献、署名和汇报关系再继续参与",
+          "probability": 0.36444444444444446
+        },
+        {
+          "text": "当场口头说明项目贡献并主张按书面署名与责任分工认定归属",
+          "probability": 0.3175308641975309
+        },
+        {
+          "text": "当场向 CEO 提出先明确署名、责任边界和汇报规则再谈贡献认定",
+          "probability": 0.17604938271604942
+        },
+        {
+          "text": "会后书面整理贡献材料发给 CEO 并抄送团队要求确认",
+          "probability": 0.14197530864197533
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 11,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ]
+}

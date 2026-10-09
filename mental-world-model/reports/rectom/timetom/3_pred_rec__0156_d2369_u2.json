@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0156_d2369_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: 'Hi'",
+      "information_available": "No information about the seeker yet; only that the recommender has initiated the dialogue.",
+      "preferences": "No stated preferences from the recommender or seeker; seeker preferences are unknown.",
+      "belief_before": "No prior beliefs about the seeker are available.",
+      "belief_update": "The recommender has opened the conversation; no new information about the seeker.",
+      "belief_after": "Awaiting the seeker's response; the seeker remains unknown.",
+      "emotion": "Neutral/friendly.",
+      "intention": "Greet the seeker and begin interaction.",
+      "reaction_to_other_speaker": "Not applicable; no other-speaker turn yet.",
+      "conversational_goal": "Initiate contact and invite a response.",
+      "changes_previous_interpretation": "Not applicable for the first turn."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'Hello...I love comedy movies...Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) are some of my favorite movies'",
+      "information_available": "The seeker has greeted the recommender and stated a preference for comedy movies, naming Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) as favorites.",
+      "preferences": "Known seeker preferences: comedy movies; specifically Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003). Recommender's own preferences are not stated.",
+      "belief_before": "From turn 1, the recommender only knew that they had said 'Hi' and was awaiting a response; the seeker's tastes were unknown.",
+      "belief_update": "Learns that the seeker enjoys comedy/romantic-comedy films and likes Bridesmaids and How to Lose a Guy in 10 Days.",
+      "belief_after": "Recommender believes the seeker is likely a fan of comedy and romantic comedy, with mainstream/rom-com examples as favorites.",
+      "emotion": "Positive, interested, attentive.",
+      "intention": "Acknowledge the seeker's preferences and potentially steer toward recommending similar comedy/rom-com titles.",
+      "reaction_to_other_speaker": "Friendly and receptive to the seeker's introduction and stated tastes.",
+      "conversational_goal": "Build rapport, gather or confirm preference information, and prepare tailored recommendations.",
+      "changes_previous_interpretation": "Yes. The seeker changes from an unknown interlocutor into someone with a clear comedy/rom-com preference, enabling recommendation personalization."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: 'Hi'\",\n    \"information_available\": \"No information about the seeker yet; only that the recommender has initiated the dialogue.\",\n    \"preferences\": \"No stated preferences from the recommender or seeker; seeker preferences are unknown.\",\n    \"belief_before\": \"No prior beliefs about the seeker are available.\",\n    \"belief_update\": \"The recommender has opened the conversation; no new information about the seeker.\",\n    \"belief_after\": \"Awaiting the seeker's response; the seeker remains unknown.\",\n    \"emotion\": \"Neutral/friendly.\",\n    \"intention\": \"Greet the seeker and begin interaction.\",\n    \"reaction_to_other_speaker\": \"Not applicable; no other-speaker turn yet.\",\n    \"conversational_goal\": \"Initiate contact and invite a response.\",\n    \"changes_previous_interpretation\": \"Not applicable for the first turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'Hello...I love comedy movies...Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) are some of my favorite movies'\",\n    \"information_available\": \"The seeker has greeted the recommender and stated a preference for comedy movies, naming Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) as favorites.\",\n    \"preferences\": \"Known seeker preferences: comedy movies; specifically Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003). Recommender's own preferences are not stated.\",\n    \"belief_before\": \"From turn 1, the recommender only knew that they had said 'Hi' and was awaiting a response; the seeker's tastes were unknown.\",\n    \"belief_update\": \"Learns that the seeker enjoys comedy/romantic-comedy films and likes Bridesmaids and How to Lose a Guy in 10 Days.\",\n    \"belief_after\": \"Recommender believes the seeker is likely a fan of comedy and romantic comedy, with mainstream/rom-com examples as favorites.\",\n    \"emotion\": \"Positive, interested, attentive.\",\n    \"intention\": \"Acknowledge the seeker's preferences and potentially steer toward recommending similar comedy/rom-com titles.\",\n    \"reaction_to_other_speaker\": \"Friendly and receptive to the seeker's introduction and stated tastes.\",\n    \"conversational_goal\": \"Build rapport, gather or confirm preference information, and prepare tailored recommendations.\",\n    \"changes_previous_interpretation\": \"Yes. The seeker changes from an unknown interlocutor into someone with a clear comedy/rom-com preference, enabling recommendation personalization.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "trial235__type_a_what_20",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Sara Manuelito",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Sara notices Shirley's somber demeanor at the funeral and hears Shirley say it has been tough, that she keeps thinking something more could have been done, and that it is hard to let go.",
+      "belief_before": "Sara believed Shirley cared for the patient and might be affected by his death, but she did not yet know how deeply Shirley was struggling.",
+      "belief_update": "Yes. Shirley's visible grief and comments confirm that she is deeply affected by the loss.",
+      "belief_after": "Shirley is deeply saddened by the patient's death and is struggling to accept the loss.",
+      "emotion": "Compassion and concern",
+      "intention": "Comfort Shirley and reassure her that they provided good care and brought moments of joy to the patient."
+    },
+    {
+      "time": 2,
+      "observed": "During a coffee break, Shirley says she feels responsible and wonders whether pushing for a different treatment approach might have helped. She appreciates Sara's reassurance but says it is hard to accept.",
+      "belief_before": "Sara believed Shirley was deeply grieving and struggling to let go, but she did not yet know Shirley felt personally responsible for the outcome.",
+      "belief_update": "Yes. Sara learns that Shirley is carrying guilt and self-blame about the treatment decisions.",
+      "belief_after": "Shirley feels responsible for the patient's outcome and is burdened by guilt, even though Sara believes they made the best decisions with the information they had.",
+      "emotion": "Empathy, concern, and worry",
+      "intention": "Alleviate Shirley's sense of responsibility by discussing the treatment decisions and reassuring her that she does not have to carry the burden alone."
+    },
+    {
+      "time": 3,
+      "observed": "Sara has noticed Shirley's continued reserved behavior and minimal emotional expression. When Sara confronts her, Shirley says she is not sure she can be open because she does not want to seem unprofessional or weak, but agrees to try.",
+      "belief_before": "Sara believed Shirley was grieving and feeling responsible, and she suspected Shirley was holding back her emotions.",
+      "belief_update": "Yes. Sara learns that Shirley is suppressing her feelings because she fears appearing unprofessional or weak.",
+      "belief_after": "Shirley is grieving and feeling responsible, but she is also intentionally restraining her emotions and needs reassurance that expressing them is healthy.",
+      "emotion": "Concern, compassion, and perhaps some apprehension",
+      "intention": "Encourage Shirley to be more open about her feelings and reassure her that showing emotion is not a sign of weakness."
+    },
+    {
+      "time": 4,
+      "observed": "Sara apologizes for possibly coming on too strong. Shirley says it was a bit much but knows Sara meant well, appreciates the apology, and says they should keep talking because it helps.",
+      "belief_before": "Sara worried that her earlier confrontation may have been too harsh and could have hurt or pressured Shirley.",
+      "belief_update": "Yes. Sara's worry is corrected: Shirley was not seriously harmed by the confrontation and still values Sara's support.",
+      "belief_after": "Shirley understands Sara's intent, accepts her apology, and is willing to maintain open communication.",
+      "emotion": "Relief, remorse, and gratitude",
+      "intention": "Mend their friendship, continue being supportive, and keep talking with Shirley in whatever way Shirley needs."
+    },
+    {
+      "time": 5,
+      "observed": "Sara notices Shirley seems to be doing better. Shirley says she is feeling better thanks to their talks and Sara's support, and she agrees to spend time together outside work over the weekend.",
+      "belief_before": "Sara believed Shirley had been gradually improving because of their talks, but she thought Shirley might still need ongoing support.",
+      "belief_update": "Yes. Shirley's statement and willingness to socialize strengthen Sara's belief that Shirley is improving.",
+      "belief_after": "Shirley is recovering and is receptive to continued support and social connection.",
+      "emotion": "Hope, gladness, and warmth",
+      "intention": "Spend more time with Shirley outside work and continue supporting her as she recovers."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Sara notices Shirley's somber demeanor at the funeral and hears Shirley say it has been tough, that she keeps thinking something more could have been done, and that it is hard to let go.\",\n    \"belief_before\": \"Sara believed Shirley cared for the patient and might be affected by his death, but she did not yet know how deeply Shirley was struggling.\",\n    \"belief_update\": \"Yes. Shirley's visible grief and comments confirm that she is deeply affected by the loss.\",\n    \"belief_after\": \"Shirley is deeply saddened by the patient's death and is struggling to accept the loss.\",\n    \"emotion\": \"Compassion and concern\",\n    \"intention\": \"Comfort Shirley and reassure her that they provided good care and brought moments of joy to the patient.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"During a coffee break, Shirley says she feels responsible and wonders whether pushing for a different treatment approach might have helped. She appreciates Sara's reassurance but says it is hard to accept.\",\n    \"belief_before\": \"Sara believed Shirley was deeply grieving and struggling to let go, but she did not yet know Shirley felt personally responsible for the outcome.\",\n    \"belief_update\": \"Yes. Sara learns that Shirley is carrying guilt and self-blame about the treatment decisions.\",\n    \"belief_after\": \"Shirley feels responsible for the patient's outcome and is burdened by guilt, even though Sara believes they made the best decisions with the information they had.\",\n    \"emotion\": \"Empathy, concern, and worry\",\n    \"intention\": \"Alleviate Shirley's sense of responsibility by discussing the treatment decisions and reassuring her that she does not have to carry the burden alone.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Sara has noticed Shirley's continued reserved behavior and minimal emotional expression. When Sara confronts her, Shirley says she is not sure she can be open because she does not want to seem unprofessional or weak, but agrees to try.\",\n    \"belief_before\": \"Sara believed Shirley was grieving and feeling responsible, and she suspected Shirley was holding back her emotions.\",\n    \"belief_update\": \"Yes. Sara learns that Shirley is suppressing her feelings because she fears appearing unprofessional or weak.\",\n    \"belief_after\": \"Shirley is grieving and feeling responsible, but she is also intentionally restraining her emotions and needs reassurance that expressing them is healthy.\",\n    \"emotion\": \"Concern, compassion, and perhaps some apprehension\",\n    \"intention\": \"Encourage Shirley to be more open about her feelings and reassure her that showing emotion is not a sign of weakness.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Sara apologizes for possibly coming on too strong. Shirley says it was a bit much but knows Sara meant well, appreciates the apology, and says they should keep talking because it helps.\",\n    \"belief_before\": \"Sara worried that her earlier confrontation may have been too harsh and could have hurt or pressured Shirley.\",\n    \"belief_update\": \"Yes. Sara's worry is corrected: Shirley was not seriously harmed by the confrontation and still values Sara's support.\",\n    \"belief_after\": \"Shirley understands Sara's intent, accepts her apology, and is willing to maintain open communication.\",\n    \"emotion\": \"Relief, remorse, and gratitude\",\n    \"intention\": \"Mend their friendship, continue being supportive, and keep talking with Shirley in whatever way Shirley needs.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Sara notices Shirley seems to be doing better. Shirley says she is feeling better thanks to their talks and Sara's support, and she agrees to spend time together outside work over the weekend.\",\n    \"belief_before\": \"Sara believed Shirley had been gradually improving because of their talks, but she thought Shirley might still need ongoing support.\",\n    \"belief_update\": \"Yes. Shirley's statement and willingness to socialize strengthen Sara's belief that Shirley is improving.\",\n    \"belief_after\": \"Shirley is recovering and is receptive to continued support and social connection.\",\n    \"emotion\": \"Hope, gladness, and warmth\",\n    \"intention\": \"Spend more time with Shirley outside work and continue supporting her as she recovers.\"\n  }\n]",
+  "final_response": "ANSWER: a",
+  "prediction": "a",
+  "gold": "e",
+  "correct": false,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial235"
+}

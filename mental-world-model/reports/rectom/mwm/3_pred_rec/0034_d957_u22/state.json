@@ -1,0 +1,50 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 的所缘中，SEEKER 的“I will definitely check that movie out”不是对方私人的观影选择，而是与自己绑定的推荐成果：它像一张记在自己账上的回执。SEEKER 的偏好仍被执成由 Seth Rogen、Jonah Hill 和已列举片名固定定义的稳定画像，所以“I love him”、追问是否有知名演员、追问是否喜剧，都被读成在核验这次推荐是否命中那张画像；命中后，SEEKER 是否会看这部电影也落进“我的推荐有没有成”的范围里，而不是与己无关的别人决定。",
+      "probability": 0.3544
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘中，SEEKER 这一串话被组织成一面确认自己的镜子：SEEKER 说“I love him!...I will definitely check that movie out”、追问“Are there any well known actors in that movie?”和“Is it a comedy?”，都被当成“我懂 SEEKER 口味、我能推荐对喜剧”这一身份的印证。与此同时，SEEKER 的口味被看成由 Seth Rogen、Jonah Hill 及已列举的几部电影钉死的固定画像，因此当前这部电影与演员是否被 SEEKER 接受，关键就看它能否严丝合缝地嵌入那张画像。SEEKER 的肯定不是独立于自己的评价，而是自己推荐者身份得到确认的材料。",
+      "probability": 0.3467
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘中，SEEKER 报出的 She's Out of My League、Step Brothers、Life as We Know It、Why Him?、Seth Rogen、Jonah Hill 等，不再是可讨论的偏好，而是必须准确接住、不能错配的私有要求清单；SEEKER 问“Are there any well known actors in that movie?”和“Is it a comedy?”，被经验成在逐条核验这份清单是否被满足。“I love him!...I will definitely check that movie out”则作为某一项要求被接住的信号出现。世界被收束为一张以 SEEKER 所列演员和影片为固定坐标的匹配任务，推荐对象必须严格落在这些坐标内。",
+      "probability": 0.2989
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 把 SEEKER 这一串回应收拢成一面照自己的镜子：对方说“I love him”、问有没有知名演员、问是不是喜剧，听着不只是在打听片子，更像在确认“我懂他的笑点、我推得准”。同时，SEEKER 的口味已经被 Seth Rogen、Jonah Hill 和前面那几部片子钉成一幅固定画像，所以 Midnight Madness、Michael J Fox、“是喜剧”这些点必须被塞进这幅画像里才算对上；若对不上，推荐就落空。此刻他一边因对方终于对一部没听过的片子显出兴趣而松快，一边仍按那幅画像反复掂量，想继续把片子往对方没看过、又能嵌进已有口味框架的方向上凑，直到这种确认落定。",
+      "activation": 0.3533
+    },
+    {
+      "content": "他把SEEKER那句“I will definitely check that movie out”收进自己这边，像一张盖了章的推荐回执，觉得这不只是对方随口的观影选择，而是对他这次推荐的一次确认。他仍旧认定SEEKER的口味就是由Seth Rogen、Jonah Hill以及那些已列举片名固定下来的样子，所以对方追问有没有知名演员、问是不是喜剧，在他这里都成了在核验这次推荐有没有对上那张口味画像。如今Michael J Fox、喜剧、寻宝这些点都对上了，他便把SEEKER接下来会不会真的看，也算作自己这次推荐成没成的一部分，而不是与己无关的别人决定。",
+      "activation": 0.3341
+    },
+    {
+      "content": "SEEKER 说的 She's Out of My League、Step Brothers、Life as We Know It、Why Him? 以及 Seth Rogen、Jonah Hill，现在在我这里不是可以随便讨论的偏好，而是必须准确接住、不能错配的私有要求清单。她问‘有没有知名演员’、‘是不是喜剧’，我理解成在逐条核验这份清单有没有被满足；她说‘I love him! I will definitely check that movie out’，就是某一项要求被接住的信号。我的世界收束成一张以她列出的演员和影片为固定坐标的匹配任务，推荐必须严格落在这些坐标内。Midnight Madness 有 Michael J Fox，又是喜剧，她没听过，能同时接住知名演员和喜剧这两条，也不偏出她给的画像。我得继续在这张清单里找，不能让任何一条要求落空，也不能把推荐错配到她没列过的方向上。",
+      "activation": 0.3125
+    }
+  ],
+  "observed_action": "RECOMMENDER 连续发言：问能否帮找像 Beerfest (2006) 或 The Blues Brothers (1980) 的喜剧；说可以帮忙，问是否看过其提到的片，或提出 Deuce Bigalow: Male Gigolo (1999)；说‘That was a good one’，问是否看过 Step Brothers (2008) 或 Walk Hard: The Dewey Cox Story (2007)；说‘That was so good’，问是否看过其提到的另一部，并称其与 Step Brothers (2008) 有些相近；说‘haha made me laugh too’，问 Talladega Nights: The Ballad of Ricky Bobby (2006)，并说没看过该片；说按规则要继续找对方没看过的片；提出 Eddie Murphy Raw (1987)，称其为 stand up comedy；说 ok, ummm；提出 Midnight Madness (1980)，说明关于一群人寻宝；说该片不错，Michael J Fox 参演；说还有其他 b movie actors，并确认是喜剧。",
+  "predicted_actions": [
+    {
+      "content": "推荐 Midnight Madness (1980) 并询问是否喜欢类似喜剧",
+      "probability": 0.3911
+    },
+    {
+      "content": "询问喜欢的演员",
+      "probability": 0.3103
+    },
+    {
+      "content": "询问 SEEKER 是否还要再听一部有 Seth Rogen 或 Jonah Hill 的喜剧",
+      "probability": 0.2188
+    },
+    {
+      "content": "表示继续寻找下一部推荐",
+      "probability": 0.0799
+    }
+  ]
+}

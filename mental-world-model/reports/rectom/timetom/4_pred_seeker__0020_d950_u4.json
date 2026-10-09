@@ -1,0 +1,59 @@
+{
+  "id": "4_pred_seeker__0020_d950_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER initiates the interaction with 'Hey!'. No recommender content or movie preference has been shared yet in the dialogue.",
+      "belief_before": "No prior context about the recommender or conversation; SEEKER is starting fresh.",
+      "belief_update": "SEEKER has opened a channel for conversation.",
+      "belief_after": "A response from the recommender is expected, but no substantive information is available yet.",
+      "emotion": "friendly/neutral",
+      "intention": "Start the conversation.",
+      "conversational_goal": "Open dialogue and establish contact."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER hears the recommender greet and ask what kind of movies they like. The recommender is responsive. SEEKER's own preferences are not yet disclosed in the dialogue at this point.",
+      "belief_before": "SEEKER had only initiated contact; the recommender's role and topic were not yet established.",
+      "belief_update": "Recommender is willing to help and is asking for movie preferences.",
+      "belief_after": "To get a recommendation, SEEKER should answer the preference question.",
+      "emotion": "cooperative/positive",
+      "intention": "Answer the recommender's question about movie preferences.",
+      "conversational_goal": "Provide preference information so the recommender can suggest a movie."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER asks for help finding a good movie in any genre and states preferences: likes Wedding Crashers (2005) and It (2017), but not Star Wars-like movies. This answers the recommender's question and adds a concrete request.",
+      "belief_before": "Recommender had asked about movie likes; SEEKER needed to respond to get help.",
+      "belief_update": "SEEKER has disclosed examples of liked and disliked movies; the recommender should now have enough to suggest aligned options.",
+      "belief_after": "Recommender is expected to use those examples to recommend a movie; SEEKER is open to any genre but wants something in the vein of the liked examples and not Star Wars-like.",
+      "emotion": "hopeful/open",
+      "intention": "Solicit a recommendation and communicate taste boundaries.",
+      "conversational_goal": "Get a good movie suggestion that fits the liked examples and avoids Star Wars-like material."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER hears the recommender suggest Horrible Bosses (2011) or Superbad (2007). These are new options; SEEKER has not yet responded. Based on disclosed preferences, they may be perceived as comedies that could align with Wedding Crashers, but they do not address the horror/It side and are not Star Wars-like.",
+      "belief_before": "SEEKER expected the recommender to use the stated examples to produce aligned options.",
+      "belief_update": "Recommender has answered with two concrete comedy suggestions, appearing to match the comedy/raunchy side of SEEKER's taste.",
+      "belief_after": "Recommender is trying to help and has offered viable candidates; SEEKER still needs to evaluate them or request alternatives/refinement.",
+      "emotion": "curious/considering; possibly cautiously optimistic",
+      "intention": "Evaluate the two suggestions, choose one, ask about them, or ask for more options.",
+      "conversational_goal": "Decide on a suitable movie or refine the recommendation with the recommender."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER initiates the interaction with 'Hey!'. No recommender content or movie preference has been shared yet in the dialogue.\",\n    \"belief_before\": \"No prior context about the recommender or conversation; SEEKER is starting fresh.\",\n    \"belief_update\": \"SEEKER has opened a channel for conversation.\",\n    \"belief_after\": \"A response from the recommender is expected, but no substantive information is available yet.\",\n    \"emotion\": \"friendly/neutral\",\n    \"intention\": \"Start the conversation.\",\n    \"conversational_goal\": \"Open dialogue and establish contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER hears the recommender greet and ask what kind of movies they like. The recommender is responsive. SEEKER's own preferences are not yet disclosed in the dialogue at this point.\",\n    \"belief_before\": \"SEEKER had only initiated contact; the recommender's role and topic were not yet established.\",\n    \"belief_update\": \"Recommender is willing to help and is asking for movie preferences.\",\n    \"belief_after\": \"To get a recommendation, SEEKER should answer the preference question.\",\n    \"emotion\": \"cooperative/positive\",\n    \"intention\": \"Answer the recommender's question about movie preferences.\",\n    \"conversational_goal\": \"Provide preference information so the recommender can suggest a movie.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER asks for help finding a good movie in any genre and states preferences: likes Wedding Crashers (2005) and It (2017), but not Star Wars-like movies. This answers the recommender's question and adds a concrete request.\",\n    \"belief_before\": \"Recommender had asked about movie likes; SEEKER needed to respond to get help.\",\n    \"belief_update\": \"SEEKER has disclosed examples of liked and disliked movies; the recommender should now have enough to suggest aligned options.\",\n    \"belief_after\": \"Recommender is expected to use those examples to recommend a movie; SEEKER is open to any genre but wants something in the vein of the liked examples and not Star Wars-like.\",\n    \"emotion\": \"hopeful/open\",\n    \"intention\": \"Solicit a recommendation and communicate taste boundaries.\",\n    \"conversational_goal\": \"Get a good movie suggestion that fits the liked examples and avoids Star Wars-like material.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER hears the recommender suggest Horrible Bosses (2011) or Superbad (2007). These are new options; SEEKER has not yet responded. Based on disclosed preferences, they may be perceived as comedies that could align with Wedding Crashers, but they do not address the horror/It side and are not Star Wars-like.\",\n    \"belief_before\": \"SEEKER expected the recommender to use the stated examples to produce aligned options.\",\n    \"belief_update\": \"Recommender has answered with two concrete comedy suggestions, appearing to match the comedy/raunchy side of SEEKER's taste.\",\n    \"belief_after\": \"Recommender is trying to help and has offered viable candidates; SEEKER still needs to evaluate them or request alternatives/refinement.\",\n    \"emotion\": \"curious/considering; possibly cautiously optimistic\",\n    \"intention\": \"Evaluate the two suggestions, choose one, ask about them, or ask for more options.\",\n    \"conversational_goal\": \"Decide on a suitable movie or refine the recommendation with the recommender.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

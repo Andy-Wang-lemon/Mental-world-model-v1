@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 149,
+  "item_id": "d2349_u2",
+  "dialogue_id": "2349",
+  "utterance_pos": 2,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\nRECOMMENDER says: Hi happy new year；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\nRECOMMENDER says: Hi happy new year；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.4,
+    "c": 0.9,
+    "d": 0.3
+  },
+  "score_reason": "The SEEKER's current utterance directly asks for a children's movie recommendation, so asking for a recommendation is the most supported next strategy.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record provides no predicted next action or thought about what SEEKER will do next, so the strategy cannot be directly supported.",
+  "audit_level": "inferred"
+}

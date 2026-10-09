@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0137_d2214_u13",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the SEEKER wants movies similar to *Alien* or *Halloween*, and has learned several preferences: the SEEKER loved *A Nightmare on Elm Street*, was not very into *Friday the 13th*, liked *The Thing*, liked *The Blob*, has not seen *Life*, liked *Happy Death Day*, and liked *Cloverfield*. RECOMMENDER also knows they have not seen *The Blob*, had trouble watching *Happy Death Day*, and thinks *10 Cloverfield Lane* is good and likely suitable.\n\nRECOMMENDER does not know the SEEKER’s exact next preference beyond this point, whether the SEEKER has seen other related films such as *Super 8* or *The Mist*, or how precisely the SEEKER distinguishes *Cloverfield* from *10 Cloverfield Lane*.\n\nGiven the recommender’s role and prior behavior, after the SEEKER gives positive feedback about *Cloverfield*, the most likely next move is to continue the recommendation process by suggesting another related film or asking whether the SEEKER has seen one. That matches providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "e"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

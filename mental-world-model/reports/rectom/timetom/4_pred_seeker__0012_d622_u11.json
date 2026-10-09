@@ -1,0 +1,126 @@
+{
+  "id": "4_pred_seeker__0012_d622_u11",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi.",
+      "belief_before": "No prior dialogue context; SEEKER has no movie request stated yet.",
+      "belief_update": "Other speaker has initiated contact with a greeting.",
+      "belief_after": "SEEKER is aware the other speaker is present and opening a conversation.",
+      "emotion": "neutral/attentive",
+      "intention": "respond to greeting or engage",
+      "conversational_goal": "acknowledge greeting and begin interaction"
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: hi...want to help me find a fun movie for all ages?",
+      "belief_before": "Recommender has greeted; task not yet established.",
+      "belief_update": "SEEKER establishes request: help finding a fun movie suitable for all ages.",
+      "belief_after": "Recommender may assist in finding a fun all-ages movie.",
+      "emotion": "friendly/hopeful",
+      "intention": "request recommendations",
+      "conversational_goal": "get family-friendly/all-ages movie suggestions"
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER suggests The Lego Batman Movie (2017).",
+      "belief_before": "SEEKER wants a fun all-ages movie and has asked for help.",
+      "belief_update": "Recommender proposes The Lego Batman Movie as a candidate.",
+      "belief_after": "SEEKER has one suggested movie to evaluate. Preference details still limited to 'fun for all ages.'",
+      "emotion": "curious/evaluating",
+      "intention": "assess whether the suggestion fits",
+      "conversational_goal": "respond with fit or further preferences"
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: I like things like The Parent Trap (1998)...the kids enjoyed it too....maybe something not animated",
+      "belief_before": "Lego Batman is a candidate, but SEEKER has not yet clarified genre/animation preferences.",
+      "belief_update": "SEEKER adds preferences: likes The Parent Trap, kids enjoyed it, prefers something not animated. This changes the interpretation of the previous suggestion toward live-action family films.",
+      "belief_after": "Recommender should seek non-animated family movies similar to The Parent Trap.",
+      "emotion": "positive/nostalgic/clarifying",
+      "intention": "guide recommender toward preferred movie type",
+      "conversational_goal": "refine recommendations"
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER suggests Avatar (2009) and The Goonies (1985).",
+      "belief_before": "SEEKER wants non-animated family movie and has referenced The Parent Trap.",
+      "belief_update": "Recommender offers Avatar and The Goonies as family movie options.",
+      "belief_after": "SEEKER has two new candidates to evaluate for all-ages suitability, especially for younger children.",
+      "emotion": "uncertain/considering",
+      "intention": "evaluate the suggestions for family age fit",
+      "conversational_goal": "respond with which suggestions work or do not work"
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says: That one is a litle scary for my littles...oh the Goonies would be good for them I think...I have seen that but not with the family",
+      "belief_before": "Avatar and The Goonies are candidates; SEEKER is evaluating suitability.",
+      "belief_update": "SEEKER rejects Avatar as too scary for little ones, accepts The Goonies as good for the kids, and notes having seen The Goonies but not with family. This adds a scariness constraint for younger children.",
+      "belief_after": "Avatar is unsuitable for the family; The Goonies is acceptable for the kids but is familiar/seen before.",
+      "emotion": "cautious about scary content; positive about The Goonies",
+      "intention": "filter out too-scary options and indicate The Goonies is viable",
+      "conversational_goal": "narrow recommendations to suitable, possibly new, family movies"
+    },
+    {
+      "time": 7,
+      "observed": "RECOMMENDER suggests Harry Potter movies.",
+      "belief_before": "Avatar is rejected due to scare factor; The Goonies is acceptable but already seen; SEEKER still needs suitable all-ages family options.",
+      "belief_update": "Recommender proposes Harry Potter movies as candidates.",
+      "belief_after": "Harry Potter is a new candidate; SEEKER is likely to consider its age suitability for the family.",
+      "emotion": "curious/uncertain",
+      "intention": "evaluate whether Harry Potter is appropriate",
+      "conversational_goal": "decide if Harry Potter fits or ask for clarification"
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER says: I have honestly never seen any of those. Are they good for like 5 and 10 year olds",
+      "belief_before": "Harry Potter movies have been suggested; SEEKER is considering them.",
+      "belief_update": "SEEKER reveals no prior experience with Harry Potter and asks about suitability for ages 5 and 10.",
+      "belief_after": "SEEKER needs recommender's judgment on whether Harry Potter is good for a 5- and 10-year-old.",
+      "emotion": "curious/cautious",
+      "intention": "ask for age-appropriateness guidance",
+      "conversational_goal": "determine if Harry Potter fits the family's age range"
+    },
+    {
+      "time": 9,
+      "observed": "RECOMMENDER says: Lemony Snicket's A Series of Unfortunate Events (2004) is good. or Alice in Wonderland (2005) ....10 yo, yes, I'm not sure about 5 y.o.",
+      "belief_before": "SEEKER asked whether Harry Potter is good for 5 and 10 year olds.",
+      "belief_update": "Recommender adds Lemony Snicket's A Series of Unfortunate Events and Alice in Wonderland and gives an age caveat: 10-year-old yes, 5-year-old uncertain.",
+      "belief_after": "SEEKER has new candidates with an explicit concern about suitability for the 5-year-old.",
+      "emotion": "thoughtful/uncertain",
+      "intention": "evaluate new suggestions for both ages",
+      "conversational_goal": "choose a movie that works for a 5- and 10-year-old"
+    },
+    {
+      "time": 10,
+      "observed": "SEEKER says: those sound good too. Alice is probably a bit creepy for 5 but others are good thanks",
+      "belief_before": "Lemony Snicket and Alice in Wonderland are candidates; 5-year-old suitability is uncertain.",
+      "belief_update": "SEEKER says the suggestions sound good, rejects Alice as probably creepy for a 5-year-old, and accepts the others with thanks.",
+      "belief_after": "SEEKER is satisfied with the other suggestions and is ready to conclude the recommendation search.",
+      "emotion": "appreciative/decisive",
+      "intention": "accept recommendations and close the interaction",
+      "conversational_goal": "wrap up and thank the recommender"
+    },
+    {
+      "time": 11,
+      "observed": "RECOMMENDER says: you're welcome.",
+      "belief_before": "SEEKER has thanked the recommender after accepting suitable suggestions.",
+      "belief_update": "Recommender acknowledges the thanks.",
+      "belief_after": "The exchange is complete.",
+      "emotion": "satisfied/thankful",
+      "intention": "end the conversation",
+      "conversational_goal": "closure"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi.\",\n    \"belief_before\": \"No prior dialogue context; SEEKER has no movie request stated yet.\",\n    \"belief_update\": \"Other speaker has initiated contact with a greeting.\",\n    \"belief_after\": \"SEEKER is aware the other speaker is present and opening a conversation.\",\n    \"emotion\": \"neutral/attentive\",\n    \"intention\": \"respond to greeting or engage\",\n    \"conversational_goal\": \"acknowledge greeting and begin interaction\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: hi...want to help me find a fun movie for all ages?\",\n    \"belief_before\": \"Recommender has greeted; task not yet established.\",\n    \"belief_update\": \"SEEKER establishes request: help finding a fun movie suitable for all ages.\",\n    \"belief_after\": \"Recommender may assist in finding a fun all-ages movie.\",\n    \"emotion\": \"friendly/hopeful\",\n    \"intention\": \"request recommendations\",\n    \"conversational_goal\": \"get family-friendly/all-ages movie suggestions\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER suggests The Lego Batman Movie (2017).\",\n    \"belief_before\": \"SEEKER wants a fun all-ages movie and has asked for help.\",\n    \"belief_update\": \"Recommender proposes The Lego Batman Movie as a candidate.\",\n    \"belief_after\": \"SEEKER has one suggested movie to evaluate. Preference details still limited to 'fun for all ages.'\",\n    \"emotion\": \"curious/evaluating\",\n    \"intention\": \"assess whether the suggestion fits\",\n    \"conversational_goal\": \"respond with fit or further preferences\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: I like things like The Parent Trap (1998)...the kids enjoyed it too....maybe something not animated\",\n    \"belief_before\": \"Lego Batman is a candidate, but SEEKER has not yet clarified genre/animation preferences.\",\n    \"belief_update\": \"SEEKER adds preferences: likes The Parent Trap, kids enjoyed it, prefers something not animated. This changes the interpretation of the previous suggestion toward live-action family films.\",\n    \"belief_after\": \"Recommender should seek non-animated family movies similar to The Parent Trap.\",\n    \"emotion\": \"positive/nostalgic/clarifying\",\n    \"intention\": \"guide recommender toward preferred movie type\",\n    \"conversational_goal\": \"refine recommendations\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER suggests Avatar (2009) and The Goonies (1985).\",\n    \"belief_before\": \"SEEKER wants non-animated family movie and has referenced The Parent Trap.\",\n    \"belief_update\": \"Recommender offers Avatar and The Goonies as family movie options.\",\n    \"belief_after\": \"SEEKER has two new candidates to evaluate for all-ages suitability, especially for younger children.\",\n    \"emotion\": \"uncertain/considering\",\n    \"intention\": \"evaluate the suggestions for family age fit\",\n    \"conversational_goal\": \"respond with which suggestions work or do not work\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says: That one is a litle scary for my littles...oh the Goonies would be good for them I think...I have seen that but not with the family\",\n    \"belief_before\": \"Avatar and The Goonies are candidates; SEEKER is evaluating suitability.\",\n    \"belief_update\": \"SEEKER rejects Avatar as too scary for little ones, accepts The Goonies as good for the kids, and notes having seen The Goonies but not with family. This adds a scariness constraint for younger children.\",\n    \"belief_after\": \"Avatar is unsuitable for the family; The Goonies is acceptable for the kids but is familiar/seen before.\",\n    \"emotion\": \"cautious about scary content; positive about The Goonies\",\n    \"intention\": \"filter out too-scary options and indicate The Goonies is viable\",\n    \"conversational_goal\": \"narrow recommendations to suitable, possibly new, family movies\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"RECOMMENDER suggests Harry Potter movies.\",\n    \"belief_before\": \"Avatar is rejected due to scare factor; The Goonies is acceptable but already seen; SEEKER still needs suitable all-ages family options.\",\n    \"belief_update\": \"Recommender proposes Harry Potter movies as candidates.\",\n    \"belief_after\": \"Harry Potter is a new candidate; SEEKER is likely to consider its age suitability for the family.\",\n    \"emotion\": \"curious/uncertain\",\n    \"intention\": \"evaluate whether Harry Potter is appropriate\",\n    \"conversational_goal\": \"decide if Harry Potter fits or ask for clarification\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER says: I have honestly never seen any of those. Are they good for like 5 and 10 year olds\",\n    \"belief_before\": \"Harry Potter movies have been suggested; SEEKER is considering them.\",\n    \"belief_update\": \"SEEKER reveals no prior experience with Harry Potter and asks about suitability for ages 5 and 10.\",\n    \"belief_after\": \"SEEKER needs recommender's judgment on whether Harry Potter is good for a 5- and 10-year-old.\",\n    \"emotion\": \"curious/cautious\",\n    \"intention\": \"ask for age-appropriateness guidance\",\n    \"conversational_goal\": \"determine if Harry Potter fits the family's age range\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"RECOMMENDER says: Lemony Snicket's A Series of Unfortunate Events (2004) is good. or Alice in Wonderland (2005) ....10 yo, yes, I'm not sure about 5 y.o.\",\n    \"belief_before\": \"SEEKER asked whether Harry Potter is good for 5 and 10 year olds.\",\n    \"belief_update\": \"Recommender adds Lemony Snicket's A Series of Unfortunate Events and Alice in Wonderland and gives an age caveat: 10-year-old yes, 5-year-old uncertain.\",\n    \"belief_after\": \"SEEKER has new candidates with an explicit concern about suitability for the 5-year-old.\",\n    \"emotion\": \"thoughtful/uncertain\",\n    \"intention\": \"evaluate new suggestions for both ages\",\n    \"conversational_goal\": \"choose a movie that works for a 5- and 10-year-old\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"SEEKER says: those sound good too. Alice is probably a bit creepy for 5 but others are good thanks\",\n    \"belief_before\": \"Lemony Snicket and Alice in Wonderland are candidates; 5-year-old suitability is uncertain.\",\n    \"belief_update\": \"SEEKER says the suggestions sound good, rejects Alice as probably creepy for a 5-year-old, and accepts the others with thanks.\",\n    \"belief_after\": \"SEEKER is satisfied with the other suggestions and is ready to conclude the recommendation search.\",\n    \"emotion\": \"appreciative/decisive\",\n    \"intention\": \"accept recommendations and close the interaction\",\n    \"conversational_goal\": \"wrap up and thank the recommender\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"RECOMMENDER says: you're welcome.\",\n    \"belief_before\": \"SEEKER has thanked the recommender after accepting suitable suggestions.\",\n    \"belief_update\": \"Recommender acknowledges the thanks.\",\n    \"belief_after\": \"The exchange is complete.\",\n    \"emotion\": \"satisfied/thankful\",\n    \"intention\": \"end the conversation\",\n    \"conversational_goal\": \"closure\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

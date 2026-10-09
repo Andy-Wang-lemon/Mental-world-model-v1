@@ -1,0 +1,61 @@
+{
+  "id": "4_pred_seeker__0173_d2630_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets and asks what genre SEEKER likes.",
+      "belief_before": "No prior beliefs about this recommender or conversation.",
+      "belief_update": "Recommender wants to know SEEKER's genre preference.",
+      "belief_after": "Recommender is soliciting a genre preference to guide recommendations.",
+      "emotion": "neutral, attentive",
+      "intention": "respond to the genre question",
+      "conversational_goal": "provide a genre preference so the recommender can suggest something",
+      "information_available": "Recommender's greeting and question; no genre preference has been revealed yet.",
+      "preferences": "not yet disclosed in dialogue; target may have internal preferences but none are stated at this turn.",
+      "reaction": "receptive and ready to answer",
+      "changes_previous_interpretation": "N/A (first turn)"
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER states: 'I like dramas.'",
+      "belief_before": "Recommender wants to know SEEKER's genre preference.",
+      "belief_update": "SEEKER has disclosed a preference for dramas.",
+      "belief_after": "Recommender now knows SEEKER likes dramas.",
+      "emotion": "cooperative, straightforward",
+      "intention": "inform the recommender of preferred genre",
+      "conversational_goal": "guide the recommender toward drama recommendations",
+      "information_available": "Recommender has asked for genre; SEEKER has now provided 'dramas'.",
+      "preferences": "likes dramas",
+      "reaction": "answers directly and helpfully",
+      "changes_previous_interpretation": "Updates the earlier unknown preference with an explicit preference for dramas; does not alter the recommender's request."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks if SEEKER has seen Rumpelstiltskin (1995), says it is more of a horror movie, and asks if SEEKER likes horror.",
+      "belief_before": "Recommender knows SEEKER likes dramas.",
+      "belief_update": "Recommender is now mentioning a horror film and asking about horror preference.",
+      "belief_after": "Recommender may be considering horror recommendations despite SEEKER's stated drama preference; recommender wants to know SEEKER's stance on horror.",
+      "emotion": "slightly puzzled or cautious, but still neutral/attentive",
+      "intention": "respond to the horror question and clarify whether horror fits SEEKER's tastes",
+      "conversational_goal": "answer the horror question while keeping the recommendation aligned with drama preference if horror is not liked",
+      "information_available": "Recommender asks about Rumpelstiltskin (1995), identifies it as horror, and asks if SEEKER likes horror.",
+      "preferences": "likes dramas; horror preference is not yet disclosed in dialogue.",
+      "reaction": "attentive; may find the shift from drama to horror unexpected",
+      "changes_previous_interpretation": "Adds a new horror probe and a possible horror recommendation; it does not change the earlier drama preference but updates the belief about the recommender's current focus."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets and asks what genre SEEKER likes.\",\n    \"belief_before\": \"No prior beliefs about this recommender or conversation.\",\n    \"belief_update\": \"Recommender wants to know SEEKER's genre preference.\",\n    \"belief_after\": \"Recommender is soliciting a genre preference to guide recommendations.\",\n    \"emotion\": \"neutral, attentive\",\n    \"intention\": \"respond to the genre question\",\n    \"conversational_goal\": \"provide a genre preference so the recommender can suggest something\",\n    \"information_available\": \"Recommender's greeting and question; no genre preference has been revealed yet.\",\n    \"preferences\": \"not yet disclosed in dialogue; target may have internal preferences but none are stated at this turn.\",\n    \"reaction\": \"receptive and ready to answer\",\n    \"changes_previous_interpretation\": \"N/A (first turn)\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER states: 'I like dramas.'\",\n    \"belief_before\": \"Recommender wants to know SEEKER's genre preference.\",\n    \"belief_update\": \"SEEKER has disclosed a preference for dramas.\",\n    \"belief_after\": \"Recommender now knows SEEKER likes dramas.\",\n    \"emotion\": \"cooperative, straightforward\",\n    \"intention\": \"inform the recommender of preferred genre\",\n    \"conversational_goal\": \"guide the recommender toward drama recommendations\",\n    \"information_available\": \"Recommender has asked for genre; SEEKER has now provided 'dramas'.\",\n    \"preferences\": \"likes dramas\",\n    \"reaction\": \"answers directly and helpfully\",\n    \"changes_previous_interpretation\": \"Updates the earlier unknown preference with an explicit preference for dramas; does not alter the recommender's request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks if SEEKER has seen Rumpelstiltskin (1995), says it is more of a horror movie, and asks if SEEKER likes horror.\",\n    \"belief_before\": \"Recommender knows SEEKER likes dramas.\",\n    \"belief_update\": \"Recommender is now mentioning a horror film and asking about horror preference.\",\n    \"belief_after\": \"Recommender may be considering horror recommendations despite SEEKER's stated drama preference; recommender wants to know SEEKER's stance on horror.\",\n    \"emotion\": \"slightly puzzled or cautious, but still neutral/attentive\",\n    \"intention\": \"respond to the horror question and clarify whether horror fits SEEKER's tastes\",\n    \"conversational_goal\": \"answer the horror question while keeping the recommendation aligned with drama preference if horror is not liked\",\n    \"information_available\": \"Recommender asks about Rumpelstiltskin (1995), identifies it as horror, and asks if SEEKER likes horror.\",\n    \"preferences\": \"likes dramas; horror preference is not yet disclosed in dialogue.\",\n    \"reaction\": \"attentive; may find the shift from drama to horror unexpected\",\n    \"changes_previous_interpretation\": \"Adds a new horror probe and a possible horror recommendation; it does not change the earlier drama preference but updates the belief about the recommender's current focus.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "a",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

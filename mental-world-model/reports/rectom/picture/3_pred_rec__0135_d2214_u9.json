@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0135_d2214_u9",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows these facts from the dialogue:\n\n- SEEKER wants a movie similar to *Alien* (1979) or *Halloween* (1978).\n- SEEKER loved the *A Nightmare on Elm Street* (1984) series.\n- SEEKER watched the *Friday the 13th* (1980) series but was not very into it.\n- SEEKER found *The Thing* (1982) fun and also found *The Blob* (1988) fun.\n- RECOMMENDER has not seen *The Blob* (1988).\n- RECOMMENDER recommended *Life* (2017).\n- SEEKER has not seen *Life* (2017) yet.\n- SEEKER liked *Happy Death Day* (2017).\n\nRECOMMENDER does **not** know:\n- Whether SEEKER would like *Life* (2017).\n- What specifically SEEKER liked about *Happy Death Day* (2017).\n- Whether RECOMMENDER has seen *Happy Death Day* (2017), unless stated elsewhere.\n- Why exactly SEEKER was not into *Friday the 13th* beyond “not as much.”\n- Other movies SEEKER has seen, liked, or disliked.\n\nGiven the prior pattern, RECOMMENDER has been consistently continuing the recommendation process by asking about or suggesting another movie after each SEEKER response. The last SEEKER turn provides a new preference, *Happy Death Day* (2017), and says they have not seen *Life*. The most likely next move is to keep recommending, either by directly suggesting another movie or by asking whether SEEKER has seen one. That corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

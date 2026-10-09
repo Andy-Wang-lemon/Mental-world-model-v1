@@ -1,0 +1,61 @@
+{
+  "id": "3_pred_rec__0139_d2245_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017) but it isn't on Amazon yet.",
+      "information_available": "SEEKER wants a comedy movie recommendation; specifically wants A Bad Moms Christmas; it is unavailable on Amazon. No information yet about what SEEKER has already seen.",
+      "preferences": "RECOMMENDER has not expressed preferences yet. From SEEKER: likes/wants comedy, especially A Bad Moms Christmas.",
+      "belief_before": "No prior context about SEEKER's tastes or viewing history.",
+      "belief_update": "SEEKER is looking for a comedy and cannot access A Bad Moms Christmas on Amazon.",
+      "belief_after": "SEEKER would likely welcome a comedy suggestion available on Amazon or similar to A Bad Moms Christmas.",
+      "emotion": "Friendly/helpful; responsive to greeting.",
+      "intention": "Identify and offer comedy movies that might satisfy SEEKER.",
+      "reaction": "Positive/friendly response to SEEKER's request.",
+      "conversational_goal": "Provide useful comedy recommendations.",
+      "interpretation_change": "Initial interpretation; no previous turn to revise."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER: Girls Trip (2017) was funny so was Baywatch (2017).",
+      "information_available": "SEEKER wants comedy; A Bad Moms Christmas unavailable on Amazon. RECOMMENDER knows two comedies and thinks they are funny.",
+      "preferences": "RECOMMENDER found Girls Trip and Baywatch funny and is recommending them.",
+      "belief_before": "SEEKER wants a comedy and may not have seen these options.",
+      "belief_update": "RECOMMENDER treats Girls Trip and Baywatch as viable comedy suggestions.",
+      "belief_after": "Girls Trip and Baywatch are appropriate options to offer SEEKER.",
+      "emotion": "Helpful, positive, casual.",
+      "intention": "Recommend comedies that RECOMMENDER enjoyed.",
+      "reaction": "Responsive to SEEKER's request; offers suggestions.",
+      "conversational_goal": "Satisfy SEEKER's request for comedy movie suggestions.",
+      "interpretation_change": "No revision; adds RECOMMENDER's own preferences and suggestions."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch (2017) . I heard that it received bad reviews.",
+      "information_available": "SEEKER has already seen and liked Girls Trip; has not seen Baywatch; has heard Baywatch received bad reviews. Girls Trip is no longer a new recommendation, and Baywatch may be a hard sell.",
+      "preferences": "SEEKER likes Girls Trip/funny comedies; is skeptical of Baywatch due to bad reviews.",
+      "belief_before": "RECOMMENDER believed Girls Trip and Baywatch were good comedy suggestions for SEEKER.",
+      "belief_update": "Learns Girls Trip is already seen and liked; Baywatch is unseen but has a negative reputation for SEEKER.",
+      "belief_after": "Girls Trip is no longer useful as a new suggestion; Baywatch may not be accepted; RECOMMENDER should adjust, defend, or offer another comedy.",
+      "emotion": "Mildly deflated/uncertain, but positive about shared enjoyment of Girls Trip.",
+      "intention": "Acknowledge SEEKER's feedback and perhaps pivot to another recommendation or address Baywatch reviews.",
+      "reaction": "Appreciates that SEEKER liked Girls Trip; notes SEEKER's skepticism about Baywatch.",
+      "conversational_goal": "Maintain helpfulness by finding a comedy SEEKER has not seen and would likely enjoy.",
+      "interpretation_change": "Yes: previous suggestions are partially invalidated—Girls Trip already seen, Baywatch less attractive."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017) but it isn't on Amazon yet.\",\n    \"information_available\": \"SEEKER wants a comedy movie recommendation; specifically wants A Bad Moms Christmas; it is unavailable on Amazon. No information yet about what SEEKER has already seen.\",\n    \"preferences\": \"RECOMMENDER has not expressed preferences yet. From SEEKER: likes/wants comedy, especially A Bad Moms Christmas.\",\n    \"belief_before\": \"No prior context about SEEKER's tastes or viewing history.\",\n    \"belief_update\": \"SEEKER is looking for a comedy and cannot access A Bad Moms Christmas on Amazon.\",\n    \"belief_after\": \"SEEKER would likely welcome a comedy suggestion available on Amazon or similar to A Bad Moms Christmas.\",\n    \"emotion\": \"Friendly/helpful; responsive to greeting.\",\n    \"intention\": \"Identify and offer comedy movies that might satisfy SEEKER.\",\n    \"reaction\": \"Positive/friendly response to SEEKER's request.\",\n    \"conversational_goal\": \"Provide useful comedy recommendations.\",\n    \"interpretation_change\": \"Initial interpretation; no previous turn to revise.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER: Girls Trip (2017) was funny so was Baywatch (2017).\",\n    \"information_available\": \"SEEKER wants comedy; A Bad Moms Christmas unavailable on Amazon. RECOMMENDER knows two comedies and thinks they are funny.\",\n    \"preferences\": \"RECOMMENDER found Girls Trip and Baywatch funny and is recommending them.\",\n    \"belief_before\": \"SEEKER wants a comedy and may not have seen these options.\",\n    \"belief_update\": \"RECOMMENDER treats Girls Trip and Baywatch as viable comedy suggestions.\",\n    \"belief_after\": \"Girls Trip and Baywatch are appropriate options to offer SEEKER.\",\n    \"emotion\": \"Helpful, positive, casual.\",\n    \"intention\": \"Recommend comedies that RECOMMENDER enjoyed.\",\n    \"reaction\": \"Responsive to SEEKER's request; offers suggestions.\",\n    \"conversational_goal\": \"Satisfy SEEKER's request for comedy movie suggestions.\",\n    \"interpretation_change\": \"No revision; adds RECOMMENDER's own preferences and suggestions.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch (2017) . I heard that it received bad reviews.\",\n    \"information_available\": \"SEEKER has already seen and liked Girls Trip; has not seen Baywatch; has heard Baywatch received bad reviews. Girls Trip is no longer a new recommendation, and Baywatch may be a hard sell.\",\n    \"preferences\": \"SEEKER likes Girls Trip/funny comedies; is skeptical of Baywatch due to bad reviews.\",\n    \"belief_before\": \"RECOMMENDER believed Girls Trip and Baywatch were good comedy suggestions for SEEKER.\",\n    \"belief_update\": \"Learns Girls Trip is already seen and liked; Baywatch is unseen but has a negative reputation for SEEKER.\",\n    \"belief_after\": \"Girls Trip is no longer useful as a new suggestion; Baywatch may not be accepted; RECOMMENDER should adjust, defend, or offer another comedy.\",\n    \"emotion\": \"Mildly deflated/uncertain, but positive about shared enjoyment of Girls Trip.\",\n    \"intention\": \"Acknowledge SEEKER's feedback and perhaps pivot to another recommendation or address Baywatch reviews.\",\n    \"reaction\": \"Appreciates that SEEKER liked Girls Trip; notes SEEKER's skepticism about Baywatch.\",\n    \"conversational_goal\": \"Maintain helpfulness by finding a comedy SEEKER has not seen and would likely enjoy.\",\n    \"interpretation_change\": \"Yes: previous suggestions are partially invalidated—Girls Trip already seen, Baywatch less attractive.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

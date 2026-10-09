@@ -1,0 +1,123 @@
+{
+  "id": "3_pred_rec__0015_d895_u8",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets and asks the seeker to name some favorite movies so the recommender can suggest something.",
+      "preferences": "Recommender has no information yet about the seeker's preferences; recommender's own preferences are not yet stated.",
+      "belief_before": "No prior context: the seeker's tastes are unknown.",
+      "belief_update": "No new information about the seeker; recommender initiates information gathering.",
+      "belief_after": "Seeker's tastes are unknown; recommender needs favorite movies to make a useful suggestion.",
+      "emotion": "Friendly, enthusiastic, open.",
+      "intention": "Elicit favorite movies so recommendations can be tailored.",
+      "reaction": "Not applicable; recommender initiates the conversation.",
+      "conversational_goal": "Get enough preference data to recommend a movie.",
+      "change_previous_interpretation": "None; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says they enjoyed Lost in Translation (2003) with Bill Murray and likes Aliens (1986) and Alien: Covenant (2017).",
+      "preferences": "Seeker likes Lost in Translation, Bill Murray, Aliens, and Alien: Covenant; recommender's own preferences still not clearly stated.",
+      "belief_before": "Seeker's tastes are unknown.",
+      "belief_update": "Learns seeker likes a Bill Murray drama and the Alien/sci-fi-horror franchise.",
+      "belief_after": "Seeker likely appreciates Bill Murray, sci-fi/horror, and the Alien franchise; may be open to dark, indie, or genre films.",
+      "emotion": "Interested, encouraged.",
+      "intention": "Use these titles to generate candidate suggestions and probe overlap.",
+      "reaction": "Positive; seeker provided useful, specific favorites.",
+      "conversational_goal": "Acknowledge taste and move toward recommending similar or adjacent films.",
+      "change_previous_interpretation": "Yes; replaces unknown tastes with concrete favorite titles and genres."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says 'That was a good one,' asks whether the seeker saw The Truman Show (1998) or Rushmore (1998), and says they liked the first Alien but did not see the sequel.",
+      "preferences": "Recommender likes the first Alien and did not see the sequel; seeker is known to like Lost in Translation, Aliens, and Alien: Covenant.",
+      "belief_before": "Seeker likes Lost in Translation, Aliens, and Alien: Covenant; Bill Murray and Alien are useful hooks.",
+      "belief_update": "Recommender probes Truman Show/Rushmore as Bill Murray/Rushmore-adjacent options and reveals their own Alien preference.",
+      "belief_after": "Seeker may have seen Truman Show/Rushmore; need confirmation before recommending them. Recommender's own taste includes the first Alien.",
+      "emotion": "Enthusiastic, validating, curious.",
+      "intention": "Check seen status and build rapport by sharing own preferences.",
+      "reaction": "Positive toward seeker's taste; validates the previous answer.",
+      "conversational_goal": "Narrow the candidate space by checking whether the seeker has already seen likely matches.",
+      "change_previous_interpretation": "No change about the seeker's known favorites; adds recommender's own preference and a seen-status probe."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says 'Yes and yes! I have both on dvd,' meaning they have seen and own The Truman Show and Rushmore.",
+      "preferences": "Seeker has seen and owns The Truman Show and Rushmore; previously likes Lost in Translation, Aliens, and Alien: Covenant.",
+      "belief_before": "Recommender is uncertain whether the seeker has seen The Truman Show and Rushmore.",
+      "belief_update": "Learns the seeker has seen and owns both films.",
+      "belief_after": "The Truman Show and Rushmore are not viable 'new' recommendations; seeker appears to have broad film knowledge and ownership.",
+      "emotion": "Pleased, impressed, encouraged.",
+      "intention": "Avoid recommending seen titles and move toward fresh options.",
+      "reaction": "Positive toward the seeker's enthusiastic confirmation.",
+      "conversational_goal": "Find recommendations the seeker has not already seen.",
+      "change_previous_interpretation": "Yes; rules out The Truman Show and Rushmore as unseen recommendations."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says 'Awesome! ok, how about @the big lebowski or something like Total Recall (2012) or even Pulp Fiction (1994) ...Trying to give you a lot to choose from across genres...oops The Big Lebowski.'",
+      "preferences": "Recommender aims to offer variety across genres; seeker preferences known so far include Lost in Translation, Aliens, Alien: Covenant, and ownership of Truman Show/Rushmore.",
+      "belief_before": "Seeker has seen Truman Show/Rushmore; recommender needs new or unseen options.",
+      "belief_update": "Recommender proposes The Big Lebowski, Total Recall (2012), and Pulp Fiction as varied candidates, then corrects the title typo.",
+      "belief_after": "Awaiting seeker's reaction to these three options; no new information about the seeker from this turn itself.",
+      "emotion": "Enthusiastic, playful, slightly flustered by the typo.",
+      "intention": "Offer a broad menu of genres to find a good match.",
+      "reaction": "Positive to the seeker's previous confirmation ('Awesome!').",
+      "conversational_goal": "Present multiple viable recommendations and get feedback.",
+      "change_previous_interpretation": "No new belief about the seeker; shifts from probing seen-status to offering candidates."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says Pulp Fiction was good, did not like the new Total Recall because it was lacking something, and The Big Lebowski was good.",
+      "preferences": "Seeker likes Pulp Fiction and The Big Lebowski; dislikes Total Recall (2012); previously likes Lost in Translation, Aliens, Alien: Covenant; owns Truman Show/Rushmore.",
+      "belief_before": "Seeker's reactions to The Big Lebowski, Total Recall (2012), and Pulp Fiction are unknown.",
+      "belief_update": "Learns seeker liked Pulp Fiction and The Big Lebowski, disliked Total Recall (2012), with a vague reason.",
+      "belief_after": "Seeker likes crime/indie/Coen-style films such as Pulp Fiction and Lebowski; dislikes the Total Recall remake; may prefer originals or films with stronger substance.",
+      "emotion": "Mixed but mostly positive; thoughtful about the vague dislike.",
+      "intention": "Use feedback to refine next recommendations and avoid the disliked remake.",
+      "reaction": "Appreciates the feedback; notes the 'can't put my finger on it' as unclear but useful.",
+      "conversational_goal": "Refine the recommendation model based on liked and disliked titles.",
+      "change_previous_interpretation": "Yes; updates candidate outcomes with two likes and one dislike, narrowing the genre direction."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says they liked the original Total Recall better too, wants to find something the seeker has not seen, and suggests Reservoir Dogs (1992) or To Die For (1989).",
+      "preferences": "Recommender prefers the original Total Recall over the 2012 remake; seeker likes Pulp Fiction, The Big Lebowski, Lost in Translation, Aliens, Alien: Covenant; dislikes Total Recall 2012.",
+      "belief_before": "Seeker likes Pulp Fiction and The Big Lebowski and dislikes Total Recall 2012; recommender needs an unseen film.",
+      "belief_update": "Recommender aligns with the seeker on the Total Recall original and proposes Reservoir Dogs and To Die For as unseen candidates.",
+      "belief_after": "Recommender expects at least one of Reservoir Dogs or To Die For may be new and awaits seen-status or feedback.",
+      "emotion": "Thoughtful, determined, agreeable.",
+      "intention": "Find a film the seeker has not seen and match their crime/indie taste.",
+      "reaction": "Agrees with the seeker about the Total Recall remake; shares preference for the original.",
+      "conversational_goal": "Offer unseen options, especially in the crime/indie vein, and check whether they work.",
+      "change_previous_interpretation": "Yes; shifts the plan explicitly to 'something you haven't seen yet' after the previous feedback."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says 'lol seen it' after Reservoir Dogs and To Die For were suggested.",
+      "preferences": "Seeker has seen at least one of Reservoir Dogs or To Die For; the exact referent is ambiguous, though it likely points to the more salient/first suggestion Reservoir Dogs or possibly both.",
+      "belief_before": "Recommender thought Reservoir Dogs and To Die For might be unseen options.",
+      "belief_update": "Learns at least one suggested title is already seen; if 'it' refers to Reservoir Dogs, To Die For remains uncertain.",
+      "belief_after": "Recommender cannot rely on at least one of those titles as a new recommendation; seeker has broad seen coverage and may be hard to surprise.",
+      "emotion": "Amused by 'lol,' mildly challenged or frustrated but still playful.",
+      "intention": "Acknowledge and continue searching for an unseen film.",
+      "reaction": "Takes the laugh as friendly; recognizes the need to adjust again.",
+      "conversational_goal": "Find a genuinely unseen recommendation despite repeated misses.",
+      "change_previous_interpretation": "Yes; invalidates at least one proposed unseen option, weakening the previous plan to offer Reservoir Dogs or To Die For."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets and asks the seeker to name some favorite movies so the recommender can suggest something.\",\n    \"preferences\": \"Recommender has no information yet about the seeker's preferences; recommender's own preferences are not yet stated.\",\n    \"belief_before\": \"No prior context: the seeker's tastes are unknown.\",\n    \"belief_update\": \"No new information about the seeker; recommender initiates information gathering.\",\n    \"belief_after\": \"Seeker's tastes are unknown; recommender needs favorite movies to make a useful suggestion.\",\n    \"emotion\": \"Friendly, enthusiastic, open.\",\n    \"intention\": \"Elicit favorite movies so recommendations can be tailored.\",\n    \"reaction\": \"Not applicable; recommender initiates the conversation.\",\n    \"conversational_goal\": \"Get enough preference data to recommend a movie.\",\n    \"change_previous_interpretation\": \"None; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says they enjoyed Lost in Translation (2003) with Bill Murray and likes Aliens (1986) and Alien: Covenant (2017).\",\n    \"preferences\": \"Seeker likes Lost in Translation, Bill Murray, Aliens, and Alien: Covenant; recommender's own preferences still not clearly stated.\",\n    \"belief_before\": \"Seeker's tastes are unknown.\",\n    \"belief_update\": \"Learns seeker likes a Bill Murray drama and the Alien/sci-fi-horror franchise.\",\n    \"belief_after\": \"Seeker likely appreciates Bill Murray, sci-fi/horror, and the Alien franchise; may be open to dark, indie, or genre films.\",\n    \"emotion\": \"Interested, encouraged.\",\n    \"intention\": \"Use these titles to generate candidate suggestions and probe overlap.\",\n    \"reaction\": \"Positive; seeker provided useful, specific favorites.\",\n    \"conversational_goal\": \"Acknowledge taste and move toward recommending similar or adjacent films.\",\n    \"change_previous_interpretation\": \"Yes; replaces unknown tastes with concrete favorite titles and genres.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says 'That was a good one,' asks whether the seeker saw The Truman Show (1998) or Rushmore (1998), and says they liked the first Alien but did not see the sequel.\",\n    \"preferences\": \"Recommender likes the first Alien and did not see the sequel; seeker is known to like Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"belief_before\": \"Seeker likes Lost in Translation, Aliens, and Alien: Covenant; Bill Murray and Alien are useful hooks.\",\n    \"belief_update\": \"Recommender probes Truman Show/Rushmore as Bill Murray/Rushmore-adjacent options and reveals their own Alien preference.\",\n    \"belief_after\": \"Seeker may have seen Truman Show/Rushmore; need confirmation before recommending them. Recommender's own taste includes the first Alien.\",\n    \"emotion\": \"Enthusiastic, validating, curious.\",\n    \"intention\": \"Check seen status and build rapport by sharing own preferences.\",\n    \"reaction\": \"Positive toward seeker's taste; validates the previous answer.\",\n    \"conversational_goal\": \"Narrow the candidate space by checking whether the seeker has already seen likely matches.\",\n    \"change_previous_interpretation\": \"No change about the seeker's known favorites; adds recommender's own preference and a seen-status probe.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says 'Yes and yes! I have both on dvd,' meaning they have seen and own The Truman Show and Rushmore.\",\n    \"preferences\": \"Seeker has seen and owns The Truman Show and Rushmore; previously likes Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"belief_before\": \"Recommender is uncertain whether the seeker has seen The Truman Show and Rushmore.\",\n    \"belief_update\": \"Learns the seeker has seen and owns both films.\",\n    \"belief_after\": \"The Truman Show and Rushmore are not viable 'new' recommendations; seeker appears to have broad film knowledge and ownership.\",\n    \"emotion\": \"Pleased, impressed, encouraged.\",\n    \"intention\": \"Avoid recommending seen titles and move toward fresh options.\",\n    \"reaction\": \"Positive toward the seeker's enthusiastic confirmation.\",\n    \"conversational_goal\": \"Find recommendations the seeker has not already seen.\",\n    \"change_previous_interpretation\": \"Yes; rules out The Truman Show and Rushmore as unseen recommendations.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says 'Awesome! ok, how about @the big lebowski or something like Total Recall (2012) or even Pulp Fiction (1994) ...Trying to give you a lot to choose from across genres...oops The Big Lebowski.'\",\n    \"preferences\": \"Recommender aims to offer variety across genres; seeker preferences known so far include Lost in Translation, Aliens, Alien: Covenant, and ownership of Truman Show/Rushmore.\",\n    \"belief_before\": \"Seeker has seen Truman Show/Rushmore; recommender needs new or unseen options.\",\n    \"belief_update\": \"Recommender proposes The Big Lebowski, Total Recall (2012), and Pulp Fiction as varied candidates, then corrects the title typo.\",\n    \"belief_after\": \"Awaiting seeker's reaction to these three options; no new information about the seeker from this turn itself.\",\n    \"emotion\": \"Enthusiastic, playful, slightly flustered by the typo.\",\n    \"intention\": \"Offer a broad menu of genres to find a good match.\",\n    \"reaction\": \"Positive to the seeker's previous confirmation ('Awesome!').\",\n    \"conversational_goal\": \"Present multiple viable recommendations and get feedback.\",\n    \"change_previous_interpretation\": \"No new belief about the seeker; shifts from probing seen-status to offering candidates.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says Pulp Fiction was good, did not like the new Total Recall because it was lacking something, and The Big Lebowski was good.\",\n    \"preferences\": \"Seeker likes Pulp Fiction and The Big Lebowski; dislikes Total Recall (2012); previously likes Lost in Translation, Aliens, Alien: Covenant; owns Truman Show/Rushmore.\",\n    \"belief_before\": \"Seeker's reactions to The Big Lebowski, Total Recall (2012), and Pulp Fiction are unknown.\",\n    \"belief_update\": \"Learns seeker liked Pulp Fiction and The Big Lebowski, disliked Total Recall (2012), with a vague reason.\",\n    \"belief_after\": \"Seeker likes crime/indie/Coen-style films such as Pulp Fiction and Lebowski; dislikes the Total Recall remake; may prefer originals or films with stronger substance.\",\n    \"emotion\": \"Mixed but mostly positive; thoughtful about the vague dislike.\",\n    \"intention\": \"Use feedback to refine next recommendations and avoid the disliked remake.\",\n    \"reaction\": \"Appreciates the feedback; notes the 'can't put my finger on it' as unclear but useful.\",\n    \"conversational_goal\": \"Refine the recommendation model based on liked and disliked titles.\",\n    \"change_previous_interpretation\": \"Yes; updates candidate outcomes with two likes and one dislike, narrowing the genre direction.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says they liked the original Total Recall better too, wants to find something the seeker has not seen, and suggests Reservoir Dogs (1992) or To Die For (1989).\",\n    \"preferences\": \"Recommender prefers the original Total Recall over the 2012 remake; seeker likes Pulp Fiction, The Big Lebowski, Lost in Translation, Aliens, Alien: Covenant; dislikes Total Recall 2012.\",\n    \"belief_before\": \"Seeker likes Pulp Fiction and The Big Lebowski and dislikes Total Recall 2012; recommender needs an unseen film.\",\n    \"belief_update\": \"Recommender aligns with the seeker on the Total Recall original and proposes Reservoir Dogs and To Die For as unseen candidates.\",\n    \"belief_after\": \"Recommender expects at least one of Reservoir Dogs or To Die For may be new and awaits seen-status or feedback.\",\n    \"emotion\": \"Thoughtful, determined, agreeable.\",\n    \"intention\": \"Find a film the seeker has not seen and match their crime/indie taste.\",\n    \"reaction\": \"Agrees with the seeker about the Total Recall remake; shares preference for the original.\",\n    \"conversational_goal\": \"Offer unseen options, especially in the crime/indie vein, and check whether they work.\",\n    \"change_previous_interpretation\": \"Yes; shifts the plan explicitly to 'something you haven't seen yet' after the previous feedback.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says 'lol seen it' after Reservoir Dogs and To Die For were suggested.\",\n    \"preferences\": \"Seeker has seen at least one of Reservoir Dogs or To Die For; the exact referent is ambiguous, though it likely points to the more salient/first suggestion Reservoir Dogs or possibly both.\",\n    \"belief_before\": \"Recommender thought Reservoir Dogs and To Die For might be unseen options.\",\n    \"belief_update\": \"Learns at least one suggested title is already seen; if 'it' refers to Reservoir Dogs, To Die For remains uncertain.\",\n    \"belief_after\": \"Recommender cannot rely on at least one of those titles as a new recommendation; seeker has broad seen coverage and may be hard to surprise.\",\n    \"emotion\": \"Amused by 'lol,' mildly challenged or frustrated but still playful.\",\n    \"intention\": \"Acknowledge and continue searching for an unseen film.\",\n    \"reaction\": \"Takes the laugh as friendly; recognizes the need to adjust again.\",\n    \"conversational_goal\": \"Find a genuinely unseen recommendation despite repeated misses.\",\n    \"change_previous_interpretation\": \"Yes; invalidates at least one proposed unseen option, weakening the previous plan to offer Reservoir Dogs or To Die For.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

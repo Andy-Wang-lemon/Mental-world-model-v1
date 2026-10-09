@@ -1,0 +1,65 @@
+数据：4_pred_seeker
+题号：159  d2369_u5
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在 SEEKER 此刻的经验里，RECOMMENDER 说 Sister Act (1992) is good、Sister Act 2 也好、I like both，以及 Madea is really funny，这些片名都作为「本身就好/本身好笑」的对象浮现；但它们同时被放在 SEEKER 自己的口味判断之前，SEEKER 仍保有「我是否也这样觉得」的自主位置，而不是直接把自己的判断让出去。",
+      "probability": 0.3655
+    },
+    {
+      "content": "在 SEEKER 此刻的经验里，RECOMMENDER 说 I like both、Madea is really funny，这些影片作为「本身好/本身好笑」的对象出现；同时「我喜不喜欢这些」被拉进 SEEKER 与 RECOMMENDER 的关系中，成为此刻衡量自己处在哪里的一项自我定位。",
+      "probability": 0.32
+    },
+    {
+      "content": "在 SEEKER 此刻的经验里，RECOMMENDER 的 Hi、Sister Act (1992)、Sister Act 2、Boo! A Madea Halloween 以及「好」「好笑」这些话，是冲着自己来的连续对象：SEEKER 被置于一个由 RECOMMENDER 打招呼并推荐影片的接收位置，落在需要承接这串话的位置上；而这些片名本身也带着「好/好笑」的既定标签。",
+      "probability": 0.3145
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在 SEEKER 此刻的经验里，RECOMMENDER 提到的 Sister Act 系列和 Madea 都先以“本身就好”“本身好笑”的标签浮现，像是影片自带的性质；但 SEEKER 没有把这标签直接当成自己的定论，而是把它放到自己一贯的喜剧口味旁边对照。因为 SEEKER 已经说过自己爱喜剧，并举例 Bridesmaids 和 How to Lose a Guy in 10 Days，所以面对 Sister Act 两部时，他较快能把它认作“看过，两者都是很好的选择”，这既是同意对方的说法，也仍是从自己的观看经验里确认；而对 Madea，他更可能先收下“对方觉得好笑”这一点，把“我是否也觉得好笑”留在自己这里，不急着让出评价权。整体趋向是：把这些片名纳入自己可谈的喜剧范围，同时保留按自己标准再判断的余地。",
+      "activation": 0.362
+    },
+    {
+      "content": "RECOMMENDER 的 Hi 与接连报出的片名，在 SEEKER 这里被收成一串向自己递来的话：他感到自己正被放在对方招呼和推荐影片的接收位置上，需要接住。Sister Act 两部与 Madea 一并带着对方所说的“好”“好笑”，像已经贴好的标签，使他倾向把这些片子预先归入值得认同的喜剧范围；同时他拿自己熟悉的喜剧片单来承接这个话题，觉得对方提到的是好选择，话题可以顺着共同喜好继续。",
+      "activation": 0.3521
+    },
+    {
+      "content": "SEEKER 心里把 RECOMMENDER 提到的《Sister Act》与《Madea》都当成本身就带“好/好笑”性质的对象，因此这些片名一出现，他更自然地倾向接受其趣味标签；同时他又把“我喜不喜欢这些”放进与 RECOMMENDER 的关系里掂量，觉得若自己也认这些片子好，就说明彼此合拍，自己在这段对话里的位置也更稳。先前他已表示看过那两部且是很好的选择，所以此刻他对 RECOMMENDER 的喜好有一种顺承式的认同，愿意把共同喜好的范围继续接住。",
+      "activation": 0.2859
+    }
+  ],
+  "observed_action": "SEEKER 说：Hello...I love comedy movies...Bridesmaids (2011) 和 How to Lose a Guy in 10 Days (2003) 是他最喜欢的一些电影；SEEKER 说：他看过那两部，两者都是很好的选择。",
+  "predicted_actions": [
+    {
+      "content": "加入看片单",
+      "probability": 0.3612
+    },
+    {
+      "content": "表示自行判断是否好笑",
+      "probability": 0.1745
+    },
+    {
+      "content": "评论电影相似性",
+      "probability": 0.1639
+    },
+    {
+      "content": "询问对方对电影的看法",
+      "probability": 0.1627
+    },
+    {
+      "content": "表示愿意观看推荐影片",
+      "probability": 0.1378
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.8374, "b": 0, "c": 0, "d": 0}
+选择说明：A 0.8374 = 加入看片单 0.3612 + 表示自行判断是否好笑 0.1745 + 评论电影相似性 0.1639 + 表示愿意观看推荐影片 0.1378；B 0.0000；C 0.0000；D 0.0000。Actions 0,1,2,4 are feedback on the recommended movie; no actions match B, C, or D.
+标准：B: Add more information about their preferences, such as genres, actors, or past favorites
+A: Give feedback on the previously recommended movie or suggestion
+结果：对

@@ -1,0 +1,106 @@
+{
+  "id": "4_pred_seeker__0176_d2630_u9",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets SEEKER and asks, 'What genre do you like?'",
+      "belief_before": "No prior dialogue information about the recommender or SEEKER's stated preferences.",
+      "belief_update": "SEEKER learns the recommender wants to know their genre preference before recommending.",
+      "belief_after": "SEEKER believes the recommender is trying to personalize recommendations; SEEKER's own preference is still unstated.",
+      "emotion": "Neutral and cooperative.",
+      "intention": "Answer the recommender's genre question.",
+      "conversational_goal": "Provide a genre preference so the recommender can suggest suitable titles."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says, 'I like dramas.'",
+      "belief_before": "Recommender asked for SEEKER's genre preference; SEEKER had not yet disclosed one.",
+      "belief_update": "SEEKER discloses a preference for dramas.",
+      "belief_after": "SEEKER likes dramas; recommender now knows this preference.",
+      "emotion": "Cooperative and calm.",
+      "intention": "Steer recommendations toward dramas.",
+      "conversational_goal": "Obtain drama recommendations."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks whether SEEKER has seen Rumpelstiltskin, notes it is more of a movie, and asks whether SEEKER likes horror.",
+      "belief_before": "SEEKER has stated only that they like dramas; no horror preference has been disclosed to the recommender.",
+      "belief_update": "Recommender is asking about Rumpelstiltskin and horror, which may not align with the drama preference already given.",
+      "belief_after": "SEEKER believes the recommender may be considering horror/non-drama options; SEEKER's own horror preference remains undisclosed to the recommender.",
+      "emotion": "Neutral or mildly uncertain; possibly cautious because the question shifts toward horror.",
+      "intention": "Respond to the recommender's questions about Rumpelstiltskin and horror.",
+      "conversational_goal": "Clarify genre fit and keep the recommendation direction on dramas if possible."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says, 'no, i don't like horror...i like dramas.'",
+      "belief_before": "Recommender had asked about Rumpelstiltskin and horror despite SEEKER's stated drama preference.",
+      "belief_update": "SEEKER explicitly rejects horror and reaffirms a preference for dramas.",
+      "belief_after": "SEEKER dislikes horror and likes dramas; recommender now knows both.",
+      "emotion": "Firm and slightly corrective, but still cooperative.",
+      "intention": "Block horror recommendations and redirect to dramas.",
+      "conversational_goal": "Get drama recommendations by making genre constraints explicit."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender asks, 'Have you ever seen There Will Be Blood (2007)?'",
+      "belief_before": "SEEKER has stated that they like dramas and dislike horror; recommender knows this.",
+      "belief_update": "Recommender is now asking about a drama title, apparently aligning with SEEKER's stated preference.",
+      "belief_after": "SEEKER believes the recommender is testing a drama recommendation; SEEKER's opinion of There Will Be Blood is not yet disclosed in the dialogue.",
+      "emotion": "More positive or engaged because the recommender appears to have shifted toward dramas.",
+      "intention": "Recall or assess There Will Be Blood and answer whether they have seen it.",
+      "conversational_goal": "Engage with a drama recommendation and continue seeking suitable dramas."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says, 'yes, love that one.'",
+      "belief_before": "Recommender asked about There Will Be Blood, a drama.",
+      "belief_update": "SEEKER confirms having seen There Will Be Blood and expresses strong liking for it.",
+      "belief_after": "SEEKER likes There Will Be Blood; recommender can infer that similar dramas may be good recommendations.",
+      "emotion": "Enthusiastic and positive.",
+      "intention": "Signal approval and encourage more similar recommendations.",
+      "conversational_goal": "Get more drama recommendations similar to There Will Be Blood."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says, 'Great. Have you seen No Country for Old Men (2007)?'",
+      "belief_before": "SEEKER likes dramas, dislikes horror, and has expressed strong liking for There Will Be Blood; recommender knows this.",
+      "belief_update": "Recommender is suggesting another film, likely continuing the positive drama/crime recommendation thread.",
+      "belief_after": "SEEKER believes the recommender is testing another relevant recommendation; SEEKER's opinion of No Country for Old Men is not yet disclosed.",
+      "emotion": "Engaged and positive.",
+      "intention": "Recall or assess No Country for Old Men and answer whether they have seen it.",
+      "conversational_goal": "Continue exploring suitable film recommendations with the recommender."
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER says, 'yes, anything from the Coen bros?'",
+      "belief_before": "Recommender asked about No Country for Old Men after SEEKER loved There Will Be Blood.",
+      "belief_update": "SEEKER confirms having seen No Country for Old Men and asks for more Coen brothers films, revealing a director-specific interest.",
+      "belief_after": "SEEKER likes No Country for Old Men and wants Coen brothers recommendations; recommender now knows this.",
+      "emotion": "Enthusiastic and proactive.",
+      "intention": "Request more titles by the Coen brothers.",
+      "conversational_goal": "Solicit Coen brothers recommendations."
+    },
+    {
+      "time": 9,
+      "observed": "Recommender says, 'Yeah Fargo (1996). Seen that one?'",
+      "belief_before": "SEEKER has asked for more Coen brothers films and has confirmed liking No Country for Old Men.",
+      "belief_update": "Recommender responds with a Coen brothers film, Fargo, and asks if SEEKER has seen it.",
+      "belief_after": "SEEKER believes the recommender followed their Coen brothers request; SEEKER's opinion of Fargo is not yet disclosed.",
+      "emotion": "Interested and anticipatory, likely positive.",
+      "intention": "Recall or assess Fargo and answer whether they have seen it.",
+      "conversational_goal": "Continue getting Coen brothers recommendations and evaluate Fargo."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets SEEKER and asks, 'What genre do you like?'\",\n    \"belief_before\": \"No prior dialogue information about the recommender or SEEKER's stated preferences.\",\n    \"belief_update\": \"SEEKER learns the recommender wants to know their genre preference before recommending.\",\n    \"belief_after\": \"SEEKER believes the recommender is trying to personalize recommendations; SEEKER's own preference is still unstated.\",\n    \"emotion\": \"Neutral and cooperative.\",\n    \"intention\": \"Answer the recommender's genre question.\",\n    \"conversational_goal\": \"Provide a genre preference so the recommender can suggest suitable titles.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says, 'I like dramas.'\",\n    \"belief_before\": \"Recommender asked for SEEKER's genre preference; SEEKER had not yet disclosed one.\",\n    \"belief_update\": \"SEEKER discloses a preference for dramas.\",\n    \"belief_after\": \"SEEKER likes dramas; recommender now knows this preference.\",\n    \"emotion\": \"Cooperative and calm.\",\n    \"intention\": \"Steer recommendations toward dramas.\",\n    \"conversational_goal\": \"Obtain drama recommendations.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks whether SEEKER has seen Rumpelstiltskin, notes it is more of a movie, and asks whether SEEKER likes horror.\",\n    \"belief_before\": \"SEEKER has stated only that they like dramas; no horror preference has been disclosed to the recommender.\",\n    \"belief_update\": \"Recommender is asking about Rumpelstiltskin and horror, which may not align with the drama preference already given.\",\n    \"belief_after\": \"SEEKER believes the recommender may be considering horror/non-drama options; SEEKER's own horror preference remains undisclosed to the recommender.\",\n    \"emotion\": \"Neutral or mildly uncertain; possibly cautious because the question shifts toward horror.\",\n    \"intention\": \"Respond to the recommender's questions about Rumpelstiltskin and horror.\",\n    \"conversational_goal\": \"Clarify genre fit and keep the recommendation direction on dramas if possible.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says, 'no, i don't like horror...i like dramas.'\",\n    \"belief_before\": \"Recommender had asked about Rumpelstiltskin and horror despite SEEKER's stated drama preference.\",\n    \"belief_update\": \"SEEKER explicitly rejects horror and reaffirms a preference for dramas.\",\n    \"belief_after\": \"SEEKER dislikes horror and likes dramas; recommender now knows both.\",\n    \"emotion\": \"Firm and slightly corrective, but still cooperative.\",\n    \"intention\": \"Block horror recommendations and redirect to dramas.\",\n    \"conversational_goal\": \"Get drama recommendations by making genre constraints explicit.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender asks, 'Have you ever seen There Will Be Blood (2007)?'\",\n    \"belief_before\": \"SEEKER has stated that they like dramas and dislike horror; recommender knows this.\",\n    \"belief_update\": \"Recommender is now asking about a drama title, apparently aligning with SEEKER's stated preference.\",\n    \"belief_after\": \"SEEKER believes the recommender is testing a drama recommendation; SEEKER's opinion of There Will Be Blood is not yet disclosed in the dialogue.\",\n    \"emotion\": \"More positive or engaged because the recommender appears to have shifted toward dramas.\",\n    \"intention\": \"Recall or assess There Will Be Blood and answer whether they have seen it.\",\n    \"conversational_goal\": \"Engage with a drama recommendation and continue seeking suitable dramas.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says, 'yes, love that one.'\",\n    \"belief_before\": \"Recommender asked about There Will Be Blood, a drama.\",\n    \"belief_update\": \"SEEKER confirms having seen There Will Be Blood and expresses strong liking for it.\",\n    \"belief_after\": \"SEEKER likes There Will Be Blood; recommender can infer that similar dramas may be good recommendations.\",\n    \"emotion\": \"Enthusiastic and positive.\",\n    \"intention\": \"Signal approval and encourage more similar recommendations.\",\n    \"conversational_goal\": \"Get more drama recommendations similar to There Will Be Blood.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says, 'Great. Have you seen No Country for Old Men (2007)?'\",\n    \"belief_before\": \"SEEKER likes dramas, dislikes horror, and has expressed strong liking for There Will Be Blood; recommender knows this.\",\n    \"belief_update\": \"Recommender is suggesting another film, likely continuing the positive drama/crime recommendation thread.\",\n    \"belief_after\": \"SEEKER believes the recommender is testing another relevant recommendation; SEEKER's opinion of No Country for Old Men is not yet disclosed.\",\n    \"emotion\": \"Engaged and positive.\",\n    \"intention\": \"Recall or assess No Country for Old Men and answer whether they have seen it.\",\n    \"conversational_goal\": \"Continue exploring suitable film recommendations with the recommender.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER says, 'yes, anything from the Coen bros?'\",\n    \"belief_before\": \"Recommender asked about No Country for Old Men after SEEKER loved There Will Be Blood.\",\n    \"belief_update\": \"SEEKER confirms having seen No Country for Old Men and asks for more Coen brothers films, revealing a director-specific interest.\",\n    \"belief_after\": \"SEEKER likes No Country for Old Men and wants Coen brothers recommendations; recommender now knows this.\",\n    \"emotion\": \"Enthusiastic and proactive.\",\n    \"intention\": \"Request more titles by the Coen brothers.\",\n    \"conversational_goal\": \"Solicit Coen brothers recommendations.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Recommender says, 'Yeah Fargo (1996). Seen that one?'\",\n    \"belief_before\": \"SEEKER has asked for more Coen brothers films and has confirmed liking No Country for Old Men.\",\n    \"belief_update\": \"Recommender responds with a Coen brothers film, Fargo, and asks if SEEKER has seen it.\",\n    \"belief_after\": \"SEEKER believes the recommender followed their Coen brothers request; SEEKER's opinion of Fargo is not yet disclosed.\",\n    \"emotion\": \"Interested and anticipatory, likely positive.\",\n    \"intention\": \"Recall or assess Fargo and answer whether they have seen it.\",\n    \"conversational_goal\": \"Continue getting Coen brothers recommendations and evaluate Fargo.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 140,
+  "item_id": "d2245_u5",
+  "dialogue_id": "2245",
+  "utterance_pos": 5,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.\nRECOMMENDER says: Also Daddy's Home 2 (2017)  is out now I enjoyed Daddy's Home  (2015) \nSEEKER says: That might be one to consider....I li；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.\nRECOMMENDER says: Also Daddy's Home 2 (2017)  is out now I enjoyed Daddy's Home  (2015) \nSEEKER says: That might be one to consider....I li；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.3,
+    "c": 0.9,
+    "d": 0.6,
+    "e": 0.1
+  },
+  "score_reason": "The recommender's role and prior turns primarily involve giving movie recommendations, so providing a recommendation directly or inquiring further is most directly supported.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record has no predicted next actions, so the strategy can only be inferred.",
+  "audit_level": "inferred"
+}

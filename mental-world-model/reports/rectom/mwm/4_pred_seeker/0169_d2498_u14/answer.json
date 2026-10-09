@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 169,
+  "item_id": "d2498_u14",
+  "dialogue_id": "2498",
+  "utterance_pos": 14,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.82,
+    "b": 0.45,
+    "c": 0.55,
+    "d": 0.2
+  },
+  "score_reason": "The SEEKER just gave feedback and asked for top recommendations, so the next move most directly supported is responding to the recommender's suggestion with feedback.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

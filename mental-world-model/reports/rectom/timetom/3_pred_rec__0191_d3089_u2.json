@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0191_d3089_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: 'Hello'.",
+      "information_available": "No prior dialogue context; recommender has only just initiated contact.",
+      "preferences": "Unknown; the seeker has not stated any preferences yet.",
+      "belief_before": "No established beliefs about the seeker or their request.",
+      "belief_update": "No new information from the other speaker yet; the recommender has acted by greeting.",
+      "belief_after": "A conversation partner is present and has been greeted; the partner's request and preferences are still unknown.",
+      "emotion": "Neutral/polite; attentive to starting an interaction.",
+      "intention": "Greet the other speaker and open the conversation.",
+      "reaction_to_other": "Not applicable yet; the other speaker has not spoken.",
+      "conversational_goal": "Establish contact and invite the seeker to state what they need.",
+      "interpretation_change": "No previous interpretation to change; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Hi, I'm looking for a good super hero movie'.",
+      "information_available": "Recommender now knows the seeker returned the greeting and wants a good superhero movie.",
+      "preferences": "Seeker prefers superhero movies and wants one that is good; no other constraints are given, such as subgenre, tone, era, or rating.",
+      "belief_before": "A conversation partner is present and has been greeted; their request and preferences are still unknown.",
+      "belief_update": "The seeker greeted back and stated a request for a good superhero movie.",
+      "belief_after": "The seeker is looking for a superhero movie recommendation, with a genre preference but otherwise underspecified criteria.",
+      "emotion": "Attentive/helpful; mildly positive because the seeker has stated a clear genre request.",
+      "intention": "Acknowledge the request and move toward helping, likely by asking clarifying questions or proposing superhero movie options.",
+      "reaction_to_other": "The greeting is reciprocated, and the seeker's request is understood as clear in genre but broad in scope.",
+      "conversational_goal": "Help the seeker find a good superhero movie, possibly by narrowing preferences or offering suitable recommendations.",
+      "interpretation_change": "Yes; the recommender's interpretation changes from an unknown request to a specific superhero-movie recommendation need."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: 'Hello'.\",\n    \"information_available\": \"No prior dialogue context; recommender has only just initiated contact.\",\n    \"preferences\": \"Unknown; the seeker has not stated any preferences yet.\",\n    \"belief_before\": \"No established beliefs about the seeker or their request.\",\n    \"belief_update\": \"No new information from the other speaker yet; the recommender has acted by greeting.\",\n    \"belief_after\": \"A conversation partner is present and has been greeted; the partner's request and preferences are still unknown.\",\n    \"emotion\": \"Neutral/polite; attentive to starting an interaction.\",\n    \"intention\": \"Greet the other speaker and open the conversation.\",\n    \"reaction_to_other\": \"Not applicable yet; the other speaker has not spoken.\",\n    \"conversational_goal\": \"Establish contact and invite the seeker to state what they need.\",\n    \"interpretation_change\": \"No previous interpretation to change; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Hi, I'm looking for a good super hero movie'.\",\n    \"information_available\": \"Recommender now knows the seeker returned the greeting and wants a good superhero movie.\",\n    \"preferences\": \"Seeker prefers superhero movies and wants one that is good; no other constraints are given, such as subgenre, tone, era, or rating.\",\n    \"belief_before\": \"A conversation partner is present and has been greeted; their request and preferences are still unknown.\",\n    \"belief_update\": \"The seeker greeted back and stated a request for a good superhero movie.\",\n    \"belief_after\": \"The seeker is looking for a superhero movie recommendation, with a genre preference but otherwise underspecified criteria.\",\n    \"emotion\": \"Attentive/helpful; mildly positive because the seeker has stated a clear genre request.\",\n    \"intention\": \"Acknowledge the request and move toward helping, likely by asking clarifying questions or proposing superhero movie options.\",\n    \"reaction_to_other\": \"The greeting is reciprocated, and the seeker's request is understood as clear in genre but broad in scope.\",\n    \"conversational_goal\": \"Help the seeker find a good superhero movie, possibly by narrowing preferences or offering suitable recommendations.\",\n    \"interpretation_change\": \"Yes; the recommender's interpretation changes from an unknown request to a specific superhero-movie recommendation need.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

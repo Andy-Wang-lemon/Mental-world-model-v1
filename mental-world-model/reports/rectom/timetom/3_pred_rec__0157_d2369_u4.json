@@ -1,0 +1,59 @@
+{
+  "id": "3_pred_rec__0157_d2369_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says \"Hi\". Information available: only that the dialogue is starting; no seeker preferences or details yet.",
+      "belief_before": "No prior information about the seeker.",
+      "belief_update": "No new information about the seeker from the recommender's own greeting; no prior interpretation to change.",
+      "belief_after": "The seeker is still unknown; no known movie preferences.",
+      "emotion": "Neutral and welcoming; no reaction to another speaker yet.",
+      "intention": "Greet the seeker and open a recommendation conversation.",
+      "conversational_goal": "Initiate contact and prompt the seeker to share what they like."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says \"Hello\" and reports loving comedy movies, naming Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) as favorites.",
+      "belief_before": "Seeker is unknown; no known movie preferences.",
+      "belief_update": "New information: seeker loves comedy and likes those two films. Previous interpretation of an unknown seeker changes to a comedy fan with specified favorites.",
+      "belief_after": "Seeker is a comedy fan who likes Bridesmaids and How to Lose a Guy in 10 Days.",
+      "emotion": "Interested, attentive, and positive toward the seeker's shared preferences.",
+      "intention": "Use the seeker's stated comedy preferences to prepare relevant recommendations.",
+      "conversational_goal": "Acknowledge the seeker's taste and move toward recommending comedies."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says Sister Act (1992) is good, Sister Act 2: Back in the Habit (1993) is also good, and that they like both.",
+      "belief_before": "Seeker loves comedy and likes Bridesmaids and How to Lose a Guy in 10 Days.",
+      "belief_update": "Recommender adds own preference for the Sister Act films and offers them as comedy suggestions aligned with the seeker's taste. This acts on the prior interpretation rather than changing it.",
+      "belief_after": "Seeker likes comedy; recommender has endorsed Sister Act and Sister Act 2 as possible matches.",
+      "emotion": "Enthusiastic and positive about the suggested films; responsive to the seeker.",
+      "intention": "Recommend specific comedy movies and share personal endorsement.",
+      "conversational_goal": "Offer concrete movie suggestions that fit the seeker's stated love of comedy."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have seen Sister Act and Sister Act 2 and that both were \"really good choices.\"",
+      "belief_before": "Seeker likes comedy; recommender suggested Sister Act and Sister Act 2 and did not yet know the seeker's reaction.",
+      "belief_update": "Learns the seeker has already seen both Sister Act films and approves them. This changes the prior interpretation of those recommendations as potentially new: they were well-aligned but already seen.",
+      "belief_after": "Seeker is a comedy fan who has seen and liked the Sister Act films; future recommendations should likely be unseen comedies.",
+      "emotion": "Pleased and validated by the positive reaction, with a possible need to adjust toward novelty.",
+      "intention": "Acknowledge the positive feedback and consider offering new comedy options.",
+      "conversational_goal": "Continue the recommendation dialogue by moving to additional comedies the seeker has not seen."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says \\\"Hi\\\". Information available: only that the dialogue is starting; no seeker preferences or details yet.\",\n    \"belief_before\": \"No prior information about the seeker.\",\n    \"belief_update\": \"No new information about the seeker from the recommender's own greeting; no prior interpretation to change.\",\n    \"belief_after\": \"The seeker is still unknown; no known movie preferences.\",\n    \"emotion\": \"Neutral and welcoming; no reaction to another speaker yet.\",\n    \"intention\": \"Greet the seeker and open a recommendation conversation.\",\n    \"conversational_goal\": \"Initiate contact and prompt the seeker to share what they like.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says \\\"Hello\\\" and reports loving comedy movies, naming Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) as favorites.\",\n    \"belief_before\": \"Seeker is unknown; no known movie preferences.\",\n    \"belief_update\": \"New information: seeker loves comedy and likes those two films. Previous interpretation of an unknown seeker changes to a comedy fan with specified favorites.\",\n    \"belief_after\": \"Seeker is a comedy fan who likes Bridesmaids and How to Lose a Guy in 10 Days.\",\n    \"emotion\": \"Interested, attentive, and positive toward the seeker's shared preferences.\",\n    \"intention\": \"Use the seeker's stated comedy preferences to prepare relevant recommendations.\",\n    \"conversational_goal\": \"Acknowledge the seeker's taste and move toward recommending comedies.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says Sister Act (1992) is good, Sister Act 2: Back in the Habit (1993) is also good, and that they like both.\",\n    \"belief_before\": \"Seeker loves comedy and likes Bridesmaids and How to Lose a Guy in 10 Days.\",\n    \"belief_update\": \"Recommender adds own preference for the Sister Act films and offers them as comedy suggestions aligned with the seeker's taste. This acts on the prior interpretation rather than changing it.\",\n    \"belief_after\": \"Seeker likes comedy; recommender has endorsed Sister Act and Sister Act 2 as possible matches.\",\n    \"emotion\": \"Enthusiastic and positive about the suggested films; responsive to the seeker.\",\n    \"intention\": \"Recommend specific comedy movies and share personal endorsement.\",\n    \"conversational_goal\": \"Offer concrete movie suggestions that fit the seeker's stated love of comedy.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have seen Sister Act and Sister Act 2 and that both were \\\"really good choices.\\\"\",\n    \"belief_before\": \"Seeker likes comedy; recommender suggested Sister Act and Sister Act 2 and did not yet know the seeker's reaction.\",\n    \"belief_update\": \"Learns the seeker has already seen both Sister Act films and approves them. This changes the prior interpretation of those recommendations as potentially new: they were well-aligned but already seen.\",\n    \"belief_after\": \"Seeker is a comedy fan who has seen and liked the Sister Act films; future recommendations should likely be unseen comedies.\",\n    \"emotion\": \"Pleased and validated by the positive reaction, with a possible need to adjust toward novelty.\",\n    \"intention\": \"Acknowledge the positive feedback and consider offering new comedy options.\",\n    \"conversational_goal\": \"Continue the recommendation dialogue by moving to additional comedies the seeker has not seen.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

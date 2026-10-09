@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 182,
+  "item_id": "d2773_u9",
+  "dialogue_id": "2773",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nD: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 此刻的所缘里，RECOMMENDER 问“如果喜欢爱情故事”与“喜欢动作电影吗”，不只是普通分类询问，而是直接触到一种被当作自己不可分割属性的类型偏好；The Notebook、RoboCop 等片名都围绕这个偏好属性向自己聚拢。RECOMMENDER 说“You will like it”，则被经验为一个关于自己喜好的确定结论，而不是他人的一句预测，于是推荐像是在确认 SEEKER 本来就会喜欢的类型。",
+        "probability": 0.3974
+      },
+      {
+        "content": "在 SEEKER 此刻的所缘里，RECOMMENDER 逐一问 Have you seen Gladiator (2000)、Deep Impact (1998)、Armageddon，并提到 The Notebook、RoboCop，这些片名不只是中性片单，而像在量度自己的观影经历与文化身份：看过或没看过都被收摄进“我是谁”的轮廓。RECOMMENDER 说 It's a really good one. You will like it.，则被执成关于自己喜好的确定结论，仿佛对方已替自己的口味下了判断，而非仅仅作预测。",
+        "probability": 0.3436
+      },
+      {
+        "content": "在 SEEKER 此刻的所缘里，RECOMMENDER 以 Hello 开始，接连询问是否看过某些电影、是否喜欢爱情故事或动作片，并给出推荐，使“被询问者/接收推荐者”这个位置成为整个境的中心；片名和类型问题都从这个位置向自己聚拢。RECOMMENDER 的 You will like it 又被经验为关于自己喜好的确定结论，因此这一位置不只是临时角色，而像是一段与自己分不开的处境，一切推荐都在其中被收受。",
+        "probability": 0.259
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "RECOMMENDER 把‘如果喜欢爱情故事’和‘喜欢动作电影吗’直接问到我身上时，我自然把这些类型偏好当成自己本来就有、并且能定义我的一部分来对待；The Notebook、Deep Impact、RoboCop 这些片名也像是围绕着这个偏好属性聚拢过来。‘You will like it’ 落在我心里时，更像一个关于我喜好会怎样的确定结论，而不只是一句旁人的预测。我一边用‘我喜欢动作片，昨晚刚看 John Wick 2，也喜欢 Deep Impact，而且真的需要看 The Notebook’来印证自己确实有这些偏好，一边又觉得单凭类型并不能完全框定我会喜欢什么，但仍会沿着这个被指出的偏好去衡量眼前的推荐是否合自己的口味。",
+        "activation": 0.3891
+      },
+      {
+        "content": "在SEEKER此刻心里，RECOMMENDER逐一抛出的片名不只是一串待选片单，而像一张丈量自己的清单：看过与否、喜欢与否，都被收进“我是谁”的轮廓里。Gladiator 被归入不合口味的类型，Armageddon 与 Deep Impact 则成了自己确实属于某种观影谱系的凭据；The Notebook 的缺席令他有些被点名般的自觉，所以“真的需要看”既是补课，也像想把这个身份缺口补上。至于 It's a really good one. You will like it.，他并不只当作一句推荐，而像被人替自己的口味下了判断，内心一面有被说中的松动，一面又想拿已经看过的 John Wick: Chapter 2 和明确的动作片偏好，守住由自己定义喜好的主动权。",
+        "activation": 0.3428
+      },
+      {
+        "content": "SEEKER 把这些片名、类型询问和“You will like it”都收拢到“自己正被询问、被推荐”这一处，觉得这不只是临时角色，而像一段绕着自己口味铺开的处境；他把对方的预测当成关于自己喜好的确定判断，于是在心里一面划出哪些合于自己、哪些不合，一面倾向于以自身偏好来收受这些推荐，并在这个被推荐的位置上确认哪些推荐真正与自己相契。",
+        "activation": 0.2681
+      }
+    ],
+    "observed_action": "SEEKER 说自己正在寻找一部好剧并询问建议；说自己没有看过《角斗士》，不太喜欢那类，偏好《世界末日》这类；说自己可能是地球上唯一没看过《恋恋笔记本》的人，真的需要看，并说自己喜欢《天地大冲撞》；说自己喜欢动作片，昨晚刚看了《疾速追杀2》。",
+    "predicted_actions": [
+      {
+        "content": "表示会观看/排上某部电影",
+        "probability": 0.2718
+      },
+      {
+        "content": "表达动作片偏好",
+        "probability": 0.2525
+      },
+      {
+        "content": "请求推荐电影",
+        "probability": 0.1829
+      },
+      {
+        "content": "请求推荐相似动作片",
+        "probability": 0.1538
+      },
+      {
+        "content": "道谢并将影片记入待看清单",
+        "probability": 0.1391
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.2718,
+    "b": 0.2525,
+    "c": 0.3367,
+    "d": 0.1391
+  },
+  "score_reason": "A 0.2718 = 表示会观看/排上某部电影 0.2718；B 0.2525 = 表达动作片偏好 0.2525；C 0.3367 = 请求推荐电影 0.1829 + 请求推荐相似动作片 0.1538；D 0.1391 = 道谢并将影片记入待看清单 0.1391。0 is feedback/acceptance, 1 adds genre preference, 2-3 ask for recommendations, and 4 expresses gratitude.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "The predicted action explicitly includes thanking, which directly states the gratitude expression strategy.",
+  "audit_level": "explicit"
+}

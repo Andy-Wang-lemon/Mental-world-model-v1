@@ -1,0 +1,103 @@
+{
+  "id": "3_pred_rec__0087_d1363_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER: Hi...What kind of movies are you into?",
+      "information_available": "Dialogue has just started; target knows nothing about the seeker's movie preferences.",
+      "preferences": "Target recommender preference: be helpful and elicit genre preference; seeker preferences unknown.",
+      "belief_before": "No information about the seeker's preferences.",
+      "belief_update": "Target initiates a preference question; no new information about the seeker is received yet.",
+      "belief_after": "The seeker's movie preferences are unknown; the recommendation task is open.",
+      "emotion": "Friendly, helpful, curious.",
+      "intention": "Elicit the seeker's movie tastes so recommendations can be targeted.",
+      "conversational_goal": "Open the recommendation dialogue by asking for genre preferences.",
+      "reaction_to_other": "N/A; target initiates.",
+      "changes_previous_interpretation": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER: I'm really into mystery movies....Maybe a good psychological thriller.",
+      "information_available": "Prior: target asked for movie preferences. Current: seeker states interest in mystery and psychological thriller.",
+      "preferences": "Target recommender preference: match mystery/psychological thriller. Believed seeker preference: mystery movies, psychological thriller.",
+      "belief_before": "Seeker's preferences unknown.",
+      "belief_update": "Seeker likes mystery movies and is open to a good psychological thriller.",
+      "belief_after": "Seeker prefers mystery and psychological thriller; recommendations should fit that lane.",
+      "emotion": "Attentive, interested, ready to help.",
+      "intention": "Find a title matching mystery/psychological thriller.",
+      "conversational_goal": "Recommend or prepare to recommend a mystery/psychological thriller.",
+      "reaction_to_other": "Positive/attuned to the seeker's stated genre preference.",
+      "changes_previous_interpretation": "Yes; replaces unknown preferences with an explicit mystery/psychological-thriller preference."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER: Okay well Seven (1995) is a great thriller with Brad Pitt",
+      "information_available": "Prior: seeker likes mystery and psychological thriller. Current: target recommends Seven (1995).",
+      "preferences": "Target recommender preference: suggest a well-known thriller matching seeker's genre. Believed seeker preference: mystery/psychological thriller.",
+      "belief_before": "Seeker wants mystery/psychological thriller.",
+      "belief_update": "Target proposes Seven as a suitable thriller; this adds a candidate recommendation but does not change the seeker model.",
+      "belief_after": "Seeker likes mystery/psychological thriller; Seven is the current recommendation candidate.",
+      "emotion": "Confident, helpful.",
+      "intention": "Recommend Seven as a fit for the seeker's stated taste.",
+      "conversational_goal": "Satisfy the seeker's request for a mystery/psychological thriller.",
+      "reaction_to_other": "Responds to seeker's genre preference with a relevant suggestion.",
+      "changes_previous_interpretation": "No change to seeker preference; adds recommendation state."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER: Do you have any recomendations?",
+      "information_available": "Prior: target recommended Seven. Current: seeker asks for recommendations.",
+      "preferences": "Target recommender preference: continue helping. Believed seeker preference: mystery/psychological thriller, but now also wants more or other recommendations.",
+      "belief_before": "Seeker likes mystery/psychological thriller; Seven has been offered but not yet accepted or rejected.",
+      "belief_update": "Seeker asks for recommendations, suggesting Seven may not be enough, may not have been acknowledged, or seeker wants additional options.",
+      "belief_after": "Seeker still wants recommendations; Seven's status is unconfirmed; more suggestions may be needed.",
+      "emotion": "Helpful, possibly slightly puzzled or uncertain.",
+      "intention": "Provide additional recommendations or clarify what the seeker wants.",
+      "conversational_goal": "Offer more movie options in response to the request.",
+      "reaction_to_other": "Interprets the question as a request for more recommendations; does not yet know why Seven was insufficient.",
+      "changes_previous_interpretation": "Yes; implies Seven alone is not confirmed as satisfying, so the recommendation plan needs expansion."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER: Along with Black Swan (2010)",
+      "information_available": "Prior: seeker asked for recommendations after Seven. Current: target recommends Black Swan (2010) as an additional option.",
+      "preferences": "Target recommender preference: expand the list with another psychological-thriller-style option. Believed seeker preference: mystery/psychological thriller and more suggestions.",
+      "belief_before": "Seeker wants more recommendations and likes mystery/psychological thriller; Seven is already offered.",
+      "belief_update": "Target adds Black Swan as another candidate, intended to complement Seven.",
+      "belief_after": "Seeker likes mystery/psychological thriller; current candidates are Seven and Black Swan; seeker feedback not yet available.",
+      "emotion": "Helpful, considerate.",
+      "intention": "Recommend Black Swan as an additional psychological thriller/drama option.",
+      "conversational_goal": "Provide another suggestion to meet the seeker's request for more recommendations.",
+      "reaction_to_other": "Responds to the seeker's request for recommendations by adding a title.",
+      "changes_previous_interpretation": "No change to seeker preference; adds a second recommendation to the plan."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER: Oh great! I love Brad Pitt....I heard black swan was more of drama. DO you have any other suggestions?",
+      "information_available": "Prior: target recommended Seven and Black Swan. Current: seeker loves Brad Pitt, heard Black Swan is more drama, and asks for other suggestions.",
+      "preferences": "Target recommender preference: refine suggestions to fit new feedback. Believed seeker preferences: mystery/psychological thriller; positive toward Brad Pitt; skeptical that Black Swan fits because it is more drama; wants other suggestions.",
+      "belief_before": "Seeker likes mystery/psychological thriller and wants more recommendations; Seven and Black Swan are on the table.",
+      "belief_update": "Seeker likes Brad Pitt, doubts Black Swan as a drama rather than a thriller/mystery, and still wants other suggestions.",
+      "belief_after": "Brad Pitt is a useful positive signal; Black Swan's fit is downgraded; seeker needs alternative suggestions, ideally mystery/psychological thriller and possibly involving Brad Pitt.",
+      "emotion": "Attentive, encouraged by Brad Pitt enthusiasm, corrected or concerned about Black Swan mismatch.",
+      "intention": "Adjust recommendations and propose other titles that better match the seeker's taste.",
+      "conversational_goal": "Offer new suggestions, possibly using Brad Pitt and avoiding drama-heavy mismatches.",
+      "reaction_to_other": "Acknowledges positive Brad Pitt signal and Black Swan concern; adapts the recommendation approach.",
+      "changes_previous_interpretation": "Yes; Black Swan is now less suitable, Brad Pitt becomes a preference, and another recommendation is required."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER: Hi...What kind of movies are you into?\",\n    \"information_available\": \"Dialogue has just started; target knows nothing about the seeker's movie preferences.\",\n    \"preferences\": \"Target recommender preference: be helpful and elicit genre preference; seeker preferences unknown.\",\n    \"belief_before\": \"No information about the seeker's preferences.\",\n    \"belief_update\": \"Target initiates a preference question; no new information about the seeker is received yet.\",\n    \"belief_after\": \"The seeker's movie preferences are unknown; the recommendation task is open.\",\n    \"emotion\": \"Friendly, helpful, curious.\",\n    \"intention\": \"Elicit the seeker's movie tastes so recommendations can be targeted.\",\n    \"conversational_goal\": \"Open the recommendation dialogue by asking for genre preferences.\",\n    \"reaction_to_other\": \"N/A; target initiates.\",\n    \"changes_previous_interpretation\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER: I'm really into mystery movies....Maybe a good psychological thriller.\",\n    \"information_available\": \"Prior: target asked for movie preferences. Current: seeker states interest in mystery and psychological thriller.\",\n    \"preferences\": \"Target recommender preference: match mystery/psychological thriller. Believed seeker preference: mystery movies, psychological thriller.\",\n    \"belief_before\": \"Seeker's preferences unknown.\",\n    \"belief_update\": \"Seeker likes mystery movies and is open to a good psychological thriller.\",\n    \"belief_after\": \"Seeker prefers mystery and psychological thriller; recommendations should fit that lane.\",\n    \"emotion\": \"Attentive, interested, ready to help.\",\n    \"intention\": \"Find a title matching mystery/psychological thriller.\",\n    \"conversational_goal\": \"Recommend or prepare to recommend a mystery/psychological thriller.\",\n    \"reaction_to_other\": \"Positive/attuned to the seeker's stated genre preference.\",\n    \"changes_previous_interpretation\": \"Yes; replaces unknown preferences with an explicit mystery/psychological-thriller preference.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER: Okay well Seven (1995) is a great thriller with Brad Pitt\",\n    \"information_available\": \"Prior: seeker likes mystery and psychological thriller. Current: target recommends Seven (1995).\",\n    \"preferences\": \"Target recommender preference: suggest a well-known thriller matching seeker's genre. Believed seeker preference: mystery/psychological thriller.\",\n    \"belief_before\": \"Seeker wants mystery/psychological thriller.\",\n    \"belief_update\": \"Target proposes Seven as a suitable thriller; this adds a candidate recommendation but does not change the seeker model.\",\n    \"belief_after\": \"Seeker likes mystery/psychological thriller; Seven is the current recommendation candidate.\",\n    \"emotion\": \"Confident, helpful.\",\n    \"intention\": \"Recommend Seven as a fit for the seeker's stated taste.\",\n    \"conversational_goal\": \"Satisfy the seeker's request for a mystery/psychological thriller.\",\n    \"reaction_to_other\": \"Responds to seeker's genre preference with a relevant suggestion.\",\n    \"changes_previous_interpretation\": \"No change to seeker preference; adds recommendation state.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER: Do you have any recomendations?\",\n    \"information_available\": \"Prior: target recommended Seven. Current: seeker asks for recommendations.\",\n    \"preferences\": \"Target recommender preference: continue helping. Believed seeker preference: mystery/psychological thriller, but now also wants more or other recommendations.\",\n    \"belief_before\": \"Seeker likes mystery/psychological thriller; Seven has been offered but not yet accepted or rejected.\",\n    \"belief_update\": \"Seeker asks for recommendations, suggesting Seven may not be enough, may not have been acknowledged, or seeker wants additional options.\",\n    \"belief_after\": \"Seeker still wants recommendations; Seven's status is unconfirmed; more suggestions may be needed.\",\n    \"emotion\": \"Helpful, possibly slightly puzzled or uncertain.\",\n    \"intention\": \"Provide additional recommendations or clarify what the seeker wants.\",\n    \"conversational_goal\": \"Offer more movie options in response to the request.\",\n    \"reaction_to_other\": \"Interprets the question as a request for more recommendations; does not yet know why Seven was insufficient.\",\n    \"changes_previous_interpretation\": \"Yes; implies Seven alone is not confirmed as satisfying, so the recommendation plan needs expansion.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER: Along with Black Swan (2010)\",\n    \"information_available\": \"Prior: seeker asked for recommendations after Seven. Current: target recommends Black Swan (2010) as an additional option.\",\n    \"preferences\": \"Target recommender preference: expand the list with another psychological-thriller-style option. Believed seeker preference: mystery/psychological thriller and more suggestions.\",\n    \"belief_before\": \"Seeker wants more recommendations and likes mystery/psychological thriller; Seven is already offered.\",\n    \"belief_update\": \"Target adds Black Swan as another candidate, intended to complement Seven.\",\n    \"belief_after\": \"Seeker likes mystery/psychological thriller; current candidates are Seven and Black Swan; seeker feedback not yet available.\",\n    \"emotion\": \"Helpful, considerate.\",\n    \"intention\": \"Recommend Black Swan as an additional psychological thriller/drama option.\",\n    \"conversational_goal\": \"Provide another suggestion to meet the seeker's request for more recommendations.\",\n    \"reaction_to_other\": \"Responds to the seeker's request for recommendations by adding a title.\",\n    \"changes_previous_interpretation\": \"No change to seeker preference; adds a second recommendation to the plan.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER: Oh great! I love Brad Pitt....I heard black swan was more of drama. DO you have any other suggestions?\",\n    \"information_available\": \"Prior: target recommended Seven and Black Swan. Current: seeker loves Brad Pitt, heard Black Swan is more drama, and asks for other suggestions.\",\n    \"preferences\": \"Target recommender preference: refine suggestions to fit new feedback. Believed seeker preferences: mystery/psychological thriller; positive toward Brad Pitt; skeptical that Black Swan fits because it is more drama; wants other suggestions.\",\n    \"belief_before\": \"Seeker likes mystery/psychological thriller and wants more recommendations; Seven and Black Swan are on the table.\",\n    \"belief_update\": \"Seeker likes Brad Pitt, doubts Black Swan as a drama rather than a thriller/mystery, and still wants other suggestions.\",\n    \"belief_after\": \"Brad Pitt is a useful positive signal; Black Swan's fit is downgraded; seeker needs alternative suggestions, ideally mystery/psychological thriller and possibly involving Brad Pitt.\",\n    \"emotion\": \"Attentive, encouraged by Brad Pitt enthusiasm, corrected or concerned about Black Swan mismatch.\",\n    \"intention\": \"Adjust recommendations and propose other titles that better match the seeker's taste.\",\n    \"conversational_goal\": \"Offer new suggestions, possibly using Brad Pitt and avoiding drama-heavy mismatches.\",\n    \"reaction_to_other\": \"Acknowledges positive Brad Pitt signal and Black Swan concern; adapts the recommendation approach.\",\n    \"changes_previous_interpretation\": \"Yes; Black Swan is now less suitable, Brad Pitt becomes a preference, and another recommendation is required.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

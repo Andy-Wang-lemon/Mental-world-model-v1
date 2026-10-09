@@ -1,0 +1,29 @@
+数据：3_pred_rec
+题号：161  d2369_u12
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hi\nSEEKER says: Hello...I love comedy movies...Bridesmaids  (2011)   and How to Lose a Guy in 10 Days (2003)  are some of my favorite movies\nRECOMMENDER says: Sister Act (1992)  is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.\nSEEKER says: I have seen those, both really good choices\nRECOMMENDER says: I like Boo! A Madea Halloween (2016) ...Madea is really funny.\nSEEKER says: I love Neighbors  (2014)  with Seth Rogen and Zac Efron that one was prett；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hi\nSEEKER says: Hello...I love comedy movies...Bridesmaids  (2011)   and How to Lose a Guy in 10 Days (2003)  are some of my favorite movies\nRECOMMENDER says: Sister Act (1992)  is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.\nSEEKER says: I have seen those, both really good choices\nRECOMMENDER says: I like Boo! A Madea Halloween (2016) ...Madea is really funny.\nSEEKER says: I love Neighbors  (2014)  with Seth Rogen and Zac Efron that one was prett；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.2, "b": 0.7, "c": 0.9, "d": 0.5, "e": 0.1}
+选择说明：The record shows the recommender repeatedly offering movie recommendations after the seeker shares preferences, so providing a recommendation directly is most supported.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：The record has no predicted next action or thought about what RECOMMENDER will do next; only past greeting/chit-chat is present.

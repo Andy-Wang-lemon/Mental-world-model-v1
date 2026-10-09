@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：88  d1363_u5
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hi...What kind of movies are you into?\nSEEKER says: I'm really into mystery movies....Maybe a good psychological thriller.\nRECOMMENDER says: Okay well Seven  (1995)  is a great thriller with Brad Pitt\nSEEKER says: Do you have any recomendations?\nRECOMMENDER says: Along with Black Swan  (2010)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hi...What kind of movies are you into?\nSEEKER says: I'm really into mystery movies....Maybe a good psychological thriller.\nRECOMMENDER says: Okay well Seven  (1995)  is a great thriller with Brad Pitt\nSEEKER says: Do you have any recomendations?\nRECOMMENDER says: Along with Black Swan  (2010)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.85, "b": 0.4, "c": 0.5, "d": 0.3}
+选择说明：The recommender just provided a new suggestion, so the SEEKER is most likely to respond with feedback on it.
+标准：A: Give feedback on the previously recommended movie or suggestion
+B: Add more information about their preferences, such as genres, actors, or past favorites
+C: Asks for a recommendation or expresses their preference
+结果：对

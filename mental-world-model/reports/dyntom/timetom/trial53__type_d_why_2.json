@@ -1,0 +1,61 @@
+{
+  "id": "trial53__type_d_why_2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Carolyn Abebe",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Marilyn has been unusually quiet and withdrawn over the past few days. When Carolyn asks about it, Marilyn says she is overwhelmed with work and some personal stuff.",
+      "belief_before": "Marilyn is normally engaging, so Carolyn senses something is off but does not yet know the reason for her recent quietness.",
+      "belief_update": "Yes — Carolyn's concern is confirmed and given a likely explanation: Marilyn is overwhelmed by work and personal issues.",
+      "belief_after": "Marilyn is going through a difficult, stressful time and may need support, but Carolyn does not assume it is about her.",
+      "emotion": "concerned and sympathetic",
+      "intention": "to be supportive and leave the door open for Marilyn to talk if she wants"
+    },
+    {
+      "time": 2,
+      "observed": "Marilyn was curt in a later interaction, which confused and slightly hurt Carolyn. When Carolyn shares her own tough experiences, Marilyn apologizes and says it has been a hard week.",
+      "belief_before": "Carolyn believes Marilyn is stressed and overwhelmed, but after the curt interaction she becomes unsure whether she overstepped or whether Marilyn is upset with her.",
+      "belief_update": "Yes — Marilyn's apology and explanation indicate the curtness was caused by her hard week, not by Carolyn personally.",
+      "belief_after": "Marilyn appreciates Carolyn's support and is still struggling, but the misunderstanding between them is eased.",
+      "emotion": "confused and slightly hurt, then relieved and sympathetic",
+      "intention": "to clear up any misunderstanding and continue supporting Marilyn"
+    },
+    {
+      "time": 3,
+      "observed": "Marilyn responded positively to Carolyn's openness. Carolyn invites her to a small gathering, and Marilyn warmly accepts, saying she would love to join.",
+      "belief_before": "Carolyn is relieved and hopeful that she and Marilyn are forming a friendship after easing the earlier misunderstanding.",
+      "belief_update": "Yes — Marilyn's warm acceptance confirms her interest in spending time together and strengthens Carolyn's sense that the friendship is growing.",
+      "belief_after": "Marilyn is friendly and open to social connection, and their friendship appears to be developing.",
+      "emotion": "relieved, hopeful, and pleased",
+      "intention": "to strengthen the bond by including Marilyn in the gathering"
+    },
+    {
+      "time": 4,
+      "observed": "Despite friendly interactions outside work, Carolyn perceives Marilyn as still maintaining professional distance at the bank. When Carolyn raises it, Marilyn says she did not realize it, apologizes, and agrees to talk about improving collaboration.",
+      "belief_before": "Carolyn believed their outside friendliness might be carrying into work, but her perception of distance makes her feel disappointed and uncertain about their work relationship.",
+      "belief_update": "Yes — Marilyn was unaware of the distance and is not intentionally keeping Carolyn at arm's length; she is open to discussing and improving their collaboration.",
+      "belief_after": "The work distance may be due to professional boundaries or lack of awareness, but Marilyn is willing to work on it.",
+      "emotion": "disappointed and concerned, then somewhat reassured",
+      "intention": "to directly address the work dynamic, clarify expectations, and improve collaboration"
+    },
+    {
+      "time": 5,
+      "observed": "After their private meeting, Carolyn believes they cleared the air and understand each other's professional expectations and personal boundaries. Marilyn agrees to team up on the new project and says she is glad they talked and looks forward to working more closely.",
+      "belief_before": "Carolyn believes they have resolved earlier tension and now understand each other better; she feels content and optimistic.",
+      "belief_update": "Yes — Marilyn's enthusiastic agreement confirms that the improved understanding is mutual and that she wants to collaborate more closely.",
+      "belief_after": "Their professional relationship is stronger, clearer, and mutually supportive; collaboration on the project is promising.",
+      "emotion": "content, optimistic, and encouraged",
+      "intention": "to partner with Marilyn on the new project and further their working relationship"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Marilyn has been unusually quiet and withdrawn over the past few days. When Carolyn asks about it, Marilyn says she is overwhelmed with work and some personal stuff.\",\n    \"belief_before\": \"Marilyn is normally engaging, so Carolyn senses something is off but does not yet know the reason for her recent quietness.\",\n    \"belief_update\": \"Yes — Carolyn's concern is confirmed and given a likely explanation: Marilyn is overwhelmed by work and personal issues.\",\n    \"belief_after\": \"Marilyn is going through a difficult, stressful time and may need support, but Carolyn does not assume it is about her.\",\n    \"emotion\": \"concerned and sympathetic\",\n    \"intention\": \"to be supportive and leave the door open for Marilyn to talk if she wants\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Marilyn was curt in a later interaction, which confused and slightly hurt Carolyn. When Carolyn shares her own tough experiences, Marilyn apologizes and says it has been a hard week.\",\n    \"belief_before\": \"Carolyn believes Marilyn is stressed and overwhelmed, but after the curt interaction she becomes unsure whether she overstepped or whether Marilyn is upset with her.\",\n    \"belief_update\": \"Yes — Marilyn's apology and explanation indicate the curtness was caused by her hard week, not by Carolyn personally.\",\n    \"belief_after\": \"Marilyn appreciates Carolyn's support and is still struggling, but the misunderstanding between them is eased.\",\n    \"emotion\": \"confused and slightly hurt, then relieved and sympathetic\",\n    \"intention\": \"to clear up any misunderstanding and continue supporting Marilyn\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Marilyn responded positively to Carolyn's openness. Carolyn invites her to a small gathering, and Marilyn warmly accepts, saying she would love to join.\",\n    \"belief_before\": \"Carolyn is relieved and hopeful that she and Marilyn are forming a friendship after easing the earlier misunderstanding.\",\n    \"belief_update\": \"Yes — Marilyn's warm acceptance confirms her interest in spending time together and strengthens Carolyn's sense that the friendship is growing.\",\n    \"belief_after\": \"Marilyn is friendly and open to social connection, and their friendship appears to be developing.\",\n    \"emotion\": \"relieved, hopeful, and pleased\",\n    \"intention\": \"to strengthen the bond by including Marilyn in the gathering\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Despite friendly interactions outside work, Carolyn perceives Marilyn as still maintaining professional distance at the bank. When Carolyn raises it, Marilyn says she did not realize it, apologizes, and agrees to talk about improving collaboration.\",\n    \"belief_before\": \"Carolyn believed their outside friendliness might be carrying into work, but her perception of distance makes her feel disappointed and uncertain about their work relationship.\",\n    \"belief_update\": \"Yes — Marilyn was unaware of the distance and is not intentionally keeping Carolyn at arm's length; she is open to discussing and improving their collaboration.\",\n    \"belief_after\": \"The work distance may be due to professional boundaries or lack of awareness, but Marilyn is willing to work on it.\",\n    \"emotion\": \"disappointed and concerned, then somewhat reassured\",\n    \"intention\": \"to directly address the work dynamic, clarify expectations, and improve collaboration\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"After their private meeting, Carolyn believes they cleared the air and understand each other's professional expectations and personal boundaries. Marilyn agrees to team up on the new project and says she is glad they talked and looks forward to working more closely.\",\n    \"belief_before\": \"Carolyn believes they have resolved earlier tension and now understand each other better; she feels content and optimistic.\",\n    \"belief_update\": \"Yes — Marilyn's enthusiastic agreement confirms that the improved understanding is mutual and that she wants to collaborate more closely.\",\n    \"belief_after\": \"Their professional relationship is stronger, clearer, and mutually supportive; collaboration on the project is promising.\",\n    \"emotion\": \"content, optimistic, and encouraged\",\n    \"intention\": \"to partner with Marilyn on the new project and further their working relationship\"\n  }\n]",
+  "final_response": "ANSWER: h",
+  "prediction": "h",
+  "gold": "p",
+  "correct": false,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial53"
+}

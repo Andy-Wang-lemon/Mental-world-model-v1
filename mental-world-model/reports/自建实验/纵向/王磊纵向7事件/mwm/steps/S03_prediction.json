@@ -1,0 +1,881 @@
+{
+  "events": [
+    {
+      "focus_person": "王磊",
+      "yuanwen": "高二下学期，和王磊关系很好的高三学长程远右手受伤，却正在准备一个对升学很重要的编程比赛。程远不想退出，也不愿让老师知道自己需要别人帮助完成大量操作，请王磊晚上帮忙，并替自己保密。一天晚上，程远突然发来消息：“程序明早必须交，今晚可能要弄到很晚。你还能来吗？”王磊桌上还放着第二天要交、只完成一半的数学作业。",
+      "stimulus_text": "高二下学期，和王磊关系很好的高三学长程远右手受伤，却正在准备一个对升学很重要的编程比赛。程远不想退出，也不愿让老师知道自己需要别人帮助完成大量操作，请王磊晚上帮忙，并替自己保密。一天晚上，程远突然发来消息：“程序明早必须交，今晚可能要弄到很晚。你还能来吗？”王磊桌上还放着第二天要交、只完成一半的数学作业。",
+      "stimulus_action_split": {
+        "stimulus_text": "高二下学期，和王磊关系很好的高三学长程远右手受伤，却正在准备一个对升学很重要的编程比赛。程远不想退出，也不愿让老师知道自己需要别人帮助完成大量操作，请王磊晚上帮忙，并替自己保密。一天晚上，程远突然发来消息：“程序明早必须交，今晚可能要弄到很晚。你还能来吗？”王磊桌上还放着第二天要交、只完成一半的数学作业。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "程远",
+          "王磊"
+        ],
+        "action": "高三学长程远右手受伤，准备一个与升学相关的编程比赛，请王磊晚上帮忙完成大量操作并替自己保密；一天晚上，程远发来消息：“程序明早必须交，今晚可能要弄到很晚。你还能来吗？”",
+        "object": "王磊",
+        "scene": "高二下学期，一天晚上，王磊桌前",
+        "outcome_changes": [
+          "程远右手受伤",
+          "程远准备一个与升学相关的编程比赛",
+          "程远请王磊晚上帮忙完成大量操作并替自己保密",
+          "程远发来消息：程序明早必须交，今晚可能要弄到很晚，并询问王磊还能否来"
+        ],
+        "role_changes": [
+          "王磊被程远请求在晚上协助完成编程比赛的大量操作",
+          "王磊被程远请求替其保密"
+        ],
+        "relationship_changes": [
+          "程远与王磊之间形成请求协助和保密安排"
+        ],
+        "constraint_changes": [
+          "程序明早必须交",
+          "今晚可能要弄到很晚",
+          "王磊第二天要交的数学作业只完成一半"
+        ],
+        "resource_changes": [
+          "程远右手受伤",
+          "王磊桌上有只完成一半的数学作业",
+          "编程比赛程序需完成大量操作"
+        ]
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "王磊把程远对自己的信任和直接求助当成自己这边不能推开的事；程远发来“你还能来吗？”时，这件事不是可转交或可忽略的信息，而是已经落到自己身上。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "王磊把与程远之间“关系很好的学长—学弟”关系当成自己必须守住的部分；程远右手受伤、正处在需要帮助的状态，使这段关系不能被摆到与自己无关的一边。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "王磊把替程远保密当成自己人格里必须担住的事；程远明确请求保密，王磊可能把秘密看作自己这边的事，而不是可以交给老师或他人的信息。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "王磊把“已经答应/正在帮程远”的承诺位置当成自己的一部分；程远之前请他晚上帮忙并替自己保密，所以这条“你还能来吗”像是对自己已承接身份的确认。",
+          "confidence": 0.76,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f6",
+          "text": "王磊把“能在程远右手受伤时补上大量操作”当作自己在关系中的位置；程远需要别人完成大量操作，王磊的可用性被放到一个似乎不能缺少的位置。",
+          "confidence": 0.72,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f5",
+          "text": "王磊把“自己的数学作业/学业本分”也当成与自己分不开的部分；桌上只完成一半、第二天要交，使这件事不能被当成完全无关而轻易割舍。",
+          "confidence": 0.68,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "王磊把“关系好的学长有难开口，就理应放下自己的事去帮”当成固定规则；程远受伤、比赛重要、直接问“你还能来吗”，使到场帮忙像理所当然而不是可选项。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "王磊把“程远的程序明早必须交”当成不可移动的死线；因此今晚可能要弄到很晚，也被理解成只能接受的安排。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "王磊把“保密”执成绝对边界：既然程远请求不让老师知道，老师和其他人就不能知道，哪怕这让自己在作业与帮忙之间难以两全。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f5",
+          "text": "王磊把“对升学很重要的编程比赛”看作优先于自己第二天要交的数学作业；程远的程序先于自己的作业，成为更该被保住的事。",
+          "confidence": 0.78,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "王磊把“程远不想退出、不愿让老师知道”执成必须被完整尊重的唯一处理方式；在这套理解里，不能建议公开或让老师介入，只能私下补位。",
+          "confidence": 0.76,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f7",
+          "text": "王磊把“自己的数学作业只完成一半”看成可以往后压缩的弹性任务；与明早必须交的程序相比，它像是可以熬夜补或暂时让位的。",
+          "confidence": 0.72,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f6",
+          "text": "王磊把“右手受伤仍要完成比赛、不向老师求助”理解成一种应当维护的坚持，因此帮忙只能在不改变程远对外姿态的前提下进行。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3415492957746479,
+          "alambana_prior_probability": 0.3415492957746479,
+          "activation_alignment": 0.97,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6208000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3309859154929577,
+          "alambana_prior_probability": 0.3309859154929577,
+          "activation_alignment": 0.94,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6016000000000001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3274647887323944,
+          "alambana_prior_probability": 0.3274647887323944,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5952000000000002
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "程远发来的“你还能来吗？”在王磊眼里不是一条可以转交或搁置的询问：程远右手受伤、比赛重要，又请自己保密，这份直接求助已经落到自己身上。与此同时，“程序明早必须交”像一道不能移动的死线，把“今晚可能要弄到很晚”变成只能接受的安排；桌上只完成一半的数学作业虽在眼前，却不改变这一点。",
+          "prior_probability": 0.3415492957746479,
+          "posterior_probability": 0.3415492957746479,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6208000000000001,
+          "activation_alignment": 0.97,
+          "grounding_valid": true,
+          "grounding_reason": "未添加刺激中不存在的他人言行；对死线、求助、保密和数学作业的主观感受属于解释，且保留了程远受伤、比赛重要、明早截止、今晚很晚及作业未完成等关键变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "程远右手受伤，正准备升学相关的编程比赛，程序明早必须交，又直接问“你还能来吗”。在王磊这里，这像触发了一条固定规则：关系好的学长有难开口，自己就理应放下手头的事去帮。于是帮忙不再是一个可选项，而是理所当然的安排；桌上只完成一半的数学作业也因此被放到次要位置，而程远请自己保密这一点更让这次开口像是只能由自己接住。",
+          "prior_probability": 0.3309859154929577,
+          "posterior_probability": 0.3309859154929577,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6016000000000001,
+          "activation_alignment": 0.94,
+          "grounding_valid": true,
+          "grounding_reason": "仅对程远求助和关系作主观规则化理解，未伪造外部事实；保留了受伤、升学比赛、明早截止、保密请求和数学作业未完成等核心信息。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "王磊把与程远之间“关系很好的学长—学弟”关系当成自己必须守住的部分；程远右手受伤、又在准备对升学很重要的编程比赛，并请王磊晚上帮忙完成大量操作、替他保密，使这层关系不能被摆到与自己无关的一边。与此同时，王磊把“程远的程序明早必须交”当成不可移动的死线；因此今晚可能要弄到很晚，也被王磊理解成只能接受的安排。桌上那份第二天要交、只完成一半的数学作业虽在眼前，也不能把这条关系和这条死线从程远的请求中移开。",
+          "prior_probability": 0.3274647887323944,
+          "posterior_probability": 0.3274647887323944,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5952000000000002,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的客观要素均来自刺激文本：关系很好的高三学长程远、右手受伤、准备升学相关编程比赛、请王磊晚上帮忙并保密、程序明早必须交且可能弄到很晚、王磊次日要交的数学作业只完成一半。对“必须守住关系”“不可移动的死线”“只能接受安排”等属于王磊的主观理解，不是伪造他人言行或事实；同时保留了程远请求、保密、死线、时间冲突和作业未完成等关键情境变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.3415492957746479,
+          "alambana": {
+            "id": "O_C1",
+            "text": "程远发来的“你还能来吗？”在王磊眼里不是一条可以转交或搁置的询问：程远右手受伤、比赛重要，又请自己保密，这份直接求助已经落到自己身上。与此同时，“程序明早必须交”像一道不能移动的死线，把“今晚可能要弄到很晚”变成只能接受的安排；桌上只完成一半的数学作业虽在眼前，却不改变这一点。",
+            "prior_probability": 0.3415492957746479,
+            "posterior_probability": 0.3415492957746479,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6208000000000001,
+            "activation_alignment": 0.97,
+            "grounding_valid": true,
+            "grounding_reason": "未添加刺激中不存在的他人言行；对死线、求助、保密和数学作业的主观感受属于解释，且保留了程远受伤、比赛重要、明早截止、今晚很晚及作业未完成等关键变化。"
+          },
+          "xiang": {
+            "text": "王磊看到程远那句“你还能来吗？”，心里先是一沉：这不是一条可以晚点再说、或让别人去接的询问。程远右手受伤，比赛又关系到升学，还特意让自己保密，说明这件事已经落到自己身上，推回去会像在辜负这份直接信任。再看“程序明早必须交”，这像一道钉死的线，今晚要弄到很晚也成了只能接受的安排。桌上只完成一半的数学作业虽然碍眼，却暂时压不过这件事的分量；他内心更倾向于先认定程远那边不能断，自己今晚得把这件事接住。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "信": 0.53286,
+            "不害": 0.7488942358196267,
+            "精进": 0.5206863950664906,
+            "疑": 0.016400958223780307,
+            "恶见": 0.08641828095027633,
+            "不慢": 0.3049804547597168,
+            "不信": 0.0384784341221151,
+            "无瞋": 0.5895237090508316,
+            "贪": 0.06756404165914437,
+            "无痴": 0.57566,
+            "无贪": 0.33169999999999994,
+            "慢": 0.04677132483561866,
+            "放逸": 0.016675010224948876,
+            "善见": 0.51146,
+            "懈怠": 0.01668075956763073,
+            "掉举": 0.21828,
+            "不覆": 0.04316810010789723,
+            "不正知": 0.11019777135191347,
+            "不放逸": 0.28402523150166603,
+            "愧": 0.3424,
+            "无明": 0.12347153855595572,
+            "行舍": 0.039960177027669914,
+            "昏沉": 0.01663760006108574,
+            "惭": 0.29531999999999997
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "前往程远那里帮忙操作程序",
+              "probability": 0.4731182795698925,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "带作业去程远那里，在程序运行间隙写作业",
+              "probability": 0.3763440860215054,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "远程帮忙操作程序，同时写数学作业",
+              "probability": 0.15053763440860218,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.3309859154929577,
+          "alambana": {
+            "id": "O_C2",
+            "text": "程远右手受伤，正准备升学相关的编程比赛，程序明早必须交，又直接问“你还能来吗”。在王磊这里，这像触发了一条固定规则：关系好的学长有难开口，自己就理应放下手头的事去帮。于是帮忙不再是一个可选项，而是理所当然的安排；桌上只完成一半的数学作业也因此被放到次要位置，而程远请自己保密这一点更让这次开口像是只能由自己接住。",
+            "prior_probability": 0.3309859154929577,
+            "posterior_probability": 0.3309859154929577,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6016000000000001,
+            "activation_alignment": 0.94,
+            "grounding_valid": true,
+            "grounding_reason": "仅对程远求助和关系作主观规则化理解，未伪造外部事实；保留了受伤、升学比赛、明早截止、保密请求和数学作业未完成等核心信息。"
+          },
+          "xiang": {
+            "text": "在王磊看来，程远手受伤还硬撑着赶明早要交的程序，又只直接问自己“你还能来吗”，这就不是一件可以转交或以后再说的事；关系好的学长难得开口，自己就理应放下手头的东西去接住。桌上只完成一半的数学作业因此被挤到次要位置，而程远要自己保密，更让这个请求像只能由自己回应。他心里已把“去帮他”当成理所当然的安排，而不是今晚要不要去的选择。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "覆": 0.31244,
+            "不害": 0.6183542358196268,
+            "精进": 0.04560639506649068,
+            "疑": 0.016400958223780307,
+            "恶见": 0.3603382809502763,
+            "不慢": 0.2129604547597168,
+            "不信": 0.0384784341221151,
+            "无瞋": 0.40120370905083164,
+            "贪": 0.06756404165914437,
+            "无贪": 0.321,
+            "慢": 0.04677132483561866,
+            "放逸": 0.29487501022494883,
+            "懈怠": 0.01668075956763073,
+            "不嫉": 0.20972,
+            "不覆": 0.04316810010789723,
+            "不正知": 0.7607577713519135,
+            "不放逸": 0.044345231501665985,
+            "无明": 0.8155475385559557,
+            "行舍": 0.3652401770276699,
+            "昏沉": 0.01663760006108574
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "回复能来后立即出门",
+              "probability": 0.75,
+              "supporting_mental_factors": [
+                "无明",
+                "不正知",
+                "不害",
+                "无瞋",
+                "行舍",
+                "恶见",
+                "覆",
+                "放逸"
+              ]
+            },
+            {
+              "text": "回复能来后带作业出门",
+              "probability": 0.17,
+              "supporting_mental_factors": [
+                "不害",
+                "无贪",
+                "行舍"
+              ]
+            },
+            {
+              "text": "回复能来后继续写作业",
+              "probability": 0.08,
+              "supporting_mental_factors": [
+                "无明",
+                "不正知",
+                "放逸",
+                "懈怠",
+                "昏沉",
+                "疑"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.3274647887323944,
+          "alambana": {
+            "id": "O_C3",
+            "text": "王磊把与程远之间“关系很好的学长—学弟”关系当成自己必须守住的部分；程远右手受伤、又在准备对升学很重要的编程比赛，并请王磊晚上帮忙完成大量操作、替他保密，使这层关系不能被摆到与自己无关的一边。与此同时，王磊把“程远的程序明早必须交”当成不可移动的死线；因此今晚可能要弄到很晚，也被王磊理解成只能接受的安排。桌上那份第二天要交、只完成一半的数学作业虽在眼前，也不能把这条关系和这条死线从程远的请求中移开。",
+            "prior_probability": 0.3274647887323944,
+            "posterior_probability": 0.3274647887323944,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5952000000000002,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的客观要素均来自刺激文本：关系很好的高三学长程远、右手受伤、准备升学相关编程比赛、请王磊晚上帮忙并保密、程序明早必须交且可能弄到很晚、王磊次日要交的数学作业只完成一半。对“必须守住关系”“不可移动的死线”“只能接受安排”等属于王磊的主观理解，不是伪造他人言行或事实；同时保留了程远请求、保密、死线、时间冲突和作业未完成等关键情境变化。"
+          },
+          "xiang": {
+            "text": "王磊心里清楚，程远右手受伤还撑着准备对升学很重要的比赛，又只找自己帮忙并要保密，这层学长—学弟关系在他这里不是可以搁到一边的事；程序明早必须交这条硬线也让他觉得今晚拖到很晚是只能接下的安排。桌上那份只写了一半、明早也要交的数学作业虽然碍眼，却没能把程远这声询问推开——他对今晚的轻重已经有了偏向：先顾程远这件急事。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "不害": 0.7018142358196268,
+            "精进": 0.3837263950664907,
+            "疑": 0.016400958223780307,
+            "恶见": 0.08641828095027633,
+            "不慢": 0.3092604547597168,
+            "不信": 0.0384784341221151,
+            "无瞋": 0.43330370905083165,
+            "贪": 0.42066404165914434,
+            "慢": 0.04677132483561866,
+            "放逸": 0.016675010224948876,
+            "无愧": 0.23967999999999998,
+            "懈怠": 0.01668075956763073,
+            "无惭": 0.28676,
+            "不嫉": 0.40445999999999993,
+            "不覆": 0.04316810010789723,
+            "不正知": 0.6109577713519134,
+            "不放逸": 0.39102523150166596,
+            "无明": 0.6862915385559557,
+            "行舍": 0.039960177027669914,
+            "昏沉": 0.01663760006108574
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "回复能来并出门",
+              "probability": 0.82,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "回复晚到并继续写数学作业",
+              "probability": 0.18,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "回复能来后立即出门",
+          "probability": 0.5730281690140845,
+          "dominant_mental_factors": [
+            "不害",
+            "行舍",
+            "无明",
+            "不正知",
+            "无瞋"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.3274647887323944,
+              "conditional_probability": 0.82,
+              "contribution": 0.2685211267605634
+            },
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3309859154929577,
+              "conditional_probability": 0.75,
+              "contribution": 0.24823943661971826
+            },
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3309859154929577,
+              "conditional_probability": 0.17,
+              "contribution": 0.056267605633802814
+            }
+          ]
+        },
+        {
+          "text": "前往程远那里帮忙操作程序",
+          "probability": 0.16159321520520975,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3415492957746479,
+              "conditional_probability": 0.4731182795698925,
+              "contribution": 0.16159321520520975
+            }
+          ]
+        },
+        {
+          "text": "带作业去程远那里，在程序运行间隙写作业",
+          "probability": 0.12854005754959866,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3415492957746479,
+              "conditional_probability": 0.3763440860215054,
+              "contribution": 0.12854005754959866
+            }
+          ]
+        },
+        {
+          "text": "远程帮忙操作程序，同时写数学作业",
+          "probability": 0.11035968499167045,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.3274647887323944,
+              "conditional_probability": 0.18,
+              "contribution": 0.058943661971830985
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3415492957746479,
+              "conditional_probability": 0.15053763440860218,
+              "contribution": 0.051416023019839475
+            }
+          ]
+        },
+        {
+          "text": "回复能来后继续写作业",
+          "probability": 0.026478873239436616,
+          "dominant_mental_factors": [
+            "无明",
+            "不正知",
+            "放逸",
+            "懈怠",
+            "昏沉"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3309859154929577,
+              "conditional_probability": 0.08,
+              "contribution": 0.026478873239436616
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "信": 0.21261443661971832,
+        "精进": 0.31890845070422535,
+        "惭": 0.11783450704225351,
+        "愧": 0.13661971830985914,
+        "无贪": 0.25647007042253517,
+        "无瞋": 0.48492077464788724,
+        "无痴": 0.2296919014084507,
+        "不放逸": 0.22825704225352111,
+        "行舍": 0.12577464788732393,
+        "不害": 0.7915140845070422,
+        "不慢": 0.31105633802816895,
+        "善见": 0.20407570422535212,
+        "不嫉": 0.23581866197183096,
+        "贪": 0.13507922535211267,
+        "无明": 0.4829102112676056,
+        "恶见": 0.10591549295774647,
+        "覆": 0.12080985915492956,
+        "无惭": 0.10970070422535212,
+        "无愧": 0.09169014084507042,
+        "放逸": 0.10757042253521124,
+        "掉举": 0.08709507042253521,
+        "不正知": 0.4431161971830986
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 13,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 13,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 11,
+        "distinct_candidate_count": 9,
+        "diversity_regenerated": true,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 3,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": true,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 2,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "王磊在陈老师长期单独指导下从三十多名进步到前十、又因重要考试失常掉到二十多名且试卷被陈老师摊在桌上时，见陈老师仍在并拉椅问“今天还讲吗”，从此把“曾在某老师单独指导下升到前十后又考砸、该老师仍愿讲题”这类情形，理解为只有继续让这位老师单独讲才能回到前十，而这次讲题仍只是条件性补救，不等于自己已被确认能稳住前十。",
+            "mass": 0.4097
+          },
+          {
+            "id": "bf_2",
+            "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+            "mass": 0.3615
+          },
+          {
+            "id": "bf_3",
+            "text": "王磊在陈老师长期指导下从班级三十多名进步到前十、又因一次重要考试失常掉到二十多名后，经过办公室见陈老师仍摊着他的试卷并拉椅问“今天还讲吗”，从此把“曾受老师长期指导而进步、随后一次考试失常、老师仍以讲题相待”这类情形，理解为自己的前十本就不稳、这次是退步和需要补讲的失败，而不是可波动的结果，且补讲只先把分数补回来，不能改观自己是否适合学习的判断。",
+            "mass": 0.345
+          },
+          {
+            "id": "bf_4",
+            "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+            "mass": 0.327
+          },
+          {
+            "id": "bf_5",
+            "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+            "mass": 0.3114
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "王磊在陈老师长期单独指导下从三十多名进步到前十、又因重要考试失常掉到二十多名且试卷被陈老师摊在桌上时，见陈老师仍在并拉椅问“今天还讲吗”，从此把“曾在某老师单独指导下升到前十后又考砸、该老师仍愿讲题”这类情形，理解为只有继续让这位老师单独讲才能回到前十，而这次讲题仍只是条件性补救，不等于自己已被确认能稳住前十。",
+              "mass": 0.4097
+            },
+            {
+              "id": "bf_2",
+              "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+              "mass": 0.3615
+            },
+            {
+              "id": "bf_3",
+              "text": "王磊在陈老师长期指导下从班级三十多名进步到前十、又因一次重要考试失常掉到二十多名后，经过办公室见陈老师仍摊着他的试卷并拉椅问“今天还讲吗”，从此把“曾受老师长期指导而进步、随后一次考试失常、老师仍以讲题相待”这类情形，理解为自己的前十本就不稳、这次是退步和需要补讲的失败，而不是可波动的结果，且补讲只先把分数补回来，不能改观自己是否适合学习的判断。",
+              "mass": 0.345
+            },
+            {
+              "id": "bf_4",
+              "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+              "mass": 0.327
+            },
+            {
+              "id": "bf_5",
+              "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+              "mass": 0.3114
+            }
+          ],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.144
+        }
+      }
+    }
+  ],
+  "focus_person": "王磊",
+  "llm_usage": {
+    "total_calls": 267,
+    "total_duration_ms": 2487707.59709102,
+    "wall_clock_ms": 344255.8306849969
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S03",
+    "event_index": 3,
+    "stimulus": "高二下学期，和王磊关系很好的高三学长程远右手受伤，却正在准备一个对升学很重要的编程比赛。程远不想退出，也不愿让老师知道自己需要别人帮助完成大量操作，请王磊晚上帮忙，并替自己保密。一天晚上，程远突然发来消息：“程序明早必须交，今晚可能要弄到很晚。你还能来吗？”王磊桌上还放着第二天要交、只完成一半的数学作业。",
+    "top_action": "回复能来后立即出门",
+    "top_probability": 0.5730281690140845,
+    "top_k": [
+      {
+        "text": "回复能来后立即出门",
+        "probability": 0.5730281690140845
+      },
+      {
+        "text": "前往程远那里帮忙操作程序",
+        "probability": 0.16159321520520975
+      },
+      {
+        "text": "带作业去程远那里，在程序运行间隙写作业",
+        "probability": 0.12854005754959866
+      },
+      {
+        "text": "远程帮忙操作程序，同时写数学作业",
+        "probability": 0.11035968499167045
+      },
+      {
+        "text": "回复能来后继续写作业",
+        "probability": 0.026478873239436616
+      }
+    ],
+    "continuity_before": {
+      "person_id": "王磊",
+      "event_count": 2,
+      "mental_episode_count": 2,
+      "cognitive_frame_count": 5
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "王磊在陈老师长期单独指导下从三十多名进步到前十、又因重要考试失常掉到二十多名且试卷被陈老师摊在桌上时，见陈老师仍在并拉椅问“今天还讲吗”，从此把“曾在某老师单独指导下升到前十后又考砸、该老师仍愿讲题”这类情形，理解为只有继续让这位老师单独讲才能回到前十，而这次讲题仍只是条件性补救，不等于自己已被确认能稳住前十。",
+        "mass": 0.4097
+      },
+      {
+        "id": "bf_2",
+        "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+        "mass": 0.3615
+      },
+      {
+        "id": "bf_3",
+        "text": "王磊在陈老师长期指导下从班级三十多名进步到前十、又因一次重要考试失常掉到二十多名后，经过办公室见陈老师仍摊着他的试卷并拉椅问“今天还讲吗”，从此把“曾受老师长期指导而进步、随后一次考试失常、老师仍以讲题相待”这类情形，理解为自己的前十本就不稳、这次是退步和需要补讲的失败，而不是可波动的结果，且补讲只先把分数补回来，不能改观自己是否适合学习的判断。",
+        "mass": 0.345
+      },
+      {
+        "id": "bf_4",
+        "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+        "mass": 0.327
+      },
+      {
+        "id": "bf_5",
+        "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+        "mass": 0.3114
+      }
+    ],
+    "fresh_count_raw": 13,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 13,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 11,
+      "distinct_candidate_count": 9,
+      "diversity_regenerated": true,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 3,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": true,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 2,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

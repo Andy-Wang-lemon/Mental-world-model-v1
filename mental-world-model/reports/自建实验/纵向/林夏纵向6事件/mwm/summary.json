@@ -1,0 +1,95 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "林夏",
+  "total_events": 6,
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "behavior_trajectory": [
+    "E1 → 当面质问许宁",
+    "E2 → 问许宁",
+    "E3 → 询问相机相关情况",
+    "E4 → 走向许宁并质问",
+    "E5 → 保存并查看截图和聊天记录",
+    "E6 → 拒绝出门并查看照片"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "predicted_action": "当面质问许宁",
+      "probability": 0.4612182109942176,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 7,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "predicted_action": "问许宁",
+      "probability": 0.47471540079825403,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "predicted_action": "询问相机相关情况",
+      "probability": 0.48,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "predicted_action": "走向许宁并质问",
+      "probability": 0.43333333333333335,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "predicted_action": "保存并查看截图和聊天记录",
+      "probability": 0.38886930011790133,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 10,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "predicted_action": "拒绝出门并查看照片",
+      "probability": 0.2370375200351136,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ],
+  "final_continuity": {
+    "person_id": "林夏",
+    "event_count": 6,
+    "mental_episode_count": 6,
+    "cognitive_frame_count": 11
+  }
+}

@@ -1,0 +1,65 @@
+数据：4_pred_seeker
+题号：61  d1057_u4
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "那句“Hello~”进入我耳朵时，是被放在“只对我讲的”位置上的；随后他说喜欢《Tommy Boy (1995)》，这句话在我面前变成一条明摆着的话头，好像必须由我顺着它给出对这部电影的评价或回应。",
+      "probability": 0.396
+    },
+    {
+      "content": "《Tommy Boy (1995)》这个名字被说出来之后，在我心里直接成为一件与我胃口有关的事；它被放上“合不合我口味”的台面，而对方那句喜欢也化作一句要我表态的话，紧跟着落到我这边。",
+      "probability": 0.376
+    },
+    {
+      "content": "对方把“喜欢《Tommy Boy (1995)》”说出来，等于把这电影摆成一件值得喜欢的东西；因为这句问候是发给我的，我就站在这个固定对象的正对面，必须把它当作一个要被评判的电影来拿捏。",
+      "probability": 0.228
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他听到那声“Hello~”时，觉得这招呼是专门冲着自己来的，于是当对方接着说出喜欢《Tommy Boy》时，他感到这是一个需要自己接住的话头，心里立刻涌起一种“应当回应一下这部电影”的催促感。他一边想着对方是不是在借这部电影和自己找共同话题，一边又忍不住拿自己看过的喜剧片来对比，觉得如果自己也喜欢或能说出点什么，就能让对话顺着“帮忙推荐好喜剧”的方向继续下去。",
+      "activation": 0.3851
+    },
+    {
+      "content": "《Tommy Boy》这个名字一出现，我立刻把它放到我的喜剧口味天平上。我本来就在找喜欢的喜剧，而且我刚说了自己喜欢Super Troopers和Beerfest那种感觉，所以现在我很自然地用这个标准去掂量它。对方说喜欢它，这句话不像只是闲聊，更像是落在我这边的一个问题：我喜不喜欢？我似乎得给出一个评价，至少要让对方知道它在我这里合不合口味。于是这部电影成了我当下心里一个等着被判断的对象。",
+      "activation": 0.3791
+    },
+    {
+      "content": "对方说出喜欢《Tommy Boy》，这就像把一部电影推到我面前，要我判定它值不值得喜欢。既然这声招呼是冲我来的，我就站在这个固定对象的正对面，必须把它当作一个可以被衡量的电影来拿捏；而且我还带着自己平时喜欢的那类喜剧作为标尺，心里开始掂量它够不够格。",
+      "activation": 0.2359
+    }
+  ],
+  "observed_action": "SEEKER向对方打招呼，并请求对方帮忙找一部今天的喜剧，同时提到自己喜欢类似Super Troopers (2001)和Beerfest (2006)这样的片子。",
+  "predicted_actions": [
+    {
+      "content": "皱眉撇嘴说",
+      "probability": 0.2706
+    },
+    {
+      "content": "表达看法",
+      "probability": 0.2534
+    },
+    {
+      "content": "探身好奇问",
+      "probability": 0.2165
+    },
+    {
+      "content": "敲桌迟疑问",
+      "probability": 0.1443
+    },
+    {
+      "content": "说明后续会看",
+      "probability": 0.1152
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.3686, "b": 0, "c": 0.3608, "d": 0}
+选择说明：A 0.3686 = 表达看法 0.2534 + 说明后续会看 0.1152；B 0.0000；C 0.3608 = 探身好奇问 0.2165 + 敲桌迟疑问 0.1443；D 0.0000。Expressing an opinion and saying will watch later are feedback, while curious and hesitant questions ask for a recommendation.
+标准：B: Add more information about their preferences, such as genres, actors, or past favorites
+A: Give feedback on the previously recommended movie or suggestion
+结果：对

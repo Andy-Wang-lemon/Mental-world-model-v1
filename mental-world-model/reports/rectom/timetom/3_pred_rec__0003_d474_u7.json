@@ -1,0 +1,135 @@
+{
+  "id": "3_pred_rec__0003_d474_u7",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER asks for help finding a movie to watch.",
+      "information_available": "SEEKER wants a movie recommendation; no genre or content constraints have been stated yet.",
+      "preferences": {
+        "target": "No explicit preference stated yet.",
+        "seeker_inferred": "Unknown; only that SEEKER wants a movie recommendation."
+      },
+      "belief_before": "No prior beliefs about SEEKER's movie tastes in this dialogue.",
+      "belief_update": "SEEKER is requesting help selecting a movie.",
+      "belief_after": "SEEKER wants a movie recommendation and has not stated genre preferences.",
+      "emotion": "Neutral and helpful.",
+      "intention": "Respond to the request and offer assistance.",
+      "reaction_to_other_speaker": "Positively acknowledges SEEKER's request for help.",
+      "conversational_goal": "Begin helping SEEKER find a movie.",
+      "changes_previous_interpretation": "Initial turn; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER responds by offering It (2017).",
+      "information_available": "SEEKER asked for a movie recommendation; no genre preference was given.",
+      "preferences": {
+        "target": "No explicit personal preference stated, but target is willing to suggest It (2017).",
+        "seeker_inferred": "No genre preference known; appears open to a suggestion."
+      },
+      "belief_before": "SEEKER wants a movie recommendation with no stated constraints.",
+      "belief_update": "Target selects It (2017) as a possible recommendation.",
+      "belief_after": "It (2017) is a candidate movie; SEEKER's genre preferences remain unknown.",
+      "emotion": "Helpful and optimistic.",
+      "intention": "Recommend It (2017).",
+      "reaction_to_other_speaker": "Responsive and cooperative.",
+      "conversational_goal": "Provide a concrete movie suggestion.",
+      "changes_previous_interpretation": "No; this is the first recommendation attempt."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says they do not really like horror movies and asks about thrillers.",
+      "information_available": "SEEKER disliked the horror suggestion; SEEKER wants thrillers instead.",
+      "preferences": {
+        "target": "Still no explicit personal preference stated.",
+        "seeker_inferred": "Dislikes horror movies; prefers or requests thrillers."
+      },
+      "belief_before": "SEEKER wants a movie recommendation; It (2017) was offered.",
+      "belief_update": "SEEKER does not really like horror and wants thriller recommendations.",
+      "belief_after": "Avoid horror for SEEKER; recommend thrillers; It (2017) is likely unsuitable.",
+      "emotion": "Accommodating and willing to adjust.",
+      "intention": "Pivot from horror to thriller recommendations.",
+      "reaction_to_other_speaker": "Accepts SEEKER's feedback without defensiveness.",
+      "conversational_goal": "Adjust the recommendation to match SEEKER's thriller preference.",
+      "changes_previous_interpretation": "Yes; updates SEEKER's preferences from unknown to no horror and interested in thrillers."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER suggests The Silence of the Lambs (1991).",
+      "information_available": "SEEKER dislikes horror and asked for thrillers; It (2017) was not accepted.",
+      "preferences": {
+        "target": "No explicit personal preference stated, but target is willing to recommend a thriller.",
+        "seeker_inferred": "Wants thrillers; dislikes horror."
+      },
+      "belief_before": "SEEKER wants a thriller and does not want horror.",
+      "belief_update": "Target chooses The Silence of the Lambs (1991) as a thriller recommendation.",
+      "belief_after": "The Silence of the Lambs (1991) is a candidate based on SEEKER's thriller request.",
+      "emotion": "Focused and helpful.",
+      "intention": "Recommend a thriller.",
+      "reaction_to_other_speaker": "Responsive to SEEKER's genre correction.",
+      "conversational_goal": "Satisfy SEEKER's request for a thriller.",
+      "changes_previous_interpretation": "No major change; consistent with the turn 3 preference update."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says they have seen The Silence of the Lambs and enjoyed it; they name The Number 23 (2007) and The Sixth Sense (1999) as favorite thrillers.",
+      "information_available": "SEEKER has seen and enjoyed The Silence of the Lambs; SEEKER likes The Number 23 (2007) and The Sixth Sense (1999) as thrillers.",
+      "preferences": {
+        "target": "No new personal preference stated by target.",
+        "seeker_inferred": "Likes thrillers; specifically likes The Number 23 (2007) and The Sixth Sense (1999); has already seen The Silence of the Lambs."
+      },
+      "belief_before": "SEEKER wanted a thriller; The Silence of the Lambs was suggested.",
+      "belief_update": "SEEKER has already seen and enjoyed The Silence of the Lambs, and likes The Number 23 (2007) and The Sixth Sense (1999).",
+      "belief_after": "SEEKER's thriller tastes include The Number 23 (2007) and The Sixth Sense (1999); The Silence of the Lambs is already seen and enjoyed.",
+      "emotion": "Pleased and encouraged by the positive feedback.",
+      "intention": "Use SEEKER's favorite thrillers to refine the next recommendation.",
+      "reaction_to_other_speaker": "Positive toward SEEKER's enjoyment and stated favorites.",
+      "conversational_goal": "Narrow down suitable thriller options using SEEKER's liked movies.",
+      "changes_previous_interpretation": "Yes; adds specific thriller preferences and rules out The Silence of the Lambs as a new recommendation."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says they have not seen The Number 23 (2007), enjoyed The Sixth Sense (1999), and are more into horror movies.",
+      "information_available": "SEEKER has seen and enjoyed The Silence of the Lambs; SEEKER likes The Number 23 (2007) and The Sixth Sense (1999).",
+      "preferences": {
+        "target": "Has not seen The Number 23 (2007); enjoyed The Sixth Sense (1999); prefers horror movies.",
+        "seeker_inferred": "Likes thrillers, including The Sixth Sense (1999) and The Number 23 (2007), but earlier said they do not really like horror."
+      },
+      "belief_before": "SEEKER likes The Number 23 (2007) and The Sixth Sense (1999); The Silence of the Lambs was already seen and enjoyed.",
+      "belief_update": "Target reveals personal taste: has not seen The Number 23, liked The Sixth Sense, and is more into horror movies.",
+      "belief_after": "Target and SEEKER share enjoyment of The Sixth Sense (1999); target prefers horror, while SEEKER earlier expressed dislike of horror, creating a possible mismatch.",
+      "emotion": "Candid and relaxed, with possible awareness of a taste mismatch.",
+      "intention": "Share personal taste and relate to SEEKER's stated favorites.",
+      "reaction_to_other_speaker": "Engages with SEEKER's favorites and acknowledges not having seen one of them.",
+      "conversational_goal": "Maintain rapport while being honest about the recommender's own horror preference.",
+      "changes_previous_interpretation": "Yes; introduces recommender's own preference for horror, which may affect how future recommendations balance both speakers' tastes."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says it is okay and that they just do not really like the Halloween (2007) movies.",
+      "information_available": "SEEKER is responding to the recommender's stated horror preference; SEEKER specifically dislikes the Halloween (2007) movies.",
+      "preferences": {
+        "target": "Still prefers horror movies, as stated in the previous turn.",
+        "seeker_inferred": "Is okay with target's horror preference; specifically dislikes Halloween (2007) movies; earlier general horror dislike remains relevant."
+      },
+      "belief_before": "Target likes horror; SEEKER earlier disliked horror but likes some thrillers, so there was a potential mismatch.",
+      "belief_update": "SEEKER is not rejecting target's horror preference and specifically does not like the Halloween (2007) movies.",
+      "belief_after": "Avoid Halloween (2007) movies for SEEKER; SEEKER may tolerate target's horror preference, but earlier stated horror dislike still limits suitable recommendations.",
+      "emotion": "Reassured and accepting.",
+      "intention": "Continue finding a suitable recommendation while avoiding Halloween (2007).",
+      "reaction_to_other_speaker": "Accepts the recommender's preference and clarifies their own specific dislike.",
+      "conversational_goal": "Narrow the recommendation constraints and preserve rapport.",
+      "changes_previous_interpretation": "Yes; adds a specific avoid item, Halloween (2007), and softens the earlier horror-aversion context without fully retracting it."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER asks for help finding a movie to watch.\",\n    \"information_available\": \"SEEKER wants a movie recommendation; no genre or content constraints have been stated yet.\",\n    \"preferences\": {\n      \"target\": \"No explicit preference stated yet.\",\n      \"seeker_inferred\": \"Unknown; only that SEEKER wants a movie recommendation.\"\n    },\n    \"belief_before\": \"No prior beliefs about SEEKER's movie tastes in this dialogue.\",\n    \"belief_update\": \"SEEKER is requesting help selecting a movie.\",\n    \"belief_after\": \"SEEKER wants a movie recommendation and has not stated genre preferences.\",\n    \"emotion\": \"Neutral and helpful.\",\n    \"intention\": \"Respond to the request and offer assistance.\",\n    \"reaction_to_other_speaker\": \"Positively acknowledges SEEKER's request for help.\",\n    \"conversational_goal\": \"Begin helping SEEKER find a movie.\",\n    \"changes_previous_interpretation\": \"Initial turn; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER responds by offering It (2017).\",\n    \"information_available\": \"SEEKER asked for a movie recommendation; no genre preference was given.\",\n    \"preferences\": {\n      \"target\": \"No explicit personal preference stated, but target is willing to suggest It (2017).\",\n      \"seeker_inferred\": \"No genre preference known; appears open to a suggestion.\"\n    },\n    \"belief_before\": \"SEEKER wants a movie recommendation with no stated constraints.\",\n    \"belief_update\": \"Target selects It (2017) as a possible recommendation.\",\n    \"belief_after\": \"It (2017) is a candidate movie; SEEKER's genre preferences remain unknown.\",\n    \"emotion\": \"Helpful and optimistic.\",\n    \"intention\": \"Recommend It (2017).\",\n    \"reaction_to_other_speaker\": \"Responsive and cooperative.\",\n    \"conversational_goal\": \"Provide a concrete movie suggestion.\",\n    \"changes_previous_interpretation\": \"No; this is the first recommendation attempt.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says they do not really like horror movies and asks about thrillers.\",\n    \"information_available\": \"SEEKER disliked the horror suggestion; SEEKER wants thrillers instead.\",\n    \"preferences\": {\n      \"target\": \"Still no explicit personal preference stated.\",\n      \"seeker_inferred\": \"Dislikes horror movies; prefers or requests thrillers.\"\n    },\n    \"belief_before\": \"SEEKER wants a movie recommendation; It (2017) was offered.\",\n    \"belief_update\": \"SEEKER does not really like horror and wants thriller recommendations.\",\n    \"belief_after\": \"Avoid horror for SEEKER; recommend thrillers; It (2017) is likely unsuitable.\",\n    \"emotion\": \"Accommodating and willing to adjust.\",\n    \"intention\": \"Pivot from horror to thriller recommendations.\",\n    \"reaction_to_other_speaker\": \"Accepts SEEKER's feedback without defensiveness.\",\n    \"conversational_goal\": \"Adjust the recommendation to match SEEKER's thriller preference.\",\n    \"changes_previous_interpretation\": \"Yes; updates SEEKER's preferences from unknown to no horror and interested in thrillers.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER suggests The Silence of the Lambs (1991).\",\n    \"information_available\": \"SEEKER dislikes horror and asked for thrillers; It (2017) was not accepted.\",\n    \"preferences\": {\n      \"target\": \"No explicit personal preference stated, but target is willing to recommend a thriller.\",\n      \"seeker_inferred\": \"Wants thrillers; dislikes horror.\"\n    },\n    \"belief_before\": \"SEEKER wants a thriller and does not want horror.\",\n    \"belief_update\": \"Target chooses The Silence of the Lambs (1991) as a thriller recommendation.\",\n    \"belief_after\": \"The Silence of the Lambs (1991) is a candidate based on SEEKER's thriller request.\",\n    \"emotion\": \"Focused and helpful.\",\n    \"intention\": \"Recommend a thriller.\",\n    \"reaction_to_other_speaker\": \"Responsive to SEEKER's genre correction.\",\n    \"conversational_goal\": \"Satisfy SEEKER's request for a thriller.\",\n    \"changes_previous_interpretation\": \"No major change; consistent with the turn 3 preference update.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says they have seen The Silence of the Lambs and enjoyed it; they name The Number 23 (2007) and The Sixth Sense (1999) as favorite thrillers.\",\n    \"information_available\": \"SEEKER has seen and enjoyed The Silence of the Lambs; SEEKER likes The Number 23 (2007) and The Sixth Sense (1999) as thrillers.\",\n    \"preferences\": {\n      \"target\": \"No new personal preference stated by target.\",\n      \"seeker_inferred\": \"Likes thrillers; specifically likes The Number 23 (2007) and The Sixth Sense (1999); has already seen The Silence of the Lambs.\"\n    },\n    \"belief_before\": \"SEEKER wanted a thriller; The Silence of the Lambs was suggested.\",\n    \"belief_update\": \"SEEKER has already seen and enjoyed The Silence of the Lambs, and likes The Number 23 (2007) and The Sixth Sense (1999).\",\n    \"belief_after\": \"SEEKER's thriller tastes include The Number 23 (2007) and The Sixth Sense (1999); The Silence of the Lambs is already seen and enjoyed.\",\n    \"emotion\": \"Pleased and encouraged by the positive feedback.\",\n    \"intention\": \"Use SEEKER's favorite thrillers to refine the next recommendation.\",\n    \"reaction_to_other_speaker\": \"Positive toward SEEKER's enjoyment and stated favorites.\",\n    \"conversational_goal\": \"Narrow down suitable thriller options using SEEKER's liked movies.\",\n    \"changes_previous_interpretation\": \"Yes; adds specific thriller preferences and rules out The Silence of the Lambs as a new recommendation.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says they have not seen The Number 23 (2007), enjoyed The Sixth Sense (1999), and are more into horror movies.\",\n    \"information_available\": \"SEEKER has seen and enjoyed The Silence of the Lambs; SEEKER likes The Number 23 (2007) and The Sixth Sense (1999).\",\n    \"preferences\": {\n      \"target\": \"Has not seen The Number 23 (2007); enjoyed The Sixth Sense (1999); prefers horror movies.\",\n      \"seeker_inferred\": \"Likes thrillers, including The Sixth Sense (1999) and The Number 23 (2007), but earlier said they do not really like horror.\"\n    },\n    \"belief_before\": \"SEEKER likes The Number 23 (2007) and The Sixth Sense (1999); The Silence of the Lambs was already seen and enjoyed.\",\n    \"belief_update\": \"Target reveals personal taste: has not seen The Number 23, liked The Sixth Sense, and is more into horror movies.\",\n    \"belief_after\": \"Target and SEEKER share enjoyment of The Sixth Sense (1999); target prefers horror, while SEEKER earlier expressed dislike of horror, creating a possible mismatch.\",\n    \"emotion\": \"Candid and relaxed, with possible awareness of a taste mismatch.\",\n    \"intention\": \"Share personal taste and relate to SEEKER's stated favorites.\",\n    \"reaction_to_other_speaker\": \"Engages with SEEKER's favorites and acknowledges not having seen one of them.\",\n    \"conversational_goal\": \"Maintain rapport while being honest about the recommender's own horror preference.\",\n    \"changes_previous_interpretation\": \"Yes; introduces recommender's own preference for horror, which may affect how future recommendations balance both speakers' tastes.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says it is okay and that they just do not really like the Halloween (2007) movies.\",\n    \"information_available\": \"SEEKER is responding to the recommender's stated horror preference; SEEKER specifically dislikes the Halloween (2007) movies.\",\n    \"preferences\": {\n      \"target\": \"Still prefers horror movies, as stated in the previous turn.\",\n      \"seeker_inferred\": \"Is okay with target's horror preference; specifically dislikes Halloween (2007) movies; earlier general horror dislike remains relevant.\"\n    },\n    \"belief_before\": \"Target likes horror; SEEKER earlier disliked horror but likes some thrillers, so there was a potential mismatch.\",\n    \"belief_update\": \"SEEKER is not rejecting target's horror preference and specifically does not like the Halloween (2007) movies.\",\n    \"belief_after\": \"Avoid Halloween (2007) movies for SEEKER; SEEKER may tolerate target's horror preference, but earlier stated horror dislike still limits suitable recommendations.\",\n    \"emotion\": \"Reassured and accepting.\",\n    \"intention\": \"Continue finding a suitable recommendation while avoiding Halloween (2007).\",\n    \"reaction_to_other_speaker\": \"Accepts the recommender's preference and clarifies their own specific dislike.\",\n    \"conversational_goal\": \"Narrow the recommendation constraints and preserve rapport.\",\n    \"changes_previous_interpretation\": \"Yes; adds a specific avoid item, Halloween (2007), and softens the earlier horror-aversion context without fully retracting it.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

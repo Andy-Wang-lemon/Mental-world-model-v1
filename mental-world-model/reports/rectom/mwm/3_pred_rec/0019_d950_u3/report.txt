@@ -1,0 +1,58 @@
+数据：3_pred_rec
+题号：19  d950_u3
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "他说的 Can you help me 不是一句可理可不理的客套，而是把找片这件事直接压到我身上：替他找到合适电影，是我这边不能推开的责任。类型不限在我听来是真的开放，可 Wedding Crashers (2005) 和 It (2017) 又像两条必须严格对应的选片规则，合适的片子得同时贴着这两种示例的味道，才不算辜负这个请求。",
+      "probability": 0.3553
+    },
+    {
+      "content": "他开口求助，就等于把找片任务交到我手上，我不能把这件事当作与己无关。与此同时，他说不喜欢 Star Wars 这类，在我这里不是一个轻飘飘的偏好，而是一个边界清楚的排除类别：凡是太空科幻、系列大片那一脉的东西，都从可考虑的推荐范围里被划掉。眼前这个请求因此变成：类型虽然开放，但在开放里必须替他避开那一整类。",
+      "probability": 0.329
+    },
+    {
+      "content": "他一问片，我就已经在推荐者的位置上：给出答案、替他匹配口味，是这个位置天然该负责的事，不是别人随便问问而已。Star Wars 这类在他口中也不是普通的不喜欢，而是一个整体要避开的排除类，太空科幻和系列大片在我视野里都被染上同一种该被剔掉的性质；当前请求就是在开放类型中，避开这一整类来为他找片。",
+      "probability": 0.3157
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他这一句 Can you help me 落下来，我没法当成可理可不理的客套；找一部合适电影的事就压在我这边，成了我不该推开的责任。虽然他说类型不限，我也问了他喜欢什么类型，他答得像是真的开放，可 Wedding Crashers 和 It 一摆出来，又像两条不能松的选片尺子——合适的片子得同时贴住这两种示例的味道，才不算辜负这个请求。",
+      "activation": 0.3342
+    },
+    {
+      "content": "他这一开口，我就不能把找片当成与己无关的事；类型虽然不限，但他说喜欢《婚礼傲客》和《它》、不喜欢《星球大战》这类，这在我这里把太空科幻和系列大片那一脉整个划出了可推荐范围。眼下请求是开放的，却不是没有方向，我得先弄清他喜欢什么类型，好在避开那一整类的前提下，替他筛出合适的电影。",
+      "activation": 0.3333
+    },
+    {
+      "content": "他一开口问片，我这边就已经在推荐者的位置上了：这不是随便应一声，而是要替他匹配口味、给出一个说得过去的结果。可他把类型放开，又拿 Wedding Crashers 和 It 当喜欢的例子，把 Star Wars 当成一整类要避开的东西，我心里的偏好边界就被分成了两边——一边是他可能接受的口味线索，一边是太空科幻和系列大片这种该被剔掉的类别。眼下他问得开放，我反而要先把他到底喜欢什么类型问清楚，才好在不碰那一整类的前提下，替他找片。",
+      "activation": 0.3325
+    }
+  ],
+  "observed_action": "RECOMMENDER 向 SEEKER 打招呼，并询问 SEEKER 喜欢什么类型的电影。",
+  "predicted_actions": [
+    {
+      "content": "询问必须保留的点",
+      "probability": 0.5862
+    },
+    {
+      "content": "推荐具体影片并询问可行性",
+      "probability": 0.3302
+    },
+    {
+      "content": "提供方向选项并要求选择",
+      "probability": 0.0836
+    }
+  ]
+}
+选择：A: Ask for preference or seeks feedback from the seeker
+分数：{"a": 0.6698, "b": 0, "c": 0.3302, "d": 0, "e": 0}
+选择说明：A 0.6698 = 询问必须保留的点 0.5862 + 提供方向选项并要求选择 0.0836；B 0.0000；C 0.3302 = 推荐具体影片并询问可行性 0.3302；D 0.0000；E 0.0000。Asking must-keep points or offering direction options seeks preferences, while recommending a specific film and checking feasibility is a direct recommendation.
+标准：C: Provides a recommendation directly or by inquiring further
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：A predicted next action is to ask what must be kept, which is inquiring further as the strategy describes.

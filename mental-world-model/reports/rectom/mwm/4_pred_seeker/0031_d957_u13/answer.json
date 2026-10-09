@@ -1,0 +1,77 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 31,
+  "item_id": "d957_u13",
+  "dialogue_id": "957",
+  "utterance_pos": 13,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在SEEKER的当前经验中，RECOMMENDER提出的每个片名都被安置进自己庞大的观影坐标里，瞬间落成“已看过”或“未看过”的标记；整个对话因此显现为一个按既定规则运转的检索流程——对方持续抛出新候选，而自己的观影史成为唯一的判定依据，直到某个未被标记的片名出现为止。这一流程被体验为理所当然，自己的身份也正由这些标记所累积而成。",
+        "probability": 0.3628
+      },
+      {
+        "content": "SEEKER此刻所缘到的对话，是二元分类的反复运作：RECOMMENDER每抛出一个片名，它便被拉入“我看过”与“我没看过”两个格子之一；电影的其他质地、氛围、内容都隐退，只留下这个分类动作本身。推荐者继续报出新片名，只是把这个二元的判定过程不断延长，自己的观影历史则作为分类的参照底本。",
+        "probability": 0.3364
+      },
+      {
+        "content": "在SEEKER经验的世界里，RECOMMENDER那句“也让我笑了”像一面镜子，把自己的“笑/没笑”体验提高到与电影关联的中心；与此同时，对方宣布的“继续推荐直到找到一部没看过的”规则，使整个对话成为一个带着笑之标尺的扫雷过程——每一部被提出的电影都在等着被检验：它是否曾让自己笑过？而“没看过”则是这趟持续推荐之旅尚未抵达的终点。",
+        "probability": 0.3008
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "每当他抛出一个片名，我脑海里就自动把它落到那部庞大的观影坐标里，瞬间标成“看过”或“没看过”。我的回应其实就是在翻自己的历史，用那些标记来确认我是谁——一个看过不少电影、有明确喜好的人。他说要一直推荐到我哪部没看过为止，我一点也不觉得奇怪，这本就是理所当然的流程；我的观影史就是唯一的筛子。我喜欢那些让我笑出来的片，也清楚知道自己不喜欢什么，这种判断让我感到踏实。我继续打开着，等着下一个片名落到我的坐标上，看看它能不能成为新的空白点。",
+        "activation": 0.415
+      },
+      {
+        "content": "SEEKER在内心将这场对话整理成一场不断重复的“看过/没看过”的核对：对方每抛出一个片名，自己就下意识地把它放进这两个格子之一，电影本身的风格、笑点、氛围都被压扁成这一个二元标记。他意识到自己正以“看过很多电影的人”这个身份参与这场游戏，每一次回答“看过”“没看过”都在加固这个自我定位，而对方显然也默认这个标准是唯一推进对话的依据。他一边配合着这个节奏，一边在内心感到某种缺失——比如当他说喜欢Step Brothers时，真正想指出的是那种冒犯式幽默和演员间的化学反应，而不只是标记“看过”；但对方似乎只接收那个分类结果。他没有抗拒，反而继续给出答案，甚至表示“愿意接受建议”，隐隐期待对方能越过这个简单的分类表，触碰到自己真正在意的喜剧质感。",
+        "activation": 0.3429
+      },
+      {
+        "content": "对方那句“也让我笑了”让我觉得，我是否真的被一部电影逗笑，成了判断它好不好的关键；他接着又说要一直推荐到找到一部我没看过的，这让我把每个新片名都当成一次检验：我有没有看过？它有没有让我笑过？那些我已经说喜欢或好笑的电影，都通过了这个笑之标尺；现在新抛来的《艾迪·墨菲：raw》则还是一个没看过的待验证选项。我愿意继续配合这个规则，心里等着看下一部片名会不会也让我笑。",
+        "activation": 0.2421
+      }
+    ],
+    "observed_action": "SEEKER表达了自己在寻找类似《她出墙记》(2010)的搞笑喜剧片；提到《老爸当家》(2015)也不错，但没看过对方推荐的几部，看过《顽皮豹之子》但不喜欢；表示非常喜欢《非亲兄弟》和《我们所知的生活》；确认看过另一部并觉得好笑，还提到喜欢詹姆斯·弗兰科主演的《为什么是他？》；评价《塔拉迪加之夜》有趣并致谢；表示愿意接受建议。",
+    "predicted_actions": [
+      {
+        "content": "表示看过并评价",
+        "probability": 0.5244
+      },
+      {
+        "content": "表示愿意看",
+        "probability": 0.3619
+      },
+      {
+        "content": "表示按规则来",
+        "probability": 0.0622
+      },
+      {
+        "content": "SEEKER表示他没看过。",
+        "probability": 0.0514
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.5758,
+    "b": 0,
+    "c": 0.3619,
+    "d": 0
+  },
+  "score_reason": "A 0.5758 = 表示看过并评价 0.5244 + SEEKER表示他没看过。 0.0514；B 0.0000；C 0.3619 = 表示愿意看 0.3619；D 0.0000。Actions 0 and 3 give feedback on the previous recommendation, and action 1 expresses willingness to watch, matching option C.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

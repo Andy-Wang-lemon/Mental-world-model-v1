@@ -1,0 +1,66 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 19,
+  "item_id": "d950_u2",
+  "dialogue_id": "950",
+  "utterance_pos": 2,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER的“Hi，what kind of movies do you like?”被取为一种既定的寒暄与相识程序：对方已开场，此时理应有一个类型化、可被接住的喜好回答；同时，由于“我的电影喜好/口味”被当作自己不可分的一部分，这个被要求填上的类型并不只是可搁置的普通信息，而像直接触及“我是谁”的入口。于是当前对象化世界呈现为：一个必须用可归类口味来回应的社交位置，而那个位置又贴着SEEKER自我界定的核心。",
+        "probability": 0.5887
+      },
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER的“Hi，what kind of movies do you like?”首先被取为一种固定的寒暄与认识彼此的程序，似乎此刻理应给出一个类型化、能被对方接住的喜好回答；但与此同时，由“我自己界定喜欢什么类型”的自主权被划在SEEKER这一侧，所以这个提问不是与己无关的普通信息索取，如何回答、是否回答都被经验为牵涉自身主权的事。当前对象化世界因此是：一个看似寻常的相识问句，内里却把定义权与回应权同时压到SEEKER自己这边。",
+        "probability": 0.4113
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在SEEKER这里，RECOMMENDER那句问候加提问被收成一个已经启动的相识程序：对方把话递过来了，他理应填上一个类型化、能被接住的电影偏好。可“我的电影口味”又贴着自我认定的核心，不是可以随手搁置的普通资料；于是这个待填的类型在他心里变成了一个入口——随便报一个，像会把自己说窄；认真回答，又像要把自己交出去。此刻他先以一声招呼站住，内心在“按程序接住”和“守住自我界定”之间权衡，尚未把偏好整理成一句可交付的类型。",
+        "activation": 0.6024
+      },
+      {
+        "content": "SEEKER把RECOMMENDER这句问候加提问听成一种熟悉的相识程序：此刻似乎就该接住话头，给出一个类型化、方便对方继续的喜好答案。但“喜欢什么类型”同时被SEEKER经验为不能由对方或惯例替自己定的事；如何回答、是否回答，都牵涉自己这边的定义权与回应权。于是内心并不把它当作普通的信息索取，而是在寒暄的表面下先掂量：哪些偏好可以说，哪些还需自己界定，既不愿被问法牵着走，也不想让刚起的招呼显得生硬。",
+        "activation": 0.3976
+      }
+    ],
+    "observed_action": "SEEKER说：Hey！",
+    "predicted_actions": [
+      {
+        "content": "表示不限定类型",
+        "probability": 0.3843
+      },
+      {
+        "content": "报告偏好类型",
+        "probability": 0.3777
+      },
+      {
+        "content": "反问对方偏好",
+        "probability": 0.238
+      }
+    ]
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "option_scores": {
+    "a": 0,
+    "b": 0.762,
+    "c": 0,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.7620 = 表示不限定类型 0.3843 + 报告偏好类型 0.3777；C 0.0000；D 0.0000。Actions 0 and 1 provide genre preference information, while action 2 asks for the other party's preference and matches no option.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "A predicted next action is to report a preferred genre, which directly expresses their preference.",
+  "audit_level": "direct"
+}

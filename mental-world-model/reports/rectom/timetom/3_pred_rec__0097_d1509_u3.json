@@ -1,0 +1,58 @@
+{
+  "id": "3_pred_rec__0097_d1509_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "information_available": "Only a greeting from the seeker; no stated movie preference or request details.",
+      "preferences": "Target has no specific preference information about the seeker's movie taste.",
+      "belief_before": "No prior conversational information about this seeker.",
+      "belief_update": "A seeker has initiated contact with a greeting.",
+      "belief_after": "The seeker is present and opening a conversation; what they want is still unknown.",
+      "emotion": "Neutral/polite",
+      "intention": "Acknowledge the greeting and invite the seeker to state their request.",
+      "conversational_goal": "Respond socially and discover what the seeker needs.",
+      "reaction": "Attentive and friendly; no strong positive or negative reaction yet.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello, what kind of movie are you looking for?",
+      "information_available": "Target knows the seeker greeted them and target's own response asks about movie type. No genre or title preference has been provided by the seeker yet.",
+      "preferences": "Seeker's movie preferences remain unknown. Target is inclined to gather a movie-type preference before recommending.",
+      "belief_before": "The seeker is present and has greeted the recommender; request unknown.",
+      "belief_update": "Target frames the interaction as a movie recommendation request and asks for the desired kind of movie.",
+      "belief_after": "The seeker likely wants a movie recommendation, but the genre/type is still unknown.",
+      "emotion": "Polite/helpful",
+      "intention": "Prompt the seeker to specify the kind of movie they want.",
+      "conversational_goal": "Elicit a clear movie preference to guide recommendations.",
+      "reaction": "Receptive; moves from greeting to structured information gathering.",
+      "interpretation_change": "Yes: the interaction is now framed by the target as movie recommendation, and the seeker's request is assumed to be a movie request, though unspecified."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: I’m looking for some good thriller movies...I love he suspense sort of films like Seven (1995)",
+      "information_available": "Seeker explicitly wants good thriller movies, loves suspense films, and cites Seven (1995) as an example.",
+      "preferences": "Target now knows the seeker prefers thriller/suspense movies, especially ones like Seven (1995).",
+      "belief_before": "Seeker wants a movie recommendation, but genre/type was unknown.",
+      "belief_update": "Seeker specifies thriller/suspense and gives Seven (1995) as a taste reference.",
+      "belief_after": "Seeker is looking for thriller/suspense recommendations similar to Seven (1995).",
+      "emotion": "Attentive/interested; has actionable preference information.",
+      "intention": "Use the stated thriller/suspense and Seven (1995) preference to formulate recommendations.",
+      "conversational_goal": "Recommend suitable thriller/suspense movies aligned with the seeker's stated taste.",
+      "reaction": "Acknowledges the specific genre and reference film as useful guidance.",
+      "interpretation_change": "Yes: the earlier generic movie request is now interpreted as a specific request for thriller/suspense films like Seven (1995)."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"information_available\": \"Only a greeting from the seeker; no stated movie preference or request details.\",\n    \"preferences\": \"Target has no specific preference information about the seeker's movie taste.\",\n    \"belief_before\": \"No prior conversational information about this seeker.\",\n    \"belief_update\": \"A seeker has initiated contact with a greeting.\",\n    \"belief_after\": \"The seeker is present and opening a conversation; what they want is still unknown.\",\n    \"emotion\": \"Neutral/polite\",\n    \"intention\": \"Acknowledge the greeting and invite the seeker to state their request.\",\n    \"conversational_goal\": \"Respond socially and discover what the seeker needs.\",\n    \"reaction\": \"Attentive and friendly; no strong positive or negative reaction yet.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello, what kind of movie are you looking for?\",\n    \"information_available\": \"Target knows the seeker greeted them and target's own response asks about movie type. No genre or title preference has been provided by the seeker yet.\",\n    \"preferences\": \"Seeker's movie preferences remain unknown. Target is inclined to gather a movie-type preference before recommending.\",\n    \"belief_before\": \"The seeker is present and has greeted the recommender; request unknown.\",\n    \"belief_update\": \"Target frames the interaction as a movie recommendation request and asks for the desired kind of movie.\",\n    \"belief_after\": \"The seeker likely wants a movie recommendation, but the genre/type is still unknown.\",\n    \"emotion\": \"Polite/helpful\",\n    \"intention\": \"Prompt the seeker to specify the kind of movie they want.\",\n    \"conversational_goal\": \"Elicit a clear movie preference to guide recommendations.\",\n    \"reaction\": \"Receptive; moves from greeting to structured information gathering.\",\n    \"interpretation_change\": \"Yes: the interaction is now framed by the target as movie recommendation, and the seeker's request is assumed to be a movie request, though unspecified.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: I’m looking for some good thriller movies...I love he suspense sort of films like Seven (1995)\",\n    \"information_available\": \"Seeker explicitly wants good thriller movies, loves suspense films, and cites Seven (1995) as an example.\",\n    \"preferences\": \"Target now knows the seeker prefers thriller/suspense movies, especially ones like Seven (1995).\",\n    \"belief_before\": \"Seeker wants a movie recommendation, but genre/type was unknown.\",\n    \"belief_update\": \"Seeker specifies thriller/suspense and gives Seven (1995) as a taste reference.\",\n    \"belief_after\": \"Seeker is looking for thriller/suspense recommendations similar to Seven (1995).\",\n    \"emotion\": \"Attentive/interested; has actionable preference information.\",\n    \"intention\": \"Use the stated thriller/suspense and Seven (1995) preference to formulate recommendations.\",\n    \"conversational_goal\": \"Recommend suitable thriller/suspense movies aligned with the seeker's stated taste.\",\n    \"reaction\": \"Acknowledges the specific genre and reference film as useful guidance.\",\n    \"interpretation_change\": \"Yes: the earlier generic movie request is now interpreted as a specific request for thriller/suspense films like Seven (1995).\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

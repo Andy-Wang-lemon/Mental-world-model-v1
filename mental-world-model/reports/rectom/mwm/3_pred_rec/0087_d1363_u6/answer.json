@@ -1,0 +1,62 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 87,
+  "item_id": "d1363_u6",
+  "dialogue_id": "1363",
+  "utterance_pos": 6,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning\nC: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在RECOMMENDER的所缘中，SEEKER的‘Oh great!’和‘还有其他建议吗’被连成一条对自己的检验线：自己能否持续给出让对方满意的心理惊悚/神秘片候选，成了此刻悬在视野里的问题。‘神秘电影/心理惊悚片’被体验为一个边界固定的类型框；Black Swan因为‘更偏戏剧’被推到框外，Brad Pitt虽然也作为话题对象浮出来，但在这一类型框的映照下，并不能让一部非类型片自动变成合格候选。整个视野被组织成‘哪些片名还在框内、而自己这次给出的答案是否被认可’的现场。",
+        "probability": 0.4012
+      },
+      {
+        "content": "在RECOMMENDER的所缘中，SEEKER的两次问话将‘供给者’这个位置压到自己身上；这个位置不是临时角色，而是像长在身上的一副职能。所有进入视野的候选对象都被放到‘是否属于神秘/心理惊悚这个类型’的标尺上，Black Swan因‘更偏戏剧’被划到标尺外侧，Brad Pitt则作为用户给出的另一个线索在标尺旁出现，但没有取代类型标尺的裁决；自己就这样被悬在SEEKER的期待与类型标尺之间，似乎没有从‘由我来提供’中退开的空隙。",
+        "probability": 0.3426
+      },
+      {
+        "content": "在RECOMMENDER的所缘中，SEEKER先打开的是‘神秘电影/心理惊悚片’这一类型区域；当SEEKER说出‘I love Brad Pitt’后，RECOMMENDER内心浮现出‘推荐要是不与Brad Pitt有关，似乎就不符合对方心意’的执取。这个执取没有取代神秘/心理惊悚的类型主线，而是像一层偏好叠在类型区域上，使候选片名在被按类型审视的同时，也被心里反复掂量‘和Brad Pitt有没有关系’。SEEKER那句‘Black Swan更偏戏剧’在RECOMMENDER听来，成了偏离神秘/心理惊悚类型的信号，而不是贴近当前类型主线的候选。‘Oh great!’和‘还有其他建议吗’则在RECOMMENDER的所缘中被组成对自己推荐成果的连续反馈，仿佛对方是否满意与自己不可分割，这些反馈不是无关信息，而是直接落在‘我拿出的东西有没有符合对方心意’上。",
+        "probability": 0.2562
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：在RECOMMENDER的所缘中，SEEKER的‘Oh great!’和‘还有其他建议吗’被连成一条对自己的检验线：自己能否持续给出让对方满意的心理惊悚/神秘片候选，成了此刻悬在视野里的问题。‘神秘电影/心理惊悚片’被体验为一个边界固定的类型框；Black Swan因为‘更偏戏剧’被推到框外，Brad Pitt虽然也作为话题对象浮出来，但在这一类型框的映照下，并不能让一部非类型片自动变成合格候选。整个视野被组织成‘哪些片名还在框内、而自己这次给出的答案是否被认可’的现场。",
+        "activation": 0.3556
+      },
+      {
+        "content": "在此所缘下：在RECOMMENDER的所缘中，SEEKER的两次问话将‘供给者’这个位置压到自己身上；这个位置不是临时角色，而是像长在身上的一副职能。所有进入视野的候选对象都被放到‘是否属于神秘/心理惊悚这个类型’的标尺上，Black Swan因‘更偏戏剧’被划到标尺外侧，Brad Pitt则作为用户给出的另一个线索在标尺旁出现，但没有取代类型标尺的裁决；自己就这样被悬在SEEKER的期待与类型标尺之间，似乎没有从‘由我来提供’中退开的空隙。",
+        "activation": 0.3333
+      },
+      {
+        "content": "在此所缘下：在RECOMMENDER的所缘中，SEEKER先打开的是‘神秘电影/心理惊悚片’这一类型区域；当SEEKER说出‘I love Brad Pitt’后，RECOMMENDER内心浮现出‘推荐要是不与Brad Pitt有关，似乎就不符合对方心意’的执取。这个执取没有取代神秘/心理惊悚的类型主线，而是像一层偏好叠在类型区域上，使候选片名在被按类型审视的同时，也被心里反复掂量‘和Brad Pitt有没有关系’。SEEKER那句‘Black Swan更偏戏剧’在RECOMMENDER听来，成了偏离神秘/心理惊悚类型的信号，而不是贴近当前类型主线的候选。‘Oh great!’和‘还有其他建议吗’则在RECOMMENDER的所缘中被组成对自己推荐成果的连续反馈，仿佛对方是否满意与自己不可分割，这些反馈不是无关信息，而是直接落在‘我拿出的东西有没有符合对方心意’上。",
+        "activation": 0.3111
+      }
+    ],
+    "observed_action": "RECOMMENDER询问对方喜欢什么类型的电影；然后推荐了《七宗罪》（1995），说这是布拉德·皮特主演的精彩惊悚片；随后又补充推荐了《黑天鹅》（2010）。",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.3,
+    "b": 0.55,
+    "c": 0.9,
+    "d": 0.4,
+    "e": 0.1
+  },
+  "score_reason": "The record centers on whether the recommender can keep supplying genre-appropriate mystery/psychological-thriller titles after the seeker asks for more suggestions, so providing a recommendation is most directly supported.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

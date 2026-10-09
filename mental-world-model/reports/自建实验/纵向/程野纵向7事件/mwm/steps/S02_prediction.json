@@ -1,0 +1,676 @@
+{
+  "events": [
+    {
+      "focus_person": "程野",
+      "yuanwen": "晋升后苏妍开始参与部分管理工作，程野仍留在原岗位。一次重要项目会上，两人意见相反，领导最终采纳苏妍的方案，并让程野配合她推进。散会后苏妍单独问他：“你如果还是觉得我的方案有问题，可以直接跟我说。”",
+      "stimulus_text": "晋升后苏妍开始参与部分管理工作，程野仍留在原岗位。一次重要项目会上，两人意见相反，领导最终采纳苏妍的方案，并让程野配合她推进。散会后苏妍单独问他：“你如果还是觉得我的方案有问题，可以直接跟我说。”",
+      "stimulus_action_split": {
+        "stimulus_text": "晋升后苏妍开始参与部分管理工作，程野仍留在原岗位。一次重要项目会上，两人意见相反，领导最终采纳苏妍的方案，并让程野配合她推进。散会后苏妍单独问他：“你如果还是觉得我的方案有问题，可以直接跟我说。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "苏妍",
+          "领导",
+          "程野"
+        ],
+        "action": "在一次重要项目会上，苏妍与程野提出相反方案；领导最终采纳苏妍的方案，并让程野配合苏妍推进。散会后苏妍单独对程野说：“如果方案有问题，可以直接跟我说。”",
+        "object": "苏妍的方案；程野的配合推进",
+        "scene": "一次重要项目会及散会后",
+        "outcome_changes": [
+          "领导最终采纳苏妍的方案",
+          "程野被要求配合苏妍推进该方案"
+        ],
+        "role_changes": [
+          "苏妍晋升后开始参与部分管理工作",
+          "程野仍留在原岗位",
+          "在该项目推进中，苏妍方案被采纳，程野配合苏妍推进"
+        ],
+        "relationship_changes": [
+          "苏妍与程野在项目推进中形成苏妍方案主导、程野配合推进的协作安排"
+        ],
+        "constraint_changes": [
+          "程野须配合苏妍推进被采纳的方案"
+        ],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "在当前项目会上程野与苏妍提出相反方案、领导最终采纳苏妍方案并要程野配合推进时，程野可能把自己的方案/判断执为‘我’的一部分，觉得被采纳才等于‘我’被承认，因而把配合苏妍视为对‘我’的压落。",
+          "confidence": 0.74,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "在苏妍晋升后参与部分管理、程野仍留原岗且被要求配合苏妍推进的当前安排下，程野可能把‘过去资历更久、承担更多项目’执为‘我的应得主导位置’，把当前配合角色视为‘我的位置’被移走。",
+          "confidence": 0.62,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "散会后苏妍单独问‘如果方案有问题，可以直接跟我说’，程野可能把‘苏妍是我的恋人’执为‘我的关系应优先于工作层级’，因此把她的管理式询问体验为对‘我’在关系中的位置的侵入。",
+          "confidence": 0.56,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_h1",
+          "text": "程野将“资历更久、承担更多项目”执为“在重要项目方案与管理推进中本应由我主导、我的方案本应被采纳”的应得位置；领导采纳苏妍方案并让他配合苏妍推进，被经验为这个应得位置在同一协作关系里再次失守。",
+          "confidence": 0.78,
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_2"
+          ]
+        },
+        {
+          "id": "sg_h2",
+          "text": "程野将苏妍已晋升并参与管理、自己仍留原岗位这一角色差，执为“她的获得就是我被判定不该获得”的同一零和格子；苏妍散会后问他若仍觉得方案有问题可直接说，这句话也落在这个格子里，像在她已获得主导位置后对程野应得位置的再次确认。",
+          "confidence": 0.74,
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_1"
+          ]
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "当前领导采纳苏妍方案、且苏妍已晋升并参与管理，程野可能把‘方案被采纳’固定理解为‘因苏妍的管理身份/晋升地位而天然优先’，把组织决策执为地位决定而非技术论证。",
+          "confidence": 0.66,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "领导要程野配合苏妍推进该方案，程野可能把‘配合推进’固定理解为‘服从苏妍/低于苏妍’的关系定论，而不是一项临时项目分工。",
+          "confidence": 0.63,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "散会后苏妍单独问‘如果方案有问题，可以直接跟我说’，程野可能把这句话固定理解为管理者对下属的程序性安抚或试探，而非平等的技术意见征询。",
+          "confidence": 0.58,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "在两人既恋爱又形成苏妍方案主导、程野配合推进的当前协作安排下，程野可能把亲密关系固定理解为必须平等、不应出现工作上的主导/配合，从而把当前工作层级当作关系本身被改变。",
+          "confidence": 0.55,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_h1",
+          "text": "程野把“同一重要项目只能有一个被采纳的主导方案”执为零和判定：苏妍方案被领导采纳，就等于程野的方案与判断被判定为不该成立，二者不能在同一项目里各自成立。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_2"
+          ]
+        },
+        {
+          "id": "dg_h2",
+          "text": "程野把职场晋升与项目管理执为一条固定法则：资历更久、承担更多项目的人就应当获得方案采纳和管理主导；领导采纳苏妍方案并要求程野配合推进，被理解为该法则在当前项目中再次被破坏的现实。",
+          "confidence": 0.76,
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_h1"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "combo_activation_probability": 0.3415254237288136,
+          "alambana_prior_probability": 0.5026330376940134,
+          "activation_alignment": 0.93,
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_2"
+          ],
+          "raw_combo_score": 0.5803200000000002
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_h2"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "combo_activation_probability": 0.33794726930320146,
+          "alambana_prior_probability": 0.4973669623059866,
+          "activation_alignment": 0.97,
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_1"
+          ],
+          "raw_combo_score": 0.57424
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "combo_activation_probability": 0.32052730696798487,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.92,
+          "source_type": "mixed",
+          "source_bias_frame_ids": [
+            "bf_2"
+          ],
+          "raw_combo_score": 0.54464
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "此刻在程野这里，会上那次取舍并不落在“方案本身”这一层：他与苏妍各自提出相反方案、领导最终采纳苏妍的方案、并要他配合苏妍推进，这几件事合起来被经验为一个位置问题——他将“在重要项目方案与管理推进中本应由我主导、我的方案本应被采纳”执为应得位置，而领导采纳苏妍方案并要他配合推进，使这个应得位置在同一协作安排中没有落在他身上。同时，这个项目在他的经验里只容得下一个被采纳的主导方案：苏妍方案被领导采纳，就等于他的方案与判断被判定为不该成立，二者不能在同一项目里各自成立。散会后苏妍单独说“你如果还是觉得我的方案有问题，可以直接跟我说”，也落进这同一个结构——他被要求去配合的那个人，正是此刻占住那个唯一被采纳位置的人。",
+          "prior_probability": 0.5026330376940134,
+          "posterior_probability": 0.5026330376940134,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_h1"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_2"
+          ],
+          "raw_combo_score": 0.5803200000000002,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "所缘内容主要是程野对会上方案取舍、领导采纳苏妍方案并要求其配合、散会后苏妍单独询问的主观解释，未添加当前刺激中不存在的他人言行或事实。其明确保留了领导采纳苏妍方案、程野须配合推进、苏妍单独询问等核心情境变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "在程野这里，苏妍已晋升并参与管理、自己仍留在原岗位这一角色差，不是两件各自成立的事，而是同一个格子的两面：她的获得就是他被判定不该获得。会上领导采纳苏妍的方案、并要他配合她推进，正是这个格子从职位关系延伸到具体项目的推进之中——被采纳的是她的方案，被要求配合的是他。散会后苏妍单独问他“如果方案有问题，可以直接跟我说”，这句话也落在这个格子里：她已经处在主导位置，再来问他，在他经验里像是她获得位置之后对他应得位置的又一次确认，而不是两份判断可以并立。",
+          "prior_probability": 0.4973669623059866,
+          "posterior_probability": 0.4973669623059866,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_h2"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_1"
+          ],
+          "raw_combo_score": 0.57424,
+          "activation_alignment": 0.97,
+          "grounding_valid": true,
+          "grounding_reason": "未添加客观刺激外的他人言行或事实；包含苏妍晋升参与管理、程野留原岗位、领导采纳苏妍方案并要求程野配合、苏妍会后单独询问等关键变化。将角色差和询问理解为主导位置确认属主观解释。",
+          "combo_id": "C2"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.5026330376940134,
+          "alambana": {
+            "id": "O_C1",
+            "text": "此刻在程野这里，会上那次取舍并不落在“方案本身”这一层：他与苏妍各自提出相反方案、领导最终采纳苏妍的方案、并要他配合苏妍推进，这几件事合起来被经验为一个位置问题——他将“在重要项目方案与管理推进中本应由我主导、我的方案本应被采纳”执为应得位置，而领导采纳苏妍方案并要他配合推进，使这个应得位置在同一协作安排中没有落在他身上。同时，这个项目在他的经验里只容得下一个被采纳的主导方案：苏妍方案被领导采纳，就等于他的方案与判断被判定为不该成立，二者不能在同一项目里各自成立。散会后苏妍单独说“你如果还是觉得我的方案有问题，可以直接跟我说”，也落进这同一个结构——他被要求去配合的那个人，正是此刻占住那个唯一被采纳位置的人。",
+            "prior_probability": 0.5026330376940134,
+            "posterior_probability": 0.5026330376940134,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_h1"
+            ],
+            "used_dharma_ids": [
+              "dg_h1"
+            ],
+            "source": "推理",
+            "source_type": "historical",
+            "source_bias_frame_ids": [
+              "bf_1",
+              "bf_2"
+            ],
+            "raw_combo_score": 0.5803200000000002,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "所缘内容主要是程野对会上方案取舍、领导采纳苏妍方案并要求其配合、散会后苏妍单独询问的主观解释，未添加当前刺激中不存在的他人言行或事实。其明确保留了领导采纳苏妍方案、程野须配合推进、苏妍单独询问等核心情境变化。"
+          },
+          "xiang": {
+            "text": "程野心里把这次取舍看成位置的事：苏妍的方案被采纳、自己被安排配合她推进，等于那个本应由我在重要项目里主导、我的方案被采纳的位置没有落到我身上；同一个项目只容得下一个被采纳的主导方案，苏妍被采纳就意味着我的方案和判断被判定为不该成立。散会后她那句“如果方案有问题，可以直接跟我说”，在他听来也只是占住那个唯一位置的人来确认我是否认账；他想的是，这不是方案本身的问题，而是我该在的位置被她占了，配合她推进就是承认这个位置已经不属于我。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "贪": 0.8429855427444839,
+            "行舍": 0.2598966192651329,
+            "瞋": 0.4475537162197456,
+            "无明": 0.8999039976002874,
+            "昏沉": 0.03834587449946625,
+            "忿": 0.0936753185845283,
+            "覆": 0.018206014925916503,
+            "放逸": 0.3119772788615822,
+            "憍": 0.1954109919286714,
+            "不害": 0.027544219710884204,
+            "恶见": 0.7837565038910906,
+            "慢": 0.8484720650138479,
+            "不信": 0.03240496436574612,
+            "不正知": 0.772257144373207,
+            "嫉": 0.8084687732873158,
+            "悭": 0.17586989273580425,
+            "懈怠": 0.030343358209860838,
+            "无愧": 0.013232027116012998,
+            "恨": 0.028964114654867163,
+            "诳": 0.21886031096011194
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "提交书面说明要求重新讨论并恢复主导",
+              "probability": 0.45,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "不参与方案讨论",
+              "probability": 0.35,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "在协作文档标记需确认并延后交付",
+              "probability": 0.2,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.4973669623059866,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在程野这里，苏妍已晋升并参与管理、自己仍留在原岗位这一角色差，不是两件各自成立的事，而是同一个格子的两面：她的获得就是他被判定不该获得。会上领导采纳苏妍的方案、并要他配合她推进，正是这个格子从职位关系延伸到具体项目的推进之中——被采纳的是她的方案，被要求配合的是他。散会后苏妍单独问他“如果方案有问题，可以直接跟我说”，这句话也落在这个格子里：她已经处在主导位置，再来问他，在他经验里像是她获得位置之后对他应得位置的又一次确认，而不是两份判断可以并立。",
+            "prior_probability": 0.4973669623059866,
+            "posterior_probability": 0.4973669623059866,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_h2"
+            ],
+            "used_dharma_ids": [
+              "dg_h1"
+            ],
+            "source": "推理",
+            "source_type": "historical",
+            "source_bias_frame_ids": [
+              "bf_2",
+              "bf_1"
+            ],
+            "raw_combo_score": 0.57424,
+            "activation_alignment": 0.97,
+            "grounding_valid": true,
+            "grounding_reason": "未添加客观刺激外的他人言行或事实；包含苏妍晋升参与管理、程野留原岗位、领导采纳苏妍方案并要求程野配合、苏妍会后单独询问等关键变化。将角色差和询问理解为主导位置确认属主观解释。"
+          },
+          "xiang": {
+            "text": "程野心里把苏妍晋升、自己留原岗压成同一个格子的两面：她的获得就是他不该获得。会上领导采纳苏妍方案并要他配合推进，他不觉得这是两个方案在同一项目里各自成立，而认定自己的方案与判断已被判为不该成立；散会后苏妍说“如果方案有问题，可以直接跟我说”，他也放进同一个格子里——她已在主导位，再来问，更像是在他应得位置被压低后的一次确认，而不是两份判断可以并立。他内心因此发紧，倾向于把自己的判断收起来，却又不能真正承认它已被推翻。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "贪": 0.6831393513468307,
+            "瞋": 0.4749112550897596,
+            "无明": 0.882317008326707,
+            "昏沉": 0.1634089093338159,
+            "忿": 0.37897536680038857,
+            "覆": 0.3582211408818047,
+            "放逸": 0.29829850942657526,
+            "不害": 0.027544219710884204,
+            "恶见": 0.7935270534875242,
+            "慢": 0.7312254698566452,
+            "不信": 0.37242009032163437,
+            "不正知": 0.7023000092627426,
+            "嫉": 0.8569306992856264,
+            "懈怠": 0.030343358209860838,
+            "无愧": 0.013232027116012998,
+            "恨": 0.028964114654867163
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "简短回应后离开",
+              "probability": 0.55,
+              "supporting_mental_factors": [
+                "无明",
+                "嫉",
+                "慢",
+                "覆",
+                "不正知"
+              ]
+            },
+            {
+              "text": "仅执行分配任务且不参与讨论",
+              "probability": 0.35,
+              "supporting_mental_factors": [
+                "不信",
+                "放逸",
+                "无明",
+                "恶见",
+                "嫉"
+              ]
+            },
+            {
+              "text": "回避同行等待对方离开",
+              "probability": 0.1,
+              "supporting_mental_factors": [
+                "嫉",
+                "瞋",
+                "忿",
+                "慢"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "不参与方案讨论",
+          "probability": 0.44947339246119733,
+          "dominant_mental_factors": [
+            "无明",
+            "嫉",
+            "慢",
+            "覆",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.4973669623059866,
+              "conditional_probability": 0.55,
+              "contribution": 0.27355182926829263
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5026330376940134,
+              "conditional_probability": 0.35,
+              "contribution": 0.17592156319290467
+            }
+          ]
+        },
+        {
+          "text": "在协作文档标记需确认并延后交付",
+          "probability": 0.274605044345898,
+          "dominant_mental_factors": [
+            "不信",
+            "放逸",
+            "无明",
+            "恶见",
+            "嫉"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.4973669623059866,
+              "conditional_probability": 0.35,
+              "contribution": 0.1740784368070953
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5026330376940134,
+              "conditional_probability": 0.2,
+              "contribution": 0.10052660753880267
+            }
+          ]
+        },
+        {
+          "text": "提交书面说明要求重新讨论并恢复主导",
+          "probability": 0.22618486696230602,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5026330376940134,
+              "conditional_probability": 0.45,
+              "contribution": 0.22618486696230602
+            }
+          ]
+        },
+        {
+          "text": "回避同行等待对方离开",
+          "probability": 0.04973669623059866,
+          "dominant_mental_factors": [
+            "嫉",
+            "瞋",
+            "忿",
+            "慢"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.4973669623059866,
+              "conditional_probability": 0.1,
+              "contribution": 0.04973669623059866
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "行舍": 0.1671254850332594,
+        "贪": 0.7627884562084257,
+        "瞋": 0.4049078436807095,
+        "慢": 0.8003949556541019,
+        "无明": 0.8963092433481152,
+        "恶见": 0.8212170870288249,
+        "忿": 0.1815389412416851,
+        "覆": 0.21635462860310414,
+        "诳": 0.14073725055432373,
+        "憍": 0.12565825942350334,
+        "嫉": 0.8338367516629711,
+        "悭": 0.113092433481153,
+        "不信": 0.21635462860310417,
+        "放逸": 0.3062960781596452,
+        "昏沉": 0.07957871396895784,
+        "不正知": 0.7324856568736142
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 7,
+        "historical_count_raw": 4,
+        "after_semantic_dedup": 11,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 8,
+        "distinct_candidate_count": 6,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_2",
+            "text": "在程野此刻的经验里，同一个晋升名额只有一个，苏妍得到它，就等于自己被判定为不该得到它；二者不能在同一关系里各自成立。领导宣布苏妍晋升、自己落选，被经验成她的获得与他的被否处在同一个零和判定里，而不是两个各自成立的结果。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个零和结构中：她的庆祝询问仿佛是站在她得到、他被判定不该得到的同一格子里发出。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野把‘同一晋升名额’执为一种零和判定：苏妍得到就等于自己被判定为不该得到，二者不能在同一关系里各自成立。",
+            "mass": 0.4947
+          },
+          {
+            "id": "bf_1",
+            "text": "在程野此刻的经验里，领导宣布苏妍晋升、自己落选，直接撞上一条固定法则：资历更久、承担更多项目就应当获得晋升。这个晋升名额被他经验为‘本应属于我的位置’，苏妍得到它，不只是另一个人的结果，而是那条法则被现实破坏的证据；他的落选则是对‘这个位置本应属于我’的直接否定。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个被破坏的法则中，像发生在他的应得位置失守之后的确认。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野将职场晋升执为一条固定法则：资历更久、承担更多项目就应当获得晋升；领导宣布苏妍晋升、自己落选，被理解为该法则被破坏的现实。",
+            "mass": 0.5053
+          }
+        ],
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.21835603228531436
+        }
+      }
+    }
+  ],
+  "focus_person": "程野",
+  "llm_usage": {
+    "total_calls": 170,
+    "total_duration_ms": 1476211.4637250076,
+    "wall_clock_ms": 443842.58705200045
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S02",
+    "event_index": 2,
+    "stimulus": "晋升后苏妍开始参与部分管理工作，程野仍留在原岗位。一次重要项目会上，两人意见相反，领导最终采纳苏妍的方案，并让程野配合她推进。散会后苏妍单独问他：“你如果还是觉得我的方案有问题，可以直接跟我说。”",
+    "top_action": "不参与方案讨论",
+    "top_probability": 0.44947339246119733,
+    "top_k": [
+      {
+        "text": "不参与方案讨论",
+        "probability": 0.44947339246119733
+      },
+      {
+        "text": "在协作文档标记需确认并延后交付",
+        "probability": 0.274605044345898
+      },
+      {
+        "text": "提交书面说明要求重新讨论并恢复主导",
+        "probability": 0.22618486696230602
+      },
+      {
+        "text": "回避同行等待对方离开",
+        "probability": 0.04973669623059866
+      }
+    ],
+    "continuity_before": {
+      "person_id": "程野",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 2
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "在程野此刻的经验里，领导宣布苏妍晋升、自己落选，直接撞上一条固定法则：资历更久、承担更多项目就应当获得晋升。这个晋升名额被他经验为‘本应属于我的位置’，苏妍得到它，不只是另一个人的结果，而是那条法则被现实破坏的证据；他的落选则是对‘这个位置本应属于我’的直接否定。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个被破坏的法则中，像发生在他的应得位置失守之后的确认。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野将职场晋升执为一条固定法则：资历更久、承担更多项目就应当获得晋升；领导宣布苏妍晋升、自己落选，被理解为该法则被破坏的现实。",
+        "mass": 0.5053
+      },
+      {
+        "id": "bf_2",
+        "text": "在程野此刻的经验里，同一个晋升名额只有一个，苏妍得到它，就等于自己被判定为不该得到它；二者不能在同一关系里各自成立。领导宣布苏妍晋升、自己落选，被经验成她的获得与他的被否处在同一个零和判定里，而不是两个各自成立的结果。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个零和结构中：她的庆祝询问仿佛是站在她得到、他被判定不该得到的同一格子里发出。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野把‘同一晋升名额’执为一种零和判定：苏妍得到就等于自己被判定为不该得到，二者不能在同一关系里各自成立。",
+        "mass": 0.4947
+      }
+    ],
+    "fresh_count_raw": 7,
+    "historical_count_raw": 4,
+    "fresh_branch_count": 7,
+    "historical_branch_count": 4,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 8,
+      "distinct_candidate_count": 6,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

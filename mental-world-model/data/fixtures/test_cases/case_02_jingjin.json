@@ -1,0 +1,27 @@
+{
+  "id": "case_02_jingjin",
+  "description": "「精进」对治「懈怠」：持续承担善法、不推诿",
+  "yuanwen": "我愿意持续完成该做的善法，不因疲厌而推诿，也不把该做的事拖到明天。",
+  "mock": {
+    "extraction": {
+      "suoyuan": {"text": "该做的善法"},
+      "xiang": {"text": "应持续完成", "has_direct_evidence": true},
+      "si": {"text": "不因疲厌推诿", "has_direct_evidence": true}
+    },
+    "elevated_scores": {
+      "精进": 0.88,
+      "懈怠": 0.35
+    },
+    "stage_scores": {
+      "精进": {"ye": 0.75, "xiandai": 0.72, "xiandai_confidence": 0.85},
+      "懈怠": {"ye": 0.35, "xiandai": 0.38, "xiandai_confidence": 0.7}
+    },
+    "reconcile": {
+      "精进|懈怠": "精进"
+    }
+  },
+  "assertions": {
+    "nonzero_final": ["精进"],
+    "zero_final": ["懈怠"]
+  }
+}

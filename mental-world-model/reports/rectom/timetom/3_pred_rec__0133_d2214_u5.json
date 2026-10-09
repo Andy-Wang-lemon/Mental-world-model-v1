@@ -1,0 +1,89 @@
+{
+  "id": "3_pred_rec__0133_d2214_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says hello and asks to find a movie similar to Alien (1979) or Halloween (1978).",
+      "information_available": "Recommender knows only the greeting and the seeker's stated examples/request.",
+      "preferences": "Target speaker's own movie preferences are not yet known. Inferred seeker preference: wants horror/sci-fi/slasher-adjacent films similar to Alien or Halloween.",
+      "belief_before": "No specific prior belief about this seeker's taste.",
+      "belief_update": "Seeker is seeking recommendations similar to Alien or Halloween.",
+      "belief_after": "Seeker likely enjoys horror and/or sci-fi classics and wants a similarly styled movie.",
+      "emotion": "Attentive, neutral-positive.",
+      "intention": "Provide a useful recommendation that matches the request.",
+      "reaction_to_other": "Receptive and helpful.",
+      "conversational_goal": "Offer or prepare a recommendation similar to Alien/Halloween.",
+      "changes_previous_interpretation": "Initial turn; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER proposes A Nightmare on Elm Street (1984).",
+      "information_available": "Recommender has the seeker's request for something similar to Alien or Halloween; Recommender now offers Nightmare as a candidate.",
+      "preferences": "Recommender likely regards Nightmare as a suitable horror/slasher/supernatural recommendation. Inferred seeker preference remains horror/sci-fi/slasher-adjacent.",
+      "belief_before": "Seeker wants a movie similar to Alien or Halloween.",
+      "belief_update": "Recommender selects A Nightmare on Elm Street as a possible match.",
+      "belief_after": "Nightmare may satisfy the seeker's interest in horror/slasher/supernatural movies.",
+      "emotion": "Helpful, positive.",
+      "intention": "Recommend Nightmare and invite the seeker's reaction.",
+      "reaction_to_other": "Responsive to the seeker's request.",
+      "conversational_goal": "Get feedback on whether Nightmare fits the seeker's taste.",
+      "changes_previous_interpretation": "Moves from stated request to a candidate recommendation; does not contradict the prior interpretation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says, 'I loved that series as well.'",
+      "information_available": "Seeker positively responded to the Nightmare recommendation; earlier, seeker wanted Alien/Halloween-like movies.",
+      "preferences": "Seeker appears to like the Nightmare on Elm Street series as well as Alien/Halloween. Recommender's own preference for Nightmare is not yet explicitly stated.",
+      "belief_before": "Nightmare may be a good match for the seeker.",
+      "belief_update": "Seeker loved the Nightmare series, confirming positive reception.",
+      "belief_after": "Seeker likes horror/slasher/supernatural franchises, especially Alien/Halloween/Nightmare; the Nightmare recommendation was successful.",
+      "emotion": "Pleased, encouraged.",
+      "intention": "Continue recommending similar horror titles.",
+      "reaction_to_other": "Positive and validated by the seeker's enthusiasm.",
+      "conversational_goal": "Build on confirmed shared interest and suggest another relevant movie.",
+      "changes_previous_interpretation": "Yes; it confirms the Nightmare fit and expands the inferred seeker preference for horror franchises."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says, 'Yes it was great. Have you seen the Friday the 13th (1980) series?'",
+      "information_available": "Seeker loved Nightmare; earlier wanted Alien/Halloween-like movies; Recommender now agrees Nightmare was great and asks about Friday the 13th.",
+      "preferences": "Recommender explicitly likes Nightmare ('it was great'). Inferred seeker preference: enjoys horror franchises and may like Friday the 13th.",
+      "belief_before": "Seeker loved Nightmare and likely enjoys similar horror franchises.",
+      "belief_update": "Recommender agrees Nightmare was great and proposes Friday the 13th as the next candidate.",
+      "belief_after": "Friday the 13th may appeal to the seeker, but the seeker's reaction is unknown.",
+      "emotion": "Enthusiastic, agreeable.",
+      "intention": "Recommend or ask about Friday the 13th and test another possible match.",
+      "reaction_to_other": "Positive rapport; agrees with the seeker's enjoyment.",
+      "conversational_goal": "Continue personalizing recommendations by checking another classic horror franchise.",
+      "changes_previous_interpretation": "Extends the prior interpretation; no contradiction."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says, 'I've watched it though I just wasn't into it as much.'",
+      "information_available": "Seeker has seen Friday the 13th but liked it less; prior positive signals for Alien/Halloween/Nightmare remain.",
+      "preferences": "Seeker likes Alien/Halloween/Nightmare more than Friday the 13th; has selective taste within horror. Recommender's own preference for Nightmare remains from the prior turn.",
+      "belief_before": "Friday the 13th may be a good next recommendation.",
+      "belief_update": "Seeker has watched Friday the 13th and was not as into it.",
+      "belief_after": "Friday the 13th is a weaker match; the seeker's horror taste is not uniformly satisfied by classic slasher franchises.",
+      "emotion": "Slightly disappointed but understanding and recalibrating.",
+      "intention": "Adjust recommendations away from Friday the 13th and seek a better match.",
+      "reaction_to_other": "Receptive to negative feedback; not defensive.",
+      "conversational_goal": "Acknowledge the feedback and pivot to a more suitable recommendation.",
+      "changes_previous_interpretation": "Yes; it refines the earlier assumption that the seeker broadly likes classic slasher franchises."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says hello and asks to find a movie similar to Alien (1979) or Halloween (1978).\",\n    \"information_available\": \"Recommender knows only the greeting and the seeker's stated examples/request.\",\n    \"preferences\": \"Target speaker's own movie preferences are not yet known. Inferred seeker preference: wants horror/sci-fi/slasher-adjacent films similar to Alien or Halloween.\",\n    \"belief_before\": \"No specific prior belief about this seeker's taste.\",\n    \"belief_update\": \"Seeker is seeking recommendations similar to Alien or Halloween.\",\n    \"belief_after\": \"Seeker likely enjoys horror and/or sci-fi classics and wants a similarly styled movie.\",\n    \"emotion\": \"Attentive, neutral-positive.\",\n    \"intention\": \"Provide a useful recommendation that matches the request.\",\n    \"reaction_to_other\": \"Receptive and helpful.\",\n    \"conversational_goal\": \"Offer or prepare a recommendation similar to Alien/Halloween.\",\n    \"changes_previous_interpretation\": \"Initial turn; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER proposes A Nightmare on Elm Street (1984).\",\n    \"information_available\": \"Recommender has the seeker's request for something similar to Alien or Halloween; Recommender now offers Nightmare as a candidate.\",\n    \"preferences\": \"Recommender likely regards Nightmare as a suitable horror/slasher/supernatural recommendation. Inferred seeker preference remains horror/sci-fi/slasher-adjacent.\",\n    \"belief_before\": \"Seeker wants a movie similar to Alien or Halloween.\",\n    \"belief_update\": \"Recommender selects A Nightmare on Elm Street as a possible match.\",\n    \"belief_after\": \"Nightmare may satisfy the seeker's interest in horror/slasher/supernatural movies.\",\n    \"emotion\": \"Helpful, positive.\",\n    \"intention\": \"Recommend Nightmare and invite the seeker's reaction.\",\n    \"reaction_to_other\": \"Responsive to the seeker's request.\",\n    \"conversational_goal\": \"Get feedback on whether Nightmare fits the seeker's taste.\",\n    \"changes_previous_interpretation\": \"Moves from stated request to a candidate recommendation; does not contradict the prior interpretation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says, 'I loved that series as well.'\",\n    \"information_available\": \"Seeker positively responded to the Nightmare recommendation; earlier, seeker wanted Alien/Halloween-like movies.\",\n    \"preferences\": \"Seeker appears to like the Nightmare on Elm Street series as well as Alien/Halloween. Recommender's own preference for Nightmare is not yet explicitly stated.\",\n    \"belief_before\": \"Nightmare may be a good match for the seeker.\",\n    \"belief_update\": \"Seeker loved the Nightmare series, confirming positive reception.\",\n    \"belief_after\": \"Seeker likes horror/slasher/supernatural franchises, especially Alien/Halloween/Nightmare; the Nightmare recommendation was successful.\",\n    \"emotion\": \"Pleased, encouraged.\",\n    \"intention\": \"Continue recommending similar horror titles.\",\n    \"reaction_to_other\": \"Positive and validated by the seeker's enthusiasm.\",\n    \"conversational_goal\": \"Build on confirmed shared interest and suggest another relevant movie.\",\n    \"changes_previous_interpretation\": \"Yes; it confirms the Nightmare fit and expands the inferred seeker preference for horror franchises.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says, 'Yes it was great. Have you seen the Friday the 13th (1980) series?'\",\n    \"information_available\": \"Seeker loved Nightmare; earlier wanted Alien/Halloween-like movies; Recommender now agrees Nightmare was great and asks about Friday the 13th.\",\n    \"preferences\": \"Recommender explicitly likes Nightmare ('it was great'). Inferred seeker preference: enjoys horror franchises and may like Friday the 13th.\",\n    \"belief_before\": \"Seeker loved Nightmare and likely enjoys similar horror franchises.\",\n    \"belief_update\": \"Recommender agrees Nightmare was great and proposes Friday the 13th as the next candidate.\",\n    \"belief_after\": \"Friday the 13th may appeal to the seeker, but the seeker's reaction is unknown.\",\n    \"emotion\": \"Enthusiastic, agreeable.\",\n    \"intention\": \"Recommend or ask about Friday the 13th and test another possible match.\",\n    \"reaction_to_other\": \"Positive rapport; agrees with the seeker's enjoyment.\",\n    \"conversational_goal\": \"Continue personalizing recommendations by checking another classic horror franchise.\",\n    \"changes_previous_interpretation\": \"Extends the prior interpretation; no contradiction.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says, 'I've watched it though I just wasn't into it as much.'\",\n    \"information_available\": \"Seeker has seen Friday the 13th but liked it less; prior positive signals for Alien/Halloween/Nightmare remain.\",\n    \"preferences\": \"Seeker likes Alien/Halloween/Nightmare more than Friday the 13th; has selective taste within horror. Recommender's own preference for Nightmare remains from the prior turn.\",\n    \"belief_before\": \"Friday the 13th may be a good next recommendation.\",\n    \"belief_update\": \"Seeker has watched Friday the 13th and was not as into it.\",\n    \"belief_after\": \"Friday the 13th is a weaker match; the seeker's horror taste is not uniformly satisfied by classic slasher franchises.\",\n    \"emotion\": \"Slightly disappointed but understanding and recalibrating.\",\n    \"intention\": \"Adjust recommendations away from Friday the 13th and seek a better match.\",\n    \"reaction_to_other\": \"Receptive to negative feedback; not defensive.\",\n    \"conversational_goal\": \"Acknowledge the feedback and pivot to a more suitable recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; it refines the earlier assumption that the seeker broadly likes classic slasher franchises.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

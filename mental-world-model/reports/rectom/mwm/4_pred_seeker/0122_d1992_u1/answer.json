@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 122,
+  "item_id": "d1992_u1",
+  "dialogue_id": "1992",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances\nC: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: hi what kind of movies do you like；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: hi what kind of movies do you like；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "option_scores": {
+    "a": 0.1,
+    "b": 0.9,
+    "c": 0.45,
+    "d": 0.2
+  },
+  "score_reason": "The recommender directly asks what kind of movies SEEKER likes, so adding preference details is the most directly supported next strategy.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record has no predicted next actions or next-thought, only the recommender's prompt.",
+  "audit_level": "inferred"
+}

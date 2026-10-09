@@ -1,0 +1,59 @@
+{
+  "id": "4_pred_seeker__0107_d1619_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER initiates: greets recommender and asks for good drama/thriller movies. Information available at this point: only SEEKER's own request and greeting; no recommender reply yet.",
+      "belief_before": "No prior dialogue; SEEKER has no information about the recommender's preferences or willingness to help.",
+      "belief_update": "SEEKER expresses a request, creating the expectation that the recommender may provide movie suggestions.",
+      "belief_after": "SEEKER believes the recommender has been asked for drama/thriller recommendations and may respond.",
+      "emotion": "Friendly and curious.",
+      "intention": "Introduce herself and ask for drama/thriller movie recommendations.",
+      "conversational_goal": "Solicit recommendations for good drama/thriller movies."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER replies: 'im good yourself?' Information available to SEEKER: recommender is socially engaged and asks how SEEKER is, but has not yet given movie suggestions.",
+      "belief_before": "SEEKER has just asked for drama/thriller recommendations and believes the recommender may respond to that request.",
+      "belief_update": "SEEKER learns the recommender is responsive and polite, but still lacks any movie recommendations.",
+      "belief_after": "SEEKER believes the recommender is engaged in conversation and may soon address the movie request.",
+      "emotion": "Polite/neutral; mildly positive that the recommender replied.",
+      "intention": "Respond to the social opener and continue steering toward movie recommendations.",
+      "conversational_goal": "Maintain rapport while moving the dialogue toward useful drama/thriller suggestions."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I love movies like Double Jeopardy (1999).' Information available to SEEKER: recommender asked how she is; no recommendations have been offered yet. She does not directly answer the social question; she focuses on movie taste.",
+      "belief_before": "SEEKER believes the recommender is engaged and knows she wants drama/thriller movies, but does not yet have a concrete taste example.",
+      "belief_update": "SEEKER provides a concrete preference anchor: movies like Double Jeopardy (1999). This refines the request rather than changing its overall interpretation.",
+      "belief_after": "SEEKER believes the recommender now has a clearer basis for recommending similar drama/thriller movies.",
+      "emotion": "Engaged and enthusiastic about the preferred movie style.",
+      "intention": "Clarify her taste so the recommender can produce better matches.",
+      "conversational_goal": "Guide the recommender toward movies similar to Double Jeopardy (1999)."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER suggests The Resident (2011) with Hilary Swank and Nocturnal Animals (2016). Information available to SEEKER: two specific movie candidates have been offered as possible matches.",
+      "belief_before": "SEEKER believes the recommender knows she likes movies like Double Jeopardy (1999) and is trying to help, but no specific suggestions have been given yet.",
+      "belief_update": "SEEKER receives two concrete recommendations. This changes the situation from waiting for suggestions to evaluating specific candidates.",
+      "belief_after": "SEEKER believes there are now two candidate movies to consider against her drama/thriller preference.",
+      "emotion": "Interested and curious; possibly evaluating whether the suggestions fit.",
+      "intention": "Consider the suggested titles and decide whether to accept, question, or ask for more recommendations.",
+      "conversational_goal": "Assess the proposed movies and continue seeking a good drama/thriller match."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER initiates: greets recommender and asks for good drama/thriller movies. Information available at this point: only SEEKER's own request and greeting; no recommender reply yet.\",\n    \"belief_before\": \"No prior dialogue; SEEKER has no information about the recommender's preferences or willingness to help.\",\n    \"belief_update\": \"SEEKER expresses a request, creating the expectation that the recommender may provide movie suggestions.\",\n    \"belief_after\": \"SEEKER believes the recommender has been asked for drama/thriller recommendations and may respond.\",\n    \"emotion\": \"Friendly and curious.\",\n    \"intention\": \"Introduce herself and ask for drama/thriller movie recommendations.\",\n    \"conversational_goal\": \"Solicit recommendations for good drama/thriller movies.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER replies: 'im good yourself?' Information available to SEEKER: recommender is socially engaged and asks how SEEKER is, but has not yet given movie suggestions.\",\n    \"belief_before\": \"SEEKER has just asked for drama/thriller recommendations and believes the recommender may respond to that request.\",\n    \"belief_update\": \"SEEKER learns the recommender is responsive and polite, but still lacks any movie recommendations.\",\n    \"belief_after\": \"SEEKER believes the recommender is engaged in conversation and may soon address the movie request.\",\n    \"emotion\": \"Polite/neutral; mildly positive that the recommender replied.\",\n    \"intention\": \"Respond to the social opener and continue steering toward movie recommendations.\",\n    \"conversational_goal\": \"Maintain rapport while moving the dialogue toward useful drama/thriller suggestions.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I love movies like Double Jeopardy (1999).' Information available to SEEKER: recommender asked how she is; no recommendations have been offered yet. She does not directly answer the social question; she focuses on movie taste.\",\n    \"belief_before\": \"SEEKER believes the recommender is engaged and knows she wants drama/thriller movies, but does not yet have a concrete taste example.\",\n    \"belief_update\": \"SEEKER provides a concrete preference anchor: movies like Double Jeopardy (1999). This refines the request rather than changing its overall interpretation.\",\n    \"belief_after\": \"SEEKER believes the recommender now has a clearer basis for recommending similar drama/thriller movies.\",\n    \"emotion\": \"Engaged and enthusiastic about the preferred movie style.\",\n    \"intention\": \"Clarify her taste so the recommender can produce better matches.\",\n    \"conversational_goal\": \"Guide the recommender toward movies similar to Double Jeopardy (1999).\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER suggests The Resident (2011) with Hilary Swank and Nocturnal Animals (2016). Information available to SEEKER: two specific movie candidates have been offered as possible matches.\",\n    \"belief_before\": \"SEEKER believes the recommender knows she likes movies like Double Jeopardy (1999) and is trying to help, but no specific suggestions have been given yet.\",\n    \"belief_update\": \"SEEKER receives two concrete recommendations. This changes the situation from waiting for suggestions to evaluating specific candidates.\",\n    \"belief_after\": \"SEEKER believes there are now two candidate movies to consider against her drama/thriller preference.\",\n    \"emotion\": \"Interested and curious; possibly evaluating whether the suggestions fit.\",\n    \"intention\": \"Consider the suggested titles and decide whether to accept, question, or ask for more recommendations.\",\n    \"conversational_goal\": \"Assess the proposed movies and continue seeking a good drama/thriller match.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

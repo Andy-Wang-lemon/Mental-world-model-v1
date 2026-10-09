@@ -1,0 +1,59 @@
+{
+  "id": "4_pred_seeker__0076_d1205_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "I have just said 'Hey How are you'; no reply from RECOMMENDER yet. Information available: only my own greeting. My movie preferences are not yet expressed.",
+      "belief_before": "No prior context about RECOMMENDER or their intent.",
+      "belief_update": "None; I have only initiated contact. No previous interpretation to change.",
+      "belief_after": "RECOMMENDER has been greeted and asked how they are.",
+      "emotion": "Polite, friendly, expectant.",
+      "intention": "Greet RECOMMENDER and open a conversation.",
+      "conversational_goal": "Establish contact and invite a response."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says hello, asks how I am, and asks what kind of movies I like. Information available: RECOMMENDER is engaging in a movie-taste question. My own preferences: broad taste and foreign films, but I have not yet stated this.",
+      "belief_before": "I had greeted RECOMMENDER and had no information about their purpose.",
+      "belief_update": "RECOMMENDER is friendly and wants to discuss movies; likely to recommend based on my preferences. This shifts the context from a simple greeting to movie discussion.",
+      "belief_after": "RECOMMENDER expects me to state what movies I like.",
+      "emotion": "Positive and receptive to RECOMMENDER's question.",
+      "intention": "Respond to RECOMMENDER's greeting and movie-preference question.",
+      "conversational_goal": "Answer the movie question to continue the recommendation conversation."
+    },
+    {
+      "time": 3,
+      "observed": "I say I am really into everything and really like foreign movies, and that it is really my thing. Information available: RECOMMENDER has asked about my movie preferences.",
+      "belief_before": "RECOMMENDER asked what kind of movies I like.",
+      "belief_update": "I am choosing to present myself as broadly open and especially fond of foreign movies. This refines the previous context by making my preferences explicit.",
+      "belief_after": "RECOMMENDER now knows my stated taste: everything, especially foreign films.",
+      "emotion": "Enthusiastic and cooperative.",
+      "intention": "Share my movie preferences so RECOMMENDER can suggest suitable films.",
+      "conversational_goal": "Provide taste information and keep the recommendation dialogue moving."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER recommends Dr. Seuss' How the Grinch Stole Christmas (2000) and Christmas with the Kranks (2004), and asks if I have seen either. Information available: RECOMMENDER has chosen two holiday/Christmas movies and is checking my familiarity.",
+      "belief_before": "I told RECOMMENDER I like everything and especially foreign movies.",
+      "belief_update": "RECOMMENDER has interpreted my broad interest as compatible with holiday/Christmas comedies and is now offering specific titles. This changes the previous interpretation from preference elicitation to concrete holiday recommendations.",
+      "belief_after": "RECOMMENDER wants to know whether I have seen these two films and may be gauging my interest in them.",
+      "emotion": "Curious and open; possibly slightly surprised that the picks are not foreign, but still receptive.",
+      "intention": "Consider the recommended films and prepare to say whether I have seen or want them.",
+      "conversational_goal": "Evaluate the recommendations and answer the have-you-seen question."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"I have just said 'Hey How are you'; no reply from RECOMMENDER yet. Information available: only my own greeting. My movie preferences are not yet expressed.\",\n    \"belief_before\": \"No prior context about RECOMMENDER or their intent.\",\n    \"belief_update\": \"None; I have only initiated contact. No previous interpretation to change.\",\n    \"belief_after\": \"RECOMMENDER has been greeted and asked how they are.\",\n    \"emotion\": \"Polite, friendly, expectant.\",\n    \"intention\": \"Greet RECOMMENDER and open a conversation.\",\n    \"conversational_goal\": \"Establish contact and invite a response.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says hello, asks how I am, and asks what kind of movies I like. Information available: RECOMMENDER is engaging in a movie-taste question. My own preferences: broad taste and foreign films, but I have not yet stated this.\",\n    \"belief_before\": \"I had greeted RECOMMENDER and had no information about their purpose.\",\n    \"belief_update\": \"RECOMMENDER is friendly and wants to discuss movies; likely to recommend based on my preferences. This shifts the context from a simple greeting to movie discussion.\",\n    \"belief_after\": \"RECOMMENDER expects me to state what movies I like.\",\n    \"emotion\": \"Positive and receptive to RECOMMENDER's question.\",\n    \"intention\": \"Respond to RECOMMENDER's greeting and movie-preference question.\",\n    \"conversational_goal\": \"Answer the movie question to continue the recommendation conversation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"I say I am really into everything and really like foreign movies, and that it is really my thing. Information available: RECOMMENDER has asked about my movie preferences.\",\n    \"belief_before\": \"RECOMMENDER asked what kind of movies I like.\",\n    \"belief_update\": \"I am choosing to present myself as broadly open and especially fond of foreign movies. This refines the previous context by making my preferences explicit.\",\n    \"belief_after\": \"RECOMMENDER now knows my stated taste: everything, especially foreign films.\",\n    \"emotion\": \"Enthusiastic and cooperative.\",\n    \"intention\": \"Share my movie preferences so RECOMMENDER can suggest suitable films.\",\n    \"conversational_goal\": \"Provide taste information and keep the recommendation dialogue moving.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER recommends Dr. Seuss' How the Grinch Stole Christmas (2000) and Christmas with the Kranks (2004), and asks if I have seen either. Information available: RECOMMENDER has chosen two holiday/Christmas movies and is checking my familiarity.\",\n    \"belief_before\": \"I told RECOMMENDER I like everything and especially foreign movies.\",\n    \"belief_update\": \"RECOMMENDER has interpreted my broad interest as compatible with holiday/Christmas comedies and is now offering specific titles. This changes the previous interpretation from preference elicitation to concrete holiday recommendations.\",\n    \"belief_after\": \"RECOMMENDER wants to know whether I have seen these two films and may be gauging my interest in them.\",\n    \"emotion\": \"Curious and open; possibly slightly surprised that the picks are not foreign, but still receptive.\",\n    \"intention\": \"Consider the recommended films and prepare to say whether I have seen or want them.\",\n    \"conversational_goal\": \"Evaluate the recommendations and answer the have-you-seen question.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

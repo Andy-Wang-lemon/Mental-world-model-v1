@@ -1,0 +1,73 @@
+数据：3_pred_rec
+题号：8  d622_u4
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "SEEKER 的请求在 RECOMMENDER 这里被经验成一件落到自己身上、必须由“我”接住的委托；“适合所有年龄的有趣电影”随之显出固定样式——得像 The Parent Trap (1998) 那样家庭向、非动画，才算合于这个请求，偏离此样式的片目便自动落在所要求之外。",
+      "probability": 0.2873
+    },
+    {
+      "content": "在 RECOMMENDER 此刻的对象化世界里，SEEKER 的请求不是一道可以先搁置的开放题，而是立刻压出一个必须用具体片名接住的空位；“我是一个能马上给出片名、有主意的人”使这个空位不能由“不知道”或“先问问”来填。与此同时，“适合所有年龄的有趣电影”在他这里自动收束成动画/合家欢超级英雄 IP 这一格，The Lego Batman Movie 因乐高、蝙蝠侠、动画喜剧的标签，几乎不用再核对就被视为天然兼具全年龄与有趣。SEEKER 提到的 The Parent Trap (1998)、孩子们也喜欢过，只被放在这一格旁边作为合家欢可行的旁证；“可能不要动画”虽在刺激里出现，却没能改变这一格的主导性，而像只是未能切入他当前分类的边角信息。",
+      "probability": 0.2593
+    },
+    {
+      "content": "在 RECOMMENDER 的经验里，SEEKER 说出的“类似 The Parent Trap (1998)”不只是一条偏好，而是量自己是否懂对方、是否贴合的标尺；“适合所有年龄的有趣电影”因此被收束成家庭向、非动画的 The Parent Trap 式样，偏离该样式便同时意味着不合请求和没接住对方。",
+      "probability": 0.2361
+    },
+    {
+      "content": "SEEKER 那句“帮我找一部适合所有年龄的有趣电影”在此刻不是一条可转交的普通信息，而是落到 RECOMMENDER 身上、只能由“我”来接住的委托；这个帮忙位置与“我”分不开。随着 SEEKER 补出喜欢类似 The Parent Trap (1998)、孩子们也喜欢过、可能不要动画，RECOMMENDER 把这次请求所缘成：要在“适合所有年龄的有趣”里找出与 The Parent Trap (1998) 相近的参照，并把“可能不要动画”执成一条固定排除规则——动画在这一刻已从可选范围里被划出去，仿佛它和全年龄有趣本就不相容。",
+      "probability": 0.2174
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这请求像是落到我身上，得由我接住；‘适合所有年龄的有趣电影’在我这里不是随便挑一部就行，得是像《天生一对》那样家庭向、非动画的样式才合得上。刚才提的乐高蝙蝠侠是动画，怕已偏出这个样式，照这个样式重新掂量才踏实。",
+      "activation": 0.2864
+    },
+    {
+      "content": "在 RECOMMENDER 这里，SEEKER 的请求一出现就压成一个必须立刻用具体片名接住的空位；他不能以不知道或先问问来应对。适合所有年龄的有趣电影在他当前分类里直接落到动画/合家欢超级英雄这一格，The Lego Batman Movie 的乐高、蝙蝠侠、动画喜剧标签让全年龄与有趣显得天然成立，不必再核对。SEEKER 提到的 The Parent Trap、孩子们也喜欢过，被放在这一格旁边当作合家欢可行的旁证；可能不要动画虽然听见了，却没有进入筛选的主位，只像边角风声。于是他的注意已经收束到乐高蝙蝠侠，认定它正是可以端出去填住空位的那个具体片名。",
+      "activation": 0.2593
+    },
+    {
+      "content": "她说的《天生一对》在我这里不只是一条偏好，而成了量我懂不懂她、推得贴不贴合的尺子。适合所有年龄的有趣电影，被这把尺子收束成家庭向、非动画的《天生一对》式样；刚才那句 Lego Batman 虽然也算家庭可看，却偏了动画这一层，按这个尺子就不算真正接住请求，也像没接住她。我心里因此紧了一下，觉得得顺着她给的样子重新掂量，不能把那个提议当作已经贴合。",
+      "activation": 0.2346
+    },
+    {
+      "content": "这已经不是一句随便听听的找片请求，SEEKER 把它递到面前，像默认该由我来接住；我得在“适合所有年龄的有趣”里替他对上 The Parent Trap 那种感觉。既然他说了孩子们也喜欢、可能不要动画，那动画就先不算数——不是暂时避开，而是像被划到范围外，Lego Batman 那类也不该再放进候选。接下来该往非动画、全家可看、带 Parent Trap 式轻松巧合或家庭喜剧味道的方向去整理。",
+      "activation": 0.2197
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 Hi.；RECOMMENDER 说 Let me think....The Lego Batman Movie (2017) ？",
+  "predicted_actions": [
+    {
+      "content": "提议更换推荐",
+      "probability": 0.3633
+    },
+    {
+      "content": "推荐电影",
+      "probability": 0.2934
+    },
+    {
+      "content": "推荐 The Lego Batman Movie (2017)",
+      "probability": 0.1996
+    },
+    {
+      "content": "询问用户",
+      "probability": 0.1037
+    },
+    {
+      "content": "同时提供 The Lego Batman Movie 和 The Parent Trap 让 SEEKER 选择",
+      "probability": 0.0399
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.0, "b": 0.0, "c": 1.0, "d": 0.0, "e": 0.0}
+选择说明：Predicted actions include recommending a movie and inquiring further, directly matching the option's strategy.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

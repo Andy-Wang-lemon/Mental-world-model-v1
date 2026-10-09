@@ -1,0 +1,125 @@
+{
+  "id": "4_pred_seeker__0079_d1205_u10",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER initiates the conversation: 'Hey How are you'.",
+      "belief_before": "No prior dialogue information about the recommender or recommendations.",
+      "belief_update": "No recommendation-related information yet; SEEKER has opened social contact.",
+      "belief_after": "Conversation has started; recommender is expected to respond.",
+      "emotion": "Neutral and friendly.",
+      "intention": "Greet the recommender and open conversation.",
+      "conversational_goal": "Start dialogue and establish contact."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says hello, asks how SEEKER is, and asks what kind of movies SEEKER likes.",
+      "belief_before": "SEEKER has only greeted the recommender and does not know what will happen next.",
+      "belief_update": "Recommender wants to know SEEKER's movie preferences, indicating a recommendation-oriented conversation.",
+      "belief_after": "Recommender is likely able to suggest movies if SEEKER shares preferences.",
+      "emotion": "Cooperative and mildly positive.",
+      "intention": "Prepare to answer the movie-preference question.",
+      "conversational_goal": "Share preferences in order to get suitable movie recommendations.",
+      "reaction": "Receptive to recommender's question."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I amreally into everything...I really like foreign movies as well...it is really my thing'.",
+      "belief_before": "Recommender has asked what kind of movies SEEKER likes.",
+      "belief_update": "SEEKER expresses broad taste and especially strong interest in foreign movies.",
+      "belief_after": "Recommender now knows SEEKER likes many genres and especially foreign films.",
+      "emotion": "Enthusiastic.",
+      "intention": "Convey movie preferences clearly.",
+      "conversational_goal": "Help recommender tailor suggestions to a broad and foreign-film-friendly taste.",
+      "reaction": "Engaged with recommender's prompt."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER suggests 'Dr. Seuss' How the Grinch Stole Christmas (2000)' and 'Christmas with the Kranks (2004)' and asks if SEEKER has seen either.",
+      "belief_before": "Recommender knows SEEKER likes many movies and especially foreign films.",
+      "belief_update": "Recommender is suggesting holiday-themed movies despite SEEKER not having mentioned holiday preferences.",
+      "belief_after": "SEEKER has two holiday suggestions to evaluate; holiday theme may not match stated broad/foreign preference.",
+      "emotion": "Neutral, perhaps slightly unenthusiastic.",
+      "intention": "Evaluate whether the holiday recommendations fit.",
+      "conversational_goal": "Respond to the holiday suggestions and decide whether to accept or redirect.",
+      "reaction": "Considered but not clearly excited."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'no, I am not really a holiday's person...do you have any other suggestions?'",
+      "belief_before": "Recommender suggested holiday movies and asked whether SEEKER had seen them.",
+      "belief_update": "SEEKER rejects holiday films and requests other suggestions.",
+      "belief_after": "Holiday-themed recommendations are not suitable; recommender should avoid holiday movies.",
+      "emotion": "Mildly dissatisfied or dismissive.",
+      "intention": "Reject the holiday suggestions and redirect the recommender.",
+      "conversational_goal": "Obtain non-holiday movie suggestions.",
+      "reaction": "Not receptive to holiday picks."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER suggests 'Halloween: The Curse of Michael Myers (1995)' and asks if SEEKER likes scary movies.",
+      "belief_before": "Recommender knows SEEKER is not a holiday person and wants other suggestions.",
+      "belief_update": "Recommender now suggests a horror film and asks about scary movies.",
+      "belief_after": "Recommender is testing the horror genre; SEEKER has not yet said whether scary movies fit.",
+      "emotion": "Cautious and neutral.",
+      "intention": "Evaluate the horror suggestion.",
+      "conversational_goal": "Answer the scary-movie question and continue guiding the recommender.",
+      "reaction": "Uncertain and not clearly positive."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: 'no not really, I have not seen it though...I love Mike Myers though...his comedic stuff'.",
+      "belief_before": "Recommender suggested a horror film and asked if SEEKER likes scary movies.",
+      "belief_update": "SEEKER rejects scary movies, has not seen the suggested film, and expresses strong preference for Mike Myers's comedic work.",
+      "belief_after": "Recommender knows horror is a poor fit and Mike Myers comedy is a promising direction.",
+      "emotion": "Clarifying, with enthusiasm when mentioning Mike Myers comedy.",
+      "intention": "Reject horror and reveal a more specific comedy preference.",
+      "conversational_goal": "Steer the recommender toward Mike Myers comedy or similar non-scary films.",
+      "reaction": "Not receptive to horror, positive toward Mike Myers comedy."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says: 'Then I would recommend Austin Powers'.",
+      "belief_before": "Recommender knows SEEKER dislikes scary movies and likes Mike Myers's comedic work.",
+      "belief_update": "Recommender suggests Austin Powers, which aligns with the Mike Myers comedy preference.",
+      "belief_after": "Austin Powers is likely a relevant recommendation; SEEKER may need to clarify which installment is meant.",
+      "emotion": "Interested and curious.",
+      "intention": "Assess the Austin Powers recommendation.",
+      "conversational_goal": "Clarify or evaluate the Austin Powers suggestion.",
+      "reaction": "More receptive because it matches Mike Myers comedy preference."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: 'Which one is that...I know there are three'.",
+      "belief_before": "Recommender has suggested Austin Powers.",
+      "belief_update": "SEEKER is aware there are three Austin Powers films and wants to know which one is being recommended.",
+      "belief_after": "The recommendation needs to be narrowed to a specific Austin Powers installment.",
+      "emotion": "Curious.",
+      "intention": "Ask for clarification.",
+      "conversational_goal": "Identify which Austin Powers movie is being recommended.",
+      "reaction": "Interested but needs details."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says: 'The first one....Have you seen it?'",
+      "belief_before": "SEEKER asked which Austin Powers movie was being recommended.",
+      "belief_update": "Recommender specifies the first Austin Powers film and asks whether SEEKER has seen it.",
+      "belief_after": "The recommendation is now the first Austin Powers movie; SEEKER still needs to answer whether they have seen it.",
+      "emotion": "Neutral and considering.",
+      "intention": "Respond about whether the first Austin Powers film has been seen.",
+      "conversational_goal": "Answer the recommender and decide whether to accept the suggestion.",
+      "reaction": "Still evaluating the clarified recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER initiates the conversation: 'Hey How are you'.\",\n    \"belief_before\": \"No prior dialogue information about the recommender or recommendations.\",\n    \"belief_update\": \"No recommendation-related information yet; SEEKER has opened social contact.\",\n    \"belief_after\": \"Conversation has started; recommender is expected to respond.\",\n    \"emotion\": \"Neutral and friendly.\",\n    \"intention\": \"Greet the recommender and open conversation.\",\n    \"conversational_goal\": \"Start dialogue and establish contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says hello, asks how SEEKER is, and asks what kind of movies SEEKER likes.\",\n    \"belief_before\": \"SEEKER has only greeted the recommender and does not know what will happen next.\",\n    \"belief_update\": \"Recommender wants to know SEEKER's movie preferences, indicating a recommendation-oriented conversation.\",\n    \"belief_after\": \"Recommender is likely able to suggest movies if SEEKER shares preferences.\",\n    \"emotion\": \"Cooperative and mildly positive.\",\n    \"intention\": \"Prepare to answer the movie-preference question.\",\n    \"conversational_goal\": \"Share preferences in order to get suitable movie recommendations.\",\n    \"reaction\": \"Receptive to recommender's question.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I amreally into everything...I really like foreign movies as well...it is really my thing'.\",\n    \"belief_before\": \"Recommender has asked what kind of movies SEEKER likes.\",\n    \"belief_update\": \"SEEKER expresses broad taste and especially strong interest in foreign movies.\",\n    \"belief_after\": \"Recommender now knows SEEKER likes many genres and especially foreign films.\",\n    \"emotion\": \"Enthusiastic.\",\n    \"intention\": \"Convey movie preferences clearly.\",\n    \"conversational_goal\": \"Help recommender tailor suggestions to a broad and foreign-film-friendly taste.\",\n    \"reaction\": \"Engaged with recommender's prompt.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER suggests 'Dr. Seuss' How the Grinch Stole Christmas (2000)' and 'Christmas with the Kranks (2004)' and asks if SEEKER has seen either.\",\n    \"belief_before\": \"Recommender knows SEEKER likes many movies and especially foreign films.\",\n    \"belief_update\": \"Recommender is suggesting holiday-themed movies despite SEEKER not having mentioned holiday preferences.\",\n    \"belief_after\": \"SEEKER has two holiday suggestions to evaluate; holiday theme may not match stated broad/foreign preference.\",\n    \"emotion\": \"Neutral, perhaps slightly unenthusiastic.\",\n    \"intention\": \"Evaluate whether the holiday recommendations fit.\",\n    \"conversational_goal\": \"Respond to the holiday suggestions and decide whether to accept or redirect.\",\n    \"reaction\": \"Considered but not clearly excited.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'no, I am not really a holiday's person...do you have any other suggestions?'\",\n    \"belief_before\": \"Recommender suggested holiday movies and asked whether SEEKER had seen them.\",\n    \"belief_update\": \"SEEKER rejects holiday films and requests other suggestions.\",\n    \"belief_after\": \"Holiday-themed recommendations are not suitable; recommender should avoid holiday movies.\",\n    \"emotion\": \"Mildly dissatisfied or dismissive.\",\n    \"intention\": \"Reject the holiday suggestions and redirect the recommender.\",\n    \"conversational_goal\": \"Obtain non-holiday movie suggestions.\",\n    \"reaction\": \"Not receptive to holiday picks.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER suggests 'Halloween: The Curse of Michael Myers (1995)' and asks if SEEKER likes scary movies.\",\n    \"belief_before\": \"Recommender knows SEEKER is not a holiday person and wants other suggestions.\",\n    \"belief_update\": \"Recommender now suggests a horror film and asks about scary movies.\",\n    \"belief_after\": \"Recommender is testing the horror genre; SEEKER has not yet said whether scary movies fit.\",\n    \"emotion\": \"Cautious and neutral.\",\n    \"intention\": \"Evaluate the horror suggestion.\",\n    \"conversational_goal\": \"Answer the scary-movie question and continue guiding the recommender.\",\n    \"reaction\": \"Uncertain and not clearly positive.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: 'no not really, I have not seen it though...I love Mike Myers though...his comedic stuff'.\",\n    \"belief_before\": \"Recommender suggested a horror film and asked if SEEKER likes scary movies.\",\n    \"belief_update\": \"SEEKER rejects scary movies, has not seen the suggested film, and expresses strong preference for Mike Myers's comedic work.\",\n    \"belief_after\": \"Recommender knows horror is a poor fit and Mike Myers comedy is a promising direction.\",\n    \"emotion\": \"Clarifying, with enthusiasm when mentioning Mike Myers comedy.\",\n    \"intention\": \"Reject horror and reveal a more specific comedy preference.\",\n    \"conversational_goal\": \"Steer the recommender toward Mike Myers comedy or similar non-scary films.\",\n    \"reaction\": \"Not receptive to horror, positive toward Mike Myers comedy.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says: 'Then I would recommend Austin Powers'.\",\n    \"belief_before\": \"Recommender knows SEEKER dislikes scary movies and likes Mike Myers's comedic work.\",\n    \"belief_update\": \"Recommender suggests Austin Powers, which aligns with the Mike Myers comedy preference.\",\n    \"belief_after\": \"Austin Powers is likely a relevant recommendation; SEEKER may need to clarify which installment is meant.\",\n    \"emotion\": \"Interested and curious.\",\n    \"intention\": \"Assess the Austin Powers recommendation.\",\n    \"conversational_goal\": \"Clarify or evaluate the Austin Powers suggestion.\",\n    \"reaction\": \"More receptive because it matches Mike Myers comedy preference.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: 'Which one is that...I know there are three'.\",\n    \"belief_before\": \"Recommender has suggested Austin Powers.\",\n    \"belief_update\": \"SEEKER is aware there are three Austin Powers films and wants to know which one is being recommended.\",\n    \"belief_after\": \"The recommendation needs to be narrowed to a specific Austin Powers installment.\",\n    \"emotion\": \"Curious.\",\n    \"intention\": \"Ask for clarification.\",\n    \"conversational_goal\": \"Identify which Austin Powers movie is being recommended.\",\n    \"reaction\": \"Interested but needs details.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says: 'The first one....Have you seen it?'\",\n    \"belief_before\": \"SEEKER asked which Austin Powers movie was being recommended.\",\n    \"belief_update\": \"Recommender specifies the first Austin Powers film and asks whether SEEKER has seen it.\",\n    \"belief_after\": \"The recommendation is now the first Austin Powers movie; SEEKER still needs to answer whether they have seen it.\",\n    \"emotion\": \"Neutral and considering.\",\n    \"intention\": \"Respond about whether the first Austin Powers film has been seen.\",\n    \"conversational_goal\": \"Answer the recommender and decide whether to accept the suggestion.\",\n    \"reaction\": \"Still evaluating the clarified recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

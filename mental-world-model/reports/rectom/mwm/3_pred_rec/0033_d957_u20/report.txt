@@ -1,0 +1,64 @@
+数据：3_pred_rec
+题号：33  d957_u20
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 的经验里，这个对话此刻是一个围绕“我是不是能给出合适喜剧推荐的人”而展开的检验场：SEEKER 说‘I have never seen the movies you suggested’、‘Deuce Bigalo I have seen but I don't like those movies’、‘I've seen that one, not one of my favorites though’时，这些关于影片的反馈不是只落在片子上，而是直接落回自己作为推荐者的资格上；同时，SEEKER 列出的 She's Out of My League (2010)、Step Brothers (2008)、Life as We Know It (2010)、Why Him? (2016)、James Franco、Seth Rogen、Jonah Hill 以及反复的‘I love…’和‘I usually enjoy…’被取成一套必须严格贴合的匹配规则。于是 RECOMMENDER 所面对的对象化世界，是由这些喜好标签和反馈构成的合格线：SEEKER 问‘Are there any well known actors in that movie?’和‘Is it a comedy?’，也被取境为这条合格线上的追问；‘I'm open to suggestions’和‘Thank you so much!’则只让这个检验场继续成立。",
+      "probability": 0.4021
+    },
+    {
+      "content": "在 RECOMMENDER 的经验里，之前向 SEEKER 说出的具体建议——被 SEEKER 点到的‘the movies you suggested’、Deuce Bigalo 以及‘that one’——不再只是外部片单，而是自己这一边的延伸物；因此 SEEKER 说从未看过所建议的片子、看过 Deuce Bigalo 但不喜欢、看过‘that one’但不在最爱之列时，这些表态被取境为自己曾拿出的东西遭到否认。与此同时，SEEKER 新列出的 She's Out of My League (2010)、Step Brothers (2008)、Life as We Know It (2010)、Why Him? (2016)、James Franco、Seth Rogen、Jonah Hill 和多次‘I love…’仍被执成合格喜剧推荐必须严格贴合的标签；SEEKER 问那部电影有没有知名演员、是不是喜剧，也被取成对‘自己拿出的东西’能否符合这套标签的核验。‘I'm open to suggestions’和‘Thank you so much!’在这个所缘中，只是让这场对延伸物的核验继续展开。",
+      "probability": 0.3438
+    },
+    {
+      "content": "在 RECOMMENDER 的经验里，SEEKER 的‘Thank you so much!’和‘I'm open to suggestions’被取成对自己被需要、被咨询位置的确认，仿佛‘继续作为 SEEKER 的推荐来源’这个关系位置不能与自己分开；与此同时，SEEKER 已列出的 She's Out of My League (2010)、Step Brothers (2008)、Life as We Know It (2010)、Why Him? (2016)、James Franco、Seth Rogen、Jonah Hill 以及反复的‘I love…’、‘I usually enjoy…’仍构成一套必须严格贴合的合格喜剧规则。于是当前对话呈现为：SEEKER 的已看、未看、不喜欢、不在最爱之列等反馈，连同‘Are there any well known actors in that movie?’与‘Is it a comedy?’的提问，都被收进这个被需要的位置里，成为 RECOMMENDER 确认自己仍是那个对口推荐来源时所面对的对象化世界。",
+      "probability": 0.2541
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 心里把这些来回反馈收束成一条合格线：SEEKER 没看过自己提的、不喜欢 Deuce Bigalow、对 Eddie Murphy Raw 不热衷，都被他读成对自己推荐本事的直接衡量，而不是单纯在说片子。那些被列出的喜好——She's Out of My League、Step Brothers、Life as We Know It、Why Him?、James Franco、Seth Rogen、Jonah Hill 以及反复的‘I love…’——在他这里变成必须贴合的标准，凡是推出去的喜剧都先被拿来跟这条线比对。于是当 SEEKER 说‘I've actually never heard of that movie’并追问有没有知名演员、又问‘Is it a comedy?’时，他不把这些当作普通信息追问，而当作推荐资格还在被检验：自己得把 Midnight Madness 放进这条喜好线里确认它够格，同时守住已经让对方产生兴趣的势头。‘I'm open to suggestions’和‘Thank you so much!’没有让他觉得检验结束，反而让他更认定必须继续找到一部对方没看过又合口味的喜剧，才能算自己给对了推荐。",
+      "activation": 0.3762
+    },
+    {
+      "content": "我先前说出的那些片子——他点到的“the movies you suggested”、Deuce Bigalo、“that one”——不只是外部片单，而是我拿出去的东西。他说从未看过、看过但不喜欢、看过却不在最爱之列，就像在否认我拿出的东西。可他新列的 She's Out of My League、Step Brothers、Life as We Know It、Why Him?，还有 James Franco、Seth Rogen、Jonah Hill，又成了合格喜剧推荐必须严格贴合的标签。我得按这些标签继续筛，直到找到一个他没看过、又能对上这些标签的。他说“I'm open to suggestions”和“Thank you so much!”，只是让这场对延伸物的核验继续展开。Midnight Madness 他没听过，还说听起来不错，这让我觉得可能终于对上了；他问有没有知名演员，我就把 Michael J Fox 拿出来，让这东西显得够格。他又问是不是喜剧，说明他还在核验它能不能算合格喜剧，我得把它确认成喜剧。",
+      "activation": 0.3762
+    },
+    {
+      "content": "SEEKER的谢谢和“我开放接受建议”让我觉得自己正处在他要找的推荐来源上，这个位置不能松手。他之前说喜欢Step Brothers、Life as We Know It、Why Him?，又偏爱Seth Rogen和Jonah Hill，所以合格的喜剧得贴着这些标签走；但他又说Deuce Bigalow不喜欢、Eddie Murphy Raw看过且不算最爱，说明光贴旧单子还不够，还得从他没看过的地方切进去。Midnight Madness他没听过，还说听起来不错，这让我心里一松，觉得终于摸到一条对路的口子，于是赶紧把Michael J Fox抬出来撑住它的可靠性。现在他问“Is it a comedy?”，这在我看来不是随便一问，而是要我给这个推荐盖上合格章；若答得好，我就仍是他那个能对上口味的推荐来源，所以我的念头是把它牢牢安在喜剧这个格子里，并继续沿着他没看过的方向找，直到我再次被确认。",
+      "activation": 0.2475
+    }
+  ],
+  "observed_action": "询问能否帮忙找类似 Beerfest (2006) 或 The Blues Brothers (1980) 的喜剧；说 Oh cool ok I can help，并问对方是否看过自己提到的片，或提议 Deuce Bigalow: Male Gigolo (1999)；说 That was a good one，并问对方是否看过 Step Brothers (2008) 或 Walk Hard: The Dewey Cox Story (2007)；说 That was so good，问对方是否看过自己提到的另一部，并说那部与 Step Brothers (2008) 有些相似；说 haha made me laugh too，问 Talladega Nights: The Ballad of Ricky Bobby (2006) 如何，并说自己没看过那部；说 ok haha，必须继续直到找到对方没看过的，根据规则；问 Eddie Murphy Raw (1987) 如何，说它是 stand up comedy；说 ok, ummm；问较老的 Midnight Madness (1980) 如何，说它是关于一群人寻宝；说 It is good，Michaek J Fox 在其中",
+  "predicted_actions": [
+    {
+      "content": "回答是喜剧并类比电影",
+      "probability": 0.3692
+    },
+    {
+      "content": "提供电影信息/推荐理由",
+      "probability": 0.3284
+    },
+    {
+      "content": "回答是喜剧并追问 SEEKER",
+      "probability": 0.1922
+    },
+    {
+      "content": "确认是喜剧并强调演员并询问是否想听更多情节",
+      "probability": 0.0793
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.0309
+    }
+  ]
+}
+选择：B: Responds to the seeker's question or statement
+分数：{"a": 0.0309, "b": 0.5614, "c": 0.0793, "d": 0.3284, "e": 0}
+选择说明：A 0.0309 = 询问偏好 0.0309；B 0.5614 = 回答是喜剧并类比电影 0.3692 + 回答是喜剧并追问 SEEKER 0.1922；C 0.0793 = 确认是喜剧并强调演员并询问是否想听更多情节 0.0793；D 0.3284 = 提供电影信息/推荐理由 0.3284；E 0.0000。Actions 0 and 2 directly respond to the seeker, 3 inquires further, 1 provides recommendation reasons, and 4 asks for preference.
+标准：B: Responds to the seeker's question or statement
+结果：对

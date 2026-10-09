@@ -1,0 +1,84 @@
+{
+  "id": "4_pred_seeker__0159_d2369_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi. SEEKER has only this greeting available at this point.",
+      "preferences": "Not yet expressed or known in this dialogue.",
+      "belief_before": "No prior information about the recommender or topic in this dialogue.",
+      "belief_update": "The recommender has made contact with a greeting.",
+      "belief_after": "The recommender is present and initiating conversation; their purpose is not yet known.",
+      "emotion": "Neutral, attentive, polite.",
+      "intention": "Respond to the greeting and begin interaction.",
+      "reaction_to_other": "Neutral-positive; greeting is acknowledged but no content yet.",
+      "conversational_goal": "Open the conversation and establish contact.",
+      "interpretation_change": "Initial turn; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hello...I love comedy movies...Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) are some of my favorite movies.",
+      "preferences": "SEEKER loves comedy movies; favorites include Bridesmaids and How to Lose a Guy in 10 Days.",
+      "belief_before": "Recommender greeted; no movie preferences or intent known.",
+      "belief_update": "SEEKER chooses to self-disclose comedy tastes, implying he expects a movie-related or recommendation exchange.",
+      "belief_after": "SEEKER's preferences are now stated; the recommender may be someone who can discuss or recommend comedies.",
+      "emotion": "Enthusiastic, friendly, positive.",
+      "intention": "Share movie preferences and invite relevant recommendations.",
+      "reaction_to_other": "Friendly response to the recommender's greeting.",
+      "conversational_goal": "Establish taste profile and move toward comedy recommendations.",
+      "interpretation_change": "Shifts conversation from a bare greeting to a movie-preference topic."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Sister Act (1992) is good. So is Sister Act 2: Back in the Habit (1993)...I like both of those.",
+      "preferences": "SEEKER still loves comedy and has favorites Bridesmaids and How to Lose a Guy; no stated view yet on Sister Act titles.",
+      "belief_before": "Recommender greeted; SEEKER has already shared love of comedy and favorite movies.",
+      "belief_update": "Recommender likes Sister Act and Sister Act 2 and presents them as good comedy options.",
+      "belief_after": "Recommender has comedy preferences and may share some taste; Sister Act titles are candidate recommendations.",
+      "emotion": "Interested, positive, curious.",
+      "intention": "Evaluate the recommender's suggested titles and prepare a response.",
+      "reaction_to_other": "Attentive and open to the recommender's suggestions.",
+      "conversational_goal": "Continue the comedy exchange and assess whether the recommendations fit SEEKER's taste.",
+      "interpretation_change": "Adds recommender preference information and strengthens the movie-recommendation framing."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: I have seen those, both really good choices.",
+      "preferences": "SEEKER loves comedy; favorites Bridesmaids and How to Lose a Guy; he has seen Sister Act and Sister Act 2 and evaluates both as good choices.",
+      "belief_before": "Recommender likes Sister Act and Sister Act 2; SEEKER has shared comedy favorites.",
+      "belief_update": "SEEKER confirms familiarity with the recommender's suggested titles and positively evaluates them.",
+      "belief_after": "SEEKER believes the recommender's suggestions align with his taste; common ground on comedy is stronger.",
+      "emotion": "Approving, agreeable, positive.",
+      "intention": "Validate the recommender's taste and signal openness to further suggestions.",
+      "reaction_to_other": "Positive and affirming.",
+      "conversational_goal": "Build rapport and encourage more recommendations based on shared enjoyment.",
+      "interpretation_change": "Reinforces prior interpretation of shared comedy taste; adds that SEEKER liked or approved the Sister Act titles."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER says: I like Boo! A Madea Halloween (2016)...Madea is really funny.",
+      "preferences": "SEEKER currently loves comedy, favorites Bridesmaids and How to Lose a Guy, and approved Sister Act titles; his view on Boo! A Madea Halloween is not yet stated.",
+      "belief_before": "Recommender likes Sister Act and Sister Act 2; SEEKER agreed those are good choices.",
+      "belief_update": "Recommender also likes Boo! A Madea Halloween and finds Madea funny.",
+      "belief_after": "Recommender's comedy taste includes Madea/Boo! A Madea Halloween; compatibility with SEEKER's taste is not yet confirmed.",
+      "emotion": "Curious, attentive, possibly cautious depending on SEEKER's unstated view of Madea.",
+      "intention": "Consider or evaluate the new recommendation and decide how to respond.",
+      "reaction_to_other": "Attentive and open, but no reaction yet from SEEKER.",
+      "conversational_goal": "Continue the recommendation dialogue by assessing whether this new comedy suggestion matches SEEKER's preferences.",
+      "interpretation_change": "Expands the recommender's taste profile beyond Sister Act; may broaden or test the assumed shared comedy compatibility."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi. SEEKER has only this greeting available at this point.\",\n    \"preferences\": \"Not yet expressed or known in this dialogue.\",\n    \"belief_before\": \"No prior information about the recommender or topic in this dialogue.\",\n    \"belief_update\": \"The recommender has made contact with a greeting.\",\n    \"belief_after\": \"The recommender is present and initiating conversation; their purpose is not yet known.\",\n    \"emotion\": \"Neutral, attentive, polite.\",\n    \"intention\": \"Respond to the greeting and begin interaction.\",\n    \"reaction_to_other\": \"Neutral-positive; greeting is acknowledged but no content yet.\",\n    \"conversational_goal\": \"Open the conversation and establish contact.\",\n    \"interpretation_change\": \"Initial turn; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hello...I love comedy movies...Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) are some of my favorite movies.\",\n    \"preferences\": \"SEEKER loves comedy movies; favorites include Bridesmaids and How to Lose a Guy in 10 Days.\",\n    \"belief_before\": \"Recommender greeted; no movie preferences or intent known.\",\n    \"belief_update\": \"SEEKER chooses to self-disclose comedy tastes, implying he expects a movie-related or recommendation exchange.\",\n    \"belief_after\": \"SEEKER's preferences are now stated; the recommender may be someone who can discuss or recommend comedies.\",\n    \"emotion\": \"Enthusiastic, friendly, positive.\",\n    \"intention\": \"Share movie preferences and invite relevant recommendations.\",\n    \"reaction_to_other\": \"Friendly response to the recommender's greeting.\",\n    \"conversational_goal\": \"Establish taste profile and move toward comedy recommendations.\",\n    \"interpretation_change\": \"Shifts conversation from a bare greeting to a movie-preference topic.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Sister Act (1992) is good. So is Sister Act 2: Back in the Habit (1993)...I like both of those.\",\n    \"preferences\": \"SEEKER still loves comedy and has favorites Bridesmaids and How to Lose a Guy; no stated view yet on Sister Act titles.\",\n    \"belief_before\": \"Recommender greeted; SEEKER has already shared love of comedy and favorite movies.\",\n    \"belief_update\": \"Recommender likes Sister Act and Sister Act 2 and presents them as good comedy options.\",\n    \"belief_after\": \"Recommender has comedy preferences and may share some taste; Sister Act titles are candidate recommendations.\",\n    \"emotion\": \"Interested, positive, curious.\",\n    \"intention\": \"Evaluate the recommender's suggested titles and prepare a response.\",\n    \"reaction_to_other\": \"Attentive and open to the recommender's suggestions.\",\n    \"conversational_goal\": \"Continue the comedy exchange and assess whether the recommendations fit SEEKER's taste.\",\n    \"interpretation_change\": \"Adds recommender preference information and strengthens the movie-recommendation framing.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: I have seen those, both really good choices.\",\n    \"preferences\": \"SEEKER loves comedy; favorites Bridesmaids and How to Lose a Guy; he has seen Sister Act and Sister Act 2 and evaluates both as good choices.\",\n    \"belief_before\": \"Recommender likes Sister Act and Sister Act 2; SEEKER has shared comedy favorites.\",\n    \"belief_update\": \"SEEKER confirms familiarity with the recommender's suggested titles and positively evaluates them.\",\n    \"belief_after\": \"SEEKER believes the recommender's suggestions align with his taste; common ground on comedy is stronger.\",\n    \"emotion\": \"Approving, agreeable, positive.\",\n    \"intention\": \"Validate the recommender's taste and signal openness to further suggestions.\",\n    \"reaction_to_other\": \"Positive and affirming.\",\n    \"conversational_goal\": \"Build rapport and encourage more recommendations based on shared enjoyment.\",\n    \"interpretation_change\": \"Reinforces prior interpretation of shared comedy taste; adds that SEEKER liked or approved the Sister Act titles.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER says: I like Boo! A Madea Halloween (2016)...Madea is really funny.\",\n    \"preferences\": \"SEEKER currently loves comedy, favorites Bridesmaids and How to Lose a Guy, and approved Sister Act titles; his view on Boo! A Madea Halloween is not yet stated.\",\n    \"belief_before\": \"Recommender likes Sister Act and Sister Act 2; SEEKER agreed those are good choices.\",\n    \"belief_update\": \"Recommender also likes Boo! A Madea Halloween and finds Madea funny.\",\n    \"belief_after\": \"Recommender's comedy taste includes Madea/Boo! A Madea Halloween; compatibility with SEEKER's taste is not yet confirmed.\",\n    \"emotion\": \"Curious, attentive, possibly cautious depending on SEEKER's unstated view of Madea.\",\n    \"intention\": \"Consider or evaluate the new recommendation and decide how to respond.\",\n    \"reaction_to_other\": \"Attentive and open, but no reaction yet from SEEKER.\",\n    \"conversational_goal\": \"Continue the recommendation dialogue by assessing whether this new comedy suggestion matches SEEKER's preferences.\",\n    \"interpretation_change\": \"Expands the recommender's taste profile beyond Sister Act; may broaden or test the assumed shared comedy compatibility.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

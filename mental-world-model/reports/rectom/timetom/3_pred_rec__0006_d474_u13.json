@@ -1,0 +1,224 @@
+{
+  "id": "3_pred_rec__0006_d474_u13",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Seeker asks for help finding a movie to watch.",
+      "belief_before": "No prior information about the seeker's request or preferences.",
+      "belief_update": "Seeker wants a movie recommendation.",
+      "belief_after": "Seeker is looking for a movie to watch and needs help.",
+      "emotion": "neutral, helpful",
+      "intention": "Offer assistance with a movie recommendation.",
+      "conversational_goal": "Start the recommendation process.",
+      "preferences": {
+        "self": "not yet disclosed",
+        "seeker": "unknown"
+      },
+      "reaction_to_other": "friendly and ready to help",
+      "changes_previous_interpretation": "initial turn; no previous interpretation"
+    },
+    {
+      "time": 2,
+      "observed": "I respond by recommending It (2017).",
+      "belief_before": "Seeker wants a movie recommendation; no genre preference is known.",
+      "belief_update": "I choose horror film It as an initial suggestion.",
+      "belief_after": "Seeker may accept It; still no stated genre preference from seeker.",
+      "emotion": "helpful, positive",
+      "intention": "Give the seeker a movie option.",
+      "conversational_goal": "Begin narrowing down a recommendation.",
+      "preferences": {
+        "self": "willing to suggest horror/It",
+        "seeker": "unknown"
+      },
+      "reaction_to_other": "responsive to the seeker's request",
+      "changes_previous_interpretation": "no; follows directly from the initial request"
+    },
+    {
+      "time": 3,
+      "observed": "Seeker says they do not really like horror movies and asks about thrillers.",
+      "belief_before": "Seeker wants a movie; I suggested It (2017), a horror film.",
+      "belief_update": "Seeker dislikes horror and is requesting thrillers instead.",
+      "belief_after": "Thrillers are acceptable; horror is not a good fit.",
+      "emotion": "neutral, adapting",
+      "intention": "Pivot to a thriller recommendation.",
+      "conversational_goal": "Find a thriller the seeker might like.",
+      "preferences": {
+        "self": "not yet disclosed",
+        "seeker": "dislikes horror; prefers/requests thrillers"
+      },
+      "reaction_to_other": "accepts the correction and adjusts",
+      "changes_previous_interpretation": "yes; invalidates the horror suggestion"
+    },
+    {
+      "time": 4,
+      "observed": "I recommend The Silence of the Lambs (1991).",
+      "belief_before": "Seeker prefers thrillers and dislikes horror.",
+      "belief_update": "I select a classic thriller as the next recommendation.",
+      "belief_after": "The Silence of the Lambs may fit the seeker's thriller preference.",
+      "emotion": "helpful",
+      "intention": "Offer a suitable thriller.",
+      "conversational_goal": "Satisfy the seeker's thriller request.",
+      "preferences": {
+        "self": "chooses thriller for seeker",
+        "seeker": "likes/requests thrillers"
+      },
+      "reaction_to_other": "responsive to the seeker's turn 3 preference",
+      "changes_previous_interpretation": "no; follows the revised thriller preference"
+    },
+    {
+      "time": 5,
+      "observed": "Seeker has seen and enjoyed The Silence of the Lambs; favorite thrillers include The Number 23 (2007) and The Sixth Sense (1999).",
+      "belief_before": "Seeker wanted a thriller; I recommended The Silence of the Lambs.",
+      "belief_update": "Seeker liked The Silence of the Lambs and likes The Number 23 and The Sixth Sense.",
+      "belief_after": "Seeker has specific thriller favorites and has already seen my recommendation.",
+      "emotion": "pleased, positive",
+      "intention": "Acknowledge shared taste and consider another recommendation.",
+      "conversational_goal": "Continue matching the seeker's thriller taste.",
+      "preferences": {
+        "self": "not yet disclosed",
+        "seeker": "likes The Silence of the Lambs, The Number 23, and The Sixth Sense"
+      },
+      "reaction_to_other": "positive; the recommendation was enjoyed",
+      "changes_previous_interpretation": "yes; enriches the seeker's taste profile"
+    },
+    {
+      "time": 6,
+      "observed": "I say I have not seen The Number 23, but I enjoyed The Sixth Sense and am more into horror movies.",
+      "belief_before": "Seeker liked The Silence of the Lambs, The Number 23, and The Sixth Sense.",
+      "belief_update": "I disclose my own taste: liked The Sixth Sense, more into horror, have not seen The Number 23.",
+      "belief_after": "We share liking for The Sixth Sense; I prefer horror, while seeker may still prefer thrillers.",
+      "emotion": "friendly, self-revealing",
+      "intention": "Share personal preference and keep rapport open.",
+      "conversational_goal": "Establish common ground and possibly steer toward horror.",
+      "preferences": {
+        "self": "more into horror; liked The Sixth Sense; has not seen The Number 23",
+        "seeker": "likes thrillers, including The Sixth Sense"
+      },
+      "reaction_to_other": "open and conversational",
+      "changes_previous_interpretation": "yes; adds self preferences and introduces possible genre tension"
+    },
+    {
+      "time": 7,
+      "observed": "Seeker says that is okay and that they just do not really like the Halloween (2007) movies.",
+      "belief_before": "I disclosed a horror preference; seeker likes thrillers.",
+      "belief_update": "Seeker specifically dislikes Halloween movies, not necessarily all horror.",
+      "belief_after": "Avoid Halloween; other horror may still be acceptable.",
+      "emotion": "neutral, curious",
+      "intention": "Clarify acceptable horror and avoid Halloween.",
+      "conversational_goal": "Refine the recommendation constraints.",
+      "preferences": {
+        "self": "not yet says Halloween is favorite",
+        "seeker": "dislikes Halloween movies"
+      },
+      "reaction_to_other": "accepts the seeker's boundary",
+      "changes_previous_interpretation": "yes; narrows horror aversion to Halloween specifically"
+    },
+    {
+      "time": 8,
+      "observed": "I react that Halloween is literally my favorite movie series ever.",
+      "belief_before": "Seeker dislikes Halloween; I am into horror.",
+      "belief_update": "My favorite series is Halloween, and the seeker dislikes it.",
+      "belief_after": "There is a preference conflict on Halloween.",
+      "emotion": "amused, surprised, laughing",
+      "intention": "Disclose my favorite and keep the conflict light.",
+      "conversational_goal": "Maintain rapport despite disagreement.",
+      "preferences": {
+        "self": "Halloween series is favorite ever",
+        "seeker": "dislikes Halloween"
+      },
+      "reaction_to_other": "playful rather than hostile",
+      "changes_previous_interpretation": "yes; reveals a conflicting preference"
+    },
+    {
+      "time": 9,
+      "observed": "Seeker says Halloween is a lot of people's favorite, they had a bad experience, a horror movie will be okay, and they enjoyed Annabelle (2014) and Curse of Chucky (2013).",
+      "belief_before": "Seeker dislikes Halloween; I love Halloween.",
+      "belief_update": "Seeker is open to horror and likes Annabelle and Curse of Chucky; Halloween aversion is due to a bad experience.",
+      "belief_after": "Recommend non-Halloween horror similar to Annabelle and Curse of Chucky.",
+      "emotion": "relieved, positive",
+      "intention": "Use the new horror preferences to recommend something.",
+      "conversational_goal": "Find an acceptable horror movie.",
+      "preferences": {
+        "self": "loves Halloween",
+        "seeker": "open to horror; likes Annabelle and Curse of Chucky; dislikes Halloween"
+      },
+      "reaction_to_other": "encouraged by common horror ground",
+      "changes_previous_interpretation": "yes; revises from no horror to selective horror"
+    },
+    {
+      "time": 10,
+      "observed": "I say I like Halloween: Resurrection (2002) and the original Child's Play (1988).",
+      "belief_before": "Seeker is open to horror and liked Annabelle and Curse of Chucky.",
+      "belief_update": "I share liking for Halloween: Resurrection and Child's Play; Child's Play connects to Chucky.",
+      "belief_after": "We have common ground on Chucky/Child's Play; I still like Halloween.",
+      "emotion": "enthusiastic",
+      "intention": "Bond over shared horror and suggest related movies.",
+      "conversational_goal": "Move toward a recommendation similar to Chucky/Annabelle.",
+      "preferences": {
+        "self": "likes Halloween: Resurrection and original Child's Play",
+        "seeker": "liked Annabelle and Curse of Chucky"
+      },
+      "reaction_to_other": "positive, connecting",
+      "changes_previous_interpretation": "yes; uses the seeker's Chucky liking as a bridge"
+    },
+    {
+      "time": 11,
+      "observed": "Seeker has seen and enjoyed Child's Play and asks for something like it.",
+      "belief_before": "I mentioned original Child's Play; seeker liked Curse of Chucky.",
+      "belief_update": "Seeker enjoyed original Child's Play and wants a similar recommendation.",
+      "belief_after": "Need movies like Child's Play/Chucky.",
+      "emotion": "positive, helpful",
+      "intention": "Recommend similar horror.",
+      "conversational_goal": "Provide a close match to Child's Play.",
+      "preferences": {
+        "self": "likes original Child's Play",
+        "seeker": "liked original Child's Play and wants similar"
+      },
+      "reaction_to_other": "glad to share taste",
+      "changes_previous_interpretation": "yes; narrows the request to Child's Play-like movies"
+    },
+    {
+      "time": 12,
+      "observed": "I recommend The Conjuring (2013) and Dolls (1987).",
+      "belief_before": "Seeker wants movies like Child's Play and liked Annabelle.",
+      "belief_update": "I suggest The Conjuring, connected to Annabelle, and Dolls, a doll-themed horror film.",
+      "belief_after": "These should fit the Annabelle/Chucky/doll-horror taste.",
+      "emotion": "helpful, enthusiastic",
+      "intention": "Land a suitable recommendation.",
+      "conversational_goal": "Offer final options.",
+      "preferences": {
+        "self": "likes The Conjuring and Dolls",
+        "seeker": "likes Annabelle, Child's Play, and Curse of Chucky"
+      },
+      "reaction_to_other": "responsive to the request",
+      "changes_previous_interpretation": "no; fulfills the narrowed request"
+    },
+    {
+      "time": 13,
+      "observed": "Seeker says they will check out The Conjuring (2013) and thanks me for the help.",
+      "belief_before": "I recommended The Conjuring and Dolls.",
+      "belief_update": "Seeker accepts The Conjuring; the recommendation succeeded.",
+      "belief_after": "Seeker is satisfied and the goal has been achieved.",
+      "emotion": "satisfied, pleased",
+      "intention": "Conclude the help.",
+      "conversational_goal": "Successful recommendation and closure.",
+      "preferences": {
+        "self": "recommended The Conjuring",
+        "seeker": "chose The Conjuring"
+      },
+      "reaction_to_other": "appreciated; positive",
+      "changes_previous_interpretation": "yes; resolves the dialogue"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Seeker asks for help finding a movie to watch.\",\n    \"belief_before\": \"No prior information about the seeker's request or preferences.\",\n    \"belief_update\": \"Seeker wants a movie recommendation.\",\n    \"belief_after\": \"Seeker is looking for a movie to watch and needs help.\",\n    \"emotion\": \"neutral, helpful\",\n    \"intention\": \"Offer assistance with a movie recommendation.\",\n    \"conversational_goal\": \"Start the recommendation process.\",\n    \"preferences\": {\n      \"self\": \"not yet disclosed\",\n      \"seeker\": \"unknown\"\n    },\n    \"reaction_to_other\": \"friendly and ready to help\",\n    \"changes_previous_interpretation\": \"initial turn; no previous interpretation\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I respond by recommending It (2017).\",\n    \"belief_before\": \"Seeker wants a movie recommendation; no genre preference is known.\",\n    \"belief_update\": \"I choose horror film It as an initial suggestion.\",\n    \"belief_after\": \"Seeker may accept It; still no stated genre preference from seeker.\",\n    \"emotion\": \"helpful, positive\",\n    \"intention\": \"Give the seeker a movie option.\",\n    \"conversational_goal\": \"Begin narrowing down a recommendation.\",\n    \"preferences\": {\n      \"self\": \"willing to suggest horror/It\",\n      \"seeker\": \"unknown\"\n    },\n    \"reaction_to_other\": \"responsive to the seeker's request\",\n    \"changes_previous_interpretation\": \"no; follows directly from the initial request\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Seeker says they do not really like horror movies and asks about thrillers.\",\n    \"belief_before\": \"Seeker wants a movie; I suggested It (2017), a horror film.\",\n    \"belief_update\": \"Seeker dislikes horror and is requesting thrillers instead.\",\n    \"belief_after\": \"Thrillers are acceptable; horror is not a good fit.\",\n    \"emotion\": \"neutral, adapting\",\n    \"intention\": \"Pivot to a thriller recommendation.\",\n    \"conversational_goal\": \"Find a thriller the seeker might like.\",\n    \"preferences\": {\n      \"self\": \"not yet disclosed\",\n      \"seeker\": \"dislikes horror; prefers/requests thrillers\"\n    },\n    \"reaction_to_other\": \"accepts the correction and adjusts\",\n    \"changes_previous_interpretation\": \"yes; invalidates the horror suggestion\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I recommend The Silence of the Lambs (1991).\",\n    \"belief_before\": \"Seeker prefers thrillers and dislikes horror.\",\n    \"belief_update\": \"I select a classic thriller as the next recommendation.\",\n    \"belief_after\": \"The Silence of the Lambs may fit the seeker's thriller preference.\",\n    \"emotion\": \"helpful\",\n    \"intention\": \"Offer a suitable thriller.\",\n    \"conversational_goal\": \"Satisfy the seeker's thriller request.\",\n    \"preferences\": {\n      \"self\": \"chooses thriller for seeker\",\n      \"seeker\": \"likes/requests thrillers\"\n    },\n    \"reaction_to_other\": \"responsive to the seeker's turn 3 preference\",\n    \"changes_previous_interpretation\": \"no; follows the revised thriller preference\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Seeker has seen and enjoyed The Silence of the Lambs; favorite thrillers include The Number 23 (2007) and The Sixth Sense (1999).\",\n    \"belief_before\": \"Seeker wanted a thriller; I recommended The Silence of the Lambs.\",\n    \"belief_update\": \"Seeker liked The Silence of the Lambs and likes The Number 23 and The Sixth Sense.\",\n    \"belief_after\": \"Seeker has specific thriller favorites and has already seen my recommendation.\",\n    \"emotion\": \"pleased, positive\",\n    \"intention\": \"Acknowledge shared taste and consider another recommendation.\",\n    \"conversational_goal\": \"Continue matching the seeker's thriller taste.\",\n    \"preferences\": {\n      \"self\": \"not yet disclosed\",\n      \"seeker\": \"likes The Silence of the Lambs, The Number 23, and The Sixth Sense\"\n    },\n    \"reaction_to_other\": \"positive; the recommendation was enjoyed\",\n    \"changes_previous_interpretation\": \"yes; enriches the seeker's taste profile\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"I say I have not seen The Number 23, but I enjoyed The Sixth Sense and am more into horror movies.\",\n    \"belief_before\": \"Seeker liked The Silence of the Lambs, The Number 23, and The Sixth Sense.\",\n    \"belief_update\": \"I disclose my own taste: liked The Sixth Sense, more into horror, have not seen The Number 23.\",\n    \"belief_after\": \"We share liking for The Sixth Sense; I prefer horror, while seeker may still prefer thrillers.\",\n    \"emotion\": \"friendly, self-revealing\",\n    \"intention\": \"Share personal preference and keep rapport open.\",\n    \"conversational_goal\": \"Establish common ground and possibly steer toward horror.\",\n    \"preferences\": {\n      \"self\": \"more into horror; liked The Sixth Sense; has not seen The Number 23\",\n      \"seeker\": \"likes thrillers, including The Sixth Sense\"\n    },\n    \"reaction_to_other\": \"open and conversational\",\n    \"changes_previous_interpretation\": \"yes; adds self preferences and introduces possible genre tension\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Seeker says that is okay and that they just do not really like the Halloween (2007) movies.\",\n    \"belief_before\": \"I disclosed a horror preference; seeker likes thrillers.\",\n    \"belief_update\": \"Seeker specifically dislikes Halloween movies, not necessarily all horror.\",\n    \"belief_after\": \"Avoid Halloween; other horror may still be acceptable.\",\n    \"emotion\": \"neutral, curious\",\n    \"intention\": \"Clarify acceptable horror and avoid Halloween.\",\n    \"conversational_goal\": \"Refine the recommendation constraints.\",\n    \"preferences\": {\n      \"self\": \"not yet says Halloween is favorite\",\n      \"seeker\": \"dislikes Halloween movies\"\n    },\n    \"reaction_to_other\": \"accepts the seeker's boundary\",\n    \"changes_previous_interpretation\": \"yes; narrows horror aversion to Halloween specifically\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"I react that Halloween is literally my favorite movie series ever.\",\n    \"belief_before\": \"Seeker dislikes Halloween; I am into horror.\",\n    \"belief_update\": \"My favorite series is Halloween, and the seeker dislikes it.\",\n    \"belief_after\": \"There is a preference conflict on Halloween.\",\n    \"emotion\": \"amused, surprised, laughing\",\n    \"intention\": \"Disclose my favorite and keep the conflict light.\",\n    \"conversational_goal\": \"Maintain rapport despite disagreement.\",\n    \"preferences\": {\n      \"self\": \"Halloween series is favorite ever\",\n      \"seeker\": \"dislikes Halloween\"\n    },\n    \"reaction_to_other\": \"playful rather than hostile\",\n    \"changes_previous_interpretation\": \"yes; reveals a conflicting preference\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Seeker says Halloween is a lot of people's favorite, they had a bad experience, a horror movie will be okay, and they enjoyed Annabelle (2014) and Curse of Chucky (2013).\",\n    \"belief_before\": \"Seeker dislikes Halloween; I love Halloween.\",\n    \"belief_update\": \"Seeker is open to horror and likes Annabelle and Curse of Chucky; Halloween aversion is due to a bad experience.\",\n    \"belief_after\": \"Recommend non-Halloween horror similar to Annabelle and Curse of Chucky.\",\n    \"emotion\": \"relieved, positive\",\n    \"intention\": \"Use the new horror preferences to recommend something.\",\n    \"conversational_goal\": \"Find an acceptable horror movie.\",\n    \"preferences\": {\n      \"self\": \"loves Halloween\",\n      \"seeker\": \"open to horror; likes Annabelle and Curse of Chucky; dislikes Halloween\"\n    },\n    \"reaction_to_other\": \"encouraged by common horror ground\",\n    \"changes_previous_interpretation\": \"yes; revises from no horror to selective horror\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"I say I like Halloween: Resurrection (2002) and the original Child's Play (1988).\",\n    \"belief_before\": \"Seeker is open to horror and liked Annabelle and Curse of Chucky.\",\n    \"belief_update\": \"I share liking for Halloween: Resurrection and Child's Play; Child's Play connects to Chucky.\",\n    \"belief_after\": \"We have common ground on Chucky/Child's Play; I still like Halloween.\",\n    \"emotion\": \"enthusiastic\",\n    \"intention\": \"Bond over shared horror and suggest related movies.\",\n    \"conversational_goal\": \"Move toward a recommendation similar to Chucky/Annabelle.\",\n    \"preferences\": {\n      \"self\": \"likes Halloween: Resurrection and original Child's Play\",\n      \"seeker\": \"liked Annabelle and Curse of Chucky\"\n    },\n    \"reaction_to_other\": \"positive, connecting\",\n    \"changes_previous_interpretation\": \"yes; uses the seeker's Chucky liking as a bridge\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"Seeker has seen and enjoyed Child's Play and asks for something like it.\",\n    \"belief_before\": \"I mentioned original Child's Play; seeker liked Curse of Chucky.\",\n    \"belief_update\": \"Seeker enjoyed original Child's Play and wants a similar recommendation.\",\n    \"belief_after\": \"Need movies like Child's Play/Chucky.\",\n    \"emotion\": \"positive, helpful\",\n    \"intention\": \"Recommend similar horror.\",\n    \"conversational_goal\": \"Provide a close match to Child's Play.\",\n    \"preferences\": {\n      \"self\": \"likes original Child's Play\",\n      \"seeker\": \"liked original Child's Play and wants similar\"\n    },\n    \"reaction_to_other\": \"glad to share taste\",\n    \"changes_previous_interpretation\": \"yes; narrows the request to Child's Play-like movies\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"I recommend The Conjuring (2013) and Dolls (1987).\",\n    \"belief_before\": \"Seeker wants movies like Child's Play and liked Annabelle.\",\n    \"belief_update\": \"I suggest The Conjuring, connected to Annabelle, and Dolls, a doll-themed horror film.\",\n    \"belief_after\": \"These should fit the Annabelle/Chucky/doll-horror taste.\",\n    \"emotion\": \"helpful, enthusiastic\",\n    \"intention\": \"Land a suitable recommendation.\",\n    \"conversational_goal\": \"Offer final options.\",\n    \"preferences\": {\n      \"self\": \"likes The Conjuring and Dolls\",\n      \"seeker\": \"likes Annabelle, Child's Play, and Curse of Chucky\"\n    },\n    \"reaction_to_other\": \"responsive to the request\",\n    \"changes_previous_interpretation\": \"no; fulfills the narrowed request\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"Seeker says they will check out The Conjuring (2013) and thanks me for the help.\",\n    \"belief_before\": \"I recommended The Conjuring and Dolls.\",\n    \"belief_update\": \"Seeker accepts The Conjuring; the recommendation succeeded.\",\n    \"belief_after\": \"Seeker is satisfied and the goal has been achieved.\",\n    \"emotion\": \"satisfied, pleased\",\n    \"intention\": \"Conclude the help.\",\n    \"conversational_goal\": \"Successful recommendation and closure.\",\n    \"preferences\": {\n      \"self\": \"recommended The Conjuring\",\n      \"seeker\": \"chose The Conjuring\"\n    },\n    \"reaction_to_other\": \"appreciated; positive\",\n    \"changes_previous_interpretation\": \"yes; resolves the dialogue\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": "e",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

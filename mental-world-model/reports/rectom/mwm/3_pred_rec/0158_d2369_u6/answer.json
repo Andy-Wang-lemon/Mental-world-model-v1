@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 158,
+  "item_id": "d2369_u6",
+  "dialogue_id": "2369",
+  "utterance_pos": 6,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement\nC: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi\nSEEKER says: Hello...I love comedy movies...Bridesmaids  (2011)   and How to Lose a Guy in 10 Days (2003)  are some of my favorite movies\nRECOMMENDER says: Sister Act (1992)  is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.\nSEEKER says: I have seen those, both really good choices\nRECOMMENDER says: I like Boo! A Madea Halloween (2016) ...Madea is really funny.\nSEEKER says: I love Neighbors  (2014)  with Seth Rogen and Zac Efron that one was prett；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi\nSEEKER says: Hello...I love comedy movies...Bridesmaids  (2011)   and How to Lose a Guy in 10 Days (2003)  are some of my favorite movies\nRECOMMENDER says: Sister Act (1992)  is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.\nSEEKER says: I have seen those, both really good choices\nRECOMMENDER says: I like Boo! A Madea Halloween (2016) ...Madea is really funny.\nSEEKER says: I love Neighbors  (2014)  with Seth Rogen and Zac Efron that one was prett；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.45,
+    "b": 0.72,
+    "c": 0.88,
+    "d": 0.55,
+    "e": 0.15
+  },
+  "score_reason": "The recommender has been actively suggesting comedy titles, so the next move most directly continues that recommendation strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

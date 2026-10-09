@@ -1,0 +1,72 @@
+{
+  "id": "4_pred_seeker__0141_d2245_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets, wishes Happy New Year, asks for new comedy movies available, says wants A Bad Moms Christmas (2017) but it is not on Amazon yet.",
+      "information_available": "Only SEEKER's own stated situation: desire for new comedy, specific interest in A Bad Moms Christmas, and Amazon unavailability.",
+      "preferences": "Prefers new comedy movies; specifically wants A Bad Moms Christmas (2017); cares about Amazon availability.",
+      "belief_before": "No prior recommender info in this dialogue; initial state is only SEEKER's own context.",
+      "belief_update": "SEEKER articulates desire and constraint; no external information received.",
+      "belief_after": "A Bad Moms Christmas (2017) is not on Amazon yet; SEEKER needs other new comedy suggestions.",
+      "emotion": "Polite, hopeful, mildly frustrated/wistful about A Bad Moms Christmas not being available.",
+      "intention": "Ask recommender for new comedy movie recommendations.",
+      "reaction_to_other": "No other speaker has spoken yet.",
+      "conversational_goal": "Obtain recommendations for new comedy movies, possibly alternatives to A Bad Moms Christmas.",
+      "changes_previous_interpretation": "No previous turn to change; establishes initial goal and constraint."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says Girls Trip (2017) was funny and Baywatch (2017) was funny.",
+      "information_available": "Recommender's suggestion/endorsement of Girls Trip and Baywatch as funny comedies.",
+      "preferences": "Still wants new comedy; likely values funny recommendations and availability; A Bad Moms Christmas still unavailable.",
+      "belief_before": "SEEKER believes A Bad Moms Christmas is not on Amazon yet and has asked for new comedy recommendations.",
+      "belief_update": "SEEKER learns recommender considers Girls Trip and Baywatch funny/recommended.",
+      "belief_after": "Girls Trip and Baywatch are candidate comedy options; no evaluation from SEEKER yet.",
+      "emotion": "Interested and mildly hopeful.",
+      "intention": "Consider or respond to the recommended comedies.",
+      "reaction_to_other": "Receptive to recommender's suggestions; no rejection yet.",
+      "conversational_goal": "Evaluate whether the suggestions are suitable and continue seeking a watchable comedy.",
+      "changes_previous_interpretation": "Expands candidate set from none to Girls Trip and Baywatch; does not change main goal."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says saw Girls Trip (2017), found it funny; did not see Baywatch (2017); heard Baywatch received bad reviews.",
+      "information_available": "Recommender's prior suggestions; SEEKER's own viewing experience with Girls Trip; hearsay about Baywatch reviews.",
+      "preferences": "Likes funny comedies; Girls Trip met this; likely avoids poorly reviewed movies; wants unseen new comedy.",
+      "belief_before": "Girls Trip and Baywatch are candidate funny comedies suggested by recommender; A Bad Moms Christmas unavailable.",
+      "belief_update": "SEEKER reveals Girls Trip was already seen and liked; Baywatch is unseen but has a bad-review reputation.",
+      "belief_after": "Girls Trip is not a new option; Baywatch is likely undesirable; still needs another new comedy.",
+      "emotion": "Positive toward Girls Trip, skeptical/negative about Baywatch, still hopeful for another suggestion.",
+      "intention": "Report which suggestions have been seen or are unappealing; implicitly request further recommendations.",
+      "reaction_to_other": "Acknowledges recommender's suggestions, but qualifies/rejects Baywatch due to bad reviews; Girls Trip already seen.",
+      "conversational_goal": "Narrow recommendations by excluding seen Girls Trip and poorly reviewed Baywatch; get another comedy suggestion.",
+      "changes_previous_interpretation": "Yes: Girls Trip shifts from candidate to already seen/liked; Baywatch shifts from candidate to likely rejected; still seeking new comedy."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says Daddy's Home 2 (2017) is out now and that they enjoyed Daddy's Home (2015).",
+      "information_available": "Recommender adds Daddy's Home 2 as currently out and endorses the predecessor Daddy's Home (2015) by enjoyment.",
+      "preferences": "Wants new comedy; avoids poorly reviewed options; may value availability now and predecessor enjoyment.",
+      "belief_before": "Girls Trip already seen/liked; Baywatch likely bad; A Bad Moms Christmas unavailable; still seeking a new comedy.",
+      "belief_update": "SEEKER learns Daddy's Home 2 is out now and recommender enjoyed Daddy's Home (2015).",
+      "belief_after": "Daddy's Home 2 is a new candidate comedy; Daddy's Home (2015) has recommender's positive endorsement.",
+      "emotion": "Curious and cautiously interested.",
+      "intention": "Consider Daddy's Home 2 as a possible next movie; likely respond or ask about it.",
+      "reaction_to_other": "Receptive to the new recommendation; no rejection yet.",
+      "conversational_goal": "Evaluate whether Daddy's Home 2 is a suitable new comedy recommendation.",
+      "changes_previous_interpretation": "Adds a new candidate after Baywatch was less appealing; main goal remains active."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets, wishes Happy New Year, asks for new comedy movies available, says wants A Bad Moms Christmas (2017) but it is not on Amazon yet.\",\n    \"information_available\": \"Only SEEKER's own stated situation: desire for new comedy, specific interest in A Bad Moms Christmas, and Amazon unavailability.\",\n    \"preferences\": \"Prefers new comedy movies; specifically wants A Bad Moms Christmas (2017); cares about Amazon availability.\",\n    \"belief_before\": \"No prior recommender info in this dialogue; initial state is only SEEKER's own context.\",\n    \"belief_update\": \"SEEKER articulates desire and constraint; no external information received.\",\n    \"belief_after\": \"A Bad Moms Christmas (2017) is not on Amazon yet; SEEKER needs other new comedy suggestions.\",\n    \"emotion\": \"Polite, hopeful, mildly frustrated/wistful about A Bad Moms Christmas not being available.\",\n    \"intention\": \"Ask recommender for new comedy movie recommendations.\",\n    \"reaction_to_other\": \"No other speaker has spoken yet.\",\n    \"conversational_goal\": \"Obtain recommendations for new comedy movies, possibly alternatives to A Bad Moms Christmas.\",\n    \"changes_previous_interpretation\": \"No previous turn to change; establishes initial goal and constraint.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says Girls Trip (2017) was funny and Baywatch (2017) was funny.\",\n    \"information_available\": \"Recommender's suggestion/endorsement of Girls Trip and Baywatch as funny comedies.\",\n    \"preferences\": \"Still wants new comedy; likely values funny recommendations and availability; A Bad Moms Christmas still unavailable.\",\n    \"belief_before\": \"SEEKER believes A Bad Moms Christmas is not on Amazon yet and has asked for new comedy recommendations.\",\n    \"belief_update\": \"SEEKER learns recommender considers Girls Trip and Baywatch funny/recommended.\",\n    \"belief_after\": \"Girls Trip and Baywatch are candidate comedy options; no evaluation from SEEKER yet.\",\n    \"emotion\": \"Interested and mildly hopeful.\",\n    \"intention\": \"Consider or respond to the recommended comedies.\",\n    \"reaction_to_other\": \"Receptive to recommender's suggestions; no rejection yet.\",\n    \"conversational_goal\": \"Evaluate whether the suggestions are suitable and continue seeking a watchable comedy.\",\n    \"changes_previous_interpretation\": \"Expands candidate set from none to Girls Trip and Baywatch; does not change main goal.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says saw Girls Trip (2017), found it funny; did not see Baywatch (2017); heard Baywatch received bad reviews.\",\n    \"information_available\": \"Recommender's prior suggestions; SEEKER's own viewing experience with Girls Trip; hearsay about Baywatch reviews.\",\n    \"preferences\": \"Likes funny comedies; Girls Trip met this; likely avoids poorly reviewed movies; wants unseen new comedy.\",\n    \"belief_before\": \"Girls Trip and Baywatch are candidate funny comedies suggested by recommender; A Bad Moms Christmas unavailable.\",\n    \"belief_update\": \"SEEKER reveals Girls Trip was already seen and liked; Baywatch is unseen but has a bad-review reputation.\",\n    \"belief_after\": \"Girls Trip is not a new option; Baywatch is likely undesirable; still needs another new comedy.\",\n    \"emotion\": \"Positive toward Girls Trip, skeptical/negative about Baywatch, still hopeful for another suggestion.\",\n    \"intention\": \"Report which suggestions have been seen or are unappealing; implicitly request further recommendations.\",\n    \"reaction_to_other\": \"Acknowledges recommender's suggestions, but qualifies/rejects Baywatch due to bad reviews; Girls Trip already seen.\",\n    \"conversational_goal\": \"Narrow recommendations by excluding seen Girls Trip and poorly reviewed Baywatch; get another comedy suggestion.\",\n    \"changes_previous_interpretation\": \"Yes: Girls Trip shifts from candidate to already seen/liked; Baywatch shifts from candidate to likely rejected; still seeking new comedy.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says Daddy's Home 2 (2017) is out now and that they enjoyed Daddy's Home (2015).\",\n    \"information_available\": \"Recommender adds Daddy's Home 2 as currently out and endorses the predecessor Daddy's Home (2015) by enjoyment.\",\n    \"preferences\": \"Wants new comedy; avoids poorly reviewed options; may value availability now and predecessor enjoyment.\",\n    \"belief_before\": \"Girls Trip already seen/liked; Baywatch likely bad; A Bad Moms Christmas unavailable; still seeking a new comedy.\",\n    \"belief_update\": \"SEEKER learns Daddy's Home 2 is out now and recommender enjoyed Daddy's Home (2015).\",\n    \"belief_after\": \"Daddy's Home 2 is a new candidate comedy; Daddy's Home (2015) has recommender's positive endorsement.\",\n    \"emotion\": \"Curious and cautiously interested.\",\n    \"intention\": \"Consider Daddy's Home 2 as a possible next movie; likely respond or ask about it.\",\n    \"reaction_to_other\": \"Receptive to the new recommendation; no rejection yet.\",\n    \"conversational_goal\": \"Evaluate whether Daddy's Home 2 is a suitable new comedy recommendation.\",\n    \"changes_previous_interpretation\": \"Adds a new candidate after Baywatch was less appealing; main goal remains active.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

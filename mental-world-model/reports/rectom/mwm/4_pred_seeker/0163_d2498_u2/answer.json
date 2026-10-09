@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 163,
+  "item_id": "d2498_u2",
+  "dialogue_id": "2498",
+  "utterance_pos": 2,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.1,
+    "b": 0.6,
+    "c": 0.9,
+    "d": 0.1
+  },
+  "score_reason": "The recommender asked what kind of movie the seeker likes, so the seeker is most directly expected to express a preference.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

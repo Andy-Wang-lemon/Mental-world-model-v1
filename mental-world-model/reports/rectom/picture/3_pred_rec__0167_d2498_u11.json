@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0167_d2498_u11",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The seeker asked for movie recommendations and said they liked *Good Will Hunting* (1997).\n- RECOMMENDER suggested *The Outsiders* (1983), and the seeker said they had seen it a while back and that it “was good.”\n- RECOMMENDER suggested *50 First Dates* (2004), and the seeker said they had seen it.\n- RECOMMENDER said they love anything to do with Hawaii, and the seeker replied “Cool.”\n\nRECOMMENDER does **not** know:\n- Whether the seeker actually liked *50 First Dates* or just meant they had seen it.\n- Whether the seeker likes Hawaii-themed movies.\n- What genres, actors, directors, or themes the seeker generally prefers.\n- What other movies the seeker has seen, beyond what the seeker explicitly stated.\n- What the seeker means by “Cool” — it could be approval, neutral acknowledgment, or just politeness.\n\nThe seeker’s earlier request was for RECOMMENDER’s top three recommendations. So far, RECOMMENDER has mentioned *The Outsiders* and *50 First Dates*, but has not clearly completed the top three. The seeker’s last utterance, “Cool,” is only a brief acknowledgment and does not directly ask a new question. Therefore, RECOMMENDER is most likely to continue the recommendation task, either by offering another movie or by asking something to help narrow another recommendation.\n\nThat matches choice C: **Provides a recommendation directly or by inquiring further.**\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

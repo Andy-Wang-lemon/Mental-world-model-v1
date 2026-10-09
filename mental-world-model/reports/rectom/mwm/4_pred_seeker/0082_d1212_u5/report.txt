@@ -1,0 +1,27 @@
+数据：4_pred_seeker
+题号：82  d1212_u5
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.88, "b": 0.52, "c": 0.36, "d": 0.15}
+选择说明：The recommender's last turn suggests E.T., so SEEKER is most likely to give feedback on that suggested movie.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

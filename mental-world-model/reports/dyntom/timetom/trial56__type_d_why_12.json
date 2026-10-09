@@ -1,0 +1,61 @@
+{
+  "id": "trial56__type_d_why_12",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Arthur Chung",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Teresa seems overburdened with her tasks during the community service project. She initially says she can manage, but eventually accepts Arthur's offer to help organize medical supplies.",
+      "belief_before": "No specific prior belief about Teresa's current workload; he has not yet formed a view about whether she needs help.",
+      "belief_update": "Yes; after noticing her strain and hearing her response, he comes to believe Teresa is overwhelmed and needs assistance, and that she is willing to accept help.",
+      "belief_after": "Teresa needs help and has accepted his offer to assist with organizing medical supplies; helping her will ease her burden.",
+      "emotion": "Concerned for Teresa, then relieved and optimistic when she accepts his help.",
+      "intention": "Help Teresa with organizing medical supplies and reduce her workload."
+    },
+    {
+      "time": 2,
+      "observed": "Teresa admits she wants to show she can do the work by herself. She listens to Arthur's reassurance and agrees that accepting help does not mean she is incapable.",
+      "belief_before": "Teresa is hesitant to accept help because she wants to prove her capability; Arthur feels empathetic toward her desire to be self-reliant.",
+      "belief_update": "Yes; his belief is confirmed and partly softened. Teresa does want to prove herself, but she accepts that teamwork does not undermine her abilities.",
+      "belief_after": "Teresa values self-reliance, but she can accept help through teamwork without losing her sense of capability.",
+      "emotion": "Empathetic, supportive, and somewhat reassured or encouraged.",
+      "intention": "Reassure Teresa that accepting help does not undermine her abilities and support her through teamwork."
+    },
+    {
+      "time": 3,
+      "observed": "Teresa still seems to be struggling. She says it has been a busy day and she feels like she is falling behind. She agrees to try working together on the tasks.",
+      "belief_before": "Despite his reassurance, Teresa is still struggling, and his earlier efforts to help are not yielding enough improvement.",
+      "belief_update": "Yes; he shifts from relying on reassurance and individual offers of help to believing a shared, collaborative task approach is needed.",
+      "belief_after": "Teresa is still struggling, but working together as a team to share the load may support her without making her feel inadequate.",
+      "emotion": "Frustrated by the lack of results, then hopeful and resolute as Teresa agrees to a new approach.",
+      "intention": "Find another way to support Teresa without making her feel inadequate; try a collaborative, shared-task approach."
+    },
+    {
+      "time": 4,
+      "observed": "Teresa agrees that working together already feels less overwhelming. They agree to divide tasks, with Arthur handling inventory and Teresa managing patient records, and to check in regularly.",
+      "belief_before": "Working together will ease Teresa's burden and improve efficiency; he is hopeful that this new approach will be effective.",
+      "belief_update": "Yes; the collaborative approach appears effective and is mutually accepted.",
+      "belief_after": "Collaboration is effective, reduces overwhelm, and should be continued for the current tasks.",
+      "emotion": "Hopeful, encouraged, and optimistic.",
+      "intention": "Fully commit to the collaborative approach, handle inventory while Teresa manages patient records, and check in regularly to make the day productive."
+    },
+    {
+      "time": 5,
+      "observed": "Teresa agrees their teamwork paid off, calls it a great experience, supports continuing the collaborative approach in future projects, and thanks Arthur for being a supportive colleague.",
+      "belief_before": "Their collaboration has been effective and has eased Teresa's burden; he believes it is worth maintaining.",
+      "belief_update": "Yes; the dialogue confirms and strengthens his belief that collaboration has improved their work and their professional relationship.",
+      "belief_after": "Their teamwork has strengthened their professional relationship, and continuing the collaborative approach in future projects is mutually desirable.",
+      "emotion": "Satisfied, appreciated, and optimistic.",
+      "intention": "Maintain the collaborative approach in future projects with Teresa."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Teresa seems overburdened with her tasks during the community service project. She initially says she can manage, but eventually accepts Arthur's offer to help organize medical supplies.\",\n    \"belief_before\": \"No specific prior belief about Teresa's current workload; he has not yet formed a view about whether she needs help.\",\n    \"belief_update\": \"Yes; after noticing her strain and hearing her response, he comes to believe Teresa is overwhelmed and needs assistance, and that she is willing to accept help.\",\n    \"belief_after\": \"Teresa needs help and has accepted his offer to assist with organizing medical supplies; helping her will ease her burden.\",\n    \"emotion\": \"Concerned for Teresa, then relieved and optimistic when she accepts his help.\",\n    \"intention\": \"Help Teresa with organizing medical supplies and reduce her workload.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Teresa admits she wants to show she can do the work by herself. She listens to Arthur's reassurance and agrees that accepting help does not mean she is incapable.\",\n    \"belief_before\": \"Teresa is hesitant to accept help because she wants to prove her capability; Arthur feels empathetic toward her desire to be self-reliant.\",\n    \"belief_update\": \"Yes; his belief is confirmed and partly softened. Teresa does want to prove herself, but she accepts that teamwork does not undermine her abilities.\",\n    \"belief_after\": \"Teresa values self-reliance, but she can accept help through teamwork without losing her sense of capability.\",\n    \"emotion\": \"Empathetic, supportive, and somewhat reassured or encouraged.\",\n    \"intention\": \"Reassure Teresa that accepting help does not undermine her abilities and support her through teamwork.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Teresa still seems to be struggling. She says it has been a busy day and she feels like she is falling behind. She agrees to try working together on the tasks.\",\n    \"belief_before\": \"Despite his reassurance, Teresa is still struggling, and his earlier efforts to help are not yielding enough improvement.\",\n    \"belief_update\": \"Yes; he shifts from relying on reassurance and individual offers of help to believing a shared, collaborative task approach is needed.\",\n    \"belief_after\": \"Teresa is still struggling, but working together as a team to share the load may support her without making her feel inadequate.\",\n    \"emotion\": \"Frustrated by the lack of results, then hopeful and resolute as Teresa agrees to a new approach.\",\n    \"intention\": \"Find another way to support Teresa without making her feel inadequate; try a collaborative, shared-task approach.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Teresa agrees that working together already feels less overwhelming. They agree to divide tasks, with Arthur handling inventory and Teresa managing patient records, and to check in regularly.\",\n    \"belief_before\": \"Working together will ease Teresa's burden and improve efficiency; he is hopeful that this new approach will be effective.\",\n    \"belief_update\": \"Yes; the collaborative approach appears effective and is mutually accepted.\",\n    \"belief_after\": \"Collaboration is effective, reduces overwhelm, and should be continued for the current tasks.\",\n    \"emotion\": \"Hopeful, encouraged, and optimistic.\",\n    \"intention\": \"Fully commit to the collaborative approach, handle inventory while Teresa manages patient records, and check in regularly to make the day productive.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Teresa agrees their teamwork paid off, calls it a great experience, supports continuing the collaborative approach in future projects, and thanks Arthur for being a supportive colleague.\",\n    \"belief_before\": \"Their collaboration has been effective and has eased Teresa's burden; he believes it is worth maintaining.\",\n    \"belief_update\": \"Yes; the dialogue confirms and strengthens his belief that collaboration has improved their work and their professional relationship.\",\n    \"belief_after\": \"Their teamwork has strengthened their professional relationship, and continuing the collaborative approach in future projects is mutually desirable.\",\n    \"emotion\": \"Satisfied, appreciated, and optimistic.\",\n    \"intention\": \"Maintain the collaborative approach in future projects with Teresa.\"\n  }\n]",
+  "final_response": "ANSWER: b",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial56"
+}

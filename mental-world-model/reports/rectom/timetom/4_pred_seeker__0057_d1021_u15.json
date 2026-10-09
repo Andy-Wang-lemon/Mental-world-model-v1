@@ -1,0 +1,166 @@
+{
+  "id": "4_pred_seeker__0057_d1021_u15",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets SEEKER and asks what kind of movie SEEKER is looking for.",
+      "belief_before": "SEEKER has no prior information about this recommender's suggestions or preferences.",
+      "belief_update": "SEEKER learns the recommender is asking for movie criteria and is willing to help.",
+      "belief_after": "SEEKER knows a recommendation dialogue is starting and has not yet stated any preference.",
+      "emotion": "Neutral and curious.",
+      "intention": "Decide how to describe the desired movie.",
+      "conversational_goal": "Begin a request for a movie recommendation."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: looking for a film of any genre with a woman in the lead, in the mood for a good heroine.",
+      "belief_before": "Recommender wants to know what kind of movie SEEKER is looking for.",
+      "belief_update": "SEEKER clarifies own preference: any genre is acceptable, but SEEKER wants a strong female lead or heroine.",
+      "belief_after": "SEEKER expects recommendations featuring a good heroine; no specific title has been suggested yet.",
+      "emotion": "Positive and enthusiastic.",
+      "intention": "Communicate preferences so the recommender can suggest suitable films.",
+      "conversational_goal": "Get a recommendation for a heroine-led film."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender suggests The Blind Side (2009) with Sandra Bullock.",
+      "belief_before": "SEEKER wants a heroine-led film and has told the recommender this.",
+      "belief_update": "Recommender proposes The Blind Side, a Sandra Bullock film; this likely fits the female-lead request.",
+      "belief_after": "SEEKER knows The Blind Side is the first suggestion and can evaluate whether it matches the desired heroine film.",
+      "emotion": "Curious and considering.",
+      "intention": "Evaluate whether SEEKER has seen The Blind Side and whether it fits the request.",
+      "conversational_goal": "Respond to the first suggestion."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says no, has not seen The Blind Side, and asks if it is the one about her adopting the black kid.",
+      "belief_before": "Recommender suggested The Blind Side with Sandra Bullock.",
+      "belief_update": "SEEKER confirms not having seen it and tentatively believes the plot involves Sandra Bullock's character adopting a Black child.",
+      "belief_after": "SEEKER has not seen The Blind Side; SEEKER thinks it may be about adoption and awaits confirmation.",
+      "emotion": "Uncertain and curious.",
+      "intention": "Confirm the film's identity and fit with the heroine preference.",
+      "conversational_goal": "Clarify whether The Blind Side is the film SEEKER is thinking of."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender confirms and says The Blind Side is really good; then asks about The Help (2011) with Emma Stone and Viola Davis.",
+      "belief_before": "SEEKER believed The Blind Side involved adoption and had not seen it.",
+      "belief_update": "Recommender confirms The Blind Side and introduces The Help, another film with female leads.",
+      "belief_after": "SEEKER knows the recommender endorses The Blind Side and suggests The Help; SEEKER has not yet stated a view of The Help.",
+      "emotion": "Interested.",
+      "intention": "Consider The Help suggestion and decide how to respond.",
+      "conversational_goal": "Continue getting recommendations with female leads."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says will rent it tonight; did see The Help, and it made SEEKER cry and laugh throughout.",
+      "belief_before": "Recommender endorsed The Blind Side and suggested The Help.",
+      "belief_update": "SEEKER plans to rent The Blind Side tonight; SEEKER has seen and liked The Help, finding it emotionally affecting.",
+      "belief_after": "SEEKER intends to watch The Blind Side; SEEKER likes The Help; the recommender knows SEEKER's positive reaction.",
+      "emotion": "Positive and emotionally moved.",
+      "intention": "Act on the recommendation by renting The Blind Side and share reaction to The Help.",
+      "conversational_goal": "Signal agreement and interest while keeping the dialogue going."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says yes, loved The Help, and also really likes Precious about a girl whose mother is mean to her.",
+      "belief_before": "SEEKER liked The Help and planned to rent The Blind Side.",
+      "belief_update": "Recommender loved The Help and recommends or mentions Precious, about a girl with a mean mother.",
+      "belief_after": "SEEKER knows the recommender likes Precious; SEEKER may consider it as another female-led film.",
+      "emotion": "Neutral and curious.",
+      "intention": "Evaluate the Precious suggestion.",
+      "conversational_goal": "Respond to the Precious recommendation."
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER says tried to watch Precious but could not; it was too sad; SEEKER was overweight in early 20s and it brought back memories.",
+      "belief_before": "Recommender likes and recommends Precious.",
+      "belief_update": "SEEKER reveals a strong aversion to Precious because it is too sad and triggers painful memories about weight; this changes the previous interpretation by setting an emotional boundary against overly sad films.",
+      "belief_after": "SEEKER cannot watch Precious, and the recommender knows this personal sensitivity.",
+      "emotion": "Sad, uncomfortable, and vulnerable.",
+      "intention": "Decline Precious and explain why.",
+      "conversational_goal": "Communicate an emotional boundary and steer away from overly sad films."
+    },
+    {
+      "time": 9,
+      "observed": "Recommender empathizes, says it was awful and she had to deal with so much; then asks about Extremely Loud and Incredibly Close (2011), another Sandra Bullock film.",
+      "belief_before": "SEEKER declined Precious as too sad, and the recommender knows SEEKER's sensitivity.",
+      "belief_update": "Recommender acknowledges Precious's sadness and suggests Extremely Loud and Incredibly Close, another Sandra Bullock film.",
+      "belief_after": "SEEKER knows the new suggestion is a Sandra Bullock film; given the prior sadness boundary, SEEKER may be cautious about its emotional weight.",
+      "emotion": "Cautious and curious.",
+      "intention": "Consider the new suggestion while keeping the earlier sadness concern in mind.",
+      "conversational_goal": "Evaluate whether Extremely Loud and Incredibly Close is suitable."
+    },
+    {
+      "time": 10,
+      "observed": "SEEKER asks if Extremely Loud and Incredibly Close is based on the novel of the same name.",
+      "belief_before": "Recommender suggested Extremely Loud and Incredibly Close, a Sandra Bullock film.",
+      "belief_update": "SEEKER tentatively recognizes the title as possibly adapted from a novel and seeks confirmation.",
+      "belief_after": "SEEKER is unsure whether it is the novel adaptation and awaits the recommender's answer.",
+      "emotion": "Curious and uncertain.",
+      "intention": "Confirm the film's identity and source.",
+      "conversational_goal": "Clarify whether Extremely Loud and Incredibly Close is the book adaptation SEEKER knows."
+    },
+    {
+      "time": 11,
+      "observed": "Recommender is not sure about the novel, and says it is about an autistic boy who loses his father on 9/11.",
+      "belief_before": "SEEKER suspected Extremely Loud and Incredibly Close might be a novel adaptation.",
+      "belief_update": "Recommender cannot confirm the novel basis but describes the plot: an autistic boy loses his father on 9/11.",
+      "belief_after": "SEEKER has plot details and likely recognizes the film as the novel adaptation; SEEKER knows the recommender is unsure about the source.",
+      "emotion": "Recognition and curiosity.",
+      "intention": "Confirm recognition and share familiarity.",
+      "conversational_goal": "Identify the film and connect it to prior knowledge."
+    },
+    {
+      "time": 12,
+      "observed": "SEEKER confirms that is the one; read the book and loved it but has never seen the movie.",
+      "belief_before": "Recommender described the plot of Extremely Loud and Incredibly Close and was unsure about its novel basis.",
+      "belief_update": "SEEKER confirms it is the adaptation; reveals a preference: loved the book but has not seen the film.",
+      "belief_after": "SEEKER knows the film is based on a book SEEKER loved; SEEKER has not seen the movie; the recommender knows this.",
+      "emotion": "Positive, nostalgic, and interested.",
+      "intention": "Share the connection to the source material and openness to the film.",
+      "conversational_goal": "Express familiarity and interest in the movie despite not having seen it."
+    },
+    {
+      "time": 13,
+      "observed": "Recommender says Extremely Loud and Incredibly Close is very sad but very good.",
+      "belief_before": "SEEKER loved the book and has not seen the movie; the recommender suggested it.",
+      "belief_update": "Recommender warns that the film is very sad but high quality.",
+      "belief_after": "SEEKER knows the film is emotionally heavy; this may conflict with the earlier dislike of too-sad films, but SEEKER already loved the book.",
+      "emotion": "Mixed: anticipatory sadness and interest.",
+      "intention": "Weigh the sadness warning against the film's quality and SEEKER's connection to the book.",
+      "conversational_goal": "Respond to the sadness-and-quality warning."
+    },
+    {
+      "time": 14,
+      "observed": "SEEKER says can only imagine, and cried through the entire book.",
+      "belief_before": "Recommender said Extremely Loud and Incredibly Close is very sad but very good.",
+      "belief_update": "SEEKER confirms an emotional connection to the book and expects the film to be very sad.",
+      "belief_after": "SEEKER anticipates sadness but has strong positive feelings about the book; the recommender knows SEEKER cried through the book.",
+      "emotion": "Sad, moved, and nostalgic.",
+      "intention": "Share emotional reaction to the book and relate to the recommender.",
+      "conversational_goal": "Maintain rapport by expressing shared emotional understanding."
+    },
+    {
+      "time": 15,
+      "observed": "Recommender says will have to read the book now; asks about Breakfast at Tiffany's (1961).",
+      "belief_before": "SEEKER and recommender discussed the sadness of Extremely Loud and Incredibly Close, and SEEKER cried through the book.",
+      "belief_update": "Recommender is now interested in the book and proposes a classic, Breakfast at Tiffany's; this changes the previous interpretation by shifting from emotionally heavy contemporary films to a classic recommendation.",
+      "belief_after": "SEEKER knows the recommender may read the book and has moved to a classic suggestion; SEEKER may consider whether it fits the heroine preference.",
+      "emotion": "Neutral and curious, possibly lighter.",
+      "intention": "Consider the classic suggestion and decide whether to accept it.",
+      "conversational_goal": "Evaluate Breakfast at Tiffany's as a possible female-led classic."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets SEEKER and asks what kind of movie SEEKER is looking for.\",\n    \"belief_before\": \"SEEKER has no prior information about this recommender's suggestions or preferences.\",\n    \"belief_update\": \"SEEKER learns the recommender is asking for movie criteria and is willing to help.\",\n    \"belief_after\": \"SEEKER knows a recommendation dialogue is starting and has not yet stated any preference.\",\n    \"emotion\": \"Neutral and curious.\",\n    \"intention\": \"Decide how to describe the desired movie.\",\n    \"conversational_goal\": \"Begin a request for a movie recommendation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: looking for a film of any genre with a woman in the lead, in the mood for a good heroine.\",\n    \"belief_before\": \"Recommender wants to know what kind of movie SEEKER is looking for.\",\n    \"belief_update\": \"SEEKER clarifies own preference: any genre is acceptable, but SEEKER wants a strong female lead or heroine.\",\n    \"belief_after\": \"SEEKER expects recommendations featuring a good heroine; no specific title has been suggested yet.\",\n    \"emotion\": \"Positive and enthusiastic.\",\n    \"intention\": \"Communicate preferences so the recommender can suggest suitable films.\",\n    \"conversational_goal\": \"Get a recommendation for a heroine-led film.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender suggests The Blind Side (2009) with Sandra Bullock.\",\n    \"belief_before\": \"SEEKER wants a heroine-led film and has told the recommender this.\",\n    \"belief_update\": \"Recommender proposes The Blind Side, a Sandra Bullock film; this likely fits the female-lead request.\",\n    \"belief_after\": \"SEEKER knows The Blind Side is the first suggestion and can evaluate whether it matches the desired heroine film.\",\n    \"emotion\": \"Curious and considering.\",\n    \"intention\": \"Evaluate whether SEEKER has seen The Blind Side and whether it fits the request.\",\n    \"conversational_goal\": \"Respond to the first suggestion.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says no, has not seen The Blind Side, and asks if it is the one about her adopting the black kid.\",\n    \"belief_before\": \"Recommender suggested The Blind Side with Sandra Bullock.\",\n    \"belief_update\": \"SEEKER confirms not having seen it and tentatively believes the plot involves Sandra Bullock's character adopting a Black child.\",\n    \"belief_after\": \"SEEKER has not seen The Blind Side; SEEKER thinks it may be about adoption and awaits confirmation.\",\n    \"emotion\": \"Uncertain and curious.\",\n    \"intention\": \"Confirm the film's identity and fit with the heroine preference.\",\n    \"conversational_goal\": \"Clarify whether The Blind Side is the film SEEKER is thinking of.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender confirms and says The Blind Side is really good; then asks about The Help (2011) with Emma Stone and Viola Davis.\",\n    \"belief_before\": \"SEEKER believed The Blind Side involved adoption and had not seen it.\",\n    \"belief_update\": \"Recommender confirms The Blind Side and introduces The Help, another film with female leads.\",\n    \"belief_after\": \"SEEKER knows the recommender endorses The Blind Side and suggests The Help; SEEKER has not yet stated a view of The Help.\",\n    \"emotion\": \"Interested.\",\n    \"intention\": \"Consider The Help suggestion and decide how to respond.\",\n    \"conversational_goal\": \"Continue getting recommendations with female leads.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says will rent it tonight; did see The Help, and it made SEEKER cry and laugh throughout.\",\n    \"belief_before\": \"Recommender endorsed The Blind Side and suggested The Help.\",\n    \"belief_update\": \"SEEKER plans to rent The Blind Side tonight; SEEKER has seen and liked The Help, finding it emotionally affecting.\",\n    \"belief_after\": \"SEEKER intends to watch The Blind Side; SEEKER likes The Help; the recommender knows SEEKER's positive reaction.\",\n    \"emotion\": \"Positive and emotionally moved.\",\n    \"intention\": \"Act on the recommendation by renting The Blind Side and share reaction to The Help.\",\n    \"conversational_goal\": \"Signal agreement and interest while keeping the dialogue going.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says yes, loved The Help, and also really likes Precious about a girl whose mother is mean to her.\",\n    \"belief_before\": \"SEEKER liked The Help and planned to rent The Blind Side.\",\n    \"belief_update\": \"Recommender loved The Help and recommends or mentions Precious, about a girl with a mean mother.\",\n    \"belief_after\": \"SEEKER knows the recommender likes Precious; SEEKER may consider it as another female-led film.\",\n    \"emotion\": \"Neutral and curious.\",\n    \"intention\": \"Evaluate the Precious suggestion.\",\n    \"conversational_goal\": \"Respond to the Precious recommendation.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER says tried to watch Precious but could not; it was too sad; SEEKER was overweight in early 20s and it brought back memories.\",\n    \"belief_before\": \"Recommender likes and recommends Precious.\",\n    \"belief_update\": \"SEEKER reveals a strong aversion to Precious because it is too sad and triggers painful memories about weight; this changes the previous interpretation by setting an emotional boundary against overly sad films.\",\n    \"belief_after\": \"SEEKER cannot watch Precious, and the recommender knows this personal sensitivity.\",\n    \"emotion\": \"Sad, uncomfortable, and vulnerable.\",\n    \"intention\": \"Decline Precious and explain why.\",\n    \"conversational_goal\": \"Communicate an emotional boundary and steer away from overly sad films.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Recommender empathizes, says it was awful and she had to deal with so much; then asks about Extremely Loud and Incredibly Close (2011), another Sandra Bullock film.\",\n    \"belief_before\": \"SEEKER declined Precious as too sad, and the recommender knows SEEKER's sensitivity.\",\n    \"belief_update\": \"Recommender acknowledges Precious's sadness and suggests Extremely Loud and Incredibly Close, another Sandra Bullock film.\",\n    \"belief_after\": \"SEEKER knows the new suggestion is a Sandra Bullock film; given the prior sadness boundary, SEEKER may be cautious about its emotional weight.\",\n    \"emotion\": \"Cautious and curious.\",\n    \"intention\": \"Consider the new suggestion while keeping the earlier sadness concern in mind.\",\n    \"conversational_goal\": \"Evaluate whether Extremely Loud and Incredibly Close is suitable.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"SEEKER asks if Extremely Loud and Incredibly Close is based on the novel of the same name.\",\n    \"belief_before\": \"Recommender suggested Extremely Loud and Incredibly Close, a Sandra Bullock film.\",\n    \"belief_update\": \"SEEKER tentatively recognizes the title as possibly adapted from a novel and seeks confirmation.\",\n    \"belief_after\": \"SEEKER is unsure whether it is the novel adaptation and awaits the recommender's answer.\",\n    \"emotion\": \"Curious and uncertain.\",\n    \"intention\": \"Confirm the film's identity and source.\",\n    \"conversational_goal\": \"Clarify whether Extremely Loud and Incredibly Close is the book adaptation SEEKER knows.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"Recommender is not sure about the novel, and says it is about an autistic boy who loses his father on 9/11.\",\n    \"belief_before\": \"SEEKER suspected Extremely Loud and Incredibly Close might be a novel adaptation.\",\n    \"belief_update\": \"Recommender cannot confirm the novel basis but describes the plot: an autistic boy loses his father on 9/11.\",\n    \"belief_after\": \"SEEKER has plot details and likely recognizes the film as the novel adaptation; SEEKER knows the recommender is unsure about the source.\",\n    \"emotion\": \"Recognition and curiosity.\",\n    \"intention\": \"Confirm recognition and share familiarity.\",\n    \"conversational_goal\": \"Identify the film and connect it to prior knowledge.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"SEEKER confirms that is the one; read the book and loved it but has never seen the movie.\",\n    \"belief_before\": \"Recommender described the plot of Extremely Loud and Incredibly Close and was unsure about its novel basis.\",\n    \"belief_update\": \"SEEKER confirms it is the adaptation; reveals a preference: loved the book but has not seen the film.\",\n    \"belief_after\": \"SEEKER knows the film is based on a book SEEKER loved; SEEKER has not seen the movie; the recommender knows this.\",\n    \"emotion\": \"Positive, nostalgic, and interested.\",\n    \"intention\": \"Share the connection to the source material and openness to the film.\",\n    \"conversational_goal\": \"Express familiarity and interest in the movie despite not having seen it.\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"Recommender says Extremely Loud and Incredibly Close is very sad but very good.\",\n    \"belief_before\": \"SEEKER loved the book and has not seen the movie; the recommender suggested it.\",\n    \"belief_update\": \"Recommender warns that the film is very sad but high quality.\",\n    \"belief_after\": \"SEEKER knows the film is emotionally heavy; this may conflict with the earlier dislike of too-sad films, but SEEKER already loved the book.\",\n    \"emotion\": \"Mixed: anticipatory sadness and interest.\",\n    \"intention\": \"Weigh the sadness warning against the film's quality and SEEKER's connection to the book.\",\n    \"conversational_goal\": \"Respond to the sadness-and-quality warning.\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"SEEKER says can only imagine, and cried through the entire book.\",\n    \"belief_before\": \"Recommender said Extremely Loud and Incredibly Close is very sad but very good.\",\n    \"belief_update\": \"SEEKER confirms an emotional connection to the book and expects the film to be very sad.\",\n    \"belief_after\": \"SEEKER anticipates sadness but has strong positive feelings about the book; the recommender knows SEEKER cried through the book.\",\n    \"emotion\": \"Sad, moved, and nostalgic.\",\n    \"intention\": \"Share emotional reaction to the book and relate to the recommender.\",\n    \"conversational_goal\": \"Maintain rapport by expressing shared emotional understanding.\"\n  },\n  {\n    \"time\": 15,\n    \"observed\": \"Recommender says will have to read the book now; asks about Breakfast at Tiffany's (1961).\",\n    \"belief_before\": \"SEEKER and recommender discussed the sadness of Extremely Loud and Incredibly Close, and SEEKER cried through the book.\",\n    \"belief_update\": \"Recommender is now interested in the book and proposes a classic, Breakfast at Tiffany's; this changes the previous interpretation by shifting from emotionally heavy contemporary films to a classic recommendation.\",\n    \"belief_after\": \"SEEKER knows the recommender may read the book and has moved to a classic suggestion; SEEKER may consider whether it fits the heroine preference.\",\n    \"emotion\": \"Neutral and curious, possibly lighter.\",\n    \"intention\": \"Consider the classic suggestion and decide whether to accept it.\",\n    \"conversational_goal\": \"Evaluate Breakfast at Tiffany's as a possible female-led classic.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0035_d1002_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER asks for recommendations of good new science fiction films, preferably already on DVD and available to buy or rent online.",
+      "belief_before": "Recommender has no dialogue-specific information about this seeker's request or preferences; only the general role of being asked for recommendations.",
+      "belief_update": "The seeker wants science fiction recommendations and has preferences for new/good films, DVD availability, and online buy/rent access. This is the first turn, so it establishes the initial context.",
+      "belief_after": "Recommender should provide science fiction film suggestions that are good, relatively new, and accessible on DVD or online for purchase/rental.",
+      "emotion": "Neutral and attentive; likely helpful/receptive to the request.",
+      "intention": "To answer the seeker's request with relevant science fiction film recommendations that fit the stated availability preferences.",
+      "conversational_goal": "Recommend suitable science fiction films available on DVD and/or online for buying or renting."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER asks for recommendations of good new science fiction films, preferably already on DVD and available to buy or rent online.\",\n    \"belief_before\": \"Recommender has no dialogue-specific information about this seeker's request or preferences; only the general role of being asked for recommendations.\",\n    \"belief_update\": \"The seeker wants science fiction recommendations and has preferences for new/good films, DVD availability, and online buy/rent access. This is the first turn, so it establishes the initial context.\",\n    \"belief_after\": \"Recommender should provide science fiction film suggestions that are good, relatively new, and accessible on DVD or online for purchase/rental.\",\n    \"emotion\": \"Neutral and attentive; likely helpful/receptive to the request.\",\n    \"intention\": \"To answer the seeker's request with relevant science fiction film recommendations that fit the stated availability preferences.\",\n    \"conversational_goal\": \"Recommend suitable science fiction films available on DVD and/or online for buying or renting.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

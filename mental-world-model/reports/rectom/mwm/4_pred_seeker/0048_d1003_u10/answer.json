@@ -1,0 +1,81 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 48,
+  "item_id": "d1003_u10",
+  "dialogue_id": "1003",
+  "utterance_pos": 10,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 的所缘里，RECOMMENDER 先追问「classic」指 70 年代之前还是之后，像在出一道必须有唯一正确时间分界的题：不能含混，必须落在 70 前或 70 后。接着列出的 Indecent Proposal、Sleepless in Seattle、All the Right Moves、Days of Thunder 及 Ferris Bueller's Day Off，则被经验为一连串有关「我是否看过/知道」的资历清点；看过与否被放到「我这边」，成为自身电影资历的一部分，而不只是可核对的外部事实。",
+        "probability": 0.374
+      },
+      {
+        "content": "在 SEEKER 的所缘里，RECOMMENDER 追问「classic」是指 70 年代之前还是之后，不只是词义分类，而像要求他交代自己电影品味立场的二选一；「classic」被经验为有一条唯一正确的时间分界，所以回答必须按固定标准落入某一边。后续那些带年份、演员的片名推荐，也被收进这张分类与立场图里，像是在确认他站在哪个品味边界内。",
+        "probability": 0.3456
+      },
+      {
+        "content": "在 SEEKER 的所缘里，RECOMMENDER 从 Ferris Bueller's Day Off 推到 All the Right Moves，并被经验为一条固定选片关系：相似影片或同一演员（Tom Cruise）能够决定他该喜欢什么；而「喜欢 Ferris Bueller's Day Off」被放在「我这边」，成为身份标识。于是关于 All the Right Moves、Days of Thunder 等片的询问，像在核对他的偏好是否与这一标识和关系一致，而不是可讨论的口味。",
+        "probability": 0.2804
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在SEEKER看来，对方先追问“classic”是70年代之前还是之后，像在出一道必须有唯一正确时间分界的题：不能含混，必须落到一边。于是他会顺着这个框给出一个能过关的答案，同时也借此划出自己认可的范围。接着那一串片名、年份和演员被抛出来时，他不只是在核对信息，而是在心里盘点：哪些我听过、哪些看过、哪些合我口味、哪些太冒险；“看过没有”被放到自己这一边，成了电影资历和品味的一部分。所以说到《西雅图不眠夜》时，他会特意强调以前看过、只是隔了很久；说到《All the Right Moves》时，他得承认没看过，但会立刻用“这片好吗”把这一空档接成一个还能继续聊下去的问句，不让没看过变成被考住的尴尬。",
+        "activation": 0.3605
+      },
+      {
+        "content": "SEEKER 觉得 RECOMMENDER 问 classic 是之前还是之后，并不只是在确认词义，而像是在让他表明自己站在哪条电影品味分界线上；他心里认定这条线有一个固定的正确答案，于是用“After”把自己归到某一边。后面的片名都带着年份和演员，仿佛在继续核对他的位置：Indecent Proposal 太 risque，被他划出边界之外；Sleepless in Seattle 更合他的口味，被他认作边界内的选择；All the Right Moves 没看过，他问好不好，也是在判断它能否被收进这张分类图里。",
+        "activation": 0.3488
+      },
+      {
+        "content": "SEEKER 心里把「喜欢 Ferris Bueller's Day Off」放在自己这一边，像一条关于自己口味与身份的标记；当 RECOMMENDER 由这部片推及 All the Right Moves，并提到 Tom Cruise 时，这在他看来不只是一次可讨论的推荐，而像一条固定选片关系：相似影片或同一演员似乎能够决定他该喜欢什么。因此，面对 All the Right Moves，他虽未看过，却会先问「Is it good?」，像是在核对这部片能否接上自己的标记与那条关系；面对 Days of Thunder 等后续片单，也会被同一框架牵引，倾向于用「是否符合这项标记和关系」来衡量，而不是单纯把它们当作开放的口味选项。",
+        "activation": 0.2907
+      }
+    ],
+    "observed_action": "SEEKER asked a friend to recommend some good classic movies; answered 'After' to the classic-era question; said Indecent Proposal was too risque for him; said Sleepless in Seattle was more his speed and that it had been a while since he had seen it; said he had not seen All the Right Moves and asked if it was good.",
+    "predicted_actions": [
+      {
+        "content": "回答是否看过《Days of Thunder》",
+        "probability": 0.6104
+      },
+      {
+        "content": "表示对推荐电影感兴趣并打算观看",
+        "probability": 0.1582
+      },
+      {
+        "content": "暂缓《Days of Thunder》并要求说明《All the Right Moves》",
+        "probability": 0.1108
+      },
+      {
+        "content": "决定重看旧片，今天不加新片",
+        "probability": 0.1026
+      },
+      {
+        "content": "回避《Days of Thunder》并请求推荐浪漫喜剧",
+        "probability": 0.018
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.7686,
+    "b": 0,
+    "c": 0.1206,
+    "d": 0
+  },
+  "score_reason": "A 0.7686 = 回答是否看过《Days of Thunder》 0.6104 + 表示对推荐电影感兴趣并打算观看 0.1582；B 0.0000；C 0.1206 = 决定重看旧片，今天不加新片 0.1026 + 回避《Days of Thunder》并请求推荐浪漫喜剧 0.0180；D 0.0000。0 and 1 give feedback on the recommended movie, while 3 and 4 express preference or ask for a recommendation; others do not match.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

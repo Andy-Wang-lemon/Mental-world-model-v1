@@ -1,0 +1,333 @@
+{
+  "events": [
+    {
+      "focus_person": "陈默",
+      "yuanwen": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+      "stimulus_text": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+      "stimulus_action_split": {
+        "stimulus_text": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "林可"
+        ],
+        "action": "在方案讨论中提出“过去成功的方法正在失效”，并在两周后提交数据",
+        "object": "现有方法的效果",
+        "scene": "公司内部方案讨论",
+        "outcome_changes": [
+          "林可的判断经数据验证为部分正确"
+        ],
+        "role_changes": [
+          "林可入职公司"
+        ],
+        "relationship_changes": [],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "陈默将“自己拥有经验”执为“我”的身份所在。林可年轻且提出“过去成功的方法正在失效”这一反论，该反论动摇了这一身份，于是陈默以“年轻人过于理想化”来界定对方，以维护这个经验者的自我。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "陈默将“年轻人”这个人群执为固定属性“理想化、不切实际”，林可年轻且提出颠覆性观点，正好被他套入这一固定认知，使他对林可观点的初步判断偏离了观点本身。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "陈默将“过去成功的方法”执为仍然有效、不易被否定的固定存在，所以在听到林可说“正在失效”时，他把这种说法视为不切实际的理想化，而非一个需要直接检验的假设。",
+          "confidence": 0.6,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 1.0,
+          "alambana_prior_probability": 1.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.5700000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "陈默眼前的林可首先被归入‘年轻、理想化’的固定类型，她的话因此在他主观经验中不是对方法本身的讨论，而是一个未经历成功的新人对既有经验价值的轻率挑战。‘过去成功的方法正在失效’这句话被他体验为对‘自己拥有经验’这一身份的冒犯，于是对象世界分成了两栏：一边是值得倚仗的过往经验，一边是需要被怀疑的年轻空谈；方法是否真的失效这一问题，被这个标签遮蔽了。",
+          "prior_probability": 1.0,
+          "posterior_probability": 1.0,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.5700000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "所缘均为陈默主观体验与解释，未添加刺激中不存在的他人言行；虽聚焦初判阶段，但未否定后续数据验证之关键变化，故未遗漏核心事件。",
+          "combo_id": "C1"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 1.0,
+          "alambana": {
+            "id": "O_C1",
+            "text": "陈默眼前的林可首先被归入‘年轻、理想化’的固定类型，她的话因此在他主观经验中不是对方法本身的讨论，而是一个未经历成功的新人对既有经验价值的轻率挑战。‘过去成功的方法正在失效’这句话被他体验为对‘自己拥有经验’这一身份的冒犯，于是对象世界分成了两栏：一边是值得倚仗的过往经验，一边是需要被怀疑的年轻空谈；方法是否真的失效这一问题，被这个标签遮蔽了。",
+            "prior_probability": 1.0,
+            "posterior_probability": 1.0,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "raw_combo_score": 0.5700000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "所缘均为陈默主观体验与解释，未添加刺激中不存在的他人言行；虽聚焦初判阶段，但未否定后续数据验证之关键变化，故未遗漏核心事件。"
+          },
+          "xiang": {
+            "text": "陈默看着林可，心里先将她归为一个标签：年轻、未经世事。她说“过去成功的方法正在失效”时，他感到的不是对方法的讨论，而是对自己多年积累的经验的轻慢。他暗自不悦，心想：她没经历过真正的成败，凭什么否定我们走过的路？在她开口之际，陈默便把她的观点归为年轻人不切实际的空谈，而“方法是否失效”这一真正的问题，被这层标签盖住了。他下意识觉得，不必跟她争辩，等她自己碰壁自然会明白；至于数据，不过是要让她看清现实。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "不放逸": 0.31999999999999995,
+            "行舍": 0.45,
+            "不害": 0.195,
+            "瞋": 0.44,
+            "慢": 0.8725,
+            "无明": 0.8200000000000001,
+            "恶见": 0.64,
+            "忿": 0.13,
+            "悭": 0.29,
+            "不信": 0.5349999999999999,
+            "不正知": 0.505
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "指出数据不足",
+              "probability": 0.7037037037037037,
+              "supporting_mental_factors": [
+                "慢",
+                "无明",
+                "恶见",
+                "不正知",
+                "瞋"
+              ]
+            },
+            {
+              "text": "认可部分正确并支持试点",
+              "probability": 0.29629629629629634,
+              "supporting_mental_factors": [
+                "行舍",
+                "不放逸",
+                "不害"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "指出数据不足",
+          "probability": 0.7037037037037037,
+          "dominant_mental_factors": [
+            "慢",
+            "无明",
+            "恶见",
+            "不正知",
+            "瞋"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.7037037037037037,
+              "contribution": 0.7037037037037037
+            }
+          ]
+        },
+        {
+          "text": "认可部分正确并支持试点",
+          "probability": 0.29629629629629634,
+          "dominant_mental_factors": [
+            "行舍",
+            "不放逸",
+            "不害"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.29629629629629634,
+              "contribution": 0.29629629629629634
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "不放逸": 0.31999999999999995,
+        "行舍": 0.45,
+        "不害": 0.195,
+        "瞋": 0.44,
+        "慢": 0.8725,
+        "无明": 0.8200000000000001,
+        "恶见": 0.64,
+        "忿": 0.13,
+        "悭": 0.29,
+        "不信": 0.5349999999999999,
+        "不正知": 0.505
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 3,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 3,
+        "valid_after_alignment_gate": 1
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 3,
+        "distinct_candidate_count": 2,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 3,
+            "distinct_candidate_count": 2,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [],
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.0
+        }
+      }
+    }
+  ],
+  "focus_person": "陈默",
+  "llm_usage": {
+    "total_calls": 78,
+    "total_duration_ms": 480730.6503591826,
+    "wall_clock_ms": 279999.0330840228
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S01",
+    "event_index": 1,
+    "stimulus": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+    "top_action": "指出数据不足",
+    "top_probability": 0.7037037037037037,
+    "top_k": [
+      {
+        "text": "指出数据不足",
+        "probability": 0.7037037037037037
+      },
+      {
+        "text": "认可部分正确并支持试点",
+        "probability": 0.29629629629629634
+      }
+    ],
+    "continuity_before": {
+      "person_id": "陈默",
+      "event_count": 0,
+      "mental_episode_count": 0,
+      "cognitive_frame_count": 0
+    },
+    "cognitive_frames_before": [],
+    "fresh_count_raw": 3,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 3,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 3,
+      "distinct_candidate_count": 2,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 3,
+          "distinct_candidate_count": 2,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

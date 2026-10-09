@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3苏宁.txt",
+  "agent": "苏宁",
+  "stimulus": "几年前，苏宁拿到国外研究生录取，出发前父亲需要做手术。哥哥刚有孩子，苏宁最终没有出国，留在家里几个月。后来她继续原来的工作，现在已经升职两次。一次吃饭聊到留学，母亲随口说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+  "thoughts": [
+    {
+      "text": "当时不是‘幸好没去’，是我为了家里没去成。",
+      "probability": 0.45
+    },
+    {
+      "text": "现在是不错，但这句话把当年的遗憾和牺牲说得太轻了。",
+      "probability": 0.35
+    },
+    {
+      "text": "如果那年真的出国了，现在的我会是什么样？",
+      "probability": 0.2
+    }
+  ],
+  "top1": "当时不是‘幸好没去’，是我为了家里没去成。",
+  "llm": {
+    "client": "http",
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": 42
+  }
+}

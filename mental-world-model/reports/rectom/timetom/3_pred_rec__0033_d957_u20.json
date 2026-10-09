@@ -1,0 +1,216 @@
+{
+  "id": "3_pred_rec__0033_d957_u20",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets the seeker and offers to help find a good comedy like Beerfest (2006) or The Blues Brothers (1980).",
+      "belief_before": "No information yet about the seeker's preferences or viewing history.",
+      "belief_update": "Recommender initiates help and puts forward two comedy examples; no seeker-specific update yet.",
+      "belief_after": "Knows only that the seeker may be looking for comedy and that Beerfest and The Blues Brothers are candidate recommendations.",
+      "emotion": "Friendly, helpful",
+      "intention": "Offer assistance and elicit the seeker's taste.",
+      "conversational_goal": "Start a recommendation dialogue and find a comedy the seeker might like."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says he/she is looking for funny comedy movies similar to She's Out of My League (2010).",
+      "belief_before": "No preference info; only candidate comedies Beerfest and The Blues Brothers.",
+      "belief_update": "Learns seeker wants funny comedies and specifically wants something similar to She's Out of My League (2010); this changes prior assumption from unknown to a concrete preference.",
+      "belief_after": "Seeker wants funny comedies in the vein of She's Out of My League; still unknown whether seeker has seen Beerfest or The Blues Brothers.",
+      "emotion": "Attentive, interested",
+      "intention": "Adapt recommendations to the seeker's stated preference.",
+      "conversational_goal": "Clarify seen and liked options and recommend a suitable comedy."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says he/she can help, asks if the seeker has seen Beerfest or The Blues Brothers, and suggests Deuce Bigalow: Male Gigolo (1999).",
+      "belief_before": "Seeker wants funny comedies similar to She's Out of My League; seen-status for Beerfest and The Blues Brothers is unknown.",
+      "belief_update": "Recommender offers Deuce Bigalow and asks for feedback on earlier suggestions; no new seeker info yet.",
+      "belief_after": "Seeker preference remains funny comedies like She's Out of My League; awaiting seen and liked info on Beerfest, The Blues Brothers, and Deuce Bigalow.",
+      "emotion": "Helpful, encouraging",
+      "intention": "Narrow choices by checking seen-status and proposing Deuce Bigalow.",
+      "conversational_goal": "Find a comedy the seeker has not seen and may like."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says Daddy's Home (2015) is also good, has never seen Beerfest or The Blues Brothers, and has seen Deuce Bigalow but does not like those movies.",
+      "belief_before": "Seeker wants funny comedies similar to She's Out of My League; seen-status unknown.",
+      "belief_update": "Learns seeker likes Daddy's Home, has not seen Beerfest or The Blues Brothers, and has seen but dislikes Deuce Bigalow. This rules out Deuce Bigalow and updates preferences toward Daddy's Home-style comedy.",
+      "belief_after": "Seeker likes Daddy's Home; dislikes Deuce Bigalow; has not seen Beerfest or The Blues Brothers.",
+      "emotion": "Accepting, slightly adjusting",
+      "intention": "Avoid Deuce Bigalow-type suggestions and propose other comedies.",
+      "conversational_goal": "Find a comedy matching the seeker's taste and unseen status."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says it was a good one and asks if the seeker has seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007).",
+      "belief_before": "Seeker likes Daddy's Home, dislikes Deuce Bigalow, and has not seen Beerfest or The Blues Brothers.",
+      "belief_update": "Recommender proposes Step Brothers and Walk Hard, linking to the seeker's positive Daddy's Home reaction; no new user info yet.",
+      "belief_after": "Awaiting whether the seeker has seen or likes Step Brothers or Walk Hard.",
+      "emotion": "Positive, agreeable",
+      "intention": "Suggest likely comedy matches.",
+      "conversational_goal": "Identify a comedy the seeker has not seen and will enjoy."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says he/she loves Step Brothers (2008) and also loves Life as We Know It (2010).",
+      "belief_before": "Seeker likes Daddy's Home, dislikes Deuce Bigalow, and has not seen Beerfest or The Blues Brothers; Step Brothers and Walk Hard status unknown.",
+      "belief_update": "Learns seeker loves Step Brothers and Life as We Know It; Walk Hard seen-status remains unanswered. This adds strong positive preferences and changes recommendation confidence for Step Brothers-like movies.",
+      "belief_after": "Seeker loves Step Brothers and Life as We Know It; likes Daddy's Home; dislikes Deuce Bigalow; has not seen Beerfest or The Blues Brothers; Walk Hard status unknown.",
+      "emotion": "Pleased, enthusiastic",
+      "intention": "Use Step Brothers as an anchor and check the other similar suggestion.",
+      "conversational_goal": "Find an unseen comedy similar to Step Brothers or Life as We Know It."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says that was so good and asks if the seeker saw the other mentioned movie, saying it is somewhat on the same plane as Step Brothers (2008).",
+      "belief_before": "Seeker loves Step Brothers and Life as We Know It; Walk Hard seen-status unknown.",
+      "belief_update": "Recommender asks about Walk Hard and frames it as similar to Step Brothers; no new user info yet.",
+      "belief_after": "Still waiting on Walk Hard seen and liked response; seeker's positive Step Brothers preference is reinforced.",
+      "emotion": "Enthusiastic, positive",
+      "intention": "Check whether Walk Hard is a known or liked option.",
+      "conversational_goal": "Find a comedy the seeker has not seen."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says yes, has seen the other one, that it is funny, and also loves Why Him? (2016) with James Franco.",
+      "belief_before": "Seeker loves Step Brothers and Life as We Know It; Walk Hard status unknown.",
+      "belief_update": "Learns seeker has seen Walk Hard, found it funny, and loves Why Him?; adds James Franco and Why Him? to positive preferences.",
+      "belief_after": "Seeker likes Step Brothers, Life as We Know It, Walk Hard, and Why Him?; still no unseen success yet.",
+      "emotion": "Pleased, engaged",
+      "intention": "Continue suggesting comedies that fit these positive preferences.",
+      "conversational_goal": "Find a comedy the seeker has not seen and will like."
+    },
+    {
+      "time": 9,
+      "observed": "Recommender laughs, says it made him/her laugh too, suggests Talladega Nights: The Ballad of Ricky Bobby (2006), and says he/she has not seen that one.",
+      "belief_before": "Seeker likes Step Brothers, Life as We Know It, Walk Hard, and Why Him?; many options have been seen.",
+      "belief_update": "Recommender proposes Talladega Nights and reveals he/she has not seen it personally; no new seeker info yet.",
+      "belief_after": "Awaiting the seeker's response to Talladega Nights.",
+      "emotion": "Amused, friendly",
+      "intention": "Offer another popular comedy.",
+      "conversational_goal": "Find an unseen comedy the seeker might enjoy."
+    },
+    {
+      "time": 10,
+      "observed": "Seeker says that is a funny movie and thanks the recommender.",
+      "belief_before": "Talladega Nights response unknown.",
+      "belief_update": "Learns seeker has seen Talladega Nights and thinks it is funny; also receives thanks. This confirms Talladega Nights as liked but not unseen.",
+      "belief_after": "Seeker likes Talladega Nights; still needs an unseen recommendation.",
+      "emotion": "Appreciative, positive",
+      "intention": "Acknowledge thanks and continue searching.",
+      "conversational_goal": "Find something the seeker has not seen."
+    },
+    {
+      "time": 11,
+      "observed": "Recommender says with a laugh that they have to keep going until finding something the seeker has not seen, according to the rules.",
+      "belief_before": "Seeker has seen and liked many suggestions; no unseen success yet.",
+      "belief_update": "Recommender explicitly commits to continuing until an unseen option is found; no new seeker preference info.",
+      "belief_after": "Must continue recommending unseen comedies.",
+      "emotion": "Playful, committed",
+      "intention": "Continue the recommendation process under the dialogue rules.",
+      "conversational_goal": "Find a comedy the seeker has not seen."
+    },
+    {
+      "time": 12,
+      "observed": "Seeker says he/she is open to suggestions.",
+      "belief_before": "Recommender must keep going until finding an unseen comedy.",
+      "belief_update": "Learns seeker is willing to receive more suggestions; no specific new preference.",
+      "belief_after": "Seeker is open; recommender can propose more options.",
+      "emotion": "Encouraged",
+      "intention": "Propose another comedy.",
+      "conversational_goal": "Find an unseen comedy."
+    },
+    {
+      "time": 13,
+      "observed": "Recommender suggests Eddie Murphy Raw (1987), describing it as a stand-up comedy.",
+      "belief_before": "Seeker is open to suggestions and likes several mainstream comedies.",
+      "belief_update": "Recommender proposes a stand-up comedy; no new user info yet.",
+      "belief_after": "Awaiting response to Eddie Murphy Raw.",
+      "emotion": "Helpful, hopeful",
+      "intention": "Try a different comedy format.",
+      "conversational_goal": "Find a comedy the seeker has not seen and may like."
+    },
+    {
+      "time": 14,
+      "observed": "Seeker says he/she has seen Eddie Murphy Raw and it is not one of his/her favorites.",
+      "belief_before": "Eddie Murphy Raw response unknown.",
+      "belief_update": "Learns seeker has seen Raw and is lukewarm or negative toward it; rules it out as a favorite but not necessarily as hated.",
+      "belief_after": "Seeker has seen Eddie Murphy Raw and does not favor it; need another option.",
+      "emotion": "Slightly deflated, thoughtful",
+      "intention": "Keep searching for a better match.",
+      "conversational_goal": "Find an unseen comedy the seeker will like."
+    },
+    {
+      "time": 15,
+      "observed": "Recommender says okay and ummm, indicating hesitation or thinking.",
+      "belief_before": "Eddie Murphy Raw has been seen and is not a favorite; still no unseen success.",
+      "belief_update": "Recommender pauses to think; no new seeker info or recommendation yet.",
+      "belief_after": "Still brainstorming the next recommendation.",
+      "emotion": "Hesitant, thoughtful",
+      "intention": "Generate a new recommendation.",
+      "conversational_goal": "Find an unseen comedy."
+    },
+    {
+      "time": 16,
+      "observed": "Seeker says he/she usually enjoys movies with Seth Rogen and Jonah Hill.",
+      "belief_before": "Recommender is brainstorming after Eddie Murphy Raw was not a favorite.",
+      "belief_update": "Learns seeker has a positive preference for movies with Seth Rogen and Jonah Hill; this changes recommendation strategy toward actor-based suggestions.",
+      "belief_after": "Seeker likes Seth Rogen and Jonah Hill comedies.",
+      "emotion": "Interested, encouraged",
+      "intention": "Use actor preferences to choose a comedy.",
+      "conversational_goal": "Find an unseen comedy featuring or matching Seth Rogen and Jonah Hill tastes."
+    },
+    {
+      "time": 17,
+      "observed": "Recommender suggests an older movie, Midnight Madness (1980), describing it as about groups of people on a scavenger hunt.",
+      "belief_before": "Seeker likes Seth Rogen and Jonah Hill and is open to suggestions.",
+      "belief_update": "Recommender proposes Midnight Madness, an older and less obvious comedy, and gives a plot description; no new user info yet.",
+      "belief_after": "Awaiting the seeker's response to Midnight Madness.",
+      "emotion": "Hopeful, helpful",
+      "intention": "Try a lesser-known older comedy that may be unseen.",
+      "conversational_goal": "Find a comedy the seeker has not seen and may like."
+    },
+    {
+      "time": 18,
+      "observed": "Seeker says he/she has never heard of Midnight Madness, thinks it sounds really good, and asks if there are any well-known actors in it.",
+      "belief_before": "Midnight Madness response unknown.",
+      "belief_update": "Learns seeker has not heard of Midnight Madness, is positively interested, and wants actor information. This creates a potential unseen match with positive interest, but interest depends on cast.",
+      "belief_after": "Seeker has not seen Midnight Madness, finds it promising, and wants to know the actors.",
+      "emotion": "Pleased, excited",
+      "intention": "Answer the actor question to reinforce interest.",
+      "conversational_goal": "Convert interest into acceptance of an unseen recommendation."
+    },
+    {
+      "time": 19,
+      "observed": "Recommender says it is good and that Michael J. Fox is in it.",
+      "belief_before": "Seeker has not heard of Midnight Madness, sounds interested, and asked about well-known actors.",
+      "belief_update": "Provides Michael J. Fox as a known actor and affirms quality; no new seeker info yet.",
+      "belief_after": "Awaiting the seeker's reaction to the cast and quality information.",
+      "emotion": "Enthusiastic, reassuring",
+      "intention": "Sell Midnight Madness by highlighting a famous actor.",
+      "conversational_goal": "Confirm the recommendation as appealing and unseen."
+    },
+    {
+      "time": 20,
+      "observed": "Seeker asks if Midnight Madness is a comedy.",
+      "belief_before": "Seeker is interested in Midnight Madness and knows Michael J. Fox is in it.",
+      "belief_update": "Learns seeker still needs confirmation that Midnight Madness is a comedy; this indicates the genre was not yet fully clear despite earlier context.",
+      "belief_after": "Seeker is interested but seeks genre confirmation before accepting.",
+      "emotion": "Slightly surprised but ready to clarify",
+      "intention": "Confirm that it is a comedy.",
+      "conversational_goal": "Resolve the final uncertainty and close the recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets the seeker and offers to help find a good comedy like Beerfest (2006) or The Blues Brothers (1980).\",\n    \"belief_before\": \"No information yet about the seeker's preferences or viewing history.\",\n    \"belief_update\": \"Recommender initiates help and puts forward two comedy examples; no seeker-specific update yet.\",\n    \"belief_after\": \"Knows only that the seeker may be looking for comedy and that Beerfest and The Blues Brothers are candidate recommendations.\",\n    \"emotion\": \"Friendly, helpful\",\n    \"intention\": \"Offer assistance and elicit the seeker's taste.\",\n    \"conversational_goal\": \"Start a recommendation dialogue and find a comedy the seeker might like.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says he/she is looking for funny comedy movies similar to She's Out of My League (2010).\",\n    \"belief_before\": \"No preference info; only candidate comedies Beerfest and The Blues Brothers.\",\n    \"belief_update\": \"Learns seeker wants funny comedies and specifically wants something similar to She's Out of My League (2010); this changes prior assumption from unknown to a concrete preference.\",\n    \"belief_after\": \"Seeker wants funny comedies in the vein of She's Out of My League; still unknown whether seeker has seen Beerfest or The Blues Brothers.\",\n    \"emotion\": \"Attentive, interested\",\n    \"intention\": \"Adapt recommendations to the seeker's stated preference.\",\n    \"conversational_goal\": \"Clarify seen and liked options and recommend a suitable comedy.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says he/she can help, asks if the seeker has seen Beerfest or The Blues Brothers, and suggests Deuce Bigalow: Male Gigolo (1999).\",\n    \"belief_before\": \"Seeker wants funny comedies similar to She's Out of My League; seen-status for Beerfest and The Blues Brothers is unknown.\",\n    \"belief_update\": \"Recommender offers Deuce Bigalow and asks for feedback on earlier suggestions; no new seeker info yet.\",\n    \"belief_after\": \"Seeker preference remains funny comedies like She's Out of My League; awaiting seen and liked info on Beerfest, The Blues Brothers, and Deuce Bigalow.\",\n    \"emotion\": \"Helpful, encouraging\",\n    \"intention\": \"Narrow choices by checking seen-status and proposing Deuce Bigalow.\",\n    \"conversational_goal\": \"Find a comedy the seeker has not seen and may like.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says Daddy's Home (2015) is also good, has never seen Beerfest or The Blues Brothers, and has seen Deuce Bigalow but does not like those movies.\",\n    \"belief_before\": \"Seeker wants funny comedies similar to She's Out of My League; seen-status unknown.\",\n    \"belief_update\": \"Learns seeker likes Daddy's Home, has not seen Beerfest or The Blues Brothers, and has seen but dislikes Deuce Bigalow. This rules out Deuce Bigalow and updates preferences toward Daddy's Home-style comedy.\",\n    \"belief_after\": \"Seeker likes Daddy's Home; dislikes Deuce Bigalow; has not seen Beerfest or The Blues Brothers.\",\n    \"emotion\": \"Accepting, slightly adjusting\",\n    \"intention\": \"Avoid Deuce Bigalow-type suggestions and propose other comedies.\",\n    \"conversational_goal\": \"Find a comedy matching the seeker's taste and unseen status.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says it was a good one and asks if the seeker has seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007).\",\n    \"belief_before\": \"Seeker likes Daddy's Home, dislikes Deuce Bigalow, and has not seen Beerfest or The Blues Brothers.\",\n    \"belief_update\": \"Recommender proposes Step Brothers and Walk Hard, linking to the seeker's positive Daddy's Home reaction; no new user info yet.\",\n    \"belief_after\": \"Awaiting whether the seeker has seen or likes Step Brothers or Walk Hard.\",\n    \"emotion\": \"Positive, agreeable\",\n    \"intention\": \"Suggest likely comedy matches.\",\n    \"conversational_goal\": \"Identify a comedy the seeker has not seen and will enjoy.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says he/she loves Step Brothers (2008) and also loves Life as We Know It (2010).\",\n    \"belief_before\": \"Seeker likes Daddy's Home, dislikes Deuce Bigalow, and has not seen Beerfest or The Blues Brothers; Step Brothers and Walk Hard status unknown.\",\n    \"belief_update\": \"Learns seeker loves Step Brothers and Life as We Know It; Walk Hard seen-status remains unanswered. This adds strong positive preferences and changes recommendation confidence for Step Brothers-like movies.\",\n    \"belief_after\": \"Seeker loves Step Brothers and Life as We Know It; likes Daddy's Home; dislikes Deuce Bigalow; has not seen Beerfest or The Blues Brothers; Walk Hard status unknown.\",\n    \"emotion\": \"Pleased, enthusiastic\",\n    \"intention\": \"Use Step Brothers as an anchor and check the other similar suggestion.\",\n    \"conversational_goal\": \"Find an unseen comedy similar to Step Brothers or Life as We Know It.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says that was so good and asks if the seeker saw the other mentioned movie, saying it is somewhat on the same plane as Step Brothers (2008).\",\n    \"belief_before\": \"Seeker loves Step Brothers and Life as We Know It; Walk Hard seen-status unknown.\",\n    \"belief_update\": \"Recommender asks about Walk Hard and frames it as similar to Step Brothers; no new user info yet.\",\n    \"belief_after\": \"Still waiting on Walk Hard seen and liked response; seeker's positive Step Brothers preference is reinforced.\",\n    \"emotion\": \"Enthusiastic, positive\",\n    \"intention\": \"Check whether Walk Hard is a known or liked option.\",\n    \"conversational_goal\": \"Find a comedy the seeker has not seen.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says yes, has seen the other one, that it is funny, and also loves Why Him? (2016) with James Franco.\",\n    \"belief_before\": \"Seeker loves Step Brothers and Life as We Know It; Walk Hard status unknown.\",\n    \"belief_update\": \"Learns seeker has seen Walk Hard, found it funny, and loves Why Him?; adds James Franco and Why Him? to positive preferences.\",\n    \"belief_after\": \"Seeker likes Step Brothers, Life as We Know It, Walk Hard, and Why Him?; still no unseen success yet.\",\n    \"emotion\": \"Pleased, engaged\",\n    \"intention\": \"Continue suggesting comedies that fit these positive preferences.\",\n    \"conversational_goal\": \"Find a comedy the seeker has not seen and will like.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Recommender laughs, says it made him/her laugh too, suggests Talladega Nights: The Ballad of Ricky Bobby (2006), and says he/she has not seen that one.\",\n    \"belief_before\": \"Seeker likes Step Brothers, Life as We Know It, Walk Hard, and Why Him?; many options have been seen.\",\n    \"belief_update\": \"Recommender proposes Talladega Nights and reveals he/she has not seen it personally; no new seeker info yet.\",\n    \"belief_after\": \"Awaiting the seeker's response to Talladega Nights.\",\n    \"emotion\": \"Amused, friendly\",\n    \"intention\": \"Offer another popular comedy.\",\n    \"conversational_goal\": \"Find an unseen comedy the seeker might enjoy.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"Seeker says that is a funny movie and thanks the recommender.\",\n    \"belief_before\": \"Talladega Nights response unknown.\",\n    \"belief_update\": \"Learns seeker has seen Talladega Nights and thinks it is funny; also receives thanks. This confirms Talladega Nights as liked but not unseen.\",\n    \"belief_after\": \"Seeker likes Talladega Nights; still needs an unseen recommendation.\",\n    \"emotion\": \"Appreciative, positive\",\n    \"intention\": \"Acknowledge thanks and continue searching.\",\n    \"conversational_goal\": \"Find something the seeker has not seen.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"Recommender says with a laugh that they have to keep going until finding something the seeker has not seen, according to the rules.\",\n    \"belief_before\": \"Seeker has seen and liked many suggestions; no unseen success yet.\",\n    \"belief_update\": \"Recommender explicitly commits to continuing until an unseen option is found; no new seeker preference info.\",\n    \"belief_after\": \"Must continue recommending unseen comedies.\",\n    \"emotion\": \"Playful, committed\",\n    \"intention\": \"Continue the recommendation process under the dialogue rules.\",\n    \"conversational_goal\": \"Find a comedy the seeker has not seen.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"Seeker says he/she is open to suggestions.\",\n    \"belief_before\": \"Recommender must keep going until finding an unseen comedy.\",\n    \"belief_update\": \"Learns seeker is willing to receive more suggestions; no specific new preference.\",\n    \"belief_after\": \"Seeker is open; recommender can propose more options.\",\n    \"emotion\": \"Encouraged\",\n    \"intention\": \"Propose another comedy.\",\n    \"conversational_goal\": \"Find an unseen comedy.\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"Recommender suggests Eddie Murphy Raw (1987), describing it as a stand-up comedy.\",\n    \"belief_before\": \"Seeker is open to suggestions and likes several mainstream comedies.\",\n    \"belief_update\": \"Recommender proposes a stand-up comedy; no new user info yet.\",\n    \"belief_after\": \"Awaiting response to Eddie Murphy Raw.\",\n    \"emotion\": \"Helpful, hopeful\",\n    \"intention\": \"Try a different comedy format.\",\n    \"conversational_goal\": \"Find a comedy the seeker has not seen and may like.\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"Seeker says he/she has seen Eddie Murphy Raw and it is not one of his/her favorites.\",\n    \"belief_before\": \"Eddie Murphy Raw response unknown.\",\n    \"belief_update\": \"Learns seeker has seen Raw and is lukewarm or negative toward it; rules it out as a favorite but not necessarily as hated.\",\n    \"belief_after\": \"Seeker has seen Eddie Murphy Raw and does not favor it; need another option.\",\n    \"emotion\": \"Slightly deflated, thoughtful\",\n    \"intention\": \"Keep searching for a better match.\",\n    \"conversational_goal\": \"Find an unseen comedy the seeker will like.\"\n  },\n  {\n    \"time\": 15,\n    \"observed\": \"Recommender says okay and ummm, indicating hesitation or thinking.\",\n    \"belief_before\": \"Eddie Murphy Raw has been seen and is not a favorite; still no unseen success.\",\n    \"belief_update\": \"Recommender pauses to think; no new seeker info or recommendation yet.\",\n    \"belief_after\": \"Still brainstorming the next recommendation.\",\n    \"emotion\": \"Hesitant, thoughtful\",\n    \"intention\": \"Generate a new recommendation.\",\n    \"conversational_goal\": \"Find an unseen comedy.\"\n  },\n  {\n    \"time\": 16,\n    \"observed\": \"Seeker says he/she usually enjoys movies with Seth Rogen and Jonah Hill.\",\n    \"belief_before\": \"Recommender is brainstorming after Eddie Murphy Raw was not a favorite.\",\n    \"belief_update\": \"Learns seeker has a positive preference for movies with Seth Rogen and Jonah Hill; this changes recommendation strategy toward actor-based suggestions.\",\n    \"belief_after\": \"Seeker likes Seth Rogen and Jonah Hill comedies.\",\n    \"emotion\": \"Interested, encouraged\",\n    \"intention\": \"Use actor preferences to choose a comedy.\",\n    \"conversational_goal\": \"Find an unseen comedy featuring or matching Seth Rogen and Jonah Hill tastes.\"\n  },\n  {\n    \"time\": 17,\n    \"observed\": \"Recommender suggests an older movie, Midnight Madness (1980), describing it as about groups of people on a scavenger hunt.\",\n    \"belief_before\": \"Seeker likes Seth Rogen and Jonah Hill and is open to suggestions.\",\n    \"belief_update\": \"Recommender proposes Midnight Madness, an older and less obvious comedy, and gives a plot description; no new user info yet.\",\n    \"belief_after\": \"Awaiting the seeker's response to Midnight Madness.\",\n    \"emotion\": \"Hopeful, helpful\",\n    \"intention\": \"Try a lesser-known older comedy that may be unseen.\",\n    \"conversational_goal\": \"Find a comedy the seeker has not seen and may like.\"\n  },\n  {\n    \"time\": 18,\n    \"observed\": \"Seeker says he/she has never heard of Midnight Madness, thinks it sounds really good, and asks if there are any well-known actors in it.\",\n    \"belief_before\": \"Midnight Madness response unknown.\",\n    \"belief_update\": \"Learns seeker has not heard of Midnight Madness, is positively interested, and wants actor information. This creates a potential unseen match with positive interest, but interest depends on cast.\",\n    \"belief_after\": \"Seeker has not seen Midnight Madness, finds it promising, and wants to know the actors.\",\n    \"emotion\": \"Pleased, excited\",\n    \"intention\": \"Answer the actor question to reinforce interest.\",\n    \"conversational_goal\": \"Convert interest into acceptance of an unseen recommendation.\"\n  },\n  {\n    \"time\": 19,\n    \"observed\": \"Recommender says it is good and that Michael J. Fox is in it.\",\n    \"belief_before\": \"Seeker has not heard of Midnight Madness, sounds interested, and asked about well-known actors.\",\n    \"belief_update\": \"Provides Michael J. Fox as a known actor and affirms quality; no new seeker info yet.\",\n    \"belief_after\": \"Awaiting the seeker's reaction to the cast and quality information.\",\n    \"emotion\": \"Enthusiastic, reassuring\",\n    \"intention\": \"Sell Midnight Madness by highlighting a famous actor.\",\n    \"conversational_goal\": \"Confirm the recommendation as appealing and unseen.\"\n  },\n  {\n    \"time\": 20,\n    \"observed\": \"Seeker asks if Midnight Madness is a comedy.\",\n    \"belief_before\": \"Seeker is interested in Midnight Madness and knows Michael J. Fox is in it.\",\n    \"belief_update\": \"Learns seeker still needs confirmation that Midnight Madness is a comedy; this indicates the genre was not yet fully clear despite earlier context.\",\n    \"belief_after\": \"Seeker is interested but seeks genre confirmation before accepting.\",\n    \"emotion\": \"Slightly surprised but ready to clarify\",\n    \"intention\": \"Confirm that it is a comedy.\",\n    \"conversational_goal\": \"Resolve the final uncertainty and close the recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

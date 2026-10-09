@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 166,
+  "item_id": "d2498_u9",
+  "dialogue_id": "2498",
+  "utterance_pos": 9,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.35,
+    "b": 0.55,
+    "c": 0.9,
+    "d": 0.6,
+    "e": 0.1
+  },
+  "score_reason": "The seeker directly asks for top-three recommendations, so RECOMMENDER is most likely to provide recommendations directly or inquire further.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "No predicted next action is provided; only the past dialogue and thoughts are present, so the strategy must be inferred.",
+  "audit_level": "inferred"
+}

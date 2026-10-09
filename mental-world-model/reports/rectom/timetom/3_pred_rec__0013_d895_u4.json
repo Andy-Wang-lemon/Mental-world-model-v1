@@ -1,0 +1,84 @@
+{
+  "id": "3_pred_rec__0013_d895_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Helloooo...Can you tell me some of your favorite movies and I will suggest something good for you?",
+      "information_available": "No prior seeker preferences in this dialogue; only that a recommendation is requested.",
+      "preferences": {
+        "target_own_known": "Not yet stated.",
+        "target_beliefs_about_seeker": "Unknown."
+      },
+      "belief_before": "Recommender has no information about what movies the seeker likes.",
+      "belief_update": "No external information yet; recommender initiates by asking for favorites.",
+      "belief_after": "Seeker's movie preferences remain unknown; recommender plans to recommend after receiving them.",
+      "emotion": "Friendly, upbeat, expectant.",
+      "intention": "Elicit the seeker's favorite movies and then suggest a suitable movie.",
+      "conversational_goal": "Open the recommendation dialogue and gather preference data.",
+      "reaction_to_other_speaker": "No other-speaker turn yet.",
+      "changes_previous_interpretation": "N/A for the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Let's see, I enjoyed Lost in Translation (2003) with Bill Murray...I like Aliens (1986) and Alien: Covenant (2017)",
+      "information_available": "Seeker likes Lost in Translation, Aliens, and Alien: Covenant; Bill Murray is mentioned; Alien franchise interest is mentioned.",
+      "preferences": {
+        "target_own_known": "Still not stated.",
+        "target_beliefs_about_seeker": "Seeker likely likes Bill Murray-related films, character-driven or indie drama, and sci-fi/horror/action Alien films."
+      },
+      "belief_before": "Seeker's movie preferences were unknown.",
+      "belief_update": "Seeker provided concrete favorite films: Lost in Translation, Aliens, and Alien: Covenant.",
+      "belief_after": "Recommender believes the seeker likes those films and may enjoy related Bill Murray or Alien-franchise-adjacent suggestions.",
+      "emotion": "Attentive, curious, positively engaged.",
+      "intention": "Use the newly provided favorites to generate suitable movie recommendations.",
+      "conversational_goal": "Translate the seeker's favorites into recommendation candidates.",
+      "reaction_to_other_speaker": "Attentive and accepting; no explicit verbal reaction yet.",
+      "changes_previous_interpretation": "Yes; the unknown preference space is now populated with specific favorite films."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: That was a good one. Did you see The Truman Show (1998) or Rushmore (1998)...I liked the first Alien, but didn't see the sequel",
+      "information_available": "Prior seeker favorites: Lost in Translation, Aliens, Alien: Covenant. Recommender now references one as good, asks about The Truman Show and Rushmore, and states own Alien preference.",
+      "preferences": {
+        "target_own_known": "Likes the first Alien and has not seen the sequel; likely treats Lost in Translation as good.",
+        "target_beliefs_about_seeker": "Seeker likes Lost in Translation, Aliens, and Alien: Covenant; may or may not have seen The Truman Show and Rushmore."
+      },
+      "belief_before": "Recommender believes seeker likes Lost in Translation, Aliens, and Alien: Covenant.",
+      "belief_update": "No new information from the seeker in this turn; recommender shares own Alien preference and asks about two possible recommendation titles.",
+      "belief_after": "Recommender still sees seeker as liking related films; now awaits answers about The Truman Show and Rushmore.",
+      "emotion": "Positive, conversational, engaged; shares common ground and mild enthusiasm.",
+      "intention": "Check whether the seeker has seen The Truman Show or Rushmore and relate to their stated tastes.",
+      "conversational_goal": "Offer or test specific recommendation candidates and narrow down shared movie knowledge.",
+      "reaction_to_other_speaker": "Positive acknowledgment of the seeker's taste; engages with their Alien mention and probes related films.",
+      "changes_previous_interpretation": "Partially; recommender acts on turn 2 by pivoting to related titles, but does not yet revise the seeker preference model."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: Yes and yes! I have both on dvd",
+      "information_available": "Seeker has seen and owns both The Truman Show and Rushmore on DVD.",
+      "preferences": {
+        "target_own_known": "Unchanged: likes the first Alien, has not seen the sequel, likely likes Lost in Translation.",
+        "target_beliefs_about_seeker": "Seeker has seen and owns The Truman Show and Rushmore; likely enjoys them or at least knows them well; also still likes Lost in Translation, Aliens, and Alien: Covenant."
+      },
+      "belief_before": "Recommender believed seeker liked Lost in Translation, Aliens, and Alien: Covenant, and was unsure if seeker had seen The Truman Show or Rushmore.",
+      "belief_update": "Seeker confirms seeing and owning both The Truman Show and Rushmore on DVD.",
+      "belief_after": "Recommender believes those two titles are already familiar/owned by the seeker, so they cannot serve as fresh recommendations; recommender must adjust.",
+      "emotion": "Pleased by the enthusiastic confirmation, but possibly challenged because both suggestions were already known.",
+      "intention": "Acknowledge the overlap and adjust toward new recommendations not already seen or owned.",
+      "conversational_goal": "Continue the recommendation by finding an unseen title based on the seeker's demonstrated tastes.",
+      "reaction_to_other_speaker": "Positive to the enthusiastic response; recognizes shared familiarity with the suggested titles.",
+      "changes_previous_interpretation": "Yes; prior candidate recommendations are already seen/owned, changing the recommendation strategy."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Helloooo...Can you tell me some of your favorite movies and I will suggest something good for you?\",\n    \"information_available\": \"No prior seeker preferences in this dialogue; only that a recommendation is requested.\",\n    \"preferences\": {\n      \"target_own_known\": \"Not yet stated.\",\n      \"target_beliefs_about_seeker\": \"Unknown.\"\n    },\n    \"belief_before\": \"Recommender has no information about what movies the seeker likes.\",\n    \"belief_update\": \"No external information yet; recommender initiates by asking for favorites.\",\n    \"belief_after\": \"Seeker's movie preferences remain unknown; recommender plans to recommend after receiving them.\",\n    \"emotion\": \"Friendly, upbeat, expectant.\",\n    \"intention\": \"Elicit the seeker's favorite movies and then suggest a suitable movie.\",\n    \"conversational_goal\": \"Open the recommendation dialogue and gather preference data.\",\n    \"reaction_to_other_speaker\": \"No other-speaker turn yet.\",\n    \"changes_previous_interpretation\": \"N/A for the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Let's see, I enjoyed Lost in Translation (2003) with Bill Murray...I like Aliens (1986) and Alien: Covenant (2017)\",\n    \"information_available\": \"Seeker likes Lost in Translation, Aliens, and Alien: Covenant; Bill Murray is mentioned; Alien franchise interest is mentioned.\",\n    \"preferences\": {\n      \"target_own_known\": \"Still not stated.\",\n      \"target_beliefs_about_seeker\": \"Seeker likely likes Bill Murray-related films, character-driven or indie drama, and sci-fi/horror/action Alien films.\"\n    },\n    \"belief_before\": \"Seeker's movie preferences were unknown.\",\n    \"belief_update\": \"Seeker provided concrete favorite films: Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"belief_after\": \"Recommender believes the seeker likes those films and may enjoy related Bill Murray or Alien-franchise-adjacent suggestions.\",\n    \"emotion\": \"Attentive, curious, positively engaged.\",\n    \"intention\": \"Use the newly provided favorites to generate suitable movie recommendations.\",\n    \"conversational_goal\": \"Translate the seeker's favorites into recommendation candidates.\",\n    \"reaction_to_other_speaker\": \"Attentive and accepting; no explicit verbal reaction yet.\",\n    \"changes_previous_interpretation\": \"Yes; the unknown preference space is now populated with specific favorite films.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: That was a good one. Did you see The Truman Show (1998) or Rushmore (1998)...I liked the first Alien, but didn't see the sequel\",\n    \"information_available\": \"Prior seeker favorites: Lost in Translation, Aliens, Alien: Covenant. Recommender now references one as good, asks about The Truman Show and Rushmore, and states own Alien preference.\",\n    \"preferences\": {\n      \"target_own_known\": \"Likes the first Alien and has not seen the sequel; likely treats Lost in Translation as good.\",\n      \"target_beliefs_about_seeker\": \"Seeker likes Lost in Translation, Aliens, and Alien: Covenant; may or may not have seen The Truman Show and Rushmore.\"\n    },\n    \"belief_before\": \"Recommender believes seeker likes Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"belief_update\": \"No new information from the seeker in this turn; recommender shares own Alien preference and asks about two possible recommendation titles.\",\n    \"belief_after\": \"Recommender still sees seeker as liking related films; now awaits answers about The Truman Show and Rushmore.\",\n    \"emotion\": \"Positive, conversational, engaged; shares common ground and mild enthusiasm.\",\n    \"intention\": \"Check whether the seeker has seen The Truman Show or Rushmore and relate to their stated tastes.\",\n    \"conversational_goal\": \"Offer or test specific recommendation candidates and narrow down shared movie knowledge.\",\n    \"reaction_to_other_speaker\": \"Positive acknowledgment of the seeker's taste; engages with their Alien mention and probes related films.\",\n    \"changes_previous_interpretation\": \"Partially; recommender acts on turn 2 by pivoting to related titles, but does not yet revise the seeker preference model.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: Yes and yes! I have both on dvd\",\n    \"information_available\": \"Seeker has seen and owns both The Truman Show and Rushmore on DVD.\",\n    \"preferences\": {\n      \"target_own_known\": \"Unchanged: likes the first Alien, has not seen the sequel, likely likes Lost in Translation.\",\n      \"target_beliefs_about_seeker\": \"Seeker has seen and owns The Truman Show and Rushmore; likely enjoys them or at least knows them well; also still likes Lost in Translation, Aliens, and Alien: Covenant.\"\n    },\n    \"belief_before\": \"Recommender believed seeker liked Lost in Translation, Aliens, and Alien: Covenant, and was unsure if seeker had seen The Truman Show or Rushmore.\",\n    \"belief_update\": \"Seeker confirms seeing and owning both The Truman Show and Rushmore on DVD.\",\n    \"belief_after\": \"Recommender believes those two titles are already familiar/owned by the seeker, so they cannot serve as fresh recommendations; recommender must adjust.\",\n    \"emotion\": \"Pleased by the enthusiastic confirmation, but possibly challenged because both suggestions were already known.\",\n    \"intention\": \"Acknowledge the overlap and adjust toward new recommendations not already seen or owned.\",\n    \"conversational_goal\": \"Continue the recommendation by finding an unseen title based on the seeker's demonstrated tastes.\",\n    \"reaction_to_other_speaker\": \"Positive to the enthusiastic response; recognizes shared familiarity with the suggested titles.\",\n    \"changes_previous_interpretation\": \"Yes; prior candidate recommendations are already seen/owned, changing the recommendation strategy.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

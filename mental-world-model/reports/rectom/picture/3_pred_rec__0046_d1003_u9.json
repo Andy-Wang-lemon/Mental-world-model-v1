@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0046_d1003_u9",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that:\n- The seeker wants “classic” movies made after the 1970s.\n- The seeker rejected *Indecent Proposal* as too risque.\n- The seeker liked or preferred *Sleepless in Seattle*.\n- The recommender already suggested *All the Right Moves* (1983) with Tom Cruise.\n- The seeker has not seen *All the Right Moves* and has just asked whether it is good.\n\nRECOMMENDER does not know:\n- Whether the seeker generally likes Tom Cruise, sports dramas, coming-of-age films, or 1980s movies.\n- Whether the seeker will actually like *All the Right Moves*.\n- The seeker’s broader genre preferences beyond the few reactions already given.\n\nGiven the seeker has directly asked “Is it good?” about the just-recommended movie, the recommender’s most relevant next move is to address that question by giving an assessment and likely providing background or reasoning about the recommendation itself. This matches the strategy of explaining a recommendation with background or reasoning more specifically than a generic response.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "b",
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

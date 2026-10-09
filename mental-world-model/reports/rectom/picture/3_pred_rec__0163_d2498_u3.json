@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0163_d2498_u3",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that:\n- The seeker greeted them.\n- RECOMMENDER asked what kind of movie the seeker likes.\n- The seeker then asked for a movie recommendation and stated they liked *Good Will Hunting (1997)*.\n\nRECOMMENDER does **not** know:\n- Other genres, actors, directors, or themes the seeker likes.\n- Whether the seeker has already seen likely recommended movies.\n- The seeker’s mood, constraints, or platform availability.\n- Whether the seeker wants one recommendation or several.\n\nGiven that the seeker has explicitly asked for a recommendation and provided one liked movie, the natural next strategy for RECOMMENDER is to provide a recommendation or ask a further clarifying question to enable one. This aligns with choice C.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

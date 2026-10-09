@@ -1,0 +1,15 @@
+{
+  "id": "4_pred_seeker__0136_d2214_u8",
+  "method": "picture",
+  "target_character": "SEEKER",
+  "raw_response": "SEEKER’s known state:\n\n- SEEKER knows they are looking for movies similar to *Alien* (1979) or *Halloween* (1978).\n- SEEKER knows they loved the *A Nightmare on Elm Street* series.\n- SEEKER knows they watched the *Friday the 13th* series but were not as into it.\n- SEEKER knows they found *The Thing* (1982) fun.\n- SEEKER knows they found *The Blob* (1988) fun.\n- SEEKER knows that RECOMMENDER has not seen *The Blob* (1988).\n- SEEKER knows RECOMMENDER has just asked/suggested: “What about *Life* (2017)?”\n\nUnknown to SEEKER:\n\n- Whether SEEKER has seen *Life* (2017).\n- Whether SEEKER liked or disliked *Life* (2017), if seen.\n- Why RECOMMENDER suggested *Life* (2017).\n- Whether RECOMMENDER has seen *Life* (2017).\n- What recommendation will come next after this exchange.\n\nInteraction pattern:\n\n- RECOMMENDER has repeatedly suggested specific horror/sci-fi movies.\n- After each suggestion, SEEKER has responded by giving feedback or an opinion about that movie: loved it, wasn’t into it, found it fun, etc.\n- The last move is again a movie-specific suggestion/question from RECOMMENDER.\n- Therefore SEEKER’s most likely next move is to respond to that suggestion, either saying whether they have seen *Life* and/or giving an opinion on it.\n\nThis matches option A: “Give feedback on the previously recommended movie or suggestion.”\n\nANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

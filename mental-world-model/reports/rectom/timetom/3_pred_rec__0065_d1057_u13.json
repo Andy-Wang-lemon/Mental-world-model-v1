@@ -1,0 +1,237 @@
+{
+  "id": "3_pred_rec__0065_d1057_u13",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello!",
+      "information_available": "Recommender has only the opening greeting from SEEKER; no request or preferences yet.",
+      "preferences": {
+        "target_recommender": "No stated preferences yet.",
+        "seeker_as_believed": "None yet."
+      },
+      "belief_before": "No prior dialogue context; interlocutor unknown.",
+      "belief_update": "SEEKER has initiated contact with a greeting.",
+      "belief_after": "SEEKER is present and expects a response.",
+      "emotion": "neutral/friendly",
+      "intention": "Respond politely and invite the seeker's request.",
+      "reaction_to_other": "Receptive and polite.",
+      "conversational_goal": "Open the conversation and establish contact.",
+      "changes_previous_interpretation": "No previous interpretation; initializes state."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello~",
+      "information_available": "Recommender is aware they have greeted SEEKER; still no request.",
+      "preferences": {
+        "target_recommender": "No stated preferences yet.",
+        "seeker_as_believed": "None yet."
+      },
+      "belief_before": "SEEKER has greeted and expects a response.",
+      "belief_update": "Recommender reciprocates the greeting.",
+      "belief_after": "Greeting exchanged; conversation is open for SEEKER to state a request.",
+      "emotion": "friendly",
+      "intention": "Invite SEEKER to continue.",
+      "reaction_to_other": "Reciprocates SEEKER's greeting.",
+      "conversational_goal": "Maintain friendly opening and prompt the request.",
+      "changes_previous_interpretation": "No; continues opening sequence."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)",
+      "information_available": "SEEKER wants a comedy recommendation today and likes Super Troopers and Beerfest.",
+      "preferences": {
+        "target_recommender": "No stated preferences yet.",
+        "seeker_as_believed": "Likes Super Troopers and Beerfest."
+      },
+      "belief_before": "Greeting exchanged; no request yet.",
+      "belief_update": "SEEKER wants a comedy and likes raunchy/ensemble/buddy comedies such as Super Troopers and Beerfest.",
+      "belief_after": "Need to recommend a comedy matching SEEKER's stated likes.",
+      "emotion": "engaged/helpful",
+      "intention": "Suggest a comedy.",
+      "reaction_to_other": "Responsive to SEEKER's request.",
+      "conversational_goal": "Provide a suitable comedy recommendation.",
+      "changes_previous_interpretation": "Yes; the request establishes the task and SEEKER preferences."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Tommy Boy (1995) is one of my favorites",
+      "information_available": "Recommender has offered Tommy Boy; knows SEEKER wants comedy and likes Super Troopers and Beerfest.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy.",
+        "seeker_as_believed": "Likes Super Troopers and Beerfest."
+      },
+      "belief_before": "SEEKER wants a comedy today and likes Super Troopers and Beerfest.",
+      "belief_update": "Recommender selects Tommy Boy as a favorite candidate.",
+      "belief_after": "Tommy Boy is proposed; target preference is revealed.",
+      "emotion": "enthusiastic",
+      "intention": "Recommend Tommy Boy.",
+      "reaction_to_other": "Helpful, sharing taste.",
+      "conversational_goal": "Match SEEKER's comedy request with a personal favorite.",
+      "changes_previous_interpretation": "Introduces a candidate and target preference; no contradiction yet."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: but not like Friday (1995) ...Awesome I love that one I have seen it a million times",
+      "information_available": "Recommender hears a possible exclusion of Friday-like comedy and praise for 'that one' (likely Tommy Boy), which SEEKER has seen many times.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy.",
+        "seeker_as_believed": "Likely loves Tommy Boy; possibly excludes Friday-like comedy."
+      },
+      "belief_before": "Tommy Boy has been suggested as a favorite; awaiting SEEKER's reaction.",
+      "belief_update": "SEEKER likely loves Tommy Boy and has seen it many times; 'not like Friday' may indicate a preference against Friday-like comedy.",
+      "belief_after": "Tommy Boy is liked but not a new watch; another comedy is needed, and Friday-like comedy may be less desired.",
+      "emotion": "pleased/validated, with slight ambiguity",
+      "intention": "Continue recommending a comedy.",
+      "reaction_to_other": "Positive to shared favorite; attentive to possible exclusion.",
+      "conversational_goal": "Build on rapport and find the next recommendation.",
+      "changes_previous_interpretation": "Yes; Tommy Boy is interpreted as liked/seen, and a possible Friday exclusion is added."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says: Me too. Another good one is Spaceballs (1987)",
+      "information_available": "Recommender agrees with Tommy Boy appreciation and offers Spaceballs.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; thinks Spaceballs is good.",
+        "seeker_as_believed": "Likes Super Troopers and Beerfest; likely loves Tommy Boy; possibly not Friday-like."
+      },
+      "belief_before": "SEEKER likely loves Tommy Boy and has seen it many times; possible exclusion of Friday-like comedy.",
+      "belief_update": "Recommender shares Tommy Boy preference and proposes Spaceballs.",
+      "belief_after": "Spaceballs is a candidate; shared Tommy Boy preference is confirmed.",
+      "emotion": "enthusiastic",
+      "intention": "Suggest Spaceballs.",
+      "reaction_to_other": "Camaraderie with SEEKER.",
+      "conversational_goal": "Recommend another comedy after a shared favorite.",
+      "changes_previous_interpretation": "Adds candidate and confirms rapport; no major reinterpretation."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though",
+      "information_available": "SEEKER has seen Spaceballs, did not really like it, and loves 80s movies.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; thinks Spaceballs is good.",
+        "seeker_as_believed": "Loves 80s movies; disliked Spaceballs."
+      },
+      "belief_before": "Spaceballs has been suggested; shared Tommy Boy appreciation established.",
+      "belief_update": "Spaceballs is rejected by SEEKER; 80s movie preference becomes salient.",
+      "belief_after": "Avoid Spaceballs; prioritize 80s comedy.",
+      "emotion": "adaptive/mildly disappointed",
+      "intention": "Adjust the recommendation.",
+      "reaction_to_other": "Accepts negative feedback.",
+      "conversational_goal": "Find an 80s comedy.",
+      "changes_previous_interpretation": "Yes; previous Spaceballs candidate is rejected and a new 80s constraint is added."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says: Ok Well how about Planes, Trains and Automobiles (1986)",
+      "information_available": "Recommender offers Planes, Trains and Automobiles, a 1986 comedy.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; thinks Spaceballs is good; suggests PT&A.",
+        "seeker_as_believed": "Loves 80s movies; disliked Spaceballs."
+      },
+      "belief_before": "SEEKER disliked Spaceballs but loves 80s movies.",
+      "belief_update": "Recommender proposes Planes, Trains and Automobiles as an 80s comedy.",
+      "belief_after": "Planes, Trains and Automobiles is a candidate.",
+      "emotion": "helpful/adaptive",
+      "intention": "Recommend Planes, Trains and Automobiles.",
+      "reaction_to_other": "Accommodating to SEEKER's feedback.",
+      "conversational_goal": "Match SEEKER's 80s preference.",
+      "changes_previous_interpretation": "Yes; shifts candidate to an 80s comedy."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: I may have seen that a long time ago but I can't remember. who is in that again?",
+      "information_available": "SEEKER is uncertain about Planes, Trains and Automobiles and asks for cast information.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; thinks Spaceballs is good; suggests PT&A.",
+        "seeker_as_believed": "Loves 80s movies; disliked Spaceballs; uncertain about PT&A."
+      },
+      "belief_before": "Planes, Trains and Automobiles has been suggested as an 80s comedy.",
+      "belief_update": "SEEKER has not clearly seen or remembered PT&A and wants cast details to decide.",
+      "belief_after": "PT&A is still open; cast information is needed.",
+      "emotion": "neutral/helpful",
+      "intention": "Answer SEEKER's question.",
+      "reaction_to_other": "Attentive to SEEKER's uncertainty.",
+      "conversational_goal": "Provide cast information to help SEEKER decide.",
+      "changes_previous_interpretation": "Yes; candidate is not rejected but requires clarification."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says: Steve Martin and John Candy. It is very funny.",
+      "information_available": "Recommender provides the PT&A cast and endorses the film as very funny.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; thinks Spaceballs is good; finds Planes, Trains and Automobiles very funny.",
+        "seeker_as_believed": "Loves 80s movies; disliked Spaceballs; uncertain about PT&A."
+      },
+      "belief_before": "SEEKER is uncertain about PT&A and asks who is in it.",
+      "belief_update": "Recommender answers with Steve Martin and John Candy and a positive endorsement.",
+      "belief_after": "SEEKER has cast information; PT&A is framed as very funny.",
+      "emotion": "positive/confident",
+      "intention": "Inform and persuade.",
+      "reaction_to_other": "Helpful response to SEEKER's question.",
+      "conversational_goal": "Help SEEKER decide on Planes, Trains and Automobiles.",
+      "changes_previous_interpretation": "Yes; adds details and strengthens the recommendation."
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says: I love them both...I will try that one...Thanks so much!",
+      "information_available": "SEEKER loves Steve Martin and John Candy, will try Planes, Trains and Automobiles, and expresses thanks.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; thinks Spaceballs is good; finds PT&A very funny.",
+        "seeker_as_believed": "Loves Steve Martin and John Candy; will try PT&A; loves 80s movies."
+      },
+      "belief_before": "PT&A cast has been provided and it was endorsed as very funny.",
+      "belief_update": "SEEKER likes the cast, accepts PT&A, and is grateful.",
+      "belief_after": "PT&A is accepted; positive rapport is established.",
+      "emotion": "pleased/satisfied",
+      "intention": "Acknowledge thanks and possibly conclude.",
+      "reaction_to_other": "Positive to SEEKER's enthusiasm and gratitude.",
+      "conversational_goal": "Maintain rapport after a successful recommendation.",
+      "changes_previous_interpretation": "Yes; PT&A is accepted and the task is largely satisfied."
+    },
+    {
+      "time": 12,
+      "observed": "RECOMMENDER says: And one last suggestion, since it's Christmas time National Lampoon's Christmas Vacation (1989)",
+      "information_available": "Recommender offers a final seasonal suggestion, Christmas Vacation, because it is Christmas time.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; finds PT&A very funny; recommends Christmas Vacation.",
+        "seeker_as_believed": "Loves 80s movies; loves Steve Martin and John Candy; accepted PT&A."
+      },
+      "belief_before": "SEEKER loves Steve Martin and John Candy, will try PT&A, and thanks recommender.",
+      "belief_update": "Recommender decides to add one last seasonal 80s comedy suggestion.",
+      "belief_after": "Christmas Vacation is a candidate.",
+      "emotion": "festive/generous",
+      "intention": "Recommend National Lampoon's Christmas Vacation.",
+      "reaction_to_other": "Positive and generous toward SEEKER.",
+      "conversational_goal": "Provide a relevant final recommendation.",
+      "changes_previous_interpretation": "Yes; extends the recommendation sequence after acceptance with seasonal context."
+    },
+    {
+      "time": 13,
+      "observed": "SEEKER says: My absolute favorite!! I watch at least 5 times a season",
+      "information_available": "SEEKER loves Christmas Vacation and watches it at least five times a season.",
+      "preferences": {
+        "target_recommender": "Likes Tommy Boy; finds PT&A very funny; recommended Christmas Vacation.",
+        "seeker_as_believed": "Loves Christmas Vacation; watches it repeatedly each season; loves 80s movies."
+      },
+      "belief_before": "Christmas Vacation has been suggested as a final seasonal recommendation.",
+      "belief_update": "SEEKER absolutely loves Christmas Vacation and rewatches it seasonally.",
+      "belief_after": "The final recommendation is highly successful for SEEKER.",
+      "emotion": "delighted/validated",
+      "intention": "Acknowledge and close positively.",
+      "reaction_to_other": "Enthusiastic and pleased by SEEKER's response.",
+      "conversational_goal": "End the conversation on a positive shared note.",
+      "changes_previous_interpretation": "Yes; confirms success of the final suggestion and reinforces SEEKER's holiday-comedy preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello!\",\n    \"information_available\": \"Recommender has only the opening greeting from SEEKER; no request or preferences yet.\",\n    \"preferences\": {\n      \"target_recommender\": \"No stated preferences yet.\",\n      \"seeker_as_believed\": \"None yet.\"\n    },\n    \"belief_before\": \"No prior dialogue context; interlocutor unknown.\",\n    \"belief_update\": \"SEEKER has initiated contact with a greeting.\",\n    \"belief_after\": \"SEEKER is present and expects a response.\",\n    \"emotion\": \"neutral/friendly\",\n    \"intention\": \"Respond politely and invite the seeker's request.\",\n    \"reaction_to_other\": \"Receptive and polite.\",\n    \"conversational_goal\": \"Open the conversation and establish contact.\",\n    \"changes_previous_interpretation\": \"No previous interpretation; initializes state.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello~\",\n    \"information_available\": \"Recommender is aware they have greeted SEEKER; still no request.\",\n    \"preferences\": {\n      \"target_recommender\": \"No stated preferences yet.\",\n      \"seeker_as_believed\": \"None yet.\"\n    },\n    \"belief_before\": \"SEEKER has greeted and expects a response.\",\n    \"belief_update\": \"Recommender reciprocates the greeting.\",\n    \"belief_after\": \"Greeting exchanged; conversation is open for SEEKER to state a request.\",\n    \"emotion\": \"friendly\",\n    \"intention\": \"Invite SEEKER to continue.\",\n    \"reaction_to_other\": \"Reciprocates SEEKER's greeting.\",\n    \"conversational_goal\": \"Maintain friendly opening and prompt the request.\",\n    \"changes_previous_interpretation\": \"No; continues opening sequence.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)\",\n    \"information_available\": \"SEEKER wants a comedy recommendation today and likes Super Troopers and Beerfest.\",\n    \"preferences\": {\n      \"target_recommender\": \"No stated preferences yet.\",\n      \"seeker_as_believed\": \"Likes Super Troopers and Beerfest.\"\n    },\n    \"belief_before\": \"Greeting exchanged; no request yet.\",\n    \"belief_update\": \"SEEKER wants a comedy and likes raunchy/ensemble/buddy comedies such as Super Troopers and Beerfest.\",\n    \"belief_after\": \"Need to recommend a comedy matching SEEKER's stated likes.\",\n    \"emotion\": \"engaged/helpful\",\n    \"intention\": \"Suggest a comedy.\",\n    \"reaction_to_other\": \"Responsive to SEEKER's request.\",\n    \"conversational_goal\": \"Provide a suitable comedy recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; the request establishes the task and SEEKER preferences.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Tommy Boy (1995) is one of my favorites\",\n    \"information_available\": \"Recommender has offered Tommy Boy; knows SEEKER wants comedy and likes Super Troopers and Beerfest.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy.\",\n      \"seeker_as_believed\": \"Likes Super Troopers and Beerfest.\"\n    },\n    \"belief_before\": \"SEEKER wants a comedy today and likes Super Troopers and Beerfest.\",\n    \"belief_update\": \"Recommender selects Tommy Boy as a favorite candidate.\",\n    \"belief_after\": \"Tommy Boy is proposed; target preference is revealed.\",\n    \"emotion\": \"enthusiastic\",\n    \"intention\": \"Recommend Tommy Boy.\",\n    \"reaction_to_other\": \"Helpful, sharing taste.\",\n    \"conversational_goal\": \"Match SEEKER's comedy request with a personal favorite.\",\n    \"changes_previous_interpretation\": \"Introduces a candidate and target preference; no contradiction yet.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: but not like Friday (1995) ...Awesome I love that one I have seen it a million times\",\n    \"information_available\": \"Recommender hears a possible exclusion of Friday-like comedy and praise for 'that one' (likely Tommy Boy), which SEEKER has seen many times.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy.\",\n      \"seeker_as_believed\": \"Likely loves Tommy Boy; possibly excludes Friday-like comedy.\"\n    },\n    \"belief_before\": \"Tommy Boy has been suggested as a favorite; awaiting SEEKER's reaction.\",\n    \"belief_update\": \"SEEKER likely loves Tommy Boy and has seen it many times; 'not like Friday' may indicate a preference against Friday-like comedy.\",\n    \"belief_after\": \"Tommy Boy is liked but not a new watch; another comedy is needed, and Friday-like comedy may be less desired.\",\n    \"emotion\": \"pleased/validated, with slight ambiguity\",\n    \"intention\": \"Continue recommending a comedy.\",\n    \"reaction_to_other\": \"Positive to shared favorite; attentive to possible exclusion.\",\n    \"conversational_goal\": \"Build on rapport and find the next recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; Tommy Boy is interpreted as liked/seen, and a possible Friday exclusion is added.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says: Me too. Another good one is Spaceballs (1987)\",\n    \"information_available\": \"Recommender agrees with Tommy Boy appreciation and offers Spaceballs.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; thinks Spaceballs is good.\",\n      \"seeker_as_believed\": \"Likes Super Troopers and Beerfest; likely loves Tommy Boy; possibly not Friday-like.\"\n    },\n    \"belief_before\": \"SEEKER likely loves Tommy Boy and has seen it many times; possible exclusion of Friday-like comedy.\",\n    \"belief_update\": \"Recommender shares Tommy Boy preference and proposes Spaceballs.\",\n    \"belief_after\": \"Spaceballs is a candidate; shared Tommy Boy preference is confirmed.\",\n    \"emotion\": \"enthusiastic\",\n    \"intention\": \"Suggest Spaceballs.\",\n    \"reaction_to_other\": \"Camaraderie with SEEKER.\",\n    \"conversational_goal\": \"Recommend another comedy after a shared favorite.\",\n    \"changes_previous_interpretation\": \"Adds candidate and confirms rapport; no major reinterpretation.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\",\n    \"information_available\": \"SEEKER has seen Spaceballs, did not really like it, and loves 80s movies.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; thinks Spaceballs is good.\",\n      \"seeker_as_believed\": \"Loves 80s movies; disliked Spaceballs.\"\n    },\n    \"belief_before\": \"Spaceballs has been suggested; shared Tommy Boy appreciation established.\",\n    \"belief_update\": \"Spaceballs is rejected by SEEKER; 80s movie preference becomes salient.\",\n    \"belief_after\": \"Avoid Spaceballs; prioritize 80s comedy.\",\n    \"emotion\": \"adaptive/mildly disappointed\",\n    \"intention\": \"Adjust the recommendation.\",\n    \"reaction_to_other\": \"Accepts negative feedback.\",\n    \"conversational_goal\": \"Find an 80s comedy.\",\n    \"changes_previous_interpretation\": \"Yes; previous Spaceballs candidate is rejected and a new 80s constraint is added.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says: Ok Well how about Planes, Trains and Automobiles (1986)\",\n    \"information_available\": \"Recommender offers Planes, Trains and Automobiles, a 1986 comedy.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; thinks Spaceballs is good; suggests PT&A.\",\n      \"seeker_as_believed\": \"Loves 80s movies; disliked Spaceballs.\"\n    },\n    \"belief_before\": \"SEEKER disliked Spaceballs but loves 80s movies.\",\n    \"belief_update\": \"Recommender proposes Planes, Trains and Automobiles as an 80s comedy.\",\n    \"belief_after\": \"Planes, Trains and Automobiles is a candidate.\",\n    \"emotion\": \"helpful/adaptive\",\n    \"intention\": \"Recommend Planes, Trains and Automobiles.\",\n    \"reaction_to_other\": \"Accommodating to SEEKER's feedback.\",\n    \"conversational_goal\": \"Match SEEKER's 80s preference.\",\n    \"changes_previous_interpretation\": \"Yes; shifts candidate to an 80s comedy.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: I may have seen that a long time ago but I can't remember. who is in that again?\",\n    \"information_available\": \"SEEKER is uncertain about Planes, Trains and Automobiles and asks for cast information.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; thinks Spaceballs is good; suggests PT&A.\",\n      \"seeker_as_believed\": \"Loves 80s movies; disliked Spaceballs; uncertain about PT&A.\"\n    },\n    \"belief_before\": \"Planes, Trains and Automobiles has been suggested as an 80s comedy.\",\n    \"belief_update\": \"SEEKER has not clearly seen or remembered PT&A and wants cast details to decide.\",\n    \"belief_after\": \"PT&A is still open; cast information is needed.\",\n    \"emotion\": \"neutral/helpful\",\n    \"intention\": \"Answer SEEKER's question.\",\n    \"reaction_to_other\": \"Attentive to SEEKER's uncertainty.\",\n    \"conversational_goal\": \"Provide cast information to help SEEKER decide.\",\n    \"changes_previous_interpretation\": \"Yes; candidate is not rejected but requires clarification.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says: Steve Martin and John Candy. It is very funny.\",\n    \"information_available\": \"Recommender provides the PT&A cast and endorses the film as very funny.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; thinks Spaceballs is good; finds Planes, Trains and Automobiles very funny.\",\n      \"seeker_as_believed\": \"Loves 80s movies; disliked Spaceballs; uncertain about PT&A.\"\n    },\n    \"belief_before\": \"SEEKER is uncertain about PT&A and asks who is in it.\",\n    \"belief_update\": \"Recommender answers with Steve Martin and John Candy and a positive endorsement.\",\n    \"belief_after\": \"SEEKER has cast information; PT&A is framed as very funny.\",\n    \"emotion\": \"positive/confident\",\n    \"intention\": \"Inform and persuade.\",\n    \"reaction_to_other\": \"Helpful response to SEEKER's question.\",\n    \"conversational_goal\": \"Help SEEKER decide on Planes, Trains and Automobiles.\",\n    \"changes_previous_interpretation\": \"Yes; adds details and strengthens the recommendation.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says: I love them both...I will try that one...Thanks so much!\",\n    \"information_available\": \"SEEKER loves Steve Martin and John Candy, will try Planes, Trains and Automobiles, and expresses thanks.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; thinks Spaceballs is good; finds PT&A very funny.\",\n      \"seeker_as_believed\": \"Loves Steve Martin and John Candy; will try PT&A; loves 80s movies.\"\n    },\n    \"belief_before\": \"PT&A cast has been provided and it was endorsed as very funny.\",\n    \"belief_update\": \"SEEKER likes the cast, accepts PT&A, and is grateful.\",\n    \"belief_after\": \"PT&A is accepted; positive rapport is established.\",\n    \"emotion\": \"pleased/satisfied\",\n    \"intention\": \"Acknowledge thanks and possibly conclude.\",\n    \"reaction_to_other\": \"Positive to SEEKER's enthusiasm and gratitude.\",\n    \"conversational_goal\": \"Maintain rapport after a successful recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; PT&A is accepted and the task is largely satisfied.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"RECOMMENDER says: And one last suggestion, since it's Christmas time National Lampoon's Christmas Vacation (1989)\",\n    \"information_available\": \"Recommender offers a final seasonal suggestion, Christmas Vacation, because it is Christmas time.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; finds PT&A very funny; recommends Christmas Vacation.\",\n      \"seeker_as_believed\": \"Loves 80s movies; loves Steve Martin and John Candy; accepted PT&A.\"\n    },\n    \"belief_before\": \"SEEKER loves Steve Martin and John Candy, will try PT&A, and thanks recommender.\",\n    \"belief_update\": \"Recommender decides to add one last seasonal 80s comedy suggestion.\",\n    \"belief_after\": \"Christmas Vacation is a candidate.\",\n    \"emotion\": \"festive/generous\",\n    \"intention\": \"Recommend National Lampoon's Christmas Vacation.\",\n    \"reaction_to_other\": \"Positive and generous toward SEEKER.\",\n    \"conversational_goal\": \"Provide a relevant final recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; extends the recommendation sequence after acceptance with seasonal context.\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"SEEKER says: My absolute favorite!! I watch at least 5 times a season\",\n    \"information_available\": \"SEEKER loves Christmas Vacation and watches it at least five times a season.\",\n    \"preferences\": {\n      \"target_recommender\": \"Likes Tommy Boy; finds PT&A very funny; recommended Christmas Vacation.\",\n      \"seeker_as_believed\": \"Loves Christmas Vacation; watches it repeatedly each season; loves 80s movies.\"\n    },\n    \"belief_before\": \"Christmas Vacation has been suggested as a final seasonal recommendation.\",\n    \"belief_update\": \"SEEKER absolutely loves Christmas Vacation and rewatches it seasonally.\",\n    \"belief_after\": \"The final recommendation is highly successful for SEEKER.\",\n    \"emotion\": \"delighted/validated\",\n    \"intention\": \"Acknowledge and close positively.\",\n    \"reaction_to_other\": \"Enthusiastic and pleased by SEEKER's response.\",\n    \"conversational_goal\": \"End the conversation on a positive shared note.\",\n    \"changes_previous_interpretation\": \"Yes; confirms success of the final suggestion and reinforces SEEKER's holiday-comedy preference.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

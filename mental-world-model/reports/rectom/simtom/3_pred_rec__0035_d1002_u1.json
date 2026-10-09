@@ -1,0 +1,13 @@
+{
+  "id": "3_pred_rec__0035_d1002_u1",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "RECOMMENDER has access only to the following:\n\n- SEEKER directly addressed RECOMMENDER.\n- SEEKER asked: “Hey. Can you recommend some good new science fiction films? Preferably something already on DVD that I can buy or rent to watch online.”\n- From this, RECOMMENDER knows:\n  - SEEKER wants science fiction film recommendations.\n  - SEEKER wants them to be “good” and “new.”\n  - SEEKER prefers films already available on DVD.\n  - SEEKER wants to buy or rent them to watch online.\n- RECOMMENDER also has access to their own general knowledge/memory that they might use to make recommendations.\n\nNo other events, statements, private information, or prior interactions are available to RECOMMENDER from the provided dialogue.",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

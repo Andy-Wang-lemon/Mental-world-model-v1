@@ -1,0 +1,167 @@
+{
+  "protocol": "llm_raw_history_open_rollout",
+  "agent": "程野",
+  "total_events": 7,
+  "event_file": "data/程野纵向7事件.txt",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  },
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "behavior_trajectory": [
+    "E1 → 婉拒并表示今晚想独自休息",
+    "E2 → 同意苏妍方案并表示会配合推进",
+    "E3 → 同意苏妍跟领导说明情况",
+    "E4 → 同意帮忙查看材料并提供解决方案",
+    "E5 → 微笑点头认可玩笑",
+    "E6 → 点头同意并表示会按修改版本整理方案发送",
+    "E7 → 同意与苏妍一起去上海"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "top1": "婉拒并表示今晚想独自休息",
+      "behaviors": [
+        {
+          "text": "婉拒并表示今晚想独自休息",
+          "probability": 0.45
+        },
+        {
+          "text": "同意庆祝并回复“我们去吧”",
+          "probability": 0.35
+        },
+        {
+          "text": "沉默转身离开",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "top1": "同意苏妍方案并表示会配合推进",
+      "behaviors": [
+        {
+          "text": "同意苏妍方案并表示会配合推进",
+          "probability": 0.55
+        },
+        {
+          "text": "直接指出方案中的具体问题",
+          "probability": 0.3
+        },
+        {
+          "text": "表示需要时间再考虑后回复",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "top1": "同意苏妍跟领导说明情况",
+      "behaviors": [
+        {
+          "text": "同意苏妍跟领导说明情况",
+          "probability": 0.55
+        },
+        {
+          "text": "婉拒苏妍的提议并表示愿意再等一年",
+          "probability": 0.3
+        },
+        {
+          "text": "提出自己单独找领导沟通",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "top1": "同意帮忙查看材料并提供解决方案",
+      "behaviors": [
+        {
+          "text": "同意帮忙查看材料并提供解决方案",
+          "probability": 0.7
+        },
+        {
+          "text": "婉拒并表示今晚想独自休息",
+          "probability": 0.2
+        },
+        {
+          "text": "建议苏妍自己先尝试解决",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "top1": "微笑点头认可玩笑",
+      "behaviors": [
+        {
+          "text": "微笑点头认可玩笑",
+          "probability": 0.65
+        },
+        {
+          "text": "保持沉默继续用餐",
+          "probability": 0.25
+        },
+        {
+          "text": "起身借故离开聚餐",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "top1": "点头同意并表示会按修改版本整理方案发送",
+      "behaviors": [
+        {
+          "text": "点头同意并表示会按修改版本整理方案发送",
+          "probability": 0.75
+        },
+        {
+          "text": "询问修改的具体理由",
+          "probability": 0.15
+        },
+        {
+          "text": "保持沉默但按要求执行修改",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E7",
+      "step_id": "S07",
+      "top1": "同意与苏妍一起去上海",
+      "behaviors": [
+        {
+          "text": "同意与苏妍一起去上海",
+          "probability": 0.7
+        },
+        {
+          "text": "选择留在原城市接受晋升优先承诺",
+          "probability": 0.2
+        },
+        {
+          "text": "提出与苏妍讨论后再决定",
+          "probability": 0.1
+        }
+      ]
+    }
+  ]
+}

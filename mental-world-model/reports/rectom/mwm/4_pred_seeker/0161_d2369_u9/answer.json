@@ -1,0 +1,73 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 161,
+  "item_id": "d2369_u9",
+  "dialogue_id": "2369",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 的经验里，RECOMMENDER 的“Hi”和随后的片名、喜欢或好笑的评价不是背景闲聊，而是把 SEEKER 放进“对方报出片名与喜好、自己接住并给出评价或选择”的熟悉脚本里；连“What about Ghostbusters (2016)”也像这个脚本中轮到 SEEKER 填答的一格，因此整个交谈对象化为一套正被推进的、与己有关的电影应答程序。",
+        "probability": 0.3865
+      },
+      {
+        "content": "在 SEEKER 的经验里，RECOMMENDER 的招呼和接连报出的电影喜好仍把 SEEKER 摆在可继续分享、可被询问的对话对象位置；而当“What about Ghostbusters (2016)”出现时，它不再像随口延续话题，而是被对象化为对 SEEKER 发出的明确表态要求——这句话把话题收束成一个必须由 SEEKER 这边给出明确立场的点。",
+        "probability": 0.3181
+      },
+      {
+        "content": "在 SEEKER 的经验里，RECOMMENDER 所报出的片名与喜好中，Ghostbusters (2016) 被问及时已经不再是可以随便悬置的外部信息，而带着“我的喜好与判断”的重量；同时“What about...”被对象化为直接要求 SEEKER 表态的明确指令，于是当前所缘境是一个把某部电影与 SEEKER 自己的立场绑定、并使该提问落在 SEEKER 必须表态位置上的提问现场。",
+        "probability": 0.2954
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这个“Hi”和后面一连串片名、喜好，不是与我无关的背景闲聊，而是在把我拉进一套熟悉的电影应答套路里：对方报出片名和看法，我就该接住，给出自己的评价、选择或另举一部。刚才我已经顺着这个路数回应了，说自己喜欢哪些喜剧，也夸了《Sister Act》和 Madea，还提到《Meet the Parents》《Wedding Crashers》这些。现在“What about Ghostbusters (2016)”也像这个套路里留给我填的一格，说明这场交谈正与我有关地往前推进；我把它当作需要我参与、需要我接稳的对话，而不是可以随便略过的话头。",
+        "activation": 0.3453
+      },
+      {
+        "content": "SEEKER 把 RECOMMENDER 的招呼和接连报出的电影喜好，理解成对方仍把自己放在可继续分享电影、可被询问看法的对话对象位置上；他顺着这个位置继续列举自己喜欢的喜剧，并回应对方的片单。等到“What about Ghostbusters (2016)”出现时，SEEKER 不再把它当成随口延续话题，而是把它对象化为对自己发出的明确表态要求——这句话把话题收束成一个必须由 SEEKER 这边给出明确立场的点；他心里开始衡量对这部片子的看法，并倾向于准备一个明确的回应，而不是让话题轻轻滑过去。",
+        "activation": 0.3388
+      },
+      {
+        "content": "在 SEEKER 看来，RECOMMENDER 把《Ghostbusters (2016)》抛出来并不是一个可以听过就算的片名：它已经和自己此前对喜剧的喜好、对好笑与否的判断连在一起，而“What about...”更像是在等自己给出一个明确立场。于是他内心先把它放进自己熟悉的喜剧口味坐标里，比较它和前面提到的《Bridesmaids》《Neighbors》《Wedding Crashers》等带来的感觉，觉得不能含糊带过，需要辨认自己究竟是否认它、是否觉得它好笑；这种被点到名、要从自身偏好出发作出回应的重量，使他对该片名的评价不再只是外部信息，而是带上了自我立场待确认的紧张感。",
+        "activation": 0.3159
+      }
+    ],
+    "observed_action": "SEEKER 向 RECOMMENDER 问好，表示自己喜欢喜剧电影，并提到《Bridesmaids》（2011）和《How to Lose a Guy in 10 Days》（2003）是自己最喜欢的电影；他说看过 RECOMMENDER 提到的两部《Sister Act》，认为两者都是很好的选择；他说自己喜欢《Neighbors》（2014），提到 Seth Rogen 和 Zac Efron，并认为那部很好笑，还说 Madea 在所有作品里都很好笑；他提到《Meet the Parents》（2000）或《Wedding Crashers》（2005），说后者很好笑，并说自己看过那部更早的电影，但不知为何无法投入其中。",
+    "predicted_actions": [
+      {
+        "content": "赞同对方的电影好笑评价",
+        "probability": 0.5899
+      },
+      {
+        "content": "称另一部喜剧更好笑",
+        "probability": 0.2918
+      },
+      {
+        "content": "表示未看过并询问好笑之处",
+        "probability": 0.1183
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.5899,
+    "b": 0,
+    "c": 0.2918,
+    "d": 0
+  },
+  "score_reason": "A 0.5899 = 赞同对方的电影好笑评价 0.5899；B 0.0000；C 0.2918 = 称另一部喜剧更好笑 0.2918；D 0.0000。Action 0 gives feedback on the recommended movie, and action 1 expresses a preference for another comedy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

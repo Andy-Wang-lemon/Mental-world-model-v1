@@ -1,0 +1,566 @@
+{
+  "events": [
+    {
+      "focus_person": "沈川",
+      "yuanwen": "沈川大学毕业后想去一家小型创业公司做产品，父亲沈建国坚持让他接受国企的技术岗位，还提前托朋友打好了招呼。沈川几次表示自己更喜欢产品方向，父亲仍把联系人电话放到他面前：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”",
+      "stimulus_text": "沈川大学毕业后想去一家小型创业公司做产品，父亲沈建国坚持让他接受国企的技术岗位，还提前托朋友打好了招呼。沈川几次表示自己更喜欢产品方向，父亲仍把联系人电话放到他面前：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”",
+      "stimulus_action_split": {
+        "stimulus_text": "沈川大学毕业后想去一家小型创业公司做产品，父亲沈建国坚持让他接受国企的技术岗位，还提前托朋友打好了招呼。沈川几次表示自己更喜欢产品方向，父亲仍把联系人电话放到他面前：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”",
+        "has_observable_action": true,
+        "action_span": "不使用联系人电话，自主求职",
+        "action_description": "不使用联系人电话，自主求职"
+      },
+      "objective_event": {
+        "actors": [
+          "沈建国",
+          "沈川"
+        ],
+        "action": "沈建国要求沈川接受国企技术岗位，提前托朋友打好招呼，并将联系人电话放到沈川面前，说：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”",
+        "object": "沈川",
+        "scene": "沈川大学毕业后",
+        "outcome_changes": [
+          "沈建国已托朋友为沈川的国企技术岗位事宜打好招呼",
+          "联系人电话已被放到沈川面前"
+        ],
+        "role_changes": [],
+        "relationship_changes": [
+          "沈建国通过朋友为沈川建立与国企技术岗位的联系安排"
+        ],
+        "constraint_changes": [
+          "沈建国要求沈川第一份工作听从其安排，接受国企技术岗位",
+          "沈建国提出“创业以后有的是机会，第一份工作不能乱来，这件事听我的”"
+        ],
+        "resource_changes": [
+          "联系人电话作为国企技术岗位的联系资源被提供给沈川",
+          "国企技术岗位的联系渠道已建立"
+        ]
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "沈川把‘自己选择第一份工作方向的决定权’放在自己这边，不能由父亲把联系人电话放到面前、说出‘这件事听我的’来代为决定。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "沈川把‘做产品’这一职业方向当作自己身份的一部分，而不是可以随时替换成国企技术岗位的选项。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "沈川把‘进入创业公司做产品’这条路径放在自己这边，不能接受父亲用‘创业以后有的是机会’把它搁置到以后。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "沈川把‘职业入口不经过父亲托朋友安排的关系渠道’当作与自己分不开的边界，联系人电话被放到面前反而使这条边界被触碰。",
+          "confidence": 0.78,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "沈川把‘第一份工作应当与个人兴趣和产品方向一致’当成理应如此，因此国企技术岗位一旦与产品方向不一致就不该被接受。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "沈川把‘第一份工作具有决定性，必须一开始就选对，否则以后无法回到产品/创业方向’当成只能如此。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "沈川把‘成年子女的职业选择应由本人决定，父母不应提前托关系并施压’当成固定规则。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "沈川把‘国企技术岗位’固定理解为父亲意志的载体、与自己的产品方向相对立，而不是一个可以独立评估的普通选项。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f5",
+          "text": "沈川把‘创业以后有的是机会’固定理解为不可靠，认为创业/产品窗口必须现在抓住，过时不再有。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "combo_activation_probability": 0.3442028985507246,
+          "alambana_prior_probability": 0.3442028985507246,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "combo_activation_probability": 0.33695652173913043,
+          "alambana_prior_probability": 0.33695652173913043,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5952000000000002
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.31884057971014496,
+          "alambana_prior_probability": 0.31884057971014496,
+          "activation_alignment": 0.88,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5632000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在沈川此刻的经验里，父亲已经托朋友打好的招呼、放到面前的联系人电话和那句“这件事听我的”，不只是一份求职资源和一条建议，而是被对象化为越过他本人来替他决定第一份工作方向的安排。因为“成年子女的职业选择应由本人决定，父母不应提前托关系并施压”被当成固定规则，父亲的提前托关系和当面施压便显出违规则的性质；“这件事听我的”更把这种越界明确钉在眼前，使国企技术岗位的联系渠道首先作为父亲介入他决定权的证据浮现。",
+          "prior_probability": 0.3442028985507246,
+          "posterior_probability": 0.3512375502617095,
+          "action_compat": 0.92,
+          "action_likelihood": 0.9462318840579711,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "所缘未添加客观刺激之外的他人言行；将父亲的托关系、放电话和“这件事听我的”理解为替自己决定第一份工作的安排，属于主观解释。且保留了父亲介入其职业决定、国企技术岗位联系渠道等核心变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "在沈川此刻的经验里，父亲放下的联系人电话和“创业以后有的是机会”，被对象化为把“进入创业公司做产品”这条本属于自己的当前路径往后推、并用国企技术岗位的安排来覆盖它的东西。父亲已经托朋友打好招呼，使这种覆盖带着已经铺好的现实重量；而“成年子女的职业选择应由本人决定，父母不应提前托关系并施压”被当成固定规则，又使父亲的安排和“这件事听我的”不是普通建议，而是一种不该如此的外力。",
+          "prior_probability": 0.33695652173913043,
+          "posterior_probability": 0.3366610262891613,
+          "action_compat": 0.89,
+          "action_likelihood": 0.9264673913043479,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5952000000000002,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "所缘涉及的放电话、“创业以后有的是机会”、已托朋友打招呼、国企技术岗位安排与沈川想进入创业公司做产品均与刺激一致；覆盖、后推等为沈川的主观对象化，不是伪造事实。核心冲突和父亲干预安排得到保留。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在沈川此刻的经验里，联系人电话和父亲已经托好的关系，被对象化为要把一个与产品方向不一致的国企技术岗位直接安进他第一份工作的位置；因为“第一份工作应当与个人兴趣和产品方向一致”被当成理应如此，这个岗位本身在眼前就带着不合该当性。与此同时，父亲那句“这件事听我的”把决定权从他这边拿走，使“创业以后有的是机会”也无法把眼前这个岗位转化为合理选择。",
+          "prior_probability": 0.31884057971014496,
+          "posterior_probability": 0.31210142344912917,
+          "action_compat": 0.86,
+          "action_likelihood": 0.9076811594202898,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5632000000000001,
+          "activation_alignment": 0.88,
+          "grounding_valid": true,
+          "grounding_reason": "所缘未新增他人言行；联系人电话、已托好的关系、国企技术岗位、产品方向、“这件事听我的”和“创业以后有的是机会”均来自刺激。将其对象化为把决定权拿走、使岗位显得不合该当，属于主观解释，且保留了核心约束与关系变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": true,
+        "action_span": "不使用联系人电话，自主求职",
+        "action_description": "不使用联系人电话，自主求职",
+        "likelihoods": [
+          {
+            "alambana_id": "O_C1",
+            "likelihood": 0.92
+          },
+          {
+            "alambana_id": "O_C2",
+            "likelihood": 0.89
+          },
+          {
+            "alambana_id": "O_C3",
+            "likelihood": 0.86
+          }
+        ]
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.3442028985507246,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在沈川此刻的经验里，父亲已经托朋友打好的招呼、放到面前的联系人电话和那句“这件事听我的”，不只是一份求职资源和一条建议，而是被对象化为越过他本人来替他决定第一份工作方向的安排。因为“成年子女的职业选择应由本人决定，父母不应提前托关系并施压”被当成固定规则，父亲的提前托关系和当面施压便显出违规则的性质；“这件事听我的”更把这种越界明确钉在眼前，使国企技术岗位的联系渠道首先作为父亲介入他决定权的证据浮现。",
+            "prior_probability": 0.3442028985507246,
+            "posterior_probability": 0.3512375502617095,
+            "action_compat": 0.92,
+            "action_likelihood": 0.9462318840579711,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f3"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "所缘未添加客观刺激之外的他人言行；将父亲的托关系、放电话和“这件事听我的”理解为替自己决定第一份工作的安排，属于主观解释。且保留了父亲介入其职业决定、国企技术岗位联系渠道等核心变化。"
+          },
+          "xiang": {
+            "text": "在沈川看来，面前这份联系人电话并不是一条可供自己权衡的求职资源，而是父亲已经替他走完一步之后，再要他点头的既成安排。那句“这件事听我的”把决定权从他手里拿走，也让他更清楚地感到：如果自己接受国企技术岗位并动用这条关系，就等于默认父亲有权替他决定第一份工作。按照成年子女的职业选择应由本人决定这一规则，父亲的提前托关系和当面施压已经越界。因此他不能把这条现成渠道当成自己的选择，只能把它看作父亲介入他决定权的证据；他趋向于不采用这个安排，而按自己对产品方向的偏好自主求职，由自己来定第一份工作的去向。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "不使用联系人电话，自主求职",
+            "source": "原文",
+            "confidence": 0.5479656160458453
+          },
+          "mental_factors_nonzero": {
+            "信": 0.535,
+            "精进": 0.31,
+            "惭": 0.6425,
+            "无贪": 0.5874999999999999,
+            "无瞋": 0.4495,
+            "无痴": 0.785,
+            "不放逸": 0.565,
+            "行舍": 0.37,
+            "不害": 0.29,
+            "善见": 0.6275,
+            "不嫉": 0.26249999999999996,
+            "慢": 0.30999999999999994
+          },
+          "status": "active"
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.33695652173913043,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在沈川此刻的经验里，父亲放下的联系人电话和“创业以后有的是机会”，被对象化为把“进入创业公司做产品”这条本属于自己的当前路径往后推、并用国企技术岗位的安排来覆盖它的东西。父亲已经托朋友打好招呼，使这种覆盖带着已经铺好的现实重量；而“成年子女的职业选择应由本人决定，父母不应提前托关系并施压”被当成固定规则，又使父亲的安排和“这件事听我的”不是普通建议，而是一种不该如此的外力。",
+            "prior_probability": 0.33695652173913043,
+            "posterior_probability": 0.3366610262891613,
+            "action_compat": 0.89,
+            "action_likelihood": 0.9264673913043479,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f3"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5952000000000002,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "所缘涉及的放电话、“创业以后有的是机会”、已托朋友打招呼、国企技术岗位安排与沈川想进入创业公司做产品均与刺激一致；覆盖、后推等为沈川的主观对象化，不是伪造事实。核心冲突和父亲干预安排得到保留。"
+          },
+          "xiang": {
+            "text": "父亲把电话放下来，又用“创业以后有的是机会”把产品这条路推到以后，这在我这里不是帮我判断，而是已经托人铺好的安排要把我现在的选择盖过去。第一份工作本就是我的事，成年后的职业选择该由我决定，父亲先打招呼再压一句“听我的”，越过了我该有的界限。我不能再把这条被安排好的路当成自己的路；联系人电话越具体，我越清楚它代表的是别人替我定下的方向，而不是我要去的方向。我认的是进入创业公司做产品这条当前路径，不能接受它被交换成以后。因而我心里对这份国企技术岗位的安排是排斥和不认的，也不愿借这个电话来开始我的职业。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "不使用联系人电话，自主求职",
+            "source": "原文",
+            "confidence": 0.5479656160458453
+          },
+          "mental_factors_nonzero": {
+            "信": 0.79,
+            "精进": 0.415,
+            "惭": 0.305,
+            "无痴": 0.62,
+            "不放逸": 0.745,
+            "行舍": 0.3525,
+            "善见": 0.595,
+            "贪": 0.415,
+            "瞋": 0.5475,
+            "慢": 0.4975,
+            "忿": 0.425,
+            "无愧": 0.2975
+          },
+          "status": "active"
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.31884057971014496,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在沈川此刻的经验里，联系人电话和父亲已经托好的关系，被对象化为要把一个与产品方向不一致的国企技术岗位直接安进他第一份工作的位置；因为“第一份工作应当与个人兴趣和产品方向一致”被当成理应如此，这个岗位本身在眼前就带着不合该当性。与此同时，父亲那句“这件事听我的”把决定权从他这边拿走，使“创业以后有的是机会”也无法把眼前这个岗位转化为合理选择。",
+            "prior_probability": 0.31884057971014496,
+            "posterior_probability": 0.31210142344912917,
+            "action_compat": 0.86,
+            "action_likelihood": 0.9076811594202898,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5632000000000001,
+            "activation_alignment": 0.88,
+            "grounding_valid": true,
+            "grounding_reason": "所缘未新增他人言行；联系人电话、已托好的关系、国企技术岗位、产品方向、“这件事听我的”和“创业以后有的是机会”均来自刺激。将其对象化为把决定权拿走、使岗位显得不合该当，属于主观解释，且保留了核心约束与关系变化。"
+          },
+          "xiang": {
+            "text": "沈川看着被放到面前的联系人电话，心里把它和父亲已经托好的关系合成一件事：这不是普通建议，而是要把一个与产品方向不一致的国企技术岗位直接安进他第一份工作的位置。因为“第一份工作应当与个人兴趣和产品方向一致”在他这里是不用再讲的，所以这个岗位一出现就带着别扭和不应当被接受。父亲那句“这件事听我的”更让他认定决定权被从自己这边拿走了；“创业以后有的是机会”也补不上这一点，反而显得眼前的选择不能被这句话兑换成合理。于是他不想靠这条电话去接那个岗位，更愿意把这条关系搁在一边，按自己的方向去谋第一份工作。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "不使用联系人电话，自主求职",
+            "source": "原文",
+            "confidence": 0.5479656160458453
+          },
+          "mental_factors_nonzero": {
+            "信": 0.625,
+            "精进": 0.47,
+            "无贪": 0.6625,
+            "不放逸": 0.65,
+            "行舍": 0.39,
+            "不害": 0.22,
+            "瞋": 0.43499999999999994,
+            "慢": 0.31,
+            "无明": 0.585,
+            "恶见": 0.4475,
+            "忿": 0.365,
+            "诳": 0.105
+          },
+          "status": "active"
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "信": 0.6496195652173913,
+        "精进": 0.39639492753623184,
+        "惭": 0.32392210144927536,
+        "无贪": 0.41345108695652166,
+        "无瞋": 0.1547192028985507,
+        "无痴": 0.4791123188405797,
+        "不放逸": 0.6527536231884058,
+        "行舍": 0.37048007246376813,
+        "不害": 0.16996376811594202,
+        "善见": 0.41647644927536226,
+        "不嫉": 0.09035326086956519,
+        "贪": 0.13983695652173914,
+        "瞋": 0.3231793478260869,
+        "慢": 0.3731793478260869,
+        "无明": 0.1865217391304348,
+        "恶见": 0.14268115942028986,
+        "忿": 0.25958333333333333,
+        "诳": 0.03347826086956522,
+        "无愧": 0.1002445652173913
+      },
+      "mental_factors_final_nonzero": {
+        "信": 0.6496195652173913,
+        "精进": 0.39639492753623184,
+        "惭": 0.32392210144927536,
+        "无贪": 0.41345108695652166,
+        "无瞋": 0.1547192028985507,
+        "无痴": 0.4791123188405797,
+        "不放逸": 0.6527536231884058,
+        "行舍": 0.37048007246376813,
+        "不害": 0.16996376811594202,
+        "善见": 0.41647644927536226,
+        "不嫉": 0.09035326086956519,
+        "贪": 0.13983695652173914,
+        "瞋": 0.3231793478260869,
+        "慢": 0.3731793478260869,
+        "无明": 0.1865217391304348,
+        "恶见": 0.14268115942028986,
+        "忿": 0.25958333333333333,
+        "诳": 0.03347826086956522,
+        "无愧": 0.1002445652173913
+      },
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 0,
+        "distinct_candidate_count": 0,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "mental_episode_count": 1,
+        "injected_bias_frames": [],
+        "h_prior": {
+          "working_set": [],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "cross_branch_event",
+          "lambda_eff": 0.0
+        },
+        "cognitive_frames": [
+          {
+            "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+            "mass": 0.3512375502617095
+          },
+          {
+            "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+            "mass": 0.3366610262891613
+          },
+          {
+            "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+            "mass": 0.31210142344912917
+          }
+        ]
+      }
+    }
+  ],
+  "focus_person": "沈川",
+  "llm_usage": {
+    "total_calls": 254,
+    "total_duration_ms": 2775313.8051480325,
+    "wall_clock_ms": 348121.88605198753
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "landed",
+    "step_id": "S01",
+    "event_index": 1,
+    "stimulus": "沈川大学毕业后想去一家小型创业公司做产品，父亲沈建国坚持让他接受国企的技术岗位，还提前托朋友打好了招呼。沈川几次表示自己更喜欢产品方向，父亲仍把联系人电话放到他面前：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”",
+    "landed_action": "不使用联系人电话，自主求职",
+    "landed_probability": 0.5479656160458453,
+    "continuity_before": {
+      "person_id": "沈川",
+      "event_count": 0,
+      "mental_episode_count": 0,
+      "cognitive_frame_count": 0
+    },
+    "continuity_after": {
+      "person_id": "沈川",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 3
+    },
+    "cognitive_frames_after": [
+      {
+        "id": "bf_1",
+        "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+        "mass": 0.3512
+      },
+      {
+        "id": "bf_2",
+        "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+        "mass": 0.3367
+      },
+      {
+        "id": "bf_3",
+        "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+        "mass": 0.3121
+      }
+    ],
+    "mental_episodes_after": [
+      {
+        "event_id": "e1",
+        "theta": 0.8,
+        "text_summary": "沈川大学毕业后想去一家小型创业公司做产品，父亲沈建国坚持让他接受国企的技术岗位，还提前托朋友打好了招呼。沈川几次表示自己更喜欢产品方向，父亲仍把联系人电话放到他面前：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”"
+      }
+    ]
+  }
+}

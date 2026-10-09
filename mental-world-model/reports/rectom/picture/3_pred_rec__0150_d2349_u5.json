@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0150_d2349_u5",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER wants a children’s movie for a little brother to watch while babysitting tonight. RECOMMENDER also knows that SEEKER did not like *The Secret Life of Pets (2016)* overall, though SEEKER liked the first half hour and found the later part weird. RECOMMENDER does not know the little brother’s age, movie preferences, favorite genres, what movies he has already seen, or whether SEEKER wants to give more detailed preferences. RECOMMENDER also does not know why SEEKER found the latter part of *The Secret Life of Pets* weird or whether that reason would matter for the brother.\n\nGiven the goal is still to find a suitable children’s movie, and the recommender has already begun by suggesting/asking about a specific movie, the most likely next strategy is to continue the recommendation process by offering another movie or asking whether SEEKER has seen another candidate. That corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

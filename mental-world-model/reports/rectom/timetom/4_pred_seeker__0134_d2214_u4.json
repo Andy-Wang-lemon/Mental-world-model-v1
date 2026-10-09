@@ -1,0 +1,72 @@
+{
+  "id": "4_pred_seeker__0134_d2214_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets and asks for a movie similar to Alien (1979) or Halloween (1978).",
+      "information_available": "SEEKER knows their own request; no recommender suggestion has been given yet.",
+      "preferences": "Likes/values Alien (1979) and Halloween (1978); seeks similar horror/slasher films.",
+      "belief_before": "No prior dialogue; expects to find a similar movie.",
+      "belief_update": "Forms an explicit request for recommendations.",
+      "belief_after": "Recommender has been asked to suggest films similar to Alien or Halloween.",
+      "emotion": "Hopeful/interested",
+      "intention": "Request recommendations.",
+      "conversational_goal": "Get movie suggestions similar to Alien or Halloween.",
+      "reaction_to_other": "None yet; awaiting recommender response.",
+      "changes_previous_interpretation": "Initiates the recommendation context."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER suggests A Nightmare on Elm Street (1984).",
+      "information_available": "SEEKER has their initial request and now hears one candidate suggestion from recommender.",
+      "preferences": "Likes Alien and Halloween; preference for A Nightmare on Elm Street is not yet expressed or known.",
+      "belief_before": "Recommender has not yet suggested a film; SEEKER awaits a similar-movie recommendation.",
+      "belief_update": "Recommender proposes A Nightmare on Elm Street as a candidate.",
+      "belief_after": "A Nightmare on Elm Street is a possible match to the requested taste; needs evaluation/response.",
+      "emotion": "Curious/interested",
+      "intention": "Evaluate the suggestion and decide how to respond.",
+      "conversational_goal": "Assess whether the recommended film fits the request.",
+      "reaction_to_other": "Considers recommender's suggestion positively/neutrally.",
+      "changes_previous_interpretation": "The dialogue moves from request to a concrete candidate."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says, 'I loved that series as well.'",
+      "information_available": "SEEKER has the recommender's suggestion of A Nightmare on Elm Street and now recalls their own liking for that series.",
+      "preferences": "Likes Alien, Halloween, and the A Nightmare on Elm Street series.",
+      "belief_before": "A Nightmare on Elm Street was only a proposed candidate; SEEKER's preference toward it was unknown.",
+      "belief_update": "SEEKER confirms they loved the A Nightmare on Elm Street series.",
+      "belief_after": "A Nightmare on Elm Street is a positive match; recommender's suggestion aligns with SEEKER's taste.",
+      "emotion": "Enthusiastic/positive",
+      "intention": "Express approval and signal good/shared taste.",
+      "conversational_goal": "Confirm the suggestion is a good fit and encourage further recommendations.",
+      "reaction_to_other": "Positive agreement/approval toward recommender's suggestion.",
+      "changes_previous_interpretation": "Updates the earlier candidate from unknown preference to liked/positive."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says it was great and asks whether SEEKER has seen the Friday the 13th (1980) series.",
+      "information_available": "SEEKER has already confirmed liking A Nightmare on Elm Street; recommender now agrees and asks about Friday the 13th.",
+      "preferences": "Likes Alien, Halloween, and A Nightmare on Elm Street; preference/familiarity with Friday the 13th is not yet stated.",
+      "belief_before": "Recommender made one good suggestion; SEEKER had confirmed liking A Nightmare on Elm Street.",
+      "belief_update": "Recommender also likes A Nightmare on Elm Street and introduces/probes Friday the 13th as another relevant series.",
+      "belief_after": "Friday the 13th may be another candidate; recommender does not yet know if SEEKER has seen it.",
+      "emotion": "Engaged/positive",
+      "intention": "Answer the question about Friday the 13th and continue seeking a good match.",
+      "conversational_goal": "Continue narrowing/expanding recommendations based on SEEKER's familiarity and taste.",
+      "reaction_to_other": "Positive to recommender's agreement; interested in the new question.",
+      "changes_previous_interpretation": "Expands the candidate set and shifts to checking familiarity with another horror series."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets and asks for a movie similar to Alien (1979) or Halloween (1978).\",\n    \"information_available\": \"SEEKER knows their own request; no recommender suggestion has been given yet.\",\n    \"preferences\": \"Likes/values Alien (1979) and Halloween (1978); seeks similar horror/slasher films.\",\n    \"belief_before\": \"No prior dialogue; expects to find a similar movie.\",\n    \"belief_update\": \"Forms an explicit request for recommendations.\",\n    \"belief_after\": \"Recommender has been asked to suggest films similar to Alien or Halloween.\",\n    \"emotion\": \"Hopeful/interested\",\n    \"intention\": \"Request recommendations.\",\n    \"conversational_goal\": \"Get movie suggestions similar to Alien or Halloween.\",\n    \"reaction_to_other\": \"None yet; awaiting recommender response.\",\n    \"changes_previous_interpretation\": \"Initiates the recommendation context.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER suggests A Nightmare on Elm Street (1984).\",\n    \"information_available\": \"SEEKER has their initial request and now hears one candidate suggestion from recommender.\",\n    \"preferences\": \"Likes Alien and Halloween; preference for A Nightmare on Elm Street is not yet expressed or known.\",\n    \"belief_before\": \"Recommender has not yet suggested a film; SEEKER awaits a similar-movie recommendation.\",\n    \"belief_update\": \"Recommender proposes A Nightmare on Elm Street as a candidate.\",\n    \"belief_after\": \"A Nightmare on Elm Street is a possible match to the requested taste; needs evaluation/response.\",\n    \"emotion\": \"Curious/interested\",\n    \"intention\": \"Evaluate the suggestion and decide how to respond.\",\n    \"conversational_goal\": \"Assess whether the recommended film fits the request.\",\n    \"reaction_to_other\": \"Considers recommender's suggestion positively/neutrally.\",\n    \"changes_previous_interpretation\": \"The dialogue moves from request to a concrete candidate.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says, 'I loved that series as well.'\",\n    \"information_available\": \"SEEKER has the recommender's suggestion of A Nightmare on Elm Street and now recalls their own liking for that series.\",\n    \"preferences\": \"Likes Alien, Halloween, and the A Nightmare on Elm Street series.\",\n    \"belief_before\": \"A Nightmare on Elm Street was only a proposed candidate; SEEKER's preference toward it was unknown.\",\n    \"belief_update\": \"SEEKER confirms they loved the A Nightmare on Elm Street series.\",\n    \"belief_after\": \"A Nightmare on Elm Street is a positive match; recommender's suggestion aligns with SEEKER's taste.\",\n    \"emotion\": \"Enthusiastic/positive\",\n    \"intention\": \"Express approval and signal good/shared taste.\",\n    \"conversational_goal\": \"Confirm the suggestion is a good fit and encourage further recommendations.\",\n    \"reaction_to_other\": \"Positive agreement/approval toward recommender's suggestion.\",\n    \"changes_previous_interpretation\": \"Updates the earlier candidate from unknown preference to liked/positive.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says it was great and asks whether SEEKER has seen the Friday the 13th (1980) series.\",\n    \"information_available\": \"SEEKER has already confirmed liking A Nightmare on Elm Street; recommender now agrees and asks about Friday the 13th.\",\n    \"preferences\": \"Likes Alien, Halloween, and A Nightmare on Elm Street; preference/familiarity with Friday the 13th is not yet stated.\",\n    \"belief_before\": \"Recommender made one good suggestion; SEEKER had confirmed liking A Nightmare on Elm Street.\",\n    \"belief_update\": \"Recommender also likes A Nightmare on Elm Street and introduces/probes Friday the 13th as another relevant series.\",\n    \"belief_after\": \"Friday the 13th may be another candidate; recommender does not yet know if SEEKER has seen it.\",\n    \"emotion\": \"Engaged/positive\",\n    \"intention\": \"Answer the question about Friday the 13th and continue seeking a good match.\",\n    \"conversational_goal\": \"Continue narrowing/expanding recommendations based on SEEKER's familiarity and taste.\",\n    \"reaction_to_other\": \"Positive to recommender's agreement; interested in the new question.\",\n    \"changes_previous_interpretation\": \"Expands the candidate set and shifts to checking familiarity with another horror series.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

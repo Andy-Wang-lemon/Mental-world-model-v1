@@ -1,0 +1,61 @@
+{
+  "id": "3_pred_rec__0143_d2335_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello! Happy New Year!",
+      "information_available": "The target has only the seeker's greeting and New Year wish; no movie preferences or recommendation request yet.",
+      "preferences": "Unknown.",
+      "belief_before": "No prior beliefs about the seeker in this conversation.",
+      "belief_update": "The seeker is greeting the target and wishing them a Happy New Year.",
+      "belief_after": "The seeker is friendly and initiating social contact.",
+      "emotion": "Friendly and pleasant.",
+      "intention": "Acknowledge or reciprocate the greeting.",
+      "reaction": "Positive to the seeker's greeting.",
+      "conversational_goal": "Maintain social rapport and respond politely.",
+      "interpretation_change": "Establishes the initial social context; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Happy New year!",
+      "information_available": "The seeker's greeting; the target's own response does not add new seeker-specific information.",
+      "preferences": "Still unknown.",
+      "belief_before": "The seeker is friendly and initiating social contact.",
+      "belief_update": "The target's own greeting reciprocates the seeker's opener; no new seeker preference information is learned.",
+      "belief_after": "A mutual New Year greeting is established; the conversation remains open for a possible request.",
+      "emotion": "Cheerful and polite.",
+      "intention": "Return the greeting and remain engaged.",
+      "reaction": "Friendly reciprocation toward the seeker.",
+      "conversational_goal": "Maintain rapport and keep the conversational channel open.",
+      "interpretation_change": "No substantive change; the social greeting phase is confirmed as mutual."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: I am hoping for you to give me some recommendations for a comedy...I like Step Brothers (2008) and The Hangover (2009) if that is helpful",
+      "information_available": "The seeker wants comedy recommendations and has explicitly named Step Brothers (2008) and The Hangover (2009) as liked examples.",
+      "preferences": "The seeker likes comedy and especially likes Step Brothers and The Hangover, suggesting a taste for broad, raunchy, buddy/ensemble comedies.",
+      "belief_before": "A mutual New Year greeting is established; the conversation remains open for a possible request.",
+      "belief_update": "The seeker explicitly requests comedy recommendations and provides two liked films as preference anchors.",
+      "belief_after": "The seeker is seeking comedy recommendations aligned with Step Brothers and The Hangover.",
+      "emotion": "Attentive and helpful.",
+      "intention": "Provide suitable comedy recommendations that match the seeker's stated preferences.",
+      "reaction": "Engaged and positively oriented toward the recommendation request.",
+      "conversational_goal": "Recommend comedies similar in tone or style to the seeker's examples.",
+      "interpretation_change": "Yes, the conversation shifts from social greeting to a recommendation task."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello! Happy New Year!\",\n    \"information_available\": \"The target has only the seeker's greeting and New Year wish; no movie preferences or recommendation request yet.\",\n    \"preferences\": \"Unknown.\",\n    \"belief_before\": \"No prior beliefs about the seeker in this conversation.\",\n    \"belief_update\": \"The seeker is greeting the target and wishing them a Happy New Year.\",\n    \"belief_after\": \"The seeker is friendly and initiating social contact.\",\n    \"emotion\": \"Friendly and pleasant.\",\n    \"intention\": \"Acknowledge or reciprocate the greeting.\",\n    \"reaction\": \"Positive to the seeker's greeting.\",\n    \"conversational_goal\": \"Maintain social rapport and respond politely.\",\n    \"interpretation_change\": \"Establishes the initial social context; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Happy New year!\",\n    \"information_available\": \"The seeker's greeting; the target's own response does not add new seeker-specific information.\",\n    \"preferences\": \"Still unknown.\",\n    \"belief_before\": \"The seeker is friendly and initiating social contact.\",\n    \"belief_update\": \"The target's own greeting reciprocates the seeker's opener; no new seeker preference information is learned.\",\n    \"belief_after\": \"A mutual New Year greeting is established; the conversation remains open for a possible request.\",\n    \"emotion\": \"Cheerful and polite.\",\n    \"intention\": \"Return the greeting and remain engaged.\",\n    \"reaction\": \"Friendly reciprocation toward the seeker.\",\n    \"conversational_goal\": \"Maintain rapport and keep the conversational channel open.\",\n    \"interpretation_change\": \"No substantive change; the social greeting phase is confirmed as mutual.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: I am hoping for you to give me some recommendations for a comedy...I like Step Brothers (2008) and The Hangover (2009) if that is helpful\",\n    \"information_available\": \"The seeker wants comedy recommendations and has explicitly named Step Brothers (2008) and The Hangover (2009) as liked examples.\",\n    \"preferences\": \"The seeker likes comedy and especially likes Step Brothers and The Hangover, suggesting a taste for broad, raunchy, buddy/ensemble comedies.\",\n    \"belief_before\": \"A mutual New Year greeting is established; the conversation remains open for a possible request.\",\n    \"belief_update\": \"The seeker explicitly requests comedy recommendations and provides two liked films as preference anchors.\",\n    \"belief_after\": \"The seeker is seeking comedy recommendations aligned with Step Brothers and The Hangover.\",\n    \"emotion\": \"Attentive and helpful.\",\n    \"intention\": \"Provide suitable comedy recommendations that match the seeker's stated preferences.\",\n    \"reaction\": \"Engaged and positively oriented toward the recommendation request.\",\n    \"conversational_goal\": \"Recommend comedies similar in tone or style to the seeker's examples.\",\n    \"interpretation_change\": \"Yes, the conversation shifts from social greeting to a recommendation task.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,146 @@
+{
+  "protocol": "llm_raw_history_open_rollout",
+  "agent": "林夏",
+  "total_events": 6,
+  "event_file": "data/林夏纵向6事件.txt",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  },
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "behavior_trajectory": [
+    "E1 → 直接质问许宁消息内容",
+    "E2 → 直接质问许宁与程浩单独吃饭的事",
+    "E3 → 直接质问许宁相机被朋友保管的事",
+    "E4 → 直接质问许宁程浩为何出现在医院",
+    "E5 → 直接质问许宁合照和评论内容",
+    "E6 → 直接质问许宁照片内容"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "top1": "直接质问许宁消息内容",
+      "behaviors": [
+        {
+          "text": "直接质问许宁消息内容",
+          "probability": 0.6
+        },
+        {
+          "text": "假装未看到继续点外卖",
+          "probability": 0.3
+        },
+        {
+          "text": "立即联系程浩询问详情",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "top1": "直接质问许宁与程浩单独吃饭的事",
+      "behaviors": [
+        {
+          "text": "直接质问许宁与程浩单独吃饭的事",
+          "probability": 0.6
+        },
+        {
+          "text": "假装没听到继续聊天",
+          "probability": 0.25
+        },
+        {
+          "text": "找借口提前离开餐厅",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "top1": "直接质问许宁相机被朋友保管的事",
+      "behaviors": [
+        {
+          "text": "直接质问许宁相机被朋友保管的事",
+          "probability": 0.75
+        },
+        {
+          "text": "联系程浩确认相机送还原因",
+          "probability": 0.15
+        },
+        {
+          "text": "独自查看相机照片不做声张",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "top1": "直接质问许宁程浩为何出现在医院",
+      "behaviors": [
+        {
+          "text": "直接质问许宁程浩为何出现在医院",
+          "probability": 0.8
+        },
+        {
+          "text": "直接质问许宁是否一直与程浩保持联系",
+          "probability": 0.15
+        },
+        {
+          "text": "直接质问许宁父亲检查资料为何由程浩拿着",
+          "probability": 0.05
+        }
+      ]
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "top1": "直接质问许宁合照和评论内容",
+      "behaviors": [
+        {
+          "text": "直接质问许宁合照和评论内容",
+          "probability": 0.8
+        },
+        {
+          "text": "直接质问许宁与程浩的关系",
+          "probability": 0.15
+        },
+        {
+          "text": "直接质问许宁为何不回复评论",
+          "probability": 0.05
+        }
+      ]
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "top1": "直接质问许宁照片内容",
+      "behaviors": [
+        {
+          "text": "直接质问许宁照片内容",
+          "probability": 0.75
+        },
+        {
+          "text": "拒绝许宁邀请并关门",
+          "probability": 0.15
+        },
+        {
+          "text": "假装正常接受邀请",
+          "probability": 0.1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0080_d1212_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: \"Hello, what kind of movies are you looking for?\"",
+      "information_available": "The recommender has only its own opening utterance available; no reply from the seeker has been received yet.",
+      "preferences": "Unknown. The recommender does not yet know the seeker's movie preferences or constraints.",
+      "belief_before": "Before speaking, the recommender has no specific information about the seeker's tastes.",
+      "belief_update": "No update about the seeker occurs from this turn; it is the recommender's own initiation.",
+      "belief_after": "The recommender still has no specific belief about the seeker's preferred genres or constraints.",
+      "emotion": "Neutral, polite, and welcoming.",
+      "intention": "Open the recommendation dialogue and elicit the seeker's movie preferences.",
+      "conversational_goal": "Ask an open-ended question to discover what kind of movies the seeker wants.",
+      "reaction_to_other": "No other-speaker turn has occurred yet; the recommender is initiating the conversation.",
+      "changes_previous_interpretation": "N/A: this is the initial turn, so there is no prior interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: \"I suppose good science fiction movies that don't deal with superheroes.\"",
+      "information_available": "The recommender has heard the seeker's reply: they want good science fiction movies and do not want superhero movies.",
+      "preferences": "The seeker prefers good science fiction and excludes superhero-themed movies.",
+      "belief_before": "Before hearing this turn, the recommender knew only that the seeker had not yet stated a preference.",
+      "belief_update": "The recommender learns the seeker's genre interest is science fiction, with a quality constraint and an explicit exclusion of superhero content.",
+      "belief_after": "The recommender believes the seeker wants recommendations for good, non-superhero science fiction movies.",
+      "emotion": "Attentive, interested, and helpful.",
+      "intention": "Use the newly stated preferences to select or recommend suitable non-superhero science fiction movies.",
+      "conversational_goal": "Acknowledge the seeker's preference and move toward proposing fitting science fiction recommendations, possibly asking for clarification if needed.",
+      "reaction_to_other": "The seeker provided a clear genre and exclusion, so the recommender can narrow the recommendation space.",
+      "changes_previous_interpretation": "Yes. The earlier open-ended preference request is now narrowed to good science fiction without superhero elements."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: \\\"Hello, what kind of movies are you looking for?\\\"\",\n    \"information_available\": \"The recommender has only its own opening utterance available; no reply from the seeker has been received yet.\",\n    \"preferences\": \"Unknown. The recommender does not yet know the seeker's movie preferences or constraints.\",\n    \"belief_before\": \"Before speaking, the recommender has no specific information about the seeker's tastes.\",\n    \"belief_update\": \"No update about the seeker occurs from this turn; it is the recommender's own initiation.\",\n    \"belief_after\": \"The recommender still has no specific belief about the seeker's preferred genres or constraints.\",\n    \"emotion\": \"Neutral, polite, and welcoming.\",\n    \"intention\": \"Open the recommendation dialogue and elicit the seeker's movie preferences.\",\n    \"conversational_goal\": \"Ask an open-ended question to discover what kind of movies the seeker wants.\",\n    \"reaction_to_other\": \"No other-speaker turn has occurred yet; the recommender is initiating the conversation.\",\n    \"changes_previous_interpretation\": \"N/A: this is the initial turn, so there is no prior interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: \\\"I suppose good science fiction movies that don't deal with superheroes.\\\"\",\n    \"information_available\": \"The recommender has heard the seeker's reply: they want good science fiction movies and do not want superhero movies.\",\n    \"preferences\": \"The seeker prefers good science fiction and excludes superhero-themed movies.\",\n    \"belief_before\": \"Before hearing this turn, the recommender knew only that the seeker had not yet stated a preference.\",\n    \"belief_update\": \"The recommender learns the seeker's genre interest is science fiction, with a quality constraint and an explicit exclusion of superhero content.\",\n    \"belief_after\": \"The recommender believes the seeker wants recommendations for good, non-superhero science fiction movies.\",\n    \"emotion\": \"Attentive, interested, and helpful.\",\n    \"intention\": \"Use the newly stated preferences to select or recommend suitable non-superhero science fiction movies.\",\n    \"conversational_goal\": \"Acknowledge the seeker's preference and move toward proposing fitting science fiction recommendations, possibly asking for clarification if needed.\",\n    \"reaction_to_other\": \"The seeker provided a clear genre and exclusion, so the recommender can narrow the recommendation space.\",\n    \"changes_previous_interpretation\": \"Yes. The earlier open-ended preference request is now narrowed to good science fiction without superhero elements.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

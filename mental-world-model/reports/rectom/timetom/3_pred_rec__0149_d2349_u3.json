@@ -1,0 +1,58 @@
+{
+  "id": "3_pred_rec__0149_d2349_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight",
+      "information_available": "SEEKER greeted; is looking for a children's movie; target audience is his little brother; context is babysitting tonight. No title, genre, age, platform, or other constraints yet.",
+      "preferences": "As RECOMMENDER, likely prefers to help with an appropriate child-friendly recommendation and maintain a friendly tone. SEEKER's stated preference is a children's movie for his little brother tonight.",
+      "belief_before": "No prior information about this seeker or request; initial turn.",
+      "belief_update": "SEEKER needs a children's movie recommendation for his little brother while babysitting tonight.",
+      "belief_after": "SEEKER wants a kid-friendly movie for tonight; further details such as age, genre, or platform are unknown.",
+      "emotion": "Friendly, attentive, helpful.",
+      "intention": "Acknowledge the request and prepare to recommend an appropriate children's movie.",
+      "reaction_to_other": "Receptive and positive; treats the message as a legitimate recommendation request.",
+      "conversational_goal": "Respond helpfully, likely by greeting and then moving toward children's movie options.",
+      "interpretation_change": "No previous interpretation; this establishes the initial request interpretation."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER (self) says: Hi happy new year",
+      "information_available": "Prior SEEKER request for a children's movie for his little brother tonight. Target's own greeting/New Year message.",
+      "preferences": "Prefers politeness and social acknowledgment at this point; still likely intends to help with the movie request.",
+      "belief_before": "SEEKER wants a children's movie for his little brother tonight; no further details.",
+      "belief_update": "I respond with a greeting/New Year wish rather than directly addressing the movie request; no new information about the movie need is added.",
+      "belief_after": "SEEKER's movie request remains pending; I have greeted and introduced a New Year social context.",
+      "emotion": "Cheerful, polite.",
+      "intention": "Exchange pleasantries and signal friendliness before assisting.",
+      "reaction_to_other": "Positive and friendly toward SEEKER, but not yet directly engaging the movie request.",
+      "conversational_goal": "Return greeting/acknowledge New Year and keep the conversation open for recommendation.",
+      "interpretation_change": "Does not change the core interpretation of SEEKER's movie request; adds social/holiday greeting context."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: Happy New Year",
+      "information_available": "SEEKER reciprocates the New Year greeting. No additional constraints about the children's movie are provided.",
+      "preferences": "SEEKER is willing to engage socially; the recommendation need remains. RECOMMENDER likely still prefers to help with the movie request.",
+      "belief_before": "SEEKER wants a children's movie for his little brother tonight; I greeted Happy New Year.",
+      "belief_update": "SEEKER is polite and reciprocates the greeting; the movie request remains unresolved.",
+      "belief_after": "SEEKER expects continued conversation; I should now proceed toward the movie recommendation or ask clarifying questions.",
+      "emotion": "Positive, friendly.",
+      "intention": "Acknowledge the greeting and move toward fulfilling the movie recommendation request.",
+      "reaction_to_other": "Friendly; appreciates the reciprocated greeting.",
+      "conversational_goal": "Complete the social greeting and transition to helping with a children's movie.",
+      "interpretation_change": "Confirms the social/holiday context; does not alter the core movie request interpretation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\",\n    \"information_available\": \"SEEKER greeted; is looking for a children's movie; target audience is his little brother; context is babysitting tonight. No title, genre, age, platform, or other constraints yet.\",\n    \"preferences\": \"As RECOMMENDER, likely prefers to help with an appropriate child-friendly recommendation and maintain a friendly tone. SEEKER's stated preference is a children's movie for his little brother tonight.\",\n    \"belief_before\": \"No prior information about this seeker or request; initial turn.\",\n    \"belief_update\": \"SEEKER needs a children's movie recommendation for his little brother while babysitting tonight.\",\n    \"belief_after\": \"SEEKER wants a kid-friendly movie for tonight; further details such as age, genre, or platform are unknown.\",\n    \"emotion\": \"Friendly, attentive, helpful.\",\n    \"intention\": \"Acknowledge the request and prepare to recommend an appropriate children's movie.\",\n    \"reaction_to_other\": \"Receptive and positive; treats the message as a legitimate recommendation request.\",\n    \"conversational_goal\": \"Respond helpfully, likely by greeting and then moving toward children's movie options.\",\n    \"interpretation_change\": \"No previous interpretation; this establishes the initial request interpretation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER (self) says: Hi happy new year\",\n    \"information_available\": \"Prior SEEKER request for a children's movie for his little brother tonight. Target's own greeting/New Year message.\",\n    \"preferences\": \"Prefers politeness and social acknowledgment at this point; still likely intends to help with the movie request.\",\n    \"belief_before\": \"SEEKER wants a children's movie for his little brother tonight; no further details.\",\n    \"belief_update\": \"I respond with a greeting/New Year wish rather than directly addressing the movie request; no new information about the movie need is added.\",\n    \"belief_after\": \"SEEKER's movie request remains pending; I have greeted and introduced a New Year social context.\",\n    \"emotion\": \"Cheerful, polite.\",\n    \"intention\": \"Exchange pleasantries and signal friendliness before assisting.\",\n    \"reaction_to_other\": \"Positive and friendly toward SEEKER, but not yet directly engaging the movie request.\",\n    \"conversational_goal\": \"Return greeting/acknowledge New Year and keep the conversation open for recommendation.\",\n    \"interpretation_change\": \"Does not change the core interpretation of SEEKER's movie request; adds social/holiday greeting context.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: Happy New Year\",\n    \"information_available\": \"SEEKER reciprocates the New Year greeting. No additional constraints about the children's movie are provided.\",\n    \"preferences\": \"SEEKER is willing to engage socially; the recommendation need remains. RECOMMENDER likely still prefers to help with the movie request.\",\n    \"belief_before\": \"SEEKER wants a children's movie for his little brother tonight; I greeted Happy New Year.\",\n    \"belief_update\": \"SEEKER is polite and reciprocates the greeting; the movie request remains unresolved.\",\n    \"belief_after\": \"SEEKER expects continued conversation; I should now proceed toward the movie recommendation or ask clarifying questions.\",\n    \"emotion\": \"Positive, friendly.\",\n    \"intention\": \"Acknowledge the greeting and move toward fulfilling the movie recommendation request.\",\n    \"reaction_to_other\": \"Friendly; appreciates the reciprocated greeting.\",\n    \"conversational_goal\": \"Complete the social greeting and transition to helping with a children's movie.\",\n    \"interpretation_change\": \"Confirms the social/holiday context; does not alter the core movie request interpretation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

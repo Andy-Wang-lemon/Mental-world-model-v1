@@ -1,0 +1,61 @@
+{
+  "id": "trial65__type_d_whether_14",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Mason Hurley",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Mason reviews financial reports and notices discrepancies, especially unusually high healthcare expenses. He confronts Martha, who acknowledges a possible misentry and says she will review and correct it.",
+      "belief_before": "Mason generally trusted Martha's handling of the community center finances and had no active suspicion of mismanagement.",
+      "belief_update": "Yes; the discrepancies lead him to suspect Martha might be mismanaging funds, and Martha's response does not fully resolve the issue because the explanation is still tentative.",
+      "belief_after": "Martha might be mismanaging funds; the discrepancies could be a clerical error, but that has not yet been confirmed.",
+      "emotion": "Suspicious and anxious.",
+      "intention": "Wait for Martha to review and correct the report, and seek clarification or verification of the discrepancies."
+    },
+    {
+      "time": 2,
+      "observed": "Mason reviews the financial report with Martha and learns that the discrepancies were due to a simple clerical error, not mismanagement. Martha accepts his apology.",
+      "belief_before": "Martha might be mismanaging funds, though the discrepancy could still be a misentry that needs verification.",
+      "belief_update": "Yes; the review confirms the discrepancies were a clerical error, so his suspicion of mismanagement is disproven.",
+      "belief_after": "Martha is not mismanaging funds; the issue was a simple clerical error, and his initial suspicion was mistaken.",
+      "emotion": "Relieved but embarrassed about his initial suspicion.",
+      "intention": "Apologize to Martha, move past the suspicion, and support double-checking entries to avoid future errors."
+    },
+    {
+      "time": 3,
+      "observed": "Mason reflects on recurring clerical errors and discusses with Martha that the problem is not her management but the current financial system. Martha agrees and offers to help with a new system proposal.",
+      "belief_before": "Martha is competent and not mismanaging funds, but the financial management system may be inadequate because errors keep occurring.",
+      "belief_update": "No major reversal; the discussion strengthens his belief that Martha is competent while the existing system is inadequate and needs replacing.",
+      "belief_after": "Martha is competent; the financial management systems are inadequate and require a new, more robust system.",
+      "emotion": "Frustrated with the system but empathetic toward Martha.",
+      "intention": "Draft a proposal for a new financial system and ask for Martha's input."
+    },
+    {
+      "time": 4,
+      "observed": "Mason has finished drafting the new financial system proposal. He shares it with Martha, expresses uncertainty about management approval, and Martha offers confidence and agrees to help gather supporting data.",
+      "belief_before": "The new financial system would be beneficial, but management may not approve or implement it.",
+      "belief_update": "Partially; Martha's reassurance and willingness to help increase his confidence in the proposal, though uncertainty about management approval remains.",
+      "belief_after": "The proposal is solid and beneficial, and with Martha's help it can be strengthened, but management approval is still uncertain.",
+      "emotion": "Hopeful, uncertain, and motivated.",
+      "intention": "Prepare a detailed presentation and gather data with Martha to strengthen the case for the proposal."
+    },
+    {
+      "time": 5,
+      "observed": "Mason has presented the new financial system proposal to management. He believes the presentation went well, feels he has done everything he can, and Martha encourages him to take a break.",
+      "belief_before": "The proposal is beneficial, but he was uncertain whether management would approve and implement it.",
+      "belief_update": "Yes; after presenting, he believes he has advocated as fully as possible and that the decision now rests with management.",
+      "belief_after": "He has done everything possible for the proposal; the outcome is now up to management, and good news may still come.",
+      "emotion": "Satisfied with his effort but physically and mentally exhausted; hopeful.",
+      "intention": "Take a few days off to recharge and reflect, then await management's decision."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Mason reviews financial reports and notices discrepancies, especially unusually high healthcare expenses. He confronts Martha, who acknowledges a possible misentry and says she will review and correct it.\",\n    \"belief_before\": \"Mason generally trusted Martha's handling of the community center finances and had no active suspicion of mismanagement.\",\n    \"belief_update\": \"Yes; the discrepancies lead him to suspect Martha might be mismanaging funds, and Martha's response does not fully resolve the issue because the explanation is still tentative.\",\n    \"belief_after\": \"Martha might be mismanaging funds; the discrepancies could be a clerical error, but that has not yet been confirmed.\",\n    \"emotion\": \"Suspicious and anxious.\",\n    \"intention\": \"Wait for Martha to review and correct the report, and seek clarification or verification of the discrepancies.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Mason reviews the financial report with Martha and learns that the discrepancies were due to a simple clerical error, not mismanagement. Martha accepts his apology.\",\n    \"belief_before\": \"Martha might be mismanaging funds, though the discrepancy could still be a misentry that needs verification.\",\n    \"belief_update\": \"Yes; the review confirms the discrepancies were a clerical error, so his suspicion of mismanagement is disproven.\",\n    \"belief_after\": \"Martha is not mismanaging funds; the issue was a simple clerical error, and his initial suspicion was mistaken.\",\n    \"emotion\": \"Relieved but embarrassed about his initial suspicion.\",\n    \"intention\": \"Apologize to Martha, move past the suspicion, and support double-checking entries to avoid future errors.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Mason reflects on recurring clerical errors and discusses with Martha that the problem is not her management but the current financial system. Martha agrees and offers to help with a new system proposal.\",\n    \"belief_before\": \"Martha is competent and not mismanaging funds, but the financial management system may be inadequate because errors keep occurring.\",\n    \"belief_update\": \"No major reversal; the discussion strengthens his belief that Martha is competent while the existing system is inadequate and needs replacing.\",\n    \"belief_after\": \"Martha is competent; the financial management systems are inadequate and require a new, more robust system.\",\n    \"emotion\": \"Frustrated with the system but empathetic toward Martha.\",\n    \"intention\": \"Draft a proposal for a new financial system and ask for Martha's input.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Mason has finished drafting the new financial system proposal. He shares it with Martha, expresses uncertainty about management approval, and Martha offers confidence and agrees to help gather supporting data.\",\n    \"belief_before\": \"The new financial system would be beneficial, but management may not approve or implement it.\",\n    \"belief_update\": \"Partially; Martha's reassurance and willingness to help increase his confidence in the proposal, though uncertainty about management approval remains.\",\n    \"belief_after\": \"The proposal is solid and beneficial, and with Martha's help it can be strengthened, but management approval is still uncertain.\",\n    \"emotion\": \"Hopeful, uncertain, and motivated.\",\n    \"intention\": \"Prepare a detailed presentation and gather data with Martha to strengthen the case for the proposal.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Mason has presented the new financial system proposal to management. He believes the presentation went well, feels he has done everything he can, and Martha encourages him to take a break.\",\n    \"belief_before\": \"The proposal is beneficial, but he was uncertain whether management would approve and implement it.\",\n    \"belief_update\": \"Yes; after presenting, he believes he has advocated as fully as possible and that the decision now rests with management.\",\n    \"belief_after\": \"He has done everything possible for the proposal; the outcome is now up to management, and good news may still come.\",\n    \"emotion\": \"Satisfied with his effort but physically and mentally exhausted; hopeful.\",\n    \"intention\": \"Take a few days off to recharge and reflect, then await management's decision.\"\n  }\n]",
+  "final_response": "ANSWER: a",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial65"
+}

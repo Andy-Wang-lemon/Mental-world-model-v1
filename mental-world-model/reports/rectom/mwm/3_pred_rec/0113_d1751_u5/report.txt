@@ -1,0 +1,28 @@
+数据：3_pred_rec
+题号：113  d1751_u5
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!\nRECOMMENDER says: The Green Inferno  (2013)  is a great horror movie...Insidious  (2011)  is another classic horror film\nSEEKER says: SOmething more along the lines of The Texas Chainsaw Massacre  (2003)；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!\nRECOMMENDER says: The Green Inferno  (2013)  is a great horror movie...Insidious  (2011)  is another classic horror film\nSEEKER says: SOmething more along the lines of The Texas Chainsaw Massacre  (2003)；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.2, "b": 0.5, "c": 0.9, "d": 0.4, "e": 0.1}
+选择说明：The seeker just specified a horror preference, so the recommender most directly should give or refine a recommendation.
+标准：D: Explains a recommendation with background or reasoning
+C: Provides a recommendation directly or by inquiring further
+结果：对

@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 185,
+  "item_id": "d2818_u8",
+  "dialogue_id": "2818",
+  "utterance_pos": 8,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick\nRECOMMENDER says: Bright (2017)  is a Netflix；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick\nRECOMMENDER says: Bright (2017)  is a Netflix；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.3,
+    "b": 0.2,
+    "c": 0.9,
+    "d": 0.6,
+    "e": 0.1
+  },
+  "score_reason": "The seeker just stated broad genre preferences, so the recommender is most directly supported to provide a recommendation or inquire further.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

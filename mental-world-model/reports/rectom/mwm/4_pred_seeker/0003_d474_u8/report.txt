@@ -1,0 +1,43 @@
+数据：4_pred_seeker
+题号：3  d474_u8
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER 此刻经验到的，是一连串片名不再只是被推荐的对象，而变成一面面照向“我究竟属于哪种观众”的镜子：RECOMMENDER 说出《It (2017)》《沉默的羔羊》《第六感》并说更爱恐怖片，这些都被收摄为衡量自己观影口味与恐怖片身份归属的刻度。与此同时，推荐本身被固定成一条应先贴合自己已知喜好与观影历史的规则，所以每部片名、乃至对方说“最喜欢该系列”的说法，都先被放进“是否与我的口味相符”的框架里审看；符合与否，就是此刻这个世界向 SEEKER 呈现出的主要差别。",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "此刻这些片名在我这里不再只是候选电影，而成了照向我自己观影身份的刻度：对方说《It (2017)》《沉默的羔羊》《第六感》，又说自己更爱恐怖片、甚至把某个恐怖系列当成最爱，我会立刻把它们收进‘这是否贴合我的口味、我究竟算哪类观众’的框架里审看。已看过的、喜欢的、明确不喜欢的，都成为筛选推荐是否成立的依据；惊悚与心理向的偏好被当作更贴近我的标记，恐怖片则被放在较远的位置。对方越强调自己对恐怖片的偏爱，我越会确认彼此口味并不一致，但这不迫使我要改变自己的标准，反而更倾向继续按已知喜好来衡量片名：合我口味的可以接纳，不合的就保持距离，同时把自己的观众身份说得更清楚。",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "SEEKER asks for help finding a movie; SEEKER says SEEKER does not really like horror movies and asks about thrillers; SEEKER says SEEKER has seen The Silence of the Lambs and enjoyed it, and states that one of SEEKER's favorite thrillers is The Number 23 (2007) and The Sixth Sense (1999); SEEKER says that is okay and that SEEKER just does not really like the Halloween (2007) movies.",
+  "predicted_actions": [
+    {
+      "content": "自行筛选/挑选影片",
+      "probability": 0.45
+    },
+    {
+      "content": "请求按惊悚片方向再推荐",
+      "probability": 0.35
+    },
+    {
+      "content": "推荐《The Number 23》",
+      "probability": 0.2
+    }
+  ]
+}
+选择：C: Asks for a recommendation or expresses their preference
+分数：{"a": 0.0, "b": 0.0, "c": 1.0, "d": 0.0}
+选择说明：Predicted action '请求按惊悚片方向再推荐' directly paraphrases asking for a recommendation.
+标准：B: Add more information about their preferences, such as genres, actors, or past favorites
+结果：对
+人工判定：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：「请求按惊悚片方向再推荐」是在补充自己要惊悚、不要恐怖的偏好，标准答案是 B。人工判定算对。

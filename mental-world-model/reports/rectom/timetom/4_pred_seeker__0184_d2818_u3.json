@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0184_d2818_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: \"Good evening!\"",
+      "information_available": "A person (Recommender) has greeted SEEKER in the evening. No topic or recommendation request has been stated yet.",
+      "preferences": "Unknown at this point; SEEKER has not stated any preferences.",
+      "belief_before": "No prior conversational context is available.",
+      "belief_update": "Recommender has initiated a conversation by greeting SEEKER.",
+      "belief_after": "Recommender is addressing SEEKER and appears open to interaction.",
+      "emotion": "Neutral to mildly positive; a greeting has been received.",
+      "intention": "Likely to acknowledge or respond to the greeting.",
+      "reaction_to_other_speaker": "Receives the greeting neutrally or politely.",
+      "conversational_goal": "Respond appropriately so the conversation can continue.",
+      "changes_previous_interpretation": "N/A; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: \"Hi are there any new movies out that are worth watching\"",
+      "information_available": "Recommender greeted SEEKER in the previous turn. SEEKER now asks about new movies worth watching.",
+      "preferences": "SEEKER wants new movies that are worth watching; no specific genre is stated.",
+      "belief_before": "Recommender has greeted SEEKER, but SEEKER's purpose is not yet known.",
+      "belief_update": "SEEKER has expressed interest in receiving movie recommendations.",
+      "belief_after": "Recommender may be able to suggest new, worthwhile movies; SEEKER is awaiting a response.",
+      "emotion": "Curious and expectant.",
+      "intention": "Ask for movie recommendations.",
+      "reaction_to_other_speaker": "Acknowledges the greeting with \"Hi\" and then asks a question.",
+      "conversational_goal": "Obtain suggestions for new movies worth watching.",
+      "changes_previous_interpretation": "Yes; it clarifies SEEKER's goal as seeking movie recommendations."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: \"What movie genres are you interested in?...I thought Bright (2017) was really good, even without the back story.\"",
+      "information_available": "Recommender asks what genres SEEKER is interested in. Recommender also states that Bright (2017) was really good, even without the back story.",
+      "preferences": "SEEKER has not stated a genre preference yet; the general preference remains for new movies worth watching.",
+      "belief_before": "SEEKER asked for new worthwhile movies and was waiting for recommendations.",
+      "belief_update": "Recommender wants to know SEEKER's genre interests and offers Bright (2017) as a positive example.",
+      "belief_after": "Recommender may tailor suggestions based on genre. Bright (2017) is a possible recommendation for SEEKER to consider.",
+      "emotion": "Interested and attentive; possibly curious about Bright (2017).",
+      "intention": "Likely to answer the genre question and/or respond to the Bright (2017) suggestion.",
+      "reaction_to_other_speaker": "Receives a clarifying question and one concrete movie recommendation.",
+      "conversational_goal": "Provide genre preferences to get more relevant recommendations, and evaluate the Bright (2017) suggestion.",
+      "changes_previous_interpretation": "Yes; the response now includes a clarifying question and a concrete example, so the recommendation process is more specific than a simple request for new movies."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: \\\"Good evening!\\\"\",\n    \"information_available\": \"A person (Recommender) has greeted SEEKER in the evening. No topic or recommendation request has been stated yet.\",\n    \"preferences\": \"Unknown at this point; SEEKER has not stated any preferences.\",\n    \"belief_before\": \"No prior conversational context is available.\",\n    \"belief_update\": \"Recommender has initiated a conversation by greeting SEEKER.\",\n    \"belief_after\": \"Recommender is addressing SEEKER and appears open to interaction.\",\n    \"emotion\": \"Neutral to mildly positive; a greeting has been received.\",\n    \"intention\": \"Likely to acknowledge or respond to the greeting.\",\n    \"reaction_to_other_speaker\": \"Receives the greeting neutrally or politely.\",\n    \"conversational_goal\": \"Respond appropriately so the conversation can continue.\",\n    \"changes_previous_interpretation\": \"N/A; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: \\\"Hi are there any new movies out that are worth watching\\\"\",\n    \"information_available\": \"Recommender greeted SEEKER in the previous turn. SEEKER now asks about new movies worth watching.\",\n    \"preferences\": \"SEEKER wants new movies that are worth watching; no specific genre is stated.\",\n    \"belief_before\": \"Recommender has greeted SEEKER, but SEEKER's purpose is not yet known.\",\n    \"belief_update\": \"SEEKER has expressed interest in receiving movie recommendations.\",\n    \"belief_after\": \"Recommender may be able to suggest new, worthwhile movies; SEEKER is awaiting a response.\",\n    \"emotion\": \"Curious and expectant.\",\n    \"intention\": \"Ask for movie recommendations.\",\n    \"reaction_to_other_speaker\": \"Acknowledges the greeting with \\\"Hi\\\" and then asks a question.\",\n    \"conversational_goal\": \"Obtain suggestions for new movies worth watching.\",\n    \"changes_previous_interpretation\": \"Yes; it clarifies SEEKER's goal as seeking movie recommendations.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: \\\"What movie genres are you interested in?...I thought Bright (2017) was really good, even without the back story.\\\"\",\n    \"information_available\": \"Recommender asks what genres SEEKER is interested in. Recommender also states that Bright (2017) was really good, even without the back story.\",\n    \"preferences\": \"SEEKER has not stated a genre preference yet; the general preference remains for new movies worth watching.\",\n    \"belief_before\": \"SEEKER asked for new worthwhile movies and was waiting for recommendations.\",\n    \"belief_update\": \"Recommender wants to know SEEKER's genre interests and offers Bright (2017) as a positive example.\",\n    \"belief_after\": \"Recommender may tailor suggestions based on genre. Bright (2017) is a possible recommendation for SEEKER to consider.\",\n    \"emotion\": \"Interested and attentive; possibly curious about Bright (2017).\",\n    \"intention\": \"Likely to answer the genre question and/or respond to the Bright (2017) suggestion.\",\n    \"reaction_to_other_speaker\": \"Receives a clarifying question and one concrete movie recommendation.\",\n    \"conversational_goal\": \"Provide genre preferences to get more relevant recommendations, and evaluate the Bright (2017) suggestion.\",\n    \"changes_previous_interpretation\": \"Yes; the response now includes a clarifying question and a concrete example, so the recommendation process is more specific than a simple request for new movies.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

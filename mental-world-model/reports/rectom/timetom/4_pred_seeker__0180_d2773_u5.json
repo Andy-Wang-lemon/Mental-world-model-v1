@@ -1,0 +1,66 @@
+{
+  "id": "4_pred_seeker__0180_d2773_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello.",
+      "belief_before": "No prior dialogue context; the recommender has not spoken before this greeting.",
+      "belief_update": "The recommender is present and is initiating conversation.",
+      "belief_after": "The recommender has greeted the seeker; no preferences, request, or recommendation has been expressed yet.",
+      "emotion": "neutral/open",
+      "intention": "Acknowledge or respond to the greeting.",
+      "conversational_goal": "Begin the interaction."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER responds to the greeting by asking for a good drama and requesting ideas.",
+      "belief_before": "The recommender has greeted the seeker; no preferences or specific request has been stated yet.",
+      "belief_update": "The seeker expresses a request for a good drama and asks for ideas.",
+      "belief_after": "The seeker wants drama recommendations; the recommender can now offer drama suggestions.",
+      "emotion": "polite/curious",
+      "intention": "Obtain drama recommendations.",
+      "conversational_goal": "Ask for suggestions for a good drama."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER asks whether the seeker has seen Gladiator (2000).",
+      "belief_before": "The seeker has asked for good drama recommendations; the recommender has not yet offered a title.",
+      "belief_update": "The recommender proposes or asks about Gladiator (2000) as a possible drama recommendation.",
+      "belief_after": "Gladiator (2000) is now on the table as a candidate drama option; the seeker must decide how to respond.",
+      "emotion": "neutral/curious",
+      "intention": "Evaluate Gladiator as a possible recommendation and respond.",
+      "conversational_goal": "Assess whether the suggested title fits the drama request."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says no, is not really a fan of that kind, and prefers things like Armageddon (1997).",
+      "belief_before": "The recommender had suggested or asked about Gladiator (2000) as a possible drama.",
+      "belief_update": "The seeker rejects Gladiator-type films and reveals a preference for films like Armageddon (1997).",
+      "belief_after": "The recommender should avoid Gladiator-like suggestions and favor Armageddon-like drama/action/disaster films.",
+      "emotion": "polite but dismissive toward Gladiator-type; positive toward Armageddon-like",
+      "intention": "Redirect recommendations toward the preferred style.",
+      "conversational_goal": "Clarify taste so the recommender can suggest suitable titles."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER suggests The Notebook (2013) if the seeker likes love stories and asks whether the seeker has seen Deep Impact (1998), calling it another one like Armageddon.",
+      "belief_before": "The recommender knows the seeker wants drama, dislikes Gladiator-type films, and likes Armageddon-like films.",
+      "belief_update": "The recommender offers a conditional love-story suggestion and a likely matching suggestion similar to Armageddon.",
+      "belief_after": "Deep Impact appears to be the more relevant recommendation; The Notebook is relevant only if the seeker likes love stories. The seeker has not yet responded to these suggestions.",
+      "emotion": "curious/hopeful, with cautious neutrality toward The Notebook",
+      "intention": "Evaluate the new suggestions and decide whether to pursue Deep Impact or clarify further.",
+      "conversational_goal": "Find a drama recommendation that matches the Armageddon-like preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello.\",\n    \"belief_before\": \"No prior dialogue context; the recommender has not spoken before this greeting.\",\n    \"belief_update\": \"The recommender is present and is initiating conversation.\",\n    \"belief_after\": \"The recommender has greeted the seeker; no preferences, request, or recommendation has been expressed yet.\",\n    \"emotion\": \"neutral/open\",\n    \"intention\": \"Acknowledge or respond to the greeting.\",\n    \"conversational_goal\": \"Begin the interaction.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER responds to the greeting by asking for a good drama and requesting ideas.\",\n    \"belief_before\": \"The recommender has greeted the seeker; no preferences or specific request has been stated yet.\",\n    \"belief_update\": \"The seeker expresses a request for a good drama and asks for ideas.\",\n    \"belief_after\": \"The seeker wants drama recommendations; the recommender can now offer drama suggestions.\",\n    \"emotion\": \"polite/curious\",\n    \"intention\": \"Obtain drama recommendations.\",\n    \"conversational_goal\": \"Ask for suggestions for a good drama.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER asks whether the seeker has seen Gladiator (2000).\",\n    \"belief_before\": \"The seeker has asked for good drama recommendations; the recommender has not yet offered a title.\",\n    \"belief_update\": \"The recommender proposes or asks about Gladiator (2000) as a possible drama recommendation.\",\n    \"belief_after\": \"Gladiator (2000) is now on the table as a candidate drama option; the seeker must decide how to respond.\",\n    \"emotion\": \"neutral/curious\",\n    \"intention\": \"Evaluate Gladiator as a possible recommendation and respond.\",\n    \"conversational_goal\": \"Assess whether the suggested title fits the drama request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says no, is not really a fan of that kind, and prefers things like Armageddon (1997).\",\n    \"belief_before\": \"The recommender had suggested or asked about Gladiator (2000) as a possible drama.\",\n    \"belief_update\": \"The seeker rejects Gladiator-type films and reveals a preference for films like Armageddon (1997).\",\n    \"belief_after\": \"The recommender should avoid Gladiator-like suggestions and favor Armageddon-like drama/action/disaster films.\",\n    \"emotion\": \"polite but dismissive toward Gladiator-type; positive toward Armageddon-like\",\n    \"intention\": \"Redirect recommendations toward the preferred style.\",\n    \"conversational_goal\": \"Clarify taste so the recommender can suggest suitable titles.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER suggests The Notebook (2013) if the seeker likes love stories and asks whether the seeker has seen Deep Impact (1998), calling it another one like Armageddon.\",\n    \"belief_before\": \"The recommender knows the seeker wants drama, dislikes Gladiator-type films, and likes Armageddon-like films.\",\n    \"belief_update\": \"The recommender offers a conditional love-story suggestion and a likely matching suggestion similar to Armageddon.\",\n    \"belief_after\": \"Deep Impact appears to be the more relevant recommendation; The Notebook is relevant only if the seeker likes love stories. The seeker has not yet responded to these suggestions.\",\n    \"emotion\": \"curious/hopeful, with cautious neutrality toward The Notebook\",\n    \"intention\": \"Evaluate the new suggestions and decide whether to pursue Deep Impact or clarify further.\",\n    \"conversational_goal\": \"Find a drama recommendation that matches the Armageddon-like preference.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

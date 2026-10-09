@@ -1,0 +1,67 @@
+数据：3_pred_rec
+题号：38  d1002_u7
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 的经验里，SEEKER 那句“lol, I have. Who hasn't”不是在说一部片，而是在把他刚才给出的推荐对象一下推入“人人早已看过”的类别。因为他把自己放在‘能给出对方没看过、有价值的新科幻片’的推荐者位置上，又把‘好推荐应当避开对方已看过的常见片’当作固定规则，所以眼前这个对象化世界变成：他以为新、以为值得给 SEEKER 的东西，被一句话判定为众所周知，推荐者身份与推荐规则同时被顶住。",
+      "probability": 0.3852
+    },
+    {
+      "content": "RECOMMENDER 经验到，SEEKER 先问“No, what's that about?”，这似乎把影片摆进了‘由他解释、对方据此判断是否值得看’的流程里；可紧接着“Sounds melodramatic”直接给整部片定性。由于他把自己推荐的影片当作自我品味与判断的延伸，又把推荐—解释—对方据此判断的流程执为理所当然，此刻对象化世界是：他还没来得及让解释完成，他的选择已被放在被贬低的位置，流程在半途被一句评语截断，影片与他的判断一起变成‘melodramatic’的东西。",
+      "probability": 0.3399
+    },
+    {
+      "content": "RECOMMENDER 把‘比 SEEKER 更懂这部片、能解释其内容’的知道者位置当成自己的；SEEKER 问“No, what's that about?”时，这个位置被激活，仿佛对方正把解释权交给他。但他又执‘问 what's that about 就意味着对方想了解并可能接受’为固定理解，随后“Sounds melodramatic”使这个理解落空；于是他所缘到的世界是：知道者位置刚被问题托起，就被一句否定式总结悬空，那个问题不再通向了解，而变成对方已经可以越过解释直接下判的场合。",
+      "probability": 0.2749
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他那句“谁没看过”不是在回答片名，而是把《星战7》从我这边挪到人人已有的架子上；我刚开口，推荐者该拿出的“对方没看过的新东西”就先塌了一角，连我认定的好推荐应避开常见片这条也一起被顶住。我不能把这一下当成整个推荐失败，否则后面每部都会被这句压住；得认下他看过，同时把范围往更晚、可能他漏掉的科幻上移。《Passengers》或许还在这条缝里——2016年，有明星，概念是提前唤醒与飞船危机，不算人人都聊过；我先把它摆出来，再用剧情摘要试探它到底是新推荐，还是又会落进那个众人皆知的类别。若他仍觉得只是情节剧，那说明我这条避开常见的路也难撑，我得再找别的入口，不能只停在被一句话归类上。",
+      "activation": 0.3658
+    },
+    {
+      "content": "他听出 SEEKER 先问“what's that about?”，原以为可以按解释剧情、再由对方判断的节奏把《Passengers》摆清楚；可“Sounds melodramatic”一句在解释尚未展开完时就给全片定了性，像把他刚推荐的选择连同他的品味与判断一起归入廉价煽情。他心里生出被轻慢的不快，也不愿接受这个过早的定性，既想说明这部片并非只剩 melodramatic 一面，又感到对方已用一句评语截断了继续推荐的入口，于是对这条推荐的价值和对方的判断方式都重新起了犹疑。",
+      "activation": 0.3493
+    },
+    {
+      "content": "他原先把 SEEKER 问“No, what's that about?”当作对方把解释入口交到自己手上，于是作为更懂这部片的人被托起；可紧接着的“Sounds melodramatic”把这层期待压回去。他重新整理：对方不是要借他的解释进入影片，而是在听完梗概后直接给出否定式判断，自己的知道者位置因此没有稳固落点。他评价这种越过细节的概括为轻率，却也意识到自己刚才把“问梗概”等同于“愿意了解并可能接受”过于笃定。于是内心不再沿着展开推荐的热度走，而对这部片是否值得继续推、自己的解释是否会被接住产生迟疑；他更倾向于收住展开，把这次解释当作一次未被承接的试探。",
+      "activation": 0.2849
+    }
+  ],
+  "observed_action": "RECOMMENDER 说“Sure thing”，问 SEEKER 是否看过《Star Wars: The Force Awakens》（2015）；随后说“Good point. :)...”，并问 SEEKER 是否看过《Passengers》（2016），提到该片由 Jennifer Laawrence 和 Chris Pratt 主演；接着说明：一名男子（Pratt）在星际太空旅行中被提前唤醒，并唤醒另一名乘客（Lawrence）作伴，同时飞船有解体危险，他们必须查明原因。",
+  "predicted_actions": [
+    {
+      "content": "反驳评价",
+      "probability": 0.262
+    },
+    {
+      "content": "解释推荐作品",
+      "probability": 0.2156
+    },
+    {
+      "content": "提议换片",
+      "probability": 0.1986
+    },
+    {
+      "content": "撤回上一提议并请求近期喜欢的科幻片示例",
+      "probability": 0.1833
+    },
+    {
+      "content": "询问科幻子类型偏好",
+      "probability": 0.1404
+    }
+  ]
+}
+选择：A: Ask for preference or seeks feedback from the seeker
+分数：{"a": 0.3237, "b": 0.262, "c": 0.1986, "d": 0.2156, "e": 0}
+选择说明：A 0.3237 = 撤回上一提议并请求近期喜欢的科幻片示例 0.1833 + 询问科幻子类型偏好 0.1404；B 0.2620 = 反驳评价 0.2620；C 0.1986 = 提议换片 0.1986；D 0.2156 = 解释推荐作品 0.2156；E 0.0000。Actions were grouped by their direct match to each strategy.
+标准：D: Explains a recommendation with background or reasoning
+C: Provides a recommendation directly or by inquiring further
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：The predicted action '提议换片' directly matches providing a recommendation by switching films.

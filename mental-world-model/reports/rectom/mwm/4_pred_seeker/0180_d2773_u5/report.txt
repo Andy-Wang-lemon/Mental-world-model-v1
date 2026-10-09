@@ -1,0 +1,62 @@
+数据：4_pred_seeker
+题号：180  d2773_u5
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "RECOMMENDER问我是否看过《Gladiator》(2000)，又问我是否看过《Deep Impact》(1998)，这两问一进来就不像普通的片目询问，而像在盘点我的观影履历；“看过”成了我能不能进入这个话题的前提，没看过这两部，我在这段对话里就缺少回应相关询问的资格。",
+      "probability": 0.4132
+    },
+    {
+      "content": "RECOMMENDER说“如果你喜欢爱情故事，《The Notebook》(2013) 不错”，这句话里的“喜欢爱情故事”马上被放到我这边，像是在确认我的口味标签；而《The Notebook》一旦被归入爱情故事，它适不适合我、值不值得看，就首先由这个类型标签来决定，别的说法都要先让位于它。",
+      "probability": 0.3362
+    },
+    {
+      "content": "RECOMMENDER问我看没看过《Deep Impact》(1998)，并说它“像《Armageddon》”。这个比较一出现，就被我当成自己电影知识位置里的一个坐标：它已经给《Deep Impact》定好了性质，我该顺着这个归类去理解它；我能不能接住这个比较，也像在衡量我在电影话题中的位置，而不只是一条与我无关的片目关联。",
+      "probability": 0.2506
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 把对方接连问“有没有看过《Gladiator》(2000)”和“有没有看过《Deep Impact》(1998)”听成对自己观影履历的盘点，“看过”像一道进入话题的门槛；没看过这两部，让他觉得自己在这段对话里少了接话的凭据。他对这种盘查式问法有些抵触，认为喜欢什么类型、比如《Armageddon》(1997)这类偏好，也可以成为聊电影的入口，不必先用看过哪些片来证明资格；内心倾向于不假装看过，而是把话题拉回自己真正熟悉的偏好上，以保住继续对话的位置。",
+      "activation": 0.3989
+    },
+    {
+      "content": "对方一句“如果你喜欢爱情故事”，我马上把它收到自己这边，像是在给我贴口味标签——可我并没说喜欢爱情故事。接着看《The Notebook》，我先抓住它被归入爱情故事这一点，仿佛这个类型标签就能决定它适不适合我、值不值得看，别的推荐理由都得先让位；而在我偏好的《Armageddon》那类参照下，这个标签先让它在我心里降了位，除非还有别的属性能把它拉回候选。",
+      "activation": 0.3198
+    },
+    {
+      "content": "RECOMMENDER把《Deep Impact》说成“像《Armageddon》”，这话一进来就不只是片目关联：它先替那部片定了性，把我熟悉的《Armageddon》当成理解它的尺子。既然我本来就偏好《Armageddon》这类，我会顺着这个归类把《Deep Impact》放到相近的位置上，觉得它可能合我的口味；可同时我也在掂量，能不能接住这个比较、能不能马上判断它到底像不像，似乎关系到我在电影话题里站不站得住。于是我倾向先把这条比较收下，再拿它和我的偏好对齐，而不是把它丢到一边。",
+      "activation": 0.2813
+    }
+  ],
+  "observed_action": "SEEKER 说你好，想找一部好剧，问有什么建议；SEEKER 说没看过，不太喜欢那种类型，偏好 Armageddon (1997) 这类。",
+  "predicted_actions": [
+    {
+      "content": "要求不要盘点观影履历，直接推荐类似《Armageddon》的电影",
+      "probability": 0.3056
+    },
+    {
+      "content": "表示爱情片不合胃口，询问类似《Armageddon》的灾难片",
+      "probability": 0.2989
+    },
+    {
+      "content": "排除爱情故事并请求推荐同类影片",
+      "probability": 0.216
+    },
+    {
+      "content": "表示若《Deep Impact》像《Armageddon》则愿听介绍，并说没看过",
+      "probability": 0.1795
+    }
+  ]
+}
+选择：C: Asks for a recommendation or expresses their preference
+分数：{"a": 0.1795, "b": 0, "c": 0.8205, "d": 0}
+选择说明：A 0.1795 = 表示若《Deep Impact》像《Armageddon》则愿听介绍，并说没看过 0.1795；B 0.0000；C 0.8205 = 要求不要盘点观影履历，直接推荐类似《Armageddon》的电影 0.3056 + 表示爱情片不合胃口，询问类似《Armageddon》的灾难片 0.2989 + 排除爱情故事并请求推荐同类影片 0.2160；D 0.0000。Actions 0-2 ask for recommendations or express preferences, while action 3 gives feedback on a suggested movie.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：预测动作4表示若《Deep Impact》像《Armageddon》则愿听介绍，这是对已提及影片建议的直接反馈。

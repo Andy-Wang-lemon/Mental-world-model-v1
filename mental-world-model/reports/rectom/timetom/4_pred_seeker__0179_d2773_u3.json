@@ -1,0 +1,61 @@
+{
+  "id": "4_pred_seeker__0179_d2773_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello",
+      "information_available": "The recommender has only greeted the seeker; no topic or recommendation has been introduced yet.",
+      "preferences": "Not yet stated or inferable from this turn; the seeker's drama preference is not available at this point.",
+      "belief_before": "No prior information about the recommender's intent or knowledge in this dialogue.",
+      "belief_update": "The recommender has initiated contact with a greeting.",
+      "belief_after": "The recommender is present and has greeted the seeker, likely expecting a response.",
+      "emotion": "Neutral/polite.",
+      "intention": "Respond to the greeting and begin interaction.",
+      "reaction_to_other": "Acknowledges the greeting; no strong positive or negative reaction yet.",
+      "conversational_goal": "Establish contact and respond politely to the recommender.",
+      "changes_previous_interpretation": "No previous interpretation to change; this turn only starts the interaction."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hi I am looking for a good drama any ideas?",
+      "information_available": "The recommender greeted the seeker; the seeker now knows the recommender is available to respond and has stated a request.",
+      "preferences": "The seeker wants a good drama; they are asking for drama recommendations.",
+      "belief_before": "The recommender has greeted them and may be open to conversation.",
+      "belief_update": "The seeker has explicitly stated their request for a good drama and asked for ideas.",
+      "belief_after": "The recommender now knows the seeker wants drama recommendations and is expected to offer ideas.",
+      "emotion": "Hopeful/curious.",
+      "intention": "Obtain recommendations for a good drama.",
+      "reaction_to_other": "Responds to the greeting and engages the recommender with a request.",
+      "conversational_goal": "Elicit drama recommendations from the recommender.",
+      "changes_previous_interpretation": "Yes; the interaction shifts from a simple greeting to a recommendation-seeking dialogue and reveals the seeker's goal/preference."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Have you seen Gladiator (2000)?",
+      "information_available": "The recommender greeted the seeker, the seeker asked for a good drama, and the recommender has now asked whether the seeker has seen Gladiator (2000).",
+      "preferences": "The seeker still wants a good drama; they now need to evaluate whether Gladiator (2000) fits that preference.",
+      "belief_before": "The recommender knows the seeker wants a good drama and may offer suggestions.",
+      "belief_update": "The recommender has mentioned Gladiator (2000) and asked if the seeker has seen it.",
+      "belief_after": "The recommender appears to be treating Gladiator (2000) as a possible recommendation or conversation point; the seeker needs to respond and assess its fit.",
+      "emotion": "Curious/evaluative; no explicit emotional reaction is given in the text.",
+      "intention": "Answer whether they have seen Gladiator (2000) and consider whether it satisfies their request.",
+      "reaction_to_other": "Receives the recommender's specific suggestion/question attentively; no explicit emotional reaction is given in the text.",
+      "conversational_goal": "Respond to the suggestion and continue working toward a suitable drama recommendation.",
+      "changes_previous_interpretation": "Yes; the conversation moves from an open request for drama ideas to evaluating a concrete title suggested by the recommender."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello\",\n    \"information_available\": \"The recommender has only greeted the seeker; no topic or recommendation has been introduced yet.\",\n    \"preferences\": \"Not yet stated or inferable from this turn; the seeker's drama preference is not available at this point.\",\n    \"belief_before\": \"No prior information about the recommender's intent or knowledge in this dialogue.\",\n    \"belief_update\": \"The recommender has initiated contact with a greeting.\",\n    \"belief_after\": \"The recommender is present and has greeted the seeker, likely expecting a response.\",\n    \"emotion\": \"Neutral/polite.\",\n    \"intention\": \"Respond to the greeting and begin interaction.\",\n    \"reaction_to_other\": \"Acknowledges the greeting; no strong positive or negative reaction yet.\",\n    \"conversational_goal\": \"Establish contact and respond politely to the recommender.\",\n    \"changes_previous_interpretation\": \"No previous interpretation to change; this turn only starts the interaction.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hi I am looking for a good drama any ideas?\",\n    \"information_available\": \"The recommender greeted the seeker; the seeker now knows the recommender is available to respond and has stated a request.\",\n    \"preferences\": \"The seeker wants a good drama; they are asking for drama recommendations.\",\n    \"belief_before\": \"The recommender has greeted them and may be open to conversation.\",\n    \"belief_update\": \"The seeker has explicitly stated their request for a good drama and asked for ideas.\",\n    \"belief_after\": \"The recommender now knows the seeker wants drama recommendations and is expected to offer ideas.\",\n    \"emotion\": \"Hopeful/curious.\",\n    \"intention\": \"Obtain recommendations for a good drama.\",\n    \"reaction_to_other\": \"Responds to the greeting and engages the recommender with a request.\",\n    \"conversational_goal\": \"Elicit drama recommendations from the recommender.\",\n    \"changes_previous_interpretation\": \"Yes; the interaction shifts from a simple greeting to a recommendation-seeking dialogue and reveals the seeker's goal/preference.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Have you seen Gladiator (2000)?\",\n    \"information_available\": \"The recommender greeted the seeker, the seeker asked for a good drama, and the recommender has now asked whether the seeker has seen Gladiator (2000).\",\n    \"preferences\": \"The seeker still wants a good drama; they now need to evaluate whether Gladiator (2000) fits that preference.\",\n    \"belief_before\": \"The recommender knows the seeker wants a good drama and may offer suggestions.\",\n    \"belief_update\": \"The recommender has mentioned Gladiator (2000) and asked if the seeker has seen it.\",\n    \"belief_after\": \"The recommender appears to be treating Gladiator (2000) as a possible recommendation or conversation point; the seeker needs to respond and assess its fit.\",\n    \"emotion\": \"Curious/evaluative; no explicit emotional reaction is given in the text.\",\n    \"intention\": \"Answer whether they have seen Gladiator (2000) and consider whether it satisfies their request.\",\n    \"reaction_to_other\": \"Receives the recommender's specific suggestion/question attentively; no explicit emotional reaction is given in the text.\",\n    \"conversational_goal\": \"Respond to the suggestion and continue working toward a suitable drama recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; the conversation moves from an open request for drama ideas to evaluating a concrete title suggested by the recommender.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

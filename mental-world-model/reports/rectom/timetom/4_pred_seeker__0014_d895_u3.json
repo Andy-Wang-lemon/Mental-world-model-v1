@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0014_d895_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER greets SEEKER and asks SEEKER to tell some favorite movies so RECOMMENDER can suggest something good.",
+      "information_available": "At this point SEEKER has only heard RECOMMENDER's opening request. No specific favorite movies have been disclosed yet in the dialogue.",
+      "preferences": "No preferences have been disclosed in the shared dialogue yet; SEEKER's private preferences are not inferable from this turn alone.",
+      "belief_before": "No prior dialogue context is available; SEEKER has no specific belief about this recommender's intent from the conversation yet.",
+      "belief_update": "RECOMMENDER is initiating a recommendation exchange and asks for SEEKER's favorite movies to make a suggestion.",
+      "belief_after": "SEEKER believes RECOMMENDER wants movie preferences in order to recommend a film.",
+      "emotion": "Neutral and cooperative; mildly engaged by the invitation to share preferences.",
+      "intention": "Prepare to respond with some favorite movies.",
+      "reaction_to_other_speaker": "Open and cooperative toward RECOMMENDER's request.",
+      "conversational_goal": "Answer the question by giving movie preferences so RECOMMENDER can suggest something.",
+      "changes_previous_interpretation": "Initial turn; there is no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Let's see, I enjoyed Lost in Translation (2003) with Bill Murray... I like Aliens (1986) and Alien: Covenant (2017).'",
+      "information_available": "SEEKER knows their own stated preferences and has RECOMMENDER's prior request. The shared context now includes Lost in Translation, Aliens, and Alien: Covenant.",
+      "preferences": "SEEKER explicitly reports enjoying/liking Lost in Translation, Aliens, and Alien: Covenant; Bill Murray is mentioned as an actor in a liked film.",
+      "belief_before": "SEEKER believes RECOMMENDER wants favorite movies to make a suggestion.",
+      "belief_update": "SEEKER has supplied several favorite movies, giving RECOMMENDER initial preference information.",
+      "belief_after": "SEEKER believes RECOMMENDER can now use these titles/franchises to propose something suitable.",
+      "emotion": "Cooperative and thoughtful; perhaps positive while recalling favorite movies.",
+      "intention": "Provide useful preference information to elicit a good recommendation.",
+      "reaction_to_other_speaker": "Responsive and cooperative; directly answers RECOMMENDER's request.",
+      "conversational_goal": "Give RECOMMENDER enough preference data to receive a suitable movie suggestion.",
+      "changes_previous_interpretation": "Changes the prior state from no disclosed preferences to a concrete set of movie preferences."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: 'That was a good one. Did you see The Truman Show (1998) or Rushmore (1998)... I liked the first Alien, but didn't see the sequel.'",
+      "information_available": "SEEKER hears that RECOMMENDER acknowledges an earlier choice, asks whether SEEKER has seen The Truman Show or Rushmore, and says RECOMMENDER liked the first Alien but did not see the sequel.",
+      "preferences": "SEEKER's previously stated preferences remain Lost in Translation, Aliens, and Alien: Covenant. No new SEEKER preference has been stated in this turn.",
+      "belief_before": "SEEKER believes they have supplied favorites and that RECOMMENDER can now suggest options.",
+      "belief_update": "RECOMMENDER is checking SEEKER's familiarity with The Truman Show/Rushmore, possibly as candidate recommendations, and shares partial Alien-franchise familiarity.",
+      "belief_after": "SEEKER believes RECOMMENDER is refining suggestions by asking what SEEKER has already seen, and that there is some shared reference point around Alien.",
+      "emotion": "Engaged and curious; possibly validated that RECOMMENDER liked one of the discussed films.",
+      "intention": "Respond to RECOMMENDER's question about whether SEEKER saw The Truman Show or Rushmore.",
+      "reaction_to_other_speaker": "Receptive and cooperative; treats RECOMMENDER's message as relevant to finding a recommendation.",
+      "conversational_goal": "Clarify which candidate films SEEKER has already seen so RECOMMENDER can refine the recommendation.",
+      "changes_previous_interpretation": "The interaction shifts from initial preference disclosure to checking familiarity with specific potential recommendations; it does not contradict the earlier interpretation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER greets SEEKER and asks SEEKER to tell some favorite movies so RECOMMENDER can suggest something good.\",\n    \"information_available\": \"At this point SEEKER has only heard RECOMMENDER's opening request. No specific favorite movies have been disclosed yet in the dialogue.\",\n    \"preferences\": \"No preferences have been disclosed in the shared dialogue yet; SEEKER's private preferences are not inferable from this turn alone.\",\n    \"belief_before\": \"No prior dialogue context is available; SEEKER has no specific belief about this recommender's intent from the conversation yet.\",\n    \"belief_update\": \"RECOMMENDER is initiating a recommendation exchange and asks for SEEKER's favorite movies to make a suggestion.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER wants movie preferences in order to recommend a film.\",\n    \"emotion\": \"Neutral and cooperative; mildly engaged by the invitation to share preferences.\",\n    \"intention\": \"Prepare to respond with some favorite movies.\",\n    \"reaction_to_other_speaker\": \"Open and cooperative toward RECOMMENDER's request.\",\n    \"conversational_goal\": \"Answer the question by giving movie preferences so RECOMMENDER can suggest something.\",\n    \"changes_previous_interpretation\": \"Initial turn; there is no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Let's see, I enjoyed Lost in Translation (2003) with Bill Murray... I like Aliens (1986) and Alien: Covenant (2017).'\",\n    \"information_available\": \"SEEKER knows their own stated preferences and has RECOMMENDER's prior request. The shared context now includes Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"preferences\": \"SEEKER explicitly reports enjoying/liking Lost in Translation, Aliens, and Alien: Covenant; Bill Murray is mentioned as an actor in a liked film.\",\n    \"belief_before\": \"SEEKER believes RECOMMENDER wants favorite movies to make a suggestion.\",\n    \"belief_update\": \"SEEKER has supplied several favorite movies, giving RECOMMENDER initial preference information.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER can now use these titles/franchises to propose something suitable.\",\n    \"emotion\": \"Cooperative and thoughtful; perhaps positive while recalling favorite movies.\",\n    \"intention\": \"Provide useful preference information to elicit a good recommendation.\",\n    \"reaction_to_other_speaker\": \"Responsive and cooperative; directly answers RECOMMENDER's request.\",\n    \"conversational_goal\": \"Give RECOMMENDER enough preference data to receive a suitable movie suggestion.\",\n    \"changes_previous_interpretation\": \"Changes the prior state from no disclosed preferences to a concrete set of movie preferences.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: 'That was a good one. Did you see The Truman Show (1998) or Rushmore (1998)... I liked the first Alien, but didn't see the sequel.'\",\n    \"information_available\": \"SEEKER hears that RECOMMENDER acknowledges an earlier choice, asks whether SEEKER has seen The Truman Show or Rushmore, and says RECOMMENDER liked the first Alien but did not see the sequel.\",\n    \"preferences\": \"SEEKER's previously stated preferences remain Lost in Translation, Aliens, and Alien: Covenant. No new SEEKER preference has been stated in this turn.\",\n    \"belief_before\": \"SEEKER believes they have supplied favorites and that RECOMMENDER can now suggest options.\",\n    \"belief_update\": \"RECOMMENDER is checking SEEKER's familiarity with The Truman Show/Rushmore, possibly as candidate recommendations, and shares partial Alien-franchise familiarity.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER is refining suggestions by asking what SEEKER has already seen, and that there is some shared reference point around Alien.\",\n    \"emotion\": \"Engaged and curious; possibly validated that RECOMMENDER liked one of the discussed films.\",\n    \"intention\": \"Respond to RECOMMENDER's question about whether SEEKER saw The Truman Show or Rushmore.\",\n    \"reaction_to_other_speaker\": \"Receptive and cooperative; treats RECOMMENDER's message as relevant to finding a recommendation.\",\n    \"conversational_goal\": \"Clarify which candidate films SEEKER has already seen so RECOMMENDER can refine the recommendation.\",\n    \"changes_previous_interpretation\": \"The interaction shifts from initial preference disclosure to checking familiarity with specific potential recommendations; it does not contradict the earlier interpretation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

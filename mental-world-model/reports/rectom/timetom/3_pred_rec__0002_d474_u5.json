@@ -1,0 +1,66 @@
+{
+  "id": "3_pred_rec__0002_d474_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER asks: 'Hi can you help me find a movie to watch.' Information available to RECOMMENDER: only that the seeker wants a movie recommendation; no genre or title preferences known.",
+      "belief_before": "No prior context; RECOMMENDER has no beliefs about the seeker's movie preferences.",
+      "belief_update": "Learns the seeker is requesting help finding a movie.",
+      "belief_after": "The seeker wants a movie recommendation and is open to help.",
+      "emotion": "Neutral, willing to help.",
+      "intention": "Offer assistance by recommending a movie.",
+      "conversational_goal": "Acknowledge the request and propose a movie."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Yes, how about It (2017)?' Information available: seeker wants a movie; no stated genre preferences yet.",
+      "belief_before": "The seeker wants a movie recommendation.",
+      "belief_update": "Decides to suggest 'It (2017)' as a possible movie.",
+      "belief_after": "Has offered 'It (2017)' and expects the seeker to accept, reject, or refine it.",
+      "emotion": "Helpful, neutral.",
+      "intention": "Recommend a movie to satisfy the seeker's request.",
+      "conversational_goal": "Provide a concrete movie suggestion."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I don't really like horror movies what about thrillers.' Information available: seeker dislikes horror and is asking for thrillers.",
+      "belief_before": "The seeker wanted a movie and had been offered 'It (2017)'.",
+      "belief_update": "Learns that the seeker does not like horror and prefers/wants thrillers; the previous suggestion is likely unsuitable.",
+      "belief_after": "The seeker wants a thriller recommendation and dislikes horror.",
+      "emotion": "Attentive, possibly apologetic or corrective.",
+      "intention": "Adjust the recommendation strategy toward thrillers.",
+      "conversational_goal": "Respond to the feedback by suggesting a thriller."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'The Silence of the Lambs (1991).' Information available: seeker dislikes horror and wants thrillers.",
+      "belief_before": "The seeker dislikes horror and wants a thriller recommendation.",
+      "belief_update": "Selects 'The Silence of the Lambs (1991)' as a thriller suggestion.",
+      "belief_after": "Has proposed a thriller and believes it may fit the seeker's stated genre preference.",
+      "emotion": "Helpful, attentive.",
+      "intention": "Recommend a thriller that matches the seeker's preference.",
+      "conversational_goal": "Offer a thriller title after adjusting to the seeker's feedback."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'I have seen it and enjoyed it...One of my favorite thrillers is The Number 23 (2007) and The Sixth Sense (1999).' Information available: seeker has seen and enjoyed 'The Silence of the Lambs'; favorite thrillers include 'The Number 23' and 'The Sixth Sense'.",
+      "belief_before": "The seeker wanted a thriller and had been offered 'The Silence of the Lambs (1991)'.",
+      "belief_update": "Learns the seeker has already seen and enjoyed 'The Silence of the Lambs', and that the seeker likes 'The Number 23' and 'The Sixth Sense'.",
+      "belief_after": "The seeker likes thrillers, has seen 'The Silence of the Lambs', and has specific favorite thrillers; a new recommendation should account for seen titles and these preferences.",
+      "emotion": "Pleased/encouraged by positive engagement, attentive.",
+      "intention": "Refine the recommendation using the seeker's seen titles and favorite thrillers.",
+      "conversational_goal": "Continue the recommendation by suggesting another thriller aligned with the seeker's tastes and not already seen."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER asks: 'Hi can you help me find a movie to watch.' Information available to RECOMMENDER: only that the seeker wants a movie recommendation; no genre or title preferences known.\",\n    \"belief_before\": \"No prior context; RECOMMENDER has no beliefs about the seeker's movie preferences.\",\n    \"belief_update\": \"Learns the seeker is requesting help finding a movie.\",\n    \"belief_after\": \"The seeker wants a movie recommendation and is open to help.\",\n    \"emotion\": \"Neutral, willing to help.\",\n    \"intention\": \"Offer assistance by recommending a movie.\",\n    \"conversational_goal\": \"Acknowledge the request and propose a movie.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Yes, how about It (2017)?' Information available: seeker wants a movie; no stated genre preferences yet.\",\n    \"belief_before\": \"The seeker wants a movie recommendation.\",\n    \"belief_update\": \"Decides to suggest 'It (2017)' as a possible movie.\",\n    \"belief_after\": \"Has offered 'It (2017)' and expects the seeker to accept, reject, or refine it.\",\n    \"emotion\": \"Helpful, neutral.\",\n    \"intention\": \"Recommend a movie to satisfy the seeker's request.\",\n    \"conversational_goal\": \"Provide a concrete movie suggestion.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I don't really like horror movies what about thrillers.' Information available: seeker dislikes horror and is asking for thrillers.\",\n    \"belief_before\": \"The seeker wanted a movie and had been offered 'It (2017)'.\",\n    \"belief_update\": \"Learns that the seeker does not like horror and prefers/wants thrillers; the previous suggestion is likely unsuitable.\",\n    \"belief_after\": \"The seeker wants a thriller recommendation and dislikes horror.\",\n    \"emotion\": \"Attentive, possibly apologetic or corrective.\",\n    \"intention\": \"Adjust the recommendation strategy toward thrillers.\",\n    \"conversational_goal\": \"Respond to the feedback by suggesting a thriller.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'The Silence of the Lambs (1991).' Information available: seeker dislikes horror and wants thrillers.\",\n    \"belief_before\": \"The seeker dislikes horror and wants a thriller recommendation.\",\n    \"belief_update\": \"Selects 'The Silence of the Lambs (1991)' as a thriller suggestion.\",\n    \"belief_after\": \"Has proposed a thriller and believes it may fit the seeker's stated genre preference.\",\n    \"emotion\": \"Helpful, attentive.\",\n    \"intention\": \"Recommend a thriller that matches the seeker's preference.\",\n    \"conversational_goal\": \"Offer a thriller title after adjusting to the seeker's feedback.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'I have seen it and enjoyed it...One of my favorite thrillers is The Number 23 (2007) and The Sixth Sense (1999).' Information available: seeker has seen and enjoyed 'The Silence of the Lambs'; favorite thrillers include 'The Number 23' and 'The Sixth Sense'.\",\n    \"belief_before\": \"The seeker wanted a thriller and had been offered 'The Silence of the Lambs (1991)'.\",\n    \"belief_update\": \"Learns the seeker has already seen and enjoyed 'The Silence of the Lambs', and that the seeker likes 'The Number 23' and 'The Sixth Sense'.\",\n    \"belief_after\": \"The seeker likes thrillers, has seen 'The Silence of the Lambs', and has specific favorite thrillers; a new recommendation should account for seen titles and these preferences.\",\n    \"emotion\": \"Pleased/encouraged by positive engagement, attentive.\",\n    \"intention\": \"Refine the recommendation using the seeker's seen titles and favorite thrillers.\",\n    \"conversational_goal\": \"Continue the recommendation by suggesting another thriller aligned with the seeker's tastes and not already seen.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

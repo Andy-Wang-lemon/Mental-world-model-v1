@@ -1,0 +1,36 @@
+{
+  "id": "4_pred_seeker__0000_d474_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi can you help me find a movie to watch.' No prior recommendation or preference information from the other speaker is available yet.",
+      "belief_before": "No prior dialogue context; SEEKER believes the addressee may be able to help find a movie, but has no evidence yet.",
+      "belief_update": "SEEKER expresses a request for movie recommendation help.",
+      "belief_after": "SEEKER is awaiting a response or suggestion; believes the recommender has been asked to help.",
+      "emotion": "Neutral/expectant.",
+      "intention": "Ask for assistance in choosing a movie to watch.",
+      "conversational_goal": "Elicit movie recommendations from the other speaker."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER replies: 'Yes, how about It (2017)?' SEEKER observes an affirmative response and a specific movie suggestion. SEEKER's own preferences remain unstated.",
+      "belief_before": "SEEKER was awaiting a movie suggestion after asking for help.",
+      "belief_update": "SEEKER learns the recommender is willing to help and has proposed 'It (2017)' as a candidate movie.",
+      "belief_after": "SEEKER now considers 'It (2017)' as a possible movie to watch; no SEEKER preference information has been revealed or confirmed yet.",
+      "emotion": "Neutral, mildly interested, or evaluative; no strong positive or negative reaction is specified.",
+      "intention": "Evaluate or respond to the suggested movie.",
+      "conversational_goal": "Acknowledge, question, accept, or reject the recommendation to continue narrowing the movie choice."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi can you help me find a movie to watch.' No prior recommendation or preference information from the other speaker is available yet.\",\n    \"belief_before\": \"No prior dialogue context; SEEKER believes the addressee may be able to help find a movie, but has no evidence yet.\",\n    \"belief_update\": \"SEEKER expresses a request for movie recommendation help.\",\n    \"belief_after\": \"SEEKER is awaiting a response or suggestion; believes the recommender has been asked to help.\",\n    \"emotion\": \"Neutral/expectant.\",\n    \"intention\": \"Ask for assistance in choosing a movie to watch.\",\n    \"conversational_goal\": \"Elicit movie recommendations from the other speaker.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER replies: 'Yes, how about It (2017)?' SEEKER observes an affirmative response and a specific movie suggestion. SEEKER's own preferences remain unstated.\",\n    \"belief_before\": \"SEEKER was awaiting a movie suggestion after asking for help.\",\n    \"belief_update\": \"SEEKER learns the recommender is willing to help and has proposed 'It (2017)' as a candidate movie.\",\n    \"belief_after\": \"SEEKER now considers 'It (2017)' as a possible movie to watch; no SEEKER preference information has been revealed or confirmed yet.\",\n    \"emotion\": \"Neutral, mildly interested, or evaluative; no strong positive or negative reaction is specified.\",\n    \"intention\": \"Evaluate or respond to the suggested movie.\",\n    \"conversational_goal\": \"Acknowledge, question, accept, or reject the recommendation to continue narrowing the movie choice.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

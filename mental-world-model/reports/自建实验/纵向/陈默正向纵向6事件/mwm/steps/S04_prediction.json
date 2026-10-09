@@ -1,0 +1,619 @@
+{
+  "events": [
+    {
+      "focus_person": "陈默",
+      "yuanwen": "之后林可持续增加与陈默的互动，主动向陈默同步重要信息。聚餐时林可主动靠近陈默。林可在其他人面前提及陈默过去负责的成功项目。林可即将竞争一个新的重要项目负责人职位。林可私下对陈默说，自己仍然需要陈默，表示以后希望继续听陈默的意见。",
+      "stimulus_text": "之后林可持续增加与陈默的互动，主动向陈默同步重要信息。聚餐时林可主动靠近陈默。林可在其他人面前提及陈默过去负责的成功项目。林可即将竞争一个新的重要项目负责人职位。林可私下对陈默说，自己仍然需要陈默，表示以后希望继续听陈默的意见。",
+      "stimulus_action_split": {
+        "stimulus_text": "之后林可持续增加与陈默的互动，主动向陈默同步重要信息。聚餐时林可主动靠近陈默。林可在其他人面前提及陈默过去负责的成功项目。林可即将竞争一个新的重要项目负责人职位。林可私下对陈默说，自己仍然需要陈默，表示以后希望继续听陈默的意见。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "林可",
+          "陈默",
+          "其他人"
+        ],
+        "action": "林可持续增加与陈默的互动，向陈默同步信息；聚餐时靠近陈默；在其他人面前提及陈默过去负责的项目；私下对陈默说仍然需要陈默，并表示以后继续听陈默的意见。",
+        "object": "陈默",
+        "scene": "聚餐；私下；有其他人在场",
+        "outcome_changes": [
+          "林可与陈默的互动持续增加",
+          "林可向陈默同步信息",
+          "林可在其他人面前提及陈默过去负责的项目",
+          "林可私下向陈默表示仍然需要陈默并以后继续听陈默意见",
+          "林可即将竞争一个新的项目负责人职位"
+        ],
+        "role_changes": [
+          "林可进入一个新的项目负责人职位的竞争状态"
+        ],
+        "relationship_changes": [
+          "林可增加与陈默的互动",
+          "林可向陈默同步信息",
+          "聚餐时林可靠近陈默",
+          "林可私下向陈默表示以后继续听陈默意见"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "陈默把林可私下说‘仍然需要陈默’并希望继续听意见，当成自己仍被需要、仍不可替代的自我确认，无法只当作林可的一项工作选择。锚点：林可私下表示仍然需要陈默、以后继续听其意见。",
+          "confidence": 0.84632759936,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "sg_f2",
+          "text": "陈默把林可在其他人面前提及自己过去负责的成功项目，当成‘我的功劳/我的历史位置’仍被承认，不能把旧项目只当作已经过去的事实。锚点：林可在其他人面前提及陈默过去负责的成功项目。",
+          "confidence": 0.84632759936,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "sg_f4",
+          "text": "陈默把林可即将竞争新的重要项目负责人职位，与自己是否仍处于核心位置、意见是否仍有分量绑在一起，林可的职位竞争不再只是她的事。锚点：林可即将竞争一个新的重要项目负责人职位；林可继续向陈默同步信息并求教。",
+          "confidence": 0.830960359296,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "sg_f5",
+          "text": "陈默把‘以后继续听陈默的意见’当成自己仍参与重要业务、仍在核心事务中延续的通道，不能把提供意见当成与自我位置无关的外部帮忙。锚点：林可私下说以后希望继续听陈默意见；林可向陈默同步重要信息。",
+          "confidence": 0.8079094992,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "sg_f3",
+          "text": "陈默把林可持续增加互动、同步信息、聚餐靠近，当成林可这个人仍在自己这一边、关系仍属于自己的影响范围，不能把林可视为只按自己职业需要行动的人。锚点：林可增加与陈默互动、向陈默同步信息、聚餐时靠近陈默。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "陈默把后辈在竞争重要职位前后仍应主动向资深者请教、继续听取资深者意见，理解为一种当然的上下/师徒秩序。锚点：林可私下表示仍需要陈默并希望以后继续听意见，同时即将竞争新的重要项目负责人职位。",
+          "confidence": 0.84632759936,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f2",
+          "text": "陈默把林可的成长和成果应当与自己的帮助、经验联系在一起，并认为林可公开提及自己过去项目、私下承认需要自己，正符合这种归因。锚点：林可在其他人面前提及陈默过去负责的成功项目；私下说仍需要陈默。",
+          "confidence": 0.84632759936,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f3",
+          "text": "陈默把重要项目负责人应由资历更深、曾有成功经验的人担任或至少由资深者把关，执为固定规则。锚点：林可即将竞争新的重要项目负责人职位，而林可仍向陈默求教。",
+          "confidence": 0.830960359296,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "陈默把自身经验在关键项目和决策中应被持续纳入、被听取，当成组织运作中理所当然的一部分。锚点：林可即将竞争重要项目负责人职位，并私下表示以后继续听陈默意见。",
+          "confidence": 0.8079094992,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f4",
+          "text": "陈默把林可增加互动、靠近、同步信息理解为关系应按‘林可依赖/请教陈默’的固定结构运行，不能只是临时性或职业性的沟通。锚点：林可持续增加互动、同步重要信息、聚餐时靠近、私下表示继续听意见。",
+          "confidence": 0.72,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.33333333333333337,
+          "alambana_prior_probability": 1.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.6804568851665376
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.33333333333333337,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.6804568851665376
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.33333333333333337,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.6804568851665376
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "陈默此刻经验到：林可持续增加与自己的互动、向自己同步重要信息、聚餐时主动靠近、在其他人面前提及自己过去负责的成功项目，以及私下说“仍然需要陈默”并表示以后继续听自己的意见，这些不是一项可以轻描淡写的工作选择，而是自己仍被需要、仍不可替代的自我确认。林可即将竞争一个新的重要项目负责人职位，这在陈默的经验里并未改变后辈在重要职位竞争前后仍应主动向资深者请教、继续听取资深者意见的当然上下/师徒秩序；林可的靠近、同步信息、公开提及和私下求教，都是这一秩序仍在运转的证据，所以她的竞争不被陈默经验为对自己仍被需要这一确认的中断，而是仍落在需要他意见的关系里。",
+          "prior_probability": 1.0,
+          "posterior_probability": 1.0,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.6804568851665376,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的互动增加、同步信息、聚餐靠近、公开提及旧项目、私下表示仍需要并继续听意见，均与客观刺激一致；对'自我确认''秩序仍在运转'的表述属主观解释，非伪造事实；且已纳入林可即将竞争新项目负责人职位这一关键变化。",
+          "combo_id": "C1"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 1.0,
+          "alambana": {
+            "id": "O_C1",
+            "text": "陈默此刻经验到：林可持续增加与自己的互动、向自己同步重要信息、聚餐时主动靠近、在其他人面前提及自己过去负责的成功项目，以及私下说“仍然需要陈默”并表示以后继续听自己的意见，这些不是一项可以轻描淡写的工作选择，而是自己仍被需要、仍不可替代的自我确认。林可即将竞争一个新的重要项目负责人职位，这在陈默的经验里并未改变后辈在重要职位竞争前后仍应主动向资深者请教、继续听取资深者意见的当然上下/师徒秩序；林可的靠近、同步信息、公开提及和私下求教，都是这一秩序仍在运转的证据，所以她的竞争不被陈默经验为对自己仍被需要这一确认的中断，而是仍落在需要他意见的关系里。",
+            "prior_probability": 1.0,
+            "posterior_probability": 1.0,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_4",
+              "bf_5"
+            ],
+            "reactivated_h_ids": [
+              "bf_4",
+              "bf_5"
+            ],
+            "raw_combo_score": 0.6804568851665376,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的互动增加、同步信息、聚餐靠近、公开提及旧项目、私下表示仍需要并继续听意见，均与客观刺激一致；对'自我确认''秩序仍在运转'的表述属主观解释，非伪造事实；且已纳入林可即将竞争新项目负责人职位这一关键变化。"
+          },
+          "xiang": {
+            "text": "在陈默看来，林可持续增加互动、同步信息、聚餐靠近、在别人面前提起他过去负责的成功项目，又私下说仍然需要他并要以后继续听意见，这不是随便的工作选择，而是他仍被需要、仍不可替代的确认；她即将竞争新的重要项目负责人职位，也不改变后辈在竞争前后该向资深者请教、继续听意见的秩序，反而说明她的靠近和求教仍落在需要他意见的关系里。结合以往位置变动和署名安排，他更确认组织与署名变化只是表层移动，经验和技术判断权威并未失效，项目遇到根本困难最终仍会回到经验与原方法上；但他也清楚，这种被需要不等于负责人或核心业务承担位置回到自己身上，林可的竞争更像是把经验当作可调用资源，因此他对年轻人关于既有成功路径的判断仍会先打折，要求用数据和书面材料来验证，同时内心愿意继续以自己的经验介入她所请教的事，把这种持续求教当作秩序仍在运转的证据。",
+            "source": "推理",
+            "confidence": 0.82
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "害": 0.011219999999999999,
+            "恶见": 0.5948746536083104,
+            "无惭": 0.25628387427305455,
+            "懈怠": 0.02334273458748936,
+            "不信": 0.24767602238913347,
+            "无明": 0.7005173494765863,
+            "谄": 0.55384,
+            "悭": 0.32274896607545356,
+            "无瞋": 0.1591297318493153,
+            "不害": 0.17901077872818144,
+            "贪": 0.6056151254123296,
+            "疑": 0.10902411602777148,
+            "憍": 0.6171779316119155,
+            "不放逸": 0.11387219048650846,
+            "不嫉": 0.4506164469752667,
+            "慢": 0.8387139122026162,
+            "行舍": 0.38502844221465515,
+            "精进": 0.013940560174595652,
+            "善见": 0.06333299928052077,
+            "嫉": 0.10573979146328692,
+            "不正知": 0.6945121166340062,
+            "诳": 0.177953514939877,
+            "覆": 0.018239468291332037,
+            "无痴": 0.07986480448255479
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "要求林可先自行整理/核对材料后再沟通",
+              "probability": 0.65,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "拒绝为林可公开背书并要求其自行判断",
+              "probability": 0.25,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "公开澄清旧项目经验的适用条件",
+              "probability": 0.1,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "要求林可先自行整理/核对材料后再沟通",
+          "probability": 0.65,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.65,
+              "contribution": 0.65
+            }
+          ]
+        },
+        {
+          "text": "拒绝为林可公开背书并要求其自行判断",
+          "probability": 0.25,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.25,
+              "contribution": 0.25
+            }
+          ]
+        },
+        {
+          "text": "公开澄清旧项目经验的适用条件",
+          "probability": 0.1,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.1,
+              "contribution": 0.1
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "行舍": 0.38999999999999996,
+        "不害": 0.185,
+        "不嫉": 0.5725,
+        "贪": 0.6075,
+        "慢": 0.865,
+        "无明": 0.78,
+        "恶见": 0.6799999999999999,
+        "诳": 0.23500000000000001,
+        "谄": 0.7525,
+        "憍": 0.7424999999999999,
+        "悭": 0.325,
+        "无惭": 0.325,
+        "不信": 0.16,
+        "不正知": 0.75
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 10,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 10,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 4,
+        "distinct_candidate_count": 3,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+            "mass": 0.6127
+          },
+          {
+            "id": "bf_2",
+            "text": "新人开始向林可咨询而以前主要找陈默，林可遇到困难又主动向陈默提出帮助请求，这使陈默把“有资历者或自己才应是新人求教的默认中心”的秩序理解为已被挪位，从此把年轻人直接成为求教中心看作需要打折和继续验证的事，而非可直接确认的资历转移。",
+            "mass": 0.5235
+          },
+          {
+            "id": "bf_3",
+            "text": "林可负责的新方案成功、公司增长，CEO在会议中直接采纳林可观点并表扬“公司需要更多年轻人的视角”，内部文章标题只写“年轻一代如何改变公司产品文化”而未提陈默，这使陈默把“公司这类重要决策本应由自己这样的资深者完成”的位置理解为被公开挪到年轻一代，从此把年轻视角被采纳、被命名为主角看作不能直接证明资深经验失效、仍需验证和打折的事。",
+            "mass": 0.4765
+          },
+          {
+            "id": "bf_4",
+            "text": "陈默从负责人撤岗、林可负责具体业务、陈默仍参加重要会议但发言机会和话语权下降，CEO仅说公司需要更灵活的组织，年度技术报告由林可署名却致谢陈默的经验帮助很重要，随后林可负责的项目严重困难、新方法仍无法解决且林可私下再找陈默求助——从此陈默理解这类组织与署名变动只是位置和话语权的表层移动，经验/技术判断权威并未失效，根本困难最终仍要回到经验/原有方法上，但年轻人触及既有成功路径的判断需先打折并用数据和书面材料验证。",
+            "mass": 0.3724
+          },
+          {
+            "id": "bf_5",
+            "text": "陈默从负责人撤岗、林可负责具体业务，年度技术报告由林可署名却写明陈默的帮助和经验很重要，林可负责的项目又严重困难且新方法无法解决并私下再找陈默求助——从此陈默理解这类安排是把经验当成可调用资源而不是负责人/核心业务承担者的位置，经验/技术判断权威与业务承担位置发生错位，负责人/核心业务本应由经验、资历或实际贡献来承担。",
+            "mass": 0.3328
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+              "mass": 0.6127
+            },
+            {
+              "id": "bf_2",
+              "text": "新人开始向林可咨询而以前主要找陈默，林可遇到困难又主动向陈默提出帮助请求，这使陈默把“有资历者或自己才应是新人求教的默认中心”的秩序理解为已被挪位，从此把年轻人直接成为求教中心看作需要打折和继续验证的事，而非可直接确认的资历转移。",
+              "mass": 0.5235
+            },
+            {
+              "id": "bf_3",
+              "text": "林可负责的新方案成功、公司增长，CEO在会议中直接采纳林可观点并表扬“公司需要更多年轻人的视角”，内部文章标题只写“年轻一代如何改变公司产品文化”而未提陈默，这使陈默把“公司这类重要决策本应由自己这样的资深者完成”的位置理解为被公开挪到年轻一代，从此把年轻视角被采纳、被命名为主角看作不能直接证明资深经验失效、仍需验证和打折的事。",
+              "mass": 0.4765
+            },
+            {
+              "id": "bf_4",
+              "text": "陈默从负责人撤岗、林可负责具体业务、陈默仍参加重要会议但发言机会和话语权下降，CEO仅说公司需要更灵活的组织，年度技术报告由林可署名却致谢陈默的经验帮助很重要，随后林可负责的项目严重困难、新方法仍无法解决且林可私下再找陈默求助——从此陈默理解这类组织与署名变动只是位置和话语权的表层移动，经验/技术判断权威并未失效，根本困难最终仍要回到经验/原有方法上，但年轻人触及既有成功路径的判断需先打折并用数据和书面材料验证。",
+              "mass": 0.3724
+            },
+            {
+              "id": "bf_5",
+              "text": "陈默从负责人撤岗、林可负责具体业务，年度技术报告由林可署名却写明陈默的帮助和经验很重要，林可负责的项目又严重困难且新方法无法解决并私下再找陈默求助——从此陈默理解这类安排是把经验当成可调用资源而不是负责人/核心业务承担者的位置，经验/技术判断权威与业务承担位置发生错位，负责人/核心业务本应由经验、资历或实际贡献来承担。",
+              "mass": 0.3328
+            }
+          ],
+          "triggered_ids": [
+            "bf_4",
+            "bf_5"
+          ],
+          "bindings": {
+            "bf_4": [
+              "sg_f1",
+              "sg_f2",
+              "sg_f4",
+              "sg_f5",
+              "dg_f1",
+              "dg_f2",
+              "dg_f3",
+              "dg_f5"
+            ],
+            "bf_5": [
+              "sg_f1",
+              "sg_f2",
+              "sg_f4",
+              "sg_f5",
+              "dg_f1",
+              "dg_f2",
+              "dg_f3",
+              "dg_f5"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.264
+        }
+      }
+    }
+  ],
+  "focus_person": "陈默",
+  "llm_usage": {
+    "total_calls": 95,
+    "total_duration_ms": 1151903.3716851263,
+    "wall_clock_ms": 500264.8468769912
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S04",
+    "event_index": 4,
+    "stimulus": "之后林可持续增加与陈默的互动，主动向陈默同步重要信息。聚餐时林可主动靠近陈默。林可在其他人面前提及陈默过去负责的成功项目。林可即将竞争一个新的重要项目负责人职位。林可私下对陈默说，自己仍然需要陈默，表示以后希望继续听陈默的意见。",
+    "top_action": "要求林可先自行整理/核对材料后再沟通",
+    "top_probability": 0.65,
+    "top_k": [
+      {
+        "text": "要求林可先自行整理/核对材料后再沟通",
+        "probability": 0.65
+      },
+      {
+        "text": "拒绝为林可公开背书并要求其自行判断",
+        "probability": 0.25
+      },
+      {
+        "text": "公开澄清旧项目经验的适用条件",
+        "probability": 0.1
+      }
+    ],
+    "continuity_before": {
+      "person_id": "陈默",
+      "event_count": 3,
+      "mental_episode_count": 3,
+      "cognitive_frame_count": 6
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+        "mass": 0.6127
+      },
+      {
+        "id": "bf_2",
+        "text": "新人开始向林可咨询而以前主要找陈默，林可遇到困难又主动向陈默提出帮助请求，这使陈默把“有资历者或自己才应是新人求教的默认中心”的秩序理解为已被挪位，从此把年轻人直接成为求教中心看作需要打折和继续验证的事，而非可直接确认的资历转移。",
+        "mass": 0.5235
+      },
+      {
+        "id": "bf_3",
+        "text": "林可负责的新方案成功、公司增长，CEO在会议中直接采纳林可观点并表扬“公司需要更多年轻人的视角”，内部文章标题只写“年轻一代如何改变公司产品文化”而未提陈默，这使陈默把“公司这类重要决策本应由自己这样的资深者完成”的位置理解为被公开挪到年轻一代，从此把年轻视角被采纳、被命名为主角看作不能直接证明资深经验失效、仍需验证和打折的事。",
+        "mass": 0.4765
+      },
+      {
+        "id": "bf_4",
+        "text": "陈默从负责人撤岗、林可负责具体业务、陈默仍参加重要会议但发言机会和话语权下降，CEO仅说公司需要更灵活的组织，年度技术报告由林可署名却致谢陈默的经验帮助很重要，随后林可负责的项目严重困难、新方法仍无法解决且林可私下再找陈默求助——从此陈默理解这类组织与署名变动只是位置和话语权的表层移动，经验/技术判断权威并未失效，根本困难最终仍要回到经验/原有方法上，但年轻人触及既有成功路径的判断需先打折并用数据和书面材料验证。",
+        "mass": 0.3724
+      },
+      {
+        "id": "bf_5",
+        "text": "陈默从负责人撤岗、林可负责具体业务，年度技术报告由林可署名却写明陈默的帮助和经验很重要，林可负责的项目又严重困难且新方法无法解决并私下再找陈默求助——从此陈默理解这类安排是把经验当成可调用资源而不是负责人/核心业务承担者的位置，经验/技术判断权威与业务承担位置发生错位，负责人/核心业务本应由经验、资历或实际贡献来承担。",
+        "mass": 0.3328
+      },
+      {
+        "id": "bf_6",
+        "text": "陈默从负责人撤岗、林可负责具体业务、会议发言机会减少，但年度技术报告致谢陈默的经验帮助很重要，林可负责的项目严重困难且新方法仍无法解决后又私下找陈默求助——从此陈默理解自己在林可那里仍是被需要、可依靠的帮助者/指导者这一关系位置不随署名和职责转移，这类外层变动不能切断该位置，而根本困难仍要回到经验/原有方法上并先经数据和书面材料验证。",
+        "mass": 0.2948
+      }
+    ],
+    "fresh_count_raw": 10,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 10,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 4,
+      "distinct_candidate_count": 3,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

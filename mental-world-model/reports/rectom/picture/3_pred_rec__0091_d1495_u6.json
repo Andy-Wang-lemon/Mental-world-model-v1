@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0091_d1495_u6",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the seeker:\n- Wants a drama similar to *Extremely Loud and Incredibly Close* (2011).\n- Loves Tom Hanks.\n- Has not seen *Road to Perdition* or *It’s Kind of a Funny Story*.\n- Liked *Cast Away* (2000).\n\nRECOMMENDER does **not** know:\n- What exactly the seeker liked about *Extremely Loud and Incredibly Close* or *Cast Away*.\n- Whether the seeker has seen other Tom Hanks films or other similar dramas.\n- Whether the seeker wants another recommendation immediately or wants to discuss *Cast Away* further.\n- Any additional genre, tone, director, era, or content constraints.\n\nGiven the interaction so far, the recommender has been steadily suggesting movies. The seeker’s last turn gives positive feedback about *Cast Away* and reinforces the preference for Tom Hanks. The most likely next strategy is to continue the recommendation process by suggesting another relevant movie or asking whether the seeker has seen one, which fits “Provides a recommendation directly or by inquiring further.”\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "4_pred_seeker__0193_d3089_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender says 'Hello' to the seeker.",
+      "information_available": "Only that the recommender has initiated the dialogue with a greeting; no recommendation request, preferences, or constraints have been stated yet.",
+      "preferences": "Unknown/not yet revealed.",
+      "belief_before": "No specific beliefs about the recommender's intent beyond the possibility that a recommendation dialogue may begin.",
+      "belief_update": "The recommender is present and has opened the conversation with a greeting.",
+      "belief_after": "The recommender is available to interact and may be ready to hear or respond to the seeker's recommendation need.",
+      "emotion": "Neutral, mildly anticipatory and polite.",
+      "intention": "Acknowledge the greeting and prepare to state or explore the recommendation request.",
+      "reaction_to_other": "Neutral-to-positive; recognizes a standard conversational opening.",
+      "conversational_goal": "Respond to the greeting and move the dialogue toward the seeker's recommendation need.",
+      "interpretation_change": "No previous interpretation exists; this turn establishes the recommender as an active interlocutor and opens the interaction."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender says 'Hello' to the seeker.\",\n    \"information_available\": \"Only that the recommender has initiated the dialogue with a greeting; no recommendation request, preferences, or constraints have been stated yet.\",\n    \"preferences\": \"Unknown/not yet revealed.\",\n    \"belief_before\": \"No specific beliefs about the recommender's intent beyond the possibility that a recommendation dialogue may begin.\",\n    \"belief_update\": \"The recommender is present and has opened the conversation with a greeting.\",\n    \"belief_after\": \"The recommender is available to interact and may be ready to hear or respond to the seeker's recommendation need.\",\n    \"emotion\": \"Neutral, mildly anticipatory and polite.\",\n    \"intention\": \"Acknowledge the greeting and prepare to state or explore the recommendation request.\",\n    \"reaction_to_other\": \"Neutral-to-positive; recognizes a standard conversational opening.\",\n    \"conversational_goal\": \"Respond to the greeting and move the dialogue toward the seeker's recommendation need.\",\n    \"interpretation_change\": \"No previous interpretation exists; this turn establishes the recommender as an active interlocutor and opens the interaction.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

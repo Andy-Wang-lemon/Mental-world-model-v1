@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 21,
+  "item_id": "d950_u6",
+  "dialogue_id": "950",
+  "utterance_pos": 6,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "SEEKER此刻把RECOMMENDER问的“what kind of movies do you like?”经验成在触碰“我的电影喜好/类型”这条自我边界：Horrible Bosses、Superbad等片名不是无关信息，而是要求用他自己的口味本质去接纳或排除的对象。与此同时，Seth Rogen参演和“喜剧”标签在他这里显得足以构成“我会喜欢”的充分理由，The Sitter与This Is the End因同一演员/类型被连成一种仿佛本来如此的归类，使他面对的不是可选推荐，而是对自身喜好边界的检验。",
+        "probability": 0.4242
+      },
+      {
+        "content": "SEEKER此刻把RECOMMENDER直接问的“Do you like Seth Rogen?”经验成要求自己占有并交出的自我标签：喜不喜欢Seth Rogen不是与己无关的普通信息，而是必须由他确认的“我”的一部分。RECOMMENDER又用Seth Rogen串联The Sitter、This Is the End等片，使这个演员名字像轴心一样组织起眼前选项；同一演员或同一喜剧类型足以推出“我会喜欢”的理解，在他这里呈现为不言自明的分类方式。",
+        "probability": 0.3091
+      },
+      {
+        "content": "SEEKER此刻把RECOMMENDER连续列出的Horrible Bosses、Superbad、The Sitter、This Is the End经验成提交给自己裁决的选项，自己处在决定接受或不接受推荐的选择者位置上。这个位置不是外在角色，而是他经验中的自我据点：最终喜欢/不喜欢要由他这里裁定。与此同时，Seth Rogen参演与喜剧标签被看成足以构成“我会喜欢”的天然理由，使这些选项按同一演员/同一类型排列在他面前，等待他的口味判决。",
+        "probability": 0.2667
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 此刻觉得 RECOMMENDER 问“what kind of movies do you like?”以及随后列出的片名，不是在给无关选项，而是在要求他用自己的电影喜好边界来接纳或排除。Horrible Bosses、Superbad 这些名字因此带上了“这算不算我的口味”的分量。与此同时，Seth Rogen 参演和“喜剧”标签在他这里很容易被当成“我会喜欢”的充分理由，The Sitter 与 This Is the End 也被这种同一演员/类型的线索连成一种仿佛本来如此的归类；但他已有的反应又说明这个理由并不足够：Superbad 可以喜欢，Horrible Bosses 却不对味，反而是 Jonah Hill 在 The Wolf of Wall Street 里的表现更能成为他衡量推荐的依据。于是这些推荐在他心里不是现成可接受的答案，而是要拿自己已有的喜好边界继续掂量的对象。",
+        "activation": 0.4007
+      },
+      {
+        "content": "RECOMMENDER把Seth Rogen这个名字摆到轴心，问的却像是我该不该把“喜欢Seth Rogen”认作自己的一部分。我心里把这当成一个需要我亲手交出的标签：说喜欢，就等于承认这类喜剧演员足以代表我的口味；说不喜欢，又得解释为何Jonah Hill可以而他不可以。眼前The Sitter、This Is the End都靠他串起来，仿佛同一张脸就能推出我会笑。我一边觉得Superbad的愉快似乎能顺延到有他参演的东西上，一边又记得Horrible Bosses并不合我意，于是这个自我标签不能随便给，得先在心里把它和已有偏好对齐。",
+        "activation": 0.3589
+      },
+      {
+        "content": "RECOMMENDER把Horrible Bosses、Superbad、The Sitter、This Is the End和Seth Rogen一起递过来时，SEEKER心里先把这些选项收进一张由自己口味裁定的清单里，觉得自己才是最终说喜欢或不喜欢的那一边；同时他又惯性地把Seth Rogen参演和喜剧类型当成‘可能合我口味’的天然标记，倾向于把The Sitter、This Is the End先放进待审的好感区。但刚刚确认过的Superbad喜欢、Horrible Bosses不喜欢、Jonah Hill很好这些具体经验又在拉他，让他不把同一演员或同一类型直接等同于自己会喜欢，而是准备继续用具体影片的表演和笑点是否合自己来分判，把推荐者的归类只当作参考，不当作替自己定下的结论。",
+        "activation": 0.2404
+      }
+    ],
+    "observed_action": "SEEKER 打招呼；随后询问能否帮忙找任何类型的好电影，并说他喜欢 Wedding Crashers (2005) 和 It (2017)，不喜欢 Star Wars；接着说他两部都看过，很喜欢 Superbad，但不太喜欢 Horrible Bosses，很喜欢 Jonah Hill，并说他在 The Wolf of Wall Street (2013) 中演得很好。",
+    "predicted_actions": [
+      {
+        "content": "表达喜欢某演员并请求推荐更多该演员的影片",
+        "probability": 0.2514
+      },
+      {
+        "content": "询问某演员在特定影片中是否好笑",
+        "probability": 0.2428
+      },
+      {
+        "content": "询问影片相似性",
+        "probability": 0.197
+      },
+      {
+        "content": "澄清不能因喜欢某演员就推断其口味",
+        "probability": 0.1681
+      },
+      {
+        "content": "表示观看某片的意愿",
+        "probability": 0.1407
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0.1681,
+    "c": 0.3921,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.1681 = 澄清不能因喜欢某演员就推断其口味 0.1681；C 0.3921 = 表达喜欢某演员并请求推荐更多该演员的影片 0.2514 + 表示观看某片的意愿 0.1407；D 0.0000。Action 0 and 4 request recommendation or express preference (C), action 3 adds preference information (B), and the others do not match.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "No predicted next action clearly states giving feedback on a prior recommendation; only past observed action or thoughts loosely connect to it.",
+  "audit_level": "inferred"
+}

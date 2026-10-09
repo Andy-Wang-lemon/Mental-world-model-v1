@@ -1,0 +1,50 @@
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER经验到：RECOMMENDER问‘Do you like Seth Rogen?’并说‘If you love Jonah Hill you'll like it’，这使‘是否喜欢某个演员’变成一个必须由我来持有和界定的个人立场；同时，片单继续按Seth Rogen/Jonah Hill的作品序列展开，而最初问出的类型偏好被搁到一边。此时的世界是：他的演员好恶被对方拿来当作推荐入口，而自己关于类型的筛选轴却没有成为片单的组织方式。",
+      "probability": 0.3795
+    },
+    {
+      "content": "SEEKER经验到：RECOMMENDER先问‘what kind of movies do you like?’，这像是在确认一个属于‘我’的类型边界；但紧接着的片单却由Horrible Bosses、Superbad、The Sitter、This Is the End、Pineapple Express以及Seth Rogen/Jonah Hill这些演员线索串起来，而不是按被问出的类型来筛。于是当前对象化世界呈现为：自己的喜好已被提出，却未被当作片单的组织轴，演员作品序列反而在覆盖或改写‘我’的偏好边界。",
+      "probability": 0.3663
+    },
+    {
+      "content": "SEEKER经验到：RECOMMENDER把The Sitter、This Is the End、Pineapple Express等片与Seth Rogen、Jonah Hill绑定，并推断‘If you love Jonah Hill you'll like it’，这使他关于‘我不是因为喜欢某个演员就会喜欢某片的人’的自我边界被直接触及。当前对象化世界是：影片被呈现为演员的附属标签，推荐逻辑从问出的类型转向演员作品序列，并试图用对演员的喜爱来推断他的口味。",
+      "probability": 0.2542
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER把这轮推荐听成：对方先问“你喜欢什么类型”，像是在请我划出属于“我的”口味边界；但紧接着的片名却沿着Horrible Bosses、Superbad、The Sitter、This Is the End、Pineapple Express以及Jonah Hill/Seth Rogen的演员线展开，而不是沿着我刚说出的类型线来筛。于是心里一边确认：我的偏好已经被说出，理应是选片的组织轴；一边又感到这条演员线在把我的边界重新编排。不过因为Jonah Hill我确实喜欢，Superbad和This Is the End也确实合意，所以并不把演员线整个判为越界，而更倾向把它看成对“我的口味”的补充：可以借我喜欢的演员延伸，但不能用演员作品清单覆盖我已明确的不喜欢，也不能替我重新定义我喜欢的类型。由此形成的趋向是：保住“我喜欢什么、不喜欢什么”的边界，同时允许演员线索作为进入我边界的候选，而不是直接当成我已经认同的类型。",
+      "activation": 0.3553
+    },
+    {
+      "content": "SEEKER 把 RECOMMENDER 的问法和片单放在一起看：对方问是否喜欢 Seth Rogen，又说如果喜欢 Jonah Hill 就会喜欢那些片子，这等于把“我喜不喜欢某个演员”拎出来，要我自己给出一个明确立场；而片单继续按 Seth Rogen/Jonah Hill 的作品序列往下走，最初我说 any genre、用 Wedding Crashers 和 It 这类具体喜好划出的筛选轴，却没有成为推荐的组织方式。SEEKER 承认自己对 Jonah Hill 的喜欢是真的，This Is the End 也确实喜欢，所以演员线索并非全无道理；但他觉得这份喜欢应该由自己持有和界定，不能被片单代答或顺手归并成“既然喜欢 Jonah Hill 就都会喜欢”。他更在意的是：既然先问了类型和喜好，推荐就该先沿着那条轴来筛，演员序列至多是辅助入口。此刻他趋向于把这两条线分开——接受 Jonah Hill 相关片单作为可看选项，同时不让它取代自己最初给出的类型与喜好标准。",
+      "activation": 0.3484
+    },
+    {
+      "content": "SEEKER感到 RECOMMENDER 把 The Sitter、This Is the End、Pineapple Express 都挂到 Seth Rogen、Jonah Hill 名下，还用“If you love Jonah Hill you'll like it”来推他的口味。他内在并不是完全排斥这条线索：他确实喜欢 Jonah Hill，也承认 Superbad、This Is the End 好看，所以演员关联对他是可用的参考。但这句话同时碰到一条界线——喜欢一个演员，不等于喜欢他参演的每一部片；The Sitter 他还没看过，不能因为挂着 Jonah Hill 就被预先判定为合口味。推荐从“喜欢什么类型”滑向“演员作品序列”，让他觉得自己的喜好被简化成标签：仿佛只要对演员有好感，就会自动接受相关片目。于是他内心更想把判断收回到具体影片、具体笑点、角色表现和实际观感上，把 Jonah Hill 当作一个正向线索而非充分理由；对已看过的 This Is the End 可以确认喜欢，对没看过的 The Sitter、Pineapple Express 则保留为需要单独辨认的对象，不愿被“爱 Jonah Hill 就必喜欢”绑住。",
+      "activation": 0.2962
+    }
+  ],
+  "observed_action": "SEEKER greets; asks for help finding a good movie in any genre; states liking Wedding Crashers and It but not Star Wars; states having seen both Horrible Bosses and Superbad, loving Superbad but not so much Horrible Bosses, liking Jonah Hill a lot, and says Jonah Hill was great in The Wolf of Wall Street; states not having seen The Sitter, asks whether it is a comedy, says yes, states having seen This Is the End and loved it.",
+  "predicted_actions": [
+    {
+      "content": "说明喜好并要求推荐符合口味的电影",
+      "probability": 0.3141
+    },
+    {
+      "content": "有条件同意观看推荐电影",
+      "probability": 0.2695
+    },
+    {
+      "content": "将 The Sitter 和 Pineapple Express 列为可看选项并请求更多按最初类型偏好筛选的推荐",
+      "probability": 0.2374
+    },
+    {
+      "content": "询问电影类型是否符合口味",
+      "probability": 0.179
+    }
+  ]
+}

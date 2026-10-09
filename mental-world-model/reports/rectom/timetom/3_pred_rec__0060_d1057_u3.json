@@ -1,0 +1,49 @@
+{
+  "id": "3_pred_rec__0060_d1057_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello!",
+      "belief_before": "No prior information about any user; neutral expectations.",
+      "belief_update": "A user has initiated contact with a greeting.",
+      "belief_after": "A user is present and has greeted me; likely wants to interact.",
+      "emotion": "Neutral, slightly attentive and friendly.",
+      "intention": "Acknowledge the greeting and prepare to respond.",
+      "conversational_goal": "Greet the user back and invite them to state their request."
+    },
+    {
+      "time": 2,
+      "observed": "I (RECOMMENDER) say: Hello~",
+      "belief_before": "A user is present and has greeted me; likely wants to interact.",
+      "belief_update": "I have responded with a friendly greeting; no new external information.",
+      "belief_after": "I have greeted the user back; conversation is open and ready for their request.",
+      "emotion": "Friendly, polite.",
+      "intention": "Encourage the user to state their needs.",
+      "conversational_goal": "Maintain rapport and prompt the user to specify what they want."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)",
+      "belief_before": "I have greeted the user back; conversation is open and ready for their request.",
+      "belief_update": "User requests a comedy recommendation and likes Super Troopers and Beerfest, indicating a preference for raunchy, buddy, or stoner comedies.",
+      "belief_after": "User seeks a comedy recommendation; their taste includes crude/raunchy buddy comedies like Super Troopers and Beerfest.",
+      "emotion": "Helpful, engaged, interested.",
+      "intention": "Provide comedy recommendations that match the user's stated preferences.",
+      "conversational_goal": "Suggest suitable comedy movies or ask clarifying questions to narrow down options."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello!\",\n    \"belief_before\": \"No prior information about any user; neutral expectations.\",\n    \"belief_update\": \"A user has initiated contact with a greeting.\",\n    \"belief_after\": \"A user is present and has greeted me; likely wants to interact.\",\n    \"emotion\": \"Neutral, slightly attentive and friendly.\",\n    \"intention\": \"Acknowledge the greeting and prepare to respond.\",\n    \"conversational_goal\": \"Greet the user back and invite them to state their request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I (RECOMMENDER) say: Hello~\",\n    \"belief_before\": \"A user is present and has greeted me; likely wants to interact.\",\n    \"belief_update\": \"I have responded with a friendly greeting; no new external information.\",\n    \"belief_after\": \"I have greeted the user back; conversation is open and ready for their request.\",\n    \"emotion\": \"Friendly, polite.\",\n    \"intention\": \"Encourage the user to state their needs.\",\n    \"conversational_goal\": \"Maintain rapport and prompt the user to specify what they want.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)\",\n    \"belief_before\": \"I have greeted the user back; conversation is open and ready for their request.\",\n    \"belief_update\": \"User requests a comedy recommendation and likes Super Troopers and Beerfest, indicating a preference for raunchy, buddy, or stoner comedies.\",\n    \"belief_after\": \"User seeks a comedy recommendation; their taste includes crude/raunchy buddy comedies like Super Troopers and Beerfest.\",\n    \"emotion\": \"Helpful, engaged, interested.\",\n    \"intention\": \"Provide comedy recommendations that match the user's stated preferences.\",\n    \"conversational_goal\": \"Suggest suitable comedy movies or ask clarifying questions to narrow down options.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 77,
+  "item_id": "d1205_u6",
+  "dialogue_id": "1205",
+  "utterance_pos": 6,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hey How are you\nRECOMMENDER says: Hello, how are you? What kind of movies do you like?\nSEEKER says: I amreally into everything...I really like foreign movies as well...it is really my thing\nRECOMMENDER says: Because of the holidays, I would recommend Dr. Seuss' How the Grinch Stole Christmas  (2000)  and Christmas with the Kranks (2004)  . Have you seen either of these?\nSEEKER says: no, I am not really a holiday's person...do you have any other suggestions?\nRECOMMENDER says: Oh, I s；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hey How are you\nRECOMMENDER says: Hello, how are you? What kind of movies do you like?\nSEEKER says: I amreally into everything...I really like foreign movies as well...it is really my thing\nRECOMMENDER says: Because of the holidays, I would recommend Dr. Seuss' How the Grinch Stole Christmas  (2000)  and Christmas with the Kranks (2004)  . Have you seen either of these?\nSEEKER says: no, I am not really a holiday's person...do you have any other suggestions?\nRECOMMENDER says: Oh, I s；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.2,
+    "c": 0.3,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER just rejected the holiday recommendation and asked for alternatives, so the next likely step is feedback on the recommender's next suggestion.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

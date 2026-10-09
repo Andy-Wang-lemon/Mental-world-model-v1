@@ -1,0 +1,126 @@
+{
+  "id": "3_pred_rec__0101_d1509_u11",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says 'Hi'. Recommender has only received an opening greeting; no movie preferences or request details are available yet.",
+      "belief_before": "No information about the seeker's movie tastes or request.",
+      "belief_update": "Seeker is initiating contact politely.",
+      "belief_after": "Seeker is present and ready to interact; recommender should prompt for a movie request.",
+      "emotion": "Neutral, polite, expectant.",
+      "intention": "Acknowledge the greeting and invite the seeker to state what they want.",
+      "conversational_goal": "Open the conversation and elicit a movie request."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hello, what kind of movie are you looking for?'",
+      "belief_before": "Seeker has greeted, but no movie genre or preference is known.",
+      "belief_update": "Recommender chooses to greet and ask for the seeker's movie preference.",
+      "belief_after": "Still no genre known; waiting for the seeker's request.",
+      "emotion": "Polite, helpful.",
+      "intention": "Elicit the seeker's movie preference.",
+      "conversational_goal": "Identify what kind of movie to recommend."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I’m looking for some good thriller movies...I love he suspense sort of films like Seven (1995)'",
+      "belief_before": "No movie preferences are known.",
+      "belief_update": "Seeker wants thriller/suspense movies and likes Seven (1995).",
+      "belief_after": "Seeker preferences include thriller, suspense, and Seven (1995).",
+      "emotion": "Interested, engaged.",
+      "intention": "Recommend thriller/suspense titles.",
+      "conversational_goal": "Find a suitable thriller recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'Ok, do you like Saw (2004)?'",
+      "belief_before": "Seeker likes thriller/suspense and Seven (1995).",
+      "belief_update": "Recommender proposes Saw (2004) as a possible match and asks for feedback.",
+      "belief_after": "Saw (2004) is a candidate recommendation; waiting to learn if it fits.",
+      "emotion": "Helpful, curious.",
+      "intention": "Test Saw (2004) as a recommendation.",
+      "conversational_goal": "Narrow down a suitable thriller by checking a candidate."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'That’s more gorey which I don’t like...I like Double Jeopardy (1999)'",
+      "belief_before": "Saw (2004) was proposed; seeker likes thriller/suspense.",
+      "belief_update": "Saw (2004) is rejected as too gory; seeker dislikes gore and likes Double Jeopardy (1999).",
+      "belief_after": "Avoid gory thrillers; seeker likes Double Jeopardy (1999) and still likes suspense without heavy gore.",
+      "emotion": "Understanding, accepting.",
+      "intention": "Adjust recommendations away from gore.",
+      "conversational_goal": "Refine recommendations toward non-gory suspense like Double Jeopardy (1999)."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says: 'Oh ok. I've never seen Double Jeopardy (1999)'",
+      "belief_before": "Seeker dislikes gore and likes Double Jeopardy (1999).",
+      "belief_update": "Recommender acknowledges the preference and admits unfamiliarity with Double Jeopardy (1999).",
+      "belief_after": "Knows seeker likes Double Jeopardy (1999), but recommender cannot rely on personal knowledge of that film; more cues are needed.",
+      "emotion": "Slightly uncertain or apologetic.",
+      "intention": "Acknowledge the seeker's input and keep the conversation open.",
+      "conversational_goal": "Maintain rapport and gather more information."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: 'I like that along with Gone Girl (2014)'",
+      "belief_before": "Seeker likes Double Jeopardy (1999) and dislikes gore.",
+      "belief_update": "Seeker also likes Gone Girl (2014).",
+      "belief_after": "Seeker likes Double Jeopardy (1999) and Gone Girl (2014); likely prefers suspense/mystery without heavy gore.",
+      "emotion": "Engaged, attentive.",
+      "intention": "Find titles similar to Double Jeopardy (1999) and Gone Girl (2014).",
+      "conversational_goal": "Refine the recommendation further using new preference information."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says: 'Have you seen The Zodiac (2005)?'",
+      "belief_before": "Seeker likes Double Jeopardy (1999) and Gone Girl (2014), and dislikes gore.",
+      "belief_update": "Recommender proposes The Zodiac (2005) as a candidate recommendation.",
+      "belief_after": "The Zodiac (2005) is a candidate; waiting for feedback.",
+      "emotion": "Helpful, hopeful.",
+      "intention": "Suggest The Zodiac (2005).",
+      "conversational_goal": "Check whether The Zodiac (2005) matches the seeker's tastes and advance the recommendation."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: 'Yes I really like that movie...I like he murder mysteries'",
+      "belief_before": "The Zodiac (2005) was proposed; seeker likes Double Jeopardy (1999) and Gone Girl (2014).",
+      "belief_update": "Seeker has seen and likes The Zodiac (2005) and likes murder mysteries.",
+      "belief_after": "Seeker likes murder mysteries and The Zodiac (2005); recommender can recommend murder mystery titles.",
+      "emotion": "Pleased, validated.",
+      "intention": "Recommend murder mystery titles.",
+      "conversational_goal": "Provide a murder mystery recommendation."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says: 'I do too. Rear Window (1954) is an oldie but goodie'",
+      "belief_before": "Seeker likes murder mysteries and The Zodiac (2005).",
+      "belief_update": "Recommender agrees they also like murder mysteries and proposes Rear Window (1954).",
+      "belief_after": "Rear Window (1954) is offered; recommender's own preference now includes liking murder mysteries; waiting to see if seeker knows or likes it.",
+      "emotion": "Enthusiastic, agreeable.",
+      "intention": "Recommend Rear Window (1954) as a classic murder mystery.",
+      "conversational_goal": "Add a classic murder mystery recommendation."
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says: 'I’ve never heard of that movie. What’s that movie about?'",
+      "belief_before": "Rear Window (1954) was offered as a murder mystery recommendation.",
+      "belief_update": "Seeker has not heard of Rear Window (1954) and asks for a description.",
+      "belief_after": "Recommender needs to explain Rear Window (1954) and why it fits the seeker's murder-mystery preference.",
+      "emotion": "Slightly surprised but willing and helpful.",
+      "intention": "Explain Rear Window (1954) and its relevance.",
+      "conversational_goal": "Inform the seeker about Rear Window (1954) and keep the recommendation on track."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says 'Hi'. Recommender has only received an opening greeting; no movie preferences or request details are available yet.\",\n    \"belief_before\": \"No information about the seeker's movie tastes or request.\",\n    \"belief_update\": \"Seeker is initiating contact politely.\",\n    \"belief_after\": \"Seeker is present and ready to interact; recommender should prompt for a movie request.\",\n    \"emotion\": \"Neutral, polite, expectant.\",\n    \"intention\": \"Acknowledge the greeting and invite the seeker to state what they want.\",\n    \"conversational_goal\": \"Open the conversation and elicit a movie request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hello, what kind of movie are you looking for?'\",\n    \"belief_before\": \"Seeker has greeted, but no movie genre or preference is known.\",\n    \"belief_update\": \"Recommender chooses to greet and ask for the seeker's movie preference.\",\n    \"belief_after\": \"Still no genre known; waiting for the seeker's request.\",\n    \"emotion\": \"Polite, helpful.\",\n    \"intention\": \"Elicit the seeker's movie preference.\",\n    \"conversational_goal\": \"Identify what kind of movie to recommend.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I’m looking for some good thriller movies...I love he suspense sort of films like Seven (1995)'\",\n    \"belief_before\": \"No movie preferences are known.\",\n    \"belief_update\": \"Seeker wants thriller/suspense movies and likes Seven (1995).\",\n    \"belief_after\": \"Seeker preferences include thriller, suspense, and Seven (1995).\",\n    \"emotion\": \"Interested, engaged.\",\n    \"intention\": \"Recommend thriller/suspense titles.\",\n    \"conversational_goal\": \"Find a suitable thriller recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'Ok, do you like Saw (2004)?'\",\n    \"belief_before\": \"Seeker likes thriller/suspense and Seven (1995).\",\n    \"belief_update\": \"Recommender proposes Saw (2004) as a possible match and asks for feedback.\",\n    \"belief_after\": \"Saw (2004) is a candidate recommendation; waiting to learn if it fits.\",\n    \"emotion\": \"Helpful, curious.\",\n    \"intention\": \"Test Saw (2004) as a recommendation.\",\n    \"conversational_goal\": \"Narrow down a suitable thriller by checking a candidate.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'That’s more gorey which I don’t like...I like Double Jeopardy (1999)'\",\n    \"belief_before\": \"Saw (2004) was proposed; seeker likes thriller/suspense.\",\n    \"belief_update\": \"Saw (2004) is rejected as too gory; seeker dislikes gore and likes Double Jeopardy (1999).\",\n    \"belief_after\": \"Avoid gory thrillers; seeker likes Double Jeopardy (1999) and still likes suspense without heavy gore.\",\n    \"emotion\": \"Understanding, accepting.\",\n    \"intention\": \"Adjust recommendations away from gore.\",\n    \"conversational_goal\": \"Refine recommendations toward non-gory suspense like Double Jeopardy (1999).\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says: 'Oh ok. I've never seen Double Jeopardy (1999)'\",\n    \"belief_before\": \"Seeker dislikes gore and likes Double Jeopardy (1999).\",\n    \"belief_update\": \"Recommender acknowledges the preference and admits unfamiliarity with Double Jeopardy (1999).\",\n    \"belief_after\": \"Knows seeker likes Double Jeopardy (1999), but recommender cannot rely on personal knowledge of that film; more cues are needed.\",\n    \"emotion\": \"Slightly uncertain or apologetic.\",\n    \"intention\": \"Acknowledge the seeker's input and keep the conversation open.\",\n    \"conversational_goal\": \"Maintain rapport and gather more information.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: 'I like that along with Gone Girl (2014)'\",\n    \"belief_before\": \"Seeker likes Double Jeopardy (1999) and dislikes gore.\",\n    \"belief_update\": \"Seeker also likes Gone Girl (2014).\",\n    \"belief_after\": \"Seeker likes Double Jeopardy (1999) and Gone Girl (2014); likely prefers suspense/mystery without heavy gore.\",\n    \"emotion\": \"Engaged, attentive.\",\n    \"intention\": \"Find titles similar to Double Jeopardy (1999) and Gone Girl (2014).\",\n    \"conversational_goal\": \"Refine the recommendation further using new preference information.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says: 'Have you seen The Zodiac (2005)?'\",\n    \"belief_before\": \"Seeker likes Double Jeopardy (1999) and Gone Girl (2014), and dislikes gore.\",\n    \"belief_update\": \"Recommender proposes The Zodiac (2005) as a candidate recommendation.\",\n    \"belief_after\": \"The Zodiac (2005) is a candidate; waiting for feedback.\",\n    \"emotion\": \"Helpful, hopeful.\",\n    \"intention\": \"Suggest The Zodiac (2005).\",\n    \"conversational_goal\": \"Check whether The Zodiac (2005) matches the seeker's tastes and advance the recommendation.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: 'Yes I really like that movie...I like he murder mysteries'\",\n    \"belief_before\": \"The Zodiac (2005) was proposed; seeker likes Double Jeopardy (1999) and Gone Girl (2014).\",\n    \"belief_update\": \"Seeker has seen and likes The Zodiac (2005) and likes murder mysteries.\",\n    \"belief_after\": \"Seeker likes murder mysteries and The Zodiac (2005); recommender can recommend murder mystery titles.\",\n    \"emotion\": \"Pleased, validated.\",\n    \"intention\": \"Recommend murder mystery titles.\",\n    \"conversational_goal\": \"Provide a murder mystery recommendation.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says: 'I do too. Rear Window (1954) is an oldie but goodie'\",\n    \"belief_before\": \"Seeker likes murder mysteries and The Zodiac (2005).\",\n    \"belief_update\": \"Recommender agrees they also like murder mysteries and proposes Rear Window (1954).\",\n    \"belief_after\": \"Rear Window (1954) is offered; recommender's own preference now includes liking murder mysteries; waiting to see if seeker knows or likes it.\",\n    \"emotion\": \"Enthusiastic, agreeable.\",\n    \"intention\": \"Recommend Rear Window (1954) as a classic murder mystery.\",\n    \"conversational_goal\": \"Add a classic murder mystery recommendation.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says: 'I’ve never heard of that movie. What’s that movie about?'\",\n    \"belief_before\": \"Rear Window (1954) was offered as a murder mystery recommendation.\",\n    \"belief_update\": \"Seeker has not heard of Rear Window (1954) and asks for a description.\",\n    \"belief_after\": \"Recommender needs to explain Rear Window (1954) and why it fits the seeker's murder-mystery preference.\",\n    \"emotion\": \"Slightly surprised but willing and helpful.\",\n    \"intention\": \"Explain Rear Window (1954) and its relevance.\",\n    \"conversational_goal\": \"Inform the seeker about Rear Window (1954) and keep the recommendation on track.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

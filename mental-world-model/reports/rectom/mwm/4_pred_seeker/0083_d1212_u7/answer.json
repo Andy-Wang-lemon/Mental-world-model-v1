@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 83,
+  "item_id": "d1212_u7",
+  "dialogue_id": "1212",
+  "utterance_pos": 7,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982) \nSEEKER says: Yes, I have seen that one and thought it was pretty good.\nRECOMMENDER says: Not sure if it's considered sci-fi, b；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982) \nSEEKER says: Yes, I have seen that one and thought it was pretty good.\nRECOMMENDER says: Not sure if it's considered sci-fi, b；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.2,
+    "c": 0.3,
+    "d": 0.1
+  },
+  "score_reason": "The seeker is responding to the recommender's comment about the previously recommended movie E.T., giving feedback on it.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

@@ -1,0 +1,29 @@
+数据：3_pred_rec
+题号：155  d2349_u15
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\nRECOMMENDER says: Hi happy new year\nSEEKER says: Happy New Year\nRECOMMENDER says: Have you seen The Secret Life of Pets (2016) \nSEEKER says: I'm not really a fan of that one. I like the first half hour but then I thought it got a little weird\nRECOMMENDER says: Have you seen Minions  (2015) ...those movies are hilarious\nSEEKER says: Yes! My brother actually dressed up as a minion for Hallowee；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight\nRECOMMENDER says: Hi happy new year\nSEEKER says: Happy New Year\nRECOMMENDER says: Have you seen The Secret Life of Pets (2016) \nSEEKER says: I'm not really a fan of that one. I like the first half hour but then I thought it got a little weird\nRECOMMENDER says: Have you seen Minions  (2015) ...those movies are hilarious\nSEEKER says: Yes! My brother actually dressed up as a minion for Hallowee；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.2, "b": 0.3, "c": 0.9, "d": 0.2, "e": 0.2}
+选择说明：The recommender has been repeatedly asking if the seeker has seen specific movies, so the next strategy is to continue providing recommendations by inquiring further.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：The record contains no predicted next actions, so the next strategy can only be guessed from past chit-chat or greetings.

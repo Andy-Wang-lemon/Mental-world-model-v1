@@ -1,0 +1,89 @@
+{
+  "id": "3_pred_rec__0150_d2349_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight'",
+      "information_available": "Recommender has no prior dialogue context; only SEEKER's request is available.",
+      "preferences": "Recommender has no information yet about SEEKER's or the little brother's movie preferences.",
+      "belief_before": "No relevant beliefs about SEEKER or the movie request.",
+      "belief_update": "SEEKER needs a children's movie for a little brother while babysitting tonight.",
+      "belief_after": "SEEKER is looking for a child-appropriate movie to watch tonight; a recommendation is needed.",
+      "emotion": "Neutral-to-positive/welcoming.",
+      "intention": "Prepare to greet and help with a suitable children's movie recommendation.",
+      "conversational_goal": "Acknowledge the request and begin the recommendation interaction.",
+      "reaction_to_other": "Friendly; takes note of the request.",
+      "changes_previous_interpretation": "Initializes interpretation: SEEKER needs a children's movie for tonight."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hi happy new year'",
+      "information_available": "Recommender knows SEEKER wants a children's movie for a little brother tonight; no additional movie preferences are known. Recommender chooses to greet.",
+      "preferences": "No update on movie preferences; recommender has not asked about them yet.",
+      "belief_before": "SEEKER needs a children's movie tonight.",
+      "belief_update": "No new factual information about the movie request; recommender responds socially with a New Year greeting.",
+      "belief_after": "SEEKER still needs a children's movie tonight; conversation has opened with a New Year greeting.",
+      "emotion": "Festive/cheerful.",
+      "intention": "Return greeting and maintain friendly rapport; may still intend to help with the movie request.",
+      "conversational_goal": "Exchange New Year greetings and keep the conversation open.",
+      "reaction_to_other": "Friendly greeting to SEEKER.",
+      "changes_previous_interpretation": "No substantive change to the movie request; adds social context."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'Happy New Year'",
+      "information_available": "SEEKER returns the New Year greeting; the original movie request remains active.",
+      "preferences": "Still no specific movie preferences disclosed.",
+      "belief_before": "SEEKER needs a children's movie tonight; recommender greeted SEEKER.",
+      "belief_update": "SEEKER reciprocates the greeting; no new movie information is provided.",
+      "belief_after": "SEEKER is socially engaged and still needs a children's movie recommendation.",
+      "emotion": "Positive/friendly.",
+      "intention": "Continue the conversation and move toward making a recommendation.",
+      "conversational_goal": "Acknowledge greeting and transition toward the movie request.",
+      "reaction_to_other": "Appreciative/pleased by reciprocated greeting.",
+      "changes_previous_interpretation": "No substantive change; confirms rapport."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'Have you seen The Secret Life of Pets (2016)'",
+      "information_available": "Recommender knows SEEKER wants a children's movie for a little brother tonight; no known negative preference yet. Recommender proposes a title.",
+      "preferences": "Recommender treats The Secret Life of Pets as a plausible child-friendly animated option; no known preference against it yet.",
+      "belief_before": "SEEKER needs a children's movie tonight and has not stated specific preferences.",
+      "belief_update": "Recommender selects The Secret Life of Pets as a candidate recommendation and asks if SEEKER has seen it.",
+      "belief_after": "The Secret Life of Pets may be a suitable recommendation; its suitability depends on SEEKER's familiarity and opinion.",
+      "emotion": "Helpful/optimistic.",
+      "intention": "Recommend a children's movie and check whether SEEKER has already seen it.",
+      "conversational_goal": "Offer a concrete recommendation for tonight.",
+      "reaction_to_other": "Cooperative; responds to the request.",
+      "changes_previous_interpretation": "No change to the underlying request; recommender now commits to a candidate movie."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'I'm not really a fan of that one. I like the first half hour but then I thought it got a little weird'",
+      "information_available": "SEEKER has seen The Secret Life of Pets and is not a fan; liked the first half hour, found the later part weird.",
+      "preferences": "SEEKER dislikes The Secret Life of Pets overall; liked the first half hour but disliked the later 'weird' part. Recommender should avoid this title and perhaps avoid movies with a jarring or weird shift.",
+      "belief_before": "Recommender believed The Secret Life of Pets might be suitable and was checking if SEEKER had seen it.",
+      "belief_update": "SEEKER has seen The Secret Life of Pets and rejects it; their opinion is mixed-to-negative, disliking the later weird portion.",
+      "belief_after": "The Secret Life of Pets is not suitable; a different children's movie recommendation is needed, and SEEKER's taste may disfavor movies that become weird after a good start.",
+      "emotion": "Slightly disappointed but attentive/accepting.",
+      "intention": "Acknowledge the negative feedback and prepare a different recommendation.",
+      "conversational_goal": "Respond to rejection by adjusting and suggesting an alternative children's movie.",
+      "reaction_to_other": "Receptive to feedback; no defensiveness.",
+      "changes_previous_interpretation": "Yes: the previous candidate is rejected; the recommendation strategy must shift to another title."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi! I am looking for a children's movie for my little brother! I am baby-sitting him tonight'\",\n    \"information_available\": \"Recommender has no prior dialogue context; only SEEKER's request is available.\",\n    \"preferences\": \"Recommender has no information yet about SEEKER's or the little brother's movie preferences.\",\n    \"belief_before\": \"No relevant beliefs about SEEKER or the movie request.\",\n    \"belief_update\": \"SEEKER needs a children's movie for a little brother while babysitting tonight.\",\n    \"belief_after\": \"SEEKER is looking for a child-appropriate movie to watch tonight; a recommendation is needed.\",\n    \"emotion\": \"Neutral-to-positive/welcoming.\",\n    \"intention\": \"Prepare to greet and help with a suitable children's movie recommendation.\",\n    \"conversational_goal\": \"Acknowledge the request and begin the recommendation interaction.\",\n    \"reaction_to_other\": \"Friendly; takes note of the request.\",\n    \"changes_previous_interpretation\": \"Initializes interpretation: SEEKER needs a children's movie for tonight.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hi happy new year'\",\n    \"information_available\": \"Recommender knows SEEKER wants a children's movie for a little brother tonight; no additional movie preferences are known. Recommender chooses to greet.\",\n    \"preferences\": \"No update on movie preferences; recommender has not asked about them yet.\",\n    \"belief_before\": \"SEEKER needs a children's movie tonight.\",\n    \"belief_update\": \"No new factual information about the movie request; recommender responds socially with a New Year greeting.\",\n    \"belief_after\": \"SEEKER still needs a children's movie tonight; conversation has opened with a New Year greeting.\",\n    \"emotion\": \"Festive/cheerful.\",\n    \"intention\": \"Return greeting and maintain friendly rapport; may still intend to help with the movie request.\",\n    \"conversational_goal\": \"Exchange New Year greetings and keep the conversation open.\",\n    \"reaction_to_other\": \"Friendly greeting to SEEKER.\",\n    \"changes_previous_interpretation\": \"No substantive change to the movie request; adds social context.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'Happy New Year'\",\n    \"information_available\": \"SEEKER returns the New Year greeting; the original movie request remains active.\",\n    \"preferences\": \"Still no specific movie preferences disclosed.\",\n    \"belief_before\": \"SEEKER needs a children's movie tonight; recommender greeted SEEKER.\",\n    \"belief_update\": \"SEEKER reciprocates the greeting; no new movie information is provided.\",\n    \"belief_after\": \"SEEKER is socially engaged and still needs a children's movie recommendation.\",\n    \"emotion\": \"Positive/friendly.\",\n    \"intention\": \"Continue the conversation and move toward making a recommendation.\",\n    \"conversational_goal\": \"Acknowledge greeting and transition toward the movie request.\",\n    \"reaction_to_other\": \"Appreciative/pleased by reciprocated greeting.\",\n    \"changes_previous_interpretation\": \"No substantive change; confirms rapport.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'Have you seen The Secret Life of Pets (2016)'\",\n    \"information_available\": \"Recommender knows SEEKER wants a children's movie for a little brother tonight; no known negative preference yet. Recommender proposes a title.\",\n    \"preferences\": \"Recommender treats The Secret Life of Pets as a plausible child-friendly animated option; no known preference against it yet.\",\n    \"belief_before\": \"SEEKER needs a children's movie tonight and has not stated specific preferences.\",\n    \"belief_update\": \"Recommender selects The Secret Life of Pets as a candidate recommendation and asks if SEEKER has seen it.\",\n    \"belief_after\": \"The Secret Life of Pets may be a suitable recommendation; its suitability depends on SEEKER's familiarity and opinion.\",\n    \"emotion\": \"Helpful/optimistic.\",\n    \"intention\": \"Recommend a children's movie and check whether SEEKER has already seen it.\",\n    \"conversational_goal\": \"Offer a concrete recommendation for tonight.\",\n    \"reaction_to_other\": \"Cooperative; responds to the request.\",\n    \"changes_previous_interpretation\": \"No change to the underlying request; recommender now commits to a candidate movie.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'I'm not really a fan of that one. I like the first half hour but then I thought it got a little weird'\",\n    \"information_available\": \"SEEKER has seen The Secret Life of Pets and is not a fan; liked the first half hour, found the later part weird.\",\n    \"preferences\": \"SEEKER dislikes The Secret Life of Pets overall; liked the first half hour but disliked the later 'weird' part. Recommender should avoid this title and perhaps avoid movies with a jarring or weird shift.\",\n    \"belief_before\": \"Recommender believed The Secret Life of Pets might be suitable and was checking if SEEKER had seen it.\",\n    \"belief_update\": \"SEEKER has seen The Secret Life of Pets and rejects it; their opinion is mixed-to-negative, disliking the later weird portion.\",\n    \"belief_after\": \"The Secret Life of Pets is not suitable; a different children's movie recommendation is needed, and SEEKER's taste may disfavor movies that become weird after a good start.\",\n    \"emotion\": \"Slightly disappointed but attentive/accepting.\",\n    \"intention\": \"Acknowledge the negative feedback and prepare a different recommendation.\",\n    \"conversational_goal\": \"Respond to rejection by adjusting and suggesting an alternative children's movie.\",\n    \"reaction_to_other\": \"Receptive to feedback; no defensiveness.\",\n    \"changes_previous_interpretation\": \"Yes: the previous candidate is rejected; the recommendation strategy must shift to another title.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,136 @@
+{
+  "id": "4_pred_seeker__0024_d950_u12",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says 'Hey!'",
+      "belief_before": "No prior context in this dialogue.",
+      "belief_update": "SEEKER initiates contact; no movie preferences or recommender intentions are known yet.",
+      "belief_after": "SEEKER is in an open greeting state; no preferences or recommender intentions known.",
+      "emotion": "neutral/friendly",
+      "intention": "start conversation",
+      "conversational_goal": "greet and open interaction"
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says 'Hi, what kind of movies do you like?'",
+      "belief_before": "SEEKER is in an open greeting state; no preferences or recommender intentions known.",
+      "belief_update": "Recommender responds and asks for movie preferences, indicating willingness to recommend.",
+      "belief_after": "SEEKER knows recommender is willing to help and needs SEEKER's movie preferences.",
+      "emotion": "receptive/neutral",
+      "intention": "provide preferences and ask for a movie",
+      "conversational_goal": "answer the preference question and request recommendation"
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says 'Can you help me find a good movie in any genre? I like things like Wedding Crashers (2005) and It (2017) but not like Star Wars'",
+      "belief_before": "SEEKER knows recommender is willing to help and needs SEEKER's movie preferences.",
+      "belief_update": "SEEKER states a request for any-genre recommendation and reveals likes and dislikes.",
+      "belief_after": "Recommender knows SEEKER is open to any genre, likes Wedding Crashers and It, and dislikes Star Wars; SEEKER expects tailored suggestions.",
+      "emotion": "hopeful/cooperative",
+      "intention": "obtain a recommendation",
+      "conversational_goal": "solicit recommendations based on stated likes/dislikes"
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says 'Okay! How about Horrible Bosses (2011) or Superbad (2007)?'",
+      "belief_before": "Recommender knows SEEKER is open to any genre, likes Wedding Crashers and It, dislikes Star Wars; SEEKER expects suggestions.",
+      "belief_update": "Recommender proposes Horrible Bosses and Superbad as candidate movies.",
+      "belief_after": "SEEKER has two concrete comedy recommendations to evaluate; no dialogue-available info yet on SEEKER's history with them.",
+      "emotion": "curious/evaluating",
+      "intention": "assess the suggestions",
+      "conversational_goal": "decide whether either suggestion fits preferences"
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says 'I have seen both and love Superbad but not so much horrible bosses...I do like Jonah Hill a lot...He was great in The Wolf of Wall Street (2013)'",
+      "belief_before": "SEEKER has two concrete comedy recommendations to evaluate; no dialogue-available info yet on SEEKER's history with them.",
+      "belief_update": "SEEKER reveals having seen both: loves Superbad, dislikes Horrible Bosses; likes Jonah Hill and liked him in The Wolf of Wall Street.",
+      "belief_after": "Recommender knows Superbad is a strong positive, Horrible Bosses is a negative, and Jonah Hill is a key positive actor signal.",
+      "emotion": "engaged, positive about Superbad/Jonah Hill, mild negative about Horrible Bosses",
+      "intention": "refine recommendations using feedback",
+      "conversational_goal": "guide recommender toward Jonah Hill/Superbad-like movies"
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says 'Yes he was!!...What about The Sitter (2011)?...He;s also in that movie...Do you like Seth Rogen? This Is the End (2013) is a funnyy movie'",
+      "belief_before": "Recommender knows Superbad is a strong positive, Horrible Bosses is a negative, and Jonah Hill is a key positive actor signal.",
+      "belief_update": "Recommender agrees about Wolf of Wall Street; suggests The Sitter (Jonah Hill), asks if SEEKER likes Seth Rogen, and says This Is the End is funny.",
+      "belief_after": "SEEKER knows The Sitter features Jonah Hill and is suggested; This Is the End is presented as a funny option; Seth Rogen's relevance is raised but SEEKER has not yet answered.",
+      "emotion": "interested/curious",
+      "intention": "consider new Jonah Hill/Seth Rogen-related recommendations",
+      "conversational_goal": "evaluate The Sitter and This Is the End"
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says 'I haven't seen that one!...Is it a comedy\"...Yesss...I saw This Is the End (2013) ...loved it'",
+      "belief_before": "SEEKER knows The Sitter features Jonah Hill and is suggested; This Is the End is presented as a funny option; Seth Rogen's relevance is raised but SEEKER has not yet answered.",
+      "belief_update": "SEEKER has not seen The Sitter, asks if it is a comedy, indicates yes/positive, and loved This Is the End.",
+      "belief_after": "Recommender knows SEEKER has not seen The Sitter; SEEKER loved This Is the End and likely likes Seth Rogen; The Sitter's genre is still being checked.",
+      "emotion": "excited/positive; curious about The Sitter",
+      "intention": "share preferences and clarify The Sitter",
+      "conversational_goal": "evaluate The Sitter and express enthusiasm for This Is the End"
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says 'Same with Pineapple Express (2008)...The Sitter (2011) is hilarious!...If you love Jonah Hill you'll like it'",
+      "belief_before": "Recommender knows SEEKER has not seen The Sitter; SEEKER loved This Is the End and likely likes Seth Rogen; The Sitter's genre is still being checked.",
+      "belief_update": "Recommender says Pineapple Express is similar, asserts The Sitter is hilarious, and predicts SEEKER will like it because of Jonah Hill.",
+      "belief_after": "SEEKER now has recommender's strong assertion that The Sitter is hilarious and a good fit for Jonah Hill fans; Pineapple Express is introduced as another similar title.",
+      "emotion": "interested/anticipatory",
+      "intention": "consider The Sitter and possibly recall/check Pineapple Express",
+      "conversational_goal": "decide whether to watch The Sitter"
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says 'I did love Pineapple Express (2008) ...Yeah I like him a lot...I am surprised I haven't heard of it'",
+      "belief_before": "SEEKER now has recommender's strong assertion that The Sitter is hilarious and a good fit for Jonah Hill fans; Pineapple Express is introduced as another similar title.",
+      "belief_update": "SEEKER reveals loving Pineapple Express, confirms liking 'him' a lot, likely Jonah Hill, and is surprised not to have heard of The Sitter.",
+      "belief_after": "Recommender knows Pineapple Express is a strong positive, Jonah Hill is a strong positive, and The Sitter is new to SEEKER but potentially appealing.",
+      "emotion": "positive, slightly surprised",
+      "intention": "confirm agreement and express openness",
+      "conversational_goal": "affirm the recommender's comparisons and signal interest in The Sitter"
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says 'If you liked him in Superbad (2007) then you'll like him in the other movie!'",
+      "belief_before": "Recommender knows Pineapple Express is a strong positive, Jonah Hill is a strong positive, and The Sitter is new to SEEKER but potentially appealing.",
+      "belief_update": "Recommender argues that liking Jonah Hill in Superbad predicts liking him in The Sitter.",
+      "belief_after": "SEEKER has a stronger basis to believe The Sitter is a good fit, given loved Superbad and Jonah Hill.",
+      "emotion": "reassured/convinced",
+      "intention": "consider accepting The Sitter recommendation",
+      "conversational_goal": "finalize decision on The Sitter"
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says 'Awesome, I will check it out...Thank you so much!'",
+      "belief_before": "SEEKER has a stronger basis to believe The Sitter is a good fit, given loved Superbad and Jonah Hill.",
+      "belief_update": "SEEKER accepts the recommendation and intends to check out The Sitter; thanks recommender.",
+      "belief_after": "The Sitter is the accepted choice; SEEKER's movie-recommendation goal is satisfied.",
+      "emotion": "grateful/satisfied/excited",
+      "intention": "watch The Sitter; end conversation politely",
+      "conversational_goal": "accept recommendation and close"
+    },
+    {
+      "time": 12,
+      "observed": "RECOMMENDER says 'It came out in 2011...No problem! You're welcome!'",
+      "belief_before": "The Sitter is the accepted choice; SEEKER's movie-recommendation goal is satisfied.",
+      "belief_update": "Recommender provides release year of The Sitter (2011) and responds politely to thanks.",
+      "belief_after": "SEEKER knows The Sitter was released in 2011; conversation is complete.",
+      "emotion": "appreciative/neutral",
+      "intention": "end conversation",
+      "conversational_goal": "closure"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says 'Hey!'\",\n    \"belief_before\": \"No prior context in this dialogue.\",\n    \"belief_update\": \"SEEKER initiates contact; no movie preferences or recommender intentions are known yet.\",\n    \"belief_after\": \"SEEKER is in an open greeting state; no preferences or recommender intentions known.\",\n    \"emotion\": \"neutral/friendly\",\n    \"intention\": \"start conversation\",\n    \"conversational_goal\": \"greet and open interaction\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says 'Hi, what kind of movies do you like?'\",\n    \"belief_before\": \"SEEKER is in an open greeting state; no preferences or recommender intentions known.\",\n    \"belief_update\": \"Recommender responds and asks for movie preferences, indicating willingness to recommend.\",\n    \"belief_after\": \"SEEKER knows recommender is willing to help and needs SEEKER's movie preferences.\",\n    \"emotion\": \"receptive/neutral\",\n    \"intention\": \"provide preferences and ask for a movie\",\n    \"conversational_goal\": \"answer the preference question and request recommendation\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says 'Can you help me find a good movie in any genre? I like things like Wedding Crashers (2005) and It (2017) but not like Star Wars'\",\n    \"belief_before\": \"SEEKER knows recommender is willing to help and needs SEEKER's movie preferences.\",\n    \"belief_update\": \"SEEKER states a request for any-genre recommendation and reveals likes and dislikes.\",\n    \"belief_after\": \"Recommender knows SEEKER is open to any genre, likes Wedding Crashers and It, and dislikes Star Wars; SEEKER expects tailored suggestions.\",\n    \"emotion\": \"hopeful/cooperative\",\n    \"intention\": \"obtain a recommendation\",\n    \"conversational_goal\": \"solicit recommendations based on stated likes/dislikes\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says 'Okay! How about Horrible Bosses (2011) or Superbad (2007)?'\",\n    \"belief_before\": \"Recommender knows SEEKER is open to any genre, likes Wedding Crashers and It, dislikes Star Wars; SEEKER expects suggestions.\",\n    \"belief_update\": \"Recommender proposes Horrible Bosses and Superbad as candidate movies.\",\n    \"belief_after\": \"SEEKER has two concrete comedy recommendations to evaluate; no dialogue-available info yet on SEEKER's history with them.\",\n    \"emotion\": \"curious/evaluating\",\n    \"intention\": \"assess the suggestions\",\n    \"conversational_goal\": \"decide whether either suggestion fits preferences\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says 'I have seen both and love Superbad but not so much horrible bosses...I do like Jonah Hill a lot...He was great in The Wolf of Wall Street (2013)'\",\n    \"belief_before\": \"SEEKER has two concrete comedy recommendations to evaluate; no dialogue-available info yet on SEEKER's history with them.\",\n    \"belief_update\": \"SEEKER reveals having seen both: loves Superbad, dislikes Horrible Bosses; likes Jonah Hill and liked him in The Wolf of Wall Street.\",\n    \"belief_after\": \"Recommender knows Superbad is a strong positive, Horrible Bosses is a negative, and Jonah Hill is a key positive actor signal.\",\n    \"emotion\": \"engaged, positive about Superbad/Jonah Hill, mild negative about Horrible Bosses\",\n    \"intention\": \"refine recommendations using feedback\",\n    \"conversational_goal\": \"guide recommender toward Jonah Hill/Superbad-like movies\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says 'Yes he was!!...What about The Sitter (2011)?...He;s also in that movie...Do you like Seth Rogen? This Is the End (2013) is a funnyy movie'\",\n    \"belief_before\": \"Recommender knows Superbad is a strong positive, Horrible Bosses is a negative, and Jonah Hill is a key positive actor signal.\",\n    \"belief_update\": \"Recommender agrees about Wolf of Wall Street; suggests The Sitter (Jonah Hill), asks if SEEKER likes Seth Rogen, and says This Is the End is funny.\",\n    \"belief_after\": \"SEEKER knows The Sitter features Jonah Hill and is suggested; This Is the End is presented as a funny option; Seth Rogen's relevance is raised but SEEKER has not yet answered.\",\n    \"emotion\": \"interested/curious\",\n    \"intention\": \"consider new Jonah Hill/Seth Rogen-related recommendations\",\n    \"conversational_goal\": \"evaluate The Sitter and This Is the End\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says 'I haven't seen that one!...Is it a comedy\\\"...Yesss...I saw This Is the End (2013) ...loved it'\",\n    \"belief_before\": \"SEEKER knows The Sitter features Jonah Hill and is suggested; This Is the End is presented as a funny option; Seth Rogen's relevance is raised but SEEKER has not yet answered.\",\n    \"belief_update\": \"SEEKER has not seen The Sitter, asks if it is a comedy, indicates yes/positive, and loved This Is the End.\",\n    \"belief_after\": \"Recommender knows SEEKER has not seen The Sitter; SEEKER loved This Is the End and likely likes Seth Rogen; The Sitter's genre is still being checked.\",\n    \"emotion\": \"excited/positive; curious about The Sitter\",\n    \"intention\": \"share preferences and clarify The Sitter\",\n    \"conversational_goal\": \"evaluate The Sitter and express enthusiasm for This Is the End\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says 'Same with Pineapple Express (2008)...The Sitter (2011) is hilarious!...If you love Jonah Hill you'll like it'\",\n    \"belief_before\": \"Recommender knows SEEKER has not seen The Sitter; SEEKER loved This Is the End and likely likes Seth Rogen; The Sitter's genre is still being checked.\",\n    \"belief_update\": \"Recommender says Pineapple Express is similar, asserts The Sitter is hilarious, and predicts SEEKER will like it because of Jonah Hill.\",\n    \"belief_after\": \"SEEKER now has recommender's strong assertion that The Sitter is hilarious and a good fit for Jonah Hill fans; Pineapple Express is introduced as another similar title.\",\n    \"emotion\": \"interested/anticipatory\",\n    \"intention\": \"consider The Sitter and possibly recall/check Pineapple Express\",\n    \"conversational_goal\": \"decide whether to watch The Sitter\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says 'I did love Pineapple Express (2008) ...Yeah I like him a lot...I am surprised I haven't heard of it'\",\n    \"belief_before\": \"SEEKER now has recommender's strong assertion that The Sitter is hilarious and a good fit for Jonah Hill fans; Pineapple Express is introduced as another similar title.\",\n    \"belief_update\": \"SEEKER reveals loving Pineapple Express, confirms liking 'him' a lot, likely Jonah Hill, and is surprised not to have heard of The Sitter.\",\n    \"belief_after\": \"Recommender knows Pineapple Express is a strong positive, Jonah Hill is a strong positive, and The Sitter is new to SEEKER but potentially appealing.\",\n    \"emotion\": \"positive, slightly surprised\",\n    \"intention\": \"confirm agreement and express openness\",\n    \"conversational_goal\": \"affirm the recommender's comparisons and signal interest in The Sitter\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says 'If you liked him in Superbad (2007) then you'll like him in the other movie!'\",\n    \"belief_before\": \"Recommender knows Pineapple Express is a strong positive, Jonah Hill is a strong positive, and The Sitter is new to SEEKER but potentially appealing.\",\n    \"belief_update\": \"Recommender argues that liking Jonah Hill in Superbad predicts liking him in The Sitter.\",\n    \"belief_after\": \"SEEKER has a stronger basis to believe The Sitter is a good fit, given loved Superbad and Jonah Hill.\",\n    \"emotion\": \"reassured/convinced\",\n    \"intention\": \"consider accepting The Sitter recommendation\",\n    \"conversational_goal\": \"finalize decision on The Sitter\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says 'Awesome, I will check it out...Thank you so much!'\",\n    \"belief_before\": \"SEEKER has a stronger basis to believe The Sitter is a good fit, given loved Superbad and Jonah Hill.\",\n    \"belief_update\": \"SEEKER accepts the recommendation and intends to check out The Sitter; thanks recommender.\",\n    \"belief_after\": \"The Sitter is the accepted choice; SEEKER's movie-recommendation goal is satisfied.\",\n    \"emotion\": \"grateful/satisfied/excited\",\n    \"intention\": \"watch The Sitter; end conversation politely\",\n    \"conversational_goal\": \"accept recommendation and close\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"RECOMMENDER says 'It came out in 2011...No problem! You're welcome!'\",\n    \"belief_before\": \"The Sitter is the accepted choice; SEEKER's movie-recommendation goal is satisfied.\",\n    \"belief_update\": \"Recommender provides release year of The Sitter (2011) and responds politely to thanks.\",\n    \"belief_after\": \"SEEKER knows The Sitter was released in 2011; conversation is complete.\",\n    \"emotion\": \"appreciative/neutral\",\n    \"intention\": \"end conversation\",\n    \"conversational_goal\": \"closure\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

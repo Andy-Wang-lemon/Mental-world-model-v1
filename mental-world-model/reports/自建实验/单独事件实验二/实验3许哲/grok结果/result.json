@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3许哲.txt",
+  "agent": "许哲",
+  "stimulus": "许哲刚进公司时做算法，曾两次申请转产品岗，都没有通过。后来团队临时缺人，他接手一个产品并做得很好，此后正式转岗。几年后，领导向新人介绍他：“他其实很早就知道自己更适合产品，后来果然转过来了。”",
+  "thoughts": [
+    {
+      "text": "领导终于认可我早期的判断了",
+      "probability": 0.5
+    },
+    {
+      "text": "当初转岗的困难现在听起来好像很简单",
+      "probability": 0.3
+    },
+    {
+      "text": "我果然更适合产品这个方向",
+      "probability": 0.2
+    }
+  ],
+  "top1": "领导终于认可我早期的判断了",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  }
+}

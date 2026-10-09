@@ -1,0 +1,106 @@
+{
+  "id": "3_pred_rec__0063_d1057_u9",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello!",
+      "belief_before": "No prior information about the seeker or their preferences.",
+      "belief_update": "A seeker has initiated contact with a greeting.",
+      "belief_after": "A seeker is present and the conversation is starting.",
+      "emotion": "neutral, polite",
+      "intention": "respond to the greeting",
+      "conversational_goal": "open the conversation and invite the seeker to continue"
+    },
+    {
+      "time": 2,
+      "observed": "I say: Hello~",
+      "belief_before": "A seeker has greeted me and is waiting for a response.",
+      "belief_update": "I have returned the greeting and acknowledged the seeker.",
+      "belief_after": "The conversational channel is open; the seeker may now state their request.",
+      "emotion": "friendly, welcoming",
+      "intention": "greet the seeker and establish rapport",
+      "conversational_goal": "encourage the seeker to explain what they want"
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER asks for help finding a good comedy today and says they like Super Troopers (2001) and Beerfest (2006).",
+      "belief_before": "Conversation is open; I have no specific movie preferences from the seeker yet.",
+      "belief_update": "Seeker wants a comedy recommendation and likes Super Troopers (2001) and Beerfest (2006).",
+      "belief_after": "Seeker is looking for a comedy similar to those tastes; likely enjoys raunchy/buddy comedies.",
+      "emotion": "helpful, attentive",
+      "intention": "help find a comedy that fits the seeker's stated tastes",
+      "conversational_goal": "recommend a suitable comedy"
+    },
+    {
+      "time": 4,
+      "observed": "I say: Tommy Boy (1995) is one of my favorites",
+      "belief_before": "Seeker wants a comedy and likes Super Troopers (2001) and Beerfest (2006).",
+      "belief_update": "I have recommended Tommy Boy (1995), presenting it as a personal favorite; no reaction yet.",
+      "belief_after": "Tommy Boy is the current candidate recommendation; I am waiting to see if the seeker likes or has seen it.",
+      "emotion": "enthusiastic, positive",
+      "intention": "recommend Tommy Boy (1995)",
+      "conversational_goal": "offer a comedy recommendation and gauge the seeker's interest"
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: but not like Friday (1995) ...Awesome I love that one I have seen it a million times",
+      "belief_before": "Tommy Boy (1995) has been offered and the seeker has not yet responded to it.",
+      "belief_update": "Seeker does not want something like Friday (1995); the 'that one' in the second sentence most likely refers to Tommy Boy (1995), so seeker loves it and has seen it many times.",
+      "belief_after": "Tommy Boy is validated as a shared favorite but is over-familiar; the seeker also has a constraint against Friday-like comedies. A different comedy is still needed.",
+      "emotion": "pleased/validated, while noting the recommendation may not be novel",
+      "intention": "continue recommending while respecting the seeker's Friday-like exclusion and shared Tommy Boy taste",
+      "conversational_goal": "find another comedy that the seeker has not over-watched and that is not like Friday (1995)"
+    },
+    {
+      "time": 6,
+      "observed": "I say: Me too. Another good one is Spaceballs (1987)",
+      "belief_before": "Seeker loves Tommy Boy (1995), has seen it many times, and does not want something like Friday (1995).",
+      "belief_update": "I have agreed with the seeker's familiarity/love of Tommy Boy and proposed Spaceballs (1987) as another good comedy.",
+      "belief_after": "Spaceballs (1987) is the current candidate recommendation; I am waiting for the seeker's reaction.",
+      "emotion": "warm, sharing enthusiasm",
+      "intention": "build rapport and recommend Spaceballs (1987)",
+      "conversational_goal": "offer a next comedy option and see if it fits"
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though",
+      "belief_before": "Spaceballs (1987) has been recommended and the seeker has not yet responded to it.",
+      "belief_update": "The 'that one' most likely refers to Spaceballs (1987), so seeker has seen and disliked it; seeker loves 80s movies.",
+      "belief_after": "Spaceballs is ruled out; the seeker has a strong preference for 80s movies, so an 80s comedy recommendation is now more promising.",
+      "emotion": "adaptive, mildly disappointed but undeterred",
+      "intention": "adjust the recommendation strategy toward 80s comedies",
+      "conversational_goal": "suggest a comedy from the 1980s"
+    },
+    {
+      "time": 8,
+      "observed": "I say: Ok Well how about Planes, Trains and Automobiles (1986)",
+      "belief_before": "Seeker loves 80s movies, disliked Spaceballs (1987), and wants a comedy.",
+      "belief_update": "I have proposed Planes, Trains and Automobiles (1986), an 80s comedy, as the next option.",
+      "belief_after": "Planes, Trains and Automobiles (1986) is the current candidate; I am waiting to see if the seeker is interested.",
+      "emotion": "optimistic, helpful",
+      "intention": "recommend Planes, Trains and Automobiles (1986) to match the 80s preference",
+      "conversational_goal": "provide an 80s comedy recommendation that may fit the seeker's tastes"
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: I may have seen that a long time ago but I can't remember. who is in that again?",
+      "belief_before": "Planes, Trains and Automobiles (1986) has been recommended; the seeker loves 80s movies and has not rejected this film.",
+      "belief_update": "The 'that' most likely refers to Planes, Trains and Automobiles (1986); seeker is uncertain if they have seen it and asks for cast, indicating possible interest rather than rejection.",
+      "belief_after": "Planes, Trains and Automobiles (1986) remains a viable recommendation; I need to provide cast information to help the seeker recall or decide.",
+      "emotion": "helpful, engaged",
+      "intention": "answer the cast question and encourage consideration of the film",
+      "conversational_goal": "provide cast details for Planes, Trains and Automobiles (1986) and keep the recommendation alive"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello!\",\n    \"belief_before\": \"No prior information about the seeker or their preferences.\",\n    \"belief_update\": \"A seeker has initiated contact with a greeting.\",\n    \"belief_after\": \"A seeker is present and the conversation is starting.\",\n    \"emotion\": \"neutral, polite\",\n    \"intention\": \"respond to the greeting\",\n    \"conversational_goal\": \"open the conversation and invite the seeker to continue\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I say: Hello~\",\n    \"belief_before\": \"A seeker has greeted me and is waiting for a response.\",\n    \"belief_update\": \"I have returned the greeting and acknowledged the seeker.\",\n    \"belief_after\": \"The conversational channel is open; the seeker may now state their request.\",\n    \"emotion\": \"friendly, welcoming\",\n    \"intention\": \"greet the seeker and establish rapport\",\n    \"conversational_goal\": \"encourage the seeker to explain what they want\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER asks for help finding a good comedy today and says they like Super Troopers (2001) and Beerfest (2006).\",\n    \"belief_before\": \"Conversation is open; I have no specific movie preferences from the seeker yet.\",\n    \"belief_update\": \"Seeker wants a comedy recommendation and likes Super Troopers (2001) and Beerfest (2006).\",\n    \"belief_after\": \"Seeker is looking for a comedy similar to those tastes; likely enjoys raunchy/buddy comedies.\",\n    \"emotion\": \"helpful, attentive\",\n    \"intention\": \"help find a comedy that fits the seeker's stated tastes\",\n    \"conversational_goal\": \"recommend a suitable comedy\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I say: Tommy Boy (1995) is one of my favorites\",\n    \"belief_before\": \"Seeker wants a comedy and likes Super Troopers (2001) and Beerfest (2006).\",\n    \"belief_update\": \"I have recommended Tommy Boy (1995), presenting it as a personal favorite; no reaction yet.\",\n    \"belief_after\": \"Tommy Boy is the current candidate recommendation; I am waiting to see if the seeker likes or has seen it.\",\n    \"emotion\": \"enthusiastic, positive\",\n    \"intention\": \"recommend Tommy Boy (1995)\",\n    \"conversational_goal\": \"offer a comedy recommendation and gauge the seeker's interest\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: but not like Friday (1995) ...Awesome I love that one I have seen it a million times\",\n    \"belief_before\": \"Tommy Boy (1995) has been offered and the seeker has not yet responded to it.\",\n    \"belief_update\": \"Seeker does not want something like Friday (1995); the 'that one' in the second sentence most likely refers to Tommy Boy (1995), so seeker loves it and has seen it many times.\",\n    \"belief_after\": \"Tommy Boy is validated as a shared favorite but is over-familiar; the seeker also has a constraint against Friday-like comedies. A different comedy is still needed.\",\n    \"emotion\": \"pleased/validated, while noting the recommendation may not be novel\",\n    \"intention\": \"continue recommending while respecting the seeker's Friday-like exclusion and shared Tommy Boy taste\",\n    \"conversational_goal\": \"find another comedy that the seeker has not over-watched and that is not like Friday (1995)\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"I say: Me too. Another good one is Spaceballs (1987)\",\n    \"belief_before\": \"Seeker loves Tommy Boy (1995), has seen it many times, and does not want something like Friday (1995).\",\n    \"belief_update\": \"I have agreed with the seeker's familiarity/love of Tommy Boy and proposed Spaceballs (1987) as another good comedy.\",\n    \"belief_after\": \"Spaceballs (1987) is the current candidate recommendation; I am waiting for the seeker's reaction.\",\n    \"emotion\": \"warm, sharing enthusiasm\",\n    \"intention\": \"build rapport and recommend Spaceballs (1987)\",\n    \"conversational_goal\": \"offer a next comedy option and see if it fits\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\",\n    \"belief_before\": \"Spaceballs (1987) has been recommended and the seeker has not yet responded to it.\",\n    \"belief_update\": \"The 'that one' most likely refers to Spaceballs (1987), so seeker has seen and disliked it; seeker loves 80s movies.\",\n    \"belief_after\": \"Spaceballs is ruled out; the seeker has a strong preference for 80s movies, so an 80s comedy recommendation is now more promising.\",\n    \"emotion\": \"adaptive, mildly disappointed but undeterred\",\n    \"intention\": \"adjust the recommendation strategy toward 80s comedies\",\n    \"conversational_goal\": \"suggest a comedy from the 1980s\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"I say: Ok Well how about Planes, Trains and Automobiles (1986)\",\n    \"belief_before\": \"Seeker loves 80s movies, disliked Spaceballs (1987), and wants a comedy.\",\n    \"belief_update\": \"I have proposed Planes, Trains and Automobiles (1986), an 80s comedy, as the next option.\",\n    \"belief_after\": \"Planes, Trains and Automobiles (1986) is the current candidate; I am waiting to see if the seeker is interested.\",\n    \"emotion\": \"optimistic, helpful\",\n    \"intention\": \"recommend Planes, Trains and Automobiles (1986) to match the 80s preference\",\n    \"conversational_goal\": \"provide an 80s comedy recommendation that may fit the seeker's tastes\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: I may have seen that a long time ago but I can't remember. who is in that again?\",\n    \"belief_before\": \"Planes, Trains and Automobiles (1986) has been recommended; the seeker loves 80s movies and has not rejected this film.\",\n    \"belief_update\": \"The 'that' most likely refers to Planes, Trains and Automobiles (1986); seeker is uncertain if they have seen it and asks for cast, indicating possible interest rather than rejection.\",\n    \"belief_after\": \"Planes, Trains and Automobiles (1986) remains a viable recommendation; I need to provide cast information to help the seeker recall or decide.\",\n    \"emotion\": \"helpful, engaged\",\n    \"intention\": \"answer the cast question and encourage consideration of the film\",\n    \"conversational_goal\": \"provide cast details for Planes, Trains and Automobiles (1986) and keep the recommendation alive\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

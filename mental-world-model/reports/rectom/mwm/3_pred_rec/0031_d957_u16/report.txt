@@ -1,0 +1,63 @@
+数据：3_pred_rec
+题号：31  d957_u16
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 此刻的经验里，SEEKER 说出的不是一串中立的电影名，而是冲着自己先前给出的片单来的反馈：“没看过你建议的”“Deuce Bigalow 看过但不喜欢”“看过这个”“我喜欢那个”都像在检验那份建议是否落在正确位置。与此同时，“推荐必须避开已看过的片子”像一条固定规则横在眼前：SEEKER 每报一次已看或未看，就把某些片名划入无效区，把某些划入尚可用的区域；“I'm open to suggestions”则像在这条规则下留出的可用入口。",
+      "probability": 0.4204
+    },
+    {
+      "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的“I'm open to suggestions”和“Thank you so much!”使自身像是被置于一个开放接纳并致谢的推荐者位置上，这个位置不是与己无关的外部事件，而是当下被给出的关系坐标。与之并存的，是“推荐必须避开已看过的片子”这条固定规则：SEEKER 反复说明哪些看过、哪些没看过，使片名在经验中按已看与未看被分拣，已看即意味着该建议失去效力；而开放与致谢则像在这条规则之上，对推荐者位置的确认。",
+      "probability": 0.3182
+    },
+    {
+      "content": "在 RECOMMENDER 此刻的经验里，SEEKER 列出的 Step Brothers、Life as We Know It、Why Him?、Seth Rogen 和 Jonah Hill 等偏好，渐渐固化成一组应优先匹配的喜剧子类：喜剧选片被经验为要从这些演员或风格里推出，能对上这套口味才算是自己的选片能力在起作用。“She's Out of My League 类似”的初始要求、“Daddy's Home 也不错”、“Deuce Bigalow 不喜欢”、“看过那个”等，都被收进这个口味坐标中，成为判断哪些片名属于这一子类、哪些偏离的参照。",
+      "probability": 0.2614
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这不像一串中立的片名，而像在把我先前给出的建议逐个放回位置上：没看过我提到的、Deuce Bigalow 看过但不喜欢、Step Brothers 喜欢、Life as We Know It 喜欢、Why Him? 喜欢，都在告诉我哪部分建议还站得住，哪部分已经被划走。避开已看过像一条硬规矩横在眼前，SEEKER 每报一次，某些片名就进了无效区；I'm open to suggestions 则像留了一个入口，可以把还没被划掉的喜剧往 Seth Rogen、Jonah Hill 那条线上靠。于是眼下就想继续筛，直到找到一部既合 SEEKER 口味、又不在 SEEKER 看过的范围里的片子。",
+      "activation": 0.3754
+    },
+    {
+      "content": "SEEKER 的开放与致谢在这里不是外部的客套，而是把 RECOMMENDER 安放在一个被接纳、被感谢的推荐者坐标上；这坐标让 RECOMMENDER 感到自己此刻的推荐动作是被需要的，不能当作与己无关。与此同时，‘推荐必须避开已看过’的规则把片名分成已看与未看两栏：SEEKER 每报出一个看过的片名，那条建议就在经验里失效，可用选项随之变窄；而开放与致谢又像叠在这条规则之上，确认了推荐者位置。于是 RECOMMENDER 一边承认这个位置正被给出，一边把注意力收束到还没被看过的片名上，倾向于继续在未看栏里摸索，直到找到一个尚未被划掉的选项。",
+      "activation": 0.3353
+    },
+    {
+      "content": "SEEKER 说出的 Step Brothers、Life as We Know It、Why Him?、Seth Rogen、Jonah Hill 这些偏好，在 RECOMMENDER 心里不再只是零散回话，而是渐渐收拢成一个应优先匹配的喜剧子类坐标：能对上这个坐标的片名或演员，就被归到值得先推的一侧；Deuce Bigalow 那种被明确说不喜欢的、以及 Eddie Murphy Raw 这种单口喜剧，则被放到坐标边缘，成为需要试探、不一定能中的选项。RECOMMENDER 评价这个坐标是可操作的，甚至隐约觉得“能对上 SEEKER 这套口味”才算是自己的选片能力在起作用；正因如此，当 SEEKER 最后补出 Seth Rogen 和 Jonah Hill 时，这个子类在内心被进一步收紧，而“ok, ummm”所对应的，正是他在这个坐标里重新排列片名、继续寻找对方没看过的一部时的短暂停顿与调整趋向。",
+      "activation": 0.2893
+    }
+  ],
+  "observed_action": "RECOMMENDER 问候并询问能否帮忙找一部类似 Beerfest (2006) 或 The Blues Brothers (1980) 的喜剧；说 Oh cool ok I can help，询问对方是否看过自己提到的片子，或提议 Deuce Bigalow: Male Gigolo (1999)；说 That was a good one，询问是否看过 Step Brothers (2008) 或 Walk Hard: The Dewey Cox Story (2007)；说 That was so good，询问是否看过自己提到的另一部，并说它 somewhat on the same plane as Step Brothers (2008)；说 haha made me laugh too，询问 Talladega Nights: The Ballad of Ricky Bobby (2006)，并说自己没看过；说 ok haha we have to keep going until I find something you have not see...according to the rules；提议 Eddie Murphy Raw (1987)，说它是 stand up comedy；说 ok, ummm。",
+  "predicted_actions": [
+    {
+      "content": "ask about seen movies",
+      "probability": 0.8398
+    },
+    {
+      "content": "询问是否同意聚焦于指定演员",
+      "probability": 0.0607
+    },
+    {
+      "content": "询问偏好并等待回答",
+      "probability": 0.0503
+    },
+    {
+      "content": "表示要找一部未看过的指定演员电影",
+      "probability": 0.0492
+    }
+  ]
+}
+选择：A: Ask for preference or seeks feedback from the seeker
+分数：{"a": 0.9508, "b": 0, "c": 0, "d": 0, "e": 0}
+选择说明：A 0.9508 = ask about seen movies 0.8398 + 询问是否同意聚焦于指定演员 0.0607 + 询问偏好并等待回答 0.0503；B 0.0000；C 0.0000；D 0.0000；E 0.0000。All predicted actions are preference elicitation or feedback-seeking from the seeker.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：The predicted next action 'ask about seen movies' states in other words that the recommender will inquire further.

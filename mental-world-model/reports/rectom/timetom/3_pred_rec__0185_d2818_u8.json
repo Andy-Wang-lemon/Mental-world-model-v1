@@ -1,0 +1,123 @@
+{
+  "id": "3_pred_rec__0185_d2818_u8",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "No prior seeker utterance; recommender initiates with 'Good evening!'",
+      "preferences": "No movie preferences expressed or inferred yet.",
+      "belief_before": "No information about the seeker; conversation has not started.",
+      "belief_update": "Recommender chooses to greet the seeker; no new seeker information.",
+      "belief_after": "Seeker is present/available for dialogue; no movie-related information yet.",
+      "emotion": "polite, welcoming",
+      "intention": "Open the conversation and establish contact.",
+      "reaction_to_seeker": "None yet; recommender is initiating.",
+      "conversational_goal": "Greet the seeker and invite them to state their request.",
+      "changes_previous_interpretation": "No prior interpretation; baseline state."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker greets and asks for new movies that are worth watching.",
+      "preferences": "No explicit seeker genre preference is given; recommender has not yet stated movie preferences.",
+      "belief_before": "Seeker has only been greeted; no movie-related information is known.",
+      "belief_update": "Learns the seeker wants recommendations for new, worthwhile movies.",
+      "belief_after": "Seeker is looking for movie recommendations, but genre and taste are still unknown.",
+      "emotion": "helpful, attentive",
+      "intention": "Provide movie recommendations and/or ask a clarifying question.",
+      "reaction_to_seeker": "Recognizes the seeker is making a recommendation request.",
+      "conversational_goal": "Elicit preferences and recommend suitable new movies.",
+      "changes_previous_interpretation": "Changes from greeting to an active recommendation task."
+    },
+    {
+      "time": 3,
+      "observed": "Seeker asked for new movies worth watching; no genre preference was given.",
+      "preferences": "Recommender thinks Bright (2017) is really good, even without the backstory.",
+      "belief_before": "Seeker wants new, worthwhile movies; genre and taste are unknown.",
+      "belief_update": "Recommender asks about genre and offers Bright as a concrete recommendation.",
+      "belief_after": "Seeker has been asked for genre; Bright is a candidate recommendation; seeker preferences remain unknown.",
+      "emotion": "helpful, enthusiastic",
+      "intention": "Clarify the seeker's taste while offering a specific movie suggestion.",
+      "reaction_to_seeker": "Responds to the general request by seeking more information and giving an example.",
+      "conversational_goal": "Narrow down genres and promote Bright as worth watching.",
+      "changes_previous_interpretation": "Moves from a general request to a personalized recommendation attempt; no new seeker info yet."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have never heard of 'that one,' likely referring to Bright (2017).",
+      "preferences": "Recommender still likes Bright; seeker preferences remain unknown.",
+      "belief_before": "Seeker wants movies, genre unknown; Bright has been suggested.",
+      "belief_update": "Learns the seeker is unfamiliar with Bright.",
+      "belief_after": "Seeker does not know Bright; it may need explanation or an alternate suggestion. Genre is still unknown.",
+      "emotion": "mildly surprised, understanding, still helpful",
+      "intention": "Explain Bright or offer another recommendation.",
+      "reaction_to_seeker": "Seeker did not reject Bright, only indicated unfamiliarity with it.",
+      "conversational_goal": "Inform the seeker about Bright and/or keep offering options.",
+      "changes_previous_interpretation": "Bright is not recognized, so the recommendation needs support; it remains viable but ungrounded."
+    },
+    {
+      "time": 5,
+      "observed": "Seeker has never heard of Bright.",
+      "preferences": "Recommender likes Bright; recommender has seen and now mentions Star Wars: Episode VIII – The Last Jedi (2017) as another option.",
+      "belief_before": "Seeker is unfamiliar with Bright; genre and broader taste are unknown.",
+      "belief_update": "Recommender provides another title, Star Wars: The Last Jedi, as an additional option.",
+      "belief_after": "Bright and Star Wars have both been suggested; seeker genre preferences are still unknown.",
+      "emotion": "helpful, conversational",
+      "intention": "Offer another movie option and broaden the choices.",
+      "reaction_to_seeker": "Continues helping despite the seeker not knowing Bright.",
+      "conversational_goal": "Provide an additional recommendation and keep the dialogue going.",
+      "changes_previous_interpretation": "Shifts from explaining Bright to adding another recommendation; no new seeker preference information."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says they really like all kinds of movies and would watch a kids movie followed by a horror flick.",
+      "preferences": "Recommender likes Bright and has seen Star Wars. Recommender now believes the seeker has broad taste, including kids and horror movies.",
+      "belief_before": "Seeker is unfamiliar with Bright; Bright and Star Wars have been suggested; genre unknown.",
+      "belief_update": "Learns the seeker has broad movie taste and no narrow genre preference.",
+      "belief_after": "Seeker is open to many genres; diverse recommendations are appropriate. Star Wars is not yet known to be disliked.",
+      "emotion": "positive, encouraged",
+      "intention": "Use the broad taste information to suggest varied movies.",
+      "reaction_to_seeker": "Seeker's openness is useful and encouraging.",
+      "conversational_goal": "Recommend across genres, possibly revisiting Bright with more details.",
+      "changes_previous_interpretation": "Narrowing genre is less necessary; broad preferences make many recommendations plausible."
+    },
+    {
+      "time": 7,
+      "observed": "Seeker likes all kinds of movies, including kids and horror movies.",
+      "preferences": "Recommender likes Bright; believes the seeker is broad-minded and may be open to Bright.",
+      "belief_before": "Seeker has broad taste, is unfamiliar with Bright, and has been given Bright and Star Wars as options.",
+      "belief_update": "Recommender adds details about Bright: it is a Netflix original starring Will Smith.",
+      "belief_after": "Bright is better explained; seeker's broad taste supports it. The recommender still does not know if the seeker likes Star Wars or Bright.",
+      "emotion": "helpful, informative",
+      "intention": "Encourage the seeker to consider Bright by giving identifying details.",
+      "reaction_to_seeker": "Responds to the seeker's broad taste and earlier unfamiliarity with Bright.",
+      "conversational_goal": "Sell Bright as a good option.",
+      "changes_previous_interpretation": "The broad-taste update reinforces Bright as a suitable recommendation; no new seeker information in this turn."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says Star Wars is an exception and they are not a fan; they also indicate they may have seen or may watch 'that one,' likely Bright.",
+      "preferences": "Recommender likes Bright; now believes the seeker dislikes Star Wars but may be interested in Bright.",
+      "belief_before": "Seeker has broad taste, may like Bright, and Star Wars is still a possible recommendation.",
+      "belief_update": "Learns the seeker is not a Star Wars fan; Bright seems more promising because the seeker may consider watching it.",
+      "belief_after": "Avoid Star Wars recommendations; focus on Bright or other non-Star-Wars options. Seeker appears open to Bright.",
+      "emotion": "understanding, possibly apologetic about Star Wars, then encouraged about Bright",
+      "intention": "Acknowledge the Star Wars dislike and reinforce Bright as an alternative.",
+      "reaction_to_seeker": "Accepts the correction and notes the seeker's possible interest in Bright.",
+      "conversational_goal": "Recover from the poor Star Wars suggestion and steer toward Bright or other suitable movies.",
+      "changes_previous_interpretation": "Star Wars is no longer considered suitable; Bright becomes a stronger candidate. The broad-taste interpretation remains, but with a Star Wars exception."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"No prior seeker utterance; recommender initiates with 'Good evening!'\",\n    \"preferences\": \"No movie preferences expressed or inferred yet.\",\n    \"belief_before\": \"No information about the seeker; conversation has not started.\",\n    \"belief_update\": \"Recommender chooses to greet the seeker; no new seeker information.\",\n    \"belief_after\": \"Seeker is present/available for dialogue; no movie-related information yet.\",\n    \"emotion\": \"polite, welcoming\",\n    \"intention\": \"Open the conversation and establish contact.\",\n    \"reaction_to_seeker\": \"None yet; recommender is initiating.\",\n    \"conversational_goal\": \"Greet the seeker and invite them to state their request.\",\n    \"changes_previous_interpretation\": \"No prior interpretation; baseline state.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker greets and asks for new movies that are worth watching.\",\n    \"preferences\": \"No explicit seeker genre preference is given; recommender has not yet stated movie preferences.\",\n    \"belief_before\": \"Seeker has only been greeted; no movie-related information is known.\",\n    \"belief_update\": \"Learns the seeker wants recommendations for new, worthwhile movies.\",\n    \"belief_after\": \"Seeker is looking for movie recommendations, but genre and taste are still unknown.\",\n    \"emotion\": \"helpful, attentive\",\n    \"intention\": \"Provide movie recommendations and/or ask a clarifying question.\",\n    \"reaction_to_seeker\": \"Recognizes the seeker is making a recommendation request.\",\n    \"conversational_goal\": \"Elicit preferences and recommend suitable new movies.\",\n    \"changes_previous_interpretation\": \"Changes from greeting to an active recommendation task.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Seeker asked for new movies worth watching; no genre preference was given.\",\n    \"preferences\": \"Recommender thinks Bright (2017) is really good, even without the backstory.\",\n    \"belief_before\": \"Seeker wants new, worthwhile movies; genre and taste are unknown.\",\n    \"belief_update\": \"Recommender asks about genre and offers Bright as a concrete recommendation.\",\n    \"belief_after\": \"Seeker has been asked for genre; Bright is a candidate recommendation; seeker preferences remain unknown.\",\n    \"emotion\": \"helpful, enthusiastic\",\n    \"intention\": \"Clarify the seeker's taste while offering a specific movie suggestion.\",\n    \"reaction_to_seeker\": \"Responds to the general request by seeking more information and giving an example.\",\n    \"conversational_goal\": \"Narrow down genres and promote Bright as worth watching.\",\n    \"changes_previous_interpretation\": \"Moves from a general request to a personalized recommendation attempt; no new seeker info yet.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have never heard of 'that one,' likely referring to Bright (2017).\",\n    \"preferences\": \"Recommender still likes Bright; seeker preferences remain unknown.\",\n    \"belief_before\": \"Seeker wants movies, genre unknown; Bright has been suggested.\",\n    \"belief_update\": \"Learns the seeker is unfamiliar with Bright.\",\n    \"belief_after\": \"Seeker does not know Bright; it may need explanation or an alternate suggestion. Genre is still unknown.\",\n    \"emotion\": \"mildly surprised, understanding, still helpful\",\n    \"intention\": \"Explain Bright or offer another recommendation.\",\n    \"reaction_to_seeker\": \"Seeker did not reject Bright, only indicated unfamiliarity with it.\",\n    \"conversational_goal\": \"Inform the seeker about Bright and/or keep offering options.\",\n    \"changes_previous_interpretation\": \"Bright is not recognized, so the recommendation needs support; it remains viable but ungrounded.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Seeker has never heard of Bright.\",\n    \"preferences\": \"Recommender likes Bright; recommender has seen and now mentions Star Wars: Episode VIII – The Last Jedi (2017) as another option.\",\n    \"belief_before\": \"Seeker is unfamiliar with Bright; genre and broader taste are unknown.\",\n    \"belief_update\": \"Recommender provides another title, Star Wars: The Last Jedi, as an additional option.\",\n    \"belief_after\": \"Bright and Star Wars have both been suggested; seeker genre preferences are still unknown.\",\n    \"emotion\": \"helpful, conversational\",\n    \"intention\": \"Offer another movie option and broaden the choices.\",\n    \"reaction_to_seeker\": \"Continues helping despite the seeker not knowing Bright.\",\n    \"conversational_goal\": \"Provide an additional recommendation and keep the dialogue going.\",\n    \"changes_previous_interpretation\": \"Shifts from explaining Bright to adding another recommendation; no new seeker preference information.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says they really like all kinds of movies and would watch a kids movie followed by a horror flick.\",\n    \"preferences\": \"Recommender likes Bright and has seen Star Wars. Recommender now believes the seeker has broad taste, including kids and horror movies.\",\n    \"belief_before\": \"Seeker is unfamiliar with Bright; Bright and Star Wars have been suggested; genre unknown.\",\n    \"belief_update\": \"Learns the seeker has broad movie taste and no narrow genre preference.\",\n    \"belief_after\": \"Seeker is open to many genres; diverse recommendations are appropriate. Star Wars is not yet known to be disliked.\",\n    \"emotion\": \"positive, encouraged\",\n    \"intention\": \"Use the broad taste information to suggest varied movies.\",\n    \"reaction_to_seeker\": \"Seeker's openness is useful and encouraging.\",\n    \"conversational_goal\": \"Recommend across genres, possibly revisiting Bright with more details.\",\n    \"changes_previous_interpretation\": \"Narrowing genre is less necessary; broad preferences make many recommendations plausible.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Seeker likes all kinds of movies, including kids and horror movies.\",\n    \"preferences\": \"Recommender likes Bright; believes the seeker is broad-minded and may be open to Bright.\",\n    \"belief_before\": \"Seeker has broad taste, is unfamiliar with Bright, and has been given Bright and Star Wars as options.\",\n    \"belief_update\": \"Recommender adds details about Bright: it is a Netflix original starring Will Smith.\",\n    \"belief_after\": \"Bright is better explained; seeker's broad taste supports it. The recommender still does not know if the seeker likes Star Wars or Bright.\",\n    \"emotion\": \"helpful, informative\",\n    \"intention\": \"Encourage the seeker to consider Bright by giving identifying details.\",\n    \"reaction_to_seeker\": \"Responds to the seeker's broad taste and earlier unfamiliarity with Bright.\",\n    \"conversational_goal\": \"Sell Bright as a good option.\",\n    \"changes_previous_interpretation\": \"The broad-taste update reinforces Bright as a suitable recommendation; no new seeker information in this turn.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says Star Wars is an exception and they are not a fan; they also indicate they may have seen or may watch 'that one,' likely Bright.\",\n    \"preferences\": \"Recommender likes Bright; now believes the seeker dislikes Star Wars but may be interested in Bright.\",\n    \"belief_before\": \"Seeker has broad taste, may like Bright, and Star Wars is still a possible recommendation.\",\n    \"belief_update\": \"Learns the seeker is not a Star Wars fan; Bright seems more promising because the seeker may consider watching it.\",\n    \"belief_after\": \"Avoid Star Wars recommendations; focus on Bright or other non-Star-Wars options. Seeker appears open to Bright.\",\n    \"emotion\": \"understanding, possibly apologetic about Star Wars, then encouraged about Bright\",\n    \"intention\": \"Acknowledge the Star Wars dislike and reinforce Bright as an alternative.\",\n    \"reaction_to_seeker\": \"Accepts the correction and notes the seeker's possible interest in Bright.\",\n    \"conversational_goal\": \"Recover from the poor Star Wars suggestion and steer toward Bright or other suitable movies.\",\n    \"changes_previous_interpretation\": \"Star Wars is no longer considered suitable; Bright becomes a stronger candidate. The broad-taste interpretation remains, but with a Star Wars exception.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

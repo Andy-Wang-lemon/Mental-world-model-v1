@@ -1,0 +1,36 @@
+{
+  "id": "4_pred_seeker__0140_d2245_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says hello, Happy New Year, asks whether the recommender knows any new comedy movies that are out, and states wanting to see A Bad Moms Christmas (2017) but it isn't on Amazon yet.",
+      "belief_before": "SEEKER wants to watch a new comedy; specifically desires A Bad Moms Christmas (2017); believes it is not currently on Amazon; believes the recommender may know new comedy releases.",
+      "belief_update": "SEEKER makes the request explicit and identifies a preferred title and an availability constraint: Amazon.",
+      "belief_after": "SEEKER is waiting for new comedy recommendations, ideally ones available on Amazon and/or comparable to A Bad Moms Christmas.",
+      "emotion": "polite, hopeful, mildly disappointed about A Bad Moms Christmas availability.",
+      "intention": "ask for new comedy movie recommendations to watch.",
+      "conversational_goal": "obtain suggestions for new comedy movies, using A Bad Moms Christmas as a reference/desired title."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER hears RECOMMENDER say Girls Trip (2017) was funny and so was Baywatch (2017).",
+      "belief_before": "SEEKER has requested new comedy suggestions; believes A Bad Moms Christmas is not on Amazon; expects recommender may offer options.",
+      "belief_update": "RECOMMENDER offers Girls Trip and Baywatch as funny movies; this changes SEEKER's state from awaiting suggestions to having two candidate comedy titles, while the A Bad Moms Christmas/Amazon constraint remains unresolved.",
+      "belief_after": "SEEKER now has two possible comedy titles to consider; still wants A Bad Moms Christmas and may need to check whether Girls Trip and Baywatch are available on Amazon and suitable.",
+      "emotion": "receptive and curious, possibly uncertain because the recommendations do not directly address Amazon availability or A Bad Moms Christmas.",
+      "intention": "evaluate the suggested titles for fit and/or ask follow-up questions about availability or other options.",
+      "conversational_goal": "decide whether Girls Trip and Baywatch satisfy the request for new comedy movies, and possibly seek clarification or more recommendations."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says hello, Happy New Year, asks whether the recommender knows any new comedy movies that are out, and states wanting to see A Bad Moms Christmas (2017) but it isn't on Amazon yet.\",\n    \"belief_before\": \"SEEKER wants to watch a new comedy; specifically desires A Bad Moms Christmas (2017); believes it is not currently on Amazon; believes the recommender may know new comedy releases.\",\n    \"belief_update\": \"SEEKER makes the request explicit and identifies a preferred title and an availability constraint: Amazon.\",\n    \"belief_after\": \"SEEKER is waiting for new comedy recommendations, ideally ones available on Amazon and/or comparable to A Bad Moms Christmas.\",\n    \"emotion\": \"polite, hopeful, mildly disappointed about A Bad Moms Christmas availability.\",\n    \"intention\": \"ask for new comedy movie recommendations to watch.\",\n    \"conversational_goal\": \"obtain suggestions for new comedy movies, using A Bad Moms Christmas as a reference/desired title.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER hears RECOMMENDER say Girls Trip (2017) was funny and so was Baywatch (2017).\",\n    \"belief_before\": \"SEEKER has requested new comedy suggestions; believes A Bad Moms Christmas is not on Amazon; expects recommender may offer options.\",\n    \"belief_update\": \"RECOMMENDER offers Girls Trip and Baywatch as funny movies; this changes SEEKER's state from awaiting suggestions to having two candidate comedy titles, while the A Bad Moms Christmas/Amazon constraint remains unresolved.\",\n    \"belief_after\": \"SEEKER now has two possible comedy titles to consider; still wants A Bad Moms Christmas and may need to check whether Girls Trip and Baywatch are available on Amazon and suitable.\",\n    \"emotion\": \"receptive and curious, possibly uncertain because the recommendations do not directly address Amazon availability or A Bad Moms Christmas.\",\n    \"intention\": \"evaluate the suggested titles for fit and/or ask follow-up questions about availability or other options.\",\n    \"conversational_goal\": \"decide whether Girls Trip and Baywatch satisfy the request for new comedy movies, and possibly seek clarification or more recommendations.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,128 @@
+{
+  "scenario": 1,
+  "focus_person": "Jose Castillo",
+  "objects": [
+    {
+      "content": "Jose Castillo经验到在银行轮班中与Patricia的友好交流，以及她此刻以“personal stuff”和“I appreciate that, Jose. It means a lot.”回应自己的关心；这使他把她个人状况仍对自己留出可关心的入口放在自己这一侧。因此当她比平时更退缩、只说personal stuff而不说明细节时，这种不说明不呈现为与他无关的边界。那句“Oh, it's nothing really”在他这里不是最终界线，而是仍可被持续关心打开的保留。",
+      "probability": 0.3422
+    },
+    {
+      "content": "Jose Castillo经验到Patricia比平时更退缩以及那句“nothing really”，并不是独立于他的一道边界，而是一种指向他的关系信号；她那句“I appreciate that, Jose. It means a lot.”被他当作自己仍是那个会留意她、开口询问并让她在意的同事的确认。",
+      "probability": 0.3365
+    },
+    {
+      "content": "Jose Castillo经验到Patricia比平时更退缩、只说“personal stuff”而不给细节，不是完全归她独自处理、他无从涉入的事情，而是他能够知道原因并参与其中的关系内容；她的感谢则让他感到自己已被放在那个可涉入的位置上，“nothing really”更像覆在这层内容上的表面。",
+      "probability": 0.3213
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "Jose Castillo把Patricia比平时更退缩以及那句“nothing really”整理成不是她独自划出的边界，而是一道朝他发出的关系信号：他觉得她在自己面前仍留有被看见的可能；而“I appreciate that, Jose. It means a lot.”更把这份信号落成对他同事位置的确认——他仍是那个会留意她、开口询问、让她在意的Jose。于是他的内心把这次询问看作已经抵达她的关心，并趋向于以可依靠而不追问的方式承接她的沉默。",
+      "activation": 0.3383
+    },
+    {
+      "content": "Patricia比平时更退缩，这件事在我这里不只是她独自承受的信号。她说只是personal stuff、不肯展开，我反而更觉得那层“nothing really”像盖在真正缘由上的表面；如果真与我无关，她不必在我说愿意听之后特意感谢我，那句感谢让我感到自己已经被放进了她允许靠近的位置。所以我想，她的退缩和她保留细节并不等于把我挡在外面，而是留下了一个我可以逐步知道原因、并参与其中的关系内容；我应把她的含糊看作尚未展开，而不是终结，继续把她放在我心里可留意的范围内。",
+      "activation": 0.3329
+    },
+    {
+      "content": "Jose Castillo把Patricia比平时更退缩、只说personal stuff而不讲细节，整理成她仍对自己留出可关心的入口，而不是一条与自己无关的边界。那句“Oh, it's nothing really”在他这里不是最终关门，更像还有保留。他因此既感到她确实有难处，又将她此刻的回应看成可继续被关心打开的余地，心里形成一种不急于追问、但仍把倾听位置留给她的造作趋向。",
+      "activation": 0.3288
+    }
+  ],
+  "mental_state": {
+    "event": {
+      "精进": 0.3467,
+      "无贪": 0.3295,
+      "无瞋": 0.5538,
+      "无痴": 0.2875,
+      "不放逸": 0.3837,
+      "行舍": 0.4587,
+      "不害": 0.895,
+      "不慢": 0.1489,
+      "善见": 0.2546,
+      "贪": 0.1232,
+      "无明": 0.0964,
+      "疑": 0.1447,
+      "不正知": 0.2384
+    },
+    "branches": [
+      {
+        "branch_id": "branch_O_C1",
+        "activation": 0.3383,
+        "factors": {
+          "精进": 0.3,
+          "无贪": 0.425,
+          "无瞋": 0.54,
+          "不放逸": 0.4425,
+          "行舍": 0.52,
+          "不害": 0.905,
+          "不慢": 0.44,
+          "善见": 0.325,
+          "无明": 0.285,
+          "疑": 0.21,
+          "不正知": 0.37
+        }
+      },
+      {
+        "branch_id": "branch_O_C2",
+        "activation": 0.3329,
+        "factors": {
+          "精进": 0.2625,
+          "无瞋": 0.51,
+          "无痴": 0.365,
+          "不放逸": 0.365,
+          "行舍": 0.395,
+          "不害": 0.88,
+          "贪": 0.37,
+          "疑": 0.1175,
+          "不正知": 0.34
+        }
+      },
+      {
+        "branch_id": "branch_O_C3",
+        "activation": 0.3288,
+        "factors": {
+          "精进": 0.48,
+          "无贪": 0.565,
+          "无瞋": 0.6125,
+          "无痴": 0.505,
+          "不放逸": 0.342,
+          "行舍": 0.46,
+          "不害": 0.9,
+          "善见": 0.44,
+          "疑": 0.105
+        }
+      }
+    ]
+  },
+  "observed_action": "Jose notices Patricia is more withdrawn than usual during their shifts at the bank. He recalls her being particularly vibrant and suspects something might be troubling her. He asks Patricia whether everything is okay, saying he has noticed she has seemed a bit down lately. He says he understands and that if she ever feels like talking or needs someone to listen, he is there.",
+  "predicted_actions": [
+    {
+      "content": "acknowledges briefly and continues working",
+      "probability": 0.6617
+    },
+    {
+      "content": "表示愿意提供帮助",
+      "probability": 0.3107
+    },
+    {
+      "content": "询问轮班安排",
+      "probability": 0.0276
+    }
+  ],
+  "history": [
+    {
+      "content": "Jose在银行轮班中与Patricia友好交流、关心她时听到她说“个人私事”和“很感激、这对我很重要”，于是把她个人状况仍对自己留出可关心的入口放在自己这一侧，因此从此把“哦，其实没什么”以及这类退缩不说明理解为并非最终界线，而是仍可被持续关心打开的保留。",
+      "mass": 0.3422
+    },
+    {
+      "content": "Jose在银行轮班中看到Patricia比平时更退缩并听到她只说“没什么”后，把这份退缩与含糊连同她那句“很感激、这对我很重要”当成指向自己并确认自己仍是会留意她、开口询问且让她在意的同事的关系信号，因此从此把这类退缩与不说明理解为不是她独自划出的边界，而是朝向他、仍留有被他看见与承接余地的关系信号。",
+      "mass": 0.3365
+    },
+    {
+      "content": "Jose在Patricia比平时更退缩、只说“个人私事”而不给细节时，没有把她的保留当成完全归她独自处理而他无从涉入的边界，反而把“没什么”看作覆在真正缘由上的表面、把她的感谢看作自己已被放进可靠近位置的确认，因此从此把这类含糊与退缩理解为一种自己可以逐步知道原因并参与其中的关系内容。",
+      "mass": 0.3213
+    }
+  ],
+  "continuity_event_count": 1
+}

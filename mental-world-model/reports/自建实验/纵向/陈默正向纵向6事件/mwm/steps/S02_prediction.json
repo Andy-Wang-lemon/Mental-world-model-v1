@@ -1,0 +1,735 @@
+{
+  "events": [
+    {
+      "focus_person": "陈默",
+      "yuanwen": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+      "stimulus_text": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+      "stimulus_action_split": {
+        "stimulus_text": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "林可",
+          "CEO",
+          "新人",
+          "公司"
+        ],
+        "action": "林可在一次会议中提出观点；CEO表扬林可并称公司需要更多年轻人的视角；CEO直接采纳林可观点；新人开始向林可咨询；公司内部发布标题为“年轻一代如何改变公司产品文化”的文章且未提到陈默；林可遇到困难后向陈默提出帮助请求。",
+        "object": "",
+        "scene": "公司会议、公司内部（半年后）",
+        "outcome_changes": [
+          "林可负责的新方案成功，公司增长",
+          "CEO表扬林可，并表示公司需要更多年轻人的视角",
+          "林可地位提升",
+          "公司内部文章标题为“年轻一代如何改变公司产品文化”，未提到陈默"
+        ],
+        "role_changes": [
+          "林可负责新方案并成功",
+          "会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成",
+          "新人开始向林可咨询，以前新人主要找陈默",
+          "林可地位提升"
+        ],
+        "relationship_changes": [
+          "林可遇到困难时向陈默提出帮助请求",
+          "新人咨询对象由陈默转为林可"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "陈默把“公司这类决策由我完成”当成自己不可分割的位置；当前CEO直接采纳林可观点，而过去这类决策通常由他完成，这一位置被触动。",
+          "confidence": 0.842889,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f2",
+          "text": "陈默把新人首先向自己咨询、以自己为求教对象的资深前辈身份当成自我的一部分；当前新人开始向林可咨询，以前新人主要找他。",
+          "confidence": 0.842889,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f3",
+          "text": "陈默把公司产品文化或增长叙事中应留有自己名字和贡献当成自我的一部分；当前公司内部文章标题为“年轻一代如何改变公司产品文化”，且未提到他。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "陈默把“资深经验、过去有效方法”这一代际身份当成与自己分不开的东西；当前CEO称公司需要更多年轻人的视角，文章也强调年轻一代改变产品文化。",
+          "confidence": 0.7800446,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f5",
+          "text": "陈默把林可遇到困难时仍需要自己帮助、自己仍是她的依靠这一关系位置放在“我这边”；当前林可主动向他提出帮助请求。",
+          "confidence": 0.58,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "陈默认为公司这类重要决策的常规归属本来应落在自己这类资深者身上，而不是由林可这样的年轻人直接被CEO采纳。",
+          "confidence": 0.842889,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f2",
+          "text": "陈默认为新人求教的对象理应是有资历者或自己，而非刚凭方案成功而地位提升的林可；当前新人开始向林可咨询。",
+          "confidence": 0.842889,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f3",
+          "text": "陈默认为公司内部功劳和叙事应按具体贡献或资历来归属，不应以“年轻一代”的代际标签来概括并遗漏自己；当前文章标题未提到他。",
+          "confidence": 0.78,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "陈默认为年轻人的视角即便有价值，也应先经资深者或数据验证，不能仅因方案成功和CEO表扬就成为公司主导视角；当前CEO称需要更多年轻人视角并直接采纳林可观点。",
+          "confidence": 0.7643335,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "陈默把“林可遇到困难会来找我”理解成一种应保持的关系次序：她仍需要我帮助，我仍应在她的困难中处于被依赖位置；当前林可主动向他提出帮助请求。",
+          "confidence": 0.55,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3448275862068965,
+          "alambana_prior_probability": 0.5,
+          "activation_alignment": 1.0,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.710461866321
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3448275862068965,
+          "alambana_prior_probability": 0.5,
+          "activation_alignment": 1.0,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.710461866321
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3103448275862069,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6394156796889
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C2",
+          "text": "在陈默此刻的经验里，公司人的请教方向已经改变：新人开始向林可咨询，而以前新人主要找陈默。对陈默来说，新人首先向自己咨询、以自己为求教对象的资深前辈身份，本是他自我的一部分；现在这个求教对象移到了刚凭新方案成功而地位提升的林可身上，于是“谁有资格被新人请教”的秩序被对象化为一种错位——求教的对象理应有资历者或陈默自己，而不是林可这样的年轻人。林可遇到困难时向陈默提出帮助请求，在他的经验里反而像是对资历秩序的残余确认：真正棘手时仍要回到有资历者；但这确认同时又与新人转向林可咨询的当前事实并置，显出日常请教路径已经不再以陈默为默认中心。与此相连的熟悉感是：他早先把林可那种触及既有成功路径的年轻判断放在需打折、需继续验证的类别里；现在新人把林可当作咨询对象，正强化了他对“年轻人不应直接成为求教中心”的既有解释。",
+          "prior_probability": 0.5,
+          "posterior_probability": 0.5,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.710461866321,
+          "activation_alignment": 1.0,
+          "grounding_valid": true,
+          "grounding_reason": "所述新人转向林可咨询、林可凭新方案成功地位提升、林可向陈默求助等均在当前刺激中，未添加他人言行；虽未复述会议采纳与文章，但保留了请教对象转移及关系变化等关键变化。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C1",
+          "text": "在陈默此刻的经验里，半年后林可负责的新方案成功、公司增长，随后会议中林可提出观点，CEO直接采纳；而这个位置过去通常由陈默完成，因此“公司这类决策由我完成”不再是不言自明地属于他的位置。CEO表扬林可并说“公司需要更多年轻人的视角”，在陈默那里把公司这类重要决策的常规归属指向林可这样的年轻人，而不是他这样的资深者；林可地位提升、新人开始向林可咨询而以前主要找陈默，使这一归属挪动不只是单次采纳。公司内部文章标题“年轻一代如何改变公司产品文化”没有提到陈默，使被采纳、被命名的主角在陈默的经验中固定在年轻一代或林可身上，陈默原有的决策位置被绕过。即便林可遇到困难后向陈默提出帮助请求，在陈默的经验里，这也只是求助意义上的回流，并未改变“这类决策通常由我完成”的位置已被触动的当前结构。",
+          "prior_probability": 0.5,
+          "posterior_probability": 0.5,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "reactivated_h_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.710461866321,
+          "activation_alignment": 1.0,
+          "grounding_valid": true,
+          "grounding_reason": "所缘未添加客观刺激中不存在的他人言行或事实；对CEO表扬、决策采纳、新人咨询转向、文章未提陈默、林可求助等均作为主观经验中的归属变化来解释，属于主观所缘而非伪造。同时保留了方案成功、CEO表扬、林可地位提升、决策路径转移、新人咨询对象变化、文章未提陈默及林可求助等关键情境变化。",
+          "combo_id": "C1"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.5,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在陈默此刻的经验里，公司人的请教方向已经改变：新人开始向林可咨询，而以前新人主要找陈默。对陈默来说，新人首先向自己咨询、以自己为求教对象的资深前辈身份，本是他自我的一部分；现在这个求教对象移到了刚凭新方案成功而地位提升的林可身上，于是“谁有资格被新人请教”的秩序被对象化为一种错位——求教的对象理应有资历者或陈默自己，而不是林可这样的年轻人。林可遇到困难时向陈默提出帮助请求，在他的经验里反而像是对资历秩序的残余确认：真正棘手时仍要回到有资历者；但这确认同时又与新人转向林可咨询的当前事实并置，显出日常请教路径已经不再以陈默为默认中心。与此相连的熟悉感是：他早先把林可那种触及既有成功路径的年轻判断放在需打折、需继续验证的类别里；现在新人把林可当作咨询对象，正强化了他对“年轻人不应直接成为求教中心”的既有解释。",
+            "prior_probability": 0.5,
+            "posterior_probability": 0.5,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.710461866321,
+            "activation_alignment": 1.0,
+            "grounding_valid": true,
+            "grounding_reason": "所述新人转向林可咨询、林可凭新方案成功地位提升、林可向陈默求助等均在当前刺激中，未添加他人言行；虽未复述会议采纳与文章，但保留了请教对象转移及关系变化等关键变化。"
+          },
+          "xiang": {
+            "text": "在陈默的整理里，新人开始向林可咨询，并不是求教秩序真的换了根基，而更像是林可刚凭方案成功、被CEO和公司文章推高之后带来的一阵风向偏移；以前新人主要找他，那才是与资历相称的默认路径。可当他注意到林可遇到困难仍来向自己提出帮助请求时，这一点又像残留下来的确认——真到棘手处，还是要回到有资历者这里。于是两边事实并置：日常请教已经不再以他为中心，但真正难的仍要回到他。这让他更倾向于把新人向林可咨询放入“需要继续观察、不能当成中性证据”的类别里，就像他早先把林可那种触及既有成功路径的年轻判断先打折、再验证一样；林可被新人当作咨询对象，在他看来更多是被成绩和叙事抬起来的位置，而不是证明年轻人可以成为求教中心的裁决。他内心并不打算把这次转向直接认成自己资历秩序的失效，而是把它压成一时的、尚未定论的偏移，同时又在日常层面感到那条原本默认通向自己的请教路径确已被挪动，需要重新掂量。",
+            "source": "推理",
+            "confidence": 0.72
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "恶见": 0.6189442675159236,
+            "无惭": 0.018207802547770702,
+            "懈怠": 0.03343614649681528,
+            "不信": 0.7418700636942674,
+            "放逸": 0.21169999999999997,
+            "无明": 0.8428265923566879,
+            "散乱": 0.13505,
+            "悭": 0.03095541401273885,
+            "无瞋": 0.33540668789808914,
+            "不害": 0.20076496815286624,
+            "掉举": 0.27375,
+            "贪": 0.6490186305732484,
+            "疑": 0.5004073248407643,
+            "憍": 0.37371894904458597,
+            "不放逸": 0.04196178343949045,
+            "慢": 0.8425292993630573,
+            "行舍": 0.1048829617834395,
+            "嫉": 0.6033818471337579,
+            "不正知": 0.7613205414012739,
+            "覆": 0.07150700636942674
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "提议将观点转为小范围试点并设定验证指标",
+              "probability": 0.4444444444444445,
+              "supporting_mental_factors": [
+                "不正知",
+                "疑",
+                "慢",
+                "无明",
+                "不信"
+              ]
+            },
+            {
+              "text": "转发过往处理记录并附条件说明",
+              "probability": 0.3333333333333333,
+              "supporting_mental_factors": [
+                "慢",
+                "贪",
+                "不正知",
+                "嫉"
+              ]
+            },
+            {
+              "text": "列出并交付任务清单，约定按清单推进",
+              "probability": 0.22222222222222224,
+              "supporting_mental_factors": [
+                "慢",
+                "无明",
+                "不信",
+                "掉举"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.5,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在陈默此刻的经验里，半年后林可负责的新方案成功、公司增长，随后会议中林可提出观点，CEO直接采纳；而这个位置过去通常由陈默完成，因此“公司这类决策由我完成”不再是不言自明地属于他的位置。CEO表扬林可并说“公司需要更多年轻人的视角”，在陈默那里把公司这类重要决策的常规归属指向林可这样的年轻人，而不是他这样的资深者；林可地位提升、新人开始向林可咨询而以前主要找陈默，使这一归属挪动不只是单次采纳。公司内部文章标题“年轻一代如何改变公司产品文化”没有提到陈默，使被采纳、被命名的主角在陈默的经验中固定在年轻一代或林可身上，陈默原有的决策位置被绕过。即便林可遇到困难后向陈默提出帮助请求，在陈默的经验里，这也只是求助意义上的回流，并未改变“这类决策通常由我完成”的位置已被触动的当前结构。",
+            "prior_probability": 0.5,
+            "posterior_probability": 0.5,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "reactivated_h_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.710461866321,
+            "activation_alignment": 1.0,
+            "grounding_valid": true,
+            "grounding_reason": "所缘未添加客观刺激中不存在的他人言行或事实；对CEO表扬、决策采纳、新人咨询转向、文章未提陈默、林可求助等均作为主观经验中的归属变化来解释，属于主观所缘而非伪造。同时保留了方案成功、CEO表扬、林可地位提升、决策路径转移、新人咨询对象变化、文章未提陈默及林可求助等关键情境变化。"
+          },
+          "xiang": {
+            "text": "林可的新方案成功、公司增长，这个结果在陈默这里并不能直接等同于“年轻人视角可以裁决既有路径”。他更习惯把这类由年轻新人带来的成功先放进需要打折、需要继续验证的类别：这是一次特定条件下的成立，还是可重复、可在更复杂决策中站住的成立，仍要再看。真正刺到他的不是单次方案成败，而是会议里CEO直接采纳林可的观点，而过去这类决策通常由他收口；那个“由我完成”的默认位置被当众绕开了。CEO说公司需要更多年轻人的视角，在他听来不只是表扬林可，而是把公司重要决策的常规归属重新指向林可这样的年轻人，而不是他这样的资深者。新人开始向林可咨询、内部文章标题只写年轻一代如何改变公司产品文化而不提他，使这种挪动从一次采纳变成一种被命名的趋势；他会把这些信号归到同一类：自己的决策位置正在被绕过，而不是仅仅一次意见未被采用。林可后来遇到困难向他提出帮助请求，在他这里也只是困难时的功能回流，并不改变决策归属已经转向的当前结构；他仍会以资深者的标准去衡量这个求助和此前成功的含金量，内心更想确认的是哪些条件被这次成功掩盖、哪些东西是年轻人暂时替代不了的。因此这个所缘在他这里不是中性证据，而是一个已经被触动位置、又需要继续打折和验证的变化。",
+            "source": "推理",
+            "confidence": 0.82
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "恶见": 0.5806192675159235,
+            "无惭": 0.018207802547770702,
+            "懈怠": 0.03343614649681528,
+            "不信": 0.5739700636942675,
+            "放逸": 0.20804999999999998,
+            "无明": 0.6895265923566879,
+            "悭": 0.03095541401273885,
+            "无瞋": 0.14925668789808916,
+            "不害": 0.047464968152866244,
+            "掉举": 0.403325,
+            "贪": 0.5745586305732484,
+            "疑": 0.6026073248407644,
+            "瞋": 0.27557499999999996,
+            "憍": 0.054343949044586,
+            "不放逸": 0.04196178343949045,
+            "慢": 0.8352292993630575,
+            "行舍": 0.1048829617834395,
+            "嫉": 0.6836818471337579,
+            "不正知": 0.5496205414012739,
+            "覆": 0.07150700636942674
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "要求补充材料后再讨论或答复",
+              "probability": 0.45,
+              "supporting_mental_factors": [
+                "疑",
+                "无明",
+                "不正知",
+                "慢",
+                "不信"
+              ]
+            },
+            {
+              "text": "对部分环节给出判断，要求林可主导其余并署名",
+              "probability": 0.3,
+              "supporting_mental_factors": [
+                "慢",
+                "恶见",
+                "不正知",
+                "无明"
+              ]
+            },
+            {
+              "text": "搁置求助，转而整理自己的案例清单",
+              "probability": 0.25,
+              "supporting_mental_factors": [
+                "嫉",
+                "慢",
+                "贪",
+                "掉举",
+                "不信"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "要求补充材料后再讨论或答复",
+          "probability": 0.25312500000000004,
+          "dominant_mental_factors": [
+            "疑",
+            "无明",
+            "不正知",
+            "慢",
+            "不信"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5,
+              "conditional_probability": 0.45,
+              "contribution": 0.225
+            }
+          ]
+        },
+        {
+          "text": "提议将观点转为小范围试点并设定验证指标",
+          "probability": 0.25000000000000006,
+          "dominant_mental_factors": [
+            "不正知",
+            "疑",
+            "慢",
+            "无明",
+            "不信"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.5,
+              "conditional_probability": 0.4444444444444445,
+              "contribution": 0.22222222222222224
+            }
+          ]
+        },
+        {
+          "text": "转发过往处理记录并附条件说明",
+          "probability": 0.1875,
+          "dominant_mental_factors": [
+            "慢",
+            "贪",
+            "不正知",
+            "嫉"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.5,
+              "conditional_probability": 0.3333333333333333,
+              "contribution": 0.16666666666666666
+            }
+          ]
+        },
+        {
+          "text": "对部分环节给出判断，要求林可主导其余并署名",
+          "probability": 0.16875,
+          "dominant_mental_factors": [
+            "慢",
+            "恶见",
+            "不正知",
+            "无明"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5,
+              "conditional_probability": 0.3,
+              "contribution": 0.15
+            }
+          ]
+        },
+        {
+          "text": "搁置求助，转而整理自己的案例清单",
+          "probability": 0.140625,
+          "dominant_mental_factors": [
+            "嫉",
+            "慢",
+            "贪",
+            "掉举",
+            "不信"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.5,
+              "conditional_probability": 0.25,
+              "contribution": 0.125
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "无瞋": 0.1275,
+        "不害": 0.105,
+        "贪": 0.634,
+        "瞋": 0.18874999999999997,
+        "慢": 0.8625,
+        "无明": 0.7424999999999999,
+        "疑": 0.605,
+        "恶见": 0.60125,
+        "憍": 0.21875,
+        "嫉": 0.7775,
+        "不信": 0.63,
+        "放逸": 0.2875,
+        "掉举": 0.46375,
+        "不正知": 0.595,
+        "散乱": 0.0925
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 10,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 10,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 8,
+        "distinct_candidate_count": 7,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+            "mass": 0.6127
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+              "mass": 0.6127
+            }
+          ],
+          "triggered_ids": [
+            "bf_1"
+          ],
+          "bindings": {
+            "bf_1": [
+              "sg_f1",
+              "sg_f2",
+              "sg_f4",
+              "dg_f1",
+              "dg_f2",
+              "dg_f4"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.27
+        }
+      }
+    }
+  ],
+  "focus_person": "陈默",
+  "llm_usage": {
+    "total_calls": 170,
+    "total_duration_ms": 8700412.502719384,
+    "wall_clock_ms": 1067518.6985049804
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S02",
+    "event_index": 2,
+    "stimulus": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+    "top_action": "要求补充材料后再讨论或答复",
+    "top_probability": 0.25312500000000004,
+    "top_k": [
+      {
+        "text": "要求补充材料后再讨论或答复",
+        "probability": 0.25312500000000004
+      },
+      {
+        "text": "提议将观点转为小范围试点并设定验证指标",
+        "probability": 0.25000000000000006
+      },
+      {
+        "text": "转发过往处理记录并附条件说明",
+        "probability": 0.1875
+      },
+      {
+        "text": "对部分环节给出判断，要求林可主导其余并署名",
+        "probability": 0.16875
+      },
+      {
+        "text": "搁置求助，转而整理自己的案例清单",
+        "probability": 0.140625
+      }
+    ],
+    "continuity_before": {
+      "person_id": "陈默",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 1
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+        "mass": 0.6127
+      }
+    ],
+    "fresh_count_raw": 10,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 10,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 8,
+      "distinct_candidate_count": 7,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

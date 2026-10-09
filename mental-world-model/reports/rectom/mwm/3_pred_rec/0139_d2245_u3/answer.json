@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 139,
+  "item_id": "d2245_u3",
+  "dialogue_id": "2245",
+  "utterance_pos": 3,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Explains a recommendation with background or reasoning",
+  "option_scores": {
+    "a": 0.3,
+    "b": 0.6,
+    "c": 0.5,
+    "d": 0.9,
+    "e": 0.1
+  },
+  "score_reason": "The seeker challenges the recommender's suggestion with bad reviews, so the recommender is most likely to explain or justify that recommendation next.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

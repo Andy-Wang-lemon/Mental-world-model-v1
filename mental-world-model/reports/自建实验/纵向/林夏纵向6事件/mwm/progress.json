@@ -1,0 +1,209 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "林夏",
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "trajectory": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "stimulus": "林夏和许宁认识十年，一直是最好的朋友。林夏刚和交往三年的程浩分手，许宁陪她度过了最难受的一段时间。一个月后，林夏借许宁手机点外卖，屏幕突然弹出程浩的消息：“上次的事谢谢你没告诉林夏。我还是想找机会跟她解释。”",
+      "predicted_action": "当面质问许宁",
+      "probability": 0.4612182109942176,
+      "top_k": [
+        {
+          "text": "当面质问许宁",
+          "probability": 0.4612182109942176
+        },
+        {
+          "text": "直接联系程浩询问",
+          "probability": 0.3931414113896569
+        },
+        {
+          "text": "向许宁打听程浩消息",
+          "probability": 0.08611220948113
+        },
+        {
+          "text": "给程浩发消息",
+          "probability": 0.0595281681349956
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 7,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "stimulus": "几个月后，林夏和几个共同朋友吃饭。聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。",
+      "predicted_action": "问许宁",
+      "probability": 0.47471540079825403,
+      "top_k": [
+        {
+          "text": "问许宁",
+          "probability": 0.47471540079825403
+        },
+        {
+          "text": "当面问许宁是否和程浩单独吃饭",
+          "probability": 0.18580051512947054
+        },
+        {
+          "text": "沉默不回应",
+          "probability": 0.12808438685830006
+        },
+        {
+          "text": "向朋友追问许宁和程浩见面的细节",
+          "probability": 0.11501936650871988
+        },
+        {
+          "text": "问朋友",
+          "probability": 0.0963803307052555
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "stimulus": "后来程浩离开了这座城市。林夏整理东西时，发现自己一直以为丢失的旧相机被送到了公司前台。前台告诉她：“一个男的送来的，说之前托你朋友保管过。”相机里还留着林夏和程浩恋爱时拍的照片。",
+      "predicted_action": "询问相机相关情况",
+      "probability": 0.48,
+      "top_k": [
+        {
+          "text": "询问相机相关情况",
+          "probability": 0.48
+        },
+        {
+          "text": "取回相机并翻看照片后收起",
+          "probability": 0.4
+        },
+        {
+          "text": "让前台暂留相机",
+          "probability": 0.12
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "stimulus": "半年后，林夏父亲突然住院。她赶到医院，在走廊尽头看到许宁正在和医生交谈，而旁边站着已经离开这座城市的程浩。程浩手里还拿着林夏父亲的检查资料。许宁转过身，也看见了林夏。",
+      "predicted_action": "走向许宁并质问",
+      "probability": 0.43333333333333335,
+      "top_k": [
+        {
+          "text": "走向许宁并质问",
+          "probability": 0.43333333333333335
+        },
+        {
+          "text": "转向程浩质问并索要资料",
+          "probability": 0.3
+        },
+        {
+          "text": "停步观察",
+          "probability": 0.26666666666666666
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "stimulus": "几个月后，林夏无意间刷到程浩朋友发的一组旅行照片。其中一张合照里，许宁和程浩站在一起。评论区有人调侃：“你们两个终于不用藏了。”程浩回复了一个笑脸，许宁没有回复。",
+      "predicted_action": "保存并查看截图和聊天记录",
+      "probability": 0.38886930011790133,
+      "top_k": [
+        {
+          "text": "保存并查看截图和聊天记录",
+          "probability": 0.38886930011790133
+        },
+        {
+          "text": "给许宁发消息质问",
+          "probability": 0.2865356450158112
+        },
+        {
+          "text": "向共同朋友打听",
+          "probability": 0.23226378643741138
+        },
+        {
+          "text": "向共同朋友转发截图并询问",
+          "probability": 0.09233126842887612
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 10,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "stimulus": "半年后，共同朋友整理旧照片，随手发给林夏一组以前的照片。林夏翻到其中一张时停了下来。照片角落里，许宁和程浩深夜单独坐在咖啡馆。程浩低着头，许宁的手搭在他的手臂上。照片拍摄日期，是林夏和程浩正式分手的前三天。林夏还在看照片时，门铃突然响了。许宁拎着两杯喝的站在门外，像以前一样笑着说：“走啊，吃饭去。吃完陪我逛逛，好久没一起玩了。”",
+      "predicted_action": "拒绝出门并查看照片",
+      "probability": 0.2370375200351136,
+      "top_k": [
+        {
+          "text": "拒绝出门并查看照片",
+          "probability": 0.2370375200351136
+        },
+        {
+          "text": "向许宁展示照片并质问关系",
+          "probability": 0.23656731524480723
+        },
+        {
+          "text": "跟许宁出门",
+          "probability": 0.2232751128679526
+        },
+        {
+          "text": "询问照片信息",
+          "probability": 0.20173405960435203
+        },
+        {
+          "text": "让许宁进屋并翻看旧聊天记录",
+          "probability": 0.10138599224777453
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ],
+  "sealed_history": [
+    "林夏和许宁认识十年，一直是最好的朋友。林夏刚和交往三年的程浩分手，许宁陪她度过了最难受的一段时间。一个月后，林夏借许宁手机点外卖，屏幕突然弹出程浩的消息：“上次的事谢谢你没告诉林夏。我还是想找机会跟她解释。”\n林夏随后的行动：当面质问许宁",
+    "几个月后，林夏和几个共同朋友吃饭。聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。\n林夏随后的行动：问许宁",
+    "后来程浩离开了这座城市。林夏整理东西时，发现自己一直以为丢失的旧相机被送到了公司前台。前台告诉她：“一个男的送来的，说之前托你朋友保管过。”相机里还留着林夏和程浩恋爱时拍的照片。\n林夏随后的行动：询问相机相关情况",
+    "半年后，林夏父亲突然住院。她赶到医院，在走廊尽头看到许宁正在和医生交谈，而旁边站着已经离开这座城市的程浩。程浩手里还拿着林夏父亲的检查资料。许宁转过身，也看见了林夏。\n林夏随后的行动：走向许宁并质问",
+    "几个月后，林夏无意间刷到程浩朋友发的一组旅行照片。其中一张合照里，许宁和程浩站在一起。评论区有人调侃：“你们两个终于不用藏了。”程浩回复了一个笑脸，许宁没有回复。\n林夏随后的行动：保存并查看截图和聊天记录",
+    "半年后，共同朋友整理旧照片，随手发给林夏一组以前的照片。林夏翻到其中一张时停了下来。照片角落里，许宁和程浩深夜单独坐在咖啡馆。程浩低着头，许宁的手搭在他的手臂上。照片拍摄日期，是林夏和程浩正式分手的前三天。林夏还在看照片时，门铃突然响了。许宁拎着两杯喝的站在门外，像以前一样笑着说：“走啊，吃饭去。吃完陪我逛逛，好久没一起玩了。”\n林夏随后的行动：拒绝出门并查看照片"
+  ],
+  "updated_at": "2026-09-22T01:20:07"
+}

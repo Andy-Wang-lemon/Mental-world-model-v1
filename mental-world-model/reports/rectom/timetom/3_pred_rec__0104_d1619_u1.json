@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0104_d1619_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The seeker greets me and says they are looking for some good drama/thriller movies.",
+      "belief_before": "I have no prior information about this specific seeker's tastes or needs.",
+      "belief_update": "The seeker is interested in drama and thriller genres and is looking for high-quality recommendations in those categories.",
+      "belief_after": "The user wants movie recommendations, specifically in the drama/thriller space, and likely values quality or critical acclaim.",
+      "emotion": "Neutral and attentive, with a helpful orientation toward the user's request.",
+      "intention": "To respond helpfully and begin identifying suitable drama/thriller recommendations for the seeker.",
+      "conversational_goal": "To assist the seeker by providing relevant and satisfying movie recommendations, while possibly gathering more details to narrow down their taste."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The seeker greets me and says they are looking for some good drama/thriller movies.\",\n    \"belief_before\": \"I have no prior information about this specific seeker's tastes or needs.\",\n    \"belief_update\": \"The seeker is interested in drama and thriller genres and is looking for high-quality recommendations in those categories.\",\n    \"belief_after\": \"The user wants movie recommendations, specifically in the drama/thriller space, and likely values quality or critical acclaim.\",\n    \"emotion\": \"Neutral and attentive, with a helpful orientation toward the user's request.\",\n    \"intention\": \"To respond helpfully and begin identifying suitable drama/thriller recommendations for the seeker.\",\n    \"conversational_goal\": \"To assist the seeker by providing relevant and satisfying movie recommendations, while possibly gathering more details to narrow down their taste.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "e",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

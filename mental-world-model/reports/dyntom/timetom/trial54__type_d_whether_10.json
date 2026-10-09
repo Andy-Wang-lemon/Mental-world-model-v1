@@ -1,0 +1,61 @@
+{
+  "id": "trial54__type_d_whether_10",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Alice Lim",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Austin is reserved when talking about work. In their coffee conversation, he initially downplays it as usual ups and downs, then admits he is unsure how to handle a few complicated things at work.",
+      "belief_before": "Austin might be hiding something about his job performance.",
+      "belief_update": "Her suspicion is partially confirmed: something is bothering Austin, but she learns it is complicated work issues and reluctance to open up rather than clear evidence about job performance.",
+      "belief_after": "Austin is struggling with complicated work problems and may not be fully forthcoming, but he might open up with support.",
+      "emotion": "Concerned, curious, empathetic",
+      "intention": "Encourage Austin to talk more and support him in understanding what is bothering him."
+    },
+    {
+      "time": 2,
+      "observed": "Austin says he has thought about a career change but is unsure what other paths to take. He shows interest in healthcare and asks to hear about Alice's experiences and contacts.",
+      "belief_before": "Austin might be considering a career change due to dissatisfaction at work.",
+      "belief_update": "The possibility becomes more concrete: Austin is open to exploring a career change, especially healthcare.",
+      "belief_after": "Austin is interested in exploring healthcare as a possible career path and values Alice's guidance.",
+      "emotion": "Worried about his well-being, but hopeful and encouraged",
+      "intention": "Share her healthcare experiences and connect him with contacts to explore career options."
+    },
+    {
+      "time": 3,
+      "observed": "Austin is inspired by the story of Lara changing careers, but worries about the risks and initial struggle. He thanks Alice and says her support and real success stories help.",
+      "belief_before": "Austin is open to exploring a healthcare career change.",
+      "belief_update": "She sees that his openness is tempered by fear of the unknown, and he needs reassurance and encouragement.",
+      "belief_after": "Austin is hesitant and fearful about changing careers, but he is receptive to support and success stories.",
+      "emotion": "Frustration mixed with empathy, plus some encouragement",
+      "intention": "Encourage Austin by sharing success stories and reassuring him of her support."
+    },
+    {
+      "time": 4,
+      "observed": "Austin accepts her offer to talk to a career counselor and Alice's friends in healthcare. He appreciates the connections and looks forward to a meeting next week.",
+      "belief_before": "Austin is hesitant and fearful but receptive to encouragement and support.",
+      "belief_update": "His acceptance of concrete help shows greater willingness to act, strengthening Alice's hope.",
+      "belief_after": "Austin is willing to take practical steps toward a career transition with her help.",
+      "emotion": "Encouraged and hopeful",
+      "intention": "Provide detailed guidance, arrange the meeting, and connect him with a career counselor and friends in healthcare."
+    },
+    {
+      "time": 5,
+      "observed": "After several discussions and meetings, Austin says he feels excited and a bit nervous, but mostly grateful. He agrees to regular check-ins.",
+      "belief_before": "Austin is ready to take the next steps and appreciates her help.",
+      "belief_update": "Her belief is confirmed and strengthened: Austin is committed and values her continued support.",
+      "belief_after": "Austin is progressing, grateful, and willing to maintain regular check-ins for focus and perspective.",
+      "emotion": "Deep satisfaction, joy, pride",
+      "intention": "Plan regular check-ins to discuss his progress and challenges and continue supporting him."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Austin is reserved when talking about work. In their coffee conversation, he initially downplays it as usual ups and downs, then admits he is unsure how to handle a few complicated things at work.\",\n    \"belief_before\": \"Austin might be hiding something about his job performance.\",\n    \"belief_update\": \"Her suspicion is partially confirmed: something is bothering Austin, but she learns it is complicated work issues and reluctance to open up rather than clear evidence about job performance.\",\n    \"belief_after\": \"Austin is struggling with complicated work problems and may not be fully forthcoming, but he might open up with support.\",\n    \"emotion\": \"Concerned, curious, empathetic\",\n    \"intention\": \"Encourage Austin to talk more and support him in understanding what is bothering him.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Austin says he has thought about a career change but is unsure what other paths to take. He shows interest in healthcare and asks to hear about Alice's experiences and contacts.\",\n    \"belief_before\": \"Austin might be considering a career change due to dissatisfaction at work.\",\n    \"belief_update\": \"The possibility becomes more concrete: Austin is open to exploring a career change, especially healthcare.\",\n    \"belief_after\": \"Austin is interested in exploring healthcare as a possible career path and values Alice's guidance.\",\n    \"emotion\": \"Worried about his well-being, but hopeful and encouraged\",\n    \"intention\": \"Share her healthcare experiences and connect him with contacts to explore career options.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Austin is inspired by the story of Lara changing careers, but worries about the risks and initial struggle. He thanks Alice and says her support and real success stories help.\",\n    \"belief_before\": \"Austin is open to exploring a healthcare career change.\",\n    \"belief_update\": \"She sees that his openness is tempered by fear of the unknown, and he needs reassurance and encouragement.\",\n    \"belief_after\": \"Austin is hesitant and fearful about changing careers, but he is receptive to support and success stories.\",\n    \"emotion\": \"Frustration mixed with empathy, plus some encouragement\",\n    \"intention\": \"Encourage Austin by sharing success stories and reassuring him of her support.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Austin accepts her offer to talk to a career counselor and Alice's friends in healthcare. He appreciates the connections and looks forward to a meeting next week.\",\n    \"belief_before\": \"Austin is hesitant and fearful but receptive to encouragement and support.\",\n    \"belief_update\": \"His acceptance of concrete help shows greater willingness to act, strengthening Alice's hope.\",\n    \"belief_after\": \"Austin is willing to take practical steps toward a career transition with her help.\",\n    \"emotion\": \"Encouraged and hopeful\",\n    \"intention\": \"Provide detailed guidance, arrange the meeting, and connect him with a career counselor and friends in healthcare.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"After several discussions and meetings, Austin says he feels excited and a bit nervous, but mostly grateful. He agrees to regular check-ins.\",\n    \"belief_before\": \"Austin is ready to take the next steps and appreciates her help.\",\n    \"belief_update\": \"Her belief is confirmed and strengthened: Austin is committed and values her continued support.\",\n    \"belief_after\": \"Austin is progressing, grateful, and willing to maintain regular check-ins for focus and perspective.\",\n    \"emotion\": \"Deep satisfaction, joy, pride\",\n    \"intention\": \"Plan regular check-ins to discuss his progress and challenges and continue supporting him.\"\n  }\n]",
+  "final_response": "ANSWER: c",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial54"
+}

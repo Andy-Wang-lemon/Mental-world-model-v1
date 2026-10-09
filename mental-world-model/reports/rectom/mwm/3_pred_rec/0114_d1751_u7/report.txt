@@ -1,0 +1,29 @@
+数据：3_pred_rec
+题号：114  d1751_u7
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!\nRECOMMENDER says: The Green Inferno  (2013)  is a great horror movie...Insidious  (2011)  is another classic horror film\nSEEKER says: SOmething more along the lines of The Texas Chainsaw Massacre  (2003) \nRECOMMENDER says: If you like gory then I would suggest The Last House on the Left  (2009) ...What abou；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!\nRECOMMENDER says: The Green Inferno  (2013)  is a great horror movie...Insidious  (2011)  is another classic horror film\nSEEKER says: SOmething more along the lines of The Texas Chainsaw Massacre  (2003) \nRECOMMENDER says: If you like gory then I would suggest The Last House on the Left  (2009) ...What abou；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.55, "b": 0.6, "c": 0.92, "d": 0.5, "e": 0.05}
+选择说明：The recommender's last turn directly suggests a horror film and trails into a follow-up inquiry, matching 'provides a recommendation directly or by inquiring further' most directly.
+标准：B: Responds to the seeker's question or statement
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：No predicted next action or thought about what to do next is present, so the strategy can only be inferred from the scenario.

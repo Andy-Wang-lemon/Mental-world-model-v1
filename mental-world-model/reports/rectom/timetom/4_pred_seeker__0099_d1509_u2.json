@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0099_d1509_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "information_available": "SEEKER knows only that they have initiated contact; no information from RECOMMENDER yet.",
+      "preferences": "No movie preferences are stated or known in this turn.",
+      "belief_before": "No prior dialogue-specific beliefs about RECOMMENDER.",
+      "belief_update": "SEEKER's greeting opens the conversation and signals willingness to interact.",
+      "belief_after": "SEEKER expects RECOMMENDER to respond; the interaction is now open.",
+      "emotion": "Neutral/polite.",
+      "intention": "Greet and initiate conversation.",
+      "reaction_to_other": "Not applicable; RECOMMENDER has not spoken yet.",
+      "conversational_goal": "Start the dialogue, likely as a precursor to seeking a recommendation.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello, what kind of movie are you looking for?",
+      "information_available": "SEEKER hears RECOMMENDER's greeting and question asking for the kind of movie sought.",
+      "preferences": "SEEKER has not yet stated a preference; RECOMMENDER is soliciting one.",
+      "belief_before": "SEEKER had greeted RECOMMENDER and was waiting for a response.",
+      "belief_update": "RECOMMENDER is engaged and frames the task as movie recommendation, requiring SEEKER to specify a movie kind.",
+      "belief_after": "SEEKER believes they need to state a movie type/preference to proceed.",
+      "emotion": "Neutral, possibly slightly positive/receptive.",
+      "intention": "Respond to RECOMMENDER's question with a movie kind/preference.",
+      "reaction_to_other": "Cooperative and responsive.",
+      "conversational_goal": "Convey desired movie kind so RECOMMENDER can make a recommendation.",
+      "interpretation_change": "Yes: previous uncertainty/awaiting response is resolved; the interaction is confirmed as a movie-recommendation dialogue."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"information_available\": \"SEEKER knows only that they have initiated contact; no information from RECOMMENDER yet.\",\n    \"preferences\": \"No movie preferences are stated or known in this turn.\",\n    \"belief_before\": \"No prior dialogue-specific beliefs about RECOMMENDER.\",\n    \"belief_update\": \"SEEKER's greeting opens the conversation and signals willingness to interact.\",\n    \"belief_after\": \"SEEKER expects RECOMMENDER to respond; the interaction is now open.\",\n    \"emotion\": \"Neutral/polite.\",\n    \"intention\": \"Greet and initiate conversation.\",\n    \"reaction_to_other\": \"Not applicable; RECOMMENDER has not spoken yet.\",\n    \"conversational_goal\": \"Start the dialogue, likely as a precursor to seeking a recommendation.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello, what kind of movie are you looking for?\",\n    \"information_available\": \"SEEKER hears RECOMMENDER's greeting and question asking for the kind of movie sought.\",\n    \"preferences\": \"SEEKER has not yet stated a preference; RECOMMENDER is soliciting one.\",\n    \"belief_before\": \"SEEKER had greeted RECOMMENDER and was waiting for a response.\",\n    \"belief_update\": \"RECOMMENDER is engaged and frames the task as movie recommendation, requiring SEEKER to specify a movie kind.\",\n    \"belief_after\": \"SEEKER believes they need to state a movie type/preference to proceed.\",\n    \"emotion\": \"Neutral, possibly slightly positive/receptive.\",\n    \"intention\": \"Respond to RECOMMENDER's question with a movie kind/preference.\",\n    \"reaction_to_other\": \"Cooperative and responsive.\",\n    \"conversational_goal\": \"Convey desired movie kind so RECOMMENDER can make a recommendation.\",\n    \"interpretation_change\": \"Yes: previous uncertainty/awaiting response is resolved; the interaction is confirmed as a movie-recommendation dialogue.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,624 @@
+{
+  "events": [
+    {
+      "focus_person": "沈川",
+      "yuanwen": "后来父亲坚持沈川留下的部门被大幅缩减，而沈川当初想去的产品部门成为公司核心业务；与此同时，沈川的女友在他工作最低谷时一直陪着他，两人的关系反而更加稳定。一次亲戚提起这些事，说：“现在看，小川当初那两个判断也不一定错。”父亲沉默了一会儿，第一次当着沈川的面说：“有些事情可能确实是他比我清楚。”",
+      "stimulus_text": "后来父亲坚持沈川留下的部门被大幅缩减，而沈川当初想去的产品部门成为公司核心业务；与此同时，沈川的女友在他工作最低谷时一直陪着他，两人的关系反而更加稳定。一次亲戚提起这些事，说：“现在看，小川当初那两个判断也不一定错。”父亲沉默了一会儿，第一次当着沈川的面说：“有些事情可能确实是他比我清楚。”",
+      "stimulus_action_split": {
+        "stimulus_text": "后来父亲坚持沈川留下的部门被大幅缩减，而沈川当初想去的产品部门成为公司核心业务；与此同时，沈川的女友在他工作最低谷时一直陪着他，两人的关系反而更加稳定。一次亲戚提起这些事，说：“现在看，小川当初那两个判断也不一定错。”父亲沉默了一会儿，第一次当着沈川的面说：“有些事情可能确实是他比我清楚。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "父亲",
+          "亲戚",
+          "女友"
+        ],
+        "action": "亲戚提起这些事，说：“现在看，小川当初那两个判断也不一定错。”父亲沉默了一会儿，第一次当着沈川的面说：“有些事情可能确实是他比我清楚。”",
+        "object": "沈川",
+        "scene": "一次亲戚提起这些事的场合",
+        "outcome_changes": [
+          "父亲坚持沈川留下的部门被大幅缩减",
+          "沈川当初想去的产品部门成为公司核心业务",
+          "女友一直陪着沈川",
+          "沈川与女友的关系反而更加稳定"
+        ],
+        "role_changes": [],
+        "relationship_changes": [
+          "沈川与女友的关系更加稳定"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f3",
+          "text": "沈川把‘父亲是否承认我更有判断力’当成自我位置的一部分；父亲第一次当着沈川的面说‘有些事情可能确实是他比我清楚’，直接触及这个需要被父亲承认的‘我’。",
+          "confidence": 0.8687602139399875,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "sg_f2",
+          "text": "沈川把与女友的婚姻/伴侣选择收在‘我这边’，视为自己身份与坚持的一部分；女友在他工作最低谷时一直陪着、两人关系反而更稳定，使这段关系成为不能被父亲反对拆开、也不能当成与我无关的东西。",
+          "confidence": 0.8454520675,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_3",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "sg_f1",
+          "text": "沈川把‘当初坚持去产品部门’这个职业判断当成自己能力与正确性的核心，亲戚说‘那两个判断也不一定错’和父亲当面说‘他比我清楚’都直接落在这份‘我的判断’上。",
+          "confidence": 0.830163,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f4",
+          "text": "沈川把‘自主决定、不被父亲安排’的位置放在自我边界上；父亲此前坚持让他留部门、当前该部门被大幅缩减，而父亲又当面承认他更清楚，使‘我的路由我判断’成为不能被让出的自我部分。",
+          "confidence": 0.830163,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "sg_f5",
+          "text": "沈川把亲戚当众提起‘小川当初那两个判断也不一定错’当作对自己判断力的公开确认，亲戚场合中的评价与自我形象绑在一起。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f3",
+          "text": "沈川把父子之间的判断关系固定成‘谁被结果证明谁说了算’；父亲沉默后第一次当面说‘有些事情可能确实是他比我清楚’，被他取成父辈判断权威应让位、我的判断应压过父亲。",
+          "confidence": 0.8687602139399875,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "dg_f4",
+          "text": "沈川把‘时间/结果会证明一切’当成固定规则，认为过去关于工作与婚姻的争议现在已有定论，亲戚说‘不一定错’和父亲说‘可能确实’都被纳入‘已经证明对’的框架。",
+          "confidence": 0.8687602139399875,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "沈川把父亲从前的坚持固定理解为‘看错/拦错’，把父亲现在的承认固定理解为‘认错’；父亲当面承认被放在‘他错我对’的二分里。",
+          "confidence": 0.8687602139399875,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "dg_f2",
+          "text": "沈川把婚姻/伴侣选择固定为由低谷陪伴和关系稳定来证明：女友在他工作最低谷时一直陪着他、两人关系反而更加稳定，说明当初坚持这段关系是对的，父亲此前的反对不成立。",
+          "confidence": 0.8454520675,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_3",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "dg_f1",
+          "text": "沈川把职业选择的对错固定为由后续结果验证：父亲坚持留下的部门被大幅缩减、他当初想去的产品部门成为公司核心业务，就等于当初的职业判断已经被事实裁判为正确。",
+          "confidence": 0.830163,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        },
+        {
+          "id": "dg_f6",
+          "text": "沈川把亲戚的‘现在看，小川当初那两个判断也不一定错’固定成公开定论，认为外部见证已经确认他当初两个判断成立。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "combo_activation_probability": 0.33839696064656644,
+          "alambana_prior_probability": 1.0,
+          "activation_alignment": 0.96,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "reactivated_h_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "raw_combo_score": 0.7245545369520506
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f5"
+          ],
+          "combo_activation_probability": 0.33487199230649806,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "reactivated_h_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "raw_combo_score": 0.7170070938588001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "combo_activation_probability": 0.32673104704693545,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.97,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "reactivated_h_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "raw_combo_score": 0.69957620792051
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在沈川这里，亲戚说“现在看，小川当初那两个判断也不一定错”，父亲沉默一会儿后第一次当着沈川的面说“有些事情可能确实是他比我清楚”，与父亲坚持留下的部门被大幅缩减、沈川当初想去的产品部门成为公司核心业务这些结果并置，被取成父子之间“谁的判断算数”的关系发生倒转的当场凭据；父亲这次把“他比我清楚”当面说出，直接落在沈川把“父亲是否承认我更有判断力”当作自我位置一部分的那个“我”上，使当前对象化世界成为：父亲所代表的判断权威应让位，沈川自己的判断应被承认为压过父亲；女友在他工作最低谷时一直陪着、两人关系反而更加稳定，则在同一场景中被收进这个“他的判断应被承认”的世界，作为旁证而不改变父亲当面承认这一核心位置变化。",
+          "prior_probability": 1.0,
+          "posterior_probability": 1.0,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f3"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "reactivated_h_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "raw_combo_score": 0.7245545369520506,
+          "activation_alignment": 0.96,
+          "grounding_valid": true,
+          "grounding_reason": "未添加客观刺激中不存在的他人言行或事实；亲戚的话、父亲沉默后首次当面表态、部门被大幅缩减、产品部门成为核心业务、女友陪伴及关系更稳定均被保留。将父亲的话理解为判断权威倒转，属于沈川的主观解释，不是伪造事实。",
+          "combo_id": "C1"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 1.0,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在沈川这里，亲戚说“现在看，小川当初那两个判断也不一定错”，父亲沉默一会儿后第一次当着沈川的面说“有些事情可能确实是他比我清楚”，与父亲坚持留下的部门被大幅缩减、沈川当初想去的产品部门成为公司核心业务这些结果并置，被取成父子之间“谁的判断算数”的关系发生倒转的当场凭据；父亲这次把“他比我清楚”当面说出，直接落在沈川把“父亲是否承认我更有判断力”当作自我位置一部分的那个“我”上，使当前对象化世界成为：父亲所代表的判断权威应让位，沈川自己的判断应被承认为压过父亲；女友在他工作最低谷时一直陪着、两人关系反而更加稳定，则在同一场景中被收进这个“他的判断应被承认”的世界，作为旁证而不改变父亲当面承认这一核心位置变化。",
+            "prior_probability": 1.0,
+            "posterior_probability": 1.0,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f3"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_1",
+              "bf_3",
+              "bf_4"
+            ],
+            "reactivated_h_ids": [
+              "bf_1",
+              "bf_3",
+              "bf_4"
+            ],
+            "raw_combo_score": 0.7245545369520506,
+            "activation_alignment": 0.96,
+            "grounding_valid": true,
+            "grounding_reason": "未添加客观刺激中不存在的他人言行或事实；亲戚的话、父亲沉默后首次当面表态、部门被大幅缩减、产品部门成为核心业务、女友陪伴及关系更稳定均被保留。将父亲的话理解为判断权威倒转，属于沈川的主观解释，不是伪造事实。"
+          },
+          "xiang": {
+            "text": "沈川听见亲戚那句话时，心里那根一直绷着的弦动了一下；等父亲沉默完，说出“有些事情可能确实是他比我清楚”，他立刻把这句话和过去那些“过几年你就知道”的拦阻并在一起——产品部门成了核心，留下的部门缩了，父亲当时坚持的、反对的，结果都摆在这里。他认定这不是一句随口的话，而是父亲第一次当面把判断权交出来：过去父亲越界替他决定转岗、反对婚事，靠的是“我比你清楚”的位置，现在这个位置被结果推翻了。他并不觉得需要立刻说什么，但心里已经把这当成一个分界：以后父亲再拿“我比你清楚”来压他的选择，就站不住了。女友一直陪着他、两人关系更稳这件事，也被他收到同一处——这同样证明他当初认准的人没错，是父亲那套条件衡量看走了眼。他一边受用这份承认，一边仍记得父亲说的是“有些事情”，不是全部，可他更愿意把这理解成父亲终于开始承认：他的判断可以压过父亲，至少在这些事上。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "不嫉": 0.007923285953177255,
+            "贪": 0.4520825140061733,
+            "昏沉": 0.011509615384615384,
+            "慢": 0.7109202892564153,
+            "精进": 0.16324936813026186,
+            "无贪": 0.05418571451773502,
+            "瞋": 0.02834034280936454,
+            "无明": 0.5265747830396856,
+            "无痴": 0.16034579858453735,
+            "无瞋": 0.4368680077807977,
+            "不慢": 0.02559999504361617,
+            "信": 0.16641204442447952,
+            "恶见": 0.038996868642899,
+            "诳": 0.0029357859531772574,
+            "无愧": 0.06971707073429254,
+            "行舍": 0.10499317497401217,
+            "不害": 0.10862141390393781,
+            "无惭": 0.013593334830035065,
+            "惭": 0.02840547658862876,
+            "善见": 0.4412179185364091,
+            "忿": 0.022763461538461535,
+            "憍": 0.33605,
+            "不覆": 0.42363750000000006,
+            "不正知": 0.44154192109436957,
+            "不放逸": 0.1946312920978311
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "沉默/不回应",
+              "probability": 0.78,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "说话/表达",
+              "probability": 0.22,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "沉默/不回应",
+          "probability": 0.78,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.78,
+              "contribution": 0.78
+            }
+          ]
+        },
+        {
+          "text": "说话/表达",
+          "probability": 0.22,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 1.0,
+              "conditional_probability": 0.22,
+              "contribution": 0.22
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "无瞋": 0.395,
+        "善见": 0.465,
+        "不覆": 0.5925,
+        "贪": 0.5075,
+        "慢": 0.8825000000000001,
+        "无明": 0.6885,
+        "憍": 0.47,
+        "不正知": 0.6
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 11,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 11,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 4,
+        "distinct_candidate_count": 2,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 2,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "父亲在沈川因转岗产品部门要放弃稳定岗位时反复劝他留下、私下联系领导不要放人并说“过几年就知道我为什么拦你”，沈川由此把这类以“以后你会明白”正当化、把他想走的方向压回稳定岗位的介入理解为越过本人和公司流程的越界外力，而不是值得重新权衡的职业忠告。",
+            "mass": 0.4309
+          },
+          {
+            "id": "bf_2",
+            "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+            "mass": 0.3512
+          },
+          {
+            "id": "bf_3",
+            "text": "父亲关上门后反对沈川的婚事，既几次劝他重新考虑，又以两家家庭条件和生活方式差异为由否定这段关系；这让沈川从此把这类反对理解为同时越过“婚姻由自己决定”和“婚姻以感情为基础”两条界线，认为父母可以提意见，但不能替他作决定，条件差异也不能成为推翻关系的理由。",
+            "mass": 0.35
+          },
+          {
+            "id": "bf_4",
+            "text": "女友第一次正式来家吃饭后父亲仍不改变看法，并以两家家庭条件和生活方式差异为由反对；这让沈川从此把这种以条件差异衡量婚事的反对，理解为把自己已视为未来生活一部分的人重新放回可被否决的位置，认为婚姻的根据是两人的交往与感情，而不是两家条件是否齐平。",
+            "mass": 0.3411
+          },
+          {
+            "id": "bf_5",
+            "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+            "mass": 0.3367
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "父亲在沈川因转岗产品部门要放弃稳定岗位时反复劝他留下、私下联系领导不要放人并说“过几年就知道我为什么拦你”，沈川由此把这类以“以后你会明白”正当化、把他想走的方向压回稳定岗位的介入理解为越过本人和公司流程的越界外力，而不是值得重新权衡的职业忠告。",
+              "mass": 0.4309
+            },
+            {
+              "id": "bf_2",
+              "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+              "mass": 0.3512
+            },
+            {
+              "id": "bf_3",
+              "text": "父亲关上门后反对沈川的婚事，既几次劝他重新考虑，又以两家家庭条件和生活方式差异为由否定这段关系；这让沈川从此把这类反对理解为同时越过“婚姻由自己决定”和“婚姻以感情为基础”两条界线，认为父母可以提意见，但不能替他作决定，条件差异也不能成为推翻关系的理由。",
+              "mass": 0.35
+            },
+            {
+              "id": "bf_4",
+              "text": "女友第一次正式来家吃饭后父亲仍不改变看法，并以两家家庭条件和生活方式差异为由反对；这让沈川从此把这种以条件差异衡量婚事的反对，理解为把自己已视为未来生活一部分的人重新放回可被否决的位置，认为婚姻的根据是两人的交往与感情，而不是两家条件是否齐平。",
+              "mass": 0.3411
+            },
+            {
+              "id": "bf_5",
+              "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+              "mass": 0.3367
+            }
+          ],
+          "triggered_ids": [
+            "bf_1",
+            "bf_3",
+            "bf_4"
+          ],
+          "bindings": {
+            "bf_1": [
+              "sg_f1",
+              "sg_f3",
+              "sg_f4",
+              "dg_f1",
+              "dg_f3",
+              "dg_f4",
+              "dg_f5"
+            ],
+            "bf_3": [
+              "sg_f2",
+              "sg_f3",
+              "dg_f2",
+              "dg_f3",
+              "dg_f4",
+              "dg_f5"
+            ],
+            "bf_4": [
+              "sg_f2",
+              "sg_f3",
+              "dg_f2",
+              "dg_f3",
+              "dg_f4",
+              "dg_f5"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.285
+        }
+      }
+    }
+  ],
+  "focus_person": "沈川",
+  "llm_usage": {
+    "total_calls": 89,
+    "total_duration_ms": 1209459.3736760877,
+    "wall_clock_ms": 585609.5379160106
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S04",
+    "event_index": 4,
+    "stimulus": "后来父亲坚持沈川留下的部门被大幅缩减，而沈川当初想去的产品部门成为公司核心业务；与此同时，沈川的女友在他工作最低谷时一直陪着他，两人的关系反而更加稳定。一次亲戚提起这些事，说：“现在看，小川当初那两个判断也不一定错。”父亲沉默了一会儿，第一次当着沈川的面说：“有些事情可能确实是他比我清楚。”",
+    "top_action": "沉默/不回应",
+    "top_probability": 0.78,
+    "top_k": [
+      {
+        "text": "沉默/不回应",
+        "probability": 0.78
+      },
+      {
+        "text": "说话/表达",
+        "probability": 0.22
+      }
+    ],
+    "continuity_before": {
+      "person_id": "沈川",
+      "event_count": 3,
+      "mental_episode_count": 3,
+      "cognitive_frame_count": 8
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "父亲在沈川因转岗产品部门要放弃稳定岗位时反复劝他留下、私下联系领导不要放人并说“过几年就知道我为什么拦你”，沈川由此把这类以“以后你会明白”正当化、把他想走的方向压回稳定岗位的介入理解为越过本人和公司流程的越界外力，而不是值得重新权衡的职业忠告。",
+        "mass": 0.4309
+      },
+      {
+        "id": "bf_2",
+        "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+        "mass": 0.3512
+      },
+      {
+        "id": "bf_3",
+        "text": "父亲关上门后反对沈川的婚事，既几次劝他重新考虑，又以两家家庭条件和生活方式差异为由否定这段关系；这让沈川从此把这类反对理解为同时越过“婚姻由自己决定”和“婚姻以感情为基础”两条界线，认为父母可以提意见，但不能替他作决定，条件差异也不能成为推翻关系的理由。",
+        "mass": 0.35
+      },
+      {
+        "id": "bf_4",
+        "text": "女友第一次正式来家吃饭后父亲仍不改变看法，并以两家家庭条件和生活方式差异为由反对；这让沈川从此把这种以条件差异衡量婚事的反对，理解为把自己已视为未来生活一部分的人重新放回可被否决的位置，认为婚姻的根据是两人的交往与感情，而不是两家条件是否齐平。",
+        "mass": 0.3411
+      },
+      {
+        "id": "bf_5",
+        "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+        "mass": 0.3367
+      },
+      {
+        "id": "bf_6",
+        "text": "父亲在沈川要转岗产品部门时私下联系他的领导沟通不要放人，把他从本应由成年人与领导、流程自行处理的位置上绕开，并说“过几年就知道我为什么拦你”，沈川由此把这类以“为你好”插手成年子女工作决定的举动理解为父亲先站到领导一边替代他处理事务，而不是他该领受的资源。",
+        "mass": 0.3166
+      },
+      {
+        "id": "bf_7",
+        "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+        "mass": 0.3121
+      },
+      {
+        "id": "bf_8",
+        "text": "父亲在女友第一次来家吃饭后仍反对，关上门对沈川说“工作选错了还能换，结婚选错了不是这么简单”，并几次劝他重新考虑；这让沈川从此把父母对成年子女婚事的明确反对和反复劝改，理解为对自己婚姻决定权的越界，认为结婚最终只能由当事人自己拿主意。",
+        "mass": 0.3089
+      }
+    ],
+    "fresh_count_raw": 11,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 11,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 4,
+      "distinct_candidate_count": 2,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 2,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

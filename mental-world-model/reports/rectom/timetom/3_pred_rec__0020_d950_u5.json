@@ -1,0 +1,69 @@
+{
+  "id": "3_pred_rec__0020_d950_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Seeker says: 'Hey!'",
+      "belief_before": "No prior information about this seeker, their purpose, or their movie preferences.",
+      "belief_update": "A seeker has initiated contact; their purpose and preferences are still unknown. No previous interpretation to change.",
+      "belief_after": "A seeker is present and has greeted me; no movie preferences known.",
+      "emotion": "Neutral but friendly/curious.",
+      "intention": "Acknowledge the greeting and invite the seeker to state what they need.",
+      "conversational_goal": "Open the conversation and discover whether the seeker wants movie recommendations."
+    },
+    {
+      "time": 2,
+      "observed": "I respond to the greeting: 'Hi, what kind of movies do you like?'",
+      "belief_before": "Seeker greeted me; purpose and movie preferences are unknown.",
+      "belief_update": "I am asking about movie preferences; no new seeker information has been provided yet.",
+      "belief_after": "Seeker may be looking for movie recommendations, but their taste is still unknown.",
+      "emotion": "Friendly and helpful.",
+      "intention": "Greet the seeker and elicit their genre or movie preferences.",
+      "conversational_goal": "Begin the recommendation dialogue by learning what the seeker likes."
+    },
+    {
+      "time": 3,
+      "observed": "Seeker says: 'Can you help me find a good movie in any genre? I like things like Wedding Crashers (2005) and It (2017) but not like Star Wars.'",
+      "belief_before": "Seeker likely wants movie help; no specific preferences were known.",
+      "belief_update": "Seeker explicitly wants a recommendation in any genre; known likes are Wedding Crashers and It, and known dislike is Star Wars-like films. This changes the prior interpretation by adding concrete preferences.",
+      "belief_after": "Seeker is open to genres but likes those examples and wants to avoid Star Wars-like tastes.",
+      "emotion": "Helpful, curious, and ready to assist.",
+      "intention": "Suggest candidate movies consistent with the stated likes and avoiding Star Wars-like preferences.",
+      "conversational_goal": "Generate initial recommendations and test them against the seeker's taste."
+    },
+    {
+      "time": 4,
+      "observed": "I respond: 'Okay! How about Horrible Bosses (2011) or Superbad (2007)?'",
+      "belief_before": "Seeker wants an any-genre recommendation; likes Wedding Crashers and It; dislikes Star Wars-like films.",
+      "belief_update": "I am offering two comedy candidates based on the seeker's stated likes; no new seeker preference information has arrived yet.",
+      "belief_after": "Awaiting feedback on Horrible Bosses and Superbad; the seeker's taste is still broadly known but unconfirmed for these options.",
+      "emotion": "Engaged and helpful.",
+      "intention": "Offer concrete movie options and elicit feedback.",
+      "conversational_goal": "Narrow preferences by proposing movies and asking for the seeker's reaction."
+    },
+    {
+      "time": 5,
+      "observed": "Seeker says: 'I have seen both and love Superbad but not so much horrible bosses...I do like Jonah Hill a lot...He was great in The Wolf of Wall Street (2013)'",
+      "belief_before": "Seeker likes Wedding Crashers and It, dislikes Star Wars-like films, and has not yet given feedback on my Horrible Bosses/Superbad suggestions.",
+      "belief_update": "Seeker loves Superbad, is less positive about Horrible Bosses, strongly likes Jonah Hill, and praises him in The Wolf of Wall Street. This refines the prior interpretation toward an actor-based preference.",
+      "belief_after": "Seeker likes Jonah Hill and Superbad, likely likes The Wolf of Wall Street or at least Jonah Hill in it, and is less favorable toward Horrible Bosses. Recommend Jonah Hill-related or similar films.",
+      "emotion": "Encouraged, positive, and attentive to feedback.",
+      "intention": "Adjust recommendations to emphasize Jonah Hill and avoid Horrible Bosses.",
+      "conversational_goal": "Refine the recommendation using the newly revealed actor preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Seeker says: 'Hey!'\",\n    \"belief_before\": \"No prior information about this seeker, their purpose, or their movie preferences.\",\n    \"belief_update\": \"A seeker has initiated contact; their purpose and preferences are still unknown. No previous interpretation to change.\",\n    \"belief_after\": \"A seeker is present and has greeted me; no movie preferences known.\",\n    \"emotion\": \"Neutral but friendly/curious.\",\n    \"intention\": \"Acknowledge the greeting and invite the seeker to state what they need.\",\n    \"conversational_goal\": \"Open the conversation and discover whether the seeker wants movie recommendations.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I respond to the greeting: 'Hi, what kind of movies do you like?'\",\n    \"belief_before\": \"Seeker greeted me; purpose and movie preferences are unknown.\",\n    \"belief_update\": \"I am asking about movie preferences; no new seeker information has been provided yet.\",\n    \"belief_after\": \"Seeker may be looking for movie recommendations, but their taste is still unknown.\",\n    \"emotion\": \"Friendly and helpful.\",\n    \"intention\": \"Greet the seeker and elicit their genre or movie preferences.\",\n    \"conversational_goal\": \"Begin the recommendation dialogue by learning what the seeker likes.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Seeker says: 'Can you help me find a good movie in any genre? I like things like Wedding Crashers (2005) and It (2017) but not like Star Wars.'\",\n    \"belief_before\": \"Seeker likely wants movie help; no specific preferences were known.\",\n    \"belief_update\": \"Seeker explicitly wants a recommendation in any genre; known likes are Wedding Crashers and It, and known dislike is Star Wars-like films. This changes the prior interpretation by adding concrete preferences.\",\n    \"belief_after\": \"Seeker is open to genres but likes those examples and wants to avoid Star Wars-like tastes.\",\n    \"emotion\": \"Helpful, curious, and ready to assist.\",\n    \"intention\": \"Suggest candidate movies consistent with the stated likes and avoiding Star Wars-like preferences.\",\n    \"conversational_goal\": \"Generate initial recommendations and test them against the seeker's taste.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I respond: 'Okay! How about Horrible Bosses (2011) or Superbad (2007)?'\",\n    \"belief_before\": \"Seeker wants an any-genre recommendation; likes Wedding Crashers and It; dislikes Star Wars-like films.\",\n    \"belief_update\": \"I am offering two comedy candidates based on the seeker's stated likes; no new seeker preference information has arrived yet.\",\n    \"belief_after\": \"Awaiting feedback on Horrible Bosses and Superbad; the seeker's taste is still broadly known but unconfirmed for these options.\",\n    \"emotion\": \"Engaged and helpful.\",\n    \"intention\": \"Offer concrete movie options and elicit feedback.\",\n    \"conversational_goal\": \"Narrow preferences by proposing movies and asking for the seeker's reaction.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Seeker says: 'I have seen both and love Superbad but not so much horrible bosses...I do like Jonah Hill a lot...He was great in The Wolf of Wall Street (2013)'\",\n    \"belief_before\": \"Seeker likes Wedding Crashers and It, dislikes Star Wars-like films, and has not yet given feedback on my Horrible Bosses/Superbad suggestions.\",\n    \"belief_update\": \"Seeker loves Superbad, is less positive about Horrible Bosses, strongly likes Jonah Hill, and praises him in The Wolf of Wall Street. This refines the prior interpretation toward an actor-based preference.\",\n    \"belief_after\": \"Seeker likes Jonah Hill and Superbad, likely likes The Wolf of Wall Street or at least Jonah Hill in it, and is less favorable toward Horrible Bosses. Recommend Jonah Hill-related or similar films.\",\n    \"emotion\": \"Encouraged, positive, and attentive to feedback.\",\n    \"intention\": \"Adjust recommendations to emphasize Jonah Hill and avoid Horrible Bosses.\",\n    \"conversational_goal\": \"Refine the recommendation using the newly revealed actor preference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

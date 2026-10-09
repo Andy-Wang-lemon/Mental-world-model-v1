@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0179_d2773_u6",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that:\n- SEEKER asked for a good drama.\n- SEEKER has not seen *Gladiator* and is not a fan of “that kind.”\n- SEEKER prefers things like *Armageddon*.\n- RECOMMENDER suggested *The Notebook* conditionally, “if you like love stories.”\n- RECOMMENDER asked whether SEEKER had seen *Deep Impact* and framed it as another film like *Armageddon*.\n- SEEKER has not seen *The Notebook* but says they “really need to,” and SEEKER has seen and loved *Deep Impact*.\n\nRECOMMENDER does not know:\n- Whether SEEKER actually likes love stories.\n- What specifically SEEKER disliked about *Gladiator*.\n- What other films SEEKER has seen or liked.\n- SEEKER’s exact reasons for liking *Deep Impact*.\n- Whether SEEKER wants more suggestions immediately, though the ongoing request implies that is likely.\n\nGiven SEEKER’s positive feedback on *Deep Impact*, which matches the previously stated preference for *Armageddon*-like films, the recommender is well-positioned to continue helping by suggesting another similar title. This is most naturally a recommendation move, either directly or by asking if SEEKER has seen a similar film.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "a"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

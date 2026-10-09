@@ -1,0 +1,61 @@
+{
+  "id": "trial62__type_a_what_15",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Gloria Bangura",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Donald appears distracted and unenthusiastic while serving drinks; when asked, he admits he is not as into the job and finds it repetitive.",
+      "belief_before": "Gloria suspects Donald may be unhappy with his job based on his distracted demeanor over several events.",
+      "belief_update": "Changed/confirmed: Donald directly confirms dissatisfaction and identifies repetitiveness as a reason.",
+      "belief_after": "Donald is unhappy with his job because it feels repetitive.",
+      "emotion": "Concern and sympathy",
+      "intention": "To check in with Donald about his job satisfaction and offer support."
+    },
+    {
+      "time": 2,
+      "observed": "Donald says he has not considered professional help and is unsure whether it would help.",
+      "belief_before": "Donald is unhappy with his job because the work feels repetitive.",
+      "belief_update": "Changed: Gloria begins to suspect Donald's job dissatisfaction may reflect larger personal issues, and Donald's response shows hesitancy toward professional help.",
+      "belief_after": "Donald may be dealing with deeper personal issues, but he is uncertain about seeking professional support.",
+      "emotion": "Worry and empathy",
+      "intention": "To gently encourage Donald to consider professional support while respecting his autonomy."
+    },
+    {
+      "time": 3,
+      "observed": "Donald says he was taken aback at first by Gloria's suggestion but knows she meant well, and that it is a lot to process.",
+      "belief_before": "Gloria believes Donald might resent her for suggesting professional help and may think she overstepped.",
+      "belief_update": "Changed: Donald clarifies that he does not resent her, though her suggestion initially surprised him and is still difficult to process.",
+      "belief_after": "Donald does not hold the suggestion against her, but the topic remains sensitive and unresolved for him.",
+      "emotion": "Anxiety and guilt shifting toward relief, with some caution",
+      "intention": "To apologize, clear the air, and support Donald without overstepping."
+    },
+    {
+      "time": 4,
+      "observed": "Donald accepts Gloria's invitation to collaborate on the upcoming project, says he appreciates it, and wants to be more involved.",
+      "belief_before": "Gloria believes her apology was well received and has eased the tension; she sees a chance to strengthen their professional relationship.",
+      "belief_update": "Changed: Donald confirms he is open to greater involvement and welcomes the collaboration opportunity.",
+      "belief_after": "Donald is willing and interested in working with Gloria on the project and in becoming more involved.",
+      "emotion": "Relief, hope, and optimism",
+      "intention": "To collaborate with Donald on the upcoming project and strengthen their professional relationship."
+    },
+    {
+      "time": 5,
+      "observed": "After successful collaboration, Donald has made significant contributions with renewed enthusiasm; during the meeting, he thanks Gloria and says the recognition means a lot and feels great.",
+      "belief_before": "Gloria believes Donald is a valuable team member with renewed enthusiasm and decides he should feel appreciated.",
+      "belief_update": "Changed/reinforced: Donald responds very positively to public recognition, showing that appreciation matters to him and supports his engagement.",
+      "belief_after": "Donald is a valuable, engaged team member who values being recognized and appreciated.",
+      "emotion": "Pride, satisfaction, and appreciation",
+      "intention": "To continue recognizing and supporting Donald so his contributions and engagement remain valued."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Donald appears distracted and unenthusiastic while serving drinks; when asked, he admits he is not as into the job and finds it repetitive.\",\n    \"belief_before\": \"Gloria suspects Donald may be unhappy with his job based on his distracted demeanor over several events.\",\n    \"belief_update\": \"Changed/confirmed: Donald directly confirms dissatisfaction and identifies repetitiveness as a reason.\",\n    \"belief_after\": \"Donald is unhappy with his job because it feels repetitive.\",\n    \"emotion\": \"Concern and sympathy\",\n    \"intention\": \"To check in with Donald about his job satisfaction and offer support.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Donald says he has not considered professional help and is unsure whether it would help.\",\n    \"belief_before\": \"Donald is unhappy with his job because the work feels repetitive.\",\n    \"belief_update\": \"Changed: Gloria begins to suspect Donald's job dissatisfaction may reflect larger personal issues, and Donald's response shows hesitancy toward professional help.\",\n    \"belief_after\": \"Donald may be dealing with deeper personal issues, but he is uncertain about seeking professional support.\",\n    \"emotion\": \"Worry and empathy\",\n    \"intention\": \"To gently encourage Donald to consider professional support while respecting his autonomy.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Donald says he was taken aback at first by Gloria's suggestion but knows she meant well, and that it is a lot to process.\",\n    \"belief_before\": \"Gloria believes Donald might resent her for suggesting professional help and may think she overstepped.\",\n    \"belief_update\": \"Changed: Donald clarifies that he does not resent her, though her suggestion initially surprised him and is still difficult to process.\",\n    \"belief_after\": \"Donald does not hold the suggestion against her, but the topic remains sensitive and unresolved for him.\",\n    \"emotion\": \"Anxiety and guilt shifting toward relief, with some caution\",\n    \"intention\": \"To apologize, clear the air, and support Donald without overstepping.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Donald accepts Gloria's invitation to collaborate on the upcoming project, says he appreciates it, and wants to be more involved.\",\n    \"belief_before\": \"Gloria believes her apology was well received and has eased the tension; she sees a chance to strengthen their professional relationship.\",\n    \"belief_update\": \"Changed: Donald confirms he is open to greater involvement and welcomes the collaboration opportunity.\",\n    \"belief_after\": \"Donald is willing and interested in working with Gloria on the project and in becoming more involved.\",\n    \"emotion\": \"Relief, hope, and optimism\",\n    \"intention\": \"To collaborate with Donald on the upcoming project and strengthen their professional relationship.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"After successful collaboration, Donald has made significant contributions with renewed enthusiasm; during the meeting, he thanks Gloria and says the recognition means a lot and feels great.\",\n    \"belief_before\": \"Gloria believes Donald is a valuable team member with renewed enthusiasm and decides he should feel appreciated.\",\n    \"belief_update\": \"Changed/reinforced: Donald responds very positively to public recognition, showing that appreciation matters to him and supports his engagement.\",\n    \"belief_after\": \"Donald is a valuable, engaged team member who values being recognized and appreciated.\",\n    \"emotion\": \"Pride, satisfaction, and appreciation\",\n    \"intention\": \"To continue recognizing and supporting Donald so his contributions and engagement remain valued.\"\n  }\n]",
+  "final_response": "ANSWER: h",
+  "prediction": "h",
+  "gold": "h",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial62"
+}

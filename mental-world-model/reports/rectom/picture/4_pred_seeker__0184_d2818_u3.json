@@ -1,0 +1,12 @@
+{
+  "id": "4_pred_seeker__0184_d2818_u3",
+  "method": "picture",
+  "target_character": "SEEKER",
+  "raw_response": "From SEEKER’s perspective:\n\nKnown to SEEKER:\n- SEEKER asked for new movies that are worth watching.\n- RECOMMENDER asked what movie genres SEEKER is interested in.\n- RECOMMENDER mentioned liking *Bright (2017)* and said it was good even without the back story.\n- SEEKER can infer that RECOMMENDER wants to know their genre preferences before giving a more tailored recommendation.\n\nNot known to SEEKER:\n- Why RECOMMENDER specifically chose *Bright (2017)*.\n- Whether *Bright (2017)* actually fits SEEKER’s taste.\n- What SEEKER’s genre preferences are is not stated in the dialogue; SEEKER may know them privately, but they have not been revealed to the RECOMMENDER or the model.\n- Whether SEEKER has seen *Bright (2017)* or wants to give feedback on it is not established.\n\nReasoning:\n- RECOMMENDER’s last turn explicitly asks about SEEKER’s genre preferences.\n- The most natural next move for SEEKER is to answer that question by adding information about their preferences, such as genres, actors, or past favorites.\n- Giving feedback on *Bright (2017)* is possible, but no feedback was directly requested, whereas a preference question was asked.\n- Greetings/chit-chat are less relevant here, and asking for another recommendation would ignore the preference question.\n\nANSWER: B",
+  "prediction": "b",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

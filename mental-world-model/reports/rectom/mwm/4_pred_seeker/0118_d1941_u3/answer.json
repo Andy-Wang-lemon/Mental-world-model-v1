@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 118,
+  "item_id": "d1941_u3",
+  "dialogue_id": "1941",
+  "utterance_pos": 3,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "gold_output": "B: Add more information about their preferences, such as genres, actors, or past favorites\nA: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello....Have you seen Star Wars: Episode VIII – The Last Jedi (2017)  ?\nSEEKER says: HI...I haven't seen that yet. I'm looking for a good thriller/  suspense movie.\nRECOMMENDER says: Have you seen Split (2017)  ?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello....Have you seen Star Wars: Episode VIII – The Last Jedi (2017)  ?\nSEEKER says: HI...I haven't seen that yet. I'm looking for a good thriller/  suspense movie.\nRECOMMENDER says: Have you seen Split (2017)  ?；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.2,
+    "c": 0.3,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER is most likely responding to the recommender's question about Split, so giving feedback on the suggested movie is the most direct next strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

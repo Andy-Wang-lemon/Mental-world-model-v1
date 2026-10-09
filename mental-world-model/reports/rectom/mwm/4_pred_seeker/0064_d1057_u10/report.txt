@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：64  d1057_u10
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hello!\nRECOMMENDER says: Hello~\nSEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001)  and Beerfest (2006) \nRECOMMENDER says: Tommy Boy (1995)  is one of my favorites\nSEEKER says: but not like Friday  (1995) ...Awesome I love that one  I have seen it a million times\nRECOMMENDER says: Me too. Another good one is Spaceballs (1987) \nSEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\nRECOMMENDER says: Ok；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hello!\nRECOMMENDER says: Hello~\nSEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001)  and Beerfest (2006) \nRECOMMENDER says: Tommy Boy (1995)  is one of my favorites\nSEEKER says: but not like Friday  (1995) ...Awesome I love that one  I have seen it a million times\nRECOMMENDER says: Me too. Another good one is Spaceballs (1987) \nSEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\nRECOMMENDER says: Ok；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Asks for a recommendation or expresses their preference
+分数：{"a": 0.2, "b": 0.6, "c": 0.9, "d": 0.1}
+选择说明：SEEKER already gave feedback and a preference, so the most direct next move is to ask for another recommendation.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：Predicted next actions are absent; only past dialogue shows feedback, which does not establish the next strategy.

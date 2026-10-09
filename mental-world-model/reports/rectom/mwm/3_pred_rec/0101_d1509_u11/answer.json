@@ -1,0 +1,62 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 101,
+  "item_id": "d1509_u11",
+  "dialogue_id": "1509",
+  "utterance_pos": 11,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "此刻，SEEKER 说出的 Seven、Double Jeopardy、Gone Girl 和 murder mysteries 在我这里合成一张固定的口味坐标，我提到的这部电影则成了需要由我交代的对象；他问“那部电影讲什么”，在我经验中就是把它拉回这张坐标里定位——它像其中哪一部、是否处在 murder mystery 的延长线上。推荐只能在这组坐标内找相似项，之外的内容在这个世界里不被看作匹配。",
+        "probability": 0.3834
+      },
+      {
+        "content": "此刻，我提到的这部电影落在我这边，需要由我承担交代；SEEKER 说“没听过”并问“那部电影讲什么”，在我这里不是可答可不答的普通询问，而是已经触发“推荐者理应直接介绍剧情”的规则。世界的形状因此变得很窄：这部电影的内容必须被直接摆出来，重新确认要不要讲并不构成一个合理的选项。",
+        "probability": 0.3089
+      },
+      {
+        "content": "此刻，我先前提到的那部电影被放在我这一边，成了需要由我交代、由我解释的对象；SEEKER 说的“不喜欢更血腥”在我这里不是一条可协商的偏好，而是一道固定的排除线。于是，哪怕他问“那部电影讲什么”，我的经验里首先浮现的是：这部电影是否踩到 gorey，任何由我给出的内容都必须先过这道不血腥的筛子。",
+        "probability": 0.3076
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：此刻，我先前提到的那部电影被放在我这一边，成了需要由我交代、由我解释的对象；SEEKER 说的“不喜欢更血腥”在我这里不是一条可协商的偏好，而是一道固定的排除线。于是，哪怕他问“那部电影讲什么”，我的经验里首先浮现的是：这部电影是否踩到 gorey，任何由我给出的内容都必须先过这道不血腥的筛子。",
+        "activation": 0.3381
+      },
+      {
+        "content": "在此所缘下：此刻，我提到的这部电影落在我这边，需要由我承担交代；SEEKER 说“没听过”并问“那部电影讲什么”，在我这里不是可答可不答的普通询问，而是已经触发“推荐者理应直接介绍剧情”的规则。世界的形状因此变得很窄：这部电影的内容必须被直接摆出来，重新确认要不要讲并不构成一个合理的选项。",
+        "activation": 0.3314
+      },
+      {
+        "content": "在此所缘下：此刻，SEEKER 说出的 Seven、Double Jeopardy、Gone Girl 和 murder mysteries 在我这里合成一张固定的口味坐标，我提到的这部电影则成了需要由我交代的对象；他问“那部电影讲什么”，在我经验中就是把它拉回这张坐标里定位——它像其中哪一部、是否处在 murder mystery 的延长线上。推荐只能在这组坐标内找相似项，之外的内容在这个世界里不被看作匹配。",
+        "activation": 0.3306
+      }
+    ],
+    "observed_action": "RECOMMENDER 问候并询问对方想找哪种电影；RECOMMENDER 回应 Ok，并询问对方是否喜欢《Saw (2004)》；RECOMMENDER 回应 Oh ok，并说自己没看过《Double Jeopardy (1999)》；RECOMMENDER 询问对方是否看过《The Zodiac (2005)》；RECOMMENDER 说 I do too，并说《Rear Window (1954)》是一部老片但好片。",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Explains a recommendation with background or reasoning",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.5,
+    "c": 0.4,
+    "d": 0.9,
+    "e": 0.1
+  },
+  "score_reason": "The record shows the recommender must directly explain the mentioned film's plot and pass the non-gore filter, so explanation is the most directly supported next strategy.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "Thought says the movie's content must be directly presented in response to the seeker's question.",
+  "audit_level": "direct"
+}

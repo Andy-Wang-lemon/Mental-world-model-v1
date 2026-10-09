@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：167  d2498_u10
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.9, "b": 0.3, "c": 0.5, "d": 0.2}
+选择说明：The record shows SEEKER has already requested top three, so the next likely strategy is to give feedback on the recommended movies.
+标准：D: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：There are no predicted next actions or thoughts about what to do next to support any strategy.

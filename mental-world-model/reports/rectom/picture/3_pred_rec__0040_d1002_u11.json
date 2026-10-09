@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0040_d1002_u11",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER asked for good new science fiction films available on DVD/online; has already seen *Star Wars: The Force Awakens*; had not seen *Passengers* and asked what it was about; found *Passengers* melodramatic; indicated *Life* was more their speed; and had avoided *The Thing* because they mistakenly thought it was a remake of the original. RECOMMENDER also knows they just clarified that *The Thing* is actually a prequel.\n\nRECOMMENDER does **not** know SEEKER’s full taste profile, whether SEEKER has seen *Life*, whether SEEKER will actually watch or rent *The Thing*, whether SEEKER likes prequels/horror/alien films generally, exact DVD/online availability, or what SEEKER will say next.\n\nThe last SEEKER utterance is a statement/acknowledgment about *The Thing*, not a new question asking for a different film. The most likely next strategy is therefore for RECOMMENDER to respond to that statement, perhaps by acknowledging the misconception or commenting on the film.\n\nANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

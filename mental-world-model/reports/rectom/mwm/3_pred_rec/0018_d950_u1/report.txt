@@ -1,0 +1,49 @@
+数据：3_pred_rec
+题号：18  d950_u1
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "这一声“Hey!”被我收为直接指向我的招呼，我被放在受话者的位置；同时它被把握为一段对话的开场信号，整个场景因此显成一个正被启动的相互招呼秩序，这个招呼不是无主的旁音，而是理应被接住、把我卷入其中的对话起点。",
+      "probability": 0.602
+    },
+    {
+      "content": "这一声“Hey!”被我收为直接指向我的招呼，我被放在受话者的位置；但它被限定为无实质内容的寒暄，除了作为招呼本身之外，并不显现出需要另行辨认的信息，因此此刻的对象就只是一次单纯的招呼事件，没有更多待解读的内容。",
+      "probability": 0.398
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这一声“Hey!”落在我这里，不是与我无关的旁音；我把它认作直接指向我的招呼，受话的位置就在我身上。与此同时，它像一段对话被打开的第一个信号，整个场面从静默转为一种相互招呼的秩序正在启动。我因此觉得这个招呼是有主的、理应被接住的，我已经被卷入这个对话起点，不能只把它当成从旁边经过的声音。",
+      "activation": 0.602
+    },
+    {
+      "content": "这一声“Hey!”在我这里被认作直接冲我而来的招呼，我处在被叫到的位置；但它既被限定为无实质内容的寒暄，就不显现需要另行辨认的信息，于是心中把它归为一次单纯的招呼事件，不再追问其中还有什么待解读的内容。",
+      "activation": 0.398
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": [
+    {
+      "content": "出声打招呼并看对方一眼",
+      "probability": 0.2095
+    },
+    {
+      "content": "点头微笑但不说话",
+      "probability": 0.1466
+    },
+    {
+      "content": "保持沉默并继续做事",
+      "probability": 0.0419
+    }
+  ]
+}
+选择：E: Greetings, gratitude expression, or chit-chat utterances
+分数：{"a": 0, "b": 0, "c": 0, "d": 0, "e": 0.2095}
+选择说明：A 0.0000；B 0.0000；C 0.0000；D 0.0000；E 0.2095 = 出声打招呼并看对方一眼 0.2095。Only action 0 directly expresses a greeting, matching option E.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+A: Ask for preference or seeks feedback from the seeker
+结果：对

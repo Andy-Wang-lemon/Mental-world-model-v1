@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 167,
+  "item_id": "d2498_u10",
+  "dialogue_id": "2498",
+  "utterance_pos": 10,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...\nSEEKER says: Was good....Any that you like and would recommend...Your top three.\nRECOMMENDER says: I loved；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.3,
+    "c": 0.5,
+    "d": 0.2
+  },
+  "score_reason": "The record shows SEEKER has already requested top three, so the next likely strategy is to give feedback on the recommended movies.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "There are no predicted next actions or thoughts about what to do next to support any strategy.",
+  "audit_level": "inferred"
+}

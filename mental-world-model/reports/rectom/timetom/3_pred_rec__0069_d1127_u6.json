@@ -1,0 +1,103 @@
+{
+  "id": "3_pred_rec__0069_d1127_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender initiates with: 'Hi, what movies you do like?'",
+      "information_available": "No prior information about the seeker's movie preferences; only the dialogue opening.",
+      "preferences": "Recommender has no known seeker preferences yet.",
+      "belief_before": "Recommender does not know what movies the seeker likes.",
+      "belief_update": "Recommender asks an open question; no new information about the seeker is gained yet.",
+      "belief_after": "Seeker's movie preferences remain unknown.",
+      "emotion": "Friendly and curious.",
+      "intention": "Open the conversation and elicit the seeker's movie preferences.",
+      "reaction": "Not applicable; recommender initiates the dialogue.",
+      "conversational_goal": "Learn the seeker's tastes so future recommendations can be relevant.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'Hello I'm looking for a good Christmas movie, any genre.'",
+      "information_available": "Recommender now knows the seeker wants a good Christmas movie and is open to any genre.",
+      "preferences": "Seeker prefers/requests a good Christmas movie; no genre restriction.",
+      "belief_before": "Recommender did not know the seeker's movie preferences.",
+      "belief_update": "Seeker is specifically seeking a Christmas movie and has no stated genre preference.",
+      "belief_after": "Recommender believes the task is to recommend Christmas movies broadly.",
+      "emotion": "Helpful and attentive.",
+      "intention": "Understand the request and prepare suitable Christmas movie recommendations.",
+      "reaction": "Positively registers the seeker's request and focus.",
+      "conversational_goal": "Fulfill the seeker's request for a good Christmas movie.",
+      "interpretation_change": "The initial open preference question is now narrowed to a Christmas-movie request."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: 'Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)'",
+      "information_available": "Recommender knows the seeker wants a good Christmas movie of any genre; no reaction to these suggestions has been received yet.",
+      "preferences": "Recommender treats Elf as funny and Home Alone as a classic; no confirmed seeker preferences beyond the Christmas request.",
+      "belief_before": "Seeker wants a good Christmas movie and is open to any genre.",
+      "belief_update": "Recommender offers Elf and Home Alone as candidate Christmas movies; no new seeker information is added by his own utterance.",
+      "belief_after": "Recommender has suggested Elf and Home Alone but does not yet know whether the seeker likes or has seen them.",
+      "emotion": "Helpful and positive.",
+      "intention": "Provide initial Christmas movie options that fit a broad request.",
+      "reaction": "Responds to the seeker's Christmas request with recommendations.",
+      "conversational_goal": "Give the seeker suitable Christmas movie candidates and invite feedback.",
+      "interpretation_change": "No new seeker information; the previous interpretation of a broad Christmas request is maintained."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says: 'I haven't seen Elf (2003) but I love Home Alone (1990)'",
+      "information_available": "Recommender knows the seeker has not seen Elf and loves Home Alone; also knows the seeker wants a Christmas movie of any genre.",
+      "preferences": "Seeker loves Home Alone; has not seen Elf, so Elf preference is unknown.",
+      "belief_before": "Recommender had suggested Elf and Home Alone but did not know the seeker's reactions.",
+      "belief_update": "Home Alone is confirmed as liked; Elf remains unseen and its fit is unknown.",
+      "belief_after": "Recommender knows Home Alone is a strong match and Elf is still an open option.",
+      "emotion": "Encouraged and positive.",
+      "intention": "Use the positive feedback on Home Alone to guide further recommendations.",
+      "reaction": "Pleased by the seeker's love of Home Alone and notes the unknown status of Elf.",
+      "conversational_goal": "Refine recommendations by building on confirmed positive preference.",
+      "interpretation_change": "Updates previous option set: Home Alone is liked; Elf is not yet ruled out but remains uncertain."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says: 'Elf is a funny movie to lift the spirits. The Holiday (2006) is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas (2000)'",
+      "information_available": "Recommender knows the seeker likes Home Alone, has not seen Elf, and wants a Christmas movie of any genre; no info yet on The Holiday or Grinch 2000.",
+      "preferences": "Seeker likes Home Alone; Elf unseen; The Holiday and Grinch 2000 reactions unknown.",
+      "belief_before": "Recommender knows Home Alone is liked and Elf is unseen; seeker wants Christmas movies broadly.",
+      "belief_update": "Recommender expands suggestions to Elf, The Holiday, and Grinch 2000; no new seeker information is added by his own utterance.",
+      "belief_after": "Recommender has offered Elf, The Holiday, and Grinch 2000 but does not yet know the seeker's reactions to them.",
+      "emotion": "Helpful and enthusiastic.",
+      "intention": "Broaden the set of Christmas options, including funny, romantic, and classic choices.",
+      "reaction": "Continues helpfully after the seeker's positive response to Home Alone.",
+      "conversational_goal": "Increase the chance of finding a Christmas movie the seeker will enjoy.",
+      "interpretation_change": "No new seeker information; previous interpretation is expanded to more candidate films."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says: 'I haven't seen The Holiday (2006). I've seen Dr. Seuss' How the Grinch Stole Christmas (2000) and I didn't like it. I prefer the original.'",
+      "information_available": "Recommender now knows the seeker has not seen The Holiday, disliked the 2000 Grinch, and prefers the original Grinch.",
+      "preferences": "Seeker likes Home Alone, has not seen Elf or The Holiday, dislikes the 2000 Grinch, and prefers the original Grinch version.",
+      "belief_before": "Recommender had offered Elf, The Holiday, and Grinch 2000; knew Home Alone was liked and Elf was unseen.",
+      "belief_update": "The Holiday is unseen; Grinch 2000 is disliked; the original Grinch is preferred.",
+      "belief_after": "Recommender knows to avoid pushing the 2000 Grinch and can consider the original Grinch or other Christmas films; The Holiday remains an open option.",
+      "emotion": "Attentive and considerate; adjusting to negative feedback.",
+      "intention": "Revise recommendations to respect the dislike of the 2000 Grinch and the preference for the original.",
+      "reaction": "Acknowledges the seeker's negative reaction to Grinch 2000 and the stated preference for the original.",
+      "conversational_goal": "Refine recommendations based on dislikes and version preferences.",
+      "interpretation_change": "Updates previous interpretation: Grinch 2000 becomes a poor suggestion; original Grinch gains relevance; The Holiday remains unseen."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender initiates with: 'Hi, what movies you do like?'\",\n    \"information_available\": \"No prior information about the seeker's movie preferences; only the dialogue opening.\",\n    \"preferences\": \"Recommender has no known seeker preferences yet.\",\n    \"belief_before\": \"Recommender does not know what movies the seeker likes.\",\n    \"belief_update\": \"Recommender asks an open question; no new information about the seeker is gained yet.\",\n    \"belief_after\": \"Seeker's movie preferences remain unknown.\",\n    \"emotion\": \"Friendly and curious.\",\n    \"intention\": \"Open the conversation and elicit the seeker's movie preferences.\",\n    \"reaction\": \"Not applicable; recommender initiates the dialogue.\",\n    \"conversational_goal\": \"Learn the seeker's tastes so future recommendations can be relevant.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'Hello I'm looking for a good Christmas movie, any genre.'\",\n    \"information_available\": \"Recommender now knows the seeker wants a good Christmas movie and is open to any genre.\",\n    \"preferences\": \"Seeker prefers/requests a good Christmas movie; no genre restriction.\",\n    \"belief_before\": \"Recommender did not know the seeker's movie preferences.\",\n    \"belief_update\": \"Seeker is specifically seeking a Christmas movie and has no stated genre preference.\",\n    \"belief_after\": \"Recommender believes the task is to recommend Christmas movies broadly.\",\n    \"emotion\": \"Helpful and attentive.\",\n    \"intention\": \"Understand the request and prepare suitable Christmas movie recommendations.\",\n    \"reaction\": \"Positively registers the seeker's request and focus.\",\n    \"conversational_goal\": \"Fulfill the seeker's request for a good Christmas movie.\",\n    \"interpretation_change\": \"The initial open preference question is now narrowed to a Christmas-movie request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: 'Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)'\",\n    \"information_available\": \"Recommender knows the seeker wants a good Christmas movie of any genre; no reaction to these suggestions has been received yet.\",\n    \"preferences\": \"Recommender treats Elf as funny and Home Alone as a classic; no confirmed seeker preferences beyond the Christmas request.\",\n    \"belief_before\": \"Seeker wants a good Christmas movie and is open to any genre.\",\n    \"belief_update\": \"Recommender offers Elf and Home Alone as candidate Christmas movies; no new seeker information is added by his own utterance.\",\n    \"belief_after\": \"Recommender has suggested Elf and Home Alone but does not yet know whether the seeker likes or has seen them.\",\n    \"emotion\": \"Helpful and positive.\",\n    \"intention\": \"Provide initial Christmas movie options that fit a broad request.\",\n    \"reaction\": \"Responds to the seeker's Christmas request with recommendations.\",\n    \"conversational_goal\": \"Give the seeker suitable Christmas movie candidates and invite feedback.\",\n    \"interpretation_change\": \"No new seeker information; the previous interpretation of a broad Christmas request is maintained.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says: 'I haven't seen Elf (2003) but I love Home Alone (1990)'\",\n    \"information_available\": \"Recommender knows the seeker has not seen Elf and loves Home Alone; also knows the seeker wants a Christmas movie of any genre.\",\n    \"preferences\": \"Seeker loves Home Alone; has not seen Elf, so Elf preference is unknown.\",\n    \"belief_before\": \"Recommender had suggested Elf and Home Alone but did not know the seeker's reactions.\",\n    \"belief_update\": \"Home Alone is confirmed as liked; Elf remains unseen and its fit is unknown.\",\n    \"belief_after\": \"Recommender knows Home Alone is a strong match and Elf is still an open option.\",\n    \"emotion\": \"Encouraged and positive.\",\n    \"intention\": \"Use the positive feedback on Home Alone to guide further recommendations.\",\n    \"reaction\": \"Pleased by the seeker's love of Home Alone and notes the unknown status of Elf.\",\n    \"conversational_goal\": \"Refine recommendations by building on confirmed positive preference.\",\n    \"interpretation_change\": \"Updates previous option set: Home Alone is liked; Elf is not yet ruled out but remains uncertain.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says: 'Elf is a funny movie to lift the spirits. The Holiday (2006) is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas (2000)'\",\n    \"information_available\": \"Recommender knows the seeker likes Home Alone, has not seen Elf, and wants a Christmas movie of any genre; no info yet on The Holiday or Grinch 2000.\",\n    \"preferences\": \"Seeker likes Home Alone; Elf unseen; The Holiday and Grinch 2000 reactions unknown.\",\n    \"belief_before\": \"Recommender knows Home Alone is liked and Elf is unseen; seeker wants Christmas movies broadly.\",\n    \"belief_update\": \"Recommender expands suggestions to Elf, The Holiday, and Grinch 2000; no new seeker information is added by his own utterance.\",\n    \"belief_after\": \"Recommender has offered Elf, The Holiday, and Grinch 2000 but does not yet know the seeker's reactions to them.\",\n    \"emotion\": \"Helpful and enthusiastic.\",\n    \"intention\": \"Broaden the set of Christmas options, including funny, romantic, and classic choices.\",\n    \"reaction\": \"Continues helpfully after the seeker's positive response to Home Alone.\",\n    \"conversational_goal\": \"Increase the chance of finding a Christmas movie the seeker will enjoy.\",\n    \"interpretation_change\": \"No new seeker information; previous interpretation is expanded to more candidate films.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says: 'I haven't seen The Holiday (2006). I've seen Dr. Seuss' How the Grinch Stole Christmas (2000) and I didn't like it. I prefer the original.'\",\n    \"information_available\": \"Recommender now knows the seeker has not seen The Holiday, disliked the 2000 Grinch, and prefers the original Grinch.\",\n    \"preferences\": \"Seeker likes Home Alone, has not seen Elf or The Holiday, dislikes the 2000 Grinch, and prefers the original Grinch version.\",\n    \"belief_before\": \"Recommender had offered Elf, The Holiday, and Grinch 2000; knew Home Alone was liked and Elf was unseen.\",\n    \"belief_update\": \"The Holiday is unseen; Grinch 2000 is disliked; the original Grinch is preferred.\",\n    \"belief_after\": \"Recommender knows to avoid pushing the 2000 Grinch and can consider the original Grinch or other Christmas films; The Holiday remains an open option.\",\n    \"emotion\": \"Attentive and considerate; adjusting to negative feedback.\",\n    \"intention\": \"Revise recommendations to respect the dislike of the 2000 Grinch and the preference for the original.\",\n    \"reaction\": \"Acknowledges the seeker's negative reaction to Grinch 2000 and the stated preference for the original.\",\n    \"conversational_goal\": \"Refine recommendations based on dislikes and version preferences.\",\n    \"interpretation_change\": \"Updates previous interpretation: Grinch 2000 becomes a poor suggestion; original Grinch gains relevance; The Holiday remains unseen.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,60 @@
+数据：3_pred_rec
+题号：4  d474_u9
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER 的请求与片单被 RECOMMENDER 经验为：自己先前已经抓住的『SEEKER 不喜欢恐怖片』仍是对象世界里的主标签，而 SEEKER 后来那句『A horror movie will be ok』以及 Annabelle、Curse of Chucky 只像在这个主标签旁边出现的刺点；由于『读懂 SEEKER 的喜好』被 RECOMMENDER 当成自身判断力的一部分，SEEKER 从排斥恐怖片到接受恐怖片的改口不是普通条件更新，而像是在晃动自己已经建立起来的取境，使电影推荐这件事变成自己读得对不对的现场。",
+      "probability": 0.3488
+    },
+    {
+      "content": "此刻，SEEKER 的偏好被 RECOMMENDER 经验成一列与自己延伸出去的推荐片单相对照的取舍：明确排除 Halloween (2007)，保留 The Number 23、The Sixth Sense、Annabelle、Curse of Chucky，哪些被挡住、哪些被放进，都像在确认自己这边是否对得上；而 SEEKER 先说不喜欢恐怖片又接受恐怖片、先说惊悚片又提恐怖片，被经验为一种不符合『偏好应前后一致、可按类型清楚归类』的例外，像是需要从片单逻辑里被消除的杂讯，而不是当下给出的真实约束。",
+      "probability": 0.3299
+    },
+    {
+      "content": "此刻，SEEKER 的『can you help me find a movie to watch』被 RECOMMENDER 经验为一个已经落到自己身上的任务位置：要给出可看的电影，推荐是否成立仿佛都压在自己这一边；同时，『SEEKER 不喜欢恐怖片』仍被当作优先过滤的固定标签，SEEKER 后面说恐怖片也可以、并提到 Annabelle 与 Curse of Chucky，只被收进这个任务里当作需要安放的补充条件，而不是取消那条首要标签。",
+      "probability": 0.3213
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "我原先认定他不喜欢恐怖片，这个判断还压在我取境的中心；他现在说恐怖片也行，还提 Annabelle 和 Curse of Chucky，我一边把它们收进来，一边又觉得它们像在旁边扎一下的例外，不足以让我把主标签换掉。可我又不能显得没读懂他，于是这不再只是找片，而像对我判断的一次现场检验：我想用 It、The Silence of the Lambs 这类片去试他的口味，也想强调我自己更偏好恐怖片、Halloween 几乎是我的最爱，好在被摇动的取境里保住自己的位置。重点慢慢变成我到底有没有抓住他。",
+      "activation": 0.3515
+    },
+    {
+      "content": "他开口就让我帮忙找电影，这事现在就是我的任务了，得给他一个能看的。他说不喜欢恐怖片，这个条件我得先摆着，优先考虑。不过《它》最近挺火，我先提一个试试看，万一他能接受呢？不行再换。后来他说要惊悚片，我就想到《沉默的羔羊》，这个应该符合。再后来他说看过并喜欢《第六感》，还提了《数字23》，我都没看过《数字23》，但《第六感》我喜欢。我自己其实更爱恐怖片，《万圣节》系列更是我的最爱，他居然不喜欢，真是有点遗憾。不过他说恐怖片也可以，还提了《安娜贝尔》和《鬼娃回魂》，那这些也可以纳入考虑。但不管怎样，他不喜欢恐怖片这个印象还是我先想到的，优先过滤这个条件没变。",
+      "activation": 0.3369
+    },
+    {
+      "content": "我先把 SEEKER 的话排成一张对照自己片单的取舍表：Halloween (2007) 被明确挡住，The Number 23、The Sixth Sense、Annabelle、Curse of Chucky 被放进来。Halloween 被划掉时，我心里有点被顶到，因为那是我最喜欢的系列，但 hahaha 已经把这层在意带过去了。至于他先说不喜欢恐怖片、后来又说恐怖片可以，在我听来像是还没把自己的口味理清，是可以从片单逻辑里清掉的杂讯，不必当成硬约束；我更在意的是，自己这边熟的东西能不能避开 Halloween，又刚好接住他留下的那些偏好。对不上，就像我这边没接准。",
+      "activation": 0.3116
+    }
+  ],
+  "observed_action": "RECOMMENDER 回答可以帮忙找电影，并提议《It (2017)》；随后提议《The Silence of the Lambs (1991)》；之后表示没有看过《The Number 23 (2007)》，但喜欢《The Sixth Sense (1999)》，且自己更偏好恐怖片；还说《Halloween (2007)》系列是自己有史以来最喜欢的电影系列，并发出 hahaha 笑声。",
+  "predicted_actions": [
+    {
+      "content": "推荐一部恐怖片",
+      "probability": 0.404
+    },
+    {
+      "content": "判断对方不喜欢恐怖片",
+      "probability": 0.2399
+    },
+    {
+      "content": "表达自己对恐怖片的偏好",
+      "probability": 0.2167
+    },
+    {
+      "content": "RECOMMENDER 对 SEEKER 说：“既然恐怖片也可以，《安娜贝尔》和《鬼娃回魂》都是可以看的选项。” 并问 SEEKER：“要不要从这两部里挑一部？”",
+      "probability": 0.1394
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.25, "b": 0.0, "c": 0.85, "d": 0.0, "e": 0.0}
+选择说明：The record more directly supports the recommender continuing to provide or narrow movie recommendations rather than primarily asking for new preferences.
+标准：C: Provides a recommendation directly or by inquiring further
+结果：对

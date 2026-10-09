@@ -1,0 +1,60 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 72,
+  "item_id": "d1127_u9",
+  "dialogue_id": "1127",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "此刻，RECOMMENDER问SEEKER喜欢什么电影，紧接着又列出一串圣诞片名，这整个情境在SEEKER经验中对象化为：『我的电影喜好』是一件必须由我亲自表态、不能由推荐清单代为回答的事；而『被问喜欢什么』已被固定成只能从RECOMMENDER刚给出的这些圣诞片中挑选或评价。于是眼前的世界是一道被他人片单预先限定的自述题——自己的口味仍被当作属于自己，但可用答案的空间已缩到对方列出的片目之内。",
+        "probability": 0.3981
+      },
+      {
+        "content": "此刻，RECOMMENDER问SEEKER喜欢什么电影，并把Elf、The Holiday、This Christmas、The Night Before等分别标上搞笑、浪漫、家庭、成人等类型；在SEEKER经验中，『圣诞电影』被对象化为应带有这些标签的东西，而『我的电影喜好』仍须由自己表态、不能被清单替代。于是问题变成：这些已被分类的圣诞片是否贴合我的口味，是否值得我回应；自己必须说出的喜好，被放进了对方给出的类型格子中来衡量。",
+        "probability": 0.3537
+      },
+      {
+        "content": "此刻，RECOMMENDER问SEEKER喜欢什么电影，随后列出一串圣诞电影：Elf被描述为搞笑圣诞片，Home Alone被称为另一部经典，Grinch被用『of course』带出。在SEEKER经验中，看过或认可这些被RECOMMENDER置于经典或『当然』位置的圣诞片（如Home Alone、Grinch），成为自身文化熟悉度或合群身份的一部分。而『被问喜欢什么电影』仍被固定为必须从RECOMMENDER刚列出的圣诞片单中挑选或评价。于是眼前情境被SEEKER理解为：我的表态只能在对方刚列出的圣诞片单内进行，其中被置于经典或『当然』位置的片子关系到自己是否属于熟悉这些圣诞片的人。",
+        "probability": 0.2482
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "听到他问我想看什么电影，紧接着却报出一串圣诞片名，我心里先是一顿：我本来想说的喜好，好像忽然被缩到这些片子里去了。不过，我的口味毕竟还是我自己的，不能由他的片单替我决定；我得看看这些片子里哪些是我看过的、哪些没看过，然后按我自己的感觉说喜欢还是不喜欢。喜欢剧情片这一点，倒是让我对其中一些多了点兴趣。说到底，我还是想借着他列出的这些片子，把自己真正中意的圣诞电影找出来，而不是照单全收。",
+        "activation": 0.394
+      },
+      {
+        "content": "对方问的是我喜欢什么电影，却把圣诞电影分成搞笑、浪漫、家庭、成人这些格子推过来；这些标签能帮我认路，但不能代替我说出自己的口味。Home Alone 是我确实喜欢的，Grinch 我不喜欢，而且更认原版；《The Holiday》没看过，所以不能只因为被说成浪漫就认定合我意。‘我喜欢剧情片’是我自己认得的偏好，因此当 This Christmas 被放在家庭剧情的位置上，我才会觉得它可能贴近我。眼下真正要紧的，是分辨这些被分类的片子哪些与我的喜好相合、哪些只是推荐清单上的名词；我仍要按自己的尺度来表态，而不是让对方的类型标签替我决定。",
+        "activation": 0.3128
+      },
+      {
+        "content": "RECOMMENDER一问SEEKER喜欢什么电影，SEEKER的注意力就被拉到对方刚报出的圣诞片单上，像是在这些片名里找一个能代表自己的答案。Home Alone被说成经典，SEEKER确实喜欢，说出它便像与对方共享一种熟悉的圣诞片常识；Grinch被用“当然”带出，SEEKER却不喜欢、更认原版，这里既有被经典位置牵着走的压力，也有不愿为了合群而假装认同的抵触。Elf、The Holiday、This Christmas没看过，只能借类型和描述推测自己会不会喜欢，剧情片偏好让SEEKER对This Christmas留了余地。整体上，SEEKER一边用看过的经典片确认自己是否属于熟悉这些圣诞片的人，一边又要守住自己的真实口味：可以承认没看过，可以说不喜欢，并倾向于把表态限制在对方所列范围内做取舍，而不是另起片单。",
+        "activation": 0.2932
+      }
+    ],
+    "observed_action": "SEEKER 表示自己在寻找一部好的圣诞电影，任何类型都可以；说自己没看过 Elf (2003)，但喜欢 Home Alone (1990)；说没看过 The Holiday (2006)，看过 Dr. Seuss' How the Grinch Stole Christmas (2000) 且不喜欢，更喜欢原版；说没看过 This Christmas (2007)，但自己喜欢剧情片，所以可能也会喜欢它。",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.95,
+    "b": 0.55,
+    "c": 0.45,
+    "d": 0.05
+  },
+  "score_reason": "The seeker directly evaluates each previously recommended Christmas movie by stating seen/unseen and likes/dislikes.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

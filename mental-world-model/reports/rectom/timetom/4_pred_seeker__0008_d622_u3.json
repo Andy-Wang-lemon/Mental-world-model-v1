@@ -1,0 +1,61 @@
+{
+  "id": "4_pred_seeker__0008_d622_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi.",
+      "information_available": "Only the recommender's greeting: 'Hi.'",
+      "preferences": "Unknown; no preferences expressed yet.",
+      "belief_before": "No dialogue-specific beliefs about the recommender or task.",
+      "belief_update": "Learns that the recommender is present and has initiated conversation with a greeting.",
+      "belief_after": "The recommender is present and has greeted the seeker.",
+      "emotion": "Neutral/polite, possibly mildly attentive.",
+      "intention": "Acknowledge or respond to the greeting and engage with the recommender.",
+      "reaction_to_other": "Open, neutral, and polite toward the greeting.",
+      "conversational_goal": "Establish contact and acknowledge the recommender's greeting.",
+      "changes_previous_interpretation": "No previous interpretation exists; this turn starts the dialogue context."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: hi...want to help me find a fun movie for all ages?",
+      "information_available": "Recommender previously said 'Hi'; SEEKER now knows/expresses their own request.",
+      "preferences": "Wants a fun movie suitable for all ages.",
+      "belief_before": "The recommender is present and greeted the seeker.",
+      "belief_update": "No new information from the recommender; the seeker states a request for help.",
+      "belief_after": "The seeker has asked the recommender to help find a fun all-ages movie.",
+      "emotion": "Friendly, hopeful, engaged.",
+      "intention": "Request a recommendation from the recommender.",
+      "reaction_to_other": "Responsive and cooperative; returns the greeting and asks for help.",
+      "conversational_goal": "Elicit a recommendation for a fun movie appropriate for all ages.",
+      "changes_previous_interpretation": "No contradiction; it extends the greeting into a concrete request."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Let me think....The Lego Batman Movie (2017)?",
+      "information_available": "Recommender considered the request and proposed 'The Lego Batman Movie (2017)' as a possible answer.",
+      "preferences": "Still wants a fun movie for all ages; the candidate must be evaluated against this.",
+      "belief_before": "The seeker has asked the recommender for help finding a fun all-ages movie.",
+      "belief_update": "The recommender tentatively suggests The Lego Batman Movie (2017).",
+      "belief_after": "The recommender considers The Lego Batman Movie (2017) a possible fun/all-ages movie candidate.",
+      "emotion": "Curious, interested, and receptive; possibly evaluating the tentative suggestion.",
+      "intention": "Consider the recommendation and respond by accepting, rejecting, or asking for clarification/alternatives.",
+      "reaction_to_other": "Receptive and attentive to the recommender's suggestion.",
+      "conversational_goal": "Assess whether the suggested movie fits the fun/all-ages request and decide the next response.",
+      "changes_previous_interpretation": "Advances the dialogue from making a request to evaluating a specific recommendation; it does not contradict the earlier interpretation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi.\",\n    \"information_available\": \"Only the recommender's greeting: 'Hi.'\",\n    \"preferences\": \"Unknown; no preferences expressed yet.\",\n    \"belief_before\": \"No dialogue-specific beliefs about the recommender or task.\",\n    \"belief_update\": \"Learns that the recommender is present and has initiated conversation with a greeting.\",\n    \"belief_after\": \"The recommender is present and has greeted the seeker.\",\n    \"emotion\": \"Neutral/polite, possibly mildly attentive.\",\n    \"intention\": \"Acknowledge or respond to the greeting and engage with the recommender.\",\n    \"reaction_to_other\": \"Open, neutral, and polite toward the greeting.\",\n    \"conversational_goal\": \"Establish contact and acknowledge the recommender's greeting.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists; this turn starts the dialogue context.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: hi...want to help me find a fun movie for all ages?\",\n    \"information_available\": \"Recommender previously said 'Hi'; SEEKER now knows/expresses their own request.\",\n    \"preferences\": \"Wants a fun movie suitable for all ages.\",\n    \"belief_before\": \"The recommender is present and greeted the seeker.\",\n    \"belief_update\": \"No new information from the recommender; the seeker states a request for help.\",\n    \"belief_after\": \"The seeker has asked the recommender to help find a fun all-ages movie.\",\n    \"emotion\": \"Friendly, hopeful, engaged.\",\n    \"intention\": \"Request a recommendation from the recommender.\",\n    \"reaction_to_other\": \"Responsive and cooperative; returns the greeting and asks for help.\",\n    \"conversational_goal\": \"Elicit a recommendation for a fun movie appropriate for all ages.\",\n    \"changes_previous_interpretation\": \"No contradiction; it extends the greeting into a concrete request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Let me think....The Lego Batman Movie (2017)?\",\n    \"information_available\": \"Recommender considered the request and proposed 'The Lego Batman Movie (2017)' as a possible answer.\",\n    \"preferences\": \"Still wants a fun movie for all ages; the candidate must be evaluated against this.\",\n    \"belief_before\": \"The seeker has asked the recommender for help finding a fun all-ages movie.\",\n    \"belief_update\": \"The recommender tentatively suggests The Lego Batman Movie (2017).\",\n    \"belief_after\": \"The recommender considers The Lego Batman Movie (2017) a possible fun/all-ages movie candidate.\",\n    \"emotion\": \"Curious, interested, and receptive; possibly evaluating the tentative suggestion.\",\n    \"intention\": \"Consider the recommendation and respond by accepting, rejecting, or asking for clarification/alternatives.\",\n    \"reaction_to_other\": \"Receptive and attentive to the recommender's suggestion.\",\n    \"conversational_goal\": \"Assess whether the suggested movie fits the fun/all-ages request and decide the next response.\",\n    \"changes_previous_interpretation\": \"Advances the dialogue from making a request to evaluating a specific recommendation; it does not contradict the earlier interpretation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

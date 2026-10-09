@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：15  d895_u8
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "SEEKER 说「Yes and yes! I have both on dvd」这件事，被 RECOMMENDER 经验为对自己推荐眼光的直接确认，电影偏好列表则成为这一确认的背景；同时，SEEKER 对新 recall 说「lacking something」和「I can't put my finger on it」，在 RECOMMENDER 这里被对象化为一个本来可以被准确指认、只是暂时还没被说出的缺失。",
+      "probability": 0.3648
+    },
+    {
+      "content": "SEEKER 连续列出 Lost in Translation、Aliens、Pulp Fiction、Lebowski 并确认拥有 Alien 系列 DVD，被 RECOMMENDER 经验为同一套电影品味边界内的同类影迷关系；在这个共享品味的视野里，新 recall 的「lacking something」仍被看成一处可被准确指认、只是尚未说出的缺失。",
+      "probability": 0.3281
+    },
+    {
+      "content": "SEEKER 把新 recall 的「lacking something」连同「I can't put my finger on it」一起摆在对话中，被 RECOMMENDER 经验为：能说清一部电影缺了什么，正是自己在对话里的位置；那个缺失因此被对象化为一个可被精确指认、只是尚未被定位的对象，诊断的空位落在 RECOMMENDER 面前。",
+      "probability": 0.3071
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 说两部片都有 DVD，这正好落在我先前给出的选项上，我把它收成一种对自己推荐路子的确认：他的偏好列表不是随口列列，而是能与我给出的片单对上号的凭据，因此我对自己看片眼光和他口味的判断都更笃定。至于他说新 recall 缺了点什么、又说不上来，我这里不把它当成不可言说的主观感受，而当成一个暂时还没被指认出来的具体缺失——它就在片子的某处，只是还没被他说出口。这个判断让我更有劲头把范围拉开、挑他还没看过的片子，既想把那个缺失逼到能被准确指认的位置，也想继续验证我的推荐是否还准。",
+      "activation": 0.3556
+    },
+    {
+      "content": "SEEKER 说新 recall 缺了某种东西却指不出来，这在我这里被整理成一个真实、具体、只是还没被命中的缺口；能把它说清，本来就是我在对话里所处的位置。我用“原版更好”先接住它，这至少把缺口落在原版与新版的差异上，但我仍感到它没有被精确指认。这个尚未定位的缺口让我保持一种悬着又想命中的趋向：不把它当成含混的抱怨，而当成一个等着被我说出的诊断空位。",
+      "activation": 0.3379
+    },
+    {
+      "content": "SEEKER 的片单和 Alien 系列 DVD 让我觉得我们确实在同一套电影品味里，是能聊到一起的同类影迷。他说新 recall 缺了点什么却说不清，这并不代表真的无法指认，只是那处缺失还没被他找到准确说法；所以我更想沿着这个共同边界，找一部他还没看过、又能正好对上他口味的片子。",
+      "activation": 0.3065
+    }
+  ],
+  "observed_action": "RECOMMENDER 先以 Helloooo 打招呼，问 SEEKER 能否说出一些最喜欢的电影，并表示自己会建议一些好的；接着说那是一部好片，问 SEEKER 是否看过 The Truman Show (1998) 或 Rushmore (1998)，并说自己喜欢第一部 Alien，但没看续集；然后说 Awesome，问 The Big Lebowski 或类似 Total Recall (2012) 或甚至 Pulp Fiction (1994) 怎么样，表示试图给出跨类型的很多选择，并更正为 The Big Lebowski；最后说自己也更喜欢原版，说 hmmm，表示要找一部 SEEKER 还没看过的，问 Reservoir Dogs (1992) 或 To Die For (1989) 怎么样。",
+  "predicted_actions": [
+    {
+      "content": "推荐一部未提及影片并说明调性",
+      "probability": 0.2813
+    },
+    {
+      "content": "报片名并问是否看过",
+      "probability": 0.2756
+    },
+    {
+      "content": "列举片名并请求反馈",
+      "probability": 0.2023
+    },
+    {
+      "content": "追问具体段落对照",
+      "probability": 0.1349
+    },
+    {
+      "content": "请列出未看片名",
+      "probability": 0.106
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.2023, "b": 0.1349, "c": 0.3816, "d": 0.2813, "e": 0}
+选择说明：A 0.2023 = 列举片名并请求反馈 0.2023；B 0.1349 = 追问具体段落对照 0.1349；C 0.3816 = 报片名并问是否看过 0.2756 + 请列出未看片名 0.1060；D 0.2813 = 推荐一部未提及影片并说明调性 0.2813；E 0.0000。Action 0 explains a recommendation, 2 seeks feedback, 3 follows up on a statement, and 1/4 provide or inquire toward a recommendation; none are greetings or chit-chat.
+标准：B: Responds to the seeker's question or statement
+C: Provides a recommendation directly or by inquiring further
+结果：对

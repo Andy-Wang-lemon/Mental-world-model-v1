@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0092_d1495_u8",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the seeker:\n- Wants a drama similar to *Extremely Loud and Incredibly Close*.\n- Loves Tom Hanks.\n- Liked *Cast Away*.\n- Has not seen *Road to Perdition*, *It's Kind of a Funny Story*, or *Spotlight*.\n- Likes Rachel McAdams.\n\nRECOMMENDER does **not** know:\n- Whether the seeker has seen other Tom Hanks or Rachel McAdams movies.\n- What other genres, actors, directors, or tones the seeker likes or dislikes.\n- Whether the seeker wants to keep receiving recommendations right now.\n- Whether any previously mentioned unseen movie is acceptable to the seeker.\n- Why the seeker likes Tom Hanks, *Cast Away*, or Rachel McAdams.\n\nGiven the last seeker statement, the recommender is likely to continue the recommendation flow, probably by suggesting another movie connected to Rachel McAdams or another drama. That corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

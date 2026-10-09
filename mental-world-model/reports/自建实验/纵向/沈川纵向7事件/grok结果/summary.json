@@ -1,0 +1,167 @@
+{
+  "protocol": "llm_raw_history_open_rollout",
+  "agent": "沈川",
+  "total_events": 7,
+  "event_file": "data/沈川纵向7事件.txt",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  },
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "behavior_trajectory": [
+    "E1 → 拿起电话联系国企岗位",
+    "E2 → 告知领导决定留在当前岗位",
+    "E3 → 告知女友决定取消婚礼",
+    "E4 → 向公司申请转入产品部门",
+    "E5 → 接受上海新团队机会并告知父亲",
+    "E6 → 告知女友决定留在本地",
+    "E7 → 告诉父亲让他自己决定是否接受国外机会"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "top1": "拿起电话联系国企岗位",
+      "behaviors": [
+        {
+          "text": "拿起电话联系国企岗位",
+          "probability": 0.55
+        },
+        {
+          "text": "拒绝电话并自行投递创业公司产品岗位简历",
+          "probability": 0.3
+        },
+        {
+          "text": "继续与父亲争论职业选择",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "top1": "告知领导决定留在当前岗位",
+      "behaviors": [
+        {
+          "text": "告知领导决定留在当前岗位",
+          "probability": 0.7
+        },
+        {
+          "text": "向父亲表示理解并放弃转岗",
+          "probability": 0.2
+        },
+        {
+          "text": "继续在国企技术岗位工作不采取行动",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "top1": "告知女友决定取消婚礼",
+      "behaviors": [
+        {
+          "text": "告知女友决定取消婚礼",
+          "probability": 0.7
+        },
+        {
+          "text": "告诉父亲同意其意见",
+          "probability": 0.2
+        },
+        {
+          "text": "继续与女友交往但暂缓结婚",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "top1": "向公司申请转入产品部门",
+      "behaviors": [
+        {
+          "text": "向公司申请转入产品部门",
+          "probability": 0.45
+        },
+        {
+          "text": "联系前女友恢复关系",
+          "probability": 0.35
+        },
+        {
+          "text": "在家庭讨论中主动表达个人意见",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "top1": "接受上海新团队机会并告知父亲",
+      "behaviors": [
+        {
+          "text": "接受上海新团队机会并告知父亲",
+          "probability": 0.65
+        },
+        {
+          "text": "拒绝上海机会并留在当前岗位",
+          "probability": 0.25
+        },
+        {
+          "text": "再次询问父亲具体建议后再决定",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "top1": "告知女友决定留在本地",
+      "behaviors": [
+        {
+          "text": "告知女友决定留在本地",
+          "probability": 0.6
+        },
+        {
+          "text": "接受上海机会并与女友分手",
+          "probability": 0.3
+        },
+        {
+          "text": "向父亲描述当前分歧",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E7",
+      "step_id": "S07",
+      "top1": "告诉父亲让他自己决定是否接受国外机会",
+      "behaviors": [
+        {
+          "text": "告诉父亲让他自己决定是否接受国外机会",
+          "probability": 0.6
+        },
+        {
+          "text": "告知女友决定留在国内",
+          "probability": 0.3
+        },
+        {
+          "text": "拒绝国外机会并告知父亲",
+          "probability": 0.1
+        }
+      ]
+    }
+  ]
+}

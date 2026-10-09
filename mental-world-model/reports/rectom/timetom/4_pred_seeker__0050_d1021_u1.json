@@ -1,0 +1,26 @@
+{
+  "id": "4_pred_seeker__0050_d1021_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets SEEKER and asks: \"Hello, what kind of movie are you looking for?\" SEEKER observes this as a direct prompt to state a movie preference. No preference has yet been stated by SEEKER in the dialogue.",
+      "belief_before": "SEEKER has no prior turn from the recommender in this dialogue and therefore no dialogue-specific belief about what the recommender will ask. SEEKER may be seeking a movie recommendation but has not yet disclosed any preference.",
+      "belief_update": "SEEKER learns that the recommender is ready to help and expects the SEEKER to specify the kind of movie they want. This turn establishes the initial frame rather than revising a prior interpretation.",
+      "belief_after": "SEEKER believes the recommender needs a movie kind or preference in order to provide recommendations, and that responding with such information is the next step.",
+      "emotion": "Neutral and attentive; possibly open or hopeful, but no emotional reaction is explicitly expressed or observable.",
+      "intention": "To obtain a suitable movie recommendation and to decide how to answer the recommender's question.",
+      "conversational_goal": "Respond to the recommender by indicating the kind of movie or preference they are looking for so recommendations can proceed."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets SEEKER and asks: \\\"Hello, what kind of movie are you looking for?\\\" SEEKER observes this as a direct prompt to state a movie preference. No preference has yet been stated by SEEKER in the dialogue.\",\n    \"belief_before\": \"SEEKER has no prior turn from the recommender in this dialogue and therefore no dialogue-specific belief about what the recommender will ask. SEEKER may be seeking a movie recommendation but has not yet disclosed any preference.\",\n    \"belief_update\": \"SEEKER learns that the recommender is ready to help and expects the SEEKER to specify the kind of movie they want. This turn establishes the initial frame rather than revising a prior interpretation.\",\n    \"belief_after\": \"SEEKER believes the recommender needs a movie kind or preference in order to provide recommendations, and that responding with such information is the next step.\",\n    \"emotion\": \"Neutral and attentive; possibly open or hopeful, but no emotional reaction is explicitly expressed or observable.\",\n    \"intention\": \"To obtain a suitable movie recommendation and to decide how to answer the recommender's question.\",\n    \"conversational_goal\": \"Respond to the recommender by indicating the kind of movie or preference they are looking for so recommendations can proceed.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

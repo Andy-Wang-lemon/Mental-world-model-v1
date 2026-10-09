@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 174,
+  "item_id": "d2630_u8",
+  "dialogue_id": "2630",
+  "utterance_pos": 8,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi...What genre do you like?\nSEEKER says: I like dramas\nRECOMMENDER says: Have you ever seen Rumpelstiltskin  (1995)  ?...That is more of a horror move though. Do you like horror?\nSEEKER says: no, i don't like horror...i like dramas\nRECOMMENDER says: Have you ever seen There Will Be Blood (2007)  ?\nSEEKER says: yes, love that one\nRECOMMENDER says: Great. Have you seen No Country for Old Men  (2007)  ?\nSEEKER says: yes, anything else from the Coen bros?；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi...What genre do you like?\nSEEKER says: I like dramas\nRECOMMENDER says: Have you ever seen Rumpelstiltskin  (1995)  ?...That is more of a horror move though. Do you like horror?\nSEEKER says: no, i don't like horror...i like dramas\nRECOMMENDER says: Have you ever seen There Will Be Blood (2007)  ?\nSEEKER says: yes, love that one\nRECOMMENDER says: Great. Have you seen No Country for Old Men  (2007)  ?\nSEEKER says: yes, anything else from the Coen bros?；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.1,
+    "b": 0.5,
+    "c": 0.9,
+    "d": 0.2,
+    "e": 0.0
+  },
+  "score_reason": "The seeker asks for another Coen brothers film, so the recommender should provide a recommendation directly.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

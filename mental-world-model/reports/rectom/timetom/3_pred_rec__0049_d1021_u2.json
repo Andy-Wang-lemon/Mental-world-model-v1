@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0049_d1021_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'Hello, what kind of movie are you looking for?'",
+      "information_available": "Recommender has no prior user input; only the context that a movie recommendation dialogue is starting.",
+      "preferences": "No seeker movie preferences known yet. Recommender's operative preference is to be helpful and gather requirements.",
+      "belief_before": "No beliefs about this seeker's movie tastes or needs.",
+      "belief_update": "No update from another speaker; recommender initiates by asking a question.",
+      "belief_after": "Recommender believes the seeker's movie preferences are unknown and need to be elicited.",
+      "emotion": "Neutral, polite, helpful.",
+      "intention": "Start the dialogue and prompt the seeker to state what kind of movie they want.",
+      "reaction_to_other_speaker": "N/A — no other speaker turn yet.",
+      "conversational_goal": "Elicit the seeker's movie preferences.",
+      "interpretation_change": "N/A — this is the initial turn; it establishes the baseline."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'I'm looking for a film of any genre, with a woman in the lead....I'm in the mood for a good heroine today. :)'",
+      "information_available": "Recommender now knows the seeker is open to any genre, wants a woman in the lead, and is in the mood for a good heroine.",
+      "preferences": "Seeker preference: any genre, female lead, strong/good heroine. Recommender's operative preference: satisfy this heroine-focused request.",
+      "belief_before": "Recommender believed the seeker had not yet specified any movie preferences.",
+      "belief_update": "Seeker provided concrete criteria: any genre, woman in lead, good heroine mood.",
+      "belief_after": "Recommender believes a suitable recommendation should feature a woman as the lead in a good-heroine role, with genre flexibility.",
+      "emotion": "Attentive, positive, ready to help.",
+      "intention": "Use the stated criteria to propose movie recommendations featuring a good heroine or female lead.",
+      "reaction_to_other_speaker": "Positive/accepting; the seeker answered the question and gave useful, actionable details.",
+      "conversational_goal": "Acknowledge the preference and recommend a film with a strong female lead/heroine, or ask a focused follow-up if needed.",
+      "interpretation_change": "Yes — the previous open-ended preference elicitation now becomes a constrained recommendation task centered on a female lead/heroine."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'Hello, what kind of movie are you looking for?'\",\n    \"information_available\": \"Recommender has no prior user input; only the context that a movie recommendation dialogue is starting.\",\n    \"preferences\": \"No seeker movie preferences known yet. Recommender's operative preference is to be helpful and gather requirements.\",\n    \"belief_before\": \"No beliefs about this seeker's movie tastes or needs.\",\n    \"belief_update\": \"No update from another speaker; recommender initiates by asking a question.\",\n    \"belief_after\": \"Recommender believes the seeker's movie preferences are unknown and need to be elicited.\",\n    \"emotion\": \"Neutral, polite, helpful.\",\n    \"intention\": \"Start the dialogue and prompt the seeker to state what kind of movie they want.\",\n    \"reaction_to_other_speaker\": \"N/A — no other speaker turn yet.\",\n    \"conversational_goal\": \"Elicit the seeker's movie preferences.\",\n    \"interpretation_change\": \"N/A — this is the initial turn; it establishes the baseline.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'I'm looking for a film of any genre, with a woman in the lead....I'm in the mood for a good heroine today. :)'\",\n    \"information_available\": \"Recommender now knows the seeker is open to any genre, wants a woman in the lead, and is in the mood for a good heroine.\",\n    \"preferences\": \"Seeker preference: any genre, female lead, strong/good heroine. Recommender's operative preference: satisfy this heroine-focused request.\",\n    \"belief_before\": \"Recommender believed the seeker had not yet specified any movie preferences.\",\n    \"belief_update\": \"Seeker provided concrete criteria: any genre, woman in lead, good heroine mood.\",\n    \"belief_after\": \"Recommender believes a suitable recommendation should feature a woman as the lead in a good-heroine role, with genre flexibility.\",\n    \"emotion\": \"Attentive, positive, ready to help.\",\n    \"intention\": \"Use the stated criteria to propose movie recommendations featuring a good heroine or female lead.\",\n    \"reaction_to_other_speaker\": \"Positive/accepting; the seeker answered the question and gave useful, actionable details.\",\n    \"conversational_goal\": \"Acknowledge the preference and recommend a film with a strong female lead/heroine, or ask a focused follow-up if needed.\",\n    \"interpretation_change\": \"Yes — the previous open-ended preference elicitation now becomes a constrained recommendation task centered on a female lead/heroine.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0180_d2773_u8",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- SEEKER wants a good drama initially.\n- SEEKER did not like/want something like Gladiator and prefers things like Armageddon.\n- SEEKER loved Deep Impact.\n- SEEKER has not seen The Notebook but suggests interest in seeing it.\n- RECOMMENDER asked whether SEEKER likes action movies.\n- SEEKER answered yes and mentioned recently watching John Wick: Chapter 2.\n\nRECOMMENDER does not know:\n- Whether SEEKER actually liked John Wick: Chapter 2, only that they watched it.\n- Which other action movies SEEKER has seen or likes.\n- What specific action/drama preference SEEKER wants next.\n- Whether SEEKER wants another recommendation immediately.\n\nGiven the last event, SEEKER has just answered RECOMMENDER’s preference question, so RECOMMENDER is likely to continue the recommendation process by either recommending an action-related title or asking a further question to narrow options. This best matches providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0089_d1495_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets the seeker and asks what kind of movies the seeker is looking for.",
+      "information_available": "No seeker preferences or request details yet; only the recommender's own opening question.",
+      "preferences": "No known seeker movie preferences; recommender has no stated personal movie preference relevant to the request.",
+      "belief_before": "Recommender has no specific beliefs about the seeker's movie tastes in this dialogue.",
+      "belief_update": "No new belief about the seeker is gained from the recommender's own utterance; a response is awaited.",
+      "belief_after": "Recommender believes the seeker has been asked for their movie preference, but that preference remains unknown.",
+      "emotion": "Polite, neutral, helpful.",
+      "intention": "Greet the seeker and elicit their movie preferences.",
+      "reaction_to_other": "Not applicable; no other speaker turn has occurred yet.",
+      "conversational_goal": "Initiate the recommendation dialogue and gather the seeker's initial request.",
+      "changes_previous_interpretation": "N/A; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker greets, says they are good, and asks for a drama like Extremely Loud and Incredibly Close (2011).",
+      "information_available": "Seeker is doing well and wants a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "preferences": "Seeker prefers drama; reference/target similarity is Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "Recommender believes the seeker has not yet specified any genre, title, or similarity reference.",
+      "belief_update": "Seeker wants a drama and uses Extremely Loud and Incredibly Close (2011) as a reference point.",
+      "belief_after": "Recommender believes the seeker seeks a drama with thematic/emotional similarity to Extremely Loud and Incredibly Close (2011).",
+      "emotion": "Attentive, interested, and ready to help.",
+      "intention": "Understand the request and prepare or offer suitable drama recommendations.",
+      "reaction_to_other": "Positive and cooperative; the seeker provided a concrete preference and reference film.",
+      "conversational_goal": "Acknowledge the request and move toward recommending similar dramas, possibly clarifying which similarity dimensions matter.",
+      "changes_previous_interpretation": "Yes; it narrows the open movie-type request to drama and a specific reference film."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets the seeker and asks what kind of movies the seeker is looking for.\",\n    \"information_available\": \"No seeker preferences or request details yet; only the recommender's own opening question.\",\n    \"preferences\": \"No known seeker movie preferences; recommender has no stated personal movie preference relevant to the request.\",\n    \"belief_before\": \"Recommender has no specific beliefs about the seeker's movie tastes in this dialogue.\",\n    \"belief_update\": \"No new belief about the seeker is gained from the recommender's own utterance; a response is awaited.\",\n    \"belief_after\": \"Recommender believes the seeker has been asked for their movie preference, but that preference remains unknown.\",\n    \"emotion\": \"Polite, neutral, helpful.\",\n    \"intention\": \"Greet the seeker and elicit their movie preferences.\",\n    \"reaction_to_other\": \"Not applicable; no other speaker turn has occurred yet.\",\n    \"conversational_goal\": \"Initiate the recommendation dialogue and gather the seeker's initial request.\",\n    \"changes_previous_interpretation\": \"N/A; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker greets, says they are good, and asks for a drama like Extremely Loud and Incredibly Close (2011).\",\n    \"information_available\": \"Seeker is doing well and wants a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"preferences\": \"Seeker prefers drama; reference/target similarity is Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"Recommender believes the seeker has not yet specified any genre, title, or similarity reference.\",\n    \"belief_update\": \"Seeker wants a drama and uses Extremely Loud and Incredibly Close (2011) as a reference point.\",\n    \"belief_after\": \"Recommender believes the seeker seeks a drama with thematic/emotional similarity to Extremely Loud and Incredibly Close (2011).\",\n    \"emotion\": \"Attentive, interested, and ready to help.\",\n    \"intention\": \"Understand the request and prepare or offer suitable drama recommendations.\",\n    \"reaction_to_other\": \"Positive and cooperative; the seeker provided a concrete preference and reference film.\",\n    \"conversational_goal\": \"Acknowledge the request and move toward recommending similar dramas, possibly clarifying which similarity dimensions matter.\",\n    \"changes_previous_interpretation\": \"Yes; it narrows the open movie-type request to drama and a specific reference film.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

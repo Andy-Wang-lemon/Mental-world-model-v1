@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0131_d2214_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets RECOMMENDER and says they have been hoping to find a movie similar to Alien (1979) or Halloween (1978).",
+      "belief_before": "No prior beliefs about this SEEKER or their movie preferences are available; this is the start of the interaction.",
+      "belief_update": "SEEKER has explicitly requested a recommendation and named Alien (1979) and Halloween (1978) as reference films. This establishes an initial interpretation of the SEEKER as interested in horror/sci-fi horror or slasher-adjacent movies, but the exact preferred elements are still unclear. There is no earlier interpretation for this turn to revise.",
+      "belief_after": "SEEKER is looking for film recommendations similar to Alien and/or Halloween. Their inferred preferences are broad: classic horror, sci-fi horror, suspense, or slasher-like atmosphere, but they have not specified whether they prioritize one reference over the other or what aspects matter most.",
+      "emotion": "Attentive, welcoming, and helpful; no negative reaction to the SEEKER.",
+      "intention": "Acknowledge the greeting, treat the message as a recommendation request, and begin considering movies similar to Alien or Halloween.",
+      "conversational_goal": "Respond helpfully by confirming the request and either offering suitable recommendations or asking a brief clarifying question about which aspects of Alien and Halloween the SEEKER wants to prioritize."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets RECOMMENDER and says they have been hoping to find a movie similar to Alien (1979) or Halloween (1978).\",\n    \"belief_before\": \"No prior beliefs about this SEEKER or their movie preferences are available; this is the start of the interaction.\",\n    \"belief_update\": \"SEEKER has explicitly requested a recommendation and named Alien (1979) and Halloween (1978) as reference films. This establishes an initial interpretation of the SEEKER as interested in horror/sci-fi horror or slasher-adjacent movies, but the exact preferred elements are still unclear. There is no earlier interpretation for this turn to revise.\",\n    \"belief_after\": \"SEEKER is looking for film recommendations similar to Alien and/or Halloween. Their inferred preferences are broad: classic horror, sci-fi horror, suspense, or slasher-like atmosphere, but they have not specified whether they prioritize one reference over the other or what aspects matter most.\",\n    \"emotion\": \"Attentive, welcoming, and helpful; no negative reaction to the SEEKER.\",\n    \"intention\": \"Acknowledge the greeting, treat the message as a recommendation request, and begin considering movies similar to Alien or Halloween.\",\n    \"conversational_goal\": \"Respond helpfully by confirming the request and either offering suitable recommendations or asking a brief clarifying question about which aspects of Alien and Halloween the SEEKER wants to prioritize.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

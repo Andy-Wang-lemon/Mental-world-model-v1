@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0018_d950_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hey!' The RECOMMENDER has only this greeting available; no recommendation request or preference information is present.",
+      "belief_before": "No prior dialogue context or specific information about SEEKER's preferences, intentions, or beliefs.",
+      "belief_update": "Initial turn, so there is no previous interpretation to revise. The RECOMMENDER infers SEEKER is initiating interaction and addressing them.",
+      "belief_after": "SEEKER is present and has offered a greeting; no substantive preferences, constraints, or recommendation request are known yet.",
+      "emotion": "Neutral but attentive/friendly, consistent with receiving a greeting.",
+      "intention": "Acknowledge the greeting and prepare to respond, likely inviting SEEKER to continue.",
+      "conversational_goal": "Establish contact and elicit SEEKER's request or topic."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hey!' The RECOMMENDER has only this greeting available; no recommendation request or preference information is present.\",\n    \"belief_before\": \"No prior dialogue context or specific information about SEEKER's preferences, intentions, or beliefs.\",\n    \"belief_update\": \"Initial turn, so there is no previous interpretation to revise. The RECOMMENDER infers SEEKER is initiating interaction and addressing them.\",\n    \"belief_after\": \"SEEKER is present and has offered a greeting; no substantive preferences, constraints, or recommendation request are known yet.\",\n    \"emotion\": \"Neutral but attentive/friendly, consistent with receiving a greeting.\",\n    \"intention\": \"Acknowledge the greeting and prepare to respond, likely inviting SEEKER to continue.\",\n    \"conversational_goal\": \"Establish contact and elicit SEEKER's request or topic.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": [
+    "e",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

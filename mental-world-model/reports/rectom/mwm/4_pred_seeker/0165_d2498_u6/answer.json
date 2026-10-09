@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 165,
+  "item_id": "d2498_u6",
+  "dialogue_id": "2498",
+  "utterance_pos": 6,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nB: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello!...What kind of movie do you like?\nSEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997) \nRECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders  (1983) \nSEEKER says: Seen that a while back.\nRECOMMENDER says: Depends on what type of movie you want to watch...；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "option_scores": {
+    "a": 0.3,
+    "b": 0.9,
+    "c": 0.6,
+    "d": 0.1
+  },
+  "score_reason": "The recommender asked what type of movie SEEKER wants, so SEEKER is most directly supported in adding preference details.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

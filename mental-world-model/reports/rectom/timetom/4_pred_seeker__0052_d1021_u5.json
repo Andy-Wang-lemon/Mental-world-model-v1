@@ -1,0 +1,66 @@
+{
+  "id": "4_pred_seeker__0052_d1021_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello, what kind of movie are you looking for?",
+      "belief_before": "No prior context; SEEKER has not yet shared a movie preference.",
+      "belief_update": "SEEKER infers the RECOMMENDER is inviting them to specify movie criteria and is willing to make a recommendation.",
+      "belief_after": "SEEKER believes the RECOMMENDER is ready to help and needs to know what kind of film SEEKER wants.",
+      "emotion": "Neutral, expectant, cooperative.",
+      "intention": "To decide what movie criteria to communicate.",
+      "conversational_goal": "Provide movie preferences so the RECOMMENDER can suggest something suitable."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: I'm looking for a film of any genre, with a woman in the lead....I'm in the mood for a good heroine today. :)",
+      "belief_before": "SEEKER knows the RECOMMENDER is asking for their movie preferences.",
+      "belief_update": "SEEKER clarifies their own criteria: any genre is fine, but the film should have a female lead and a good heroine; enthusiasm is signaled by the smiley.",
+      "belief_after": "SEEKER expects the RECOMMENDER to suggest films with a strong female lead or heroine.",
+      "emotion": "Positive, enthusiastic, hopeful.",
+      "intention": "To communicate a preference for a female-led or heroine-centered movie.",
+      "conversational_goal": "Elicit recommendations that match the female-lead or heroine criterion."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Have you seen The Blind Side (2009) with Sandra Bullock?",
+      "belief_before": "SEEKER expects a female-led or heroine-centered recommendation from the RECOMMENDER.",
+      "belief_update": "SEEKER receives a candidate film, The Blind Side (2009), starring Sandra Bullock; its fit with the heroine criterion is not yet confirmed, and SEEKER's prior familiarity with it is not yet expressed.",
+      "belief_after": "SEEKER considers The Blind Side as a possible recommendation with a female lead, pending more information or personal familiarity.",
+      "emotion": "Curious, evaluating, slightly uncertain.",
+      "intention": "To assess whether The Blind Side matches their preference.",
+      "conversational_goal": "Decide whether to accept, reject, or ask about the suggested film."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: No I have not....That's the about her adopting the black kid right?",
+      "belief_before": "SEEKER has just heard the RECOMMENDER suggest The Blind Side with Sandra Bullock.",
+      "belief_update": "SEEKER reveals they have not seen The Blind Side and checks their understanding that it is about the female lead adopting a Black child; this suggests SEEKER is trying to determine if the plot fits a good-heroine mood.",
+      "belief_after": "SEEKER believes The Blind Side may be about adoption and likely has Sandra Bullock as a lead, but it is still not confirmed as the desired heroine film.",
+      "emotion": "Curious, tentative, mildly interested.",
+      "intention": "To clarify the plot of The Blind Side before deciding if it suits them.",
+      "conversational_goal": "Confirm whether the suggested movie matches the female-lead or heroine preference."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER says: Yeah, it's really good....What about The Help (2011) with Emma Stone and Viola Davis?",
+      "belief_before": "SEEKER was seeking confirmation that The Blind Side is about adoption and whether it fits their heroine preference.",
+      "belief_update": "SEEKER receives confirmation and endorsement that The Blind Side is good, and is offered another candidate, The Help (2011), with female leads Emma Stone and Viola Davis.",
+      "belief_after": "SEEKER now has at least two possible female-led films to consider: The Blind Side, endorsed by the RECOMMENDER, and The Help, with multiple female leads.",
+      "emotion": "Interested, receptive, still evaluating.",
+      "intention": "To consider the new recommendation and compare it with their stated preference.",
+      "conversational_goal": "Choose or narrow down between suggested female-led films."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello, what kind of movie are you looking for?\",\n    \"belief_before\": \"No prior context; SEEKER has not yet shared a movie preference.\",\n    \"belief_update\": \"SEEKER infers the RECOMMENDER is inviting them to specify movie criteria and is willing to make a recommendation.\",\n    \"belief_after\": \"SEEKER believes the RECOMMENDER is ready to help and needs to know what kind of film SEEKER wants.\",\n    \"emotion\": \"Neutral, expectant, cooperative.\",\n    \"intention\": \"To decide what movie criteria to communicate.\",\n    \"conversational_goal\": \"Provide movie preferences so the RECOMMENDER can suggest something suitable.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: I'm looking for a film of any genre, with a woman in the lead....I'm in the mood for a good heroine today. :)\",\n    \"belief_before\": \"SEEKER knows the RECOMMENDER is asking for their movie preferences.\",\n    \"belief_update\": \"SEEKER clarifies their own criteria: any genre is fine, but the film should have a female lead and a good heroine; enthusiasm is signaled by the smiley.\",\n    \"belief_after\": \"SEEKER expects the RECOMMENDER to suggest films with a strong female lead or heroine.\",\n    \"emotion\": \"Positive, enthusiastic, hopeful.\",\n    \"intention\": \"To communicate a preference for a female-led or heroine-centered movie.\",\n    \"conversational_goal\": \"Elicit recommendations that match the female-lead or heroine criterion.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Have you seen The Blind Side (2009) with Sandra Bullock?\",\n    \"belief_before\": \"SEEKER expects a female-led or heroine-centered recommendation from the RECOMMENDER.\",\n    \"belief_update\": \"SEEKER receives a candidate film, The Blind Side (2009), starring Sandra Bullock; its fit with the heroine criterion is not yet confirmed, and SEEKER's prior familiarity with it is not yet expressed.\",\n    \"belief_after\": \"SEEKER considers The Blind Side as a possible recommendation with a female lead, pending more information or personal familiarity.\",\n    \"emotion\": \"Curious, evaluating, slightly uncertain.\",\n    \"intention\": \"To assess whether The Blind Side matches their preference.\",\n    \"conversational_goal\": \"Decide whether to accept, reject, or ask about the suggested film.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: No I have not....That's the about her adopting the black kid right?\",\n    \"belief_before\": \"SEEKER has just heard the RECOMMENDER suggest The Blind Side with Sandra Bullock.\",\n    \"belief_update\": \"SEEKER reveals they have not seen The Blind Side and checks their understanding that it is about the female lead adopting a Black child; this suggests SEEKER is trying to determine if the plot fits a good-heroine mood.\",\n    \"belief_after\": \"SEEKER believes The Blind Side may be about adoption and likely has Sandra Bullock as a lead, but it is still not confirmed as the desired heroine film.\",\n    \"emotion\": \"Curious, tentative, mildly interested.\",\n    \"intention\": \"To clarify the plot of The Blind Side before deciding if it suits them.\",\n    \"conversational_goal\": \"Confirm whether the suggested movie matches the female-lead or heroine preference.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER says: Yeah, it's really good....What about The Help (2011) with Emma Stone and Viola Davis?\",\n    \"belief_before\": \"SEEKER was seeking confirmation that The Blind Side is about adoption and whether it fits their heroine preference.\",\n    \"belief_update\": \"SEEKER receives confirmation and endorsement that The Blind Side is good, and is offered another candidate, The Help (2011), with female leads Emma Stone and Viola Davis.\",\n    \"belief_after\": \"SEEKER now has at least two possible female-led films to consider: The Blind Side, endorsed by the RECOMMENDER, and The Help, with multiple female leads.\",\n    \"emotion\": \"Interested, receptive, still evaluating.\",\n    \"intention\": \"To consider the new recommendation and compare it with their stated preference.\",\n    \"conversational_goal\": \"Choose or narrow down between suggested female-led films.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

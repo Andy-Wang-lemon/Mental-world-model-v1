@@ -1,0 +1,46 @@
+{
+  "id": "4_pred_seeker__0131_d1998_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets SEEKER and asks what type of movies SEEKER is looking for. Information available to SEEKER: the recommender's greeting and question; no prior dialogue context is given.",
+      "belief_before": "No prior dialogue information in this tracker; SEEKER has not yet stated any movie preferences or beliefs about the recommender.",
+      "belief_update": "SEEKER learns the recommender is initiating a recommendation conversation and wants to know the desired movie type.",
+      "belief_after": "SEEKER believes the recommender is willing to help and needs SEEKER's genre preference. Preferences: SEEKER's movie preferences are not yet disclosed in the dialogue.",
+      "emotion": "Neutral and polite; reaction to recommender is cooperative.",
+      "intention": "Respond to the greeting and provide the type of movies being sought.",
+      "conversational_goal": "Elicit relevant movie recommendations by answering the recommender's question. Changes previous interpretation: none yet, because there was no prior interpretation."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says it is going well, thanks the recommender, says they are looking for good comedy movies, asks for help, and names Bridesmaids (2011) and Superbad (2007) as favorites. Information available: recommender's earlier question plus SEEKER's own preferences.",
+      "belief_before": "SEEKER believes the recommender is willing to help and is waiting for SEEKER's movie type.",
+      "belief_update": "SEEKER decides to disclose a comedy preference and examples, and asks the recommender for assistance.",
+      "belief_after": "SEEKER believes the recommender now knows they want comedy and like Bridesmaids and Superbad, so recommendations can be tailored. Preferences: likes good comedy; favorites are Bridesmaids and Superbad.",
+      "emotion": "Friendly, polite, hopeful; reaction to recommender is positive and responsive.",
+      "intention": "Request help finding comedy movies aligned with the stated favorites.",
+      "conversational_goal": "Obtain comedy recommendations that match SEEKER's tastes. Changes previous interpretation: clarifies the previously unspecified genre as comedy and provides concrete preference examples."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender suggests Airplane! (1980), The Naked Gun, Step Brothers (2008), and Office Space (1999), noting Airplane!/The Naked Gun are older but funny, Step Brothers is gross humor, and Office Space is consistently funny. Information available to SEEKER: these specific recommendation suggestions and descriptions.",
+      "belief_before": "SEEKER believes the recommender knows they want comedy and like Bridesmaids and Superbad, and expects suggestions based on that.",
+      "belief_update": "SEEKER receives concrete comedy recommendations from the recommender, including older classics, gross-humor comedy, and an office comedy.",
+      "belief_after": "SEEKER has several candidate movies to evaluate. SEEKER may infer the recommender is trying to match comedy taste, but has not yet accepted or rejected any title. Preferences: still wants good comedy, with favorites Bridesmaids and Superbad.",
+      "emotion": "Interested, curious, possibly appreciative; no explicit emotional reaction is given. Reaction to recommender: attentive and likely positive, since recommendations are being offered.",
+      "intention": "Consider the suggested movies and decide whether to accept, reject, or ask for more information.",
+      "conversational_goal": "Evaluate the recommendations against comedy preferences and continue the dialogue toward choosing a movie. Changes previous interpretation: expands the situation from awaiting recommendations to having specific candidates; does not change SEEKER's core preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets SEEKER and asks what type of movies SEEKER is looking for. Information available to SEEKER: the recommender's greeting and question; no prior dialogue context is given.\",\n    \"belief_before\": \"No prior dialogue information in this tracker; SEEKER has not yet stated any movie preferences or beliefs about the recommender.\",\n    \"belief_update\": \"SEEKER learns the recommender is initiating a recommendation conversation and wants to know the desired movie type.\",\n    \"belief_after\": \"SEEKER believes the recommender is willing to help and needs SEEKER's genre preference. Preferences: SEEKER's movie preferences are not yet disclosed in the dialogue.\",\n    \"emotion\": \"Neutral and polite; reaction to recommender is cooperative.\",\n    \"intention\": \"Respond to the greeting and provide the type of movies being sought.\",\n    \"conversational_goal\": \"Elicit relevant movie recommendations by answering the recommender's question. Changes previous interpretation: none yet, because there was no prior interpretation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says it is going well, thanks the recommender, says they are looking for good comedy movies, asks for help, and names Bridesmaids (2011) and Superbad (2007) as favorites. Information available: recommender's earlier question plus SEEKER's own preferences.\",\n    \"belief_before\": \"SEEKER believes the recommender is willing to help and is waiting for SEEKER's movie type.\",\n    \"belief_update\": \"SEEKER decides to disclose a comedy preference and examples, and asks the recommender for assistance.\",\n    \"belief_after\": \"SEEKER believes the recommender now knows they want comedy and like Bridesmaids and Superbad, so recommendations can be tailored. Preferences: likes good comedy; favorites are Bridesmaids and Superbad.\",\n    \"emotion\": \"Friendly, polite, hopeful; reaction to recommender is positive and responsive.\",\n    \"intention\": \"Request help finding comedy movies aligned with the stated favorites.\",\n    \"conversational_goal\": \"Obtain comedy recommendations that match SEEKER's tastes. Changes previous interpretation: clarifies the previously unspecified genre as comedy and provides concrete preference examples.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender suggests Airplane! (1980), The Naked Gun, Step Brothers (2008), and Office Space (1999), noting Airplane!/The Naked Gun are older but funny, Step Brothers is gross humor, and Office Space is consistently funny. Information available to SEEKER: these specific recommendation suggestions and descriptions.\",\n    \"belief_before\": \"SEEKER believes the recommender knows they want comedy and like Bridesmaids and Superbad, and expects suggestions based on that.\",\n    \"belief_update\": \"SEEKER receives concrete comedy recommendations from the recommender, including older classics, gross-humor comedy, and an office comedy.\",\n    \"belief_after\": \"SEEKER has several candidate movies to evaluate. SEEKER may infer the recommender is trying to match comedy taste, but has not yet accepted or rejected any title. Preferences: still wants good comedy, with favorites Bridesmaids and Superbad.\",\n    \"emotion\": \"Interested, curious, possibly appreciative; no explicit emotional reaction is given. Reaction to recommender: attentive and likely positive, since recommendations are being offered.\",\n    \"intention\": \"Consider the suggested movies and decide whether to accept, reject, or ask for more information.\",\n    \"conversational_goal\": \"Evaluate the recommendations against comedy preferences and continue the dialogue toward choosing a movie. Changes previous interpretation: expands the situation from awaiting recommendations to having specific candidates; does not change SEEKER's core preference.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

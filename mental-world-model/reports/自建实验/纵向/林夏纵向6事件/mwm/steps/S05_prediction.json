@@ -1,0 +1,830 @@
+{
+  "events": [
+    {
+      "focus_person": "林夏",
+      "yuanwen": "几个月后，林夏无意间刷到程浩朋友发的一组旅行照片。其中一张合照里，许宁和程浩站在一起。评论区有人调侃：“你们两个终于不用藏了。”程浩回复了一个笑脸，许宁没有回复。",
+      "stimulus_text": "几个月后，林夏无意间刷到程浩朋友发的一组旅行照片。其中一张合照里，许宁和程浩站在一起。评论区有人调侃：“你们两个终于不用藏了。”程浩回复了一个笑脸，许宁没有回复。",
+      "stimulus_action_split": {
+        "stimulus_text": "几个月后，林夏无意间刷到程浩朋友发的一组旅行照片。其中一张合照里，许宁和程浩站在一起。评论区有人调侃：“你们两个终于不用藏了。”程浩回复了一个笑脸，许宁没有回复。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "程浩朋友",
+          "许宁",
+          "程浩",
+          "评论区某人"
+        ],
+        "action": "程浩朋友发布一组旅行照片，其中一张合照里许宁和程浩站在一起；评论区有人调侃：“你们两个终于不用藏了。”；程浩回复了一个笑脸；许宁没有回复。",
+        "object": "旅行照片及评论区留言",
+        "scene": "社交媒体评论区",
+        "outcome_changes": [
+          "旅行照片中出现许宁与程浩站在一起的合照",
+          "评论区出现“你们两个终于不用藏了”的调侃留言",
+          "程浩在评论区回复一个笑脸",
+          "许宁未在评论区回复"
+        ],
+        "role_changes": [],
+        "relationship_changes": [],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "林夏把许宁放在“我这边的朋友/自己人”位置，因此许宁与程浩在合照中站在一起、又被评论区说成“不用藏”，不能只当作许宁个人的社交事实，而像是从“我这边”被拉走的关系。",
+          "confidence": 0.88529255,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "sg_f2",
+          "text": "林夏把程浩及与程浩的旧恋爱关系仍放在与自己分不开的位置，因此程浩在照片中与许宁同框、并对“不用藏”回复笑脸，不能只是程浩自己的公开社交，而牵动“我这边”的关系归属。",
+          "confidence": 0.8508803149999999,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5"
+          ]
+        },
+        {
+          "id": "sg_f4",
+          "text": "林夏把评论区“你们两个终于不用藏了”这句话当成对自己与许宁、程浩关系位置的公开命名，不能只是评论者的一句玩笑或与林夏无关的调侃。",
+          "confidence": 0.767661824755,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "sg_f3",
+          "text": "林夏把许宁没有回复这一沉默收归为与自己有关的关系信号，不能当作许宁自己的选择或与林夏无关的评论区行为。",
+          "confidence": 0.7057049780229999,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5",
+            "bf_4"
+          ]
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f4",
+          "text": "林夏把许宁作为朋友的关系执成必须对林夏透明：若许宁与程浩有接触，理应让林夏知道，不应由评论区先出现“不用藏”这样的说法。",
+          "confidence": 0.84510788317,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "dg_f1",
+          "text": "林夏把许宁与程浩同框合照执成只能指向两人有不公开关系、在“藏”着某种亲密关系，而不是普通朋友同游或偶然站位。",
+          "confidence": 0.823527,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f2",
+          "text": "林夏把程浩回复笑脸执成对“不用藏”的承认或默认，而不是随意回应、敷衍或与关系判定无关的表情。",
+          "confidence": 0.8058797,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f6",
+          "text": "林夏把公开评论区出现“不用藏”、程浩回笑脸而许宁不否认这一组合，执成一种已经确定的公开关系状态，而不是尚未证实、可多重解释的社媒片段。",
+          "confidence": 0.7882324,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5"
+          ]
+        },
+        {
+          "id": "dg_f3",
+          "text": "林夏把许宁没有回复执成默认、无法否认或心虚，而不是未看到、不参与评论或不知如何回应的沉默。",
+          "confidence": 0.783151036438,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5",
+            "bf_4"
+          ]
+        },
+        {
+          "id": "dg_f5",
+          "text": "林夏把程浩朋友发布这组合照并任由评论区调侃执成作为朋友不应做的事，理应顾及林夏的位置，不能只是普通发帖和旁人起哄。",
+          "confidence": 0.647054,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_5"
+          ]
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3400202924544286,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.6656867675124547
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.33515219944250724,
+          "alambana_prior_probability": 0.5078219763588188,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.656156086041465
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f4"
+          ],
+          "combo_activation_probability": 0.3248275081030641,
+          "alambana_prior_probability": 0.49217802364118124,
+          "activation_alignment": 0.85,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5",
+            "bf_4"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_5",
+            "bf_4"
+          ],
+          "raw_combo_score": 0.6359425559791706
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C2",
+          "text": "林夏将许宁放在“我这边/自己人”的位置，因此在刷到程浩朋友发的旅行照片时，合照里许宁与程浩站在一起、评论区“你们两个终于不用藏了”这句调侃，就不被林夏当作许宁个人的普通社交事实，而像是许宁从她所划定的“我这边”被拉到程浩那边。她将两人的同框合照与“不用藏”限定为只能指向许宁和程浩存在不公开的亲密关系，而非普通朋友同游或偶然站位；程浩回复笑脸被她读作对这一指向的确认，许宁没有回复被她读作对合照所暗示的不公开亲密关系的默认。",
+          "prior_probability": 0.5078219763588188,
+          "posterior_probability": 0.5078219763588188,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_5"
+          ],
+          "raw_combo_score": 0.656156086041465,
+          "activation_alignment": 0.9,
+          "grounding_valid": true,
+          "grounding_reason": "未添加当前刺激外的他人言行或事实；许宁在‘我这边’是林夏的主观定位，不是外部事实；保留了同框、评论、程浩笑脸、许宁未回复等核心事件。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在林夏这里，程浩朋友发出的旅行照片与评论区留言不是无关的社交动态。许宁被她放在“我这边的朋友/自己人”位置，所以许宁与程浩在合照中站在一起、又被评论区某人说“你们两个终于不用藏了”，就不只是许宁个人的社交事实，而像是许宁从“我这边”被拉向程浩那边的关系。程浩回复一个笑脸，在她这里像是对“不用藏”这一说法的确认；许宁没有回复，则使这件事继续由照片、评论区旁人的话和程浩的笑脸来呈现，而不是由许宁先让她知道。依她把许宁作为朋友的关系必须对她透明这一执取，许宁与程浩有接触就理应让林夏知道，不应先由评论区出现“不用藏”这样的说法；于是当前照片与评论的关键，不在于同框本身，而在于许宁与程浩的接触绕过了她理应知道的通道。",
+          "prior_probability": 0.49217802364118124,
+          "posterior_probability": 0.49217802364118124,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f4"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [
+            "bf_2",
+            "bf_5",
+            "bf_4"
+          ],
+          "reactivated_h_ids": [
+            "bf_2",
+            "bf_5",
+            "bf_4"
+          ],
+          "raw_combo_score": 0.6359425559791706,
+          "activation_alignment": 0.85,
+          "grounding_valid": true,
+          "grounding_reason": "未添加当前刺激外的他人言行或事实；对透明通道的要求是林夏的主观执取；保留了照片、同框、评论、程浩笑脸、许宁未回复等关键变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.5078219763588188,
+          "alambana": {
+            "id": "O_C2",
+            "text": "林夏将许宁放在“我这边/自己人”的位置，因此在刷到程浩朋友发的旅行照片时，合照里许宁与程浩站在一起、评论区“你们两个终于不用藏了”这句调侃，就不被林夏当作许宁个人的普通社交事实，而像是许宁从她所划定的“我这边”被拉到程浩那边。她将两人的同框合照与“不用藏”限定为只能指向许宁和程浩存在不公开的亲密关系，而非普通朋友同游或偶然站位；程浩回复笑脸被她读作对这一指向的确认，许宁没有回复被她读作对合照所暗示的不公开亲密关系的默认。",
+            "prior_probability": 0.5078219763588188,
+            "posterior_probability": 0.5078219763588188,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_2",
+              "bf_5"
+            ],
+            "reactivated_h_ids": [
+              "bf_2",
+              "bf_5"
+            ],
+            "raw_combo_score": 0.656156086041465,
+            "activation_alignment": 0.9,
+            "grounding_valid": true,
+            "grounding_reason": "未添加当前刺激外的他人言行或事实；许宁在‘我这边’是林夏的主观定位，不是外部事实；保留了同框、评论、程浩笑脸、许宁未回复等核心事件。"
+          },
+          "xiang": {
+            "text": "林夏刷到这张照片时，先看到的不是许宁和朋友旅行，而是许宁站到了程浩那边。评论区那句“你们两个终于不用藏了”把画面里的站位变了性质：如果只是普通朋友同游或偶然站在一起，不需要用“藏”来说；程浩回复笑脸，在她读来不是普通寒暄，而是对“不用藏”的接住和承认；许宁不回复，也不是没关系，而是对合照所暗示的不公开关系不再否认。她由此把许宁与程浩同框合照限定为只能指向两人有不公开的亲密关系，并且这一指向因为程浩的笑脸和许宁的沉默变得更实。更重的是，许宁一直被她放在“我这边/自己人”的位置，所以这张照片不像许宁个人的社交事实，更像许宁从她划定的“我这边”被拉到程浩那边。这个判断又和医院走廊尽头许宁、程浩同时出现在父亲住院现场并拿着检查资料的那次撞在一起，也和此前两人单独吃饭、许宁随后才进门的那次连成同一条线：同样是她不能当作无关的两个人，同样绕过她以为许宁该先让她知道的那条边界。于是她很难再让“普通朋友同游”或“偶然站位”成立，心里把这个合照当成一个已经摆在明面上、只是她最后一个看到的确认；她既觉得被从自己这边抽走了一块，又只能沿着这个方向把前后事情串起来，越想越坐实。",
+            "source": "推理",
+            "confidence": 0.94
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "无明": 0.8669092522432797,
+            "瞋": 0.4715433838284128,
+            "懈怠": 0.006801205246366536,
+            "行舍": 0.009069789081885856,
+            "慢": 0.06901435692650822,
+            "精进": 0.017514524612684986,
+            "恼": 0.005600992555831265,
+            "掉举": 0.5925074514844395,
+            "愧": 0.0034556690774117014,
+            "覆": 0.013992215302491104,
+            "忿": 0.10414629622329227,
+            "无瞋": 0.03125806451612903,
+            "不信": 0.009640583523926423,
+            "无愧": 0.006377846975088967,
+            "恨": 0.01782456293945216,
+            "不正知": 0.7274854171949239,
+            "嫉": 0.4266300381701298,
+            "不放逸": 0.0322107364252095,
+            "疑": 0.05164489438640799,
+            "贪": 0.7757720442722624,
+            "悭": 0.021775004783224274,
+            "放逸": 0.2666227915296352,
+            "恶见": 0.7329798841082578,
+            "惭": 0.021672072666743192,
+            "不害": 0.009817430069261087,
+            "无惭": 0.15015
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "给许宁发消息质问",
+              "probability": 0.43356643356643354,
+              "supporting_mental_factors": [
+                "瞋",
+                "嫉",
+                "贪",
+                "恶见",
+                "不正知",
+                "忿"
+              ]
+            },
+            {
+              "text": "保存并查看截图和聊天记录",
+              "probability": 0.38461538461538464,
+              "supporting_mental_factors": [
+                "掉举",
+                "不正知",
+                "恶见",
+                "疑",
+                "贪"
+              ]
+            },
+            {
+              "text": "向共同朋友转发截图并询问",
+              "probability": 0.1818181818181818,
+              "supporting_mental_factors": [
+                "掉举",
+                "疑",
+                "嫉",
+                "不正知",
+                "慢"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.49217802364118124,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在林夏这里，程浩朋友发出的旅行照片与评论区留言不是无关的社交动态。许宁被她放在“我这边的朋友/自己人”位置，所以许宁与程浩在合照中站在一起、又被评论区某人说“你们两个终于不用藏了”，就不只是许宁个人的社交事实，而像是许宁从“我这边”被拉向程浩那边的关系。程浩回复一个笑脸，在她这里像是对“不用藏”这一说法的确认；许宁没有回复，则使这件事继续由照片、评论区旁人的话和程浩的笑脸来呈现，而不是由许宁先让她知道。依她把许宁作为朋友的关系必须对她透明这一执取，许宁与程浩有接触就理应让林夏知道，不应先由评论区出现“不用藏”这样的说法；于是当前照片与评论的关键，不在于同框本身，而在于许宁与程浩的接触绕过了她理应知道的通道。",
+            "prior_probability": 0.49217802364118124,
+            "posterior_probability": 0.49217802364118124,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f4"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [
+              "bf_2",
+              "bf_5",
+              "bf_4"
+            ],
+            "reactivated_h_ids": [
+              "bf_2",
+              "bf_5",
+              "bf_4"
+            ],
+            "raw_combo_score": 0.6359425559791706,
+            "activation_alignment": 0.85,
+            "grounding_valid": true,
+            "grounding_reason": "未添加当前刺激外的他人言行或事实；对透明通道的要求是林夏的主观执取；保留了照片、同框、评论、程浩笑脸、许宁未回复等关键变化。"
+          },
+          "xiang": {
+            "text": "林夏看到这张合照和评论区时，并不把它当成许宁一段与她无关的旅行动态。从父亲住院那次起，许宁与程浩同时出现在她最有关联的现场，就已经在她这里留下“我这边的人”和程浩不能被她当作无关的关联；所以许宁在照片里和程浩站在一起，又被旁人调侃“你们两个终于不用藏了”，在她这里马上被组织成许宁从“我这边”被拉向程浩那边的迹象。程浩回复的笑脸不像普通回应，更像对“不用藏”的确认；许宁没有回复，也没有先让她知道，这使整件事继续由照片、旁人的话和程浩的笑脸来呈现，而不是走许宁应先让她知道的通道。她由此把当前照片与评论的关键落在：不是同框本身，而是许宁与程浩的接触又一次绕过了她理应被先告知的关系位置；这也与此前她先从旁人处听到许宁与程浩单独吃饭的经验连在一起，使她对这类同时出现更倾向于按越界和关系被拉走来评价，并趋向于把它放在“许宁作为我这边朋友必须对我透明”的框架下继续衡量，而不是当作可忽略的社交事实。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "无明": 0.8543967522432797,
+            "瞋": 0.4322183838284129,
+            "懈怠": 0.006801205246366536,
+            "行舍": 0.009069789081885856,
+            "慢": 0.34965185692650824,
+            "精进": 0.017514524612684986,
+            "恼": 0.005600992555831265,
+            "掉举": 0.5156449514844395,
+            "愧": 0.0034556690774117014,
+            "覆": 0.013992215302491104,
+            "忿": 0.2757462962232923,
+            "无瞋": 0.03125806451612903,
+            "不信": 0.009640583523926423,
+            "无愧": 0.006377846975088967,
+            "恨": 0.01782456293945216,
+            "不正知": 0.6005729171949239,
+            "嫉": 0.30329253817012974,
+            "不放逸": 0.0322107364252095,
+            "疑": 0.05164489438640799,
+            "贪": 0.7954345442722623,
+            "悭": 0.021775004783224274,
+            "放逸": 0.042112791529635166,
+            "恶见": 0.5631673841082577,
+            "惭": 0.021672072666743192,
+            "不害": 0.009817430069261087
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "向共同朋友打听",
+              "probability": 0.4719101123595506,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "私信当事人询问关系",
+              "probability": 0.39325842696629215,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "公开评论区追问",
+              "probability": 0.1348314606741573,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "保存并查看截图和聊天记录",
+          "probability": 0.38886930011790133,
+          "dominant_mental_factors": [
+            "掉举",
+            "不正知",
+            "恶见",
+            "疑",
+            "贪"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.5078219763588188,
+              "conditional_probability": 0.38461538461538464,
+              "contribution": 0.19531614475339185
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.49217802364118124,
+              "conditional_probability": 0.39325842696629215,
+              "contribution": 0.19355315536450948
+            }
+          ]
+        },
+        {
+          "text": "给许宁发消息质问",
+          "probability": 0.2865356450158112,
+          "dominant_mental_factors": [
+            "瞋",
+            "嫉",
+            "贪",
+            "恶见",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.5078219763588188,
+              "conditional_probability": 0.43356643356643354,
+              "contribution": 0.2201745631765508
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.49217802364118124,
+              "conditional_probability": 0.1348314606741573,
+              "contribution": 0.06636108183926039
+            }
+          ]
+        },
+        {
+          "text": "向共同朋友打听",
+          "probability": 0.23226378643741138,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.49217802364118124,
+              "conditional_probability": 0.4719101123595506,
+              "contribution": 0.23226378643741138
+            }
+          ]
+        },
+        {
+          "text": "向共同朋友转发截图并询问",
+          "probability": 0.09233126842887612,
+          "dominant_mental_factors": [
+            "掉举",
+            "疑",
+            "嫉",
+            "不正知",
+            "慢"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.5078219763588188,
+              "conditional_probability": 0.1818181818181818,
+              "contribution": 0.09233126842887612
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "贪": 0.8310348956501326,
+        "瞋": 0.44293020869973504,
+        "慢": 0.19317987427916364,
+        "无明": 0.9088868845862794,
+        "恶见": 0.7406077193852194,
+        "忿": 0.11812272567388349,
+        "嫉": 0.5075992909218963,
+        "无惭": 0.10664261503535194,
+        "放逸": 0.1594561005766691,
+        "掉举": 0.587090862458573,
+        "不正知": 0.7101384008036904
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 10,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 10,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 8,
+        "distinct_candidate_count": 7,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "程浩离开后，林夏一直以为丢失的旧相机被一个男子送到公司前台、前台说之前托她朋友保管过，她从此把“属于我的东西由朋友保管却经他人转交、最后才让我知道”理解为一种会一再出现的、绕过我的归属关系安排。",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_2",
+            "text": "林夏此刻经验到，医院走廊尽头不只是父亲住院的医疗现场：她赶到时，许宁正在和医生交谈，程浩站在旁边，手里拿着林夏父亲的检查资料，随后许宁转身也看见了她。从此林夏把许宁当成“我这边的人/最好的朋友”，因此许宁与程浩同时出现在父亲住院现场、并在她到场前与医生交谈，被体验为“我这边的人”与“与我最有关的前任”发生了我不能当作无关的关联。",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_3",
+            "text": "林夏看到许宁手机里程浩感谢许宁没告诉她、还说想找机会跟她解释后，把陪自己度过分手最难时期的十年好友许宁与程浩共享关于她的秘密这件事，理解为许宁属于“我这边”就不能与外人共享关于她的事、更不能替她决定该不该让她知道，因此这类好友与外人的私下通信一旦涉及她，她便认定自己的边界被越界。",
+            "mass": 0.3688
+          },
+          {
+            "id": "bf_4",
+            "text": "林夏在饭局上先从共同朋友口中听到许宁与程浩前两天单独吃饭、此前许宁并未告知，且许宁随即推门进来，从此把这类由旁人先说出许宁与程浩接触的事理解为‘许宁对我透明、有事我先知道’的关系规则被绕过。",
+            "mass": 0.3494
+          },
+          {
+            "id": "bf_5",
+            "text": "林夏从共同朋友先说出许宁与程浩单独吃饭而许宁随后进门这件事发生后，从此把这类许宁与程浩的接触理解为同时绕过‘许宁应先让我知道’和‘我这边朋友不能与程浩单独见面’两条关系规则的越界。",
+            "mass": 0.3361
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "程浩离开后，林夏一直以为丢失的旧相机被一个男子送到公司前台、前台说之前托她朋友保管过，她从此把“属于我的东西由朋友保管却经他人转交、最后才让我知道”理解为一种会一再出现的、绕过我的归属关系安排。",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_2",
+              "text": "林夏此刻经验到，医院走廊尽头不只是父亲住院的医疗现场：她赶到时，许宁正在和医生交谈，程浩站在旁边，手里拿着林夏父亲的检查资料，随后许宁转身也看见了她。从此林夏把许宁当成“我这边的人/最好的朋友”，因此许宁与程浩同时出现在父亲住院现场、并在她到场前与医生交谈，被体验为“我这边的人”与“与我最有关的前任”发生了我不能当作无关的关联。",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_3",
+              "text": "林夏看到许宁手机里程浩感谢许宁没告诉她、还说想找机会跟她解释后，把陪自己度过分手最难时期的十年好友许宁与程浩共享关于她的秘密这件事，理解为许宁属于“我这边”就不能与外人共享关于她的事、更不能替她决定该不该让她知道，因此这类好友与外人的私下通信一旦涉及她，她便认定自己的边界被越界。",
+              "mass": 0.3688
+            },
+            {
+              "id": "bf_4",
+              "text": "林夏在饭局上先从共同朋友口中听到许宁与程浩前两天单独吃饭、此前许宁并未告知，且许宁随即推门进来，从此把这类由旁人先说出许宁与程浩接触的事理解为‘许宁对我透明、有事我先知道’的关系规则被绕过。",
+              "mass": 0.3494
+            },
+            {
+              "id": "bf_5",
+              "text": "林夏从共同朋友先说出许宁与程浩单独吃饭而许宁随后进门这件事发生后，从此把这类许宁与程浩的接触理解为同时绕过‘许宁应先让我知道’和‘我这边朋友不能与程浩单独见面’两条关系规则的越界。",
+              "mass": 0.3361
+            }
+          ],
+          "triggered_ids": [
+            "bf_2",
+            "bf_4",
+            "bf_5"
+          ],
+          "bindings": {
+            "bf_2": [
+              "sg_f1",
+              "sg_f2"
+            ],
+            "bf_5": [
+              "sg_f1",
+              "sg_f2",
+              "sg_f3",
+              "sg_f4",
+              "dg_f1",
+              "dg_f2",
+              "dg_f3",
+              "dg_f4",
+              "dg_f5",
+              "dg_f6"
+            ],
+            "bf_4": [
+              "sg_f3",
+              "sg_f4",
+              "dg_f3",
+              "dg_f4"
+            ]
+          }
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.285
+        }
+      }
+    }
+  ],
+  "focus_person": "林夏",
+  "llm_usage": {
+    "total_calls": 151,
+    "total_duration_ms": 1641365.8681988758,
+    "wall_clock_ms": 471056.40385900915
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S05",
+    "event_index": 5,
+    "stimulus": "几个月后，林夏无意间刷到程浩朋友发的一组旅行照片。其中一张合照里，许宁和程浩站在一起。评论区有人调侃：“你们两个终于不用藏了。”程浩回复了一个笑脸，许宁没有回复。",
+    "top_action": "保存并查看截图和聊天记录",
+    "top_probability": 0.38886930011790133,
+    "top_k": [
+      {
+        "text": "保存并查看截图和聊天记录",
+        "probability": 0.38886930011790133
+      },
+      {
+        "text": "给许宁发消息质问",
+        "probability": 0.2865356450158112
+      },
+      {
+        "text": "向共同朋友打听",
+        "probability": 0.23226378643741138
+      },
+      {
+        "text": "向共同朋友转发截图并询问",
+        "probability": 0.09233126842887612
+      }
+    ],
+    "continuity_before": {
+      "person_id": "林夏",
+      "event_count": 4,
+      "mental_episode_count": 4,
+      "cognitive_frame_count": 8
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "程浩离开后，林夏一直以为丢失的旧相机被一个男子送到公司前台、前台说之前托她朋友保管过，她从此把“属于我的东西由朋友保管却经他人转交、最后才让我知道”理解为一种会一再出现的、绕过我的归属关系安排。",
+        "mass": 1.0
+      },
+      {
+        "id": "bf_2",
+        "text": "林夏此刻经验到，医院走廊尽头不只是父亲住院的医疗现场：她赶到时，许宁正在和医生交谈，程浩站在旁边，手里拿着林夏父亲的检查资料，随后许宁转身也看见了她。从此林夏把许宁当成“我这边的人/最好的朋友”，因此许宁与程浩同时出现在父亲住院现场、并在她到场前与医生交谈，被体验为“我这边的人”与“与我最有关的前任”发生了我不能当作无关的关联。",
+        "mass": 1.0
+      },
+      {
+        "id": "bf_3",
+        "text": "林夏看到许宁手机里程浩感谢许宁没告诉她、还说想找机会跟她解释后，把陪自己度过分手最难时期的十年好友许宁与程浩共享关于她的秘密这件事，理解为许宁属于“我这边”就不能与外人共享关于她的事、更不能替她决定该不该让她知道，因此这类好友与外人的私下通信一旦涉及她，她便认定自己的边界被越界。",
+        "mass": 0.3688
+      },
+      {
+        "id": "bf_4",
+        "text": "林夏在饭局上先从共同朋友口中听到许宁与程浩前两天单独吃饭、此前许宁并未告知，且许宁随即推门进来，从此把这类由旁人先说出许宁与程浩接触的事理解为‘许宁对我透明、有事我先知道’的关系规则被绕过。",
+        "mass": 0.3494
+      },
+      {
+        "id": "bf_5",
+        "text": "林夏从共同朋友先说出许宁与程浩单独吃饭而许宁随后进门这件事发生后，从此把这类许宁与程浩的接触理解为同时绕过‘许宁应先让我知道’和‘我这边朋友不能与程浩单独见面’两条关系规则的越界。",
+        "mass": 0.3361
+      },
+      {
+        "id": "bf_6",
+        "text": "林夏看到程浩发给许宁的消息说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把程浩要向她解释却先由许宁知情并保管这件事，理解为她与程浩三年关系的解释和收束只能在她和程浩之间发生，十年最好朋友涉及自己的事不应隐瞒，因此这类由第三方先介入并保管的对她解释，她认定不该发生。",
+        "mass": 0.3243
+      },
+      {
+        "id": "bf_7",
+        "text": "林夏听到共同朋友说许宁与程浩单独吃饭、随后许宁本人走进餐厅，从此把被自己放在‘我这边’的许宁与程浩单独见面理解为越过阵营边界、不能当作与己无关的私事。",
+        "mass": 0.3145
+      },
+      {
+        "id": "bf_8",
+        "text": "林夏看到许宁手机弹出程浩说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把关于自己的信息被放在许宁和程浩之间、自己不在场这件事，理解为凡涉及自己的事自己天然应在场并有权知道，别人不能替她判断该不该告诉，因此这类由他人保管的关于她的信息不向她开放时，她认定自己被排除。",
+        "mass": 0.3069
+      }
+    ],
+    "fresh_count_raw": 10,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 10,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 8,
+      "distinct_candidate_count": 7,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

@@ -1,0 +1,755 @@
+{
+  "events": [
+    {
+      "focus_person": "林舟",
+      "yuanwen": "林舟毕业后放弃银行 offer 去做游戏。第一家公司倒闭后，他继续加入另一家游戏公司，后来又自己创业，七年后产品终于取得不错成绩。亲戚夸他现在发展得不错。父亲笑着说：“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了。”",
+      "stimulus_text": "林舟毕业后放弃银行 offer 去做游戏。第一家公司倒闭后，他继续加入另一家游戏公司，后来又自己创业，七年后产品终于取得不错成绩。亲戚夸他现在发展得不错。父亲笑着说：“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了。”",
+      "stimulus_action_split": {
+        "stimulus_text": "林舟毕业后放弃银行 offer 去做游戏。第一家公司倒闭后，他继续加入另一家游戏公司，后来又自己创业，七年后产品终于取得不错成绩。亲戚夸他现在发展得不错。父亲笑着说：“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "亲戚",
+          "父亲"
+        ],
+        "action": "亲戚夸林舟现在发展得不错；父亲笑着说：“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了。”",
+        "object": "林舟",
+        "scene": "亲戚与父亲在场的交谈场合",
+        "outcome_changes": [],
+        "role_changes": [],
+        "relationship_changes": [],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "可能把被父亲称为“折腾几年”的做游戏、自己创业这条路，当成自我身份中不可分开的一部分，而不是一段可被他人重新归类的职业选择。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "可能把七年后产品取得不错成绩、亲戚夸的“发展不错”当成“我”的成就本身，不能只把它当成众多条件聚合出的一个产品结果。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "可能把父亲笑着说“现在总算找到适合自己的了”当作对自我整体的确认，不能只当作父亲在亲戚场合给出的一句评价。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f5",
+          "text": "可能把第一家公司倒闭后继续加入另一家、后来自己创业的七年经历，当成自我叙事不可分割的主线，不能只把它当成若干机缘中的一段过程。",
+          "confidence": 0.78,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "可能把当初放弃银行 offer 的选择当成界定自己是谁的标记，不能把它当作一个已经过去、可与现在的自己分开的职业分岔。",
+          "confidence": 0.68,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "可能把父亲那句“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”固定为一条应然路径：先折腾、后安定，先试错、后找到适合。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "可能把“找到适合自己的”执为一个已经完成、不可再变的确定状态，好像七年后产品成绩不错就说明了此后只能沿这条路走。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f5",
+          "text": "可能把第一家公司倒闭后继续加入另一家、再自己创业、七年后成功，固定为“坚持就会等到被认可”的必然过程。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "可能把亲戚夸的“发展不错”固定为衡量自己是否走对的普遍标准，好像“发展不错”就理应等同于“适合自己”。",
+          "confidence": 0.72,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "可能把“银行 offer”与“做游戏、创业”执成“安稳但不属于我”和“折腾但属于我”的二元固定分类。",
+          "confidence": 0.66,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3379790940766551,
+          "alambana_prior_probability": 0.3379790940766551,
+          "activation_alignment": 0.97,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6208000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3310104529616725,
+          "alambana_prior_probability": 0.3310104529616725,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3310104529616725,
+          "alambana_prior_probability": 0.3310104529616725,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "亲戚一句“发展不错”和父亲笑着说出的“现在总算找到适合自己的了”落进林舟耳里，不再只是场面上的一句评价：它被经验为对“我”这个人的整体确认——过去和现在被父亲一并收束，判定为一条走通了的线。与此同时，父亲那句话在他这里被固化成一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：自己的全部经历被放进这条路径里称量，亲戚的夸奖和父亲的笑成为这条路径成立的旁证，而“我”被整体地安放在“总算找到”这一格上。",
+          "prior_probability": 0.3379790940766551,
+          "posterior_probability": 0.3379790940766551,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6208000000000001,
+          "activation_alignment": 0.97,
+          "grounding_valid": true,
+          "grounding_reason": "未添加当前刺激中不存在的他人言行；亲戚夸奖与父亲话语均在，所缘对其作整体确认与路径化的理解属于主观解释，不是伪造事实。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "父亲口中“年轻时候出去折腾几年”这一归类，在林舟这里没有停留在对一段职业选择的描述上；做游戏、自己创业被他经验为自我身份里不可分开的部分，不能被这样重新打包成“折腾几年”。可这句话同时又被固定为一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：自己投入的那条路被父亲放在“之前”的位置，现在的成绩被放在“总算找到”的位置，亲戚的夸奖则像是对这条路径的承认；“我是谁”与“这段路”之间不可分割，却被这条时间线重新安排了顺序和意义。",
+          "prior_probability": 0.3310104529616725,
+          "posterior_probability": 0.3310104529616725,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "所引“年轻时候出去折腾几年”确为父亲话语；将做游戏、创业经验为自我身份及对父亲话语的路径化理解均为主观经验，未伪造他人言行。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "亲戚夸他“发展不错”，这句话在林舟这里被经验为对“我”的成就本身的指认；七年后产品取得的那个结果，不只是众多条件聚合出的一个产品结果，而成了“我的”成绩、“我的”发展的直接证明。同时，父亲笑着说“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，这句话被他固定为一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：亲戚的夸奖与父亲的笑共同把产品成绩抬高为“我”被确认的凭证，而这个成绩又被这条路径安置为折腾之后的“总算找到”。",
+          "prior_probability": 0.3310104529616725,
+          "posterior_probability": 0.3310104529616725,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "亲戚“发展不错”、父亲笑着说的话语及背景中七年产品成绩均有依据；把成绩经验为“我的”证明属于主观解释，未添加不存在的客观事实。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.3379790940766551,
+          "alambana": {
+            "id": "O_C1",
+            "text": "亲戚一句“发展不错”和父亲笑着说出的“现在总算找到适合自己的了”落进林舟耳里，不再只是场面上的一句评价：它被经验为对“我”这个人的整体确认——过去和现在被父亲一并收束，判定为一条走通了的线。与此同时，父亲那句话在他这里被固化成一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：自己的全部经历被放进这条路径里称量，亲戚的夸奖和父亲的笑成为这条路径成立的旁证，而“我”被整体地安放在“总算找到”这一格上。",
+            "prior_probability": 0.3379790940766551,
+            "posterior_probability": 0.3379790940766551,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6208000000000001,
+            "activation_alignment": 0.97,
+            "grounding_valid": true,
+            "grounding_reason": "未添加当前刺激中不存在的他人言行；亲戚夸奖与父亲话语均在，所缘对其作整体确认与路径化的理解属于主观解释，不是伪造事实。"
+          },
+          "xiang": {
+            "text": "亲戚说我发展不错，父亲又笑着接上“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，这句话落进我耳里，不像只是场面上替我圆一句。它把我从放弃银行 offer 到公司倒闭、再到创业七年的那些弯折，一下子收拢成了一条线：先出去折腾，试过错，最后安定在适合我的地方。我几乎愿意认下这个说法——那些年不是走偏，而是这条线必须先经过的部分；亲戚的夸和父亲的笑，都成了这条线走通了的旁证。此刻我被放在“总算找到”这一格上，心里有一种被整体确认的踏实，也更愿意把这句话当作往后看自己的准绳：既然折腾有了归宿，就别轻易把它重新看成没走通。可父亲说的是“年轻时候”，好像这一切已经被他笑着盖了章，我只能在这条被他命名的路径里理解自己。",
+            "source": "推理",
+            "confidence": 0.88
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "谄": 0.005999999999999999,
+            "疑": 0.005999999999999999,
+            "贪": 0.615625,
+            "悭": 0.005999999999999999,
+            "憍": 0.5797625000000001,
+            "不放逸": 0.339825,
+            "恼": 0.005999999999999999,
+            "忿": 0.005999999999999999,
+            "散乱": 0.005999999999999999,
+            "无明": 0.6821125,
+            "不正知": 0.6610250000000001,
+            "恶见": 0.4531,
+            "恨": 0.005999999999999999,
+            "精进": 0.46295000000000003,
+            "诳": 0.005999999999999999
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "口头认同父亲",
+              "probability": 0.40816326530612246,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "放弃新方向并继续做现有产品",
+              "probability": 0.35714285714285715,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "向父亲和亲戚敬酒道谢",
+              "probability": 0.23469387755102042,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.3310104529616725,
+          "alambana": {
+            "id": "O_C2",
+            "text": "父亲口中“年轻时候出去折腾几年”这一归类，在林舟这里没有停留在对一段职业选择的描述上；做游戏、自己创业被他经验为自我身份里不可分开的部分，不能被这样重新打包成“折腾几年”。可这句话同时又被固定为一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：自己投入的那条路被父亲放在“之前”的位置，现在的成绩被放在“总算找到”的位置，亲戚的夸奖则像是对这条路径的承认；“我是谁”与“这段路”之间不可分割，却被这条时间线重新安排了顺序和意义。",
+            "prior_probability": 0.3310104529616725,
+            "posterior_probability": 0.3310104529616725,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "所引“年轻时候出去折腾几年”确为父亲话语；将做游戏、创业经验为自我身份及对父亲话语的路径化理解均为主观经验，未伪造他人言行。"
+          },
+          "xiang": {
+            "text": "林舟听着父亲那句“年轻时候出去折腾几年也挺好”，心里并没有把它当成一句对自己过去职业选择的普通描述。他清楚自己做游戏、自己创业的那些年，不是一段可以被折起来放回“折腾”里的插曲，那就是他本身；可父亲随后的“现在总算找到适合自己的了”，又把这条路切成“之前”和“现在”，好像过去只是试错，今天才是归位。亲戚的夸奖落在旁边，也顺势被收进这条先折腾后安定的线里，变成对“总算找到”的确认。他一方面能感到这话里的善意和承认，另一方面却对“总算找到”有一层说不清的抗拒：如果现在才算找到，那之前那些年、那个决定、那些失败和坚持，又算什么呢？他不太愿意让这句话就这样替他把自己的路重新排序，但也知道此刻争辩只会显得不识好歹，于是这种不认同只能先压在心里，变成一种更想守住“这条路就是我自己”的沉默认定。",
+            "source": "推理",
+            "confidence": 0.85
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "谄": 0.005999999999999999,
+            "不信": 0.3151999999999999,
+            "疑": 0.005999999999999999,
+            "贪": 0.536825,
+            "悭": 0.005999999999999999,
+            "憍": 0.005999999999999999,
+            "恼": 0.005999999999999999,
+            "行舍": 0.34967499999999996,
+            "忿": 0.005999999999999999,
+            "不害": 0.3152,
+            "散乱": 0.005999999999999999,
+            "无明": 0.38907499999999995,
+            "不正知": 0.25225,
+            "恶见": 0.39892500000000003,
+            "慢": 0.41862499999999997,
+            "恨": 0.005999999999999999,
+            "无瞋": 0.6033124999999999,
+            "诳": 0.005999999999999999
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "向亲戚道谢、添茶并问候近况",
+              "probability": 0.5979381443298969,
+              "supporting_mental_factors": [
+                "无瞋",
+                "不害",
+                "行舍"
+              ]
+            },
+            {
+              "text": "向父亲解释创业是在做游戏并继续吃饭",
+              "probability": 0.29896907216494845,
+              "supporting_mental_factors": [
+                "慢",
+                "贪",
+                "无瞋",
+                "行舍"
+              ]
+            },
+            {
+              "text": "笑着回应还需继续折腾并介绍产品下一步改进",
+              "probability": 0.10309278350515465,
+              "supporting_mental_factors": [
+                "谄",
+                "无瞋",
+                "不害"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.3310104529616725,
+          "alambana": {
+            "id": "O_C3",
+            "text": "亲戚夸他“发展不错”，这句话在林舟这里被经验为对“我”的成就本身的指认；七年后产品取得的那个结果，不只是众多条件聚合出的一个产品结果，而成了“我的”成绩、“我的”发展的直接证明。同时，父亲笑着说“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，这句话被他固定为一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：亲戚的夸奖与父亲的笑共同把产品成绩抬高为“我”被确认的凭证，而这个成绩又被这条路径安置为折腾之后的“总算找到”。",
+            "prior_probability": 0.3310104529616725,
+            "posterior_probability": 0.3310104529616725,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "亲戚“发展不错”、父亲笑着说的话语及背景中七年产品成绩均有依据；把成绩经验为“我的”证明属于主观解释，未添加不存在的客观事实。"
+          },
+          "xiang": {
+            "text": "林舟听到亲戚那句“发展不错”，心里先是一热，随即把这句夸奖收进自己身上：七年后产品取得成绩，在他这里不只是许多条件凑成的结果，而成了“我”这些年没有白熬、终于被看见的凭证。父亲笑着说“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，他更愿意把它当作给自己一路倒闭、再入行、再创业的盖章：先折腾、后安定，先试错、后找到，仿佛本来就该这样。于是他一边把眼下的成绩抬高为对“我”的确认，一边把这条路径收束成“总算找到适合自己”的定论，心里更倾向于守住这个证明，不再去分辨其中有多少运气、他人和时机的作用。",
+            "source": "推理",
+            "confidence": 0.8
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "谄": 0.005999999999999999,
+            "不信": 0.24132499999999996,
+            "疑": 0.005999999999999999,
+            "贪": 0.8397125,
+            "悭": 0.005999999999999999,
+            "憍": 0.8604875,
+            "恼": 0.005999999999999999,
+            "行舍": 0.310275,
+            "忿": 0.005999999999999999,
+            "散乱": 0.005999999999999999,
+            "无明": 0.812625,
+            "不正知": 0.7890750000000001,
+            "恶见": 0.6279374999999999,
+            "慢": 0.586075,
+            "恨": 0.005999999999999999,
+            "放逸": 0.31027499999999997,
+            "诳": 0.005999999999999999
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "笑着回应",
+              "probability": 0.40243902439024387,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "点头回应",
+              "probability": 0.32926829268292684,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "笑着点头并夹菜",
+              "probability": 0.26829268292682923,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "放弃新方向并继续做现有产品",
+          "probability": 0.3970343787379723,
+          "dominant_mental_factors": [
+            "谄",
+            "无瞋",
+            "不害"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.3310104529616725,
+              "conditional_probability": 0.40243902439024387,
+              "contribution": 0.13321152375286818
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3379790940766551,
+              "conditional_probability": 0.35714285714285715,
+              "contribution": 0.12070681931309112
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.3310104529616725,
+              "conditional_probability": 0.32926829268292684,
+              "contribution": 0.10899124670689216
+            },
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3310104529616725,
+              "conditional_probability": 0.10309278350515465,
+              "contribution": 0.034124788965120875
+            }
+          ]
+        },
+        {
+          "text": "口头认同父亲",
+          "probability": 0.3358744266412338,
+          "dominant_mental_factors": [
+            "无瞋",
+            "不害",
+            "行舍"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3310104529616725,
+              "conditional_probability": 0.5979381443298969,
+              "contribution": 0.19792377599770106
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3379790940766551,
+              "conditional_probability": 0.40816326530612246,
+              "contribution": 0.1379506506435327
+            }
+          ]
+        },
+        {
+          "text": "向父亲和亲戚敬酒道谢",
+          "probability": 0.17828351211888183,
+          "dominant_mental_factors": [
+            "慢",
+            "贪",
+            "无瞋",
+            "行舍"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3310104529616725,
+              "conditional_probability": 0.29896907216494845,
+              "contribution": 0.09896188799885053
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.3379790940766551,
+              "conditional_probability": 0.23469387755102042,
+              "contribution": 0.0793216241200313
+            }
+          ]
+        },
+        {
+          "text": "笑着点头并夹菜",
+          "probability": 0.08880768250191211,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.3310104529616725,
+              "conditional_probability": 0.26829268292682923,
+              "contribution": 0.08880768250191211
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "精进": 0.1588501742160279,
+        "无瞋": 0.20274390243902438,
+        "不放逸": 0.116602787456446,
+        "行舍": 0.22177700348432056,
+        "不害": 0.1059233449477352,
+        "贪": 0.6738240418118467,
+        "慢": 0.3376306620209059,
+        "无明": 0.637883275261324,
+        "恶见": 0.5005487804878049,
+        "憍": 0.4840243902439024,
+        "不信": 0.18702090592334492,
+        "放逸": 0.10426829268292681,
+        "不正知": 0.5706620209059234
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 10,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 10,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 11,
+        "distinct_candidate_count": 10,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 3,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_2",
+            "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_3",
+            "text": "朋友骗了我，我对他不满，以及不信任",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_4",
+            "text": "组织评价标准可能正在偏向新人",
+            "mass": 0.7285
+          },
+          {
+            "id": "bf_5",
+            "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+            "mass": 0.6758
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_2",
+              "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_3",
+              "text": "朋友骗了我，我对他不满，以及不信任",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_4",
+              "text": "组织评价标准可能正在偏向新人",
+              "mass": 0.7285
+            },
+            {
+              "id": "bf_5",
+              "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+              "mass": 0.6758
+            }
+          ],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.015
+        }
+      }
+    }
+  ],
+  "focus_person": "林舟",
+  "llm_usage": {
+    "total_calls": 205,
+    "total_duration_ms": 1910013.9881399798,
+    "wall_clock_ms": 304594.26873399934
+  },
+  "_experiment": {
+    "name": "单独事件实验二",
+    "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3林舟.txt",
+    "agent": "林舟",
+    "stimulus": "林舟毕业后放弃银行 offer 去做游戏。第一家公司倒闭后，他继续加入另一家游戏公司，后来又自己创业，七年后产品终于取得不错成绩。亲戚夸他现在发展得不错。父亲笑着说：“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了。”",
+    "xiangs": [
+      {
+        "branch_id": "branch_O_C1",
+        "activation": 0.3379790940766551,
+        "alambana": "亲戚一句“发展不错”和父亲笑着说出的“现在总算找到适合自己的了”落进林舟耳里，不再只是场面上的一句评价：它被经验为对“我”这个人的整体确认——过去和现在被父亲一并收束，判定为一条走通了的线。与此同时，父亲那句话在他这里被固化成一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：自己的全部经历被放进这条路径里称量，亲戚的夸奖和父亲的笑成为这条路径成立的旁证，而“我”被整体地安放在“总算找到”这一格上。",
+        "xiang": "亲戚说我发展不错，父亲又笑着接上“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，这句话落进我耳里，不像只是场面上替我圆一句。它把我从放弃银行 offer 到公司倒闭、再到创业七年的那些弯折，一下子收拢成了一条线：先出去折腾，试过错，最后安定在适合我的地方。我几乎愿意认下这个说法——那些年不是走偏，而是这条线必须先经过的部分；亲戚的夸和父亲的笑，都成了这条线走通了的旁证。此刻我被放在“总算找到”这一格上，心里有一种被整体确认的踏实，也更愿意把这句话当作往后看自己的准绳：既然折腾有了归宿，就别轻易把它重新看成没走通。可父亲说的是“年轻时候”，好像这一切已经被他笑着盖了章，我只能在这条被他命名的路径里理解自己。"
+      },
+      {
+        "branch_id": "branch_O_C2",
+        "activation": 0.3310104529616725,
+        "alambana": "父亲口中“年轻时候出去折腾几年”这一归类，在林舟这里没有停留在对一段职业选择的描述上；做游戏、自己创业被他经验为自我身份里不可分开的部分，不能被这样重新打包成“折腾几年”。可这句话同时又被固定为一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：自己投入的那条路被父亲放在“之前”的位置，现在的成绩被放在“总算找到”的位置，亲戚的夸奖则像是对这条路径的承认；“我是谁”与“这段路”之间不可分割，却被这条时间线重新安排了顺序和意义。",
+        "xiang": "林舟听着父亲那句“年轻时候出去折腾几年也挺好”，心里并没有把它当成一句对自己过去职业选择的普通描述。他清楚自己做游戏、自己创业的那些年，不是一段可以被折起来放回“折腾”里的插曲，那就是他本身；可父亲随后的“现在总算找到适合自己的了”，又把这条路切成“之前”和“现在”，好像过去只是试错，今天才是归位。亲戚的夸奖落在旁边，也顺势被收进这条先折腾后安定的线里，变成对“总算找到”的确认。他一方面能感到这话里的善意和承认，另一方面却对“总算找到”有一层说不清的抗拒：如果现在才算找到，那之前那些年、那个决定、那些失败和坚持，又算什么呢？他不太愿意让这句话就这样替他把自己的路重新排序，但也知道此刻争辩只会显得不识好歹，于是这种不认同只能先压在心里，变成一种更想守住“这条路就是我自己”的沉默认定。"
+      },
+      {
+        "branch_id": "branch_O_C3",
+        "activation": 0.3310104529616725,
+        "alambana": "亲戚夸他“发展不错”，这句话在林舟这里被经验为对“我”的成就本身的指认；七年后产品取得的那个结果，不只是众多条件聚合出的一个产品结果，而成了“我的”成绩、“我的”发展的直接证明。同时，父亲笑着说“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，这句话被他固定为一条应然路径：先折腾、后安定，先试错、后找到适合。于是此刻的对象化世界是：亲戚的夸奖与父亲的笑共同把产品成绩抬高为“我”被确认的凭证，而这个成绩又被这条路径安置为折腾之后的“总算找到”。",
+        "xiang": "林舟听到亲戚那句“发展不错”，心里先是一热，随即把这句夸奖收进自己身上：七年后产品取得成绩，在他这里不只是许多条件凑成的结果，而成了“我”这些年没有白熬、终于被看见的凭证。父亲笑着说“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了”，他更愿意把它当作给自己一路倒闭、再入行、再创业的盖章：先折腾、后安定，先试错、后找到，仿佛本来就该这样。于是他一边把眼下的成绩抬高为对“我”的确认，一边把这条路径收束成“总算找到适合自己”的定论，心里更倾向于守住这个证明，不再去分辨其中有多少运气、他人和时机的作用。"
+      }
+    ],
+    "predicted_actions": [
+      {
+        "text": "放弃新方向并继续做现有产品",
+        "probability": 0.3970343787379723
+      },
+      {
+        "text": "口头认同父亲",
+        "probability": 0.3358744266412338
+      },
+      {
+        "text": "向父亲和亲戚敬酒道谢",
+        "probability": 0.17828351211888183
+      },
+      {
+        "text": "笑着点头并夹菜",
+        "probability": 0.08880768250191211
+      }
+    ]
+  }
+}

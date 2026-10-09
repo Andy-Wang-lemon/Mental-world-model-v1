@@ -1,0 +1,74 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 24,
+  "item_id": "d950_u12",
+  "dialogue_id": "950",
+  "utterance_pos": 12,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "RECOMMENDER反复提到Jonah Hill和Seth Rogen，这让SEEKER的所缘中出现一个清晰的自我定位：我是喜欢这类演员的人。于是《Superbad》《The Sitter》《This Is the End》等片都像被归进同一个“与我身份相符”的集合里；只要演员相同，作品就都在替SEEKER印证“我就是这类人”。年份、导演、故事都不是重点，真正摆在眼前的是“这些电影都在说明我是什么样的人”。",
+        "probability": 0.3476
+      },
+      {
+        "content": "RECOMMENDER一开始询问喜欢的电影类型时，SEEKER感到对方是针对“我的口味”来对待自己的；随后那些电影被排列成一条围绕“我会喜欢谁”的推荐链。在SEEKER的所缘中，Jonah Hill或Seth Rogen只要出现在片子里，电影之间的片名、年份、剧情差异都被压扁，变成“如果我喜欢这个演员，那么这些电影就都属于我”。对方最后那句“You're welcome”也被收进这个画面里，像是整段推荐已经以SEEKER的偏好为中心完成了一次确认。",
+        "probability": 0.3352
+      },
+      {
+        "content": "在SEEKER的所缘中，Jonah Hill和Seth Rogen的名字本身就是电影好笑、值得看的保证；《Pineapple Express》《The Sitter》《This Is the End》因为有他们出演，自动被划入“会让我满意”的那一类。同时，SEEKER把“我是喜欢这类演员的人”当成自己的身份，于是这些电影不只是被推荐，更像是在替SEEKER确认这个身份。演员名字覆盖了剧情、质量与差异，形成一种“只要他们在，我就理所当然会喜欢”的对象化世界。",
+        "probability": 0.3172
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在SEEKER看来，对方一开始问“喜欢什么电影类型”就是在专门针对自己的口味来回应；之后每当推荐中出现Jonah Hill或Seth Rogen，那些片名、年份、剧情差异都被他压扁成同一件事——只要是自己喜欢的演员在，这些电影就都属于“我会喜欢的”。所以他对没听说过The Sitter感到意外，因为按这个逻辑，凡有Jonah Hill的片子他早该都知道。对方最后说“You're welcome”时，他更觉得整段推荐是以自己的偏好为中心完成的一次确认，于是很自然地接受推荐并道谢。",
+        "activation": 0.3478
+      },
+      {
+        "content": "他们一直提Jonah Hill和Seth Rogen，好像一下子把我的喜好说得特别清楚。我喜欢的不只是某部电影，而是那种由他们带来的感觉。Superbad、This Is the End、Pineapple Express，这些片子里都有他们，所以它们天然就是我会喜欢的那一类。年份、导演甚至故事本身都不太重要，只要演员是这两个人，我觉得自己就能放心地给出期待。原来我一直是用“有没有我喜欢的演员”来认领电影的，这些推荐让我更确信自己就是这样的人。",
+        "activation": 0.3354
+      },
+      {
+        "content": "在SEEKER心里，Jonah Hill和Seth Rogen这两个名字几乎成了观影的自动过滤器：只要演员表里有他们，电影就被默认划入“好笑、值得看”的类别，而不必再细究剧情或质量。当对方提到《The Sitter》时，他先是一愣，因为自己居然没听说过，但紧接着听说有Jonah Hill出演，心里便立刻松下来，觉得这肯定合口味。他对自己“喜欢Jonah Hill这类演员”的身份颇有认同，并因这份认同而乐于接受推荐；这些电影仿佛不只是被推荐，更是在反复印证他作为一个喜爱这类喜剧演员的观影者，眼光没有错。",
+        "activation": 0.3168
+      }
+    ],
+    "observed_action": "SEEKER主动打招呼，请求推荐电影并说明偏好Wedding Crashers和It，不喜欢Star Wars；表示看过Horrible Bosses和Superbad，喜欢Superbad，特别喜欢Jonah Hill并提到他在The Wolf of Wall Street中的表现；表示没看过The Sitter并询问是否喜剧，然后确认看过This Is the End并喜欢；表示喜欢Pineapple Express，对没听说过The Sitter感到意外；最后表示会去查看推荐并致谢。",
+    "predicted_actions": [
+      {
+        "content": "搜索并收藏影片",
+        "probability": 0.3977
+      },
+      {
+        "content": "发送消息称赞推荐",
+        "probability": 0.3503
+      },
+      {
+        "content": "播放影片并告知开始",
+        "probability": 0.252
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.748,
+    "b": 0,
+    "c": 0,
+    "d": 0
+  },
+  "score_reason": "A 0.7480 = 搜索并收藏影片 0.3977 + 发送消息称赞推荐 0.3503；B 0.0000；C 0.0000；D 0.0000。搜索收藏影片和发送消息称赞推荐都是对之前推荐的反馈。",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The predicted next actions involve searching, praising, or playing films, not explicit gratitude or chit-chat, so the gold strategy is only inferred from the past thanks.",
+  "audit_level": "inferred"
+}

@@ -1,0 +1,50 @@
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER 此刻经验到的对象化世界是：RECOMMENDER 以‘Hi’开头、接着逐一报出 Sister Act、Sister Act 2、Boo! A Madea Halloween、Walk Like a Man 并说‘is good’‘I like’‘oldie but goodie’，这些话语不是与自己无关的片名陈列，而是冲着自己发出的互动开端；‘我’被安放在这段说话的直接听者位置上。由于‘列出片名并说喜欢’被执为推荐脚本，这些片名和喜好评价就作为待接住的推荐内容现前，世界围绕‘我是被推荐指向、应承接同类喜好信息的人’组织起来。",
+      "probability": 0.3765
+    },
+    {
+      "content": "SEEKER 此刻经验到的对象化世界是：RECOMMENDER 说喜欢 Sister Act、Sister Act 2、Boo! A Madea Halloween 并称 Madea 很搞笑，这些话被取境为对‘我的观影喜好/品味’的当场叩问，而不是单纯他人的口味陈述。因‘我的品味不能缺席’这一我执，片名与‘is good’‘I like’‘很搞笑’等评价变成一面镜子：SEEKER 当下的对象世界围绕‘我是否也这样觉得、这和我是什么样的人是否一致’展开。‘推荐脚本’又使这些喜好被看作需要以同类喜好信息回应的推荐，从而强化了自我对照。",
+      "probability": 0.333
+    },
+    {
+      "content": "SEEKER 此刻经验到的对象化世界是：RECOMMENDER 连续列出 Sister Act、Sister Act 2、Boo! A Madea Halloween、Walk Like a Man 并说‘is good’‘I like’‘oldie but goodie’，这些被取境为可供‘我们’共同拥有的谈资与喜好坐标，而不是只属于对方的单方信息。因‘与 RECOMMENDER 之间有共同喜好/共同话题’被当成自己这边应当成立的关系状态，世界在‘我们’之间打开：这些片名和评价作为需要对齐、至少不能让共同话题空转的关系材料现前。‘列出片名并说喜欢即推荐’的脚本，则使这种共同话题更被体验为应被同类喜好接住的互动内容。",
+      "probability": 0.2905
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他一开口就是“Hi”，随后把 Sister Act、Sister Act 2、Boo! A Madea Halloween、Walk Like a Man 一部部报出来，还说“is good”“I like”“oldie but goodie”——这不是自己念片名，而是朝我递来的交谈开端。我被放在直接听者的位置上，这些片名和喜好评价便作为要我接住的推荐内容现前：他在分享他所喜欢的，也在等我用自己的喜剧口味去回应。Sister Act 两部我也觉得好，Madea 的搞笑我认，因此这些不是需要冷淡划过的信息，而是可以顺着认可、补充和延续的共同话题；我自然应当以同类喜好接住他的推荐，让这段对话像互相交换喜欢的电影那样展开。",
+      "activation": 0.3949
+    },
+    {
+      "content": "RECOMMENDER 说喜欢《Sister Act》两部、喜欢《Boo! A Madea Halloween》并称 Madea 很搞笑，这些话在 SEEKER 这里不是单纯的口味信息，而像当面叩问：我的观影喜好是否也在这里、是否和这些评价一致。SEEKER 把自己的喜剧口味当成不能缺席的东西，于是立即把片名和“is good”“I like”“很搞笑”转成自我核对的镜子：确认自己看过《Sister Act》两部并觉得都是好选择，又把自己对《Neighbors》的好笑感、对 Madea“在所有作品里都好笑”的判断摆出来，用同类喜好接住对方的推荐脚本。这样，他人的喜好被组织成对 SEEKER 品味的印证，SEEKER 也在心里把“我爱喜剧、我认同这些好笑”收拢为自我一致的形象，内在趋向是让这条品味线保持连贯、不落空。",
+      "activation": 0.3203
+    },
+    {
+      "content": "RECOMMENDER 接连报出的这些片名和‘is good’‘I like’‘oldie but goodie’，不只是他单方的清单，而是在我和他之间摆出一组可以共同拥有的坐标。既然我和他之间应当有共同喜好、共同话题，这些片名和评价就不能空转；它们需要被接住、被对齐，变成‘我们都能聊’的东西。对方说喜欢和推荐，我就该以同类喜好去应，把 Sister Act、Madea 这些重新认成共享的谈资，而不是只留在他一个人的偏好里。",
+      "activation": 0.2848
+    }
+  ],
+  "observed_action": "SEEKER 打招呼，表示喜欢喜剧电影，提到《Bridesmaids》(2011) 和《How to Lose a Guy in 10 Days》(2003) 是自己最喜欢的电影之一；SEEKER 表示看过《Sister Act》和《Sister Act 2》，称两者都是很好的选择；SEEKER 表示喜欢《Neighbors》(2014)，提到 Seth Rogen 和 Zac Efron，说那部相当好笑，并说 Madea 在所有作品里都很好笑。",
+  "predicted_actions": [
+    {
+      "content": "表示没看过《Walk Like a Man》",
+      "probability": 0.4183
+    },
+    {
+      "content": "询问《Walk Like a Man》最搞笑的部分",
+      "probability": 0.3667
+    },
+    {
+      "content": "询问是否看过《Bridesmaids》",
+      "probability": 0.1723
+    },
+    {
+      "content": "确认记下并停止列举，聚焦于某些片名",
+      "probability": 0.0427
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "3_pred_rec__0129_d1998_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "No prior seeker utterance; Recommender opens the conversation with a greeting and asks what type of movies the seeker wants.",
+      "information_available": "No information yet about the seeker's genre or taste; only that a movie recommendation dialogue is starting.",
+      "preferences": "Recommender has not yet revealed personal movie preferences and is trying to learn the seeker's preferences.",
+      "belief_before": "Recommender has no information about the seeker's genre or movie taste.",
+      "belief_update": "Recommender chooses to ask for movie type in order to begin the recommendation process.",
+      "belief_after": "Recommender knows only that the seeker may want a movie recommendation; genre and taste are unknown.",
+      "emotion": "Friendly, polite, helpful.",
+      "intention": "Greet the seeker and elicit their movie preferences.",
+      "conversational_goal": "Open the conversation and gather the seeker's target genre.",
+      "reaction_to_other": "Not applicable; Recommender initiates the dialogue.",
+      "changes_previous_interpretation": "No previous interpretation exists; this establishes the initial state."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says it is going well, asks for good comedy movies, and cites Bridesmaids (2011) and Superbad (2007) as favorites.",
+      "information_available": "Seeker wants comedy recommendations; likes Bridesmaids and Superbad; is open to help.",
+      "preferences": "Recommender infers the seeker likes comedy, especially contemporary/raunchy comedy similar to Bridesmaids and Superbad. Recommender's own preferences are still not explicit.",
+      "belief_before": "Recommender knew only that the seeker wanted a movie recommendation; genre and taste were unknown.",
+      "belief_update": "Seeker specified comedy and gave two favorite films, providing useful taste information.",
+      "belief_after": "Recommender believes the seeker wants comedy and may enjoy comedies with a tone or humor similar to Bridesmaids and Superbad.",
+      "emotion": "Positive, helpful, engaged.",
+      "intention": "Use the stated preferences to suggest suitable comedy movies.",
+      "conversational_goal": "Recommend comedies likely to match the seeker's taste.",
+      "reaction_to_other": "Favorable; the seeker gave clear preferences and was polite.",
+      "changes_previous_interpretation": "Yes; the previous unknown genre/taste is updated to comedy with Bridesmaids and Superbad preferences."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender offers Airplane! (1980), The Naked Gun, Step Brothers (2008), and Office Space (1999), noting they are funny and mentioning gross humor for Step Brothers.",
+      "information_available": "From the prior turn: the seeker wants comedy and likes Bridesmaids and Superbad. No new seeker information is available during this turn.",
+      "preferences": "Recommender appears to endorse Airplane!, The Naked Gun, Step Brothers, and Office Space as funny/recommendable, and suggests Step Brothers may fit if the seeker likes gross humor.",
+      "belief_before": "Recommender believes the seeker wants comedy and may like films similar to Bridesmaids and Superbad.",
+      "belief_update": "Recommender selects and presents specific comedy candidates, while remaining uncertain whether the seeker has seen them or will like them.",
+      "belief_after": "Recommender awaits the seeker's familiarity with and preference among Airplane!, The Naked Gun, Step Brothers, and Office Space. Recommender suspects Step Brothers may fit a gross-humor taste.",
+      "emotion": "Enthusiastic, helpful, conversational.",
+      "intention": "Recommend several comedies and check whether the seeker has seen them.",
+      "conversational_goal": "Narrow down options by eliciting the seeker's familiarity and preference.",
+      "reaction_to_other": "Responsive to the seeker's request from the prior turn; no new seeker reaction is present in this turn.",
+      "changes_previous_interpretation": "No major change; this turn elaborates the comedy recommendation plan based on turn 2."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have seen all of those movies, prefers Step Brothers (2008), and asks about the last movie mentioned and what it is about.",
+      "information_available": "Seeker has seen Airplane!, The Naked Gun, Step Brothers, and Office Space; prefers Step Brothers among them; asks for information about Office Space, the last movie mentioned.",
+      "preferences": "Recommender infers the seeker especially prefers Step Brothers, consistent with a gross/raunchy comedy taste, and is interested in what Office Space is about. Recommender still endorses Office Space.",
+      "belief_before": "Recommender believed the seeker might not have seen all the recommendations and was awaiting their preference or familiarity.",
+      "belief_update": "Seeker has seen all recommendations, prefers Step Brothers, and needs an explanation of Office Space.",
+      "belief_after": "Recommender believes Step Brothers is a strong match and should explain Office Space because the seeker asked; further recommendations may be needed after that.",
+      "emotion": "Helpful and attentive; possibly pleased or slightly surprised that the seeker liked Step Brothers best.",
+      "intention": "Answer the question about Office Space and continue guiding the recommendation based on the seeker's Step Brothers preference.",
+      "conversational_goal": "Describe Office Space, maintain engagement, and possibly set up further recommendations.",
+      "reaction_to_other": "Positive; the seeker engaged with the recommendations and expressed a clear preference.",
+      "changes_previous_interpretation": "Yes; the previous uncertainty about whether the recommendations were new is resolved. The seeker has seen them all and prefers Step Brothers, shifting focus to explaining Office Space."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"No prior seeker utterance; Recommender opens the conversation with a greeting and asks what type of movies the seeker wants.\",\n    \"information_available\": \"No information yet about the seeker's genre or taste; only that a movie recommendation dialogue is starting.\",\n    \"preferences\": \"Recommender has not yet revealed personal movie preferences and is trying to learn the seeker's preferences.\",\n    \"belief_before\": \"Recommender has no information about the seeker's genre or movie taste.\",\n    \"belief_update\": \"Recommender chooses to ask for movie type in order to begin the recommendation process.\",\n    \"belief_after\": \"Recommender knows only that the seeker may want a movie recommendation; genre and taste are unknown.\",\n    \"emotion\": \"Friendly, polite, helpful.\",\n    \"intention\": \"Greet the seeker and elicit their movie preferences.\",\n    \"conversational_goal\": \"Open the conversation and gather the seeker's target genre.\",\n    \"reaction_to_other\": \"Not applicable; Recommender initiates the dialogue.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists; this establishes the initial state.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says it is going well, asks for good comedy movies, and cites Bridesmaids (2011) and Superbad (2007) as favorites.\",\n    \"information_available\": \"Seeker wants comedy recommendations; likes Bridesmaids and Superbad; is open to help.\",\n    \"preferences\": \"Recommender infers the seeker likes comedy, especially contemporary/raunchy comedy similar to Bridesmaids and Superbad. Recommender's own preferences are still not explicit.\",\n    \"belief_before\": \"Recommender knew only that the seeker wanted a movie recommendation; genre and taste were unknown.\",\n    \"belief_update\": \"Seeker specified comedy and gave two favorite films, providing useful taste information.\",\n    \"belief_after\": \"Recommender believes the seeker wants comedy and may enjoy comedies with a tone or humor similar to Bridesmaids and Superbad.\",\n    \"emotion\": \"Positive, helpful, engaged.\",\n    \"intention\": \"Use the stated preferences to suggest suitable comedy movies.\",\n    \"conversational_goal\": \"Recommend comedies likely to match the seeker's taste.\",\n    \"reaction_to_other\": \"Favorable; the seeker gave clear preferences and was polite.\",\n    \"changes_previous_interpretation\": \"Yes; the previous unknown genre/taste is updated to comedy with Bridesmaids and Superbad preferences.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender offers Airplane! (1980), The Naked Gun, Step Brothers (2008), and Office Space (1999), noting they are funny and mentioning gross humor for Step Brothers.\",\n    \"information_available\": \"From the prior turn: the seeker wants comedy and likes Bridesmaids and Superbad. No new seeker information is available during this turn.\",\n    \"preferences\": \"Recommender appears to endorse Airplane!, The Naked Gun, Step Brothers, and Office Space as funny/recommendable, and suggests Step Brothers may fit if the seeker likes gross humor.\",\n    \"belief_before\": \"Recommender believes the seeker wants comedy and may like films similar to Bridesmaids and Superbad.\",\n    \"belief_update\": \"Recommender selects and presents specific comedy candidates, while remaining uncertain whether the seeker has seen them or will like them.\",\n    \"belief_after\": \"Recommender awaits the seeker's familiarity with and preference among Airplane!, The Naked Gun, Step Brothers, and Office Space. Recommender suspects Step Brothers may fit a gross-humor taste.\",\n    \"emotion\": \"Enthusiastic, helpful, conversational.\",\n    \"intention\": \"Recommend several comedies and check whether the seeker has seen them.\",\n    \"conversational_goal\": \"Narrow down options by eliciting the seeker's familiarity and preference.\",\n    \"reaction_to_other\": \"Responsive to the seeker's request from the prior turn; no new seeker reaction is present in this turn.\",\n    \"changes_previous_interpretation\": \"No major change; this turn elaborates the comedy recommendation plan based on turn 2.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have seen all of those movies, prefers Step Brothers (2008), and asks about the last movie mentioned and what it is about.\",\n    \"information_available\": \"Seeker has seen Airplane!, The Naked Gun, Step Brothers, and Office Space; prefers Step Brothers among them; asks for information about Office Space, the last movie mentioned.\",\n    \"preferences\": \"Recommender infers the seeker especially prefers Step Brothers, consistent with a gross/raunchy comedy taste, and is interested in what Office Space is about. Recommender still endorses Office Space.\",\n    \"belief_before\": \"Recommender believed the seeker might not have seen all the recommendations and was awaiting their preference or familiarity.\",\n    \"belief_update\": \"Seeker has seen all recommendations, prefers Step Brothers, and needs an explanation of Office Space.\",\n    \"belief_after\": \"Recommender believes Step Brothers is a strong match and should explain Office Space because the seeker asked; further recommendations may be needed after that.\",\n    \"emotion\": \"Helpful and attentive; possibly pleased or slightly surprised that the seeker liked Step Brothers best.\",\n    \"intention\": \"Answer the question about Office Space and continue guiding the recommendation based on the seeker's Step Brothers preference.\",\n    \"conversational_goal\": \"Describe Office Space, maintain engagement, and possibly set up further recommendations.\",\n    \"reaction_to_other\": \"Positive; the seeker engaged with the recommendations and expressed a clear preference.\",\n    \"changes_previous_interpretation\": \"Yes; the previous uncertainty about whether the recommendations were new is resolved. The seeker has seen them all and prefers Step Brothers, shifting focus to explaining Office Space.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 112,
+  "item_id": "d1751_u2",
+  "dialogue_id": "1751",
+  "utterance_pos": 2,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.6,
+    "b": 0.5,
+    "c": 0.9,
+    "d": 0.3
+  },
+  "score_reason": "The record centers on SEEKER's request for a horror recommendation, so the next strategy most directly continues that request.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record contains no predicted next actions or thoughts about what to do next, so the strategy must be inferred only from the empty observed action.",
+  "audit_level": "inferred"
+}

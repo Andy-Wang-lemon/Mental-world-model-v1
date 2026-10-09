@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0096_d1509_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi'. No other information, preferences, or request has been provided yet.",
+      "belief_before": "No prior context exists; the recommender has no information about the seeker, the recommendation domain, or any preferences.",
+      "belief_update": "The seeker has initiated contact with a greeting only. This suggests the seeker is willing to engage, but their intent, needs, and preferences remain unknown.",
+      "belief_after": "The recommender believes the seeker is present and likely wants to start a recommendation dialogue, but nothing specific about what they want has been disclosed.",
+      "emotion": "Neutral, polite, and mildly welcoming.",
+      "intention": "Respond with a friendly greeting and invite the seeker to explain what they are looking for.",
+      "conversational_goal": "Open the conversation, acknowledge the greeting, and prompt the seeker to state their recommendation request or preferences."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi'. No other information, preferences, or request has been provided yet.\",\n    \"belief_before\": \"No prior context exists; the recommender has no information about the seeker, the recommendation domain, or any preferences.\",\n    \"belief_update\": \"The seeker has initiated contact with a greeting only. This suggests the seeker is willing to engage, but their intent, needs, and preferences remain unknown.\",\n    \"belief_after\": \"The recommender believes the seeker is present and likely wants to start a recommendation dialogue, but nothing specific about what they want has been disclosed.\",\n    \"emotion\": \"Neutral, polite, and mildly welcoming.\",\n    \"intention\": \"Respond with a friendly greeting and invite the seeker to explain what they are looking for.\",\n    \"conversational_goal\": \"Open the conversation, acknowledge the greeting, and prompt the seeker to state their recommendation request or preferences.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "e",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

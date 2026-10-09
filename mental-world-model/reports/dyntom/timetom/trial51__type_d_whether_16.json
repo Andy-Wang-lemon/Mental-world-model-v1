@@ -1,0 +1,61 @@
+{
+  "id": "trial51__type_d_whether_16",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Christian Mensah",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Jonathan admits he was hiding something and says he is in some trouble, and he didn't know how to tell Christian.",
+      "belief_before": "Jonathan is hiding something important from him; Christian feels anxious and suspicious.",
+      "belief_update": "Yes—his suspicion is confirmed: Jonathan was hiding that he is in trouble.",
+      "belief_after": "Jonathan is in some kind of trouble and had been hiding it from Christian.",
+      "emotion": "Anxious, worried, and concerned; possibly somewhat validated in his suspicion.",
+      "intention": "To get more details about Jonathan's trouble and decide how to respond."
+    },
+    {
+      "time": 2,
+      "observed": "Jonathan says the situation is complicated and he doesn't want to drag Christian into it, but he could use support and resources to get out of the mess.",
+      "belief_before": "Jonathan is in trouble and has been concealing it from Christian.",
+      "belief_update": "Yes—Christian learns Jonathan is willing to accept help and that the trouble is complicated enough that Jonathan fears involving him.",
+      "belief_after": "Jonathan is in serious, complicated trouble and needs Christian's support and resources.",
+      "emotion": "Worried, empathetic, and concerned for Jonathan.",
+      "intention": "To offer help and support Jonathan and help him get out of the mess."
+    },
+    {
+      "time": 3,
+      "observed": "Christian comes to suspect the trouble may involve criminal activity; in response to his question, Jonathan says he can't say for sure, might have gotten involved with the wrong people, but didn't do anything illegal himself.",
+      "belief_before": "Jonathan is in serious, complicated trouble and needs Christian's support; Christian does not yet know whether it is criminal.",
+      "belief_update": "Yes—his suspicion of possible criminal involvement is partially confirmed and refined: Jonathan may have been involved with wrong people but denies illegal actions.",
+      "belief_after": "Jonathan may be entangled with the wrong people and the situation may involve criminal activity, though Jonathan denies doing anything illegal himself.",
+      "emotion": "Conflicted, concerned, and worried.",
+      "intention": "To investigate the matter discreetly without alarming Jonathan and find out what is really going on."
+    },
+    {
+      "time": 4,
+      "observed": "Christian's investigation reveals that Jonathan is being framed; someone is trying to set him up.",
+      "belief_before": "Jonathan may be entangled with wrong people and the situation may involve criminal activity, though Jonathan denies doing anything illegal.",
+      "belief_update": "Yes—his investigation changes his belief from possible entanglement or guilt to Jonathan being framed and innocent.",
+      "belief_after": "Jonathan is being framed; someone is trying to set him up, and Christian needs to prove his innocence.",
+      "emotion": "Determined, protective, and concerned.",
+      "intention": "To gather evidence to clear Jonathan's name and prove his innocence."
+    },
+    {
+      "time": 5,
+      "observed": "Christian discovers or realizes the real culprit is someone close to both him and Jonathan; he tells Jonathan this and says he will confront them.",
+      "belief_before": "Jonathan is being framed, and Christian is gathering evidence to identify the real culprit.",
+      "belief_update": "Yes—he identifies the real culprit as someone close to both him and Jonathan, a trusted person.",
+      "belief_after": "The real culprit behind Jonathan's framing is someone close to both of them and trusted by both; this is a betrayal.",
+      "emotion": "Betrayed, resolute, and likely angry.",
+      "intention": "To confront the real culprit and bring them to justice; ensure the betrayal is punished."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Jonathan admits he was hiding something and says he is in some trouble, and he didn't know how to tell Christian.\",\n    \"belief_before\": \"Jonathan is hiding something important from him; Christian feels anxious and suspicious.\",\n    \"belief_update\": \"Yes—his suspicion is confirmed: Jonathan was hiding that he is in trouble.\",\n    \"belief_after\": \"Jonathan is in some kind of trouble and had been hiding it from Christian.\",\n    \"emotion\": \"Anxious, worried, and concerned; possibly somewhat validated in his suspicion.\",\n    \"intention\": \"To get more details about Jonathan's trouble and decide how to respond.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Jonathan says the situation is complicated and he doesn't want to drag Christian into it, but he could use support and resources to get out of the mess.\",\n    \"belief_before\": \"Jonathan is in trouble and has been concealing it from Christian.\",\n    \"belief_update\": \"Yes—Christian learns Jonathan is willing to accept help and that the trouble is complicated enough that Jonathan fears involving him.\",\n    \"belief_after\": \"Jonathan is in serious, complicated trouble and needs Christian's support and resources.\",\n    \"emotion\": \"Worried, empathetic, and concerned for Jonathan.\",\n    \"intention\": \"To offer help and support Jonathan and help him get out of the mess.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Christian comes to suspect the trouble may involve criminal activity; in response to his question, Jonathan says he can't say for sure, might have gotten involved with the wrong people, but didn't do anything illegal himself.\",\n    \"belief_before\": \"Jonathan is in serious, complicated trouble and needs Christian's support; Christian does not yet know whether it is criminal.\",\n    \"belief_update\": \"Yes—his suspicion of possible criminal involvement is partially confirmed and refined: Jonathan may have been involved with wrong people but denies illegal actions.\",\n    \"belief_after\": \"Jonathan may be entangled with the wrong people and the situation may involve criminal activity, though Jonathan denies doing anything illegal himself.\",\n    \"emotion\": \"Conflicted, concerned, and worried.\",\n    \"intention\": \"To investigate the matter discreetly without alarming Jonathan and find out what is really going on.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Christian's investigation reveals that Jonathan is being framed; someone is trying to set him up.\",\n    \"belief_before\": \"Jonathan may be entangled with wrong people and the situation may involve criminal activity, though Jonathan denies doing anything illegal.\",\n    \"belief_update\": \"Yes—his investigation changes his belief from possible entanglement or guilt to Jonathan being framed and innocent.\",\n    \"belief_after\": \"Jonathan is being framed; someone is trying to set him up, and Christian needs to prove his innocence.\",\n    \"emotion\": \"Determined, protective, and concerned.\",\n    \"intention\": \"To gather evidence to clear Jonathan's name and prove his innocence.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Christian discovers or realizes the real culprit is someone close to both him and Jonathan; he tells Jonathan this and says he will confront them.\",\n    \"belief_before\": \"Jonathan is being framed, and Christian is gathering evidence to identify the real culprit.\",\n    \"belief_update\": \"Yes—he identifies the real culprit as someone close to both him and Jonathan, a trusted person.\",\n    \"belief_after\": \"The real culprit behind Jonathan's framing is someone close to both of them and trusted by both; this is a betrayal.\",\n    \"emotion\": \"Betrayed, resolute, and likely angry.\",\n    \"intention\": \"To confront the real culprit and bring them to justice; ensure the betrayal is punished.\"\n  }\n]",
+  "final_response": "ANSWER: d",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial51"
+}

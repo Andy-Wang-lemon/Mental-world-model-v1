@@ -1,0 +1,204 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "程野",
+  "events": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "stimulus": "程野和苏妍是同公司同级员工，也恋爱三年。两人都很上进，同时竞争一个晋升名额。程野资历更久，也一直承担更多项目。最终领导宣布苏妍晋升，程野落选。散会后，苏妍追上程野说：“我知道你也很想要这个位置，今晚我们还庆祝吗？”",
+      "predicted_action": "拒绝参加庆祝",
+      "probability": 0.41427916360968453,
+      "top_k": [
+        {
+          "text": "拒绝参加庆祝",
+          "probability": 0.41427916360968453
+        },
+        {
+          "text": "离开",
+          "probability": 0.3386738811445341
+        },
+        {
+          "text": "取消餐厅预订",
+          "probability": 0.14811078503301542
+        },
+        {
+          "text": "不回应苏妍继续工作",
+          "probability": 0.09893617021276596
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 6,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "stimulus": "晋升后苏妍开始参与部分管理工作，程野仍留在原岗位。一次重要项目会上，两人意见相反，领导最终采纳苏妍的方案，并让程野配合她推进。散会后苏妍单独问他：“你如果还是觉得我的方案有问题，可以直接跟我说。”",
+      "predicted_action": "不参与方案讨论",
+      "probability": 0.44947339246119733,
+      "top_k": [
+        {
+          "text": "不参与方案讨论",
+          "probability": 0.44947339246119733
+        },
+        {
+          "text": "在协作文档标记需确认并延后交付",
+          "probability": 0.274605044345898
+        },
+        {
+          "text": "提交书面说明要求重新讨论并恢复主导",
+          "probability": 0.22618486696230602
+        },
+        {
+          "text": "回避同行等待对方离开",
+          "probability": 0.04973669623059866
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 7,
+      "historical_branch_count": 4,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "stimulus": "程野之后表现很好，再次进入晋升候选。但领导认为团队已经由苏妍负责，不适合同时晋升两名职责高度重叠的人，让程野再等一年。当天苏妍回家后告诉他：“我可以跟领导说，其实很多事情一直是你在做。”",
+      "predicted_action": "私下向关系近的同事抱怨领导并反复强调自己本该晋升",
+      "probability": 0.25319972986085165,
+      "top_k": [
+        {
+          "text": "私下向关系近的同事抱怨领导并反复强调自己本该晋升",
+          "probability": 0.25319972986085165
+        },
+        {
+          "text": "回避与苏妍的交流",
+          "probability": 0.24881823560132854
+        },
+        {
+          "text": "将工作成果清单交给同事，委托其代向领导说明",
+          "probability": 0.18544205567273642
+        },
+        {
+          "text": "投递外部岗位",
+          "probability": 0.1729590174301918
+        },
+        {
+          "text": "向部门领导发送项目成果",
+          "probability": 0.13958096143489163
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 6,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "stimulus": "一次苏妍负责的项目遇到关键问题，而程野恰好有解决方案。如果项目成功，苏妍很可能再次晋升；如果失败，她的评价会受到影响。深夜苏妍把材料推到程野面前：“这个问题你比我懂，你愿意帮我看看吗？”",
+      "predicted_action": "提出条件后答应帮忙",
+      "probability": 0.35621059526733806,
+      "top_k": [
+        {
+          "text": "提出条件后答应帮忙",
+          "probability": 0.35621059526733806
+        },
+        {
+          "text": "合上材料推回并拒绝当晚处理",
+          "probability": 0.354152678839488
+        },
+        {
+          "text": "翻看材料只标注格式后合上，未给出解决路径",
+          "probability": 0.18668631785802017
+        },
+        {
+          "text": "沉默不回应",
+          "probability": 0.1029504080351538
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 7,
+      "historical_branch_count": 10,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "stimulus": "项目最终成功，苏妍再次成为晋升热门人选。聚餐时领导当众说：“你们两个能力都很强，但苏妍现在确实走得更快。”随后有人开玩笑：“程野，你以后是不是得叫苏妍领导了？”苏妍笑着表示认可。",
+      "predicted_action": "向领导表态配合苏妍工作",
+      "probability": 0.2859041676205371,
+      "top_k": [
+        {
+          "text": "向领导表态配合苏妍工作",
+          "probability": 0.2859041676205371
+        },
+        {
+          "text": "向苏妍敬酒并称呼苏领导",
+          "probability": 0.27323400692392597
+        },
+        {
+          "text": "独自打车离开",
+          "probability": 0.15687768003913624
+        },
+        {
+          "text": "私下抱怨自己未被晋升",
+          "probability": 0.14832292945315187
+        },
+        {
+          "text": "工作中只按苏妍说的执行",
+          "probability": 0.1356612159632487
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 6,
+      "historical_branch_count": 7,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "stimulus": "公司随后提拔苏妍进入更高一级管理层，程野也被划入她负责的团队。一次项目评审中，程野准备了很久的方案被高层质疑，苏妍当场接过讨论，修改了其中几个关键方向，高层随后表示认可。会议结束后，苏妍把修改后的方案发给程野，说：“就按这个版本继续吧，明天你整理好以后发给我。”",
+      "predicted_action": "私下对照并标注苏妍修改后的方案与原版差异",
+      "probability": 0.28255637577105874,
+      "top_k": [
+        {
+          "text": "私下对照并标注苏妍修改后的方案与原版差异",
+          "probability": 0.28255637577105874
+        },
+        {
+          "text": "按苏妍版本整理回传文件且不附补充说明或修订建议",
+          "probability": 0.27695419152593787
+        },
+        {
+          "text": "私下向同事抱怨并宣称原方案应被采纳",
+          "probability": 0.15253663490835226
+        },
+        {
+          "text": "整理并邮件发回方案",
+          "probability": 0.1446051167964405
+        },
+        {
+          "text": "执行修改版时只完成明确要求的修改",
+          "probability": 0.14334768099821057
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 8,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ]
+}

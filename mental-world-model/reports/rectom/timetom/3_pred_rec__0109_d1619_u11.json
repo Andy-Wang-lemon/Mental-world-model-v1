@@ -1,0 +1,120 @@
+{
+  "id": "3_pred_rec__0109_d1619_u11",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets and asks for good drama/thriller movie recommendations.",
+      "belief_before": "No prior knowledge of the seeker's movie tastes; only knows the conversation is beginning.",
+      "belief_update": "The seeker is actively looking for drama/thriller recommendations.",
+      "belief_after": "The seeker wants drama/thriller films, but their specific preferences are still unknown.",
+      "emotion": "Open and ready to help.",
+      "intention": "Acknowledge the request and start learning about the seeker's tastes.",
+      "conversational_goal": "Establish rapport and gather enough information to make useful recommendations."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER reciprocates the greeting and asks how SEEKER is doing.",
+      "belief_before": "The seeker is looking for drama/thriller recommendations and has greeted me.",
+      "belief_update": "I returned the greeting and asked how they are; no new movie preference information was added.",
+      "belief_after": "The seeker is still at the early stage of the conversation; we are building rapport before going deeper.",
+      "emotion": "Friendly and polite.",
+      "intention": "Show warmth and encourage the seeker to continue talking about what they like.",
+      "conversational_goal": "Keep the tone natural and comfortable in the recommendation dialogue."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says they love movies like Double Jeopardy (1999).",
+      "belief_before": "The seeker wants drama/thriller recommendations but has not yet given a specific reference point.",
+      "belief_update": "The seeker likes Double Jeopardy, a crime/legal thriller with wrongful-conviction and suspense elements.",
+      "belief_after": "The seeker's taste includes suspenseful crime thrillers with strong dramatic or legal hooks.",
+      "emotion": "Attentive and encouraged; a concrete preference clue has appeared.",
+      "intention": "Use Double Jeopardy as a calibration point for future suggestions.",
+      "conversational_goal": "Narrow the broad drama/thriller category into a more specific subgenre."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER suggests The Resident (2011) and Nocturnal Animals (2016).",
+      "belief_before": "The seeker likes Double Jeopardy, so similar crime/suspense thrillers may appeal.",
+      "belief_update": "I offered The Resident and Nocturnal Animals; no reaction yet, so their fit is unknown.",
+      "belief_after": "The seeker's reaction to these two titles will reveal more about their tolerance for psychological or stalker-thriller elements.",
+      "emotion": "Thoughtful and engaged.",
+      "intention": "Give the seeker concrete options to respond to.",
+      "conversational_goal": "Generate discussion and refine recommendations based on the seeker's reactions."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER mentions Kiss the Girls, asks whether the Grey's Anatomy stalker-in-room movie is one of the suggestions, and says Nocturnal Animals was confusing.",
+      "belief_before": "I recommended The Resident and Nocturnal Animals; the seeker has not yet responded to them.",
+      "belief_update": "The seeker likes Kiss the Girls, may be asking whether one of my recommendations is the stalker film with the Grey's Anatomy actor, and found Nocturnal Animals confusing.",
+      "belief_after": "The seeker enjoys serial-killer/crime thrillers, but Nocturnal Animals was not a good fit; they may be thinking about The Resident's plot.",
+      "emotion": "Slightly surprised by the Nocturnal Animals reaction, but interested in the Kiss the Girls reference.",
+      "intention": "Track which titles clicked and which missed; prepare to recommend more accessible thrillers.",
+      "conversational_goal": "Acknowledge the response, clarify any title confusion, and adapt to the seeker's preferences."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says they thought Nocturnal Animals was good, then pivots to suggesting The Accountant (2016).",
+      "belief_before": "The seeker liked Kiss the Girls and found Nocturnal Animals confusing.",
+      "belief_update": "I defended Nocturnal Animals and pivoted to The Accountant as a different kind of thriller.",
+      "belief_after": "The seeker may respond better to a more straightforward action/crime thriller than to an arthouse-style psychological thriller.",
+      "emotion": "Defensive but cooperative; wanting to keep the conversation productive.",
+      "intention": "Lightly push back on the Nocturnal Animals criticism, then move on to a safer recommendation.",
+      "conversational_goal": "Keep the seeker interested and uncover another preference data point."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER enthusiastically says The Accountant was a good movie and really good.",
+      "belief_before": "I recommended The Accountant and am waiting to see if it lands.",
+      "belief_update": "The seeker liked The Accountant a lot.",
+      "belief_after": "The seeker responds well to crisp, mainstream crime/action thrillers; this is a stronger fit than Nocturnal Animals.",
+      "emotion": "Pleased and validated.",
+      "intention": "Build on this successful recommendation with another intense but accessible film.",
+      "conversational_goal": "Reinforce the positive dynamic and continue matching the seeker's taste."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER suggests Split (2017), describing it as intense but not as intense as Seven (1995).",
+      "belief_before": "The seeker liked The Accountant; I am looking for another fitting recommendation.",
+      "belief_update": "I suggested Split, noting its intensity relative to Seven; no seeker reaction yet.",
+      "belief_after": "The seeker's response to Split will show whether they enjoy psychological, character-driven thriller intensity.",
+      "emotion": "Enthusiastic and in 'thinking of more titles' mode.",
+      "intention": "Offer a well-known intense thriller while calibrating expectations with a Seven comparison.",
+      "conversational_goal": "Broaden the mix without overwhelming the seeker."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER brings up The Life of David Gale, says it is similar to Seven which they love, and says they have already seen Split.",
+      "belief_before": "I recommended Split and am awaiting the seeker's reaction; I do not yet know the seeker's view of Seven.",
+      "belief_update": "The seeker loves Seven, considers The Life of David Gale a similar murder mystery, and already saw and liked Split.",
+      "belief_after": "The seeker is strongly aligned with Seven-like moral/suspense thrillers; The Life of David Gale is an important new reference point.",
+      "emotion": "Excited and curious; this is a meaningful overlap in taste.",
+      "intention": "Learn more about The Life of David Gale and use it to deepen the recommendation dialogue.",
+      "conversational_goal": "Explore a shared reference point and discover future recommendations from that cluster."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says they have never seen The Life of David Gale and asks who is in it.",
+      "belief_before": "The seeker loves The Life of David Gale and associates it with Seven, which they also love.",
+      "belief_update": "I have not seen The Life of David Gale; I asked who stars in it.",
+      "belief_after": "I know that The Life of David Gale is related to Seven in the seeker's mind; cast details will help me understand it better.",
+      "emotion": "Curious and engaged.",
+      "intention": "Invite the seeker to share more about the film's cast or plot.",
+      "conversational_goal": "Keep the mutual exploration going and extract more information for future recommendations."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets and asks for good drama/thriller movie recommendations.\",\n    \"belief_before\": \"No prior knowledge of the seeker's movie tastes; only knows the conversation is beginning.\",\n    \"belief_update\": \"The seeker is actively looking for drama/thriller recommendations.\",\n    \"belief_after\": \"The seeker wants drama/thriller films, but their specific preferences are still unknown.\",\n    \"emotion\": \"Open and ready to help.\",\n    \"intention\": \"Acknowledge the request and start learning about the seeker's tastes.\",\n    \"conversational_goal\": \"Establish rapport and gather enough information to make useful recommendations.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER reciprocates the greeting and asks how SEEKER is doing.\",\n    \"belief_before\": \"The seeker is looking for drama/thriller recommendations and has greeted me.\",\n    \"belief_update\": \"I returned the greeting and asked how they are; no new movie preference information was added.\",\n    \"belief_after\": \"The seeker is still at the early stage of the conversation; we are building rapport before going deeper.\",\n    \"emotion\": \"Friendly and polite.\",\n    \"intention\": \"Show warmth and encourage the seeker to continue talking about what they like.\",\n    \"conversational_goal\": \"Keep the tone natural and comfortable in the recommendation dialogue.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says they love movies like Double Jeopardy (1999).\",\n    \"belief_before\": \"The seeker wants drama/thriller recommendations but has not yet given a specific reference point.\",\n    \"belief_update\": \"The seeker likes Double Jeopardy, a crime/legal thriller with wrongful-conviction and suspense elements.\",\n    \"belief_after\": \"The seeker's taste includes suspenseful crime thrillers with strong dramatic or legal hooks.\",\n    \"emotion\": \"Attentive and encouraged; a concrete preference clue has appeared.\",\n    \"intention\": \"Use Double Jeopardy as a calibration point for future suggestions.\",\n    \"conversational_goal\": \"Narrow the broad drama/thriller category into a more specific subgenre.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER suggests The Resident (2011) and Nocturnal Animals (2016).\",\n    \"belief_before\": \"The seeker likes Double Jeopardy, so similar crime/suspense thrillers may appeal.\",\n    \"belief_update\": \"I offered The Resident and Nocturnal Animals; no reaction yet, so their fit is unknown.\",\n    \"belief_after\": \"The seeker's reaction to these two titles will reveal more about their tolerance for psychological or stalker-thriller elements.\",\n    \"emotion\": \"Thoughtful and engaged.\",\n    \"intention\": \"Give the seeker concrete options to respond to.\",\n    \"conversational_goal\": \"Generate discussion and refine recommendations based on the seeker's reactions.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER mentions Kiss the Girls, asks whether the Grey's Anatomy stalker-in-room movie is one of the suggestions, and says Nocturnal Animals was confusing.\",\n    \"belief_before\": \"I recommended The Resident and Nocturnal Animals; the seeker has not yet responded to them.\",\n    \"belief_update\": \"The seeker likes Kiss the Girls, may be asking whether one of my recommendations is the stalker film with the Grey's Anatomy actor, and found Nocturnal Animals confusing.\",\n    \"belief_after\": \"The seeker enjoys serial-killer/crime thrillers, but Nocturnal Animals was not a good fit; they may be thinking about The Resident's plot.\",\n    \"emotion\": \"Slightly surprised by the Nocturnal Animals reaction, but interested in the Kiss the Girls reference.\",\n    \"intention\": \"Track which titles clicked and which missed; prepare to recommend more accessible thrillers.\",\n    \"conversational_goal\": \"Acknowledge the response, clarify any title confusion, and adapt to the seeker's preferences.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says they thought Nocturnal Animals was good, then pivots to suggesting The Accountant (2016).\",\n    \"belief_before\": \"The seeker liked Kiss the Girls and found Nocturnal Animals confusing.\",\n    \"belief_update\": \"I defended Nocturnal Animals and pivoted to The Accountant as a different kind of thriller.\",\n    \"belief_after\": \"The seeker may respond better to a more straightforward action/crime thriller than to an arthouse-style psychological thriller.\",\n    \"emotion\": \"Defensive but cooperative; wanting to keep the conversation productive.\",\n    \"intention\": \"Lightly push back on the Nocturnal Animals criticism, then move on to a safer recommendation.\",\n    \"conversational_goal\": \"Keep the seeker interested and uncover another preference data point.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER enthusiastically says The Accountant was a good movie and really good.\",\n    \"belief_before\": \"I recommended The Accountant and am waiting to see if it lands.\",\n    \"belief_update\": \"The seeker liked The Accountant a lot.\",\n    \"belief_after\": \"The seeker responds well to crisp, mainstream crime/action thrillers; this is a stronger fit than Nocturnal Animals.\",\n    \"emotion\": \"Pleased and validated.\",\n    \"intention\": \"Build on this successful recommendation with another intense but accessible film.\",\n    \"conversational_goal\": \"Reinforce the positive dynamic and continue matching the seeker's taste.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER suggests Split (2017), describing it as intense but not as intense as Seven (1995).\",\n    \"belief_before\": \"The seeker liked The Accountant; I am looking for another fitting recommendation.\",\n    \"belief_update\": \"I suggested Split, noting its intensity relative to Seven; no seeker reaction yet.\",\n    \"belief_after\": \"The seeker's response to Split will show whether they enjoy psychological, character-driven thriller intensity.\",\n    \"emotion\": \"Enthusiastic and in 'thinking of more titles' mode.\",\n    \"intention\": \"Offer a well-known intense thriller while calibrating expectations with a Seven comparison.\",\n    \"conversational_goal\": \"Broaden the mix without overwhelming the seeker.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER brings up The Life of David Gale, says it is similar to Seven which they love, and says they have already seen Split.\",\n    \"belief_before\": \"I recommended Split and am awaiting the seeker's reaction; I do not yet know the seeker's view of Seven.\",\n    \"belief_update\": \"The seeker loves Seven, considers The Life of David Gale a similar murder mystery, and already saw and liked Split.\",\n    \"belief_after\": \"The seeker is strongly aligned with Seven-like moral/suspense thrillers; The Life of David Gale is an important new reference point.\",\n    \"emotion\": \"Excited and curious; this is a meaningful overlap in taste.\",\n    \"intention\": \"Learn more about The Life of David Gale and use it to deepen the recommendation dialogue.\",\n    \"conversational_goal\": \"Explore a shared reference point and discover future recommendations from that cluster.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says they have never seen The Life of David Gale and asks who is in it.\",\n    \"belief_before\": \"The seeker loves The Life of David Gale and associates it with Seven, which they also love.\",\n    \"belief_update\": \"I have not seen The Life of David Gale; I asked who stars in it.\",\n    \"belief_after\": \"I know that The Life of David Gale is related to Seven in the seeker's mind; cast details will help me understand it better.\",\n    \"emotion\": \"Curious and engaged.\",\n    \"intention\": \"Invite the seeker to share more about the film's cast or plot.\",\n    \"conversational_goal\": \"Keep the mutual exploration going and extract more information for future recommendations.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

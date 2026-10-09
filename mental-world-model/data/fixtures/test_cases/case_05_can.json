@@ -1,0 +1,27 @@
+{
+  "id": "case_05_can",
+  "description": "「惭」对治「无惭」：对不当言行感到羞耻并欲改正",
+  "yuanwen": "我对自己刚才的不当言行感到羞耻，知道不应如此，并愿意改正。",
+  "mock": {
+    "extraction": {
+      "suoyuan": {"text": "刚才的不当言行"},
+      "xiang": {"text": "不应如此", "has_direct_evidence": true},
+      "si": {"text": "感到羞耻并愿意改正", "has_direct_evidence": true}
+    },
+    "elevated_scores": {
+      "惭": 0.86,
+      "无惭": 0.32
+    },
+    "stage_scores": {
+      "惭": {"ye": 0.74, "xiandai": 0.76, "xiandai_confidence": 0.84},
+      "无惭": {"ye": 0.3, "xiandai": 0.35, "xiandai_confidence": 0.65}
+    },
+    "reconcile": {
+      "惭|无惭": "惭"
+    }
+  },
+  "assertions": {
+    "nonzero_final": ["惭"],
+    "zero_final": ["无惭"]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "4_pred_seeker__0172_d2630_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER greets SEEKER and asks what genre SEEKER likes.",
+      "information_available_to_target": "SEEKER hears only a greeting and a genre-preference question from RECOMMENDER. No genre preference, item context, or recommendation constraint has yet been stated by SEEKER.",
+      "preferences": "SEEKER's genre preferences are not disclosed in this turn and cannot be determined from the dialogue so far.",
+      "belief_before": "SEEKER has no established interpretation of RECOMMENDER's intent within this dialogue.",
+      "belief_update": "The greeting and question indicate that RECOMMENDER wants to know SEEKER's genre preference, likely to guide a recommendation. This is the first turn, so no prior target interpretation is revised.",
+      "belief_after": "SEEKER believes RECOMMENDER is initiating a recommendation interaction and needs SEEKER's genre preference to proceed.",
+      "emotion": "Neutral or mildly curious; no strong emotion is indicated.",
+      "intention": "Likely to respond to RECOMMENDER's question, such as by naming a genre or asking for clarification.",
+      "reaction_to_other": "Receptive and cooperative; no negative cue is present.",
+      "conversational_goal": "Answer the genre question so the recommendation dialogue can move forward toward receiving recommendations.",
+      "changed_previous_interpretation": "No previous target interpretation exists at time 1; this turn establishes the initial context rather than changing an earlier one."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER greets SEEKER and asks what genre SEEKER likes.\",\n    \"information_available_to_target\": \"SEEKER hears only a greeting and a genre-preference question from RECOMMENDER. No genre preference, item context, or recommendation constraint has yet been stated by SEEKER.\",\n    \"preferences\": \"SEEKER's genre preferences are not disclosed in this turn and cannot be determined from the dialogue so far.\",\n    \"belief_before\": \"SEEKER has no established interpretation of RECOMMENDER's intent within this dialogue.\",\n    \"belief_update\": \"The greeting and question indicate that RECOMMENDER wants to know SEEKER's genre preference, likely to guide a recommendation. This is the first turn, so no prior target interpretation is revised.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER is initiating a recommendation interaction and needs SEEKER's genre preference to proceed.\",\n    \"emotion\": \"Neutral or mildly curious; no strong emotion is indicated.\",\n    \"intention\": \"Likely to respond to RECOMMENDER's question, such as by naming a genre or asking for clarification.\",\n    \"reaction_to_other\": \"Receptive and cooperative; no negative cue is present.\",\n    \"conversational_goal\": \"Answer the genre question so the recommendation dialogue can move forward toward receiving recommendations.\",\n    \"changed_previous_interpretation\": \"No previous target interpretation exists at time 1; this turn establishes the initial context rather than changing an earlier one.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

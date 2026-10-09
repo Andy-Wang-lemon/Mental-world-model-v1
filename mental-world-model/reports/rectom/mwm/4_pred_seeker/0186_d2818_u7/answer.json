@@ -1,0 +1,78 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 186,
+  "item_id": "d2818_u7",
+  "dialogue_id": "2818",
+  "utterance_pos": 7,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 此刻的经验里，RECOMMENDER 的“What movie genres are you interested in?”不是一条可随意搁置的信息询问，而像是对“我是谁”的探问：电影类型被对象化为一种自己身上必有、且可单一指认的固定属性，因此这个问题指向一个必须被找出的确定答案。RECOMMENDER 随后提到 Bright（2017）与 Star Wars: Episode VIII – The Last Jedi（2017），也被收进这个背景，成为那个需要与自己本质偏好相对应的类型场中的参照，而非与己无关的闲谈。",
+        "probability": 0.4104
+      },
+      {
+        "content": "在 SEEKER 此刻的经验里，RECOMMENDER 关于 Bright（2017）“I thought Bright (2017) was really good”以及“I saw Star Wars: Episode VIII – The Last Jedi (2017)”的陈述，不只是对方在看什么，而是已经落在自己的品味立场旁边：影片好坏与是否看过，都被取为与“我这边”的评价权相关，不能完全当作与我无关的信息。与此同时，“What movie genres are you interested in?”仍被理解为要求一个固定、单一的类型归属，于是 RECOMMENDER 的影片陈述像在预先占位，使 SEEKER 的品味立场被对象化为一个需要与这些评价并置、区分的确定位置。",
+        "probability": 0.3207
+      },
+      {
+        "content": "在 SEEKER 此刻的经验里，RECOMMENDER 说出“Good evening!”并询问“What movie genres are you interested in?”，这让 SEEKER 处于“正在被 RECOMMENDER 询问、被邀请进入电影话题”的位置；SEEKER 把这个位置体验为与自己分不开的对话身份，于是“我应当以我的方式承接这个问题”成为自我侧的事。由于“电影类型”被执为一种人必有、可单一指认的固定属性，这个问题所指向的不是可流动、可多选或可不确定的偏好，而是一个能匹配这一被询问位置的明确类型。随后 RECOMMENDER 关于 Bright (2017) 和 Star Wars: Episode VIII – The Last Jedi (2017) 的陈述，则被经验为这个被邀请进入的话题场本身。",
+        "probability": 0.2689
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这个问题一落进来，就不太像只是问片单：它像要我从自己身上找出一个能代表我的电影类型。我一边觉得自己并没有一个固定类型，一边又感到若答不出一个单一名字，仿佛就说明我连自己是谁都不清楚。Bright 和 Star Wars 被提出来之后，我也没把它们当成无关闲谈，而是顺手套进这个类型场里对照：它们算哪一路，和我最初想找的“值得看的新片”是不是同一回事。这样一对照，“我各种都看”并不是敷衍，而是我此刻最贴近真实的整理；只是它和那个要求单一确定的回答之间还拧着——我想给出一个确定类型，却发现自己身上更像是随片而动的口味，而不是一个能被一句话钉死的属性。",
+        "activation": 0.4408
+      },
+      {
+        "content": "SEEKER 心里把 RECOMMENDER 说 Bright 好、又看了 Star Wars 这件事，不当作单纯片单信息，而像对方先把自己的口味位置摆出来；那句“没听说过”让 SEEKER 觉得自己的评价权被碰到，既不愿被当成没看过就没资格评，也不想顺势承认那套好评。可对方问的是类型，SEEKER 又感到像是在要求一个固定、单一的类型归属，于是更想把“我各种都看”当作自己的立场：不是没有类型，而是不让类型被钉成一个标签，也不让 Bright 或 Star Wars 的好赖替自己这边先定位置。",
+        "activation": 0.3048
+      },
+      {
+        "content": "他把我放进一个被询问、被邀请进电影话题的位置，这位置好像就该由我接住。问喜欢什么类型时，我本想给出一个明确类型，可心里并不觉得自己的偏好能被单独一类型框住；我看片很杂，儿童片接着恐怖片也行。对 Bright 那部我没什么印象，但不想因此把话题推开，更想让他知道我是各种都能看的人。",
+        "activation": 0.2544
+      }
+    ],
+    "observed_action": "SEEKER 询问是否有新的值得看的电影；SEEKER 说从没听说过那部；SEEKER 说很喜欢各种类型的电影，会看一部儿童片，接着看一部恐怖片。",
+    "predicted_actions": [
+      {
+        "content": "表明类型偏好",
+        "probability": 0.3385
+      },
+      {
+        "content": "请求推荐新片",
+        "probability": 0.281
+      },
+      {
+        "content": "询问影片类型归属",
+        "probability": 0.2661
+      },
+      {
+        "content": "接受推荐",
+        "probability": 0.1145
+      }
+    ]
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "option_scores": {
+    "a": 0.1145,
+    "b": 0.3385,
+    "c": 0.281,
+    "d": 0
+  },
+  "score_reason": "A 0.1145 = 接受推荐 0.1145；B 0.3385 = 表明类型偏好 0.3385；C 0.2810 = 请求推荐新片 0.2810；D 0.0000。Accepting a recommendation is feedback, stating genre preference adds preference info, and requesting a new movie is a recommendation request.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The predicted next actions mention genre preference, asking for recommendations, genre classification, or accepting recommendations, none of which directly states giving feedback on the previously recommended movie or suggestion.",
+  "audit_level": "inferred"
+}

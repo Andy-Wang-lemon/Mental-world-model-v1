@@ -1,0 +1,79 @@
+{
+  "id": "3_pred_rec__0118_d1941_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender initiates the dialogue with a greeting and asks whether the seeker has seen Star Wars: The Last Jedi.",
+      "belief_before": "The dialogue is starting; the recommender has no established knowledge of the seeker's movie preferences yet.",
+      "belief_update": "No new information from the seeker yet; the recommender's opener is intended to elicit an initial response.",
+      "belief_after": "The recommender is still uncertain about the seeker's taste, but is trying to start a conversation around a well-known popular film.",
+      "emotion": "Friendly, polite, and neutral-positive.",
+      "intention": "To greet the seeker and ask about a well-known movie to begin the recommendation process.",
+      "conversational_goal": "To open the recommendation dialogue and gather initial information about the seeker's viewing history."
+    },
+    {
+      "time": 2,
+      "observed": "The seeker says hello, has not seen Star Wars, and explicitly asks for a good thriller/suspense movie.",
+      "belief_before": "The recommender thought Star Wars might be a useful opening topic, but did not know the seeker's genre preferences.",
+      "belief_update": "The seeker has not seen Star Wars and wants a thriller/suspense film, so Star Wars is not a relevant recommendation.",
+      "belief_after": "The user's explicit preference is thriller/suspense; future suggestions should focus on that genre.",
+      "emotion": "Attentive and recalibrating; ready to adapt to the seeker's stated interest.",
+      "intention": "To abandon the Star Wars line and identify a thriller/suspense movie to recommend.",
+      "conversational_goal": "To use the newly stated genre preference to narrow down a suitable recommendation."
+    },
+    {
+      "time": 3,
+      "observed": "The recommender asks whether the seeker has seen Split (2017).",
+      "belief_before": "The seeker wants a thriller/suspense movie, so the recommender needs a suitable candidate.",
+      "belief_update": "No new information from the seeker; the recommender offers Split as a candidate because it fits the thriller/suspense space.",
+      "belief_after": "Split (2017) may match the seeker's taste, but it is not yet known whether they have seen it.",
+      "emotion": "Engaged and optimistic about the potential match.",
+      "intention": "To propose Split and find out whether the seeker has already seen it.",
+      "conversational_goal": "To test a specific thriller/suspense candidate and keep narrowing the recommendation space."
+    },
+    {
+      "time": 4,
+      "observed": "The seeker mentions Gone Baby Gone as an example of what they want and says 'Yea I watched that one and it was good!' — likely confirming they have seen and liked Split.",
+      "belief_before": "The recommender had proposed Split and was waiting to learn whether the seeker had seen it.",
+      "belief_update": "The seeker likes Gone Baby Gone as a model for future recommendations and appears to have seen and enjoyed Split as well.",
+      "belief_after": "The user's taste leans toward crime/psychological thrillers like Gone Baby Gone and likely Split; the next recommendation should resemble these.",
+      "emotion": "Pleased and more confident about the seeker's preferences.",
+      "intention": "To find another movie similar to Gone Baby Gone and/or Split that the seeker has not seen.",
+      "conversational_goal": "To refine the user preference model and select a more targeted recommendation."
+    },
+    {
+      "time": 5,
+      "observed": "The recommender states that Don't Breathe (2016) was good also.",
+      "belief_before": "The seeker enjoys Gone Baby Gone and likely Split, so a similar thriller would be a good follow-up.",
+      "belief_update": "No new seeker input; the recommender introduces Don't Breathe as another strong thriller option.",
+      "belief_after": "Don't Breathe (2016) is a plausible next recommendation that fits the user's demonstrated taste.",
+      "emotion": "Confident, helpful, and enthusiastic about the recommendation.",
+      "intention": "To recommend Don't Breathe as another good movie in the same vein.",
+      "conversational_goal": "To present a concrete candidate and elicit the seeker's reaction."
+    },
+    {
+      "time": 6,
+      "observed": "The seeker says they really liked it, indicates they have not seen Don't Breathe yet, and asks what it is about.",
+      "belief_before": "The recommender had just suggested Don't Breathe and did not yet know whether the seeker had seen it.",
+      "belief_update": "The seeker has not seen Don't Breathe but is interested enough to ask for details; their earlier positive reaction reinforces that the recommendation style is on target.",
+      "belief_after": "Don't Breathe is still an unseen candidate for the user; explaining its plot may help them decide if it matches their taste.",
+      "emotion": "Positive, encouraged, and ready to provide more information.",
+      "intention": "To describe Don't Breathe's plot and see if it sounds appealing to the seeker.",
+      "conversational_goal": "To answer the seeker's question and continue moving toward a satisfying recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender initiates the dialogue with a greeting and asks whether the seeker has seen Star Wars: The Last Jedi.\",\n    \"belief_before\": \"The dialogue is starting; the recommender has no established knowledge of the seeker's movie preferences yet.\",\n    \"belief_update\": \"No new information from the seeker yet; the recommender's opener is intended to elicit an initial response.\",\n    \"belief_after\": \"The recommender is still uncertain about the seeker's taste, but is trying to start a conversation around a well-known popular film.\",\n    \"emotion\": \"Friendly, polite, and neutral-positive.\",\n    \"intention\": \"To greet the seeker and ask about a well-known movie to begin the recommendation process.\",\n    \"conversational_goal\": \"To open the recommendation dialogue and gather initial information about the seeker's viewing history.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"The seeker says hello, has not seen Star Wars, and explicitly asks for a good thriller/suspense movie.\",\n    \"belief_before\": \"The recommender thought Star Wars might be a useful opening topic, but did not know the seeker's genre preferences.\",\n    \"belief_update\": \"The seeker has not seen Star Wars and wants a thriller/suspense film, so Star Wars is not a relevant recommendation.\",\n    \"belief_after\": \"The user's explicit preference is thriller/suspense; future suggestions should focus on that genre.\",\n    \"emotion\": \"Attentive and recalibrating; ready to adapt to the seeker's stated interest.\",\n    \"intention\": \"To abandon the Star Wars line and identify a thriller/suspense movie to recommend.\",\n    \"conversational_goal\": \"To use the newly stated genre preference to narrow down a suitable recommendation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"The recommender asks whether the seeker has seen Split (2017).\",\n    \"belief_before\": \"The seeker wants a thriller/suspense movie, so the recommender needs a suitable candidate.\",\n    \"belief_update\": \"No new information from the seeker; the recommender offers Split as a candidate because it fits the thriller/suspense space.\",\n    \"belief_after\": \"Split (2017) may match the seeker's taste, but it is not yet known whether they have seen it.\",\n    \"emotion\": \"Engaged and optimistic about the potential match.\",\n    \"intention\": \"To propose Split and find out whether the seeker has already seen it.\",\n    \"conversational_goal\": \"To test a specific thriller/suspense candidate and keep narrowing the recommendation space.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"The seeker mentions Gone Baby Gone as an example of what they want and says 'Yea I watched that one and it was good!' — likely confirming they have seen and liked Split.\",\n    \"belief_before\": \"The recommender had proposed Split and was waiting to learn whether the seeker had seen it.\",\n    \"belief_update\": \"The seeker likes Gone Baby Gone as a model for future recommendations and appears to have seen and enjoyed Split as well.\",\n    \"belief_after\": \"The user's taste leans toward crime/psychological thrillers like Gone Baby Gone and likely Split; the next recommendation should resemble these.\",\n    \"emotion\": \"Pleased and more confident about the seeker's preferences.\",\n    \"intention\": \"To find another movie similar to Gone Baby Gone and/or Split that the seeker has not seen.\",\n    \"conversational_goal\": \"To refine the user preference model and select a more targeted recommendation.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"The recommender states that Don't Breathe (2016) was good also.\",\n    \"belief_before\": \"The seeker enjoys Gone Baby Gone and likely Split, so a similar thriller would be a good follow-up.\",\n    \"belief_update\": \"No new seeker input; the recommender introduces Don't Breathe as another strong thriller option.\",\n    \"belief_after\": \"Don't Breathe (2016) is a plausible next recommendation that fits the user's demonstrated taste.\",\n    \"emotion\": \"Confident, helpful, and enthusiastic about the recommendation.\",\n    \"intention\": \"To recommend Don't Breathe as another good movie in the same vein.\",\n    \"conversational_goal\": \"To present a concrete candidate and elicit the seeker's reaction.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"The seeker says they really liked it, indicates they have not seen Don't Breathe yet, and asks what it is about.\",\n    \"belief_before\": \"The recommender had just suggested Don't Breathe and did not yet know whether the seeker had seen it.\",\n    \"belief_update\": \"The seeker has not seen Don't Breathe but is interested enough to ask for details; their earlier positive reaction reinforces that the recommendation style is on target.\",\n    \"belief_after\": \"Don't Breathe is still an unseen candidate for the user; explaining its plot may help them decide if it matches their taste.\",\n    \"emotion\": \"Positive, encouraged, and ready to provide more information.\",\n    \"intention\": \"To describe Don't Breathe's plot and see if it sounds appealing to the seeker.\",\n    \"conversational_goal\": \"To answer the seeker's question and continue moving toward a satisfying recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0128_d1998_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: \"Hey how's it going?...What type of movies are you looking for?\"",
+      "information_available": "Recommender has only the initial recommendation-dialogue context and their own greeting/question. No seeker preferences have been stated yet.",
+      "preferences": "Unknown; the seeker's movie preferences are not yet available.",
+      "belief_before": "Recommender has no specific beliefs about the seeker's movie tastes; likely assumes the seeker wants a movie recommendation.",
+      "belief_update": "No new information from the other speaker yet; recommender's own question does not add preference information.",
+      "belief_after": "The seeker's movie type and preferences remain unknown; recommender is waiting for a response.",
+      "emotion": "Friendly, helpful, neutral-positive.",
+      "intention": "Open the conversation and elicit the seeker's movie genre or type.",
+      "reaction_to_other": "Not applicable; no prior other-speaker turn has occurred.",
+      "conversational_goal": "Ask for enough information to begin making a movie recommendation.",
+      "changes_previous_interpretation": "Not applicable; no previous interpretation exists yet."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: \"It's going well, thank you for asking. I am looking for some good comedy movies, do you think you could help?...Some of my favorite movies are Bridesmaids (2011) and Superbad (2007)\"",
+      "information_available": "Recommender now knows the seeker is doing well, wants comedy movies, is asking for help, and likes Bridesmaids (2011) and Superbad (2007).",
+      "preferences": "Seeker prefers comedy movies and has named Bridesmaids (2011) and Superbad (2007) as favorites; this suggests a likely interest in similar comedy styles.",
+      "belief_before": "Recommender believed the seeker wanted a movie recommendation but did not know the genre or taste.",
+      "belief_update": "Recommender learns the seeker specifically wants comedy recommendations and likes Bridesmaids (2011) and Superbad (2007).",
+      "belief_after": "Recommender believes the seeker is looking for good comedy movies, likely similar to the stated favorites, and can tailor recommendations accordingly.",
+      "emotion": "Positive, engaged, and helpful; likely encouraged by the clear answer.",
+      "intention": "Use the stated comedy preference and favorite examples to recommend suitable comedy movies.",
+      "reaction_to_other": "Acknowledges the seeker's friendly response and appreciates the clear genre and example preferences.",
+      "conversational_goal": "Provide relevant comedy recommendations or narrow the comedy options further if needed.",
+      "changes_previous_interpretation": "Yes; the prior unknown genre becomes comedy, and concrete preference signals are now available."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: \\\"Hey how's it going?...What type of movies are you looking for?\\\"\",\n    \"information_available\": \"Recommender has only the initial recommendation-dialogue context and their own greeting/question. No seeker preferences have been stated yet.\",\n    \"preferences\": \"Unknown; the seeker's movie preferences are not yet available.\",\n    \"belief_before\": \"Recommender has no specific beliefs about the seeker's movie tastes; likely assumes the seeker wants a movie recommendation.\",\n    \"belief_update\": \"No new information from the other speaker yet; recommender's own question does not add preference information.\",\n    \"belief_after\": \"The seeker's movie type and preferences remain unknown; recommender is waiting for a response.\",\n    \"emotion\": \"Friendly, helpful, neutral-positive.\",\n    \"intention\": \"Open the conversation and elicit the seeker's movie genre or type.\",\n    \"reaction_to_other\": \"Not applicable; no prior other-speaker turn has occurred.\",\n    \"conversational_goal\": \"Ask for enough information to begin making a movie recommendation.\",\n    \"changes_previous_interpretation\": \"Not applicable; no previous interpretation exists yet.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: \\\"It's going well, thank you for asking. I am looking for some good comedy movies, do you think you could help?...Some of my favorite movies are Bridesmaids (2011) and Superbad (2007)\\\"\",\n    \"information_available\": \"Recommender now knows the seeker is doing well, wants comedy movies, is asking for help, and likes Bridesmaids (2011) and Superbad (2007).\",\n    \"preferences\": \"Seeker prefers comedy movies and has named Bridesmaids (2011) and Superbad (2007) as favorites; this suggests a likely interest in similar comedy styles.\",\n    \"belief_before\": \"Recommender believed the seeker wanted a movie recommendation but did not know the genre or taste.\",\n    \"belief_update\": \"Recommender learns the seeker specifically wants comedy recommendations and likes Bridesmaids (2011) and Superbad (2007).\",\n    \"belief_after\": \"Recommender believes the seeker is looking for good comedy movies, likely similar to the stated favorites, and can tailor recommendations accordingly.\",\n    \"emotion\": \"Positive, engaged, and helpful; likely encouraged by the clear answer.\",\n    \"intention\": \"Use the stated comedy preference and favorite examples to recommend suitable comedy movies.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's friendly response and appreciates the clear genre and example preferences.\",\n    \"conversational_goal\": \"Provide relevant comedy recommendations or narrow the comedy options further if needed.\",\n    \"changes_previous_interpretation\": \"Yes; the prior unknown genre becomes comedy, and concrete preference signals are now available.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

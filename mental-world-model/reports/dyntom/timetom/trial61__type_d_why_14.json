@@ -1,0 +1,61 @@
+{
+  "id": "trial61__type_d_why_14",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Keith Ndiaye",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Elizabeth tells Keith she is not upset with him; she is dealing with personal stuff and apologizes if she seemed short.",
+      "belief_before": "Keith believes Elizabeth might be upset with him, possibly due to a misunderstanding or an unknown mistake he made.",
+      "belief_update": "Learns that Elizabeth's curtness is not caused by anger toward him but by personal stress.",
+      "belief_after": "Elizabeth is not angry with him; she is dealing with personal issues.",
+      "emotion": "Relieved and concerned/sympathetic",
+      "intention": "Be supportive and offer to listen if Elizabeth wants to talk."
+    },
+    {
+      "time": 2,
+      "observed": "Keith offers support and suggests a coffee break; Elizabeth accepts and thanks him.",
+      "belief_before": "Elizabeth is not upset with him; she is dealing with personal stress and may appreciate support.",
+      "belief_update": "Elizabeth welcomes his offer of support and accepts a coffee break.",
+      "belief_after": "Elizabeth is open to his support and willing to spend time with him.",
+      "emotion": "Sympathetic and pleased/encouraged",
+      "intention": "Provide support during the coffee break and listen to Elizabeth."
+    },
+    {
+      "time": 3,
+      "observed": "Over coffee, Elizabeth shares more about her stresses, which seem severe. Keith suggests professional help; Elizabeth says she has thought about it but is hesitant.",
+      "belief_before": "Elizabeth is dealing with personal stress and has accepted his support.",
+      "belief_update": "Her stress seems severe; professional help might benefit her, but she is hesitant about seeking it.",
+      "belief_after": "Elizabeth may need professional help, but she is not ready or is unsure; the topic needs care.",
+      "emotion": "Concerned and uncertain/apprehensive",
+      "intention": "Continue supporting Elizabeth and gently encourage professional help without pressuring her."
+    },
+    {
+      "time": 4,
+      "observed": "Keith notices Elizabeth become slightly withdrawn after his suggestion and worries he may have embarrassed her. He apologizes; Elizabeth says he did not overstep, appreciates his concern, and says it is a lot to think about.",
+      "belief_before": "Elizabeth is hesitant about professional help, and the topic may be sensitive for her.",
+      "belief_update": "He first interprets her withdrawal as possible embarrassment, but Elizabeth reassures him that he did not overstep and that she appreciates his concern.",
+      "belief_after": "Elizabeth is not offended; she values his concern, but the professional-help topic is still heavy for her to process.",
+      "emotion": "Regretful/concerned, then relieved",
+      "intention": "Reassure Elizabeth of his support and avoid pushing the professional-help suggestion."
+    },
+    {
+      "time": 5,
+      "observed": "Elizabeth seems more open and appreciative. She thanks Keith and says his support means a lot and makes her feel better knowing she has it.",
+      "belief_before": "Elizabeth is not offended; she appreciates his concern but is still processing a heavy issue.",
+      "belief_update": "Elizabeth values his support, feels more comfortable around him, and feels better knowing he is there.",
+      "belief_after": "Elizabeth values and benefits from his support; they have a supportive relationship.",
+      "emotion": "Glad, relieved, and warm",
+      "intention": "Maintain the supportive relationship and remain available for chats or breaks together."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Elizabeth tells Keith she is not upset with him; she is dealing with personal stuff and apologizes if she seemed short.\",\n    \"belief_before\": \"Keith believes Elizabeth might be upset with him, possibly due to a misunderstanding or an unknown mistake he made.\",\n    \"belief_update\": \"Learns that Elizabeth's curtness is not caused by anger toward him but by personal stress.\",\n    \"belief_after\": \"Elizabeth is not angry with him; she is dealing with personal issues.\",\n    \"emotion\": \"Relieved and concerned/sympathetic\",\n    \"intention\": \"Be supportive and offer to listen if Elizabeth wants to talk.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Keith offers support and suggests a coffee break; Elizabeth accepts and thanks him.\",\n    \"belief_before\": \"Elizabeth is not upset with him; she is dealing with personal stress and may appreciate support.\",\n    \"belief_update\": \"Elizabeth welcomes his offer of support and accepts a coffee break.\",\n    \"belief_after\": \"Elizabeth is open to his support and willing to spend time with him.\",\n    \"emotion\": \"Sympathetic and pleased/encouraged\",\n    \"intention\": \"Provide support during the coffee break and listen to Elizabeth.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Over coffee, Elizabeth shares more about her stresses, which seem severe. Keith suggests professional help; Elizabeth says she has thought about it but is hesitant.\",\n    \"belief_before\": \"Elizabeth is dealing with personal stress and has accepted his support.\",\n    \"belief_update\": \"Her stress seems severe; professional help might benefit her, but she is hesitant about seeking it.\",\n    \"belief_after\": \"Elizabeth may need professional help, but she is not ready or is unsure; the topic needs care.\",\n    \"emotion\": \"Concerned and uncertain/apprehensive\",\n    \"intention\": \"Continue supporting Elizabeth and gently encourage professional help without pressuring her.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Keith notices Elizabeth become slightly withdrawn after his suggestion and worries he may have embarrassed her. He apologizes; Elizabeth says he did not overstep, appreciates his concern, and says it is a lot to think about.\",\n    \"belief_before\": \"Elizabeth is hesitant about professional help, and the topic may be sensitive for her.\",\n    \"belief_update\": \"He first interprets her withdrawal as possible embarrassment, but Elizabeth reassures him that he did not overstep and that she appreciates his concern.\",\n    \"belief_after\": \"Elizabeth is not offended; she values his concern, but the professional-help topic is still heavy for her to process.\",\n    \"emotion\": \"Regretful/concerned, then relieved\",\n    \"intention\": \"Reassure Elizabeth of his support and avoid pushing the professional-help suggestion.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Elizabeth seems more open and appreciative. She thanks Keith and says his support means a lot and makes her feel better knowing she has it.\",\n    \"belief_before\": \"Elizabeth is not offended; she appreciates his concern but is still processing a heavy issue.\",\n    \"belief_update\": \"Elizabeth values his support, feels more comfortable around him, and feels better knowing he is there.\",\n    \"belief_after\": \"Elizabeth values and benefits from his support; they have a supportive relationship.\",\n    \"emotion\": \"Glad, relieved, and warm\",\n    \"intention\": \"Maintain the supportive relationship and remain available for chats or breaks together.\"\n  }\n]",
+  "final_response": "ANSWER: c",
+  "prediction": "c",
+  "gold": "m",
+  "correct": false,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial61"
+}

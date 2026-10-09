@@ -1,0 +1,834 @@
+{
+  "events": [
+    {
+      "focus_person": "林夏",
+      "yuanwen": "几个月后，林夏和几个共同朋友吃饭。聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。",
+      "stimulus_text": "几个月后，林夏和几个共同朋友吃饭。聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。",
+      "stimulus_action_split": {
+        "stimulus_text": "几个月后，林夏和几个共同朋友吃饭。聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "林夏",
+          "几个共同朋友",
+          "一个朋友",
+          "许宁"
+        ],
+        "action": "聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。",
+        "object": "林夏及在场共同朋友",
+        "scene": "餐厅饭局",
+        "outcome_changes": [
+          "朋友关于许宁和程浩前两天单独吃饭的陈述在饭局中被说出",
+          "许宁推门进入餐厅，出现在同一饭局现场"
+        ],
+        "role_changes": [],
+        "relationship_changes": [],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "林夏把许宁放在“我这边”，因此朋友说出“许宁和程浩单独吃饭”时，这不能被当成与林夏无关的两人私事。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "林夏把“许宁对我透明、有事我先知道”当成关系中不可分割的一部分，所以是共同朋友在饭局先说出许宁与程浩单独吃饭，而不是许宁自己告知。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "林夏把程浩仍划在自己需要掌握的关系范围里，许宁与程浩单独接触会触及“这仍是我的事”的边界。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "林夏把共同朋友饭局中“许宁站在我这边、大家替我留意”的圈子位置当成自己的一部分，朋友当众说出许宁和程浩单独吃饭使这个位置不能与我无关。",
+          "confidence": 0.65,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "林夏理解“长期在我阵营的朋友”理应与我同一阵线，不能和我的前任单独见面；朋友看到许宁与程浩单独吃饭就落在这一固定关系规则之外。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "林夏认为许宁与程浩之间的任何接触都应先经我知道、不能私下发生；朋友说出两人单独吃饭而此前没有由许宁告知，正触碰这条固定规则。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "林夏认为分手后程浩仍属于“我这边”的旧关系事务，许宁没有独立介入的位置；许宁和程浩单独吃饭因此被执为越界。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "林夏把朋友在饭局中突然提到许宁与程浩单独吃饭理解成对自己发出的提醒或预警，而非普通闲谈。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f5",
+          "text": "林夏把许宁此刻推门进入餐厅执为与刚听到的单独吃饭必有联系，不能只是无关巧合。",
+          "confidence": 0.65,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.34798534798534797,
+          "alambana_prior_probability": 0.34798534798534797,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3296703296703297,
+          "alambana_prior_probability": 0.3296703296703297,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5760000000000002
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.32234432234432236,
+          "alambana_prior_probability": 0.32234432234432236,
+          "activation_alignment": 0.88,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5632000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在林夏的经验里，朋友那句“前两天好像看到许宁和程浩单独吃饭”不是一条普通消息，而是把一件本应先由许宁对我说的事，作为已经发生、且绕过我的事实，从饭局外部先递到我面前；许宁随后推门进来，使这个没有先经我告知的对象与许宁本人同时在场。林夏此刻所缘的，是一个“许宁对我透明、有事我先知道”被绕开的对象化世界：许宁与程浩的接触本应先进入我的知情范围、本不应私下发生，现在却由共同朋友在饭局先说出，许宁的出现只让这条固定规则被触碰得更清楚。",
+          "prior_probability": 0.34798534798534797,
+          "posterior_probability": 0.34798534798534797,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "未添加当前客观刺激之外的他人言行或事实；“本应先由许宁告知”“许宁对我透明”等是林夏的主观规则/解释，不是伪造事实。同时保留了朋友说出许宁与程浩单独吃饭、许宁随后推门进入餐厅这两个核心变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "林夏把许宁放在“我这边”，因此当朋友突然说出许宁和程浩前两天单独吃饭、聊得挺严肃时，这件事在林夏那里不能被当成与林夏无关的两人私事，而是直接落在“长期在我阵营的朋友理应与我同一阵线，不能和程浩单独见面”这条固定关系规则之外；许宁推门进入餐厅，使朋友说出的那个单独吃饭画面与许宁本人在同一饭局现场同时出现。林夏此刻经验到的对象，是一个阵营边界被穿过、而许宁又站在眼前的关系结构。",
+          "prior_probability": 0.3296703296703297,
+          "posterior_probability": 0.3296703296703297,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5760000000000002,
+          "activation_alignment": 0.9,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的阵营、规则与边界属于林夏的主观解释，未添加客观刺激中不存在的他人言行；保留了朋友说出许宁与程浩单独吃饭、许宁推门进入餐厅这两个核心变化。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在林夏那里，朋友在饭局先说出许宁和程浩单独吃饭，而不是许宁自己告知，使许宁与程浩的接触以“没有先进入我的知情范围”的方式被对象化；林夏把长期在我阵营的朋友理应与我同一阵线、不能和被我划出阵线边界的人单独见面当成固定规则，因此朋友这句话又把许宁与程浩单独吃饭放在这一规则之外。许宁推门进入餐厅，则把这个由朋友先抛出的越界画面与她本人一起放进当前饭局。林夏此刻所缘的，是一个双重规则被触碰的世界：许宁与程浩的接触本应先由许宁让我知道，也本不应越过我这边朋友与阵线边界之间的界限，而现在它先由共同朋友说出，再由许宁在场承接。",
+          "prior_probability": 0.32234432234432236,
+          "posterior_probability": 0.32234432234432236,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5632000000000001,
+          "activation_alignment": 0.88,
+          "grounding_valid": true,
+          "grounding_reason": "“本应先由许宁告知”“越界”等属于林夏主观规则化理解，不是伪造他人言行或事实；保留了朋友先说出许宁与程浩单独吃饭、许宁随后进入同一饭局现场的关键变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.34798534798534797,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在林夏的经验里，朋友那句“前两天好像看到许宁和程浩单独吃饭”不是一条普通消息，而是把一件本应先由许宁对我说的事，作为已经发生、且绕过我的事实，从饭局外部先递到我面前；许宁随后推门进来，使这个没有先经我告知的对象与许宁本人同时在场。林夏此刻所缘的，是一个“许宁对我透明、有事我先知道”被绕开的对象化世界：许宁与程浩的接触本应先进入我的知情范围、本不应私下发生，现在却由共同朋友在饭局先说出，许宁的出现只让这条固定规则被触碰得更清楚。",
+            "prior_probability": 0.34798534798534797,
+            "posterior_probability": 0.34798534798534797,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "未添加当前客观刺激之外的他人言行或事实；“本应先由许宁告知”“许宁对我透明”等是林夏的主观规则/解释，不是伪造事实。同时保留了朋友说出许宁与程浩单独吃饭、许宁随后推门进入餐厅这两个核心变化。"
+          },
+          "xiang": {
+            "text": "在此所缘下：在林夏的经验里，朋友那句“前两天好像看到许宁和程浩单独吃饭”不是一条普通消息，而是把一件本应先由许宁对我说的事，作为已经发生、且绕过我的事实，从饭局外部先递到我面前；许宁随后推门进来，使这个没有先经我告知的对象与许宁本人同时在场。林夏此刻所缘的，是一个“许宁对我透明、有事我先知道”被绕开的对象化世界：许宁与程浩的接触本应先进入我的知情范围、本不应私下发生，现在却由共同朋友在饭局先说出，许宁的出现只让这条固定规则被触碰得更清楚。",
+            "source": "推理",
+            "confidence": 0.4
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "无明": 0.8159789689600634,
+            "瞋": 0.47730863648345856,
+            "慢": 0.2613326018189008,
+            "精进": 0.026451433372874658,
+            "掉举": 0.42685086463687893,
+            "愧": 0.011902860155529195,
+            "覆": 0.04819540826413603,
+            "忿": 0.3693164244760775,
+            "不信": 0.023560300514037166,
+            "无愧": 0.021968139580862002,
+            "恨": 0.18959709041781997,
+            "不正知": 0.5196157654540662,
+            "嫉": 0.010307631474891261,
+            "不放逸": 0.027348092131277184,
+            "疑": 0.31208796955318313,
+            "贪": 0.7427341109793069,
+            "悭": 0.023069460919994726,
+            "放逸": 0.04882852247265058,
+            "恶见": 0.37767192071965205,
+            "惭": 0.009414916963226572,
+            "不害": 0.03381559246078819
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "问许宁",
+              "probability": 0.58,
+              "supporting_mental_factors": [
+                "无明",
+                "贪",
+                "不正知",
+                "瞋",
+                "忿",
+                "恶见",
+                "慢"
+              ]
+            },
+            {
+              "text": "问朋友",
+              "probability": 0.24,
+              "supporting_mental_factors": [
+                "无明",
+                "不正知",
+                "疑",
+                "掉举",
+                "贪"
+              ]
+            },
+            {
+              "text": "沉默不回应",
+              "probability": 0.18,
+              "supporting_mental_factors": [
+                "掉举",
+                "疑",
+                "慢",
+                "覆",
+                "恨"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.3296703296703297,
+          "alambana": {
+            "id": "O_C2",
+            "text": "林夏把许宁放在“我这边”，因此当朋友突然说出许宁和程浩前两天单独吃饭、聊得挺严肃时，这件事在林夏那里不能被当成与林夏无关的两人私事，而是直接落在“长期在我阵营的朋友理应与我同一阵线，不能和程浩单独见面”这条固定关系规则之外；许宁推门进入餐厅，使朋友说出的那个单独吃饭画面与许宁本人在同一饭局现场同时出现。林夏此刻经验到的对象，是一个阵营边界被穿过、而许宁又站在眼前的关系结构。",
+            "prior_probability": 0.3296703296703297,
+            "posterior_probability": 0.3296703296703297,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5760000000000002,
+            "activation_alignment": 0.9,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的阵营、规则与边界属于林夏的主观解释，未添加客观刺激中不存在的他人言行；保留了朋友说出许宁与程浩单独吃饭、许宁推门进入餐厅这两个核心变化。"
+          },
+          "xiang": {
+            "text": "在此所缘下：林夏把许宁放在“我这边”，因此当朋友突然说出许宁和程浩前两天单独吃饭、聊得挺严肃时，这件事在林夏那里不能被当成与林夏无关的两人私事，而是直接落在“长期在我阵营的朋友理应与我同一阵线，不能和程浩单独见面”这条固定关系规则之外；许宁推门进入餐厅，使朋友说出的那个单独吃饭画面与许宁本人在同一饭局现场同时出现。林夏此刻经验到的对象，是一个阵营边界被穿过、而许宁又站在眼前的关系结构。",
+            "source": "推理",
+            "confidence": 0.4
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "无明": 0.7820164689600633,
+            "瞋": 0.6256711364834586,
+            "慢": 0.07185760181890075,
+            "精进": 0.026451433372874658,
+            "掉举": 0.40897586463687885,
+            "愧": 0.011902860155529195,
+            "覆": 0.04819540826413603,
+            "忿": 0.41579142447607753,
+            "不信": 0.023560300514037166,
+            "无愧": 0.021968139580862002,
+            "恨": 0.04302209041781995,
+            "不正知": 0.5196157654540662,
+            "嫉": 0.010307631474891261,
+            "不放逸": 0.027348092131277184,
+            "疑": 0.1798129695531831,
+            "贪": 0.6712341109793067,
+            "悭": 0.023069460919994726,
+            "放逸": 0.04882852247265058,
+            "恶见": 0.418784420719652,
+            "惭": 0.009414916963226572,
+            "不害": 0.03381559246078819
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "当面问许宁是否和程浩单独吃饭",
+              "probability": 0.4883720930232558,
+              "supporting_mental_factors": [
+                "瞋",
+                "忿",
+                "贪",
+                "无明",
+                "不正知",
+                "恶见"
+              ]
+            },
+            {
+              "text": "向朋友追问许宁和程浩见面的细节",
+              "probability": 0.3023255813953489,
+              "supporting_mental_factors": [
+                "疑",
+                "掉举",
+                "不正知",
+                "无明",
+                "贪"
+              ]
+            },
+            {
+              "text": "换到长桌另一侧背对许宁坐下",
+              "probability": 0.20930232558139533,
+              "supporting_mental_factors": [
+                "瞋",
+                "恨",
+                "忿",
+                "慢",
+                "悭"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.32234432234432236,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在林夏那里，朋友在饭局先说出许宁和程浩单独吃饭，而不是许宁自己告知，使许宁与程浩的接触以“没有先进入我的知情范围”的方式被对象化；林夏把长期在我阵营的朋友理应与我同一阵线、不能和被我划出阵线边界的人单独见面当成固定规则，因此朋友这句话又把许宁与程浩单独吃饭放在这一规则之外。许宁推门进入餐厅，则把这个由朋友先抛出的越界画面与她本人一起放进当前饭局。林夏此刻所缘的，是一个双重规则被触碰的世界：许宁与程浩的接触本应先由许宁让我知道，也本不应越过我这边朋友与阵线边界之间的界限，而现在它先由共同朋友说出，再由许宁在场承接。",
+            "prior_probability": 0.32234432234432236,
+            "posterior_probability": 0.32234432234432236,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5632000000000001,
+            "activation_alignment": 0.88,
+            "grounding_valid": true,
+            "grounding_reason": "“本应先由许宁告知”“越界”等属于林夏主观规则化理解，不是伪造他人言行或事实；保留了朋友先说出许宁与程浩单独吃饭、许宁随后进入同一饭局现场的关键变化。"
+          },
+          "xiang": {
+            "text": "在此所缘下：在林夏那里，朋友在饭局先说出许宁和程浩单独吃饭，而不是许宁自己告知，使许宁与程浩的接触以“没有先进入我的知情范围”的方式被对象化；林夏把长期在我阵营的朋友理应与我同一阵线、不能和被我划出阵线边界的人单独见面当成固定规则，因此朋友这句话又把许宁与程浩单独吃饭放在这一规则之外。许宁推门进入餐厅，则把这个由朋友先抛出的越界画面与她本人一起放进当前饭局。林夏此刻所缘的，是一个双重规则被触碰的世界：许宁与程浩的接触本应先由许宁让我知道，也本不应越过我这边朋友与阵线边界之间的界限，而现在它先由共同朋友说出，再由许宁在场承接。",
+            "source": "推理",
+            "confidence": 0.4
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "无明": 0.7534164689600633,
+            "瞋": 0.6256711364834585,
+            "慢": 0.5258826018189008,
+            "精进": 0.026451433372874658,
+            "恼": 0.175175,
+            "掉举": 0.4590258646368789,
+            "愧": 0.08697786015552919,
+            "覆": 0.04819540826413603,
+            "忿": 0.4229414244760775,
+            "不信": 0.023560300514037166,
+            "无愧": 0.021968139580862002,
+            "恨": 0.20568459041781997,
+            "不正知": 0.5446407654540663,
+            "嫉": 0.010307631474891261,
+            "不放逸": 0.027348092131277184,
+            "疑": 0.03681296955318307,
+            "贪": 0.7409466109793068,
+            "悭": 0.023069460919994726,
+            "放逸": 0.04882852247265058,
+            "恶见": 0.42950942071965204,
+            "惭": 0.009414916963226572,
+            "不害": 0.03381559246078819,
+            "无惭": 0.22522500000000004
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "质问",
+              "probability": 0.65,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "离开",
+              "probability": 0.2,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "笑着说",
+              "probability": 0.15,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "问许宁",
+          "probability": 0.47471540079825403,
+          "dominant_mental_factors": [
+            "无明",
+            "贪",
+            "不正知",
+            "瞋",
+            "忿"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32234432234432236,
+              "conditional_probability": 0.65,
+              "contribution": 0.20952380952380956
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.34798534798534797,
+              "conditional_probability": 0.58,
+              "contribution": 0.2018315018315018
+            }
+          ]
+        },
+        {
+          "text": "当面问许宁是否和程浩单独吃饭",
+          "probability": 0.18580051512947054,
+          "dominant_mental_factors": [
+            "瞋",
+            "忿",
+            "贪",
+            "无明",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3296703296703297,
+              "conditional_probability": 0.4883720930232558,
+              "contribution": 0.16100178890876568
+            }
+          ]
+        },
+        {
+          "text": "沉默不回应",
+          "probability": 0.12808438685830006,
+          "dominant_mental_factors": [
+            "掉举",
+            "疑",
+            "慢",
+            "覆",
+            "恨"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.34798534798534797,
+              "conditional_probability": 0.18,
+              "contribution": 0.06263736263736264
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32234432234432236,
+              "conditional_probability": 0.15,
+              "contribution": 0.04835164835164835
+            }
+          ]
+        },
+        {
+          "text": "向朋友追问许宁和程浩见面的细节",
+          "probability": 0.11501936650871988,
+          "dominant_mental_factors": [
+            "疑",
+            "掉举",
+            "不正知",
+            "无明",
+            "贪"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.3296703296703297,
+              "conditional_probability": 0.3023255813953489,
+              "contribution": 0.09966777408637877
+            }
+          ]
+        },
+        {
+          "text": "问朋友",
+          "probability": 0.0963803307052555,
+          "dominant_mental_factors": [
+            "无明",
+            "不正知",
+            "疑",
+            "掉举",
+            "贪"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.34798534798534797,
+              "conditional_probability": 0.24,
+              "contribution": 0.08351648351648351
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "愧": 0.033846153846153845,
+        "贪": 0.7362271062271063,
+        "瞋": 0.5152930402930403,
+        "慢": 0.2969047619047619,
+        "无明": 0.7936355311355312,
+        "疑": 0.19990842490842492,
+        "恶见": 0.45232600732600736,
+        "忿": 0.3206043956043956,
+        "恨": 0.14467032967032967,
+        "恼": 0.07897435897435896,
+        "无惭": 0.10153846153846155,
+        "掉举": 0.3862637362637363,
+        "不正知": 0.5237820512820512
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 12,
+        "distinct_candidate_count": 10,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "林夏看到许宁手机里程浩感谢许宁没告诉她、还说想找机会跟她解释后，把陪自己度过分手最难时期的十年好友许宁与程浩共享关于她的秘密这件事，理解为许宁属于“我这边”就不能与外人共享关于她的事、更不能替她决定该不该让她知道，因此这类好友与外人的私下通信一旦涉及她，她便认定自己的边界被越界。",
+            "mass": 0.3688
+          },
+          {
+            "id": "bf_2",
+            "text": "林夏看到程浩发给许宁的消息说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把程浩要向她解释却先由许宁知情并保管这件事，理解为她与程浩三年关系的解释和收束只能在她和程浩之间发生，十年最好朋友涉及自己的事不应隐瞒，因此这类由第三方先介入并保管的对她解释，她认定不该发生。",
+            "mass": 0.3243
+          },
+          {
+            "id": "bf_3",
+            "text": "林夏看到许宁手机弹出程浩说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把关于自己的信息被放在许宁和程浩之间、自己不在场这件事，理解为凡涉及自己的事自己天然应在场并有权知道，别人不能替她判断该不该告诉，因此这类由他人保管的关于她的信息不向她开放时，她认定自己被排除。",
+            "mass": 0.3069
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "林夏看到许宁手机里程浩感谢许宁没告诉她、还说想找机会跟她解释后，把陪自己度过分手最难时期的十年好友许宁与程浩共享关于她的秘密这件事，理解为许宁属于“我这边”就不能与外人共享关于她的事、更不能替她决定该不该让她知道，因此这类好友与外人的私下通信一旦涉及她，她便认定自己的边界被越界。",
+              "mass": 0.3688
+            },
+            {
+              "id": "bf_2",
+              "text": "林夏看到程浩发给许宁的消息说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把程浩要向她解释却先由许宁知情并保管这件事，理解为她与程浩三年关系的解释和收束只能在她和程浩之间发生，十年最好朋友涉及自己的事不应隐瞒，因此这类由第三方先介入并保管的对她解释，她认定不该发生。",
+              "mass": 0.3243
+            },
+            {
+              "id": "bf_3",
+              "text": "林夏看到许宁手机弹出程浩说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把关于自己的信息被放在许宁和程浩之间、自己不在场这件事，理解为凡涉及自己的事自己天然应在场并有权知道，别人不能替她判断该不该告诉，因此这类由他人保管的关于她的信息不向她开放时，她认定自己被排除。",
+              "mass": 0.3069
+            }
+          ],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.285
+        }
+      }
+    }
+  ],
+  "focus_person": "林夏",
+  "llm_usage": {
+    "total_calls": 235,
+    "total_duration_ms": 2321562.6295548566,
+    "wall_clock_ms": 486771.780872994
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S02",
+    "event_index": 2,
+    "stimulus": "几个月后，林夏和几个共同朋友吃饭。聊天时，一个朋友突然提到：“我前两天好像看到许宁和程浩单独吃饭，本来想过去打招呼，后来感觉他们聊得挺严肃，就没过去。”这时许宁正好推门走进餐厅。",
+    "top_action": "问许宁",
+    "top_probability": 0.47471540079825403,
+    "top_k": [
+      {
+        "text": "问许宁",
+        "probability": 0.47471540079825403
+      },
+      {
+        "text": "当面问许宁是否和程浩单独吃饭",
+        "probability": 0.18580051512947054
+      },
+      {
+        "text": "沉默不回应",
+        "probability": 0.12808438685830006
+      },
+      {
+        "text": "向朋友追问许宁和程浩见面的细节",
+        "probability": 0.11501936650871988
+      },
+      {
+        "text": "问朋友",
+        "probability": 0.0963803307052555
+      }
+    ],
+    "continuity_before": {
+      "person_id": "林夏",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 3
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "林夏看到许宁手机里程浩感谢许宁没告诉她、还说想找机会跟她解释后，把陪自己度过分手最难时期的十年好友许宁与程浩共享关于她的秘密这件事，理解为许宁属于“我这边”就不能与外人共享关于她的事、更不能替她决定该不该让她知道，因此这类好友与外人的私下通信一旦涉及她，她便认定自己的边界被越界。",
+        "mass": 0.3688
+      },
+      {
+        "id": "bf_2",
+        "text": "林夏看到程浩发给许宁的消息说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把程浩要向她解释却先由许宁知情并保管这件事，理解为她与程浩三年关系的解释和收束只能在她和程浩之间发生，十年最好朋友涉及自己的事不应隐瞒，因此这类由第三方先介入并保管的对她解释，她认定不该发生。",
+        "mass": 0.3243
+      },
+      {
+        "id": "bf_3",
+        "text": "林夏看到许宁手机弹出程浩说“上次的事谢谢你没告诉林夏”“我还是想找机会跟她解释”后，把关于自己的信息被放在许宁和程浩之间、自己不在场这件事，理解为凡涉及自己的事自己天然应在场并有权知道，别人不能替她判断该不该告诉，因此这类由他人保管的关于她的信息不向她开放时，她认定自己被排除。",
+        "mass": 0.3069
+      }
+    ],
+    "fresh_count_raw": 9,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 9,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 12,
+      "distinct_candidate_count": 10,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

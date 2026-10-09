@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 69,
+  "item_id": "d1127_u3",
+  "dialogue_id": "1127",
+  "utterance_pos": 3,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi, what movies you do like?\nSEEKER says: Hello I'm looking for a good Christmas movie, any genre.\nRECOMMENDER says: Okay, well Elf  (2003)  is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi, what movies you do like?\nSEEKER says: Hello I'm looking for a good Christmas movie, any genre.\nRECOMMENDER says: Okay, well Elf  (2003)  is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.4,
+    "c": 0.5,
+    "d": 0.3
+  },
+  "score_reason": "SEEKER just received recommendations, so giving feedback on them is the most direct next move.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

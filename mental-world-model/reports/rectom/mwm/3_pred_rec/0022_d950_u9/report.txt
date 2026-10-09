@@ -1,0 +1,66 @@
+数据：3_pred_rec
+题号：22  d950_u9
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "对 RECOMMENDER 而言，SEEKER 说出的‘I like Jonah Hill a lot’、‘I did love Pineapple Express’、‘loved it’不再只是对方单方面提供的口味资料，而是被归到‘我’这一侧、要被接住并延续下去的偏好；而‘好电影’也只能由这些喜欢与不喜欢清单比对出来，符合 Wedding Crashers、It、Superbad、This Is the End、Pineapple Express 一路的才算对，Star Wars、Horrible Bosses 一类则被挡在外面。",
+      "probability": 0.4172
+    },
+    {
+      "content": "对 RECOMMENDER 而言，SEEKER 一开口问‘Can you help me find a good movie in any genre’，那个‘推荐者’的位置就立刻收成不能推开的我的事，而不是一件可与我无关的差事；同时‘好电影’也不是任何类型里自足的好，而是只能在 SEEKER 给出的喜欢与不喜欢清单中比对出来：Wedding Crashers、It、Superbad、This Is the End、Pineapple Express 一类才算对，Star Wars、Horrible Bosses 一类必须被排除在外。",
+      "probability": 0.327
+    },
+    {
+      "content": "对 RECOMMENDER 而言，SEEKER 的‘Yesss’、‘loved it’、‘I am surprised I haven't heard of it’被感受为对‘我这边’的确认，而不只是对方的观影经历；与此同时，‘好电影’仍只能由 SEEKER 的喜欢与不喜欢清单比对出来，符合 Wedding Crashers、It、Superbad、This Is the End、Pineapple Express 一类才算对，Star Wars、Horrible Bosses 一类必须被排除。",
+      "probability": 0.2559
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 一开口要一部任何类型的好电影，这件事就落成我分内不能搁开的推荐事，不是可以与我无关的普通询问；而要交出的‘好’也不能由类型自身说了算，只能拿他给出的喜欢与不喜欢来对：Wedding Crashers、It、Superbad、This Is the End、Pineapple Express 这一路才算合上，Star Wars 和 Horrible Bosses 那一类得先剔掉。于是我把候选片不断往 Jonah Hill、Seth Rogen 这些共同点上并：Superbad 被确认合意，Horrible Bosses 被否掉，The Sitter 因同有 Jonah Hill 而被看成很可能合他口味，Pineapple Express 和 This Is the End 也顺着这条线归入可推荐的一边。当前趋向是继续按这张比对表收紧候选，在已验证的演员/喜剧脉络里找能与他已爱片单相接、并且他还没看过的片。",
+      "activation": 0.3889
+    },
+    {
+      "content": "SEEKER 说喜欢 Jonah Hill、喜欢 Pineapple Express、喜欢 This Is the End，这些不再只是他单方面给我的口味资料，而是归到我这边、要我接住并延续下去的东西。我得把‘好电影’照着这些喜欢和不喜欢来比对：像 Wedding Crashers、It、Superbad、This Is the End、Pineapple Express 这一路的才算对，Star Wars、Horrible Bosses 那种就要挡在外面。我一边确认他是不是也喜欢 Seth Rogen，一边把有 Jonah Hill 的 The Sitter 推过去，觉得如果真喜欢 Jonah Hill 就会喜欢——这样才是接住了他的偏好，让这条线继续下去。",
+      "activation": 0.3531
+    },
+    {
+      "content": "听到 SEEKER 说‘Yesss’、‘loved it’、‘I am surprised I haven't heard of it’，RECOMMENDER 心里觉得这是对自己推荐眼光的肯定，是自己这边被对方接受了，而不只是对方看过某部电影。同时，他认定好电影必须从 SEEKER 喜欢的那些片子（Wedding Crashers、It、Superbad、This Is the End、Pineapple Express 这类）和喜欢的演员（Jonah Hill）里比对出来，像 Star Wars、Horrible Bosses 这类不对路的就要排除。因此他继续沿着 Jonah Hill/Seth Rogen 的喜剧线推荐，觉得 The Sitter 和 Pineapple Express 正对路，并想通过问对方是否喜欢 Seth Rogen 来进一步确认这个方向。",
+      "activation": 0.2579
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 Hi，并询问对方喜欢什么类型的电影；说 Okay!，并提出《Horrible Bosses (2011)》或《Superbad (2007)》；说 Yes he was!!，提出《The Sitter (2011)》，说他也在这部电影里，询问对方是否喜欢 Seth Rogen，并说《This Is the End (2013)》是一部 funnyy 电影；说《Pineapple Express (2008)》也同样，说《The Sitter (2011)》很搞笑，并说如果对方喜欢 Jonah Hill 就会喜欢它。",
+  "predicted_actions": [
+    {
+      "content": "推荐 SEEKER 看某部电影",
+      "probability": 0.2913
+    },
+    {
+      "content": "推荐 The Sitter",
+      "probability": 0.2218
+    },
+    {
+      "content": "recommends a movie",
+      "probability": 0.1932
+    },
+    {
+      "content": "询问是否将 The Sitter 作为下一部电影",
+      "probability": 0.1621
+    },
+    {
+      "content": "赞同 SEEKER",
+      "probability": 0.1316
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0, "b": 0.1316, "c": 0.8684, "d": 0, "e": 0}
+选择说明：A 0.0000；B 0.1316 = 赞同 SEEKER 0.1316；C 0.8684 = 推荐 SEEKER 看某部电影 0.2913 + 推荐 The Sitter 0.2218 + recommends a movie 0.1932 + 询问是否将 The Sitter 作为下一部电影 0.1621；D 0.0000；E 0.0000。Actions 0-3 recommend or propose a movie, while action 4 agrees with the seeker, matching a response to the seeker.
+标准：D: Explains a recommendation with background or reasoning
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：The predicted next actions only mention recommending a movie or asking about The Sitter, not explaining with background or reasoning.

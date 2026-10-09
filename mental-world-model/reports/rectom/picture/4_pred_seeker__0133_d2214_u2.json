@@ -1,0 +1,12 @@
+{
+  "id": "4_pred_seeker__0133_d2214_u2",
+  "method": "picture",
+  "target_character": "SEEKER",
+  "raw_response": "SEEKER knows:\n- They greeted the recommender and asked for a movie similar to *Alien* (1979) or *Halloween* (1978).\n- They have their own reasons for liking those movies and what “similar” means to them, but these are not yet fully stated in the dialogue.\n- RECOMMENDER has just suggested *A Nightmare on Elm Street* (1984).\n- The immediately preceding interaction event is a recommendation, so the next turn is SEEKER’s response to that recommendation.\n\nSEEKER does not know:\n- Why RECOMMENDER chose *A Nightmare on Elm Street*.\n- Whether RECOMMENDER considered other options.\n- Whether RECOMMENDER fully understands SEEKER’s unstated preferences.\n- From the dialogue alone, it is unknown whether SEEKER has seen, likes, or dislikes *A Nightmare on Elm Street*.\n\nGiven that a recommendation was just made, the natural next move for SEEKER is to respond to that recommendation—accept it, reject it, or otherwise give feedback. Therefore the strategy is to give feedback on the previously recommended movie or suggestion.\n\nANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

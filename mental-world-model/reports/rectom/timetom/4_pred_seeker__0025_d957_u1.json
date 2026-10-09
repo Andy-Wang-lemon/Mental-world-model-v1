@@ -1,0 +1,32 @@
+{
+  "id": "4_pred_seeker__0025_d957_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets the seeker and asks whether they can help find a good comedy similar to 'Beerfest' (2006) or 'The Blues Brothers' (1980).",
+      "preferences": "No explicit seeker preferences are stated yet. The recommender's mention of Beerfest and The Blues Brothers may be treated as candidate reference points, but the seeker's own taste is unknown.",
+      "belief_before": "Before this turn, the seeker has no dialogue-specific information about the recommender's intended recommendations or reference films.",
+      "belief_update": "The seeker learns that the recommender is offering help finding a comedy and is anchoring the recommendation around Beerfest and The Blues Brothers.",
+      "belief_after": "The seeker believes the recommender is willing to help and may recommend comedies similar to the two named films.",
+      "emotion": "Neutral to mildly curious; no strong emotional reaction is yet observable.",
+      "intention": "Likely intends to respond to the recommender's offer, either by accepting help, clarifying preferences, or asking for a recommendation.",
+      "conversational_goal": "Engage with the recommender to obtain or narrow down a comedy recommendation.",
+      "reaction_to_other": "Receptive and open to the offer, as the recommender has initiated a relevant recommendation request.",
+      "changes_previous_interpretation": "No previous turn exists, so this turn establishes the initial interpretation rather than changing one."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets the seeker and asks whether they can help find a good comedy similar to 'Beerfest' (2006) or 'The Blues Brothers' (1980).\",\n    \"preferences\": \"No explicit seeker preferences are stated yet. The recommender's mention of Beerfest and The Blues Brothers may be treated as candidate reference points, but the seeker's own taste is unknown.\",\n    \"belief_before\": \"Before this turn, the seeker has no dialogue-specific information about the recommender's intended recommendations or reference films.\",\n    \"belief_update\": \"The seeker learns that the recommender is offering help finding a comedy and is anchoring the recommendation around Beerfest and The Blues Brothers.\",\n    \"belief_after\": \"The seeker believes the recommender is willing to help and may recommend comedies similar to the two named films.\",\n    \"emotion\": \"Neutral to mildly curious; no strong emotional reaction is yet observable.\",\n    \"intention\": \"Likely intends to respond to the recommender's offer, either by accepting help, clarifying preferences, or asking for a recommendation.\",\n    \"conversational_goal\": \"Engage with the recommender to obtain or narrow down a comedy recommendation.\",\n    \"reaction_to_other\": \"Receptive and open to the offer, as the recommender has initiated a relevant recommendation request.\",\n    \"changes_previous_interpretation\": \"No previous turn exists, so this turn establishes the initial interpretation rather than changing one.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

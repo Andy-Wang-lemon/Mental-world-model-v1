@@ -1,0 +1,66 @@
+数据：3_pred_rec
+题号：55  d1021_u14
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "SEEKER提出的“女性主角”要求此刻在RECOMMENDER的世界里不再是对方的一个偏好，而是一个已经落到“我”身上的明确任务，把“我”变成了必须完成它的人；同时，所有可推荐的影片在“我”眼前被这一把尺子划出界线：有女性主角的才算数，没有的则自动失去被推荐的资格，这一标签成了不可动摇的硬性前提。",
+      "probability": 0.3938
+    },
+    {
+      "content": "参与者：SEEKER；刺激动作：请求推荐女性主演的电影，并分享观影和阅读经历；对象：电影推荐及相关电影资料；场景：电影推荐对话；刺激侧变化：SEEKER提出选片要求：类型不限、主角为女性；SEEKER确认未看过某部电影，并询问其是否关于收养黑人小孩；SEEKER表示当晚将租借该电影；SEEKER确认看过另一部电影，并报告观影时同时有哭泣和笑；SEEKER报告未能看完一部电影，并提及自己二十多岁时超重；SEEKER询问某电影是否为同名小说改编；SEEKER确认某电影基于同名小说，并报告已读过该书但未看过电影；SEEKER报告读完整本书期间有哭泣；约束变化：推荐影片需由女性担任主角；我执侧重：RECOMMENDER将SEEKER因影片题材而联想到个人超重经历并感到痛苦这件事，揽入“我”需要负责和避免的范围。；法执侧重：RECOMMENDER把“女主角必须是女性”视为本次推荐不可动摇的硬性前提，仿佛只有满足这一标签的影片才有资格被推荐。",
+      "probability": 0.3333
+    },
+    {
+      "content": "SEEKER那句“太悲伤看不下去”连同“二十多岁时超重”的坦白，在RECOMMENDER心里被铸成一个需要“我”来守护的禁区：那部电影及其相似主题都变成可能再次伤害对方的危险之物，仿佛只要题材触及那段往事就一定让SEEKER重新痛苦；这份避免伤害的责任也被收进“我”的范围内，使“我”成为这个禁区唯一的看守人。",
+      "probability": 0.2729
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER说想找女性主角的电影，这句话在我心里立刻变成了一件必须做好的事。我一边回应一边在脑海里搜索哪些影片符合这个条件，只要有女性主角的才会被我说出口，没有的就会被排除在外。我觉得这就是对方明确提出的标准，也是一条不能马虎的界线，所以推荐时总会先确认片中的女主角是谁，再讲给TA听。",
+      "activation": 0.3512
+    },
+    {
+      "content": "听到她提起超重的往事，我心里猛地一沉——原来《Precious》会让她痛到看不下去。我立刻把这类与身材、过去伤痛有关的题材划成禁区：只要可能让她想起那段日子，就绝对不能推荐。这个禁区必须由我牢牢守着，因为一旦推荐了类似电影，就好像是我亲手把刀递给她。刚才推荐《Precious》真是太失策了，以后挑选影片要更谨慎，宁可错开所有敏感主题，也不能再让她受一次伤。",
+      "activation": 0.3415
+    },
+    {
+      "content": "她提到Precious时因为自己早年的超重经历而看不下去，这让我心里一紧，仿佛是我把那种痛苦带到了她面前。我不想让她再难受，接下来推荐时必须更小心，避开那些可能触发她回忆的题材。但同时，她明确说了要女性主角，这个条件我不会动摇，我会继续从符合这一点的电影里找，希望既能让她安心，又不会失去她想要的女性故事核心。",
+      "activation": 0.3073
+    }
+  ],
+  "observed_action": "RECOMMENDER询问对方想找什么类型的电影，推荐了《The Blind Side》（2009）和《The Help》（2011），表示自己也很喜欢《Precious》，接着推荐了《Extremely Loud and Incredibly Close》（2011），说明不确定该片是否根据同名小说改编，但介绍其讲述一个自闭症男孩在9/11中失去父亲的剧情，并评价该片很悲伤但很好。",
+  "predicted_actions": [
+    {
+      "content": "转移话题",
+      "probability": 0.3595
+    },
+    {
+      "content": "点头回应并重复",
+      "probability": 0.2264
+    },
+    {
+      "content": "为推荐不当道歉并等待回应",
+      "probability": 0.1523
+    },
+    {
+      "content": "翻看片单并记录需求",
+      "probability": 0.1486
+    },
+    {
+      "content": "沉默后迟疑回应",
+      "probability": 0.1132
+    }
+  ]
+}
+选择：B: Responds to the seeker's question or statement
+分数：{"a": 0.1523, "b": 0.3396, "c": 0, "d": 0, "e": 0}
+选择说明：A 0.1523 = 为推荐不当道歉并等待回应 0.1523；B 0.3396 = 点头回应并重复 0.2264 + 沉默后迟疑回应 0.1132；C 0.0000；D 0.0000；E 0.0000。Apologizing and waiting for response seeks feedback, while nodding/repeating and hesitant replies respond to the seeker.
+标准：B: Responds to the seeker's question or statement
+C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

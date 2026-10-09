@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 155,
+  "item_id": "d2349_u14",
+  "dialogue_id": "2349",
+  "utterance_pos": 14,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nD: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 的所缘中，RECOMMENDER 接连发出的“Have you seen The Secret Life of Pets / Minions / Inside Out”以及提到 Cars 3 的这些话，不是一组关于电影的客观信息，而像在 SEEKER 自己身上逐项核对的标记：看过或没看过被经验为自身此刻被点到的属性。每部片名和“看过吗”都落成一道共同话题的准入检验——有“看过”这一标记，接话的通道就在自身这边显得成立；没有，就在自身这边显出一个缺口。RECOMMENDER 说这些电影搞笑、可爱、自己儿子喜欢，也被收进这个检验场里，成为判断 SEEKER 能否顺畅进入同一话题范围的材料。",
+        "probability": 0.3481
+      },
+      {
+        "content": "在 SEEKER 的所缘中，这些电影名和“Have you seen...”的询问共同构成一段关系性的准入场景：能否就 The Secret Life of Pets、Minions、Cars 3、Inside Out 与 RECOMMENDER 形成共同话题，被经验为自己在这段对话关系里是否被接纳、是否不被排除的条件。“看过”因此不只是知道一部电影，而是 SEEKER 能否与 RECOMMENDER 处在同一话题圈内的证据；“没看过”则呈现为在这段关系里被隔在外面的缺口。RECOMMENDER 关于搞笑、可爱、亲子观看的补充，也被经验为这个共同话题圈的范围边界。",
+        "probability": 0.3403
+      },
+      {
+        "content": "在 SEEKER 的所缘中，RECOMMENDER 这次对话已经被这些动画/搞笑/可爱/亲子电影固定成一个主题范围：The Secret Life of Pets、Minions、Cars 3、Inside Out 连同“搞笑”“可爱”“儿子喜欢”的说明，构成此刻可以谈的内容边界。在这个固定范围之内，RECOMMENDER 直接问“Have you seen...”就把“看过/没看过”落成 SEEKER 自己身上的标记：片名不再只是外部对象，而是对他自身是否具备该范围内经验的逐项指认。",
+        "probability": 0.3116
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 把 RECOMMENDER 接连问的“看过吗”听成对自己经历的一次次点名：每出现一个片名，自己这边就先被划出“看过”或“没看过”的标记；有标记时，接话的通道像是顺的，没标记时，缺口就落在自己这一侧。RECOMMENDER 说电影搞笑、可爱、儿子喜欢，也被 SEEKER 收进这个核对里，变成判断自己能不能自然进入同一话题范围的材料。SEEKER 并不想把没看过直接变成拒绝，而是用已有的偏好、弟弟的反应、父亲对某部片的喜欢来补上话头，让“没看过”暂时停在“可以考虑”的位置；心里更愿意抓住那些自己有连接或对方也肯定的片子，使共同话题的准入感不要断在缺口上。",
+        "activation": 0.3796
+      },
+      {
+        "content": "这些电影名和一遍遍“Have you seen...”在 SEEKER 这里不是单纯片单，而像一道道共同话题的准入线：看过，就说明能和 RECOMMENDER 待在同一个话题圈里，不被落下；没看过，则像关系里露出一处缺口。RECOMMENDER 补上的“搞笑”“可爱”“适合亲子一起看”，又把这个话题圈的边界画得更清楚，让 SEEKER 去衡量自己手里有哪些能接上的经验。对 The Secret Life of Pets 他能接上前半段的喜欢，对 Minions 能接上弟弟的万圣节装扮，对 Cars 能接上第一部的好感，这些是进入圈内的踏脚处；对 Cars 3、Monsters, Inc.、Inside Out 的“还没看过”则被他经验为可能被隔在外面的地方。因此他心里并不是冷淡地评片，而是边整理这些片名、边判断哪些能成为与对方共享的话题，并把父亲、弟弟、生活启示这些私人线索也放进去，试图把缺口补成彼此都能继续谈下去的同一圈。",
+        "activation": 0.3197
+      },
+      {
+        "content": "在 SEEKER 的认知里，这次对话已经被对方限定在一串动画、搞笑、可爱、亲子向电影的范围里，The Secret Life of Pets、Minions、Cars 3、Inside Out 连同“儿子喜欢”“可爱”“好看”等说明，像现成可谈的内容边界。对方每直接问“Have you seen...”，这个问法就不只是问片名，而像把某部片变成衡量 SEEKER 自身经验的标记：看过或没看过都被落到自己身上。于是他一边按这个范围逐项对照自己，一边把这些片子与弟弟今晚的适看性、自己的喜好和家人的反应联系起来，心里形成一组候选、排除和相近补充的排序；连他想到的其他同类片，也被放进这套比较框架中掂量。",
+        "activation": 0.3008
+      }
+    ],
+    "observed_action": "SEEKER 打招呼并说明正在为弟弟找一部儿童电影，今晚要照看他；回应新年祝福；说不太喜欢 The Secret Life of Pets，喜欢前半小时，但觉得后面有点怪；说弟弟很喜欢 Minions，曾在万圣节打扮成小黄人；说没看过 Cars 3，但看过第一部并喜欢它，会把 Cars 3 留作可能选项；回应“是的”，说对幼儿有很好的生活启示，并问对方是否看过 Monsters, Inc.，考虑也许给弟弟看这部，但自己还没看过；说父亲是心理学家且很喜欢 Inside Out，可能看这部，因为自己还没看过。",
+    "predicted_actions": [
+      {
+        "content": "SEEKER says: 'I'll keep Monsters, Inc., Inside Out, and Cars 3 as options and decide which one fits my little brother best before tonight.'",
+        "probability": 0.4707
+      },
+      {
+        "content": "selects Inside Out to show tonight",
+        "probability": 0.2041
+      },
+      {
+        "content": "询问电影是否适合弟弟",
+        "probability": 0.1366
+      },
+      {
+        "content": "选择 Inside Out",
+        "probability": 0.1073
+      },
+      {
+        "content": "查询影片平台与时长并告知推荐者",
+        "probability": 0.0813
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.4707,
+    "b": 0,
+    "c": 0.448,
+    "d": 0
+  },
+  "score_reason": "A 0.4707 = SEEKER says: 'I'll keep Monsters, Inc., Inside Out, and Cars 3 as options and decide which one fits my little brother best before tonight.' 0.4707；B 0.0000；C 0.4480 = selects Inside Out to show tonight 0.2041 + 询问电影是否适合弟弟 0.1366 + 选择 Inside Out 0.1073；D 0.0000。Action 0 gives feedback on the recommended movies, actions 1-3 express preference or request, and action 4 fits none.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

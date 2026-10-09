@@ -1,0 +1,32 @@
+{
+  "id": "4_pred_seeker__0183_d2818_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The target SEEKER hears/observes RECOMMENDER say: \"Good evening!\"",
+      "belief_before": "No prior dialogue information is available; the seeker has not yet learned anything about the recommender, recommendations, or preferences in this interaction.",
+      "belief_update": "The recommender has opened the interaction with a polite greeting, indicating the recommender is present and initiating conversation.",
+      "belief_after": "The recommender is present and polite; the dialogue has begun, but no recommendation-relevant information has been provided yet.",
+      "emotion": "Neutral and attentive; possibly mildly polite or receptive, with no strong affect indicated.",
+      "intention": "Acknowledge the greeting and/or wait for the recommender to continue; no recommendation request or preference disclosure yet.",
+      "conversational_goal": "Establish or maintain social contact and be ready to participate in the recommendation dialogue.",
+      "preferences": "No preferences have been expressed or revealed.",
+      "reaction_to_other": "Receives the greeting neutrally or positively; likely perceives the recommender as polite and initiating.",
+      "changes_previous_interpretation": "Not applicable; this is the first turn, so no previous interpretation exists to change."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The target SEEKER hears/observes RECOMMENDER say: \\\"Good evening!\\\"\",\n    \"belief_before\": \"No prior dialogue information is available; the seeker has not yet learned anything about the recommender, recommendations, or preferences in this interaction.\",\n    \"belief_update\": \"The recommender has opened the interaction with a polite greeting, indicating the recommender is present and initiating conversation.\",\n    \"belief_after\": \"The recommender is present and polite; the dialogue has begun, but no recommendation-relevant information has been provided yet.\",\n    \"emotion\": \"Neutral and attentive; possibly mildly polite or receptive, with no strong affect indicated.\",\n    \"intention\": \"Acknowledge the greeting and/or wait for the recommender to continue; no recommendation request or preference disclosure yet.\",\n    \"conversational_goal\": \"Establish or maintain social contact and be ready to participate in the recommendation dialogue.\",\n    \"preferences\": \"No preferences have been expressed or revealed.\",\n    \"reaction_to_other\": \"Receives the greeting neutrally or positively; likely perceives the recommender as polite and initiating.\",\n    \"changes_previous_interpretation\": \"Not applicable; this is the first turn, so no previous interpretation exists to change.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

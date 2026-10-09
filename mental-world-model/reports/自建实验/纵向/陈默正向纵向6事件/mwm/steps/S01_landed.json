@@ -1,0 +1,453 @@
+{
+  "events": [
+    {
+      "focus_person": "陈默",
+      "yuanwen": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+      "stimulus_text": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+      "stimulus_action_split": {
+        "stimulus_text": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+        "has_observable_action": true,
+        "action_span": "有限认可数据并要求进一步验证，暂不调整现有方案",
+        "action_description": "有限认可数据并要求进一步验证，暂不调整现有方案"
+      },
+      "objective_event": {
+        "actors": [
+          "公司",
+          "林可",
+          "陈默"
+        ],
+        "action": "公司招聘林可；在第一次方案讨论中，林可提出“过去成功的方法正在失效”；两周后，林可拿出数据。",
+        "object": "方案讨论中的既有成功方法；林可的判断与数据。",
+        "scene": "公司招聘后；第一次方案讨论会议；会议后两周。",
+        "outcome_changes": [
+          "林可的判断被其拿出的数据证明部分正确。"
+        ],
+        "role_changes": [
+          "林可被公司招聘，成为公司成员。"
+        ],
+        "relationship_changes": [
+          "林可参与第一次方案讨论，与陈默同处该会议参与关系。"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "陈默把“过去成功的方法”放在自己这边的经验根基上，而不是当成可以纯外部检验的假设；林可提出“过去成功的方法正在失效”因此不是普通意见，而是触到自身所依的既有秩序。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "陈默把“能判断年轻人是否过于理想化”的资深者位置当成自我的一部分；林可年轻、分析能力强又参与方案讨论，直接牵动他作为评判者的位置感。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "陈默把自己当时“年轻人过于理想化”的初步判断当成自我一致性的一部分；两周后数据部分支持林可，使这不只是信息更新，而牵动“我是否看错”的自我评价。",
+          "confidence": 0.77,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "陈默把公司既有团队/老成员这一侧划为“我这边”，把新招聘的林可暂时放在“外来主张者”的位置；林可的判断因此带着新旧归属的分界，而不只是内容对错。",
+          "confidence": 0.74,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "陈默把“年轻”固定理解为“过于理想化、判断不够可靠”，因此林可的挑战在他这里先被归入需要打折的类别。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "陈默把“过去成功的方法”固定理解为应继续有效的基准，不能仅凭一句“正在失效”就被动摇。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "陈默把“新来者/年轻人提出相反判断”固定理解为需要额外举证的例外，既有方法则默认可成立；所以要求林可拿更多数据不是中性程序，而是这种举证责任分配。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "陈默把“足够数据”固定理解为推翻或修正既有方法的必经裁判标准，似乎只有数据才足以让林可的判断从待证变为可接受。",
+          "confidence": 0.76,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3375527426160338,
+          "alambana_prior_probability": 0.5095541401273885,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3375527426160338,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f4"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3248945147679325,
+          "alambana_prior_probability": 0.4904458598726114,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5852
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在陈默这里，当前方案讨论中那条“过去成功的方法”不是可纯外部检验的假设，而是他自己经验所依的既有秩序；林可作为公司新招成员、在第一次会议中提出“过去成功的方法正在失效”，便显得不只是普通意见，而是触到他所依秩序的一次挑战。与此同时，林可的“年轻”已被他固定归入“过于理想化、判断不够可靠”的类别，因此即便两周后她拿出数据、数据证明其判断部分正确，这组数据在他的所缘中也先以“需要打折的年轻人所提挑战”的形态出现，而不是中性的证据。",
+          "prior_probability": 0.5095541401273885,
+          "posterior_probability": 0.5379512066953627,
+          "action_compat": 0.85,
+          "action_likelihood": 0.8867834394904459,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "所缘以陈默主观理解为主，未添加他人言行事实；并保留了林可被招聘、首次会议提出判断、两周后数据证明其判断部分正确这一核心变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C3",
+          "text": "陈默把自己当时“年轻人过于理想化”的初步判断当成自我一致性的一部分；公司新招的林可在第一次方案讨论中提出“过去成功的方法正在失效”，当时被他归入这一判断。两周后她拿出数据，数据证明林可的判断部分正确，于是这一组数据在他的所缘中不只是信息更新，而是变成对“我是否看错”的自我评价的牵动。林可仍带着“年轻”这一被固定为“过于理想化、判断不够可靠”的标记，但她部分被证实的判断已进入当前会议参与关系，使他所经验的既有判断与眼前证据之间呈现为一道裂隙。",
+          "prior_probability": 0.4904458598726114,
+          "posterior_probability": 0.46204879330463744,
+          "action_compat": 0.72,
+          "action_likelihood": 0.7913375796178344,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f4"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5852,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "所缘围绕陈默原有判断与后续证据的主观裂隙展开，未添加客观刺激之外的他人言行；且保留了林可判断被数据证明部分正确这一核心结果。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": true,
+        "action_span": "有限认可数据并要求进一步验证，暂不调整现有方案",
+        "action_description": "有限认可数据并要求进一步验证，暂不调整现有方案",
+        "likelihoods": [
+          {
+            "alambana_id": "O_C1",
+            "likelihood": 0.85
+          },
+          {
+            "alambana_id": "O_C3",
+            "likelihood": 0.72
+          }
+        ]
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.5095541401273885,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在陈默这里，当前方案讨论中那条“过去成功的方法”不是可纯外部检验的假设，而是他自己经验所依的既有秩序；林可作为公司新招成员、在第一次会议中提出“过去成功的方法正在失效”，便显得不只是普通意见，而是触到他所依秩序的一次挑战。与此同时，林可的“年轻”已被他固定归入“过于理想化、判断不够可靠”的类别，因此即便两周后她拿出数据、数据证明其判断部分正确，这组数据在他的所缘中也先以“需要打折的年轻人所提挑战”的形态出现，而不是中性的证据。",
+            "prior_probability": 0.5095541401273885,
+            "posterior_probability": 0.5379512066953627,
+            "action_compat": 0.85,
+            "action_likelihood": 0.8867834394904459,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "所缘以陈默主观理解为主，未添加他人言行事实；并保留了林可被招聘、首次会议提出判断、两周后数据证明其判断部分正确这一核心变化。"
+          },
+          "xiang": {
+            "text": "陈默把林可拿出的数据接过来时，并没有把它当成可以直接裁决既有方法的中性证据，而是先放在“年轻新人急于证明自己”的类别里掂量：其中部分判断或许确实碰到了变化，但这至多说明林可的话不全是空想，还不足以撼动他一直倚仗的那条成功路径。他心里更愿意把这组数据看作对林可观点有限的支持，而不是对自身经验所依秩序的否定，因此内在的趋向是有限承认这一点，同时继续索要更多验证，把现有方案暂时按住不动，不让自己因一个需要打折的挑战就轻易调整根基。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "有限认可数据并要求进一步验证，暂不调整现有方案",
+            "source": "原文",
+            "confidence": 0.2718926553672316
+          },
+          "mental_factors_nonzero": {
+            "无瞋": 0.6325,
+            "不放逸": 0.305,
+            "行舍": 0.4375,
+            "不害": 0.345,
+            "贪": 0.7050000000000001,
+            "慢": 0.84,
+            "无明": 0.84,
+            "疑": 0.375,
+            "恶见": 0.6375,
+            "憍": 0.395,
+            "嫉": 0.285,
+            "悭": 0.22499999999999998,
+            "不信": 0.78,
+            "不正知": 0.8300000000000001
+          },
+          "status": "active"
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.4904458598726114,
+          "alambana": {
+            "id": "O_C3",
+            "text": "陈默把自己当时“年轻人过于理想化”的初步判断当成自我一致性的一部分；公司新招的林可在第一次方案讨论中提出“过去成功的方法正在失效”，当时被他归入这一判断。两周后她拿出数据，数据证明林可的判断部分正确，于是这一组数据在他的所缘中不只是信息更新，而是变成对“我是否看错”的自我评价的牵动。林可仍带着“年轻”这一被固定为“过于理想化、判断不够可靠”的标记，但她部分被证实的判断已进入当前会议参与关系，使他所经验的既有判断与眼前证据之间呈现为一道裂隙。",
+            "prior_probability": 0.4904458598726114,
+            "posterior_probability": 0.46204879330463744,
+            "action_compat": 0.72,
+            "action_likelihood": 0.7913375796178344,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f4"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5852,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "所缘围绕陈默原有判断与后续证据的主观裂隙展开，未添加客观刺激之外的他人言行；且保留了林可判断被数据证明部分正确这一核心结果。"
+          },
+          "xiang": {
+            "text": "数据摆出来后，陈默心里没法完全当作没看见：林可的判断至少有一部分站得住，不是纯粹的空谈。但这组数据只证明了“部分正确”，并没有整体推翻他当初把“年轻人过于理想化”作为折扣依据的判断。他仍觉得林可身上“年轻”的标记意味着判断不够稳定，眼前的部分证实更像是一个需要继续验证的局部信号，而不是足以让他承认自己看错的结论。真正让他不舒服的，是若立刻接受这组数据并调整方案，就等于承认自己当时的初步判断有偏差；这触到了他对自己一致性的维护。于是他在心里把承认限定在“数据有限可取”这一层，同时把“进一步验证”作为继续容纳这组证据的前提，现有方案暂不因此改动。既有判断与眼前证据之间的裂隙已经出现，但他还不打算让这道裂隙扩展成对自己的重新评价。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "有限认可数据并要求进一步验证，暂不调整现有方案",
+            "source": "原文",
+            "confidence": 0.2718926553672316
+          },
+          "mental_factors_nonzero": {
+            "无瞋": 0.47000000000000003,
+            "行舍": 0.3375,
+            "贪": 0.39249999999999996,
+            "慢": 0.7075,
+            "无明": 0.8200000000000001,
+            "疑": 0.44,
+            "恶见": 0.5525,
+            "覆": 0.5399999999999999,
+            "嫉": 0.27749999999999997,
+            "无惭": 0.1375,
+            "不信": 0.685,
+            "懈怠": 0.2525,
+            "不正知": 0.8075
+          },
+          "status": "active"
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "无瞋": 0.5528025477707006,
+        "不放逸": 0.1554140127388535,
+        "行舍": 0.38845541401273886,
+        "不害": 0.17579617834394903,
+        "贪": 0.551735668789809,
+        "慢": 0.775015923566879,
+        "无明": 0.8301910828025477,
+        "疑": 0.4068789808917197,
+        "恶见": 0.595812101910828,
+        "覆": 0.2648407643312101,
+        "憍": 0.20127388535031848,
+        "嫉": 0.2813216560509554,
+        "悭": 0.11464968152866241,
+        "无惭": 0.06743630573248408,
+        "不信": 0.733407643312102,
+        "懈怠": 0.12383757961783438,
+        "不正知": 0.8189649681528662
+      },
+      "mental_factors_final_nonzero": {
+        "无瞋": 0.5528025477707006,
+        "不放逸": 0.1554140127388535,
+        "行舍": 0.38845541401273886,
+        "不害": 0.17579617834394903,
+        "贪": 0.551735668789809,
+        "慢": 0.775015923566879,
+        "无明": 0.8301910828025477,
+        "疑": 0.4068789808917197,
+        "恶见": 0.595812101910828,
+        "覆": 0.2648407643312101,
+        "憍": 0.20127388535031848,
+        "嫉": 0.2813216560509554,
+        "悭": 0.11464968152866241,
+        "无惭": 0.06743630573248408,
+        "不信": 0.733407643312102,
+        "懈怠": 0.12383757961783438,
+        "不正知": 0.8189649681528662
+      },
+      "cognition_candidates": {
+        "fresh_count_raw": 8,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 8,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 0,
+        "distinct_candidate_count": 0,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "mental_episode_count": 1,
+        "injected_bias_frames": [],
+        "h_prior": {
+          "working_set": [],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "cross_branch_event",
+          "lambda_eff": 0.0
+        },
+        "cognitive_frames": [
+          {
+            "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+            "mass": 0.6126723872833577
+          }
+        ]
+      }
+    }
+  ],
+  "focus_person": "陈默",
+  "llm_usage": {
+    "total_calls": 173,
+    "total_duration_ms": 1380958.0657548504,
+    "wall_clock_ms": 153567.7430840151
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "landed",
+    "step_id": "S01",
+    "event_index": 1,
+    "stimulus": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。",
+    "landed_action": "有限认可数据并要求进一步验证，暂不调整现有方案",
+    "landed_probability": 0.2718926553672316,
+    "continuity_before": {
+      "person_id": "陈默",
+      "event_count": 0,
+      "mental_episode_count": 0,
+      "cognitive_frame_count": 0
+    },
+    "continuity_after": {
+      "person_id": "陈默",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 1
+    },
+    "cognitive_frames_after": [
+      {
+        "id": "bf_1",
+        "text": "公司招聘林可后，第一次方案讨论中林可提出“过去成功的方法正在失效”，陈默当时认为年轻人过于理想化，会后没有当场否定而是要求她用更多数据证明；两周后林可拿出数据，数据只证明她的判断部分正确——从此在陈默这里，年轻新人提出的、触及既有成功路径的判断，先被放在需要打折和继续验证的类别里，而不是能直接裁决既有方法的中性证据。",
+        "mass": 0.6127
+      }
+    ],
+    "mental_episodes_after": [
+      {
+        "event_id": "e1",
+        "theta": 0.6,
+        "text_summary": "公司招聘林可。林可年轻，但分析能力强。第一次方案讨论：林可提出：“过去成功的方法正在失效。”陈默当时认为年轻人过于理想化。会议后他没有当场否定，而是要求林可拿更多数据证明。两周后，林可拿出数据，数据证明林可的判断部分正确。"
+      }
+    ]
+  }
+}

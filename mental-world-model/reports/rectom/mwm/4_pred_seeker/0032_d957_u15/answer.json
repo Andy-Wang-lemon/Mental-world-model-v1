@@ -1,0 +1,65 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 32,
+  "item_id": "d957_u15",
+  "dialogue_id": "957",
+  "utterance_pos": 15,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "对SEEKER而言，此刻对话被一条固定的规则包拢起来：对方每报出一个片名，都是在确认我看过没有；我的观影史成了不能随意带过的、必须被核对的对象。只要还没有出现我没看过的电影，这条推荐和追问的轨道就不会改变，我只能作为被检查的名单站在这个流程中央。",
+        "probability": 0.6027
+      },
+      {
+        "content": "对方报出的每一部电影都从普通话题变成了投射到我身上的测试题；‘你看过吗’不是一个可以随口绕过的话头，而是一道要求我明确判定的检验。我的记忆、我的观影经历，在这一刻被逐项抽查，每一部的答案都必须是清晰的‘看过’或‘没看过’。",
+        "probability": 0.3973
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "此刻对话就像一条固定的轨道，对方每报一个片名，都是在检查我是否看过。我的观影历史成了被核对的对象，而只要我还没有说出一个没看过的片名，这轮问答就不会停。我只好配合着把每一部都确认一遍，同时也借机表达我真正喜欢的类型，希望他最终能碰到我心中的那部。虽然有点被架在流程中央，但我还是愿意继续下去。",
+        "activation": 0.5854
+      },
+      {
+        "content": "对方每报出一部电影，我马上就觉得这不是随便聊天，而是一道必须认真作答的考题：我到底看过没有？记忆被瞬间翻开，我得在脑子里确认一遍，然后给出一个明确的答案——不能含混，不能绕开。没看过的，我就承认没看过；看过的，我还想紧接着说出自己的评价，比如喜欢还是不喜欢，因为我不想只是被核对，我也想让人看到我的口味。这一部部电影像抽查一样落在我身上，我的观影经历被公开检验，每一部都要给个干脆的交代。虽然这种被逐项追问的感觉让我既配合又有点紧绷，但我还是愿意继续接住每一个问题，保持开放，直到对方找到一部我确实没看过的为止。",
+        "activation": 0.4146
+      }
+    ],
+    "observed_action": "SEEKER说想找一些类似《She's Out of My League》的搞笑喜剧；表示《Daddy's Home》也是好电影，但没看过对方建议的那些电影，看过《Deuce Bigalow》但不喜欢那些电影；表达对《Step Brothers》和《Life as We Know It》的喜爱；表示看过另一部，觉得有趣，还喜欢James Franco主演的《Why Him?》；表示《Talladega Nights》是搞笑电影并感谢；表示愿意接受建议；表示看过《Eddie Murphy Raw》，但不是最喜欢的。",
+    "predicted_actions": [
+      {
+        "content": "说明自己喜欢的喜剧类型",
+        "probability": 0.5519
+      },
+      {
+        "content": "说出一个电影片名并请推荐人评价",
+        "probability": 0.3018
+      },
+      {
+        "content": "请对方继续并等待",
+        "probability": 0.1463
+      }
+    ]
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "option_scores": {
+    "a": 0,
+    "b": 0.5519,
+    "c": 0.3018,
+    "d": 0.1463
+  },
+  "score_reason": "A 0.0000；B 0.5519 = 说明自己喜欢的喜剧类型 0.5519；C 0.3018 = 说出一个电影片名并请推荐人评价 0.3018；D 0.1463 = 请对方继续并等待 0.1463。Action 0 adds preference details, action 1 asks for feedback on a title, and action 2 is a chit-chat prompt.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

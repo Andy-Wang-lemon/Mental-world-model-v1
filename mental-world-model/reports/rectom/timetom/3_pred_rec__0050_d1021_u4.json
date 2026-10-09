@@ -1,0 +1,60 @@
+{
+  "id": "3_pred_rec__0050_d1021_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender opens the dialogue by asking what kind of movie the seeker is looking for. No information yet about the seeker's preferences or reaction.",
+      "belief_before": "No prior beliefs about the seeker's movie preferences, constraints, or mood.",
+      "belief_update": "Recommender has not received any preference information yet; the dialogue is at the initial request-gathering stage.",
+      "belief_after": "Recommender knows only that the seeker is seeking a movie and has not yet stated genre, lead, or mood preferences.",
+      "emotion": "polite, neutral, welcoming",
+      "intention": "Invite the seeker to state their movie preferences so a suitable recommendation can be made.",
+      "conversational_goal": "Elicit the seeker's preferences and begin the recommendation dialogue."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says they want a film of any genre with a woman in the lead and are in the mood for a good heroine.",
+      "belief_before": "Recommender had no specific genre, lead, or mood preferences from the seeker.",
+      "belief_update": "Seeker's preference is now clear: genre is flexible, but the film should have a female lead and a good heroine; the positive tone suggests openness.",
+      "belief_after": "Recommender believes a suitable recommendation should center on a strong woman/heroine, while genre can vary.",
+      "emotion": "engaged, helpful, positive",
+      "intention": "Search for female-led or heroine-centered movies that fit the seeker's mood.",
+      "conversational_goal": "Identify or propose a movie matching the seeker's heroine-focused request."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks if the seeker has seen The Blind Side (2009) with Sandra Bullock.",
+      "belief_before": "Recommender believes the seeker wants any genre with a female lead and a good heroine, and does not know which films the seeker has seen.",
+      "belief_update": "Recommender selects The Blind Side as a candidate, apparently judging it as having a central female/heroine role; the seeker's familiarity with it is still unknown.",
+      "belief_after": "Recommender is proposing The Blind Side as a possible match and awaiting the seeker's answer about whether they have seen it.",
+      "emotion": "hopeful, helpful, curious",
+      "intention": "Offer a concrete candidate and check whether it is new to the seeker.",
+      "conversational_goal": "Recommend or validate The Blind Side if the seeker has not seen it."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have not seen The Blind Side and asks whether it is about a woman adopting a black kid.",
+      "belief_before": "Recommender believed The Blind Side might fit the heroine request and did not know if the seeker had seen it.",
+      "belief_update": "Seeker has not seen the film but has a rough plot association involving adoption; this resolves seen-status and suggests partial familiarity.",
+      "belief_after": "Recommender believes The Blind Side remains a viable recommendation because it is unseen, though the seeker's plot summary may need clarification.",
+      "emotion": "encouraged, helpful, mildly cautious about the plot phrasing",
+      "intention": "Confirm or clarify the film's plot and continue moving toward recommending it.",
+      "conversational_goal": "Answer the seeker's plot question and guide the dialogue toward a recommendation or next step."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender opens the dialogue by asking what kind of movie the seeker is looking for. No information yet about the seeker's preferences or reaction.\",\n    \"belief_before\": \"No prior beliefs about the seeker's movie preferences, constraints, or mood.\",\n    \"belief_update\": \"Recommender has not received any preference information yet; the dialogue is at the initial request-gathering stage.\",\n    \"belief_after\": \"Recommender knows only that the seeker is seeking a movie and has not yet stated genre, lead, or mood preferences.\",\n    \"emotion\": \"polite, neutral, welcoming\",\n    \"intention\": \"Invite the seeker to state their movie preferences so a suitable recommendation can be made.\",\n    \"conversational_goal\": \"Elicit the seeker's preferences and begin the recommendation dialogue.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says they want a film of any genre with a woman in the lead and are in the mood for a good heroine.\",\n    \"belief_before\": \"Recommender had no specific genre, lead, or mood preferences from the seeker.\",\n    \"belief_update\": \"Seeker's preference is now clear: genre is flexible, but the film should have a female lead and a good heroine; the positive tone suggests openness.\",\n    \"belief_after\": \"Recommender believes a suitable recommendation should center on a strong woman/heroine, while genre can vary.\",\n    \"emotion\": \"engaged, helpful, positive\",\n    \"intention\": \"Search for female-led or heroine-centered movies that fit the seeker's mood.\",\n    \"conversational_goal\": \"Identify or propose a movie matching the seeker's heroine-focused request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks if the seeker has seen The Blind Side (2009) with Sandra Bullock.\",\n    \"belief_before\": \"Recommender believes the seeker wants any genre with a female lead and a good heroine, and does not know which films the seeker has seen.\",\n    \"belief_update\": \"Recommender selects The Blind Side as a candidate, apparently judging it as having a central female/heroine role; the seeker's familiarity with it is still unknown.\",\n    \"belief_after\": \"Recommender is proposing The Blind Side as a possible match and awaiting the seeker's answer about whether they have seen it.\",\n    \"emotion\": \"hopeful, helpful, curious\",\n    \"intention\": \"Offer a concrete candidate and check whether it is new to the seeker.\",\n    \"conversational_goal\": \"Recommend or validate The Blind Side if the seeker has not seen it.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have not seen The Blind Side and asks whether it is about a woman adopting a black kid.\",\n    \"belief_before\": \"Recommender believed The Blind Side might fit the heroine request and did not know if the seeker had seen it.\",\n    \"belief_update\": \"Seeker has not seen the film but has a rough plot association involving adoption; this resolves seen-status and suggests partial familiarity.\",\n    \"belief_after\": \"Recommender believes The Blind Side remains a viable recommendation because it is unseen, though the seeker's plot summary may need clarification.\",\n    \"emotion\": \"encouraged, helpful, mildly cautious about the plot phrasing\",\n    \"intention\": \"Confirm or clarify the film's plot and continue moving toward recommending it.\",\n    \"conversational_goal\": \"Answer the seeker's plot question and guide the dialogue toward a recommendation or next step.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

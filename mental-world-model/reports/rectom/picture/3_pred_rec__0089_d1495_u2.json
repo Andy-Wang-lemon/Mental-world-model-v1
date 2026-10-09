@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0089_d1495_u2",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that it greeted the seeker, asked how they were, and asked what kind of movies they are looking for. It also knows the SEEKER replied that they are good and wants a drama similar to *Extremely Loud and Incredibly Close* (2011).\n\nRECOMMENDER does **not** know:\n- Any further preferences such as actors, directors, themes, mood, release era, language, or streaming availability.\n- Whether the SEEKER has already seen any particular similar movies.\n- Any ratings or feedback from the SEEKER about previous recommendations, because no recommendation has been made yet.\n- Any constraints beyond the stated genre/example.\n\nThe interaction so far: RECOMMENDER initiated, asked a preference question, and SEEKER answered with a specific genre/example. No recommendation or feedback has occurred yet.\n\nGiven this, the next natural strategy is for RECOMMENDER to act on the stated request by either recommending directly or asking a targeted follow-up within the recommendation process. Among the choices, this best matches:\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

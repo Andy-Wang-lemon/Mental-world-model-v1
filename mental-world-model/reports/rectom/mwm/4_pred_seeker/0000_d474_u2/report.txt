@@ -1,0 +1,48 @@
+数据：4_pred_seeker
+题号：0  d474_u2
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER 此刻把 RECOMMENDER 说出“Yes, how about It (2017) ?”经验为：这不是一个与己无关的片名信息，而是对方把《It (2017)》直接递到 SEEKER 面前，使这个选项落进 SEEKER 的自我相关范围；同时，这句话被经验成一条固定的互动规则——对方提出选项后，SEEKER 这边就有一个接受或拒绝的位置必须由自己来占据。于是《It (2017)》不再是单纯的外部对象，而成了压向 SEEKER 的、要求作出回应的对象化选项。",
+      "probability": 0.7407
+    },
+    {
+      "content": "SEEKER 听到 RECOMMENDER 说“Yes, how about It (2017) ?”时，这句话被经验为对“我不知道看什么”这一空缺的回应：那个空缺仍在自身这边，而《It (2017)》作为一个具体片名出现，正好成为可能填满它的候补。与此同时，因为 SEEKER 把“找一部电影”执为存在一个正确答案或最佳选项的事，这个片名不只是众多提议之一，而像是问对的人后理应得到的那个候选答案；它带有“若选它，也许就对了”的分量。",
+      "probability": 0.2593
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 心里把 RECOMMENDER 这句话整理为：对方确实给出了一个具体片名，《It (2017)》不再只是外部信息，而是被递到自己面前、落进自己需要处理的范围里。他感到这个提议正对着自己而来，因此自己这边随即出现一个必须接住的位置——接受或拒绝都由不得回避；于是《It (2017)》被经验成一个要求回应的对象化选项，带着向自己压来的分量。",
+      "activation": 0.7407
+    },
+    {
+      "content": "SEEKER听到“Yes, how about It (2017) ?”时，心里先把它收作对自己“不知道看什么”的回应：空缺仍在自己这边，而《It (2017)》成了一个具体、可抓取的候补。因为把“找一部电影”当成存在正确答案或最佳选项的事，这个片名不只是随意提议之一，更像是问对之后理应得到的那个候选答案，带有“若选它，也许就对了”的分量。于是内心开始围绕它作权衡：它是否正好适合此刻的自己，是否足以填上那个空缺；在尚未定论之前，先把它立为最需要掂量的选项。",
+      "activation": 0.2593
+    }
+  ],
+  "observed_action": "SEEKER asks for help finding a movie to watch.",
+  "predicted_actions": [
+    {
+      "content": "询问影片信息",
+      "probability": 0.4765
+    },
+    {
+      "content": "接受推荐",
+      "probability": 0.4115
+    },
+    {
+      "content": "defers decision",
+      "probability": 0.112
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.78, "b": 0.35, "c": 0.22, "d": 0.08}
+选择说明：The record centers on responding to the just-offered It (2017), making feedback on that recommendation the most directly supported next strategy.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

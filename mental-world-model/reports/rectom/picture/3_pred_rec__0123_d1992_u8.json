@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0123_d1992_u8",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "From the RECOMMENDER’s perspective, the known facts are:\n\n- The SEEKER wants good action movies.\n- The SEEKER likes both hard-core action and fun family action.\n- The SEEKER likes movies such as *Abduction (2011)* and *Speed (1994)*.\n- The SEEKER liked *Mad Max (1979)* but preferred *Mad Max: Fury Road (2015)*.\n- The SEEKER has explicitly rejected *Star Wars*, saying they could never get into those movies.\n- The RECOMMENDER has already made two recommendations: *Mad Max (1979)* and *Star Wars: Episode VIII – The Last Jedi (2017)*.\n- The RECOMMENDER’s role/intention is to help find action movies.\n\nUnknown to the RECOMMENDER:\n\n- Whether the SEEKER likes other action subgenres, actors, directors, or franchises beyond those mentioned.\n- Whether the SEEKER wants another recommendation immediately or wants to discuss preferences further.\n- What specific movie the RECOMMENDER will suggest next.\n- Whether the SEEKER has already seen many other common action films.\n\nGiven that the SEEKER just rejected *Star Wars*, the RECOMMENDER is likely to continue the recommendation task by offering another action movie suggestion or asking a further narrowing question. This matches “Provides a recommendation directly or by inquiring further,” rather than greeting, chit-chat, or simply explaining a previous recommendation.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

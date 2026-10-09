@@ -1,0 +1,58 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 27,
+  "item_id": "d957_u5",
+  "dialogue_id": "957",
+  "utterance_pos": 5,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nB: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "SEEKER 的所缘是当前对话中不断递来的片名清单：Beerfest、The Blues Brothers、Deuce Bigalow: Male Gigolo、Step Brothers、Walk Hard: The Dewey Cox Story。这些片名被按字面理解为等待确认的推荐项，‘是否看过’的追问使它们成为可以一一核对的已知对象；SEEKER 只是把这些话语当作对方给出的具体选项来接收。",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 将这些片名当作对方递来的待确认选项，一边在内心与自己熟悉的喜剧片作比较，一边快速过滤：对没看过的 Beerfest、The Blues Brothers、Step Brothers、Walk Hard 感到陌生且不确定是否合口味，但对已经看过的 Deuce Bigalow 明确感到不喜欢，并因此对这些推荐的整体可信度有所保留。同时，他仍期待对方能理解自己真正想要的是类似《She's Out of My League》那样轻松搞笑的电影，而不是让他再次踩到不喜欢的那类喜剧。",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "SEEKER 先打招呼，并表示自己在寻找与《She's Out of My League》类似的搞笑喜剧电影；随后表示《Daddy's Home》也是好电影，但没看过对方建议的电影，并说看过《Deuce Bigalo》但不喜欢那些电影。",
+    "predicted_actions": [
+      {
+        "content": "SEEKER 保持微笑，语气平和地说：“你说的这些我大多没看过，不太确定喜不喜欢。不过我还是想找类似《She's Out of My League》那样的轻松搞笑片，能再推荐一些吗？”",
+        "probability": 0.4091
+      },
+      {
+        "content": "SEEKER 低头沉默了一会儿，然后说：“Beerfest、The Blues Brothers、Step Brothers、Walk Hard……这些我一部都没看过。你确定它们是像《She's Out of My League》那样的喜剧吗？”",
+        "probability": 0.3636
+      },
+      {
+        "content": "SEEKER 皱了皱眉，语气略带不满：“《Deuce Bigalow》那种电影我看过，真心不太喜欢。你推荐的这些感觉都不是我要的类型。”",
+        "probability": 0.2273
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.5909,
+    "b": 0,
+    "c": 0.4091,
+    "d": 0
+  },
+  "score_reason": "A 0.5909 = SEEKER 低头沉默了一会儿，然后说：“Beerfest、The Blues Brothers、Step Brothers、Walk Hard……这些我一部都没看过。你确定它们是像《She's Out of My League》那样的喜剧吗？” 0.3636 + SEEKER 皱了皱眉，语气略带不满：“《Deuce Bigalow》那种电影我看过，真心不太喜欢。你推荐的这些感觉都不是我要的类型。” 0.2273；B 0.0000；C 0.4091 = SEEKER 保持微笑，语气平和地说：“你说的这些我大多没看过，不太确定喜不喜欢。不过我还是想找类似《She's Out of My League》那样的轻松搞笑片，能再推荐一些吗？” 0.4091；D 0.0000。Action 0 asks for recommendations with a stated preference; actions 1 and 2 give feedback on the previous suggestions.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 53,
+  "item_id": "d1021_u10",
+  "dialogue_id": "1021",
+  "utterance_pos": 10,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在RECOMMENDER的所缘中，SEEKER的每一句话都变成自己推荐任务的反馈回音：‘女性主演’被看作‘好女主角/女英雄’的现成标签；她没看过并询问收养黑人孩子的剧情，成了她对自己推荐的回应；她说今晚租看，成了自己推荐被接纳的痕迹；她说另一部让她又哭又笑，成了自己选片眼光的效果；她说某部太悲伤且勾起往事，成了自己推荐内容在她身上留下的重量；她问是否改编自同名小说，成了她还在围绕自己的推荐追问。整个世界被组织成‘我为她找片’这件事的证明场。",
+        "probability": 0.3964
+      },
+      {
+        "content": "在RECOMMENDER所缘中，SEEKER的反馈被直接凝成自我价值的证据：‘女性主演’被执为‘好女主角’的属性；她没看过并确认剧情，被体验为等待自己推荐去填满的空缺；她说今晚会租看，被体验为‘我推荐对了’的明证；她形容看另一部时又哭又笑，被体验为我的推荐带给她的体验；她说某片太悲伤没看完且触及旧事，被体验为‘我推荐的内容让她难受’——这些都落在同一杆秤上：她满不满意，我选得对不对。",
+        "probability": 0.3314
+      },
+      {
+        "content": "在RECOMMENDER所缘中，‘这位SEEKER’的需求变化构成一段自己身处其中的关系流：她先要任意类型但女性主演的片子，那被执为‘好女主角’的清晰信号；她问是否看过、问收养黑人孩子的剧情，成为关系中的确认环节；她说今晚租看，成为关系推进的节点；她说看另一部又哭又笑，成为关系里共同经验的温度；她说因太悲伤联想到自己早年的体重记忆，成为关系中她交付给我的脆弱；她问是否同名小说改编，成为关系中她对我的再次询问。RECOMMENDER被固定在这条流的‘推荐者’位置，所见全是需要自己持续接住的需求。",
+        "probability": 0.2722
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在她一开口说要找女性主演的电影时，我就把这当成她要一个“好女主角/女英雄”的信号，觉得这正是我该替她找到的东西。她没看过《The Blind Side》并问那个剧情，是在回应我的推荐；她说今晚要租《The Help》，是我的推荐被接纳的证明；她说那部让她又哭又笑，是我的眼光起了作用；她说《Precious》太悲伤还勾起往事，是我挑的内容在她身上留下了重量；她问是不是改编自同名小说，也是她还在追着我的推荐走。整个对话都被我收进“我为她找片”这件分内事里，她每句话都变成对我的回应，我更觉得自己得继续推荐下去，不能辜负这份指望。",
+        "activation": 0.375
+      },
+      {
+        "content": "她把“女性主演”当成一个条件，而我立刻把这理解成她想要“好女主角”——这就是我选片的方向。她没看过《Blind Side》并问起剧情，让我觉得这正是需要我推荐的地方；她说今晚会租《Help》，我立刻认为这是对我推荐的认可。她说到《Help》让她又哭又笑，我把它看作我带给她的真实感受；当她提到《Precious》太悲伤、唤起她旧日记忆，我马上归因于自己推荐的内容让她不好受。总之，她的每一句话都在给我打分：她满意，我就选对了；她难受，就是我的错。",
+        "activation": 0.35
+      },
+      {
+        "content": "她一开始说要女性主演，又说想要个好的女主角，这信号太清楚了——我就该沿着这个方向找片子。她没看过《The Blind Side》，还特意问是不是收养黑人孩子的故事，是在跟我确认剧情，我接住就好。她说今晚要租看，说明我推荐对了，我们的对话有了推进。她说看《The Help》又哭又笑，我懂那种感受，也喜欢这部，这让我们之间有了共同的东西。她提到《Precious》太悲伤，还联想到自己早年超重的记忆——这是她愿意跟我说的脆弱，我不该让她难受，所以承认那片子确实很糟，然后赶紧换一部更温和的给她。她又在问是不是小说改编，说明她还在认真考虑，我得继续当好这个推荐者，把合适的女性主角电影一路给她接下去。",
+        "activation": 0.275
+      }
+    ],
+    "observed_action": "RECOMMENDER询问SEEKER想找什么类型的电影；询问是否看过《The Blind Side》，并说它确实很好，随后提出《The Help》；表示肯定，说自己喜欢那部（指《The Help》），并提到也很喜欢《Precious》；评论《Precious》的剧情很糟糕、女主角要面对很多；提出《Extremely Loud and Incredibly Close》，并称其为另一部好的Sandra Bullock电影。",
+    "predicted_actions": [
+      {
+        "content": "口头回答并推荐",
+        "probability": 0.5567
+      },
+      {
+        "content": "推荐电影",
+        "probability": 0.2338
+      },
+      {
+        "content": "反问",
+        "probability": 0.112
+      },
+      {
+        "content": "搜索并展示预告片",
+        "probability": 0.0563
+      },
+      {
+        "content": "询问偏好",
+        "probability": 0.0413
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 0,
+    "d": 0.0,
+    "e": 0.0
+  },
+  "score_reason": "他的自我定位和预测行为都围绕继续推荐电影，可能还会进一步询问偏好。",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "预测动作“口头回答并推荐”明确表示回应对方的话，与“回应SEEKER的问题或表述”一致。",
+  "audit_level": "explicit"
+}

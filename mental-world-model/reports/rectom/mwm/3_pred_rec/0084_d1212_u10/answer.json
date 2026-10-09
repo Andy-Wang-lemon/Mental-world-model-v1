@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 84,
+  "item_id": "d1212_u10",
+  "dialogue_id": "1212",
+  "utterance_pos": 10,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b",
+    "e"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement\nE: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982) \nSEEKER says: Yes, I have seen that one and thought it was pretty good.\nRECOMMENDER says: Not sure if it's considered sci-fi, b；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982) \nSEEKER says: Yes, I have seen that one and thought it was pretty good.\nRECOMMENDER says: Not sure if it's considered sci-fi, b；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Explains a recommendation with background or reasoning",
+  "option_scores": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 0.0,
+    "d": 0,
+    "e": 0.0
+  },
+  "score_reason": "The recommender is likely explaining or giving background about E.T. as a possible sci-fi film.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "记录中没有预测下一步行动或相关思考，只能根据已发生的情境推测。",
+  "audit_level": "inferred"
+}

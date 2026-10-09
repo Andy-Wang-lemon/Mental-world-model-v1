@@ -1,0 +1,61 @@
+数据：4_pred_seeker
+题号：28  d957_u7
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "当下的对话在SEEKER经验中被收束为一场“选片任务”：他正站在被推荐喜剧片的位置上，RECOMMENDER提出的每一部电影——Beerfest、The Blues Brothers、Deuce Bigalow、Step Brothers、Walk Hard——都只是这条任务线里的待选项，需要被逐个掂量，看哪一部才值得被挑出来。",
+      "probability": 0.4249
+    },
+    {
+      "content": "RECOMMENDER的询问落在SEEKER身上时，他经验到的是“我看过/没看过”这些电影成为此刻关于自己的事实；“是否看过”被当作衡量其中每一部推荐的位置，而这一切仍被收在“从这些选项中筛选出值得看的那一部”的任务框架里。",
+      "probability": 0.3241
+    },
+    {
+      "content": "在SEEKER的经验里，Beerfest和The Blues Brothers这类影片被固化成“好喜剧”的样板；RECOMMENDER后续提到的Deuce Bigalow、Step Brothers、Walk Hard都被不自觉地放到这些样板旁边比较，仿佛一部喜剧值不值得看，取决于它是否贴近这些参照风格。",
+      "probability": 0.251
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这些推荐一部部排在我面前，像待选的清单。我并不是来者不拒地全盘接受，我已经知道自己喜欢什么——像Step Brothers那种搞笑，还有Life as We Know It；至于Deuce Bigalow那种调调我不喜欢，而Beerfest、Blues Brothers、Walk Hard我都没看过，不确定它们是不是我想要的。我得从这些选项里掂量一下，哪一部可能真正合我的口味，而不是随便挑一部。我更愿意守住我已经验证过的喜好，再去决定要不要尝试新的。",
+      "activation": 0.3899
+    },
+    {
+      "content": "对方问我看过哪些，我马上意识到这是关于我的事实：我看过什么、没看过什么，决定了我对每部推荐的判断。没看过的那些，我没法说好不好；看过的那部Deuce Bigalow，我不喜欢，而且我很清楚自己不喜欢那种味道。我真正喜欢的是Step Brothers、Life as We Know It那种能让我笑出来的喜剧，这个我很确定。眼下我没被这问题带偏，还是在想着从一个又一个推荐里找出值得我看的那一部。",
+      "activation": 0.3069
+    },
+    {
+      "content": "Beerfest和The Blues Brothers在我这儿早就是“好喜剧”的标准样子，所以对方后面提的那些片子，我不自觉地都会拿到这个标准旁边比一比。Deuce Bigalow被比成“不对味”的那类，Step Brothers则贴近我心里那个模板，所以一听到就觉得它是同路的；Walk Hard也被我用同一把尺子悄悄掂量过。我提She's Out of My League、Daddy's Home和Life as We Know It，是在用我自己认可的片例说明：我要的不是泛泛的笑点，而是那种放松、熟悉、能让我笑出来的调子。推荐到底合不合用，要看它能不能落进我已经有的这个参照系里。",
+      "activation": 0.3032
+    }
+  ],
+  "observed_action": "SEEKER first states that they are looking for funny comedy movies similar to She's Out of My League (2010). Then SEEKER mentions Daddy's Home (2015) as a good movie, says they have not seen the movies suggested by RECOMMENDER, and says they have seen Deuce Bigalow but do not like those movies. Then SEEKER expresses love for Step Brothers (2008) and Life as We Know It (2010).",
+  "predicted_actions": [
+    {
+      "content": "asks if Walk Hard is as funny as Step Brothers",
+      "probability": 0.3069
+    },
+    {
+      "content": "确认",
+      "probability": 0.1755
+    },
+    {
+      "content": "表达偏好",
+      "probability": 0.1365
+    },
+    {
+      "content": "询问",
+      "probability": 0.078
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.3069, "b": 0, "c": 0.2145, "d": 0}
+选择说明：A 0.3069 = asks if Walk Hard is as funny as Step Brothers 0.3069；B 0.0000；C 0.2145 = 表达偏好 0.1365 + 询问 0.0780；D 0.0000。Action 0 gives feedback on a recommended movie, actions 2 and 3 express preference or ask for a recommendation, and none match options B or D.
+标准：A: Give feedback on the previously recommended movie or suggestion
+B: Add more information about their preferences, such as genres, actors, or past favorites
+结果：对

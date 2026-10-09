@@ -1,0 +1,39 @@
+{
+  "id": "3_pred_rec__0085_d1363_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender opens the dialogue with a greeting and asks what kind of movies the seeker is into. No prior seeker preference information is available; recommender is the first speaker.",
+      "belief_before": "Recommender has no information about the seeker's movie preferences or tastes; recommender's own movie preferences are not stated.",
+      "belief_update": "No update from another speaker yet; recommender initiates by requesting preference information. No prior interpretation to change.",
+      "belief_after": "Recommender still does not know the seeker's specific movie preferences and is awaiting a response.",
+      "emotion": "Friendly, curious, welcoming; no reaction to another speaker yet because recommender speaks first.",
+      "intention": "Initiate the recommendation conversation and learn the seeker's movie taste.",
+      "conversational_goal": "Elicit the seeker's preferred genres or movie types so a suitable recommendation can be made."
+    },
+    {
+      "time": 2,
+      "observed": "Recommender hears the seeker say they are really into mystery movies and maybe a good psychological thriller. This is new information about the seeker's preferences.",
+      "belief_before": "At the start of this turn, recommender still does not know the seeker's specific movie preferences; the previous question had not yet been answered.",
+      "belief_update": "Recommender updates from unknown preferences to known genre interests: mystery movies and possibly a psychological thriller. This turn changes the prior interpretation by providing the requested preference information.",
+      "belief_after": "Recommender believes the seeker likes mystery and psychological-thriller movies and likely wants a recommendation in those genres or a closely related direction.",
+      "emotion": "Interested, attentive, and positively receptive to the seeker's disclosure.",
+      "intention": "Use the newly disclosed preferences to tailor the next recommendation toward mystery/psychological thriller, asking for clarification only if needed.",
+      "conversational_goal": "Respond with a suitable mystery or psychological-thriller recommendation, or narrow the options with a follow-up question based on the seeker's stated tastes."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender opens the dialogue with a greeting and asks what kind of movies the seeker is into. No prior seeker preference information is available; recommender is the first speaker.\",\n    \"belief_before\": \"Recommender has no information about the seeker's movie preferences or tastes; recommender's own movie preferences are not stated.\",\n    \"belief_update\": \"No update from another speaker yet; recommender initiates by requesting preference information. No prior interpretation to change.\",\n    \"belief_after\": \"Recommender still does not know the seeker's specific movie preferences and is awaiting a response.\",\n    \"emotion\": \"Friendly, curious, welcoming; no reaction to another speaker yet because recommender speaks first.\",\n    \"intention\": \"Initiate the recommendation conversation and learn the seeker's movie taste.\",\n    \"conversational_goal\": \"Elicit the seeker's preferred genres or movie types so a suitable recommendation can be made.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Recommender hears the seeker say they are really into mystery movies and maybe a good psychological thriller. This is new information about the seeker's preferences.\",\n    \"belief_before\": \"At the start of this turn, recommender still does not know the seeker's specific movie preferences; the previous question had not yet been answered.\",\n    \"belief_update\": \"Recommender updates from unknown preferences to known genre interests: mystery movies and possibly a psychological thriller. This turn changes the prior interpretation by providing the requested preference information.\",\n    \"belief_after\": \"Recommender believes the seeker likes mystery and psychological-thriller movies and likely wants a recommendation in those genres or a closely related direction.\",\n    \"emotion\": \"Interested, attentive, and positively receptive to the seeker's disclosure.\",\n    \"intention\": \"Use the newly disclosed preferences to tailor the next recommendation toward mystery/psychological thriller, asking for clarification only if needed.\",\n    \"conversational_goal\": \"Respond with a suitable mystery or psychological-thriller recommendation, or narrow the options with a follow-up question based on the seeker's stated tastes.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

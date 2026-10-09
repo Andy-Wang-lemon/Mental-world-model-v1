@@ -1,0 +1,61 @@
+{
+  "id": "4_pred_seeker__0026_d957_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'hey there...Can I help you find a good comedy like Beerfest (2006) or The Blues Brothers (1980)'",
+      "information_available": "Only the RECOMMENDER's opening offer; no prior dialogue from SEEKER.",
+      "preferences": "No explicit movie preferences stated by SEEKER yet in the dialogue.",
+      "belief_before": "No dialogue-specific beliefs about this recommender or recommendation task yet.",
+      "belief_update": "Learns that the RECOMMENDER is offering comedy recommendations and names Beerfest and The Blues Brothers as examples.",
+      "belief_after": "The RECOMMENDER may be able to help with comedy recommendations; those two titles are candidate reference points but not yet evaluated.",
+      "emotion": "Neutral/attentive, possibly curious.",
+      "intention": "No explicit intention stated yet; likely either to accept help or clarify what he is looking for in response to the offer.",
+      "reaction_to_other": "Open/receptive; no negative signal.",
+      "conversational_goal": "Respond to the recommendation offer and, if needed, clarify what kind of comedy is wanted.",
+      "changes_previous_interpretation": "No previous interpretation to change; this initializes the recommender as someone offering broad comedy suggestions."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Hi! I'm looking for some funny comedy movies. Something similar to She's Out of My League (2010)'",
+      "information_available": "RECOMMENDER's prior offer plus SEEKER's own stated preference.",
+      "preferences": "SEEKER wants funny comedy movies similar to She's Out of My League (2010).",
+      "belief_before": "The RECOMMENDER is offering comedies such as Beerfest and The Blues Brothers and may be able to help.",
+      "belief_update": "SEEKER clarifies his own desired subtype: funny comedies like She's Out of My League. This gives the RECOMMENDER a specific comparison target.",
+      "belief_after": "The RECOMMENDER should now know SEEKER's preference and can match suggestions to She's Out of My League; earlier generic examples may or may not fit.",
+      "emotion": "Friendly/polite and positive ('Hi!'), with a clear request.",
+      "intention": "To obtain recommendations that match his stated comedy preference.",
+      "reaction_to_other": "Acknowledges the RECOMMENDER positively but redirects/clarifies toward his own reference film.",
+      "conversational_goal": "Guide the recommender by specifying the kind of comedy he wants.",
+      "changes_previous_interpretation": "Yes: the search shifts from generic comedy examples to a specific reference film, making the earlier examples less central until evaluated."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: 'Oh cool ok I can help...Have you seen the ones I mentioned...Or how about Deuce Bigalow: Male Gigolo (1999)'",
+      "information_available": "All prior turns: RECOMMENDER's initial examples, SEEKER's stated preference, and RECOMMENDER's new suggestion/check.",
+      "preferences": "Still wants funny comedy movies similar to She's Out of My League (2010); no change.",
+      "belief_before": "The RECOMMENDER knows SEEKER wants funny comedies similar to She's Out of My League and is expected to suggest relevant titles.",
+      "belief_update": "The RECOMMENDER accepts the request, asks whether SEEKER has seen Beerfest/The Blues Brothers, and proposes Deuce Bigalow: Male Gigolo as another option.",
+      "belief_after": "The RECOMMENDER is actively narrowing/searching for options; Deuce Bigalow is a candidate, and the seen-status of the previously mentioned titles matters.",
+      "emotion": "Neutral/considering; no explicit emotional reaction from SEEKER yet.",
+      "intention": "To evaluate whether the suggested titles fit his preference and decide or ask for more.",
+      "reaction_to_other": "Receptive to continued help; no acceptance or rejection yet.",
+      "conversational_goal": "Assess the new suggestions and respond about whether he has seen the mentioned films or wants another option.",
+      "changes_previous_interpretation": "Partially refines: the RECOMMENDER is still trying to help with the clarified preference, so the earlier view of the recommender as useful is reinforced, but Deuce Bigalow still needs to be judged against SEEKER's reference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'hey there...Can I help you find a good comedy like Beerfest (2006) or The Blues Brothers (1980)'\",\n    \"information_available\": \"Only the RECOMMENDER's opening offer; no prior dialogue from SEEKER.\",\n    \"preferences\": \"No explicit movie preferences stated by SEEKER yet in the dialogue.\",\n    \"belief_before\": \"No dialogue-specific beliefs about this recommender or recommendation task yet.\",\n    \"belief_update\": \"Learns that the RECOMMENDER is offering comedy recommendations and names Beerfest and The Blues Brothers as examples.\",\n    \"belief_after\": \"The RECOMMENDER may be able to help with comedy recommendations; those two titles are candidate reference points but not yet evaluated.\",\n    \"emotion\": \"Neutral/attentive, possibly curious.\",\n    \"intention\": \"No explicit intention stated yet; likely either to accept help or clarify what he is looking for in response to the offer.\",\n    \"reaction_to_other\": \"Open/receptive; no negative signal.\",\n    \"conversational_goal\": \"Respond to the recommendation offer and, if needed, clarify what kind of comedy is wanted.\",\n    \"changes_previous_interpretation\": \"No previous interpretation to change; this initializes the recommender as someone offering broad comedy suggestions.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Hi! I'm looking for some funny comedy movies. Something similar to She's Out of My League (2010)'\",\n    \"information_available\": \"RECOMMENDER's prior offer plus SEEKER's own stated preference.\",\n    \"preferences\": \"SEEKER wants funny comedy movies similar to She's Out of My League (2010).\",\n    \"belief_before\": \"The RECOMMENDER is offering comedies such as Beerfest and The Blues Brothers and may be able to help.\",\n    \"belief_update\": \"SEEKER clarifies his own desired subtype: funny comedies like She's Out of My League. This gives the RECOMMENDER a specific comparison target.\",\n    \"belief_after\": \"The RECOMMENDER should now know SEEKER's preference and can match suggestions to She's Out of My League; earlier generic examples may or may not fit.\",\n    \"emotion\": \"Friendly/polite and positive ('Hi!'), with a clear request.\",\n    \"intention\": \"To obtain recommendations that match his stated comedy preference.\",\n    \"reaction_to_other\": \"Acknowledges the RECOMMENDER positively but redirects/clarifies toward his own reference film.\",\n    \"conversational_goal\": \"Guide the recommender by specifying the kind of comedy he wants.\",\n    \"changes_previous_interpretation\": \"Yes: the search shifts from generic comedy examples to a specific reference film, making the earlier examples less central until evaluated.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: 'Oh cool ok I can help...Have you seen the ones I mentioned...Or how about Deuce Bigalow: Male Gigolo (1999)'\",\n    \"information_available\": \"All prior turns: RECOMMENDER's initial examples, SEEKER's stated preference, and RECOMMENDER's new suggestion/check.\",\n    \"preferences\": \"Still wants funny comedy movies similar to She's Out of My League (2010); no change.\",\n    \"belief_before\": \"The RECOMMENDER knows SEEKER wants funny comedies similar to She's Out of My League and is expected to suggest relevant titles.\",\n    \"belief_update\": \"The RECOMMENDER accepts the request, asks whether SEEKER has seen Beerfest/The Blues Brothers, and proposes Deuce Bigalow: Male Gigolo as another option.\",\n    \"belief_after\": \"The RECOMMENDER is actively narrowing/searching for options; Deuce Bigalow is a candidate, and the seen-status of the previously mentioned titles matters.\",\n    \"emotion\": \"Neutral/considering; no explicit emotional reaction from SEEKER yet.\",\n    \"intention\": \"To evaluate whether the suggested titles fit his preference and decide or ask for more.\",\n    \"reaction_to_other\": \"Receptive to continued help; no acceptance or rejection yet.\",\n    \"conversational_goal\": \"Assess the new suggestions and respond about whether he has seen the mentioned films or wants another option.\",\n    \"changes_previous_interpretation\": \"Partially refines: the RECOMMENDER is still trying to help with the clarified preference, so the earlier view of the recommender as useful is reinforced, but Deuce Bigalow still needs to be judged against SEEKER's reference.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

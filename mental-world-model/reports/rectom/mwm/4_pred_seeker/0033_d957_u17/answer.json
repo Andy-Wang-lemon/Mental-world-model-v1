@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 33,
+  "item_id": "d957_u17",
+  "dialogue_id": "957",
+  "utterance_pos": 17,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "当我发出“好笑”“好看”这类评价时，我感到这评价本身就成了对话继续的燃料；对方像在按照一条不能停下的规则寻找我还没看过的电影，而我的每个评价都在给这条寻找提供方向。于是整个场面是：规则推着我往前走，我的口味和笑点则被当作路标，直到某部陌生的片名出现，那个一直在寻找的缺口才会被填上。",
+        "probability": 0.3575
+      },
+      {
+        "content": "眼前这场对话变成了一条按规则推进的清单：对方一部接一部地报出片名，而我的任务就是确认每一部是不是我看过的；看过或没看过成了此刻最清楚的事实，同时那个“必须继续直到找到我没看过的”的规则像一条不可更改的轨道，把我每一次回答都变作判断节点，整场对话的意义就在这个有待被填满的空白上。",
+        "probability": 0.3562
+      },
+      {
+        "content": "我感到每个推荐都向我抛来一个必须回答的格子：对方一说出片名，我的回应就该明确落在“看过”或“没看过”上；这样一来，对话就是由一连串问答组成的环，我的观影经历不断被抽出来放到台面上，供对方确认下一步，仿佛没有我清晰的答复，这条链子就会断掉。",
+        "probability": 0.2863
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这场对话不知不觉变成了一条不断延伸的清单，对方一部接一部报出片名，我则像在核对库存一样确认每一部是否属于我的记忆。看过或没看过成了此刻最清晰不过的事实，而那些我曾喜欢或不太喜欢的电影，也像是在替我描画我的品味轮廓。可那个“必须继续直到找到一部我没看过的”的规则，却像一条固定轨道，让每一次回答都只是走向那个尚未被填满的空白。我不由得把自己的观影史当作此刻最重要的身份标记，一边配合着继续报出我熟悉的名字和偏好，一边隐隐觉得整个对话的意义就悬在这些待确认的选项上，仿佛我不只是在找电影，而是在用自己看过的每一部片子参与一场必须进行到底的检定。",
+        "activation": 0.4286
+      },
+      {
+        "content": "每个片名一出来，我确实觉得必须先给出一个明确的“看过”或“没看过”才能让对话往前走；这好像已经成了我们之间的约定。虽然一次次把自己的观影经历摊开有点暴露，但我也借着这些回答来确认自己看过的那些电影确实构成了“我”。我乐意继续玩这个问答游戏，因为只有给出清晰答复，推荐者才知道下一步该拿什么来试我；同时我也会主动抛出我喜欢的演员和类型，好让链条朝我更想要的方向延伸。",
+        "activation": 0.2857
+      },
+      {
+        "content": "我在这些对话里不断给出“好笑”“好看”的评价，其实不只是陈述喜好，更像是在给这场寻找提供燃料。对方似乎被一条不能停下的规则推着，一直要找出我没看过的电影，而我的每个评价、每次兴趣表态，都被当作路标来调整方向。我一方面希望对方认可我的品味，另一方面也开始觉得这规则有点压着我走；但我说“我开放建议”“通常喜欢Seth Rogen和Jonah Hill”，又是在亲手给出方向。直到某个陌生片名出现前，这个缺口似乎永远不会被填满，我可能既期待又有点疲惫。",
+        "activation": 0.2857
+      }
+    ],
+    "observed_action": "SEEKER 表达了自己在寻找类似《She's Out of My League》的搞笑喜剧片；评价《Daddy's Home》是好电影，同时说明没有看过对方之前推荐的电影、不喜欢《Deuce Bigalow》；表示喜欢《Step Brothers》和《Life as We Know It》；确认看过对方提到的另一部电影并认为其搞笑，还补充喜欢 James Franco 主演的《Why Him?》；称赞《Talladega Nights》搞笑并道谢；表示对建议持开放态度；说明看过 Eddie Murphy Raw 但不太喜欢；最后说明自己通常喜欢 Seth Rogen 和 Jonah Hill 的电影。",
+    "predicted_actions": [
+      {
+        "content": "回应推荐并表达个人偏好",
+        "probability": 0.3514
+      },
+      {
+        "content": "回答没看过并请求继续推荐下一部",
+        "probability": 0.2383
+      },
+      {
+        "content": "询问电影中是否有喜欢的演员",
+        "probability": 0.189
+      },
+      {
+        "content": "回答没看过并请求推荐类似现代喜剧",
+        "probability": 0.1442
+      },
+      {
+        "content": "请求更多电影推荐",
+        "probability": 0.0771
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.3514,
+    "b": 0,
+    "c": 0.4596,
+    "d": 0
+  },
+  "score_reason": "A 0.3514 = 回应推荐并表达个人偏好 0.3514；B 0.0000；C 0.4596 = 回答没看过并请求继续推荐下一部 0.2383 + 回答没看过并请求推荐类似现代喜剧 0.1442 + 请求更多电影推荐 0.0771；D 0.0000。0 gives feedback on the previous recommendation; 1, 3, and 4 ask for more/similar recommendations; 2 only asks about an actor and does not match a listed strategy.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "预测动作“回应推荐并表达个人偏好”即相当于对之前的电影推荐给出反馈。",
+  "audit_level": "direct"
+}

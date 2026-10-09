@@ -1,0 +1,86 @@
+{
+  "id": "4_pred_seeker__0120_d1941_u7",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets and asks whether SEEKER has seen Star Wars: Episode VIII – The Last Jedi (2017).",
+      "belief_before": "No prior dialogue; no specific beliefs about Recommender's intent.",
+      "belief_update": "Recommender may be starting a movie discussion/recommendation by checking SEEKER's viewing history for Star Wars: The Last Jedi.",
+      "belief_after": "Recommender is interested in Star Wars or checking seen films; SEEKER's answer is not yet disclosed.",
+      "emotion": "Neutral, polite.",
+      "intention": "Respond to the greeting and question.",
+      "conversational_goal": "Engage with Recommender and begin clarifying movie interests."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says he has not seen The Last Jedi and is looking for a good thriller/suspense movie.",
+      "belief_before": "Recommender asked about Star Wars: The Last Jedi; SEEKER knows he has not seen it and wants a thriller/suspense movie, but has not yet shared this.",
+      "belief_update": "SEEKER discloses not having seen The Last Jedi and states his thriller/suspense preference, redirecting the recommendation away from Star Wars.",
+      "belief_after": "Recommender now knows SEEKER wants thriller/suspense and has not seen The Last Jedi.",
+      "emotion": "Polite, cooperative.",
+      "intention": "Request a thriller/suspense recommendation.",
+      "conversational_goal": "Get a suitable movie recommendation in the desired genre."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks whether SEEKER has seen Split (2017).",
+      "belief_before": "Recommender knows SEEKER wants thriller/suspense. SEEKER knows his own viewing history for Split, but it is not yet disclosed.",
+      "belief_update": "Recommender proposes Split as a possible thriller/suspense candidate by asking if SEEKER has seen it.",
+      "belief_after": "Split is now a candidate recommendation; SEEKER can answer based on his own viewing history.",
+      "emotion": "Neutral, interested.",
+      "intention": "Evaluate Split as a potential recommendation.",
+      "conversational_goal": "Assess whether Split fits his thriller/suspense request."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says he wants something like Gone Baby Gone (2007), and that he watched 'that one' — referring to Split in context — and it was good.",
+      "belief_before": "Recommender asked about Split. SEEKER knows he has seen Split and liked it, and wants something like Gone Baby Gone.",
+      "belief_update": "SEEKER discloses he has seen and liked Split, but refines his preference to Gone Baby Gone-like suspense/thriller films.",
+      "belief_after": "Recommender knows Split is already seen/liked and should not be recommended again; the desired style is Gone Baby Gone-like.",
+      "emotion": "Positive, approving.",
+      "intention": "Guide Recommender toward a more specific style.",
+      "conversational_goal": "Get recommendations similar to Gone Baby Gone while avoiding already-seen Split."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says Don't Breathe (2016) was good also.",
+      "belief_before": "SEEKER wants something like Gone Baby Gone; Split is already seen and liked.",
+      "belief_update": "Recommender adds Don't Breathe as another good thriller/suspense option, implied to fit the discussion.",
+      "belief_after": "Don't Breathe is a new candidate; SEEKER may now consider whether he has seen it or wants details.",
+      "emotion": "Curious, open.",
+      "intention": "Consider Don't Breathe as a recommendation.",
+      "conversational_goal": "Evaluate whether Don't Breathe matches his preference."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says he really liked it — likely referring to Split — has not seen 'that one' yet — referring to Don't Breathe — and asks what it is about.",
+      "belief_before": "Recommender suggested Don't Breathe. SEEKER liked Split and wants Gone Baby Gone-like films; he knows he has not seen Don't Breathe.",
+      "belief_update": "SEEKER reiterates liking Split, discloses he has not seen Don't Breathe, and requests its plot.",
+      "belief_after": "Recommender knows Don't Breathe is unseen and SEEKER wants details; Split remains liked.",
+      "emotion": "Curious, positive.",
+      "intention": "Learn what Don't Breathe is about before deciding.",
+      "conversational_goal": "Get enough plot information to judge Don't Breathe."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says he also liked Solace (2015) with Anthony Hopkins.",
+      "belief_before": "SEEKER asked what Don't Breathe is about and is waiting for details; his preferred style is Gone Baby Gone-like thriller/suspense.",
+      "belief_update": "Recommender adds Solace as another liked thriller/suspense title, featuring Anthony Hopkins.",
+      "belief_after": "Solace is another candidate recommendation; the Don't Breathe plot question remains unanswered.",
+      "emotion": "Neutral, curious.",
+      "intention": "Consider Solace as a possible recommendation.",
+      "conversational_goal": "Evaluate the new recommendation and possibly ask for more details."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets and asks whether SEEKER has seen Star Wars: Episode VIII – The Last Jedi (2017).\",\n    \"belief_before\": \"No prior dialogue; no specific beliefs about Recommender's intent.\",\n    \"belief_update\": \"Recommender may be starting a movie discussion/recommendation by checking SEEKER's viewing history for Star Wars: The Last Jedi.\",\n    \"belief_after\": \"Recommender is interested in Star Wars or checking seen films; SEEKER's answer is not yet disclosed.\",\n    \"emotion\": \"Neutral, polite.\",\n    \"intention\": \"Respond to the greeting and question.\",\n    \"conversational_goal\": \"Engage with Recommender and begin clarifying movie interests.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says he has not seen The Last Jedi and is looking for a good thriller/suspense movie.\",\n    \"belief_before\": \"Recommender asked about Star Wars: The Last Jedi; SEEKER knows he has not seen it and wants a thriller/suspense movie, but has not yet shared this.\",\n    \"belief_update\": \"SEEKER discloses not having seen The Last Jedi and states his thriller/suspense preference, redirecting the recommendation away from Star Wars.\",\n    \"belief_after\": \"Recommender now knows SEEKER wants thriller/suspense and has not seen The Last Jedi.\",\n    \"emotion\": \"Polite, cooperative.\",\n    \"intention\": \"Request a thriller/suspense recommendation.\",\n    \"conversational_goal\": \"Get a suitable movie recommendation in the desired genre.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks whether SEEKER has seen Split (2017).\",\n    \"belief_before\": \"Recommender knows SEEKER wants thriller/suspense. SEEKER knows his own viewing history for Split, but it is not yet disclosed.\",\n    \"belief_update\": \"Recommender proposes Split as a possible thriller/suspense candidate by asking if SEEKER has seen it.\",\n    \"belief_after\": \"Split is now a candidate recommendation; SEEKER can answer based on his own viewing history.\",\n    \"emotion\": \"Neutral, interested.\",\n    \"intention\": \"Evaluate Split as a potential recommendation.\",\n    \"conversational_goal\": \"Assess whether Split fits his thriller/suspense request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says he wants something like Gone Baby Gone (2007), and that he watched 'that one' — referring to Split in context — and it was good.\",\n    \"belief_before\": \"Recommender asked about Split. SEEKER knows he has seen Split and liked it, and wants something like Gone Baby Gone.\",\n    \"belief_update\": \"SEEKER discloses he has seen and liked Split, but refines his preference to Gone Baby Gone-like suspense/thriller films.\",\n    \"belief_after\": \"Recommender knows Split is already seen/liked and should not be recommended again; the desired style is Gone Baby Gone-like.\",\n    \"emotion\": \"Positive, approving.\",\n    \"intention\": \"Guide Recommender toward a more specific style.\",\n    \"conversational_goal\": \"Get recommendations similar to Gone Baby Gone while avoiding already-seen Split.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says Don't Breathe (2016) was good also.\",\n    \"belief_before\": \"SEEKER wants something like Gone Baby Gone; Split is already seen and liked.\",\n    \"belief_update\": \"Recommender adds Don't Breathe as another good thriller/suspense option, implied to fit the discussion.\",\n    \"belief_after\": \"Don't Breathe is a new candidate; SEEKER may now consider whether he has seen it or wants details.\",\n    \"emotion\": \"Curious, open.\",\n    \"intention\": \"Consider Don't Breathe as a recommendation.\",\n    \"conversational_goal\": \"Evaluate whether Don't Breathe matches his preference.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says he really liked it — likely referring to Split — has not seen 'that one' yet — referring to Don't Breathe — and asks what it is about.\",\n    \"belief_before\": \"Recommender suggested Don't Breathe. SEEKER liked Split and wants Gone Baby Gone-like films; he knows he has not seen Don't Breathe.\",\n    \"belief_update\": \"SEEKER reiterates liking Split, discloses he has not seen Don't Breathe, and requests its plot.\",\n    \"belief_after\": \"Recommender knows Don't Breathe is unseen and SEEKER wants details; Split remains liked.\",\n    \"emotion\": \"Curious, positive.\",\n    \"intention\": \"Learn what Don't Breathe is about before deciding.\",\n    \"conversational_goal\": \"Get enough plot information to judge Don't Breathe.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says he also liked Solace (2015) with Anthony Hopkins.\",\n    \"belief_before\": \"SEEKER asked what Don't Breathe is about and is waiting for details; his preferred style is Gone Baby Gone-like thriller/suspense.\",\n    \"belief_update\": \"Recommender adds Solace as another liked thriller/suspense title, featuring Anthony Hopkins.\",\n    \"belief_after\": \"Solace is another candidate recommendation; the Don't Breathe plot question remains unanswered.\",\n    \"emotion\": \"Neutral, curious.\",\n    \"intention\": \"Consider Solace as a possible recommendation.\",\n    \"conversational_goal\": \"Evaluate the new recommendation and possibly ask for more details.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

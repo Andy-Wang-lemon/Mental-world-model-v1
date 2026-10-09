@@ -1,0 +1,132 @@
+{
+  "scenario": 1,
+  "focus_person": "Henry Lozano",
+  "objects": [
+    {
+      "content": "大堂监控里的可疑群体一出现，在 Henry 这里就被并入“酒店运营与宾客体验由我负责”的范围，不再只是纯保安事务；Charles 说“Let's review the footage together and see how we can approach this discreetly”时，“discreet”随即成为这件事本身该有的处理方式——低调、不惊动客人，像是无须另行选择的固定规则。",
+      "probability": 0.3442
+    },
+    {
+      "content": "大堂监控拍到可疑群体，在 Henry 这里落入“酒店运营与宾客体验由我负责”的范围，不能当作与己无关；Charles 提议一起查看 footage 并同时提出要 discreet 地处理时，Henry 体验到的不是临时建议：保安与运营方共同查看监控本就是处理这类安全事件的正确流程，而“低调处理”也一并被归入这个正确流程在当下要采取的方式中。",
+      "probability": 0.339
+    },
+    {
+      "content": "监控中的可疑群体与 Charles 的提议一进入 Henry 的经验，Charles 那句“Let's review the footage together”里的“一起”就被体验为“我们这边”的固定同盟，是他可以依靠的同事协作关系；与此同时，“discreet”的处理方式也被体验为这件事理所当然该有的样子，低调、不惊动客人。",
+      "probability": 0.3168
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "Henry 把大堂监控里那群行为可疑的人直接并入自己负责的酒店运营与宾客体验范围，觉得这不再只是纯保安事项；他一边顾虑宾客安全和酒店名声可能受损，一边把 Charles 所说的“discreet”当作这件事本应采取的固定方式，认定低调、不惊动客人、把影响压到最小才是正理；于是他在内心更倾向于接受这一低调框架来共同查看录像，并对潜在威胁保持高度警觉。",
+      "activation": 0.3398
+    },
+    {
+      "content": "Henry 看着监控里那伙人的举动，心里越发紧：客人安全和酒店名声都悬着，这群人很可能就是眼前的威胁。Charles 一说“一起看录像”，他立刻把这句里的“一起”收进心里，当成“我们这边”的可靠协作，觉得自己不用独自扛这件事；而“discreet”一出现，他也觉得这本来就是该有的处理样子——低调、不惊动客人。于是他把局面整理成：威胁迹象已经出现，但要在与 Charles 共同把控下，以不声张的方式先看清、再应对。",
+      "activation": 0.3378
+    },
+    {
+      "content": "这事不能算与我无关：大堂客人的安全、酒店对外的名声，本来就在我该管的范围内，监控里的可疑群体一出现，这盘录像就不是可看可不看的东西。Charles 说一起看 footage，还说要 discreet，在我这里正对上本来该走的路子——保安与运营方共同查看监控，本就是处理这类安全事件的正当流程；低调也不是额外的迁就，而是这个流程在眼下必须拿住的分寸。于是原先悬着的不安被收拢成一个方向：按这个正当流程与 Charles 共同核对，同时把动静压在客人不察觉、酒店声誉不受损的限度内。",
+      "activation": 0.3224
+    }
+  ],
+  "mental_state": {
+    "event": {
+      "信": 0.2722,
+      "精进": 0.3535,
+      "愧": 0.2261,
+      "无瞋": 0.3438,
+      "无痴": 0.391,
+      "不放逸": 0.5899,
+      "不害": 0.4456,
+      "不慢": 0.1149,
+      "善见": 0.4547,
+      "贪": 0.3343,
+      "瞋": 0.104,
+      "无明": 0.1113,
+      "疑": 0.0895,
+      "掉举": 0.3068,
+      "不正知": 0.103
+    },
+    "branches": [
+      {
+        "branch_id": "branch_O_C1",
+        "activation": 0.3398,
+        "factors": {
+          "信": 0.36,
+          "精进": 0.335,
+          "愧": 0.395,
+          "无瞋": 0.455,
+          "不放逸": 0.5475,
+          "不害": 0.5125,
+          "善见": 0.4175,
+          "贪": 0.325,
+          "无明": 0.3275,
+          "掉举": 0.305
+        }
+      },
+      {
+        "branch_id": "branch_O_C2",
+        "activation": 0.3378,
+        "factors": {
+          "精进": 0.225,
+          "无瞋": 0.56,
+          "无痴": 0.425,
+          "不放逸": 0.5275,
+          "不害": 0.405,
+          "不慢": 0.34,
+          "善见": 0.32,
+          "贪": 0.355,
+          "疑": 0.265,
+          "掉举": 0.32,
+          "不正知": 0.305
+        }
+      },
+      {
+        "branch_id": "branch_O_C3",
+        "activation": 0.3224,
+        "factors": {
+          "信": 0.465,
+          "精进": 0.5075,
+          "愧": 0.285,
+          "无痴": 0.7675,
+          "不放逸": 0.7,
+          "不害": 0.4175,
+          "善见": 0.635,
+          "贪": 0.3225,
+          "瞋": 0.3225,
+          "掉举": 0.295
+        }
+      }
+    ]
+  },
+  "observed_action": "Henry Lozano was reviewing security footage and noticed a group of individuals in the hotel lobby behaving suspiciously; he related this to the safety of the guests and the hotel's reputation and to a potential threat; he told Charles Beyene that he had been watching the security footage, that a group had been acting quite suspiciously, and that there might be a threat.",
+  "predicted_actions": [
+    {
+      "content": "adjust monitor and cue footage",
+      "probability": 0.6622
+    },
+    {
+      "content": "低声与Charles核对监控画面",
+      "probability": 0.1527
+    },
+    {
+      "content": "低声建议暂不惊动、等看完再决定",
+      "probability": 0.1111
+    },
+    {
+      "content": "调整摄像头继续观察目标",
+      "probability": 0.074
+    }
+  ],
+  "history": [
+    {
+      "content": "Henry 在大堂监控中发现一群行为可疑的人并担心安全威胁时，Charles 提议一起查看录像并低调处理；从此，这类安全事件被理解为因酒店运营与宾客体验由 Henry 负责而不能与己无关，保安与运营方共同查看监控是处理这类事件的正确流程，低调则是该流程在当下必须拿住的分寸。",
+      "mass": 0.422
+    },
+    {
+      "content": "Henry 在大堂监控中发现一群行为可疑的人并担心安全威胁时，Charles 说一起查看录像并提出要低调处理；从此，这类事件被理解为要把 Charles 的“一起”当作“我们这边”可依靠的固定同事同盟，同时以不惊动客人的 discreet 方式处理。",
+      "mass": 0.3168
+    }
+  ],
+  "continuity_event_count": 1
+}

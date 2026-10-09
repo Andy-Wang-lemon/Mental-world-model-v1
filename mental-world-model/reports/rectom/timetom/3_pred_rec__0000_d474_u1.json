@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0000_d474_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi can you help me find a movie to watch'.",
+      "belief_before": "No prior context; RECOMMENDER has no information about SEEKER's preferences, constraints, or movie request.",
+      "belief_update": "SEEKER wants help choosing a movie to watch. No genre, mood, platform, or other preferences are specified yet.",
+      "belief_after": "SEEKER is seeking a movie recommendation and is likely open to clarifying questions. The recommendation task has just begun.",
+      "emotion": "Attentive, helpful, neutral; no negative reaction to the request.",
+      "intention": "Offer assistance and move toward recommending a movie, likely by asking for preferences or constraints.",
+      "conversational_goal": "Acknowledge the request, gather enough preference information, and provide a suitable movie recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi can you help me find a movie to watch'.\",\n    \"belief_before\": \"No prior context; RECOMMENDER has no information about SEEKER's preferences, constraints, or movie request.\",\n    \"belief_update\": \"SEEKER wants help choosing a movie to watch. No genre, mood, platform, or other preferences are specified yet.\",\n    \"belief_after\": \"SEEKER is seeking a movie recommendation and is likely open to clarifying questions. The recommendation task has just begun.\",\n    \"emotion\": \"Attentive, helpful, neutral; no negative reaction to the request.\",\n    \"intention\": \"Offer assistance and move toward recommending a movie, likely by asking for preferences or constraints.\",\n    \"conversational_goal\": \"Acknowledge the request, gather enough preference information, and provide a suitable movie recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

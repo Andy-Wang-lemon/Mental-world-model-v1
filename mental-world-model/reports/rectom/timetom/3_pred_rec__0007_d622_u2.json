@@ -1,0 +1,44 @@
+{
+  "id": "3_pred_rec__0007_d622_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Target RECOMMENDER initiates the dialogue by saying: \"Hi.\"",
+      "information_available": "No prior dialogue content is available yet; only the target's own greeting is being produced.",
+      "preferences": "No information about the seeker's movie preferences is available.",
+      "belief_before": "No prior beliefs about the seeker or the task; the seeker's needs are unknown.",
+      "belief_update": "No external information has been received; the target is opening the conversation.",
+      "belief_after": "The target has greeted the seeker and is awaiting a response; still no task details.",
+      "emotion": "Neutral, polite, and open.",
+      "intention": "Initiate conversation and invite a response.",
+      "conversational_goal": "Establish contact and open the dialogue.",
+      "reaction_to_other": "Not applicable; no other-speaker turn has occurred yet.",
+      "changes_previous_interpretation": "Not applicable; there is no previous turn to reinterpret."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: \"hi...want to help me find a fun movie for all ages?\"",
+      "information_available": "The seeker greeted the target and requested help finding a fun movie suitable for all ages.",
+      "preferences": "Seeker preferences: fun movie; appropriate for all ages.",
+      "belief_before": "Before hearing this turn, the target believed the seeker had not yet responded and that the seeker's needs were unknown.",
+      "belief_update": "The target learns that the seeker wants collaborative help selecting a movie and that the desired movie should be fun and for all ages.",
+      "belief_after": "The seeker is asking for assistance finding a fun, all-ages movie recommendation.",
+      "emotion": "Helpful, attentive, and positive toward the request.",
+      "intention": "Respond helpfully to the request, likely by acknowledging it and either asking clarifying questions or preparing a recommendation.",
+      "conversational_goal": "Acknowledge the seeker's request and move toward providing a suitable fun all-ages movie recommendation.",
+      "reaction_to_other": "Receptive and cooperative; the seeker's greeting and request are understood as a reasonable opening to a recommendation task.",
+      "changes_previous_interpretation": "Yes; the target's interpretation shifts from a simple greeting exchange to an active movie-recommendation request with the constraints \"fun\" and \"all ages.\""
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Target RECOMMENDER initiates the dialogue by saying: \\\"Hi.\\\"\",\n    \"information_available\": \"No prior dialogue content is available yet; only the target's own greeting is being produced.\",\n    \"preferences\": \"No information about the seeker's movie preferences is available.\",\n    \"belief_before\": \"No prior beliefs about the seeker or the task; the seeker's needs are unknown.\",\n    \"belief_update\": \"No external information has been received; the target is opening the conversation.\",\n    \"belief_after\": \"The target has greeted the seeker and is awaiting a response; still no task details.\",\n    \"emotion\": \"Neutral, polite, and open.\",\n    \"intention\": \"Initiate conversation and invite a response.\",\n    \"conversational_goal\": \"Establish contact and open the dialogue.\",\n    \"reaction_to_other\": \"Not applicable; no other-speaker turn has occurred yet.\",\n    \"changes_previous_interpretation\": \"Not applicable; there is no previous turn to reinterpret.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: \\\"hi...want to help me find a fun movie for all ages?\\\"\",\n    \"information_available\": \"The seeker greeted the target and requested help finding a fun movie suitable for all ages.\",\n    \"preferences\": \"Seeker preferences: fun movie; appropriate for all ages.\",\n    \"belief_before\": \"Before hearing this turn, the target believed the seeker had not yet responded and that the seeker's needs were unknown.\",\n    \"belief_update\": \"The target learns that the seeker wants collaborative help selecting a movie and that the desired movie should be fun and for all ages.\",\n    \"belief_after\": \"The seeker is asking for assistance finding a fun, all-ages movie recommendation.\",\n    \"emotion\": \"Helpful, attentive, and positive toward the request.\",\n    \"intention\": \"Respond helpfully to the request, likely by acknowledging it and either asking clarifying questions or preparing a recommendation.\",\n    \"conversational_goal\": \"Acknowledge the seeker's request and move toward providing a suitable fun all-ages movie recommendation.\",\n    \"reaction_to_other\": \"Receptive and cooperative; the seeker's greeting and request are understood as a reasonable opening to a recommendation task.\",\n    \"changes_previous_interpretation\": \"Yes; the target's interpretation shifts from a simple greeting exchange to an active movie-recommendation request with the constraints \\\"fun\\\" and \\\"all ages.\\\"\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

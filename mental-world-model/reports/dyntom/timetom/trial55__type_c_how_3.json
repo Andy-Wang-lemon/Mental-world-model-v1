@@ -1,0 +1,61 @@
+{
+  "id": "trial55__type_c_how_3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Harold Padilla",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Arthur advises Harold to understand what drives each team member individually and to have one-on-one conversations rather than focusing only on project goals and deadlines.",
+      "belief_before": "Harold believes the team is not performing well because they lack motivation, and he feels frustrated and anxious about the project's progress.",
+      "belief_update": "Yes, Harold accepts Arthur's suggestion that the motivation problem may need to be addressed by understanding each person's personal motivations.",
+      "belief_after": "Harold believes the team's motivation problem can be improved by having one-on-one conversations to learn what drives each team member.",
+      "emotion": "Frustrated and anxious before the conversation; hopeful and relieved afterward.",
+      "intention": "Implement Arthur's advice by talking with team members individually about their motivations."
+    },
+    {
+      "time": 2,
+      "observed": "Team members say they are open to one-on-one chats and think the approach could be helpful.",
+      "belief_before": "Harold believes Arthur's advice on individual motivation will help and that one-on-one conversations can improve teamwork.",
+      "belief_update": "No major change; the team's openness reinforces his belief that the approach is viable.",
+      "belief_after": "Harold believes the one-on-one chats will help the team work better together.",
+      "emotion": "Hopeful, relieved, and optimistic.",
+      "intention": "Schedule one-on-one chats with each team member and move forward on the project."
+    },
+    {
+      "time": 3,
+      "observed": "Harold sees that the team still is not responding well to the new strategies. Arthur suggests there may be deeper issues such as personal conflicts, lack of trust, or external stressors.",
+      "belief_before": "Harold believes the one-on-one motivation chats will improve team performance.",
+      "belief_update": "Yes, because the strategy did not work, Harold shifts from a motivation-only explanation to considering deeper underlying team problems.",
+      "belief_after": "Harold believes the team's performance problems may be caused by deeper issues, such as conflict, distrust, or external stress, and need further investigation.",
+      "emotion": "Disappointed and worried, then concerned but more determined to dig deeper.",
+      "intention": "Set up another round of meetings to uncover underlying team issues."
+    },
+    {
+      "time": 4,
+      "observed": "In one-on-one meetings, Harold learns from Team Member 1 that there is tension between several team members affecting work, and from Team Member 2 that they feel overwhelmed by workload and stressed, making motivation difficult.",
+      "belief_before": "Harold believes there may be underlying issues within the team that have not been addressed.",
+      "belief_update": "Yes, the meetings confirm specific underlying problems: interpersonal tension and workload stress.",
+      "belief_after": "Harold believes the team's performance is affected by interpersonal tension and excessive workload/stress, not just motivation.",
+      "emotion": "Determined and focused, with empathy and concern for team members.",
+      "intention": "Resolve the conflicts, redistribute tasks to reduce pressure, and support team members' well-being."
+    },
+    {
+      "time": 5,
+      "observed": "Harold hears the team respond positively to his plan for regular feedback sessions and team-building activities; they agree their concerns are being addressed.",
+      "belief_before": "Harold believes that addressing individual concerns will improve team performance.",
+      "belief_update": "Yes, the positive team response reinforces and expands his belief that a supportive, open environment with feedback and team-building will help.",
+      "belief_after": "Harold believes regular feedback sessions and team-building activities will create a more supportive environment and improve team performance.",
+      "emotion": "Optimistic, empowered, and glad.",
+      "intention": "Implement regular feedback sessions and team-building activities, and work together with the team for project success."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Arthur advises Harold to understand what drives each team member individually and to have one-on-one conversations rather than focusing only on project goals and deadlines.\",\n    \"belief_before\": \"Harold believes the team is not performing well because they lack motivation, and he feels frustrated and anxious about the project's progress.\",\n    \"belief_update\": \"Yes, Harold accepts Arthur's suggestion that the motivation problem may need to be addressed by understanding each person's personal motivations.\",\n    \"belief_after\": \"Harold believes the team's motivation problem can be improved by having one-on-one conversations to learn what drives each team member.\",\n    \"emotion\": \"Frustrated and anxious before the conversation; hopeful and relieved afterward.\",\n    \"intention\": \"Implement Arthur's advice by talking with team members individually about their motivations.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Team members say they are open to one-on-one chats and think the approach could be helpful.\",\n    \"belief_before\": \"Harold believes Arthur's advice on individual motivation will help and that one-on-one conversations can improve teamwork.\",\n    \"belief_update\": \"No major change; the team's openness reinforces his belief that the approach is viable.\",\n    \"belief_after\": \"Harold believes the one-on-one chats will help the team work better together.\",\n    \"emotion\": \"Hopeful, relieved, and optimistic.\",\n    \"intention\": \"Schedule one-on-one chats with each team member and move forward on the project.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Harold sees that the team still is not responding well to the new strategies. Arthur suggests there may be deeper issues such as personal conflicts, lack of trust, or external stressors.\",\n    \"belief_before\": \"Harold believes the one-on-one motivation chats will improve team performance.\",\n    \"belief_update\": \"Yes, because the strategy did not work, Harold shifts from a motivation-only explanation to considering deeper underlying team problems.\",\n    \"belief_after\": \"Harold believes the team's performance problems may be caused by deeper issues, such as conflict, distrust, or external stress, and need further investigation.\",\n    \"emotion\": \"Disappointed and worried, then concerned but more determined to dig deeper.\",\n    \"intention\": \"Set up another round of meetings to uncover underlying team issues.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"In one-on-one meetings, Harold learns from Team Member 1 that there is tension between several team members affecting work, and from Team Member 2 that they feel overwhelmed by workload and stressed, making motivation difficult.\",\n    \"belief_before\": \"Harold believes there may be underlying issues within the team that have not been addressed.\",\n    \"belief_update\": \"Yes, the meetings confirm specific underlying problems: interpersonal tension and workload stress.\",\n    \"belief_after\": \"Harold believes the team's performance is affected by interpersonal tension and excessive workload/stress, not just motivation.\",\n    \"emotion\": \"Determined and focused, with empathy and concern for team members.\",\n    \"intention\": \"Resolve the conflicts, redistribute tasks to reduce pressure, and support team members' well-being.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Harold hears the team respond positively to his plan for regular feedback sessions and team-building activities; they agree their concerns are being addressed.\",\n    \"belief_before\": \"Harold believes that addressing individual concerns will improve team performance.\",\n    \"belief_update\": \"Yes, the positive team response reinforces and expands his belief that a supportive, open environment with feedback and team-building will help.\",\n    \"belief_after\": \"Harold believes regular feedback sessions and team-building activities will create a more supportive environment and improve team performance.\",\n    \"emotion\": \"Optimistic, empowered, and glad.\",\n    \"intention\": \"Implement regular feedback sessions and team-building activities, and work together with the team for project success.\"\n  }\n]",
+  "final_response": "ANSWER: c",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial55"
+}

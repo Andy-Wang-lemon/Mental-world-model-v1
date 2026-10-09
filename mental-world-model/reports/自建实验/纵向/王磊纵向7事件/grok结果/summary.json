@@ -1,0 +1,167 @@
+{
+  "protocol": "llm_raw_history_open_rollout",
+  "agent": "王磊",
+  "total_events": 7,
+  "event_file": "data/王磊纵向7事件.txt",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  },
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "behavior_trajectory": [
+    "E1 → Agrees to the tutoring and attends the weekly sessions",
+    "E2 → Agrees to review the test and sits down for the tutoring session",
+    "E3 → Agrees to help and goes to assist Cheng Yuan with the programming",
+    "E4 → Explains to Chen teacher that he was assisting with programming not gaming",
+    "E5 → Takes the exercise book and thanks the teacher",
+    "E6 → Enters the office and tells Chen teacher he wants to resume tutoring",
+    "E7 → Agrees to the tutoring and goes to Chen teacher's office"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "top1": "Agrees to the tutoring and attends the weekly sessions",
+      "behaviors": [
+        {
+          "text": "Agrees to the tutoring and attends the weekly sessions",
+          "probability": 0.65
+        },
+        {
+          "text": "Declines the offer",
+          "probability": 0.2
+        },
+        {
+          "text": "Agrees but does not attend any sessions",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "top1": "Agrees to review the test and sits down for the tutoring session",
+      "behaviors": [
+        {
+          "text": "Agrees to review the test and sits down for the tutoring session",
+          "probability": 0.65
+        },
+        {
+          "text": "Declines the offer and leaves the office",
+          "probability": 0.25
+        },
+        {
+          "text": "Hesitates briefly then asks to reschedule the session",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "top1": "Agrees to help and goes to assist Cheng Yuan with the programming",
+      "behaviors": [
+        {
+          "text": "Agrees to help and goes to assist Cheng Yuan with the programming",
+          "probability": 0.5
+        },
+        {
+          "text": "Declines the request to focus on completing his math homework",
+          "probability": 0.3
+        },
+        {
+          "text": "Finishes his math homework first then agrees to help",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "top1": "Explains to Chen teacher that he was assisting with programming not gaming",
+      "behaviors": [
+        {
+          "text": "Explains to Chen teacher that he was assisting with programming not gaming",
+          "probability": 0.55
+        },
+        {
+          "text": "Promises to complete homework and improve grades",
+          "probability": 0.3
+        },
+        {
+          "text": "Continues helping Cheng Yuan with programming tasks",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "top1": "Takes the exercise book and thanks the teacher",
+      "behaviors": [
+        {
+          "text": "Takes the exercise book and thanks the teacher",
+          "probability": 0.5
+        },
+        {
+          "text": "Ignores the book and packs up to leave",
+          "probability": 0.3
+        },
+        {
+          "text": "Takes the book but puts it away without opening it",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "top1": "Enters the office and tells Chen teacher he wants to resume tutoring",
+      "behaviors": [
+        {
+          "text": "Enters the office and tells Chen teacher he wants to resume tutoring",
+          "probability": 0.6
+        },
+        {
+          "text": "Turns around and leaves without entering",
+          "probability": 0.25
+        },
+        {
+          "text": "Stands outside listening further before deciding",
+          "probability": 0.15
+        }
+      ]
+    },
+    {
+      "event_id": "E7",
+      "step_id": "S07",
+      "top1": "Agrees to the tutoring and goes to Chen teacher's office",
+      "behaviors": [
+        {
+          "text": "Agrees to the tutoring and goes to Chen teacher's office",
+          "probability": 0.75
+        },
+        {
+          "text": "Thanks Chen teacher and takes the exercise book",
+          "probability": 0.2
+        },
+        {
+          "text": "Explains his recent struggles and asks for help",
+          "probability": 0.05
+        }
+      ]
+    }
+  ]
+}

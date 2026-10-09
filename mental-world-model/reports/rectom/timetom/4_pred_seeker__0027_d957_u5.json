@@ -1,0 +1,69 @@
+{
+  "id": "4_pred_seeker__0027_d957_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender offers help finding a comedy like Beerfest (2006) or The Blues Brothers (1980).",
+      "belief_before": "No prior dialogue; SEEKER has not yet stated a specific request.",
+      "belief_update": "Recommender is willing to help with comedy recommendations and has proposed Beerfest and The Blues Brothers as examples.",
+      "belief_after": "Recommender can help with comedy; available suggestions include Beerfest and The Blues Brothers.",
+      "emotion": "Neutral, mildly curious.",
+      "intention": "Decide whether to engage and clarify what kind of comedy SEEKER wants.",
+      "conversational_goal": "Respond to the offer and specify a comedy request."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER greets recommender and asks for funny comedy movies similar to She's Out of My League (2010).",
+      "belief_before": "Recommender is willing to help and has mentioned Beerfest and The Blues Brothers.",
+      "belief_update": "SEEKER states a preference: funny comedies similar to She's Out of My League. This changes the prior interpretation by giving a specific target movie.",
+      "belief_after": "Recommender knows SEEKER wants funny comedies like She's Out of My League.",
+      "emotion": "Positive and hopeful.",
+      "intention": "Obtain recommendations matching that preference.",
+      "conversational_goal": "Solicit relevant comedy recommendations."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says they can help, asks if SEEKER has seen Beerfest or The Blues Brothers, and suggests Deuce Bigalow: Male Gigolo (1999).",
+      "belief_before": "Recommender knows SEEKER wants funny comedies similar to She's Out of My League.",
+      "belief_update": "Recommender proposes Beerfest, The Blues Brothers, and Deuce Bigalow as candidate matches and asks about viewing history.",
+      "belief_after": "Recommender considers those titles potentially suitable and is checking SEEKER's familiarity.",
+      "emotion": "Evaluative and uncertain.",
+      "intention": "Assess whether the proposed titles fit SEEKER's taste.",
+      "conversational_goal": "Respond with seen/not seen and preference feedback to guide next suggestions."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says Daddy's Home (2015) is also good, has never seen the movies recommender suggested, and has seen Deuce Bigalow but does not like those movies.",
+      "belief_before": "Recommender suggested Beerfest, The Blues Brothers, and Deuce Bigalow as possible matches.",
+      "belief_update": "SEEKER reveals: likes Daddy's Home; has not seen Beerfest or The Blues Brothers; has seen Deuce Bigalow but dislikes it/those movies. This changes the prior interpretation by rejecting a proposed title and adding a positive example.",
+      "belief_after": "Recommender knows those suggestions are poor fits except that Beerfest and The Blues Brothers are unseen; Daddy's Home is a positive example.",
+      "emotion": "Polite but corrective and negative toward Deuce Bigalow; positive about Daddy's Home.",
+      "intention": "Reject disliked suggestions and steer recommender toward better matches.",
+      "conversational_goal": "Clarify taste and request alternatives that fit She's Out of My League and Daddy's Home."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender acknowledges Daddy's Home as good and asks if SEEKER has seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007).",
+      "belief_before": "Recommender knows SEEKER likes Daddy's Home, dislikes Deuce Bigalow, and has not seen Beerfest or The Blues Brothers.",
+      "belief_update": "Recommender proposes Step Brothers and Walk Hard as new candidates and asks about viewing history. This changes the prior interpretation by offering new possible matches based on updated preferences.",
+      "belief_after": "Recommender is now offering Step Brothers and Walk Hard as possible matches.",
+      "emotion": "Hopeful, curious, and cautiously receptive.",
+      "intention": "Evaluate whether these new suggestions fit and decide how to respond.",
+      "conversational_goal": "Respond with seen/not seen and like/dislike feedback to continue refining recommendations."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender offers help finding a comedy like Beerfest (2006) or The Blues Brothers (1980).\",\n    \"belief_before\": \"No prior dialogue; SEEKER has not yet stated a specific request.\",\n    \"belief_update\": \"Recommender is willing to help with comedy recommendations and has proposed Beerfest and The Blues Brothers as examples.\",\n    \"belief_after\": \"Recommender can help with comedy; available suggestions include Beerfest and The Blues Brothers.\",\n    \"emotion\": \"Neutral, mildly curious.\",\n    \"intention\": \"Decide whether to engage and clarify what kind of comedy SEEKER wants.\",\n    \"conversational_goal\": \"Respond to the offer and specify a comedy request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER greets recommender and asks for funny comedy movies similar to She's Out of My League (2010).\",\n    \"belief_before\": \"Recommender is willing to help and has mentioned Beerfest and The Blues Brothers.\",\n    \"belief_update\": \"SEEKER states a preference: funny comedies similar to She's Out of My League. This changes the prior interpretation by giving a specific target movie.\",\n    \"belief_after\": \"Recommender knows SEEKER wants funny comedies like She's Out of My League.\",\n    \"emotion\": \"Positive and hopeful.\",\n    \"intention\": \"Obtain recommendations matching that preference.\",\n    \"conversational_goal\": \"Solicit relevant comedy recommendations.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says they can help, asks if SEEKER has seen Beerfest or The Blues Brothers, and suggests Deuce Bigalow: Male Gigolo (1999).\",\n    \"belief_before\": \"Recommender knows SEEKER wants funny comedies similar to She's Out of My League.\",\n    \"belief_update\": \"Recommender proposes Beerfest, The Blues Brothers, and Deuce Bigalow as candidate matches and asks about viewing history.\",\n    \"belief_after\": \"Recommender considers those titles potentially suitable and is checking SEEKER's familiarity.\",\n    \"emotion\": \"Evaluative and uncertain.\",\n    \"intention\": \"Assess whether the proposed titles fit SEEKER's taste.\",\n    \"conversational_goal\": \"Respond with seen/not seen and preference feedback to guide next suggestions.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says Daddy's Home (2015) is also good, has never seen the movies recommender suggested, and has seen Deuce Bigalow but does not like those movies.\",\n    \"belief_before\": \"Recommender suggested Beerfest, The Blues Brothers, and Deuce Bigalow as possible matches.\",\n    \"belief_update\": \"SEEKER reveals: likes Daddy's Home; has not seen Beerfest or The Blues Brothers; has seen Deuce Bigalow but dislikes it/those movies. This changes the prior interpretation by rejecting a proposed title and adding a positive example.\",\n    \"belief_after\": \"Recommender knows those suggestions are poor fits except that Beerfest and The Blues Brothers are unseen; Daddy's Home is a positive example.\",\n    \"emotion\": \"Polite but corrective and negative toward Deuce Bigalow; positive about Daddy's Home.\",\n    \"intention\": \"Reject disliked suggestions and steer recommender toward better matches.\",\n    \"conversational_goal\": \"Clarify taste and request alternatives that fit She's Out of My League and Daddy's Home.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender acknowledges Daddy's Home as good and asks if SEEKER has seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007).\",\n    \"belief_before\": \"Recommender knows SEEKER likes Daddy's Home, dislikes Deuce Bigalow, and has not seen Beerfest or The Blues Brothers.\",\n    \"belief_update\": \"Recommender proposes Step Brothers and Walk Hard as new candidates and asks about viewing history. This changes the prior interpretation by offering new possible matches based on updated preferences.\",\n    \"belief_after\": \"Recommender is now offering Step Brothers and Walk Hard as possible matches.\",\n    \"emotion\": \"Hopeful, curious, and cautiously receptive.\",\n    \"intention\": \"Evaluate whether these new suggestions fit and decide how to respond.\",\n    \"conversational_goal\": \"Respond with seen/not seen and like/dislike feedback to continue refining recommendations.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

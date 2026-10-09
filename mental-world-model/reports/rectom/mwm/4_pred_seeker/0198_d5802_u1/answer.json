@@ -1,0 +1,81 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 198,
+  "item_id": "d5802_u1",
+  "dialogue_id": "5802",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "RECOMMENDER的问候与『今天在寻找什么类型的电影』在SEEKER这里呈现为一道必须由他自己交出的入口：『我今天的电影类型偏好』像一件只属于他、只能从内部确认的所属物，若不由他指认，选片流程就无法成立。选片必须先有或说出一个类型，这一固定顺序把类型顶到最前面，使RECOMMENDER的问句成为对他内部所属物的一次点名。",
+        "probability": 0.435
+      },
+      {
+        "content": "RECOMMENDER的问句在SEEKER这里不只是一次信息询问，而像一次针对他个人观影取向的身份索引：『什么类型』被体验为要他说明『我是有某种观影取向的人』，回答因此牵涉自我界定。与此同时，选片必须先有或说出一个类型的固定流程，使这个身份索引成为进入电影推荐的必由入口；他要把自己的取向作为类型交出去，才算站在这道流程的起点。",
+        "probability": 0.3069
+      },
+      {
+        "content": "在SEEKER的所缘中，RECOMMENDER的『今天』把问题变成对当日状态的一次探问：仿佛他内部已有一个确定的、与今天相配的『今日类型』，只待被问出。『什么类型』同时索引着他的个人观影取向，使这个待问出的答案不仅是一个片种，也像是他今天作为某种观影者的自我界定。",
+        "probability": 0.2581
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER感到，RECOMMENDER这句问候并不只是寒暄，而是把选片的第一道入口直接点到他面前：『今天想找什么类型』像是要他交出一件只属于自己的内部确认物。他心里认定，今天的电影类型偏好不能由别人代答，只能从自己这里辨认出来；若说不清这个类型，接下来的推荐流程就好像无从开始。于是『先有或说出一个类型』被摆到最前面，RECOMMENDER的问句成了对他内部偏好的一次点名。他倾向于先向内确认今天究竟想要什么类型，再把这一点作为选片能够成立的前提交出去。",
+        "activation": 0.435
+      },
+      {
+        "content": "他听到“什么类型”时，感到这不只是在要一个选片参数，而像是在要他说出自己属于哪一种观影的人；若交不出一个类型，就好像连进入推荐的起点都站不稳。于是他心里开始把平时模糊的喜好翻出来归类，想找出一个既能代表自己、又不至于把自己限死的类型，同时也隐约抗拒被这个类型完全定义。",
+        "activation": 0.3069
+      },
+      {
+        "content": "SEEKER听到『今天』时，感到问题被收窄成一次对内部状态的确认：他下意识地搜寻今天的状态，觉得应该有一个与之相配的类型，而不是随便挑一个片种。同时，『什么类型』像在问他今天作为哪种观影者，回答不只是提供信息，也牵涉到对自己的界定；因此这个答案不能轻率给出，他倾向于先弄清楚自己今天到底处在什么位置，再决定该说出什么。",
+        "activation": 0.2581
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "表达观影偏好",
+        "probability": 0.3377
+      },
+      {
+        "content": "请求查看可选类型",
+        "probability": 0.1842
+      },
+      {
+        "content": "沉默并查看片单",
+        "probability": 0.1749
+      },
+      {
+        "content": "要求先列出类型选项",
+        "probability": 0.1733
+      },
+      {
+        "content": "说明可接受的电影类型",
+        "probability": 0.1299
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0.1299,
+    "c": 0.3377,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.1299 = 说明可接受的电影类型 0.1299；C 0.3377 = 表达观影偏好 0.3377；D 0.0000。Action 4 adds genre preferences (B), action 0 expresses preferences (C); no others match.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

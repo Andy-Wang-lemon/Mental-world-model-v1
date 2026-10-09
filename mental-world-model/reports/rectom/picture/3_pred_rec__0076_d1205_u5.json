@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0076_d1205_u5",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the SEEKER:\n- Is open to many kinds of movies and especially likes foreign movies.\n- Is not a holiday-movie person.\n- Has not seen the two holiday recommendations and implicitly rejects them.\n- Explicitly asked for “any other suggestions.”\n\nRECOMMENDER does **not** know:\n- Which specific foreign countries/languages the SEEKER prefers.\n- Which genres, directors, or specific foreign films the SEEKER has already seen.\n- Whether the SEEKER wants something similar to previous likes or something completely different.\n- Any platform availability, mood, or content constraints.\n- How the SEEKER will react to the next recommendation.\n\nGiven that the SEEKER rejected the holiday recommendations and asked for other suggestions, the RECOMMENDER’s next move should be to provide another recommendation, likely based on the SEEKER’s stated interest in foreign movies or general openness. This matches a direct recommendation strategy or asking further to narrow down options.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

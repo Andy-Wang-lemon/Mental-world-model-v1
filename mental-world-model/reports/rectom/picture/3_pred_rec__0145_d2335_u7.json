@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0145_d2335_u7",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- SEEKER asked for a comedy recommendation.\n- SEEKER liked *Step Brothers* and *The Hangover*.\n- SEEKER strongly disliked *Daddy’s Home*.\n- RECOMMENDER suggested *Bad Moms*.\n- SEEKER has never seen *Bad Moms* and is now asking what it is about.\n\nRECOMMENDER does **not** know:\n- Whether SEEKER will like *Bad Moms*.\n- Whether RECOMMENDER accurately remembers or knows the plot details of *Bad Moms* (unless implied by having recommended it).\n- SEEKER’s broader taste beyond the two liked comedies and one disliked comedy.\n- Any other preferences SEEKER may have.\n\nGiven SEEKER’s question “What is it about?”, the natural next move for RECOMMENDER is to answer by describing or explaining *Bad Moms*, likely giving background or reasoning for the recommendation. This aligns most with explaining a recommendation with background or reasoning.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

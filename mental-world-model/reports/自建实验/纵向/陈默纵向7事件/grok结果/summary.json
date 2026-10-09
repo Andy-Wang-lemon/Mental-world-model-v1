@@ -1,0 +1,167 @@
+{
+  "protocol": "llm_raw_history_open_rollout",
+  "agent": "陈默",
+  "total_events": 7,
+  "event_file": "data/陈默纵向7事件.txt",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  },
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "behavior_trajectory": [
+    "E1 → 在下次会议中讨论林可的数据并考虑调整方案",
+    "E2 → 同意林可的帮助请求并提供具体建议",
+    "E3 → 同意林可的帮助请求并提供具体建议",
+    "E4 → 同意林可的帮助请求并提供具体建议",
+    "E5 → 同意林可继续听取意见的请求并提供具体建议",
+    "E6 → 同意承担大量核心工作并开始执行关键任务",
+    "E7 → 当众表示同意林可的说法并强调其负责人角色"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "top1": "在下次会议中讨论林可的数据并考虑调整方案",
+      "behaviors": [
+        {
+          "text": "在下次会议中讨论林可的数据并考虑调整方案",
+          "probability": 0.5
+        },
+        {
+          "text": "单独与林可沟通以了解更多细节",
+          "probability": 0.3
+        },
+        {
+          "text": "要求林可继续收集更多相关数据",
+          "probability": 0.2
+        }
+      ]
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "top1": "同意林可的帮助请求并提供具体建议",
+      "behaviors": [
+        {
+          "text": "同意林可的帮助请求并提供具体建议",
+          "probability": 0.65
+        },
+        {
+          "text": "在下次会议中主动提及林可的贡献",
+          "probability": 0.25
+        },
+        {
+          "text": "婉拒林可的请求并建议其独立解决",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "top1": "同意林可的帮助请求并提供具体建议",
+      "behaviors": [
+        {
+          "text": "同意林可的帮助请求并提供具体建议",
+          "probability": 0.65
+        },
+        {
+          "text": "拒绝提供帮助",
+          "probability": 0.25
+        },
+        {
+          "text": "在会议中提出项目调整建议",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "top1": "同意林可的帮助请求并提供具体建议",
+      "behaviors": [
+        {
+          "text": "同意林可的帮助请求并提供具体建议",
+          "probability": 0.7
+        },
+        {
+          "text": "要求林可提供更多当前项目数据再讨论",
+          "probability": 0.2
+        },
+        {
+          "text": "建议林可向团队其他成员咨询",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "top1": "同意林可继续听取意见的请求并提供具体建议",
+      "behaviors": [
+        {
+          "text": "同意林可继续听取意见的请求并提供具体建议",
+          "probability": 0.65
+        },
+        {
+          "text": "在会议中主动支持林可的新项目负责人竞聘",
+          "probability": 0.25
+        },
+        {
+          "text": "私下向林可分享过去成功项目的经验细节",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "top1": "同意承担大量核心工作并开始执行关键任务",
+      "behaviors": [
+        {
+          "text": "同意承担大量核心工作并开始执行关键任务",
+          "probability": 0.7
+        },
+        {
+          "text": "提供具体建议解决项目中的关键问题",
+          "probability": 0.2
+        },
+        {
+          "text": "要求林可在领导面前明确提及自己的贡献",
+          "probability": 0.1
+        }
+      ]
+    },
+    {
+      "event_id": "E7",
+      "step_id": "S07",
+      "top1": "当众表示同意林可的说法并强调其负责人角色",
+      "behaviors": [
+        {
+          "text": "当众表示同意林可的说法并强调其负责人角色",
+          "probability": 0.5
+        },
+        {
+          "text": "客观列出双方具体贡献后表示团队合作",
+          "probability": 0.35
+        },
+        {
+          "text": "保持沉默或表示由CEO判断",
+          "probability": 0.15
+        }
+      ]
+    }
+  ]
+}

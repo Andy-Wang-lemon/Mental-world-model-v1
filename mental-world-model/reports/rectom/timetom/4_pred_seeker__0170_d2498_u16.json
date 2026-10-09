@@ -1,0 +1,180 @@
+{
+  "id": "4_pred_seeker__0170_d2498_u16",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "I say: Hi",
+      "belief_before": "No prior information; at start of conversation.",
+      "belief_update": "I initiate contact by greeting.",
+      "belief_after": "I have greeted and am awaiting a response from the recommender.",
+      "emotion": "neutral",
+      "intention": "greet the other speaker",
+      "conversational_goal": "begin the interaction"
+    },
+    {
+      "time": 2,
+      "observed": "Recommender says: Hello!...What kind of movie do you like?",
+      "belief_before": "I have greeted and am awaiting a response.",
+      "belief_update": "Recommender responds and asks what kind of movie I like.",
+      "belief_after": "Recommender is receptive and wants my movie preferences to make recommendations.",
+      "emotion": "neutral/ready",
+      "intention": "answer the preference question",
+      "conversational_goal": "get recommendations based on my preferences"
+    },
+    {
+      "time": 3,
+      "observed": "I say: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)",
+      "belief_before": "Recommender is receptive and wants my movie preferences.",
+      "belief_update": "I ask for great movie recommendations and state I liked Good Will Hunting (1997).",
+      "belief_after": "Recommender knows I want recommendations and that I liked Good Will Hunting; no other preferences shared yet.",
+      "emotion": "polite/neutral",
+      "intention": "request recommendations",
+      "conversational_goal": "obtain a great movie recommendation"
+    },
+    {
+      "time": 4,
+      "observed": "Recommender says: Well, if you want my all time favorite, it's The Outsiders (1983)",
+      "belief_before": "Recommender knows I want recommendations and that I liked Good Will Hunting.",
+      "belief_update": "Recommender gives their all-time favorite: The Outsiders (1983).",
+      "belief_after": "I know The Outsiders is the recommender's all-time favorite; one recommendation has been offered.",
+      "emotion": "mild interest",
+      "intention": "evaluate the recommendation",
+      "conversational_goal": "respond to the first suggestion"
+    },
+    {
+      "time": 5,
+      "observed": "I say: Seen that a while back.",
+      "belief_before": "I know The Outsiders is the recommender's all-time favorite.",
+      "belief_update": "I say I have seen The Outsiders a while back.",
+      "belief_after": "Recommender knows The Outsiders is already seen; it is not a new recommendation for me.",
+      "emotion": "neutral",
+      "intention": "indicate that I have already seen it",
+      "conversational_goal": "guide the recommender toward unseen movies"
+    },
+    {
+      "time": 6,
+      "observed": "Recommender says: Depends on what type of movie you want to watch...",
+      "belief_before": "Recommender knows The Outsiders is already seen.",
+      "belief_update": "Recommender says it depends on what type of movie I want to watch.",
+      "belief_after": "Recommender wants more specific genre/type preferences before recommending further.",
+      "emotion": "neutral",
+      "intention": "consider what type of movie to ask for",
+      "conversational_goal": "clarify my movie preferences"
+    },
+    {
+      "time": 7,
+      "observed": "I say: Was good....Any that you like and would recommend...Your top three.",
+      "belief_before": "Recommender wants more specific genre/type preferences.",
+      "belief_update": "I confirm The Outsiders was good and ask for the recommender's top three liked/recommended movies.",
+      "belief_after": "Recommender knows I want multiple top recommendations and that The Outsiders was acceptable but seen.",
+      "emotion": "polite/positive",
+      "intention": "solicit the recommender's top three movies",
+      "conversational_goal": "get a list of top recommendations"
+    },
+    {
+      "time": 8,
+      "observed": "Recommender says: I loved 50 First Dates (2004) ...so cute!",
+      "belief_before": "Recommender knows I want multiple top recommendations.",
+      "belief_update": "Recommender says they loved 50 First Dates (2004) and calls it cute.",
+      "belief_after": "I know 50 First Dates is one of the recommender's loved movies; recommender likes cute/romantic-comedy style.",
+      "emotion": "neutral",
+      "intention": "evaluate whether I have seen it",
+      "conversational_goal": "respond to the 50 First Dates suggestion"
+    },
+    {
+      "time": 9,
+      "observed": "I say: Seen that one.",
+      "belief_before": "I know 50 First Dates is one of the recommender's loved movies.",
+      "belief_update": "I say I have seen 50 First Dates.",
+      "belief_after": "Recommender knows 50 First Dates is already seen; it is not a new recommendation for me.",
+      "emotion": "neutral",
+      "intention": "indicate that I have already seen it",
+      "conversational_goal": "prompt a new recommendation"
+    },
+    {
+      "time": 10,
+      "observed": "Recommender says: I love anything to do with Hawaii!",
+      "belief_before": "Recommender knows 50 First Dates is already seen.",
+      "belief_update": "Recommender says they love anything to do with Hawaii.",
+      "belief_after": "I know recommender has a strong Hawaii interest; this may shape further recommendations.",
+      "emotion": "neutral/mild",
+      "intention": "listen for the next recommendation",
+      "conversational_goal": "get an unseen recommendation"
+    },
+    {
+      "time": 11,
+      "observed": "I say: Cool",
+      "belief_before": "I know recommender has a strong Hawaii interest.",
+      "belief_update": "I reply 'Cool' as a neutral acknowledgment.",
+      "belief_after": "Recommender knows I heard and accepted the Hawaii interest without adding new preferences.",
+      "emotion": "neutral/polite",
+      "intention": "acknowledge and keep the conversation open",
+      "conversational_goal": "encourage further recommendations"
+    },
+    {
+      "time": 12,
+      "observed": "Recommender says: There is a documentary called The Hawaiians (1970) on Netflix.",
+      "belief_before": "Recommender knows I heard the Hawaii interest.",
+      "belief_update": "Recommender suggests the documentary The Hawaiians (1970) on Netflix.",
+      "belief_after": "I know The Hawaiians is a recommended documentary and is available on Netflix.",
+      "emotion": "mild interest",
+      "intention": "evaluate the documentary recommendation",
+      "conversational_goal": "consider whether The Hawaiians is a viable recommendation"
+    },
+    {
+      "time": 13,
+      "observed": "I say: Haven’t seen that one.",
+      "belief_before": "I know The Hawaiians is a recommended documentary.",
+      "belief_update": "I say I have not seen The Hawaiians.",
+      "belief_after": "Recommender knows The Hawaiians is unseen by me; it is a potentially viable recommendation.",
+      "emotion": "slight interest",
+      "intention": "signal openness to the documentary recommendation",
+      "conversational_goal": "keep The Hawaiians as a possible new recommendation and elicit more"
+    },
+    {
+      "time": 14,
+      "observed": "Recommender says: I'm a nerd and love documentaries",
+      "belief_before": "Recommender knows The Hawaiians is unseen by me.",
+      "belief_update": "Recommender says they are a nerd and love documentaries.",
+      "belief_after": "I know recommender loves documentaries, creating a possible shared interest.",
+      "emotion": "positive/affinity",
+      "intention": "share my own documentary preferences",
+      "conversational_goal": "refine recommendations toward documentaries"
+    },
+    {
+      "time": 15,
+      "observed": "I say: Me too but I like more the financial ones or the ones about becoming self aware.",
+      "belief_before": "I know recommender loves documentaries.",
+      "belief_update": "I say I also like documentaries but prefer financial ones or ones about becoming self-aware.",
+      "belief_after": "Recommender knows I share documentary interest and specifically prefer financial/self-awareness documentaries.",
+      "emotion": "engaged/positive",
+      "intention": "specify my documentary subgenre preferences",
+      "conversational_goal": "get targeted documentary recommendations"
+    },
+    {
+      "time": 16,
+      "observed": "Recommender says: Jumanji (2017) the new one is not too bad. Not as good as the original, of course...",
+      "belief_before": "Recommender knows I share documentary interest and prefer financial/self-awareness documentaries.",
+      "belief_update": "Recommender suggests Jumanji (2017), saying it is not too bad but not as good as the original.",
+      "belief_after": "I know recommender has offered Jumanji (2017); it does not match my stated documentary subgenre preference, so the recommendation seems broader or off-target.",
+      "emotion": "neutral/mildly puzzled",
+      "intention": "evaluate the Jumanji suggestion",
+      "conversational_goal": "decide whether to accept Jumanji or redirect back to my preferences"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"I say: Hi\",\n    \"belief_before\": \"No prior information; at start of conversation.\",\n    \"belief_update\": \"I initiate contact by greeting.\",\n    \"belief_after\": \"I have greeted and am awaiting a response from the recommender.\",\n    \"emotion\": \"neutral\",\n    \"intention\": \"greet the other speaker\",\n    \"conversational_goal\": \"begin the interaction\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Recommender says: Hello!...What kind of movie do you like?\",\n    \"belief_before\": \"I have greeted and am awaiting a response.\",\n    \"belief_update\": \"Recommender responds and asks what kind of movie I like.\",\n    \"belief_after\": \"Recommender is receptive and wants my movie preferences to make recommendations.\",\n    \"emotion\": \"neutral/ready\",\n    \"intention\": \"answer the preference question\",\n    \"conversational_goal\": \"get recommendations based on my preferences\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"I say: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)\",\n    \"belief_before\": \"Recommender is receptive and wants my movie preferences.\",\n    \"belief_update\": \"I ask for great movie recommendations and state I liked Good Will Hunting (1997).\",\n    \"belief_after\": \"Recommender knows I want recommendations and that I liked Good Will Hunting; no other preferences shared yet.\",\n    \"emotion\": \"polite/neutral\",\n    \"intention\": \"request recommendations\",\n    \"conversational_goal\": \"obtain a great movie recommendation\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Recommender says: Well, if you want my all time favorite, it's The Outsiders (1983)\",\n    \"belief_before\": \"Recommender knows I want recommendations and that I liked Good Will Hunting.\",\n    \"belief_update\": \"Recommender gives their all-time favorite: The Outsiders (1983).\",\n    \"belief_after\": \"I know The Outsiders is the recommender's all-time favorite; one recommendation has been offered.\",\n    \"emotion\": \"mild interest\",\n    \"intention\": \"evaluate the recommendation\",\n    \"conversational_goal\": \"respond to the first suggestion\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"I say: Seen that a while back.\",\n    \"belief_before\": \"I know The Outsiders is the recommender's all-time favorite.\",\n    \"belief_update\": \"I say I have seen The Outsiders a while back.\",\n    \"belief_after\": \"Recommender knows The Outsiders is already seen; it is not a new recommendation for me.\",\n    \"emotion\": \"neutral\",\n    \"intention\": \"indicate that I have already seen it\",\n    \"conversational_goal\": \"guide the recommender toward unseen movies\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Recommender says: Depends on what type of movie you want to watch...\",\n    \"belief_before\": \"Recommender knows The Outsiders is already seen.\",\n    \"belief_update\": \"Recommender says it depends on what type of movie I want to watch.\",\n    \"belief_after\": \"Recommender wants more specific genre/type preferences before recommending further.\",\n    \"emotion\": \"neutral\",\n    \"intention\": \"consider what type of movie to ask for\",\n    \"conversational_goal\": \"clarify my movie preferences\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"I say: Was good....Any that you like and would recommend...Your top three.\",\n    \"belief_before\": \"Recommender wants more specific genre/type preferences.\",\n    \"belief_update\": \"I confirm The Outsiders was good and ask for the recommender's top three liked/recommended movies.\",\n    \"belief_after\": \"Recommender knows I want multiple top recommendations and that The Outsiders was acceptable but seen.\",\n    \"emotion\": \"polite/positive\",\n    \"intention\": \"solicit the recommender's top three movies\",\n    \"conversational_goal\": \"get a list of top recommendations\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Recommender says: I loved 50 First Dates (2004) ...so cute!\",\n    \"belief_before\": \"Recommender knows I want multiple top recommendations.\",\n    \"belief_update\": \"Recommender says they loved 50 First Dates (2004) and calls it cute.\",\n    \"belief_after\": \"I know 50 First Dates is one of the recommender's loved movies; recommender likes cute/romantic-comedy style.\",\n    \"emotion\": \"neutral\",\n    \"intention\": \"evaluate whether I have seen it\",\n    \"conversational_goal\": \"respond to the 50 First Dates suggestion\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"I say: Seen that one.\",\n    \"belief_before\": \"I know 50 First Dates is one of the recommender's loved movies.\",\n    \"belief_update\": \"I say I have seen 50 First Dates.\",\n    \"belief_after\": \"Recommender knows 50 First Dates is already seen; it is not a new recommendation for me.\",\n    \"emotion\": \"neutral\",\n    \"intention\": \"indicate that I have already seen it\",\n    \"conversational_goal\": \"prompt a new recommendation\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"Recommender says: I love anything to do with Hawaii!\",\n    \"belief_before\": \"Recommender knows 50 First Dates is already seen.\",\n    \"belief_update\": \"Recommender says they love anything to do with Hawaii.\",\n    \"belief_after\": \"I know recommender has a strong Hawaii interest; this may shape further recommendations.\",\n    \"emotion\": \"neutral/mild\",\n    \"intention\": \"listen for the next recommendation\",\n    \"conversational_goal\": \"get an unseen recommendation\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"I say: Cool\",\n    \"belief_before\": \"I know recommender has a strong Hawaii interest.\",\n    \"belief_update\": \"I reply 'Cool' as a neutral acknowledgment.\",\n    \"belief_after\": \"Recommender knows I heard and accepted the Hawaii interest without adding new preferences.\",\n    \"emotion\": \"neutral/polite\",\n    \"intention\": \"acknowledge and keep the conversation open\",\n    \"conversational_goal\": \"encourage further recommendations\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"Recommender says: There is a documentary called The Hawaiians (1970) on Netflix.\",\n    \"belief_before\": \"Recommender knows I heard the Hawaii interest.\",\n    \"belief_update\": \"Recommender suggests the documentary The Hawaiians (1970) on Netflix.\",\n    \"belief_after\": \"I know The Hawaiians is a recommended documentary and is available on Netflix.\",\n    \"emotion\": \"mild interest\",\n    \"intention\": \"evaluate the documentary recommendation\",\n    \"conversational_goal\": \"consider whether The Hawaiians is a viable recommendation\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"I say: Haven’t seen that one.\",\n    \"belief_before\": \"I know The Hawaiians is a recommended documentary.\",\n    \"belief_update\": \"I say I have not seen The Hawaiians.\",\n    \"belief_after\": \"Recommender knows The Hawaiians is unseen by me; it is a potentially viable recommendation.\",\n    \"emotion\": \"slight interest\",\n    \"intention\": \"signal openness to the documentary recommendation\",\n    \"conversational_goal\": \"keep The Hawaiians as a possible new recommendation and elicit more\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"Recommender says: I'm a nerd and love documentaries\",\n    \"belief_before\": \"Recommender knows The Hawaiians is unseen by me.\",\n    \"belief_update\": \"Recommender says they are a nerd and love documentaries.\",\n    \"belief_after\": \"I know recommender loves documentaries, creating a possible shared interest.\",\n    \"emotion\": \"positive/affinity\",\n    \"intention\": \"share my own documentary preferences\",\n    \"conversational_goal\": \"refine recommendations toward documentaries\"\n  },\n  {\n    \"time\": 15,\n    \"observed\": \"I say: Me too but I like more the financial ones or the ones about becoming self aware.\",\n    \"belief_before\": \"I know recommender loves documentaries.\",\n    \"belief_update\": \"I say I also like documentaries but prefer financial ones or ones about becoming self-aware.\",\n    \"belief_after\": \"Recommender knows I share documentary interest and specifically prefer financial/self-awareness documentaries.\",\n    \"emotion\": \"engaged/positive\",\n    \"intention\": \"specify my documentary subgenre preferences\",\n    \"conversational_goal\": \"get targeted documentary recommendations\"\n  },\n  {\n    \"time\": 16,\n    \"observed\": \"Recommender says: Jumanji (2017) the new one is not too bad. Not as good as the original, of course...\",\n    \"belief_before\": \"Recommender knows I share documentary interest and prefer financial/self-awareness documentaries.\",\n    \"belief_update\": \"Recommender suggests Jumanji (2017), saying it is not too bad but not as good as the original.\",\n    \"belief_after\": \"I know recommender has offered Jumanji (2017); it does not match my stated documentary subgenre preference, so the recommendation seems broader or off-target.\",\n    \"emotion\": \"neutral/mildly puzzled\",\n    \"intention\": \"evaluate the Jumanji suggestion\",\n    \"conversational_goal\": \"decide whether to accept Jumanji or redirect back to my preferences\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

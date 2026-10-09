@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 13,
+  "item_id": "d895_u4",
+  "dialogue_id": "895",
+  "utterance_pos": 4,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 说出《迷失东京》、比尔·默瑞、《异形》和《异形：契约》以及“两部都有 DVD”，并不是单纯分享偏好，而是把一组可拆解为片名、演员、类型标签的材料直接交到自己面前；这些标签组成一个可解码的偏好结构，同时落成“我这边”必须接住、不能漏掉的推荐任务材料。",
+        "probability": 0.4188
+      },
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的“Yes and yes!”被读成对自己先前问法或推荐方向的肯定，像自己的判断被接住；而《异形》与《异形：契约》被看成同一系列的连续边界，SEEKER 对其中一部的喜好自然延伸为对该系列其他作品的喜好，“两部都有 DVD”则让这条系列内的口味连续性显得更成形。",
+        "probability": 0.3039
+      },
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的“Yes and yes!”被当成对自己先前问法或推荐方向的肯定，像是自己先前的判断被接住了；与此同时，SEEKER 列出的《迷失东京》《异形》《异形：契约》及 DVD 持有情况，被看成一组可由片名、演员、类型等标签拼合出来的可解码偏好结构，因而这个肯定也落在这套偏好解码之上。",
+        "probability": 0.2774
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这串片名、演员和类型标签一落到我这边，就被排成可解码的偏好结构：默瑞与《迷失东京》提示一种疏离、作者性的都市感，《异形》和《异形：契约》提示科幻恐怖的系列纵深；再加上“两部都有 DVD”，说明他不只是随口喜欢，而是有可核对的收藏事实。这些都不是闲聊，而是我作为推荐者必须接住、不能漏掉的任务材料；我得顺着这套标签去校准候选，既呼应默瑞这条线，也照顾异形这条线，同时避开他已经看过、已经拥有的片子。",
+        "activation": 0.3767
+      },
+      {
+        "content": "SEEKER 连着两个 yes，在他听来像是对自己刚才那组片名和推荐路子的点头，先前那点试探被稳稳接住；Lost in Translation、Aliens、Alien: Covenant 连同两部 DVD 的持有，被并成一张可以按演员、年代、类型、系列来拆读的偏好图谱，似乎对方的喜好就在这几个标签之间。这个确认让他更信自己已经摸到了对方偏好的骨架，心里顺着这套解码继续比对，觉得 Truman 和 Rushmore 这类片名正落在这条线上，也留意到自己对 Alien 续集的空缺并没有打断这个判断。",
+        "activation": 0.3163
+      },
+      {
+        "content": "RECOMMENDER 此刻把 SEEKER 的“Yes and yes!”收拢为对自己先前问法方向的肯定，感到自己抛出的片名没有落空，判断像是被接住了；同时把《异形》与《异形：契约》看成同一条系列脉络上的连续点，于是 SEEKER 对其中一部的喜欢便顺理成章地被读成对整个系列口味的接纳，“两部都有 DVD”更让这条系列内的口味连续性显得具体、成形。由此，RECOMMENDER 当前更倾向把后续推荐线索安放在一个已被确认的品味轨道上，并觉得自己先前的判断与对方的回应之间形成了顺畅的接续。",
+        "activation": 0.3069
+      }
+    ],
+    "observed_action": "RECOMMENDER 打招呼并请 SEEKER 告诉其一些最喜欢的电影，并表示会给 SEEKER 推荐一部好电影；RECOMMENDER 说那是一部好电影，问 SEEKER 是否看过 The Truman Show (1998) 或 Rushmore (1998)，并说喜欢第一部 Alien，但没看续集。",
+    "predicted_actions": [
+      {
+        "content": "向 SEEKER 推荐影片",
+        "probability": 0.3563
+      },
+      {
+        "content": "推荐一部未提及的新片",
+        "probability": 0.2595
+      },
+      {
+        "content": "向 SEEKER 提问",
+        "probability": 0.2139
+      },
+      {
+        "content": "询问两部看过的电影先聊哪部观感",
+        "probability": 0.0904
+      },
+      {
+        "content": "复述偏好并询问先走哪条线",
+        "probability": 0.0799
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.1703,
+    "b": 0,
+    "c": 0.6158,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.1703 = 询问两部看过的电影先聊哪部观感 0.0904 + 复述偏好并询问先走哪条线 0.0799；B 0.0000；C 0.6158 = 向 SEEKER 推荐影片 0.3563 + 推荐一部未提及的新片 0.2595；D 0.0000；E 0.0000。Actions 0 and 1 are direct recommendations, while 3 and 4 seek preference or feedback.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

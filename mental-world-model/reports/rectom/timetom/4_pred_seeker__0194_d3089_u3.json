@@ -1,0 +1,55 @@
+{
+  "id": "4_pred_seeker__0194_d3089_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello",
+      "belief_before": "No prior conversational context is available to SEEKER; SEEKER does not yet know the recommender's intent or any recommendation.",
+      "belief_update": "SEEKER learns that the recommender is present and has initiated contact with a greeting.",
+      "belief_after": "The recommender is opening a conversation; no movie request, preference, or recommendation has been expressed yet.",
+      "emotion": "Neutral, mildly attentive/polite",
+      "intention": "Respond to the greeting and see what the recommender wants.",
+      "conversational_goal": "Acknowledge the greeting and begin interaction.",
+      "preferences": "Not yet stated or disclosed.",
+      "reaction": "Recognizes a greeting; likely prepared to reply politely.",
+      "interpretation_change": "No previous interpretation to change; this establishes initial contact."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hi, I'm looking for a good super hero movie",
+      "belief_before": "The recommender has greeted SEEKER; no request or preferences have been stated yet.",
+      "belief_update": "SEEKER makes their request explicit: they want a good superhero movie.",
+      "belief_after": "SEEKER has informed the recommender of their need; the recommender is now expected to respond with suggestions.",
+      "emotion": "Hopeful/interested",
+      "intention": "Obtain a recommendation for a good superhero movie.",
+      "conversational_goal": "Ask for superhero movie recommendations.",
+      "preferences": "Prefers a good superhero movie; exact subgenre, era, or specific title is unspecified.",
+      "reaction": "Responds to the greeting and introduces the request; cooperative.",
+      "interpretation_change": "Yes: the conversation shifts from greeting to recommendation task, and SEEKER's goal becomes explicit."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Ok, my personal favorite is Spider-Man (2002)",
+      "belief_before": "SEEKER has asked for a good superhero movie and is awaiting the recommender's response.",
+      "belief_update": "The recommender provides a specific recommendation and states that Spider-Man (2002) is their personal favorite.",
+      "belief_after": "Spider-Man (2002) is now a candidate recommendation; the recommender has a personal favorite. No other options or reasons have been given yet.",
+      "emotion": "Interested/curious; possibly appreciative",
+      "intention": "Consider or evaluate Spider-Man (2002) as a recommendation and decide how to respond.",
+      "conversational_goal": "Acknowledge or evaluate the suggestion, possibly ask for more details or alternatives.",
+      "preferences": "Still wants a good superhero movie; no explicit preference for or against Spider-Man (2002) yet.",
+      "reaction": "Receives the recommendation; likely considering it.",
+      "interpretation_change": "Yes: the task advances from a general request to a specific candidate recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello\",\n    \"belief_before\": \"No prior conversational context is available to SEEKER; SEEKER does not yet know the recommender's intent or any recommendation.\",\n    \"belief_update\": \"SEEKER learns that the recommender is present and has initiated contact with a greeting.\",\n    \"belief_after\": \"The recommender is opening a conversation; no movie request, preference, or recommendation has been expressed yet.\",\n    \"emotion\": \"Neutral, mildly attentive/polite\",\n    \"intention\": \"Respond to the greeting and see what the recommender wants.\",\n    \"conversational_goal\": \"Acknowledge the greeting and begin interaction.\",\n    \"preferences\": \"Not yet stated or disclosed.\",\n    \"reaction\": \"Recognizes a greeting; likely prepared to reply politely.\",\n    \"interpretation_change\": \"No previous interpretation to change; this establishes initial contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hi, I'm looking for a good super hero movie\",\n    \"belief_before\": \"The recommender has greeted SEEKER; no request or preferences have been stated yet.\",\n    \"belief_update\": \"SEEKER makes their request explicit: they want a good superhero movie.\",\n    \"belief_after\": \"SEEKER has informed the recommender of their need; the recommender is now expected to respond with suggestions.\",\n    \"emotion\": \"Hopeful/interested\",\n    \"intention\": \"Obtain a recommendation for a good superhero movie.\",\n    \"conversational_goal\": \"Ask for superhero movie recommendations.\",\n    \"preferences\": \"Prefers a good superhero movie; exact subgenre, era, or specific title is unspecified.\",\n    \"reaction\": \"Responds to the greeting and introduces the request; cooperative.\",\n    \"interpretation_change\": \"Yes: the conversation shifts from greeting to recommendation task, and SEEKER's goal becomes explicit.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Ok, my personal favorite is Spider-Man (2002)\",\n    \"belief_before\": \"SEEKER has asked for a good superhero movie and is awaiting the recommender's response.\",\n    \"belief_update\": \"The recommender provides a specific recommendation and states that Spider-Man (2002) is their personal favorite.\",\n    \"belief_after\": \"Spider-Man (2002) is now a candidate recommendation; the recommender has a personal favorite. No other options or reasons have been given yet.\",\n    \"emotion\": \"Interested/curious; possibly appreciative\",\n    \"intention\": \"Consider or evaluate Spider-Man (2002) as a recommendation and decide how to respond.\",\n    \"conversational_goal\": \"Acknowledge or evaluate the suggestion, possibly ask for more details or alternatives.\",\n    \"preferences\": \"Still wants a good superhero movie; no explicit preference for or against Spider-Man (2002) yet.\",\n    \"reaction\": \"Receives the recommendation; likely considering it.\",\n    \"interpretation_change\": \"Yes: the task advances from a general request to a specific candidate recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

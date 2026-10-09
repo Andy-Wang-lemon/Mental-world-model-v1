@@ -1,0 +1,206 @@
+{
+  "id": "3_pred_rec__0167_d2498_u11",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "information_available": "Recommender only knows that the seeker has initiated with a greeting; no movie preferences or request yet.",
+      "preferences": {
+        "target_own": "Recommender has personal movie preferences, but none are yet expressed or relevant in dialogue.",
+        "perceived_seeker": "None stated."
+      },
+      "belief_before": "No prior information about this seeker; purpose of contact unknown.",
+      "belief_update": "Seeker is present and has greeted the recommender.",
+      "belief_after": "Seeker has initiated conversation; purpose still unknown.",
+      "emotion": "Neutral/polite.",
+      "intention": "Acknowledge the greeting and invite conversation.",
+      "reaction_to_other": "Friendly acknowledgment.",
+      "conversational_goal": "Start the conversation and discover what the seeker wants.",
+      "interpretation_change": "Initial; establishes contact."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello!...What kind of movie do you like?",
+      "information_available": "Seeker only said 'Hi'; recommender's question is now in the conversation.",
+      "preferences": {
+        "target_own": "Not yet expressed in dialogue.",
+        "perceived_seeker": "None stated."
+      },
+      "belief_before": "Seeker has initiated conversation; purpose unknown.",
+      "belief_update": "Recommender chooses to steer toward movies by asking about genre; no new external information from seeker.",
+      "belief_after": "Recommender has asked for the seeker's movie genre; seeker's preferences are still unknown.",
+      "emotion": "Friendly/helpful.",
+      "intention": "Engage the seeker and elicit genre preference.",
+      "reaction_to_other": "Welcoming.",
+      "conversational_goal": "Discover the seeker's preferred movie type to tailor recommendations.",
+      "interpretation_change": "Sets a movie-recommendation frame."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)",
+      "information_available": "Seeker wants movie recommendations and liked Good Will Hunting (1997).",
+      "preferences": {
+        "target_own": "Not yet expressed in dialogue.",
+        "perceived_seeker": "Likes Good Will Hunting (1997)."
+      },
+      "belief_before": "Recommender asked for genre; seeker's preferences unknown.",
+      "belief_update": "Seeker explicitly requests recommendations and shares a liked movie.",
+      "belief_after": "Seeker seeks recommendations and has liked Good Will Hunting (1997), suggesting possible interest in drama/emotional/intellectual films.",
+      "emotion": "Attentive/helpful.",
+      "intention": "Provide a recommendation.",
+      "reaction_to_other": "Receptive to the request.",
+      "conversational_goal": "Recommend a movie likely to fit the seeker's taste.",
+      "interpretation_change": "Concretizes the request and adds a preference."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders (1983)",
+      "information_available": "Seeker wants recommendations and liked Good Will Hunting (1997); recommender has offered The Outsiders (1983).",
+      "preferences": {
+        "target_own": "All-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997)."
+      },
+      "belief_before": "Seeker seeks recommendations and liked Good Will Hunting (1997).",
+      "belief_update": "Recommender shares own all-time favorite; no new seeker information.",
+      "belief_after": "Recommender has recommended The Outsiders as a personal favorite; seeker's reaction is unknown.",
+      "emotion": "Enthusiastic/helpful.",
+      "intention": "Share a favorite and satisfy the recommendation request.",
+      "reaction_to_other": "Responsive.",
+      "conversational_goal": "Give a strong personal recommendation.",
+      "interpretation_change": "Reveals recommender preference; moves to a specific favorite."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: Seen that a while back.",
+      "information_available": "Seeker has already seen The Outsiders; no like/dislike stated. Prior: wants recommendations and liked Good Will Hunting.",
+      "preferences": {
+        "target_own": "All-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); has seen The Outsiders (1983), opinion unknown."
+      },
+      "belief_before": "Recommender suggested The Outsiders; seeker's reaction unknown.",
+      "belief_update": "Seeker has seen The Outsiders before, so it is not a new recommendation.",
+      "belief_after": "The Outsiders is already seen; another suggestion is needed; seeker's opinion of it is unknown.",
+      "emotion": "Mildly disappointed/neutral.",
+      "intention": "Adjust and find another movie.",
+      "reaction_to_other": "Accepts the response without offense.",
+      "conversational_goal": "Continue recommending unseen movies.",
+      "interpretation_change": "Previous recommendation is ineffective for novelty; alternatives are needed."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says: Depends on what type of movie you want to watch...",
+      "information_available": "Seeker wants recommendations, liked Good Will Hunting (1997), and has already seen The Outsiders (1983).",
+      "preferences": {
+        "target_own": "All-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); has seen The Outsiders (1983), opinion unknown."
+      },
+      "belief_before": "The Outsiders is seen; another recommendation is needed; seeker's preferred type remains unclear.",
+      "belief_update": "Recommender asks for type; no new external information.",
+      "belief_after": "Recommender needs clearer genre/type information; seeker still has not specified beyond Good Will Hunting.",
+      "emotion": "Uncertain/clarifying.",
+      "intention": "Elicit more specific preference.",
+      "reaction_to_other": "Thoughtful and accommodating.",
+      "conversational_goal": "Narrow the recommendation type before suggesting more.",
+      "interpretation_change": "Shifts from offering a favorite to seeking constraints."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: Was good....Any that you like and would recommend...Your top three.",
+      "information_available": "Seeker says The Outsiders was good; asks for recommender's top three liked/recommended movies.",
+      "preferences": {
+        "target_own": "All-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); liked The Outsiders (1983); wants recommender's top three."
+      },
+      "belief_before": "Recommender asked for type; seeker's opinion of The Outsiders and further preferences were unknown.",
+      "belief_update": "Seeker liked The Outsiders and requests top three personal recommendations.",
+      "belief_after": "Seeker is open to recommender's favorites and wants a top-three list; The Outsiders was liked.",
+      "emotion": "Pleased/validated.",
+      "intention": "Provide top three recommendations.",
+      "reaction_to_other": "Encouraged by positive feedback.",
+      "conversational_goal": "Satisfy the request with favorite movies.",
+      "interpretation_change": "Confirms The Outsiders was liked; request becomes a top-three list."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says: I loved 50 First Dates (2004) ...so cute!",
+      "information_available": "Seeker liked Good Will Hunting (1997) and The Outsiders (1983); wants recommender's top three; recommender has offered 50 First Dates (2004).",
+      "preferences": {
+        "target_own": "Loved 50 First Dates (2004), finds it cute; all-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); liked The Outsiders (1983); wants top three."
+      },
+      "belief_before": "Seeker wants top three; The Outsiders was liked.",
+      "belief_update": "Recommender gives the first top-three item; no new seeker information.",
+      "belief_after": "50 First Dates has been recommended as loved/cute; seeker's reaction is unknown; more of the top three may still be needed.",
+      "emotion": "Enthusiastic/affectionate.",
+      "intention": "Share another favorite.",
+      "reaction_to_other": "Warm and positive.",
+      "conversational_goal": "Provide one of the top-three recommendations.",
+      "interpretation_change": "Adds recommender preference; begins top-three response."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: Seen that one.",
+      "information_available": "Seeker has seen 50 First Dates; no like/dislike. Prior: liked Good Will Hunting and The Outsiders; asked for top three.",
+      "preferences": {
+        "target_own": "Loved 50 First Dates (2004); all-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); liked The Outsiders (1983); has seen 50 First Dates (2004), opinion unknown."
+      },
+      "belief_before": "Recommender suggested 50 First Dates; seeker's reaction unknown.",
+      "belief_update": "Seeker has already seen 50 First Dates, so it is not a new recommendation.",
+      "belief_after": "Another suggested movie is already seen; more recommendations or a different direction are needed; seeker's opinion of 50 First Dates is unknown.",
+      "emotion": "Disappointed/neutral.",
+      "intention": "Offer another favorite or adjust.",
+      "reaction_to_other": "Accepting but not strongly engaged.",
+      "conversational_goal": "Find an unseen recommendation.",
+      "interpretation_change": "Second recommendation is ineffective for novelty; continue."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says: I love anything to do with Hawaii!",
+      "information_available": "Seeker liked Good Will Hunting and The Outsiders; has seen 50 First Dates; wants top three; recommender has expressed love of Hawaii-related things.",
+      "preferences": {
+        "target_own": "Loves anything Hawaii-related; loved 50 First Dates (2004); all-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); liked The Outsiders (1983); has seen 50 First Dates (2004), opinion unknown."
+      },
+      "belief_before": "50 First Dates is seen; another recommendation is needed; seeker's opinion of it is unknown.",
+      "belief_update": "Recommender reveals a Hawaii-related preference; no new seeker information.",
+      "belief_after": "Recommender has disclosed love of Hawaii; still needs to address the request for more recommendations or continue conversation.",
+      "emotion": "Enthusiastic/nostalgic.",
+      "intention": "Share personal taste and maintain conversation.",
+      "reaction_to_other": "Enthusiastic self-disclosure after 'Seen that one'.",
+      "conversational_goal": "Connect over personal preferences and possibly prompt further conversation.",
+      "interpretation_change": "Adds recommender preference; does not directly provide a new unseen movie."
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says: Cool",
+      "information_available": "Seeker acknowledges the Hawaii preference; no new movie preference or request.",
+      "preferences": {
+        "target_own": "Loves Hawaii-related things; loved 50 First Dates (2004); all-time favorite is The Outsiders (1983).",
+        "perceived_seeker": "Likes Good Will Hunting (1997); liked The Outsiders (1983); has seen 50 First Dates (2004); no stated Hawaii preference."
+      },
+      "belief_before": "Recommender shared Hawaii love; seeker had seen 50 First Dates.",
+      "belief_update": "Seeker gives minimal positive acknowledgment, with no further request.",
+      "belief_after": "Seeker may be politely engaged but not actively asking for more recommendations; conversation could wind down.",
+      "emotion": "Neutral/slightly uncertain.",
+      "intention": "Await any further request or close the exchange.",
+      "reaction_to_other": "Accepts acknowledgment.",
+      "conversational_goal": "Maintain or gracefully close conversation.",
+      "interpretation_change": "No substantive new preference; minimal engagement."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"information_available\": \"Recommender only knows that the seeker has initiated with a greeting; no movie preferences or request yet.\",\n    \"preferences\": {\n      \"target_own\": \"Recommender has personal movie preferences, but none are yet expressed or relevant in dialogue.\",\n      \"perceived_seeker\": \"None stated.\"\n    },\n    \"belief_before\": \"No prior information about this seeker; purpose of contact unknown.\",\n    \"belief_update\": \"Seeker is present and has greeted the recommender.\",\n    \"belief_after\": \"Seeker has initiated conversation; purpose still unknown.\",\n    \"emotion\": \"Neutral/polite.\",\n    \"intention\": \"Acknowledge the greeting and invite conversation.\",\n    \"reaction_to_other\": \"Friendly acknowledgment.\",\n    \"conversational_goal\": \"Start the conversation and discover what the seeker wants.\",\n    \"interpretation_change\": \"Initial; establishes contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello!...What kind of movie do you like?\",\n    \"information_available\": \"Seeker only said 'Hi'; recommender's question is now in the conversation.\",\n    \"preferences\": {\n      \"target_own\": \"Not yet expressed in dialogue.\",\n      \"perceived_seeker\": \"None stated.\"\n    },\n    \"belief_before\": \"Seeker has initiated conversation; purpose unknown.\",\n    \"belief_update\": \"Recommender chooses to steer toward movies by asking about genre; no new external information from seeker.\",\n    \"belief_after\": \"Recommender has asked for the seeker's movie genre; seeker's preferences are still unknown.\",\n    \"emotion\": \"Friendly/helpful.\",\n    \"intention\": \"Engage the seeker and elicit genre preference.\",\n    \"reaction_to_other\": \"Welcoming.\",\n    \"conversational_goal\": \"Discover the seeker's preferred movie type to tailor recommendations.\",\n    \"interpretation_change\": \"Sets a movie-recommendation frame.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)\",\n    \"information_available\": \"Seeker wants movie recommendations and liked Good Will Hunting (1997).\",\n    \"preferences\": {\n      \"target_own\": \"Not yet expressed in dialogue.\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997).\"\n    },\n    \"belief_before\": \"Recommender asked for genre; seeker's preferences unknown.\",\n    \"belief_update\": \"Seeker explicitly requests recommendations and shares a liked movie.\",\n    \"belief_after\": \"Seeker seeks recommendations and has liked Good Will Hunting (1997), suggesting possible interest in drama/emotional/intellectual films.\",\n    \"emotion\": \"Attentive/helpful.\",\n    \"intention\": \"Provide a recommendation.\",\n    \"reaction_to_other\": \"Receptive to the request.\",\n    \"conversational_goal\": \"Recommend a movie likely to fit the seeker's taste.\",\n    \"interpretation_change\": \"Concretizes the request and adds a preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders (1983)\",\n    \"information_available\": \"Seeker wants recommendations and liked Good Will Hunting (1997); recommender has offered The Outsiders (1983).\",\n    \"preferences\": {\n      \"target_own\": \"All-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997).\"\n    },\n    \"belief_before\": \"Seeker seeks recommendations and liked Good Will Hunting (1997).\",\n    \"belief_update\": \"Recommender shares own all-time favorite; no new seeker information.\",\n    \"belief_after\": \"Recommender has recommended The Outsiders as a personal favorite; seeker's reaction is unknown.\",\n    \"emotion\": \"Enthusiastic/helpful.\",\n    \"intention\": \"Share a favorite and satisfy the recommendation request.\",\n    \"reaction_to_other\": \"Responsive.\",\n    \"conversational_goal\": \"Give a strong personal recommendation.\",\n    \"interpretation_change\": \"Reveals recommender preference; moves to a specific favorite.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: Seen that a while back.\",\n    \"information_available\": \"Seeker has already seen The Outsiders; no like/dislike stated. Prior: wants recommendations and liked Good Will Hunting.\",\n    \"preferences\": {\n      \"target_own\": \"All-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); has seen The Outsiders (1983), opinion unknown.\"\n    },\n    \"belief_before\": \"Recommender suggested The Outsiders; seeker's reaction unknown.\",\n    \"belief_update\": \"Seeker has seen The Outsiders before, so it is not a new recommendation.\",\n    \"belief_after\": \"The Outsiders is already seen; another suggestion is needed; seeker's opinion of it is unknown.\",\n    \"emotion\": \"Mildly disappointed/neutral.\",\n    \"intention\": \"Adjust and find another movie.\",\n    \"reaction_to_other\": \"Accepts the response without offense.\",\n    \"conversational_goal\": \"Continue recommending unseen movies.\",\n    \"interpretation_change\": \"Previous recommendation is ineffective for novelty; alternatives are needed.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says: Depends on what type of movie you want to watch...\",\n    \"information_available\": \"Seeker wants recommendations, liked Good Will Hunting (1997), and has already seen The Outsiders (1983).\",\n    \"preferences\": {\n      \"target_own\": \"All-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); has seen The Outsiders (1983), opinion unknown.\"\n    },\n    \"belief_before\": \"The Outsiders is seen; another recommendation is needed; seeker's preferred type remains unclear.\",\n    \"belief_update\": \"Recommender asks for type; no new external information.\",\n    \"belief_after\": \"Recommender needs clearer genre/type information; seeker still has not specified beyond Good Will Hunting.\",\n    \"emotion\": \"Uncertain/clarifying.\",\n    \"intention\": \"Elicit more specific preference.\",\n    \"reaction_to_other\": \"Thoughtful and accommodating.\",\n    \"conversational_goal\": \"Narrow the recommendation type before suggesting more.\",\n    \"interpretation_change\": \"Shifts from offering a favorite to seeking constraints.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: Was good....Any that you like and would recommend...Your top three.\",\n    \"information_available\": \"Seeker says The Outsiders was good; asks for recommender's top three liked/recommended movies.\",\n    \"preferences\": {\n      \"target_own\": \"All-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); liked The Outsiders (1983); wants recommender's top three.\"\n    },\n    \"belief_before\": \"Recommender asked for type; seeker's opinion of The Outsiders and further preferences were unknown.\",\n    \"belief_update\": \"Seeker liked The Outsiders and requests top three personal recommendations.\",\n    \"belief_after\": \"Seeker is open to recommender's favorites and wants a top-three list; The Outsiders was liked.\",\n    \"emotion\": \"Pleased/validated.\",\n    \"intention\": \"Provide top three recommendations.\",\n    \"reaction_to_other\": \"Encouraged by positive feedback.\",\n    \"conversational_goal\": \"Satisfy the request with favorite movies.\",\n    \"interpretation_change\": \"Confirms The Outsiders was liked; request becomes a top-three list.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says: I loved 50 First Dates (2004) ...so cute!\",\n    \"information_available\": \"Seeker liked Good Will Hunting (1997) and The Outsiders (1983); wants recommender's top three; recommender has offered 50 First Dates (2004).\",\n    \"preferences\": {\n      \"target_own\": \"Loved 50 First Dates (2004), finds it cute; all-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); liked The Outsiders (1983); wants top three.\"\n    },\n    \"belief_before\": \"Seeker wants top three; The Outsiders was liked.\",\n    \"belief_update\": \"Recommender gives the first top-three item; no new seeker information.\",\n    \"belief_after\": \"50 First Dates has been recommended as loved/cute; seeker's reaction is unknown; more of the top three may still be needed.\",\n    \"emotion\": \"Enthusiastic/affectionate.\",\n    \"intention\": \"Share another favorite.\",\n    \"reaction_to_other\": \"Warm and positive.\",\n    \"conversational_goal\": \"Provide one of the top-three recommendations.\",\n    \"interpretation_change\": \"Adds recommender preference; begins top-three response.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: Seen that one.\",\n    \"information_available\": \"Seeker has seen 50 First Dates; no like/dislike. Prior: liked Good Will Hunting and The Outsiders; asked for top three.\",\n    \"preferences\": {\n      \"target_own\": \"Loved 50 First Dates (2004); all-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); liked The Outsiders (1983); has seen 50 First Dates (2004), opinion unknown.\"\n    },\n    \"belief_before\": \"Recommender suggested 50 First Dates; seeker's reaction unknown.\",\n    \"belief_update\": \"Seeker has already seen 50 First Dates, so it is not a new recommendation.\",\n    \"belief_after\": \"Another suggested movie is already seen; more recommendations or a different direction are needed; seeker's opinion of 50 First Dates is unknown.\",\n    \"emotion\": \"Disappointed/neutral.\",\n    \"intention\": \"Offer another favorite or adjust.\",\n    \"reaction_to_other\": \"Accepting but not strongly engaged.\",\n    \"conversational_goal\": \"Find an unseen recommendation.\",\n    \"interpretation_change\": \"Second recommendation is ineffective for novelty; continue.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says: I love anything to do with Hawaii!\",\n    \"information_available\": \"Seeker liked Good Will Hunting and The Outsiders; has seen 50 First Dates; wants top three; recommender has expressed love of Hawaii-related things.\",\n    \"preferences\": {\n      \"target_own\": \"Loves anything Hawaii-related; loved 50 First Dates (2004); all-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); liked The Outsiders (1983); has seen 50 First Dates (2004), opinion unknown.\"\n    },\n    \"belief_before\": \"50 First Dates is seen; another recommendation is needed; seeker's opinion of it is unknown.\",\n    \"belief_update\": \"Recommender reveals a Hawaii-related preference; no new seeker information.\",\n    \"belief_after\": \"Recommender has disclosed love of Hawaii; still needs to address the request for more recommendations or continue conversation.\",\n    \"emotion\": \"Enthusiastic/nostalgic.\",\n    \"intention\": \"Share personal taste and maintain conversation.\",\n    \"reaction_to_other\": \"Enthusiastic self-disclosure after 'Seen that one'.\",\n    \"conversational_goal\": \"Connect over personal preferences and possibly prompt further conversation.\",\n    \"interpretation_change\": \"Adds recommender preference; does not directly provide a new unseen movie.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says: Cool\",\n    \"information_available\": \"Seeker acknowledges the Hawaii preference; no new movie preference or request.\",\n    \"preferences\": {\n      \"target_own\": \"Loves Hawaii-related things; loved 50 First Dates (2004); all-time favorite is The Outsiders (1983).\",\n      \"perceived_seeker\": \"Likes Good Will Hunting (1997); liked The Outsiders (1983); has seen 50 First Dates (2004); no stated Hawaii preference.\"\n    },\n    \"belief_before\": \"Recommender shared Hawaii love; seeker had seen 50 First Dates.\",\n    \"belief_update\": \"Seeker gives minimal positive acknowledgment, with no further request.\",\n    \"belief_after\": \"Seeker may be politely engaged but not actively asking for more recommendations; conversation could wind down.\",\n    \"emotion\": \"Neutral/slightly uncertain.\",\n    \"intention\": \"Await any further request or close the exchange.\",\n    \"reaction_to_other\": \"Accepts acknowledgment.\",\n    \"conversational_goal\": \"Maintain or gracefully close conversation.\",\n    \"interpretation_change\": \"No substantive new preference; minimal engagement.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

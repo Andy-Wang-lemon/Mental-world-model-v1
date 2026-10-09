@@ -1,0 +1,42 @@
+{
+  "id": "4_pred_seeker__0075_d1205_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "No prior dialogue; SEEKER initiates with: 'Hey How are you'.",
+      "belief_before": "No information about the other speaker or the conversation topic.",
+      "belief_update": "No external turn has occurred yet; this is a self-initiated greeting.",
+      "belief_after": "The other speaker may be present and able to respond.",
+      "emotion": "Friendly, casual.",
+      "intention": "Greet the other speaker and open a conversation.",
+      "conversational_goal": "Establish contact and invite a response.",
+      "preferences": "Not yet disclosed; target's movie preferences are unknown to the other speaker.",
+      "reaction_to_other": "Not applicable; no other-speaker utterance yet.",
+      "changes_previous_interpretation": "N/A—initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hello, how are you? What kind of movies do you like?'",
+      "belief_before": "The other speaker may respond to my greeting; their topic and intent are unknown.",
+      "belief_update": "The other speaker is polite and is steering the conversation toward movies and my movie preferences.",
+      "belief_after": "The other speaker likely wants to know my movie tastes, possibly to discuss or recommend movies.",
+      "emotion": "Pleasantly engaged, cooperative.",
+      "intention": "Answer the greeting and prepare to state movie preferences.",
+      "conversational_goal": "Continue the polite exchange and share movie preferences so the other speaker can respond appropriately.",
+      "preferences": "Specific movie preferences are still undisclosed; the recommender has now prompted the target to express them.",
+      "reaction_to_other": "Positive and cooperative; perceives the recommender as friendly and inquisitive.",
+      "changes_previous_interpretation": "Yes—reframes the interaction from a simple greeting into a movie-preference/recommendation context."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"No prior dialogue; SEEKER initiates with: 'Hey How are you'.\",\n    \"belief_before\": \"No information about the other speaker or the conversation topic.\",\n    \"belief_update\": \"No external turn has occurred yet; this is a self-initiated greeting.\",\n    \"belief_after\": \"The other speaker may be present and able to respond.\",\n    \"emotion\": \"Friendly, casual.\",\n    \"intention\": \"Greet the other speaker and open a conversation.\",\n    \"conversational_goal\": \"Establish contact and invite a response.\",\n    \"preferences\": \"Not yet disclosed; target's movie preferences are unknown to the other speaker.\",\n    \"reaction_to_other\": \"Not applicable; no other-speaker utterance yet.\",\n    \"changes_previous_interpretation\": \"N/A—initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hello, how are you? What kind of movies do you like?'\",\n    \"belief_before\": \"The other speaker may respond to my greeting; their topic and intent are unknown.\",\n    \"belief_update\": \"The other speaker is polite and is steering the conversation toward movies and my movie preferences.\",\n    \"belief_after\": \"The other speaker likely wants to know my movie tastes, possibly to discuss or recommend movies.\",\n    \"emotion\": \"Pleasantly engaged, cooperative.\",\n    \"intention\": \"Answer the greeting and prepare to state movie preferences.\",\n    \"conversational_goal\": \"Continue the polite exchange and share movie preferences so the other speaker can respond appropriately.\",\n    \"preferences\": \"Specific movie preferences are still undisclosed; the recommender has now prompted the target to express them.\",\n    \"reaction_to_other\": \"Positive and cooperative; perceives the recommender as friendly and inquisitive.\",\n    \"changes_previous_interpretation\": \"Yes—reframes the interaction from a simple greeting into a movie-preference/recommendation context.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

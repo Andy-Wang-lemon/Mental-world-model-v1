@@ -1,0 +1,84 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 2,
+  "item_id": "d474_u5",
+  "dialogue_id": "474",
+  "utterance_pos": 5,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "此刻，SEEKER 的请求被 RECOMMENDER 经验为一个已落到自己身上的份内任务：找片这件事不是与己无关的选项，而是须由自己接住的求助对象。与此同时，‘我不喜欢恐怖片’在 RECOMMENDER 的对象化世界里不是一条可权衡的偏好，而是绝对的排除规则：待选影片空间先被切成‘恐怖及其相近元素不得进入’与‘惊悚片等可谈范围’两半，SEEKER 提的 thriller 被安置在后者中。",
+        "probability": 0.4019
+      },
+      {
+        "content": "此刻，SEEKER 对 horror 的拒绝被 RECOMMENDER 经验为一条须由自己替他把守的硬边界：守住它成了这次找片任务的底色，而不是可交给他自己或可试探的事。‘我不喜欢恐怖片’由此被对象化为绝对排除规则，整个可推荐影片空间以‘恐怖及相近元素一概在外’为轴组织起来，thriller 则是边界内被允许进入的类别。",
+        "probability": 0.3209
+      },
+      {
+        "content": "此刻，SEEKER 已经看过并喜欢某些片、并点名 The Number 23 (2007) 与 The Sixth Sense (1999) 为 favorite thrillers，被 RECOMMENDER 经验成与自身推荐表现绑定的条件：不能让他觉得所推荐的是他已经看过或不喜欢的片。与此同时，‘我不喜欢恐怖片’仍被执为绝对排除规则，于是整个待选影片空间被压成一块同时避开恐怖及相近元素、又避开这些已看/不喜欢参照物的区域。",
+        "probability": 0.2771
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这事既已应下，就不是可管可不管的旁事，而是落到我手上、得由我给出下一步的找片任务。对方把“不喜欢恐怖片”摆出来之后，这条界线在我这里变成硬排除：恐怖及其相近味道的东西不再进入可选项，刚才提《It》是在听到这句之前，现在它只能算被这条界线划掉。剩下的可谈范围里，惊悚是他明确点出的方向，也是我此刻能继续组织候选的地方；《The Silence of the Lambs》可以放进这个范围里作为承接，但重点不是我硬推什么，而是先把恐怖排除后的惊悚空间整理出来。",
+        "activation": 0.3773
+      },
+      {
+        "content": "SEEKER 对 horror 的拒绝，在 RECOMMENDER 这里被当成一条必须由自己替他把守的硬边界：不是可交还给他自行拿捏、也不是可以试探的偏好，而是把整个可推荐空间重新组织起来的排除规则——恐怖及相近元素一概在外，thriller 成为边界内允许进入的类别。由此，The Silence of the Lambs (1991) 被看成符合这条边界的方向；而先前提出的 It (2017) 则落在当前排除范围内，不再是他心里稳妥的推荐对象。他倾向于把守住这条线视为这次找片任务的底色。",
+        "activation": 0.3249
+      },
+      {
+        "content": "原来他已经看过《沉默的羔羊》而且还很喜欢，那我刚才推的就没落到点上；他又点名《数字23》和《第六感》是喜欢的惊悚片，这两个也不能再端出来，不然会显得我没听进去。现在能选的只能是没看过的惊悚片，而且他说了不喜欢恐怖片，这条得当成硬边界——恐怖片以及和恐怖太近的东西都得避开。这样一来可选范围更窄了，得在避开已看/已喜欢参照物、又避开恐怖及相近元素之后，再找能对上他惊悚口味的片。",
+        "activation": 0.2978
+      }
+    ],
+    "observed_action": "RECOMMENDER 回答 Yes，并提出 It (2017)；RECOMMENDER 提出 The Silence of the Lambs (1991)。",
+    "predicted_actions": [
+      {
+        "content": "调整推荐方向到惊悚",
+        "probability": 0.3207
+      },
+      {
+        "content": "询问偏好",
+        "probability": 0.2323
+      },
+      {
+        "content": "询问已看过或未看过的惊悚片",
+        "probability": 0.1736
+      },
+      {
+        "content": "推荐惊悚片",
+        "probability": 0.1529
+      },
+      {
+        "content": "撤回恐怖片推荐并推荐 Memento 并询问是否看过",
+        "probability": 0.1206
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 1.0,
+    "d": 0.0,
+    "e": 0.0
+  },
+  "score_reason": "The record's predicted actions explicitly include recommending a thriller and inquiring about preferences or seen/unseen thrillers, directly matching the option.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "下一步预测是调整推荐、询问偏好和推荐惊悚片。标准答案要求回应刚才的话，核对用的是已经说过的 Yes，那是过去的行动。",
+  "audit_level": "inferred",
+  "manual_judgment": "错"
+}

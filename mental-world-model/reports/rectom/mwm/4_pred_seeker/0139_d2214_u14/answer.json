@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 139,
+  "item_id": "d2214_u14",
+  "dialogue_id": "2214",
+  "utterance_pos": 14,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello. I've been hoping to find a movie similar to Alien  (1979)  or Halloween  (1978) \nRECOMMENDER says: How about A Nightmare on Elm Street (1984) \nSEEKER says: I loved that series as well.\nRECOMMENDER says: Yes it was great.  Have you seen the Friday the 13th  (1980)  series?\nSEEKER says: I've watched it though I just wasn't into it as much\nRECOMMENDER says: Yeah I can understand that.  It was a little different.  What about The Thing  (1982) \nSEEKER says: Yes that was a fun one!；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello. I've been hoping to find a movie similar to Alien  (1979)  or Halloween  (1978) \nRECOMMENDER says: How about A Nightmare on Elm Street (1984) \nSEEKER says: I loved that series as well.\nRECOMMENDER says: Yes it was great.  Have you seen the Friday the 13th  (1980)  series?\nSEEKER says: I've watched it though I just wasn't into it as much\nRECOMMENDER says: Yeah I can understand that.  It was a little different.  What about The Thing  (1982) \nSEEKER says: Yes that was a fun one!；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.3,
+    "c": 0.4,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER's recent turns are feedback on recommended movies, so option A is most directly supported.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "There are no predicted next actions, so the greeting/chit-chat strategy is only indirectly inferable from the recorded scene.",
+  "audit_level": "inferred"
+}

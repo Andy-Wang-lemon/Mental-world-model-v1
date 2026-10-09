@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 124,
+  "item_id": "d1992_u5",
+  "dialogue_id": "1992",
+  "utterance_pos": 5,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nB: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: hi what kind of movies do you like\nSEEKER says: Hi, how are you? I am looking for some good action movies, could you help?\nRECOMMENDER says: do you like hard core action or fun family action?\nSEEKER says: i love movies like Abduction  (2011)  and movies like Speed  (1994)  with Keanu Reeves. They could be either or I like both kinds of action films.\nRECOMMENDER says: a good old fun one that never gets old is Mad Max (1979)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: hi what kind of movies do you like\nSEEKER says: Hi, how are you? I am looking for some good action movies, could you help?\nRECOMMENDER says: do you like hard core action or fun family action?\nSEEKER says: i love movies like Abduction  (2011)  and movies like Speed  (1994)  with Keanu Reeves. They could be either or I like both kinds of action films.\nRECOMMENDER says: a good old fun one that never gets old is Mad Max (1979)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.4,
+    "c": 0.3,
+    "d": 0.2
+  },
+  "score_reason": "After a movie recommendation, SEEKER is most directly expected to give feedback on that suggestion.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

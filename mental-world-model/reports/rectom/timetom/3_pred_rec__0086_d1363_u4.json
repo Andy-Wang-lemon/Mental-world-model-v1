@@ -1,0 +1,56 @@
+{
+  "id": "3_pred_rec__0086_d1363_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets the seeker and asks what kind of movies the seeker is into.",
+      "belief_before": "Recommender has no information yet about the seeker's movie preferences.",
+      "belief_update": "Recommender initiates preference elicitation; no specific preference content has been provided yet.",
+      "belief_after": "Recommender still does not know the seeker's movie preferences.",
+      "emotion": "polite and curious",
+      "intention": "Open the conversation and learn the seeker's genre preferences.",
+      "conversational_goal": "Elicit movie preferences to guide a later recommendation."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says they are really into mystery movies and maybe a good psychological thriller.",
+      "belief_before": "Recommender does not yet know the seeker's movie preferences.",
+      "belief_update": "Recommender learns that the seeker likes mystery movies and is open to or prefers psychological thrillers.",
+      "belief_after": "Recommender believes the seeker likes mystery and psychological-thriller elements.",
+      "emotion": "interested and attentive",
+      "intention": "Use the stated preferences to choose a fitting recommendation.",
+      "conversational_goal": "Acknowledge the seeker's taste and prepare to recommend a mystery or psychological thriller."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: Okay well Seven (1995) is a great thriller with Brad Pitt.",
+      "belief_before": "Recommender believes the seeker likes mystery movies and possibly psychological thrillers.",
+      "belief_update": "Recommender selects Seven as a candidate recommendation, treating it as a thriller that may match the seeker's stated taste. This changes the prior state from preference gathering to offering a concrete recommendation.",
+      "belief_after": "Recommender believes Seven is a suitable thriller recommendation for the seeker, though its fit to the mystery/psychological-thriller preference is inferred rather than confirmed.",
+      "emotion": "helpful and somewhat confident",
+      "intention": "Offer a concrete movie recommendation based on the seeker's stated genre interest.",
+      "conversational_goal": "Recommend Seven as a thriller that may satisfy the seeker's preference."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker asks: Do you have any recomendations?",
+      "belief_before": "Recommender believes the seeker likes mystery/psychological thrillers and that Seven was just recommended as a thriller.",
+      "belief_update": "Recommender may infer that the seeker wants additional or different recommendations, or did not register/accept Seven as an answer. This changes the prior interpretation that Seven may have satisfied the request.",
+      "belief_after": "Recommender believes the seeker still wants recommendation options and that Seven alone may not be sufficient or acknowledged.",
+      "emotion": "slightly puzzled or uncertain, but willing to help",
+      "intention": "Clarify whether Seven works or provide more recommendations.",
+      "conversational_goal": "Respond to the seeker's apparent request by offering more options or checking whether the previous recommendation was suitable."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets the seeker and asks what kind of movies the seeker is into.\",\n    \"belief_before\": \"Recommender has no information yet about the seeker's movie preferences.\",\n    \"belief_update\": \"Recommender initiates preference elicitation; no specific preference content has been provided yet.\",\n    \"belief_after\": \"Recommender still does not know the seeker's movie preferences.\",\n    \"emotion\": \"polite and curious\",\n    \"intention\": \"Open the conversation and learn the seeker's genre preferences.\",\n    \"conversational_goal\": \"Elicit movie preferences to guide a later recommendation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says they are really into mystery movies and maybe a good psychological thriller.\",\n    \"belief_before\": \"Recommender does not yet know the seeker's movie preferences.\",\n    \"belief_update\": \"Recommender learns that the seeker likes mystery movies and is open to or prefers psychological thrillers.\",\n    \"belief_after\": \"Recommender believes the seeker likes mystery and psychological-thriller elements.\",\n    \"emotion\": \"interested and attentive\",\n    \"intention\": \"Use the stated preferences to choose a fitting recommendation.\",\n    \"conversational_goal\": \"Acknowledge the seeker's taste and prepare to recommend a mystery or psychological thriller.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: Okay well Seven (1995) is a great thriller with Brad Pitt.\",\n    \"belief_before\": \"Recommender believes the seeker likes mystery movies and possibly psychological thrillers.\",\n    \"belief_update\": \"Recommender selects Seven as a candidate recommendation, treating it as a thriller that may match the seeker's stated taste. This changes the prior state from preference gathering to offering a concrete recommendation.\",\n    \"belief_after\": \"Recommender believes Seven is a suitable thriller recommendation for the seeker, though its fit to the mystery/psychological-thriller preference is inferred rather than confirmed.\",\n    \"emotion\": \"helpful and somewhat confident\",\n    \"intention\": \"Offer a concrete movie recommendation based on the seeker's stated genre interest.\",\n    \"conversational_goal\": \"Recommend Seven as a thriller that may satisfy the seeker's preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker asks: Do you have any recomendations?\",\n    \"belief_before\": \"Recommender believes the seeker likes mystery/psychological thrillers and that Seven was just recommended as a thriller.\",\n    \"belief_update\": \"Recommender may infer that the seeker wants additional or different recommendations, or did not register/accept Seven as an answer. This changes the prior interpretation that Seven may have satisfied the request.\",\n    \"belief_after\": \"Recommender believes the seeker still wants recommendation options and that Seven alone may not be sufficient or acknowledged.\",\n    \"emotion\": \"slightly puzzled or uncertain, but willing to help\",\n    \"intention\": \"Clarify whether Seven works or provide more recommendations.\",\n    \"conversational_goal\": \"Respond to the seeker's apparent request by offering more options or checking whether the previous recommendation was suitable.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

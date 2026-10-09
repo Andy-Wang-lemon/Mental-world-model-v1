@@ -1,0 +1,75 @@
+{
+  "id": "3_pred_rec__0025_d957_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender initiates with a greeting and offers comedy examples: Beerfest (2006) and The Blues Brothers (1980).",
+      "information_available_to_target": "No prior seeker input in this dialogue; only the recommender's own opening offer is available.",
+      "preferences": "No explicit seeker preferences are known yet.",
+      "belief_before": "No information yet about the seeker's tastes or what they want.",
+      "belief_update": "No user information is received; the recommender's own opening does not update knowledge about the seeker.",
+      "belief_after": "The recommender has offered a comedy-recommendation context and named Beerfest and The Blues Brothers as possible options; awaits the seeker's response.",
+      "emotion": "Friendly, helpful, inviting.",
+      "intention": "Initiate help and propose comedy recommendations.",
+      "reaction_to_other": "Not applicable; no other-speaker turn has occurred yet.",
+      "conversational_goal": "Open the recommendation dialogue and prompt the seeker to state what they want.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "The seeker says they are looking for funny comedy movies similar to She's Out of My League (2010).",
+      "information_available_to_target": "The recommender now has the seeker's explicit request: funny comedy movies similar to She's Out of My League (2010), in addition to the recommender's earlier offers.",
+      "preferences": "The seeker prefers funny comedies and wants something similar to She's Out of My League (2010).",
+      "belief_before": "Before this turn, the recommender had offered Beerfest and The Blues Brothers as possible comedies and was waiting for the seeker's response.",
+      "belief_update": "The seeker has given a concrete preference: funny comedy, similar to She's Out of My League (2010).",
+      "belief_after": "The recommender knows the seeker wants a funny comedy close to She's Out of My League (2010); there is still no information about whether the seeker has seen or liked Beerfest, The Blues Brothers, or Deuce Bigalow.",
+      "emotion": "Interested, positive, ready to help.",
+      "intention": "Use the newly stated preference to form relevant comedy recommendations.",
+      "reaction_to_other": "Receives the seeker's request as useful and actionable.",
+      "conversational_goal": "Respond with recommendations or questions that match the seeker's stated comedy preference.",
+      "interpretation_change": "Yes; the recommendation context shifts from a generic comedy offer to a specific request for movies like She's Out of My League."
+    },
+    {
+      "time": 3,
+      "observed": "The recommender says, 'Oh cool ok I can help... Have you seen the ones I mentioned... Or how about Deuce Bigalow: Male Gigolo (1999)?'",
+      "information_available_to_target": "The recommender has only the information from turns 1-2: the seeker wants funny comedies similar to She's Out of My League (2010). No new seeker response has arrived yet.",
+      "preferences": "Known seeker preference remains funny comedy similar to She's Out of My League (2010); no preference is yet known for Beerfest, The Blues Brothers, or Deuce Bigalow.",
+      "belief_before": "The recommender believes the seeker wants a funny comedy similar to She's Out of My League (2010).",
+      "belief_update": "No new user information is received; the recommender's own utterance does not change factual beliefs about the seeker.",
+      "belief_after": "The recommender has asked whether the seeker has seen Beerfest and The Blues Brothers and has proposed Deuce Bigalow as another option; the seeker's familiarity and taste for these titles remain unknown.",
+      "emotion": "Enthusiastic, helpful, encouraging.",
+      "intention": "Check familiarity with earlier suggestions and offer another comedy candidate.",
+      "reaction_to_other": "Acknowledges the seeker's request positively and tries to act on it.",
+      "conversational_goal": "Narrow the field of comedy recommendations by checking what the seeker has seen and proposing another option.",
+      "interpretation_change": "No; the seeker's core preference has not changed, but the recommender adds Deuce Bigalow as a candidate."
+    },
+    {
+      "time": 4,
+      "observed": "The seeker says Daddy's Home (2015) is also a good movie, has never seen the movies the recommender suggested, and has seen Deuce Bigalow but does not like those movies.",
+      "information_available_to_target": "The recommender now knows: the seeker has not seen Beerfest or The Blues Brothers; the seeker has seen Deuce Bigalow but dislikes it and similar movies; the seeker considers Daddy's Home (2015) a good movie.",
+      "preferences": "The seeker likes funny comedies and She's Out of My League (2010); they view Daddy's Home (2015) positively; they dislike Deuce Bigalow and movies like it.",
+      "belief_before": "Before this turn, the recommender believed the seeker wanted a funny comedy similar to She's Out of My League (2010), and had asked about Beerfest and The Blues Brothers while suggesting Deuce Bigalow.",
+      "belief_update": "The seeker has not seen Beerfest or The Blues Brothers; Deuce Bigalow is seen but disliked; Daddy's Home is a positive signal.",
+      "belief_after": "Deuce Bigalow is ruled out; Beerfest and The Blues Brothers remain open because they are unseen; Daddy's Home adds a positive preference signal.",
+      "emotion": "Receptive, recalibrating, still helpful.",
+      "intention": "Update recommendations to avoid Deuce Bigalow-type movies and use the new positive and negative signals.",
+      "reaction_to_other": "Accepts the seeker's correction and newly supplied likes/dislikes.",
+      "conversational_goal": "Revise the recommendation direction based on unseen titles, the Deuce Bigalow dislike, and the positive mention of Daddy's Home.",
+      "interpretation_change": "Yes; Deuce Bigalow is no longer a viable recommendation, Beerfest and The Blues Brothers remain possible, and Daddy's Home becomes a useful positive reference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender initiates with a greeting and offers comedy examples: Beerfest (2006) and The Blues Brothers (1980).\",\n    \"information_available_to_target\": \"No prior seeker input in this dialogue; only the recommender's own opening offer is available.\",\n    \"preferences\": \"No explicit seeker preferences are known yet.\",\n    \"belief_before\": \"No information yet about the seeker's tastes or what they want.\",\n    \"belief_update\": \"No user information is received; the recommender's own opening does not update knowledge about the seeker.\",\n    \"belief_after\": \"The recommender has offered a comedy-recommendation context and named Beerfest and The Blues Brothers as possible options; awaits the seeker's response.\",\n    \"emotion\": \"Friendly, helpful, inviting.\",\n    \"intention\": \"Initiate help and propose comedy recommendations.\",\n    \"reaction_to_other\": \"Not applicable; no other-speaker turn has occurred yet.\",\n    \"conversational_goal\": \"Open the recommendation dialogue and prompt the seeker to state what they want.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"The seeker says they are looking for funny comedy movies similar to She's Out of My League (2010).\",\n    \"information_available_to_target\": \"The recommender now has the seeker's explicit request: funny comedy movies similar to She's Out of My League (2010), in addition to the recommender's earlier offers.\",\n    \"preferences\": \"The seeker prefers funny comedies and wants something similar to She's Out of My League (2010).\",\n    \"belief_before\": \"Before this turn, the recommender had offered Beerfest and The Blues Brothers as possible comedies and was waiting for the seeker's response.\",\n    \"belief_update\": \"The seeker has given a concrete preference: funny comedy, similar to She's Out of My League (2010).\",\n    \"belief_after\": \"The recommender knows the seeker wants a funny comedy close to She's Out of My League (2010); there is still no information about whether the seeker has seen or liked Beerfest, The Blues Brothers, or Deuce Bigalow.\",\n    \"emotion\": \"Interested, positive, ready to help.\",\n    \"intention\": \"Use the newly stated preference to form relevant comedy recommendations.\",\n    \"reaction_to_other\": \"Receives the seeker's request as useful and actionable.\",\n    \"conversational_goal\": \"Respond with recommendations or questions that match the seeker's stated comedy preference.\",\n    \"interpretation_change\": \"Yes; the recommendation context shifts from a generic comedy offer to a specific request for movies like She's Out of My League.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"The recommender says, 'Oh cool ok I can help... Have you seen the ones I mentioned... Or how about Deuce Bigalow: Male Gigolo (1999)?'\",\n    \"information_available_to_target\": \"The recommender has only the information from turns 1-2: the seeker wants funny comedies similar to She's Out of My League (2010). No new seeker response has arrived yet.\",\n    \"preferences\": \"Known seeker preference remains funny comedy similar to She's Out of My League (2010); no preference is yet known for Beerfest, The Blues Brothers, or Deuce Bigalow.\",\n    \"belief_before\": \"The recommender believes the seeker wants a funny comedy similar to She's Out of My League (2010).\",\n    \"belief_update\": \"No new user information is received; the recommender's own utterance does not change factual beliefs about the seeker.\",\n    \"belief_after\": \"The recommender has asked whether the seeker has seen Beerfest and The Blues Brothers and has proposed Deuce Bigalow as another option; the seeker's familiarity and taste for these titles remain unknown.\",\n    \"emotion\": \"Enthusiastic, helpful, encouraging.\",\n    \"intention\": \"Check familiarity with earlier suggestions and offer another comedy candidate.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's request positively and tries to act on it.\",\n    \"conversational_goal\": \"Narrow the field of comedy recommendations by checking what the seeker has seen and proposing another option.\",\n    \"interpretation_change\": \"No; the seeker's core preference has not changed, but the recommender adds Deuce Bigalow as a candidate.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"The seeker says Daddy's Home (2015) is also a good movie, has never seen the movies the recommender suggested, and has seen Deuce Bigalow but does not like those movies.\",\n    \"information_available_to_target\": \"The recommender now knows: the seeker has not seen Beerfest or The Blues Brothers; the seeker has seen Deuce Bigalow but dislikes it and similar movies; the seeker considers Daddy's Home (2015) a good movie.\",\n    \"preferences\": \"The seeker likes funny comedies and She's Out of My League (2010); they view Daddy's Home (2015) positively; they dislike Deuce Bigalow and movies like it.\",\n    \"belief_before\": \"Before this turn, the recommender believed the seeker wanted a funny comedy similar to She's Out of My League (2010), and had asked about Beerfest and The Blues Brothers while suggesting Deuce Bigalow.\",\n    \"belief_update\": \"The seeker has not seen Beerfest or The Blues Brothers; Deuce Bigalow is seen but disliked; Daddy's Home is a positive signal.\",\n    \"belief_after\": \"Deuce Bigalow is ruled out; Beerfest and The Blues Brothers remain open because they are unseen; Daddy's Home adds a positive preference signal.\",\n    \"emotion\": \"Receptive, recalibrating, still helpful.\",\n    \"intention\": \"Update recommendations to avoid Deuce Bigalow-type movies and use the new positive and negative signals.\",\n    \"reaction_to_other\": \"Accepts the seeker's correction and newly supplied likes/dislikes.\",\n    \"conversational_goal\": \"Revise the recommendation direction based on unseen titles, the Deuce Bigalow dislike, and the positive mention of Daddy's Home.\",\n    \"interpretation_change\": \"Yes; Deuce Bigalow is no longer a viable recommendation, Beerfest and The Blues Brothers remain possible, and Daddy's Home becomes a useful positive reference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

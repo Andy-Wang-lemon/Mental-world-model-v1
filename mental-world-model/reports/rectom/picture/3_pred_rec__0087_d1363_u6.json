@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0087_d1363_u6",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the SEEKER:\n- Likes mystery movies and possibly psychological thrillers.\n- Loves Brad Pitt.\n- Has heard that Black Swan (2010) is more of a drama.\n- Is asking for other suggestions.\n\nRECOMMENDER does not know:\n- Whether the SEEKER has already seen Seven or Black Swan.\n- Whether the SEEKER disliked Black Swan or only doubts it is a thriller.\n- What other movies the SEEKER has seen or liked.\n- Whether the SEEKER wants another Brad Pitt movie specifically.\n- The SEEKER’s tolerance for violence, dark themes, or complex plots.\n\nGiven the latest turn, the SEEKER explicitly asks for other suggestions. The most appropriate next strategy is for RECOMMENDER to continue the recommendation task, either by directly recommending another movie or by asking a further question to narrow the recommendation. This matches “Provides a recommendation directly or by inquiring further.”\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

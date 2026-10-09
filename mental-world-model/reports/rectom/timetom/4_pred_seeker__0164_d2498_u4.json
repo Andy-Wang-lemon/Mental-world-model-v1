@@ -1,0 +1,72 @@
+{
+  "id": "4_pred_seeker__0164_d2498_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "information_available": "No information about the recommender or topic yet.",
+      "preferences": "None expressed.",
+      "belief_before": "No prior beliefs about the recommender.",
+      "belief_update": "SEEKER initiates contact by greeting.",
+      "belief_after": "The recommender may respond; nothing else is known.",
+      "emotion": "Neutral, polite.",
+      "intention": "Start the conversation.",
+      "reaction_to_other": "Not applicable; no other speaker has spoken yet.",
+      "conversational_goal": "Establish contact and invite a response.",
+      "changes_previous_interpretation": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello!...What kind of movie do you like?",
+      "information_available": "Recommender greeted and asked what kind of movie SEEKER likes.",
+      "preferences": "No movie preferences expressed by SEEKER yet.",
+      "belief_before": "Recommender may respond to the greeting.",
+      "belief_update": "Recommender is responsive and interested in SEEKER's movie preferences.",
+      "belief_after": "Recommender is likely willing to help with movie recommendation and wants a preference cue.",
+      "emotion": "Engaged, mildly positive.",
+      "intention": "Answer the recommender's question or ask for a recommendation.",
+      "reaction_to_other": "Favorable and cooperative; recommender seems friendly and useful.",
+      "conversational_goal": "Respond so the recommender can suggest movies.",
+      "changes_previous_interpretation": "Yes: from waiting for a response to knowing the recommender is engaged with movies."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)",
+      "information_available": "Recommender previously asked about SEEKER's movie likes; SEEKER can use that opening.",
+      "preferences": "SEEKER likes Good Will Hunting (1997).",
+      "belief_before": "Recommender wants to know SEEKER's movie preferences and may recommend.",
+      "belief_update": "SEEKER asks for great movie recommendations and supplies Good Will Hunting as a preference cue.",
+      "belief_after": "Recommender has enough context to make a recommendation.",
+      "emotion": "Hopeful, positive.",
+      "intention": "Obtain a movie recommendation.",
+      "reaction_to_other": "Cooperative with the recommender's question and directly requests help.",
+      "conversational_goal": "Elicit a recommended movie from the recommender.",
+      "changes_previous_interpretation": "Yes: from being asked about preferences to having given a preference and a recommendation request."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders (1983)",
+      "information_available": "Recommender recommends The Outsiders (1983) and names it as their all-time favorite.",
+      "preferences": "SEEKER still likes Good Will Hunting (1997); no new preference stated.",
+      "belief_before": "Recommender has enough context and may respond with a recommendation.",
+      "belief_update": "Recommender gives a specific recommendation: The Outsiders (1983), their all-time favorite.",
+      "belief_after": "The Outsiders (1983) is a candidate movie; it is the recommender's favorite, but its fit to SEEKER's taste is unknown.",
+      "emotion": "Curious, possibly uncertain or receptive.",
+      "intention": "Consider the recommendation and decide whether to accept, ask more, or move on.",
+      "reaction_to_other": "Receptive to the recommender's suggestion; awaiting evaluation.",
+      "conversational_goal": "Evaluate the recommended movie or continue seeking a suitable recommendation.",
+      "changes_previous_interpretation": "Yes: from awaiting a recommendation to having received a concrete recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"information_available\": \"No information about the recommender or topic yet.\",\n    \"preferences\": \"None expressed.\",\n    \"belief_before\": \"No prior beliefs about the recommender.\",\n    \"belief_update\": \"SEEKER initiates contact by greeting.\",\n    \"belief_after\": \"The recommender may respond; nothing else is known.\",\n    \"emotion\": \"Neutral, polite.\",\n    \"intention\": \"Start the conversation.\",\n    \"reaction_to_other\": \"Not applicable; no other speaker has spoken yet.\",\n    \"conversational_goal\": \"Establish contact and invite a response.\",\n    \"changes_previous_interpretation\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello!...What kind of movie do you like?\",\n    \"information_available\": \"Recommender greeted and asked what kind of movie SEEKER likes.\",\n    \"preferences\": \"No movie preferences expressed by SEEKER yet.\",\n    \"belief_before\": \"Recommender may respond to the greeting.\",\n    \"belief_update\": \"Recommender is responsive and interested in SEEKER's movie preferences.\",\n    \"belief_after\": \"Recommender is likely willing to help with movie recommendation and wants a preference cue.\",\n    \"emotion\": \"Engaged, mildly positive.\",\n    \"intention\": \"Answer the recommender's question or ask for a recommendation.\",\n    \"reaction_to_other\": \"Favorable and cooperative; recommender seems friendly and useful.\",\n    \"conversational_goal\": \"Respond so the recommender can suggest movies.\",\n    \"changes_previous_interpretation\": \"Yes: from waiting for a response to knowing the recommender is engaged with movies.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)\",\n    \"information_available\": \"Recommender previously asked about SEEKER's movie likes; SEEKER can use that opening.\",\n    \"preferences\": \"SEEKER likes Good Will Hunting (1997).\",\n    \"belief_before\": \"Recommender wants to know SEEKER's movie preferences and may recommend.\",\n    \"belief_update\": \"SEEKER asks for great movie recommendations and supplies Good Will Hunting as a preference cue.\",\n    \"belief_after\": \"Recommender has enough context to make a recommendation.\",\n    \"emotion\": \"Hopeful, positive.\",\n    \"intention\": \"Obtain a movie recommendation.\",\n    \"reaction_to_other\": \"Cooperative with the recommender's question and directly requests help.\",\n    \"conversational_goal\": \"Elicit a recommended movie from the recommender.\",\n    \"changes_previous_interpretation\": \"Yes: from being asked about preferences to having given a preference and a recommendation request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders (1983)\",\n    \"information_available\": \"Recommender recommends The Outsiders (1983) and names it as their all-time favorite.\",\n    \"preferences\": \"SEEKER still likes Good Will Hunting (1997); no new preference stated.\",\n    \"belief_before\": \"Recommender has enough context and may respond with a recommendation.\",\n    \"belief_update\": \"Recommender gives a specific recommendation: The Outsiders (1983), their all-time favorite.\",\n    \"belief_after\": \"The Outsiders (1983) is a candidate movie; it is the recommender's favorite, but its fit to SEEKER's taste is unknown.\",\n    \"emotion\": \"Curious, possibly uncertain or receptive.\",\n    \"intention\": \"Consider the recommendation and decide whether to accept, ask more, or move on.\",\n    \"reaction_to_other\": \"Receptive to the recommender's suggestion; awaiting evaluation.\",\n    \"conversational_goal\": \"Evaluate the recommended movie or continue seeking a suitable recommendation.\",\n    \"changes_previous_interpretation\": \"Yes: from awaiting a recommendation to having received a concrete recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

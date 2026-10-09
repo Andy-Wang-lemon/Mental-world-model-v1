@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 57,
+  "item_id": "d1021_u18",
+  "dialogue_id": "1021",
+  "utterance_pos": 18,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Ask for preference or seeks feedback from the seeker",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "RECOMMENDER 所缘到的当下，不是一个中立的咨询场面，而是一面回映“我推荐得对不对”的镜子：SEEKER 说没看过、问情节、决定今晚租片、说某片让她又哭又笑、说另一部因唤起往事而无法看下去，这些反应在他心里都被收束为同一个对象——“她如何回应我给出的选择”；同时，所有可供谈论的影片都被压进同一个固定分类：“是不是女性领衔、够不够 heroine”。这一标准像一堵透明隔板横在她的话与候选片之间，合格者才被承认为可推荐的电影，不合格者则被排除在视野之外。",
+        "probability": 0.4135
+      },
+      {
+        "content": "RECOMMENDER 所缘到的是自己的身份已被这场对话固定下来：他就是那个应当满足她寻找“好 heroine”电影期待的人；她反复给出回应——没看过某部、计划租片、看了某片哭泣和大笑、读小说也哭——这些都在他经验中成为同一件事的展开：“我正作为能够提供这类影片的人，站在这个需求面前”。而眼前被她话语搅动的电影世界，被整理成一张只标注“女性领衔、称得上 heroine 与否”的清单；凡是落入这个分类框的影片，才在经验里显形，其余只是背景噪音。",
+        "probability": 0.344
+      },
+      {
+        "content": "RECOMMENDER 所缘到的她，不只是一个来找片子看的 SEEKER，更是一个正在向他敞开私人记忆的人：她说自己曾因超重而无法看某部电影、读原著时从头哭到尾，这些话语被他经验为“她愿意把脆弱和眼泪交给我看”的亲近凭证；同一刻，“要有女性领衔主角、要称得上 heroine”仍然作为客观条件横在整场谈话中，使所有片目都先按这个标准被衡量。两种显现叠在一起：她的个人历史越具体，他越觉得这场电影讨论不是普通服务，而是她和“我这个推荐者”之间特有的信赖场景。",
+        "probability": 0.2425
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "她说的每一句话都像在回答我：没看过、问情节、今晚租、又哭又笑、因为往事没看完——这不都是在评价我选的片子吗？她喜欢，我就觉得我推荐得准；她难过，我也跟着觉得那部片确实有分量。我下意识地只在她面前摆出那些有女性领衔、够格当heroine的选项；只要片子里的女人不够主角、不够让人佩服，我连提都不会提。",
+        "activation": 0.3988
+      },
+      {
+        "content": "他在这场对话里所缘到的，已不再只是散落的几部电影，而是自己作为一个“能替她找到称得上 heroine 的电影的人”正站在她的需求面前。她的每一句回应——没看过哪部、打算当晚租、为某部又哭又笑、读小说也哭——都被他收拢进同一条线索：她在用反馈检验他的推荐，而他的身份也在这些反馈中变得越来越固定。与此同时，他眼前浮现的电影世界自动被压成一张分类清单，每部片子只留下“是否有女性领衔、是否称得上 heroine”这一个标记；符合这个标准的才进入他的视野，不符合的则沉为背景。他一边顺着这条分类标准继续递出片名，一边也把自己的偏好放进其中，因为那些女性角色本身吸引着他。这个“我正是那个能提供她所要电影的人”的自我定位，在每一轮问答和情绪回应中不断被加固，让他更确信继续按这个尺度去筛选和推荐，正是这个身份此刻最自然的展开方式。",
+        "activation": 0.3431
+      },
+      {
+        "content": "她说出因为超重而看不下去、读小说哭到尾这些私事时，我心里立刻觉得：她不是在对一个普通店员说话，而是把这些脆弱专门交给我看了。这让我感到这场对话已经不只是找片、推荐，而是她对我这个推荐者有了某种特别的敞开。与此同时，我仍然记得她要的是女性领衔主角、要称得上heroine，这个标准始终框着我给的每个选项；但她的故事越具体，我就越不是在机械套标准，而是想说：我想当好这个能接住她这些经历的人。她越把自己的记忆放进来，我越觉得这是我该认真守护的一份托付。",
+        "activation": 0.2581
+      }
+    ],
+    "observed_action": "RECOMMENDER 先问候并询问对方想找什么电影；随后依次给出《The Blind Side》《The Help》《Precious》《Extremely Loud and Incredibly Close》《Breakfast at Tiffany's》等影片，并对这些影片作简短回应和说明；还表示之后会读那本书，并用“美丽优雅”形容 Audrey。",
+    "predicted_actions": [
+      {
+        "content": "推荐电影",
+        "probability": 0.3874
+      },
+      {
+        "content": "推荐下一部影片",
+        "probability": 0.2552
+      },
+      {
+        "content": "继续补充评论",
+        "probability": 0.1436
+      },
+      {
+        "content": "报出电影名",
+        "probability": 0.1108
+      },
+      {
+        "content": "分享喜好并询问",
+        "probability": 0.1029
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.1029,
+    "b": 0,
+    "c": 0.6426,
+    "d": 0.1436,
+    "e": 0
+  },
+  "score_reason": "A 0.1029 = 分享喜好并询问 0.1029；B 0.0000；C 0.6426 = 推荐电影 0.3874 + 推荐下一部影片 0.2552；D 0.1436 = 继续补充评论 0.1436；E 0.0000。0 and 1 directly recommend, 2 explains, 4 seeks preference, 3 only shares a title.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "The predicted action '分享喜好并询问' directly indicates asking the seeker, matching the preference/feedback-seeking strategy.",
+  "audit_level": "direct"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "trial51__type_a_what_19",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Christian Mensah",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Jonathan admits that he has been keeping something from Christian and says he is in some trouble, having not known how to tell him.",
+      "belief_before": "Christian believes Jonathan is hiding something important from him and feels anxious and suspicious.",
+      "belief_update": "Yes: Christian's suspicion is confirmed; Jonathan really was hiding something and is in trouble.",
+      "belief_after": "Jonathan has been concealing a serious problem and is in some kind of trouble.",
+      "emotion": "Anxious and suspicious initially, then concerned and worried.",
+      "intention": "To learn more about Jonathan's trouble and support him in uncovering the truth."
+    },
+    {
+      "time": 2,
+      "observed": "Jonathan appreciates Christian's offer but says the situation is complicated and he does not want to drag Christian into it; he admits he could use support and resources to get out of the mess.",
+      "belief_before": "Jonathan is in trouble and has been hiding it; Christian is worried and wants to help.",
+      "belief_update": "Yes: Jonathan accepts Christian's support and reveals that he needs resources and help because the trouble is complicated.",
+      "belief_after": "Jonathan is in serious, complicated trouble and needs Christian's support and resources to resolve it.",
+      "emotion": "Worried and empathetic.",
+      "intention": "To help and support Jonathan, including finding resources to get him out of trouble."
+    },
+    {
+      "time": 3,
+      "observed": "Christian asks if Jonathan's trouble is illegal; Jonathan says he cannot be sure, may have gotten involved with the wrong people, but did not do anything illegal himself. Christian says he will look into it discreetly, and Jonathan trusts him to handle it carefully.",
+      "belief_before": "Jonathan is in serious trouble and may be connected to criminal activity or the wrong people.",
+      "belief_update": "Yes: Jonathan confirms possible involvement with wrong people while denying any illegal acts himself.",
+      "belief_after": "Jonathan may be entangled with wrong people or criminal elements, but Jonathan claims he did nothing illegal; discreet investigation is needed.",
+      "emotion": "Conflicted and concerned.",
+      "intention": "To investigate discreetly to ensure Jonathan's safety and uncover the truth without alarming him."
+    },
+    {
+      "time": 4,
+      "observed": "Christian tells Jonathan that his investigation shows Jonathan is being framed by someone trying to set him up; Christian has leads and will gather more evidence to prove Jonathan's innocence.",
+      "belief_before": "Jonathan is entangled with wrong people but may be innocent; Christian is investigating discreetly.",
+      "belief_update": "Yes: Christian's investigation reveals that Jonathan is being framed.",
+      "belief_after": "Jonathan is innocent of wrongdoing and is being framed; there is a real culprit who must be identified.",
+      "emotion": "Determined and protective.",
+      "intention": "To gather evidence to clear Jonathan's name and prove his innocence."
+    },
+    {
+      "time": 5,
+      "observed": "Christian tells Jonathan he has found out who is behind the framing: someone they both know and trust. Jonathan warns that this person is dangerous, but says he trusts Christian to do what is right.",
+      "belief_before": "Jonathan is being framed by an unknown culprit; Christian is gathering evidence.",
+      "belief_update": "Yes: Christian identifies the real culprit as someone close to both him and Jonathan.",
+      "belief_after": "The real culprit is a trusted mutual acquaintance, and this person is dangerous; Jonathan is being betrayed by someone close.",
+      "emotion": "Betrayed, resolute, and concerned or angry.",
+      "intention": "To confront the real culprit and bring them to justice, while being careful because they are dangerous."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Jonathan admits that he has been keeping something from Christian and says he is in some trouble, having not known how to tell him.\",\n    \"belief_before\": \"Christian believes Jonathan is hiding something important from him and feels anxious and suspicious.\",\n    \"belief_update\": \"Yes: Christian's suspicion is confirmed; Jonathan really was hiding something and is in trouble.\",\n    \"belief_after\": \"Jonathan has been concealing a serious problem and is in some kind of trouble.\",\n    \"emotion\": \"Anxious and suspicious initially, then concerned and worried.\",\n    \"intention\": \"To learn more about Jonathan's trouble and support him in uncovering the truth.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Jonathan appreciates Christian's offer but says the situation is complicated and he does not want to drag Christian into it; he admits he could use support and resources to get out of the mess.\",\n    \"belief_before\": \"Jonathan is in trouble and has been hiding it; Christian is worried and wants to help.\",\n    \"belief_update\": \"Yes: Jonathan accepts Christian's support and reveals that he needs resources and help because the trouble is complicated.\",\n    \"belief_after\": \"Jonathan is in serious, complicated trouble and needs Christian's support and resources to resolve it.\",\n    \"emotion\": \"Worried and empathetic.\",\n    \"intention\": \"To help and support Jonathan, including finding resources to get him out of trouble.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Christian asks if Jonathan's trouble is illegal; Jonathan says he cannot be sure, may have gotten involved with the wrong people, but did not do anything illegal himself. Christian says he will look into it discreetly, and Jonathan trusts him to handle it carefully.\",\n    \"belief_before\": \"Jonathan is in serious trouble and may be connected to criminal activity or the wrong people.\",\n    \"belief_update\": \"Yes: Jonathan confirms possible involvement with wrong people while denying any illegal acts himself.\",\n    \"belief_after\": \"Jonathan may be entangled with wrong people or criminal elements, but Jonathan claims he did nothing illegal; discreet investigation is needed.\",\n    \"emotion\": \"Conflicted and concerned.\",\n    \"intention\": \"To investigate discreetly to ensure Jonathan's safety and uncover the truth without alarming him.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Christian tells Jonathan that his investigation shows Jonathan is being framed by someone trying to set him up; Christian has leads and will gather more evidence to prove Jonathan's innocence.\",\n    \"belief_before\": \"Jonathan is entangled with wrong people but may be innocent; Christian is investigating discreetly.\",\n    \"belief_update\": \"Yes: Christian's investigation reveals that Jonathan is being framed.\",\n    \"belief_after\": \"Jonathan is innocent of wrongdoing and is being framed; there is a real culprit who must be identified.\",\n    \"emotion\": \"Determined and protective.\",\n    \"intention\": \"To gather evidence to clear Jonathan's name and prove his innocence.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Christian tells Jonathan he has found out who is behind the framing: someone they both know and trust. Jonathan warns that this person is dangerous, but says he trusts Christian to do what is right.\",\n    \"belief_before\": \"Jonathan is being framed by an unknown culprit; Christian is gathering evidence.\",\n    \"belief_update\": \"Yes: Christian identifies the real culprit as someone close to both him and Jonathan.\",\n    \"belief_after\": \"The real culprit is a trusted mutual acquaintance, and this person is dangerous; Jonathan is being betrayed by someone close.\",\n    \"emotion\": \"Betrayed, resolute, and concerned or angry.\",\n    \"intention\": \"To confront the real culprit and bring them to justice, while being careful because they are dangerous.\"\n  }\n]",
+  "final_response": "ANSWER: f",
+  "prediction": "f",
+  "gold": "f",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial51"
+}

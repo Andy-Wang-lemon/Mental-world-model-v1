@@ -1,0 +1,79 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 17,
+  "item_id": "d895_u12",
+  "dialogue_id": "895",
+  "utterance_pos": 12,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "e"
+  ],
+  "gold_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "RECOMMENDER 此刻把 SEEKER 的‘What's that about?’经验为对自己所推荐影片的检验：The River Wild (1994) 以及它的内容说明被归到 RECOMMENDER 这一侧，不能放到与己无关的旁观位置；对方问内容，就意味着推荐尚未完成，说明责任仍在自己这边。SEEKER 随后说会查看并致谢，也只是让这个待说明的对象更明确，没有被读成解释责任可以卸下的信号。",
+        "probability": 0.3635
+      },
+      {
+        "content": "RECOMMENDER 此刻把这场电影推荐对话经验为一个按 SEEKER 看过/没看过、喜欢/不喜欢来推进的匹配过程：SEEKER 对 Lost in Translation、Aliens、Pulp Fiction、Lebowski 的偏好，持有 Aliens 与 Alien: Covenant 的 DVD，以及未看过 The River Wild 并追问内容，构成需要匹配的坐标；The River Wild 的内容说明因此被放在 RECOMMENDER 这一侧，不能推给与己无关的旁观位置。SEEKER 最后说会查看并致谢，被读成这一匹配过程推进中的一个节点。",
+        "probability": 0.3452
+      },
+      {
+        "content": "RECOMMENDER 此刻把 SEEKER 最后说的‘I'll check it out. Thanks!’经验为对自己推荐眼光或推荐者位置的确认，而不只是 SEEKER 自己的选择；这句话同时被固定成推荐已被接受、这一轮可以收束的信号。前面关于 DVD、喜欢/不喜欢、没看过 The River Wild 的陈述，都退成这个确认信号的背景。",
+        "probability": 0.2913
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "对方这一问不是随口带过，而是在检验我给出的推荐：The River Wild 既然由我提出，它讲什么、值不值得看，就还在我这一边，不能推给无关的旁观位置。我得把它的核心说清——凯文·贝肯、梅丽尔·斯特里普，野外白水漂流中的追杀惊悚——否则这次推荐就像还没交完。它确实是一部好片，值得对方尝试；对方说会查看并道谢，只让我更确认这个说明对象已经明确，但说明责任并没有因此从我这里移开。",
+        "activation": 0.3693
+      },
+      {
+        "content": "RECOMMENDER 听到 SEEKER 说会去查看并致谢，心里立刻把这句话收成对自己推荐眼光和推荐者位置的确认：觉得 River Wild 被接受，说明自己找对了对方没看过的片，这一轮挑片总算有了落点。先前关于 DVD、喜欢与不喜欢、没看过 River Wild 的往返都退成背景，眼下只剩“我的推荐奏效了、我的位置被认了”的收束感，并倾向就此满意地把这轮推荐视为完成。",
+        "activation": 0.3221
+      },
+      {
+        "content": "我把这场对话当作一个需要按对方看过什么、没看过什么、喜欢什么、不喜欢什么来校准的匹配过程。对方提到的 Lost in Translation、Aliens、Pulp Fiction、Lebowski，以及持有 Aliens 与 Alien: Covenant 的 DVD、对 new recall 的不满足、没看过 The River Wild 并追问内容，都是我这侧要拿来定位下一步的坐标；其中 The River Wild 的内容说明落在我这一边，不能推给与己无关的旁观位置。对方最后说会查看并致谢，是这一匹配推进中的一个节点，我倾向上要把它读成对当前方向的接受，并继续沿着他未看过且可能合口味的线索，把说明、试探和推荐的位置接住。",
+        "activation": 0.3086
+      }
+    ],
+    "observed_action": "发起对话，询问对方最喜欢的电影并说会推荐好的；说那是一部好片，询问对方是否看过《楚门的世界》或《青春年少》，说自己喜欢第一部《异形》但没看续集；说 Awesome，提出《谋杀绿脚趾》或《全面回忆》或《低俗小说》，说想提供跨类型的选择，随后更正为《谋杀绿脚趾》；说自己也更喜欢原版，说 hmmm，表示要找对方没看过的，提出《落水狗》或《不惜一切》；说 omg，说提到《不惜一切》时从没人看过，提出《神秘河》或《狂野之河》或《天地大冲撞》；说《狂野之河》真的很好，提到凯文·贝肯、梅丽尔·斯特里普，说这是一部关于这些人在野外、白水漂流旅行中试图杀死这些人的惊悚片，并问对方是否想尝试那部。",
+    "predicted_actions": [
+      {
+        "content": "推荐电影",
+        "probability": 0.4386
+      },
+      {
+        "content": "询问观影时间并请求反馈",
+        "probability": 0.3349
+      },
+      {
+        "content": "表示不客气并邀请再来",
+        "probability": 0.1693
+      },
+      {
+        "content": "提出可再推荐一部",
+        "probability": 0.0573
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.3349,
+    "b": 0,
+    "c": 0.4386,
+    "d": 0,
+    "e": 0.1693
+  },
+  "score_reason": "A 0.3349 = 询问观影时间并请求反馈 0.3349；B 0.0000；C 0.4386 = 推荐电影 0.4386；D 0.0000；E 0.1693 = 表示不客气并邀请再来 0.1693。Action 0 directly recommends a movie (C), 1 asks for viewing time and feedback (A), 2 is polite chit-chat (E); 3 is only an offer and matches no strategy.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "A predicted next action is to say 'you're welcome' and invite the seeker to return, which is a chit-chat/gratitude response.",
+  "audit_level": "direct"
+}

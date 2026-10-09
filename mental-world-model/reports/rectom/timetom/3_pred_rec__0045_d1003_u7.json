@@ -1,0 +1,90 @@
+{
+  "id": "3_pred_rec__0045_d1003_u7",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Seeker asks for good classic movie recommendations and addresses me as 'friend'.",
+      "belief_before": "No prior beliefs about this seeker's movie preferences in this dialogue.",
+      "belief_update": "Seeker wants classic movie recommendations; the term 'classic' is not yet defined by era. Initial interpretation: request is broad and needs clarification.",
+      "belief_after": "Seeker wants classic movie recommendations, era unspecified; I need more detail before recommending.",
+      "emotion": "Friendly, attentive, willing to help.",
+      "intention": "Help the seeker and clarify what they mean by classic.",
+      "conversational_goal": "Start the recommendation dialogue and elicit a usable constraint."
+    },
+    {
+      "time": 2,
+      "observed": "I ask: 'Sure! But by classic do you mean before the 70s or after?'",
+      "belief_before": "Seeker wants classic movies, but the era is ambiguous.",
+      "belief_update": "No new information from seeker; I explicitly ask for era clarification. This does not change the prior interpretation, only tests it.",
+      "belief_after": "Still need the seeker's era preference before recommending safely.",
+      "emotion": "Polite, helpful, curious.",
+      "intention": "Clarify the meaning of 'classic' before suggesting a movie.",
+      "conversational_goal": "Narrow the request to before or after the 1970s."
+    },
+    {
+      "time": 3,
+      "observed": "Seeker answers: 'After'.",
+      "belief_before": "Seeker wants classic movies; I just asked whether they mean before the 70s or after.",
+      "belief_update": "Seeker means after the 70s. This changes the previous interpretation from era-ambiguous to post-1970s classic.",
+      "belief_after": "Seeker wants classic movies from after the 1970s.",
+      "emotion": "Attentive and ready to recommend.",
+      "intention": "Recommend a movie that fits a post-1970s classic request.",
+      "conversational_goal": "Provide a suitable after-70s classic recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "I recommend: 'Okay, How about Indecent Proposal (1993)? Demi Moor and Woodie Harrleson.'",
+      "belief_before": "Seeker wants classic movies from after the 1970s; no content restrictions are known yet.",
+      "belief_update": "I propose Indecent Proposal (1993) as a candidate. No new information about the seeker's preferences is gained from my own suggestion.",
+      "belief_after": "Indecent Proposal is pending as a possible fit for a post-1970s classic request.",
+      "emotion": "Helpful and reasonably confident.",
+      "intention": "Offer a specific title that matches the era constraint.",
+      "conversational_goal": "Get the seeker's reaction to one candidate recommendation."
+    },
+    {
+      "time": 5,
+      "observed": "Seeker replies: 'No, too risque for me'.",
+      "belief_before": "Seeker wants post-1970s classic movies; I recommended Indecent Proposal (1993).",
+      "belief_update": "Indecent Proposal is rejected and the seeker states a preference against risque content. This changes the previous interpretation by adding a non-risque constraint.",
+      "belief_after": "Seeker wants post-1970s classic movies that are not risque; I need a safer recommendation.",
+      "emotion": "Apologetic, considerate, slightly corrected.",
+      "intention": "Adjust course and recommend a less risque title.",
+      "conversational_goal": "Repair the rejected recommendation by finding an acceptable non-risque option."
+    },
+    {
+      "time": 6,
+      "observed": "I recommend: 'Okay, what about Sleepless in Seattle (1993)? Hanks and Ryan?'",
+      "belief_before": "Seeker wants post-1970s classic movies and has rejected risque content.",
+      "belief_update": "I propose Sleepless in Seattle (1993) as a safer, non-risque candidate. This acts on the prior constraint but receives no new seeker information yet.",
+      "belief_after": "Sleepless in Seattle is pending as a possible fit for the seeker's non-risque, post-1970s classic preference.",
+      "emotion": "Cautiously optimistic and helpful.",
+      "intention": "Offer a less risque alternative after the rejection.",
+      "conversational_goal": "Recover the recommendation by suggesting a safer title likely to be accepted."
+    },
+    {
+      "time": 7,
+      "observed": "Seeker replies: 'That's more my speed. It's been a while since I've seen it though.'",
+      "belief_before": "Seeker wants post-1970s classic movies, avoids risque content, and I recommended Sleepless in Seattle (1993).",
+      "belief_update": "Seeker approves of Sleepless in Seattle as 'more my speed' and notes it has been a while since seeing it. This changes the previous interpretation by confirming the non-risque, post-1970s romantic-classic direction.",
+      "belief_after": "Seeker likes/accepts this type of movie; Sleepless in Seattle is a successful fit, and similar safe, post-1970s classics are likely appropriate.",
+      "emotion": "Pleased, relieved, encouraged.",
+      "intention": "Acknowledge the positive response and possibly continue with similar recommendations.",
+      "conversational_goal": "Confirm the match and extend the successful recommendation direction if needed."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Seeker asks for good classic movie recommendations and addresses me as 'friend'.\",\n    \"belief_before\": \"No prior beliefs about this seeker's movie preferences in this dialogue.\",\n    \"belief_update\": \"Seeker wants classic movie recommendations; the term 'classic' is not yet defined by era. Initial interpretation: request is broad and needs clarification.\",\n    \"belief_after\": \"Seeker wants classic movie recommendations, era unspecified; I need more detail before recommending.\",\n    \"emotion\": \"Friendly, attentive, willing to help.\",\n    \"intention\": \"Help the seeker and clarify what they mean by classic.\",\n    \"conversational_goal\": \"Start the recommendation dialogue and elicit a usable constraint.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I ask: 'Sure! But by classic do you mean before the 70s or after?'\",\n    \"belief_before\": \"Seeker wants classic movies, but the era is ambiguous.\",\n    \"belief_update\": \"No new information from seeker; I explicitly ask for era clarification. This does not change the prior interpretation, only tests it.\",\n    \"belief_after\": \"Still need the seeker's era preference before recommending safely.\",\n    \"emotion\": \"Polite, helpful, curious.\",\n    \"intention\": \"Clarify the meaning of 'classic' before suggesting a movie.\",\n    \"conversational_goal\": \"Narrow the request to before or after the 1970s.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Seeker answers: 'After'.\",\n    \"belief_before\": \"Seeker wants classic movies; I just asked whether they mean before the 70s or after.\",\n    \"belief_update\": \"Seeker means after the 70s. This changes the previous interpretation from era-ambiguous to post-1970s classic.\",\n    \"belief_after\": \"Seeker wants classic movies from after the 1970s.\",\n    \"emotion\": \"Attentive and ready to recommend.\",\n    \"intention\": \"Recommend a movie that fits a post-1970s classic request.\",\n    \"conversational_goal\": \"Provide a suitable after-70s classic recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I recommend: 'Okay, How about Indecent Proposal (1993)? Demi Moor and Woodie Harrleson.'\",\n    \"belief_before\": \"Seeker wants classic movies from after the 1970s; no content restrictions are known yet.\",\n    \"belief_update\": \"I propose Indecent Proposal (1993) as a candidate. No new information about the seeker's preferences is gained from my own suggestion.\",\n    \"belief_after\": \"Indecent Proposal is pending as a possible fit for a post-1970s classic request.\",\n    \"emotion\": \"Helpful and reasonably confident.\",\n    \"intention\": \"Offer a specific title that matches the era constraint.\",\n    \"conversational_goal\": \"Get the seeker's reaction to one candidate recommendation.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Seeker replies: 'No, too risque for me'.\",\n    \"belief_before\": \"Seeker wants post-1970s classic movies; I recommended Indecent Proposal (1993).\",\n    \"belief_update\": \"Indecent Proposal is rejected and the seeker states a preference against risque content. This changes the previous interpretation by adding a non-risque constraint.\",\n    \"belief_after\": \"Seeker wants post-1970s classic movies that are not risque; I need a safer recommendation.\",\n    \"emotion\": \"Apologetic, considerate, slightly corrected.\",\n    \"intention\": \"Adjust course and recommend a less risque title.\",\n    \"conversational_goal\": \"Repair the rejected recommendation by finding an acceptable non-risque option.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"I recommend: 'Okay, what about Sleepless in Seattle (1993)? Hanks and Ryan?'\",\n    \"belief_before\": \"Seeker wants post-1970s classic movies and has rejected risque content.\",\n    \"belief_update\": \"I propose Sleepless in Seattle (1993) as a safer, non-risque candidate. This acts on the prior constraint but receives no new seeker information yet.\",\n    \"belief_after\": \"Sleepless in Seattle is pending as a possible fit for the seeker's non-risque, post-1970s classic preference.\",\n    \"emotion\": \"Cautiously optimistic and helpful.\",\n    \"intention\": \"Offer a less risque alternative after the rejection.\",\n    \"conversational_goal\": \"Recover the recommendation by suggesting a safer title likely to be accepted.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Seeker replies: 'That's more my speed. It's been a while since I've seen it though.'\",\n    \"belief_before\": \"Seeker wants post-1970s classic movies, avoids risque content, and I recommended Sleepless in Seattle (1993).\",\n    \"belief_update\": \"Seeker approves of Sleepless in Seattle as 'more my speed' and notes it has been a while since seeing it. This changes the previous interpretation by confirming the non-risque, post-1970s romantic-classic direction.\",\n    \"belief_after\": \"Seeker likes/accepts this type of movie; Sleepless in Seattle is a successful fit, and similar safe, post-1970s classics are likely appropriate.\",\n    \"emotion\": \"Pleased, relieved, encouraged.\",\n    \"intention\": \"Acknowledge the positive response and possibly continue with similar recommendations.\",\n    \"conversational_goal\": \"Confirm the match and extend the successful recommendation direction if needed.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

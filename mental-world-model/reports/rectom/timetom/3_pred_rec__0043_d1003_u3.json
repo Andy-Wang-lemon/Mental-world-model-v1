@@ -1,0 +1,49 @@
+{
+  "id": "3_pred_rec__0043_d1003_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi friend. Can you recommend some good classic movies?'",
+      "belief_before": "The recommender has no prior specific information about this seeker's movie tastes or what they mean by 'classic'.",
+      "belief_update": "The recommender learns that the seeker wants recommendations for good classic movies, but the request is underspecified regarding era and definition of 'classic'.",
+      "belief_after": "The recommender believes the seeker is looking for classic movie recommendations but needs clarification about what counts as classic.",
+      "emotion": "Friendly, helpful, neutral.",
+      "intention": "Agree to help, then clarify the vague request before recommending.",
+      "conversational_goal": "Elicit the seeker's definition or era preference for 'classic' so the recommendations fit their request."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Sure! But by classic do you mean before the 70s or after?'",
+      "belief_before": "The recommender believes the seeker wants classic movie recommendations but has not specified the intended era.",
+      "belief_update": "The recommender proposes a binary clarification—before the 70s versus after—to reduce ambiguity; no answer has yet been received, so uncertainty remains.",
+      "belief_after": "The recommender believes the key ambiguity is whether 'classic' means pre-1970s or post-1970s movies, and is awaiting the seeker's choice.",
+      "emotion": "Polite, cooperative, mildly uncertain.",
+      "intention": "Ask a clarifying question to determine the seeker's era preference.",
+      "conversational_goal": "Get the seeker to specify whether they mean before the 70s or after, enabling tailored recommendations."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'After'",
+      "belief_before": "The recommender believes the seeker wants classic movies but is uncertain whether they mean before the 70s or after.",
+      "belief_update": "The recommender interprets 'After' as selecting the post-70s option in the clarification question, resolving the binary era ambiguity. This changes the previous uncertain interpretation.",
+      "belief_after": "The recommender believes the seeker wants classic movies from after the 70s, i.e., post-1970s/1980s onward, and can now recommend within that era.",
+      "emotion": "Satisfied, ready to help.",
+      "intention": "Recommend classic movies from after the 70s.",
+      "conversational_goal": "Provide good classic movie recommendations matching the clarified post-70s preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi friend. Can you recommend some good classic movies?'\",\n    \"belief_before\": \"The recommender has no prior specific information about this seeker's movie tastes or what they mean by 'classic'.\",\n    \"belief_update\": \"The recommender learns that the seeker wants recommendations for good classic movies, but the request is underspecified regarding era and definition of 'classic'.\",\n    \"belief_after\": \"The recommender believes the seeker is looking for classic movie recommendations but needs clarification about what counts as classic.\",\n    \"emotion\": \"Friendly, helpful, neutral.\",\n    \"intention\": \"Agree to help, then clarify the vague request before recommending.\",\n    \"conversational_goal\": \"Elicit the seeker's definition or era preference for 'classic' so the recommendations fit their request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Sure! But by classic do you mean before the 70s or after?'\",\n    \"belief_before\": \"The recommender believes the seeker wants classic movie recommendations but has not specified the intended era.\",\n    \"belief_update\": \"The recommender proposes a binary clarification—before the 70s versus after—to reduce ambiguity; no answer has yet been received, so uncertainty remains.\",\n    \"belief_after\": \"The recommender believes the key ambiguity is whether 'classic' means pre-1970s or post-1970s movies, and is awaiting the seeker's choice.\",\n    \"emotion\": \"Polite, cooperative, mildly uncertain.\",\n    \"intention\": \"Ask a clarifying question to determine the seeker's era preference.\",\n    \"conversational_goal\": \"Get the seeker to specify whether they mean before the 70s or after, enabling tailored recommendations.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'After'\",\n    \"belief_before\": \"The recommender believes the seeker wants classic movies but is uncertain whether they mean before the 70s or after.\",\n    \"belief_update\": \"The recommender interprets 'After' as selecting the post-70s option in the clarification question, resolving the binary era ambiguity. This changes the previous uncertain interpretation.\",\n    \"belief_after\": \"The recommender believes the seeker wants classic movies from after the 70s, i.e., post-1970s/1980s onward, and can now recommend within that era.\",\n    \"emotion\": \"Satisfied, ready to help.\",\n    \"intention\": \"Recommend classic movies from after the 70s.\",\n    \"conversational_goal\": \"Provide good classic movie recommendations matching the clarified post-70s preference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "3_pred_rec__0172_d2630_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender initiates with a greeting and asks what genre the seeker likes. No seeker preference information has been provided yet. Recommender's own genre preferences are not stated.",
+      "belief_before": "Recommender does not know the seeker's genre preferences.",
+      "belief_update": "No update from the seeker yet; the question is meant to elicit a preference. This establishes the initial unknown state.",
+      "belief_after": "Recommender still believes the seeker's genre preferences are unknown.",
+      "emotion": "Polite, neutral, helpful.",
+      "intention": "Open the conversation and invite the seeker to state a genre preference.",
+      "conversational_goal": "Discover the seeker's preferred genre so a suitable recommendation can be made."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says, 'I like dramas.' Recommender's own preferences remain unstated.",
+      "belief_before": "Recommender believes the seeker's genre preferences are unknown.",
+      "belief_update": "Seeker explicitly states a preference for dramas. This changes the previous unknown-preference interpretation.",
+      "belief_after": "Recommender believes the seeker likes dramas; no other genre preference is known.",
+      "emotion": "Attentive and positive/helpful.",
+      "intention": "Use the stated drama preference to guide possible recommendations.",
+      "conversational_goal": "Narrow the recommendation space toward dramas."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks whether the seeker has seen Rumpelstiltskin (1995), notes that it is more of a horror movie, and asks whether the seeker likes horror. Recommender's own preferences remain unstated.",
+      "belief_before": "Recommender believes the seeker likes dramas.",
+      "belief_update": "Recommender recalls/notes that Rumpelstiltskin is horror, creating uncertainty about whether it fits the seeker's stated drama preference. Horror preference is still unknown.",
+      "belief_after": "Recommender believes the seeker likes dramas, but does not know whether horror is acceptable.",
+      "emotion": "Tentative, uncertain, still helpful.",
+      "intention": "Check whether horror is acceptable while considering a title that may not match the stated drama preference.",
+      "conversational_goal": "Determine whether horror can be included in recommendations or should be avoided."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says, 'no, i don't like horror...i like dramas.' Recommender's own preferences remain unstated.",
+      "belief_before": "Recommender believes the seeker likes dramas and is unsure whether horror is acceptable.",
+      "belief_update": "Seeker rejects horror and reaffirms a preference for dramas. This resolves the previous uncertainty about horror.",
+      "belief_after": "Recommender believes the seeker likes dramas and dislikes horror.",
+      "emotion": "Accepting, corrected, helpful.",
+      "intention": "Avoid horror recommendations and refocus on dramas.",
+      "conversational_goal": "Recommend dramas or non-horror options aligned with the seeker's confirmed preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender initiates with a greeting and asks what genre the seeker likes. No seeker preference information has been provided yet. Recommender's own genre preferences are not stated.\",\n    \"belief_before\": \"Recommender does not know the seeker's genre preferences.\",\n    \"belief_update\": \"No update from the seeker yet; the question is meant to elicit a preference. This establishes the initial unknown state.\",\n    \"belief_after\": \"Recommender still believes the seeker's genre preferences are unknown.\",\n    \"emotion\": \"Polite, neutral, helpful.\",\n    \"intention\": \"Open the conversation and invite the seeker to state a genre preference.\",\n    \"conversational_goal\": \"Discover the seeker's preferred genre so a suitable recommendation can be made.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says, 'I like dramas.' Recommender's own preferences remain unstated.\",\n    \"belief_before\": \"Recommender believes the seeker's genre preferences are unknown.\",\n    \"belief_update\": \"Seeker explicitly states a preference for dramas. This changes the previous unknown-preference interpretation.\",\n    \"belief_after\": \"Recommender believes the seeker likes dramas; no other genre preference is known.\",\n    \"emotion\": \"Attentive and positive/helpful.\",\n    \"intention\": \"Use the stated drama preference to guide possible recommendations.\",\n    \"conversational_goal\": \"Narrow the recommendation space toward dramas.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks whether the seeker has seen Rumpelstiltskin (1995), notes that it is more of a horror movie, and asks whether the seeker likes horror. Recommender's own preferences remain unstated.\",\n    \"belief_before\": \"Recommender believes the seeker likes dramas.\",\n    \"belief_update\": \"Recommender recalls/notes that Rumpelstiltskin is horror, creating uncertainty about whether it fits the seeker's stated drama preference. Horror preference is still unknown.\",\n    \"belief_after\": \"Recommender believes the seeker likes dramas, but does not know whether horror is acceptable.\",\n    \"emotion\": \"Tentative, uncertain, still helpful.\",\n    \"intention\": \"Check whether horror is acceptable while considering a title that may not match the stated drama preference.\",\n    \"conversational_goal\": \"Determine whether horror can be included in recommendations or should be avoided.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says, 'no, i don't like horror...i like dramas.' Recommender's own preferences remain unstated.\",\n    \"belief_before\": \"Recommender believes the seeker likes dramas and is unsure whether horror is acceptable.\",\n    \"belief_update\": \"Seeker rejects horror and reaffirms a preference for dramas. This resolves the previous uncertainty about horror.\",\n    \"belief_after\": \"Recommender believes the seeker likes dramas and dislikes horror.\",\n    \"emotion\": \"Accepting, corrected, helpful.\",\n    \"intention\": \"Avoid horror recommendations and refocus on dramas.\",\n    \"conversational_goal\": \"Recommend dramas or non-horror options aligned with the seeker's confirmed preference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

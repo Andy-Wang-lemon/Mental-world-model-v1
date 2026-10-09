@@ -1,0 +1,156 @@
+{
+  "id": "3_pred_rec__0092_d1495_u8",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: 'Hi...How are you?...What kind of movies are you looking for?'",
+      "information_available": "No prior dialogue; recommender only knows a seeker is present and has not stated any movie preferences.",
+      "preferences": {
+        "seeker_believed": "unknown",
+        "recommender_self": "friendly/helpful stance"
+      },
+      "belief_before": "No beliefs about the seeker's movie preferences.",
+      "belief_update": "Opens conversation and asks for the seeker's movie request; no content learned yet.",
+      "belief_after": "Still no beliefs about the seeker's movie preferences.",
+      "emotion": "friendly, attentive",
+      "intention": "Greet the seeker and elicit a movie request.",
+      "reaction_to_other": "N/A; recommender initiates.",
+      "conversational_goal": "Establish what kind of movie the seeker wants.",
+      "changes_previous_interpretation": "N/A (initial turn)."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close (2011)'",
+      "information_available": "Recommender now knows the seeker is good and wants a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "preferences": {
+        "seeker_believed": "wants a drama like Extremely Loud and Incredibly Close (2011)",
+        "recommender_self": "helpful, ready to suggest dramas"
+      },
+      "belief_before": "No beliefs about the seeker's movie preferences.",
+      "belief_update": "Seeker requests a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_after": "Seeker wants a drama like Extremely Loud and Incredibly Close (2011); no actor or seen-movie info yet.",
+      "emotion": "attentive, helpful",
+      "intention": "Find a drama recommendation matching the stated request.",
+      "reaction_to_other": "Acknowledges the seeker's greeting and request.",
+      "conversational_goal": "Satisfy the drama request with suitable recommendations.",
+      "changes_previous_interpretation": "Yes; establishes genre/reference preference."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: 'Okay, well Road to Perdition (2002) is a good drama with Tom Hanks'",
+      "information_available": "Recommender knows the seeker wants a drama like Extremely Loud and Incredibly Close (2011); recommender also knows Road to Perdition is a drama with Tom Hanks.",
+      "preferences": {
+        "seeker_believed": "wants a drama like Extremely Loud and Incredibly Close (2011)",
+        "recommender_self": "suggests a Tom Hanks drama as candidate"
+      },
+      "belief_before": "Seeker wants a drama like Extremely Loud and Incredibly Close (2011).",
+      "belief_update": "Recommender proposes Road to Perdition (2002) as a good drama with Tom Hanks; no new seeker preference information.",
+      "belief_after": "Seeker wants a drama like EL&IC; Road to Perdition has been offered as a candidate.",
+      "emotion": "helpful, positive",
+      "intention": "Recommend Road to Perdition as a drama option.",
+      "reaction_to_other": "N/A; recommender is speaking.",
+      "conversational_goal": "Offer a concrete drama recommendation.",
+      "changes_previous_interpretation": "No new seeker information; previous interpretation remains, with a candidate added."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says: 'I haven't seen that one, but I love Tom Hanks'",
+      "information_available": "Recommender now knows the seeker has not seen Road to Perdition and loves Tom Hanks.",
+      "preferences": {
+        "seeker_believed": "likes dramas and loves Tom Hanks; hasn't seen Road to Perdition",
+        "recommender_self": "can leverage Tom Hanks preference"
+      },
+      "belief_before": "Seeker wants a drama like EL&IC; Road to Perdition has been offered.",
+      "belief_update": "Seeker has not seen Road to Perdition and loves Tom Hanks.",
+      "belief_after": "Seeker wants a drama, loves Tom Hanks, and has not seen Road to Perdition.",
+      "emotion": "encouraged, pleased",
+      "intention": "Use the Tom Hanks preference to refine further recommendations.",
+      "reaction_to_other": "Positive reaction to seeker's Tom Hanks enthusiasm; notes the unseen status.",
+      "conversational_goal": "Refine recommendations using the new Tom Hanks preference.",
+      "changes_previous_interpretation": "Yes; adds explicit actor preference and seen-status update."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says: 'Or have you seen It's Kind of a Funny Story (2010) is funny drama...But Tom Hanks is great in Cast Away (2000) it’s another classic'",
+      "information_available": "Recommender knows the seeker wants drama like EL&IC, loves Tom Hanks, and has not seen Road to Perdition. Recommender knows It's Kind of a Funny Story is a funny drama and Cast Away is a classic Tom Hanks film.",
+      "preferences": {
+        "seeker_believed": "loves Tom Hanks; open to dramas, including funny dramas and Tom Hanks classics",
+        "recommender_self": "offers multiple options"
+      },
+      "belief_before": "Seeker wants a drama, loves Tom Hanks, and has not seen Road to Perdition.",
+      "belief_update": "Recommender offers It's Kind of a Funny Story (2010) and Cast Away (2000) as additional options; no new seeker preference information.",
+      "belief_after": "Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition; It's Kind of a Funny Story and Cast Away have been offered.",
+      "emotion": "enthusiastic, helpful",
+      "intention": "Provide more recommendations, especially leveraging Tom Hanks.",
+      "reaction_to_other": "N/A; recommender is speaking.",
+      "conversational_goal": "Broaden the options and find a movie the seeker may like.",
+      "changes_previous_interpretation": "No new seeker information; prior interpretation reinforced by Tom Hanks-focused recommendations."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says: 'No, I haven't seen that one either. Ooh yeah I really liked Cast Away (2000)'",
+      "information_available": "Recommender now knows the seeker has not seen It's Kind of a Funny Story and has seen and liked Cast Away (2000).",
+      "preferences": {
+        "seeker_believed": "likes Tom Hanks and specifically liked Cast Away; hasn't seen It's Kind of a Funny Story or Road to Perdition",
+        "recommender_self": "can use liked Cast Away as signal"
+      },
+      "belief_before": "Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition; It's Kind of a Funny Story and Cast Away have been offered.",
+      "belief_update": "Seeker has not seen It's Kind of a Funny Story and liked Cast Away (2000).",
+      "belief_after": "Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, and liked Cast Away.",
+      "emotion": "pleased, validated",
+      "intention": "Use the liked Cast Away and Tom Hanks preference to continue recommending.",
+      "reaction_to_other": "Positive; seeker confirmed enjoyment of a recommended/classic Tom Hanks film.",
+      "conversational_goal": "Refine the recommendation using a liked title and actor preference.",
+      "changes_previous_interpretation": "Yes; confirms Tom Hanks preference and adds a liked movie plus unseen status."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says: 'It’s reallt good! Spotlight (2015) is another rest drama that came out a few years ago with Rachael macadams'",
+      "information_available": "Recommender knows the seeker wants drama, loves Tom Hanks, liked Cast Away, and has not seen Road to Perdition or It's Kind of a Funny Story. Recommender knows Spotlight is a drama with Rachel McAdams.",
+      "preferences": {
+        "seeker_believed": "likes dramas and Tom Hanks; no known preference yet for Rachel McAdams",
+        "recommender_self": "agrees Cast Away is good and introduces Spotlight"
+      },
+      "belief_before": "Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, and liked Cast Away.",
+      "belief_update": "Recommender agrees Cast Away is good and proposes Spotlight (2015) as another drama with Rachel McAdams; no new seeker preference information.",
+      "belief_after": "Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, liked Cast Away; Spotlight has been offered.",
+      "emotion": "positive, affirming",
+      "intention": "Continue recommending dramas, now introducing Spotlight via Rachel McAdams.",
+      "reaction_to_other": "N/A; recommender is speaking.",
+      "conversational_goal": "Keep the recommendation flow going with another drama option.",
+      "changes_previous_interpretation": "No new seeker information; adds a new candidate, but Rachel McAdams preference is not yet known."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says: 'I haven't seen that one either, but I like Rachel McAdams.'",
+      "information_available": "Recommender now knows the seeker has not seen Spotlight and likes Rachel McAdams.",
+      "preferences": {
+        "seeker_believed": "likes Rachel McAdams; still likes Tom Hanks and dramas; hasn't seen Spotlight",
+        "recommender_self": "can leverage Rachel McAdams preference"
+      },
+      "belief_before": "Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, liked Cast Away; Spotlight has been offered.",
+      "belief_update": "Seeker has not seen Spotlight and likes Rachel McAdams.",
+      "belief_after": "Seeker wants a drama, loves Tom Hanks, likes Rachel McAdams, has not seen Road to Perdition, It's Kind of a Funny Story, or Spotlight, and liked Cast Away.",
+      "emotion": "pleased, encouraged",
+      "intention": "Use the new Rachel McAdams preference to refine or continue recommendations.",
+      "reaction_to_other": "Positive; notes the new actor preference and unseen status.",
+      "conversational_goal": "Adapt recommendations to the newly revealed Rachel McAdams preference.",
+      "changes_previous_interpretation": "Yes; adds Rachel McAdams as a liked actor and confirms Spotlight is unseen."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: 'Hi...How are you?...What kind of movies are you looking for?'\",\n    \"information_available\": \"No prior dialogue; recommender only knows a seeker is present and has not stated any movie preferences.\",\n    \"preferences\": {\n      \"seeker_believed\": \"unknown\",\n      \"recommender_self\": \"friendly/helpful stance\"\n    },\n    \"belief_before\": \"No beliefs about the seeker's movie preferences.\",\n    \"belief_update\": \"Opens conversation and asks for the seeker's movie request; no content learned yet.\",\n    \"belief_after\": \"Still no beliefs about the seeker's movie preferences.\",\n    \"emotion\": \"friendly, attentive\",\n    \"intention\": \"Greet the seeker and elicit a movie request.\",\n    \"reaction_to_other\": \"N/A; recommender initiates.\",\n    \"conversational_goal\": \"Establish what kind of movie the seeker wants.\",\n    \"changes_previous_interpretation\": \"N/A (initial turn).\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close (2011)'\",\n    \"information_available\": \"Recommender now knows the seeker is good and wants a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"preferences\": {\n      \"seeker_believed\": \"wants a drama like Extremely Loud and Incredibly Close (2011)\",\n      \"recommender_self\": \"helpful, ready to suggest dramas\"\n    },\n    \"belief_before\": \"No beliefs about the seeker's movie preferences.\",\n    \"belief_update\": \"Seeker requests a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_after\": \"Seeker wants a drama like Extremely Loud and Incredibly Close (2011); no actor or seen-movie info yet.\",\n    \"emotion\": \"attentive, helpful\",\n    \"intention\": \"Find a drama recommendation matching the stated request.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's greeting and request.\",\n    \"conversational_goal\": \"Satisfy the drama request with suitable recommendations.\",\n    \"changes_previous_interpretation\": \"Yes; establishes genre/reference preference.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: 'Okay, well Road to Perdition (2002) is a good drama with Tom Hanks'\",\n    \"information_available\": \"Recommender knows the seeker wants a drama like Extremely Loud and Incredibly Close (2011); recommender also knows Road to Perdition is a drama with Tom Hanks.\",\n    \"preferences\": {\n      \"seeker_believed\": \"wants a drama like Extremely Loud and Incredibly Close (2011)\",\n      \"recommender_self\": \"suggests a Tom Hanks drama as candidate\"\n    },\n    \"belief_before\": \"Seeker wants a drama like Extremely Loud and Incredibly Close (2011).\",\n    \"belief_update\": \"Recommender proposes Road to Perdition (2002) as a good drama with Tom Hanks; no new seeker preference information.\",\n    \"belief_after\": \"Seeker wants a drama like EL&IC; Road to Perdition has been offered as a candidate.\",\n    \"emotion\": \"helpful, positive\",\n    \"intention\": \"Recommend Road to Perdition as a drama option.\",\n    \"reaction_to_other\": \"N/A; recommender is speaking.\",\n    \"conversational_goal\": \"Offer a concrete drama recommendation.\",\n    \"changes_previous_interpretation\": \"No new seeker information; previous interpretation remains, with a candidate added.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says: 'I haven't seen that one, but I love Tom Hanks'\",\n    \"information_available\": \"Recommender now knows the seeker has not seen Road to Perdition and loves Tom Hanks.\",\n    \"preferences\": {\n      \"seeker_believed\": \"likes dramas and loves Tom Hanks; hasn't seen Road to Perdition\",\n      \"recommender_self\": \"can leverage Tom Hanks preference\"\n    },\n    \"belief_before\": \"Seeker wants a drama like EL&IC; Road to Perdition has been offered.\",\n    \"belief_update\": \"Seeker has not seen Road to Perdition and loves Tom Hanks.\",\n    \"belief_after\": \"Seeker wants a drama, loves Tom Hanks, and has not seen Road to Perdition.\",\n    \"emotion\": \"encouraged, pleased\",\n    \"intention\": \"Use the Tom Hanks preference to refine further recommendations.\",\n    \"reaction_to_other\": \"Positive reaction to seeker's Tom Hanks enthusiasm; notes the unseen status.\",\n    \"conversational_goal\": \"Refine recommendations using the new Tom Hanks preference.\",\n    \"changes_previous_interpretation\": \"Yes; adds explicit actor preference and seen-status update.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says: 'Or have you seen It's Kind of a Funny Story (2010) is funny drama...But Tom Hanks is great in Cast Away (2000) it’s another classic'\",\n    \"information_available\": \"Recommender knows the seeker wants drama like EL&IC, loves Tom Hanks, and has not seen Road to Perdition. Recommender knows It's Kind of a Funny Story is a funny drama and Cast Away is a classic Tom Hanks film.\",\n    \"preferences\": {\n      \"seeker_believed\": \"loves Tom Hanks; open to dramas, including funny dramas and Tom Hanks classics\",\n      \"recommender_self\": \"offers multiple options\"\n    },\n    \"belief_before\": \"Seeker wants a drama, loves Tom Hanks, and has not seen Road to Perdition.\",\n    \"belief_update\": \"Recommender offers It's Kind of a Funny Story (2010) and Cast Away (2000) as additional options; no new seeker preference information.\",\n    \"belief_after\": \"Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition; It's Kind of a Funny Story and Cast Away have been offered.\",\n    \"emotion\": \"enthusiastic, helpful\",\n    \"intention\": \"Provide more recommendations, especially leveraging Tom Hanks.\",\n    \"reaction_to_other\": \"N/A; recommender is speaking.\",\n    \"conversational_goal\": \"Broaden the options and find a movie the seeker may like.\",\n    \"changes_previous_interpretation\": \"No new seeker information; prior interpretation reinforced by Tom Hanks-focused recommendations.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says: 'No, I haven't seen that one either. Ooh yeah I really liked Cast Away (2000)'\",\n    \"information_available\": \"Recommender now knows the seeker has not seen It's Kind of a Funny Story and has seen and liked Cast Away (2000).\",\n    \"preferences\": {\n      \"seeker_believed\": \"likes Tom Hanks and specifically liked Cast Away; hasn't seen It's Kind of a Funny Story or Road to Perdition\",\n      \"recommender_self\": \"can use liked Cast Away as signal\"\n    },\n    \"belief_before\": \"Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition; It's Kind of a Funny Story and Cast Away have been offered.\",\n    \"belief_update\": \"Seeker has not seen It's Kind of a Funny Story and liked Cast Away (2000).\",\n    \"belief_after\": \"Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, and liked Cast Away.\",\n    \"emotion\": \"pleased, validated\",\n    \"intention\": \"Use the liked Cast Away and Tom Hanks preference to continue recommending.\",\n    \"reaction_to_other\": \"Positive; seeker confirmed enjoyment of a recommended/classic Tom Hanks film.\",\n    \"conversational_goal\": \"Refine the recommendation using a liked title and actor preference.\",\n    \"changes_previous_interpretation\": \"Yes; confirms Tom Hanks preference and adds a liked movie plus unseen status.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says: 'It’s reallt good! Spotlight (2015) is another rest drama that came out a few years ago with Rachael macadams'\",\n    \"information_available\": \"Recommender knows the seeker wants drama, loves Tom Hanks, liked Cast Away, and has not seen Road to Perdition or It's Kind of a Funny Story. Recommender knows Spotlight is a drama with Rachel McAdams.\",\n    \"preferences\": {\n      \"seeker_believed\": \"likes dramas and Tom Hanks; no known preference yet for Rachel McAdams\",\n      \"recommender_self\": \"agrees Cast Away is good and introduces Spotlight\"\n    },\n    \"belief_before\": \"Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, and liked Cast Away.\",\n    \"belief_update\": \"Recommender agrees Cast Away is good and proposes Spotlight (2015) as another drama with Rachel McAdams; no new seeker preference information.\",\n    \"belief_after\": \"Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, liked Cast Away; Spotlight has been offered.\",\n    \"emotion\": \"positive, affirming\",\n    \"intention\": \"Continue recommending dramas, now introducing Spotlight via Rachel McAdams.\",\n    \"reaction_to_other\": \"N/A; recommender is speaking.\",\n    \"conversational_goal\": \"Keep the recommendation flow going with another drama option.\",\n    \"changes_previous_interpretation\": \"No new seeker information; adds a new candidate, but Rachel McAdams preference is not yet known.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says: 'I haven't seen that one either, but I like Rachel McAdams.'\",\n    \"information_available\": \"Recommender now knows the seeker has not seen Spotlight and likes Rachel McAdams.\",\n    \"preferences\": {\n      \"seeker_believed\": \"likes Rachel McAdams; still likes Tom Hanks and dramas; hasn't seen Spotlight\",\n      \"recommender_self\": \"can leverage Rachel McAdams preference\"\n    },\n    \"belief_before\": \"Seeker wants a drama, loves Tom Hanks, has not seen Road to Perdition or It's Kind of a Funny Story, liked Cast Away; Spotlight has been offered.\",\n    \"belief_update\": \"Seeker has not seen Spotlight and likes Rachel McAdams.\",\n    \"belief_after\": \"Seeker wants a drama, loves Tom Hanks, likes Rachel McAdams, has not seen Road to Perdition, It's Kind of a Funny Story, or Spotlight, and liked Cast Away.\",\n    \"emotion\": \"pleased, encouraged\",\n    \"intention\": \"Use the new Rachel McAdams preference to refine or continue recommendations.\",\n    \"reaction_to_other\": \"Positive; notes the new actor preference and unseen status.\",\n    \"conversational_goal\": \"Adapt recommendations to the newly revealed Rachel McAdams preference.\",\n    \"changes_previous_interpretation\": \"Yes; adds Rachel McAdams as a liked actor and confirms Spotlight is unseen.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

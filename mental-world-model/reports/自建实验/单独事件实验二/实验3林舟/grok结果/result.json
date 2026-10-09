@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3林舟.txt",
+  "agent": "林舟",
+  "stimulus": "林舟毕业后放弃银行 offer 去做游戏。第一家公司倒闭后，他继续加入另一家游戏公司，后来又自己创业，七年后产品终于取得不错成绩。亲戚夸他现在发展得不错。父亲笑着说：“年轻时候出去折腾几年也挺好，现在总算找到适合自己的了。”",
+  "thoughts": [
+    {
+      "text": "这些年的努力终于得到认可了",
+      "probability": 0.45
+    },
+    {
+      "text": "父亲的话让我觉得很温暖",
+      "probability": 0.35
+    },
+    {
+      "text": "自己当初的选择是正确的",
+      "probability": 0.2
+    }
+  ],
+  "top1": "这些年的努力终于得到认可了",
+  "llm": {
+    "client": "http",
+    "model": "grok-4.3",
+    "base_url": "https://api.x.ai/v1",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  }
+}

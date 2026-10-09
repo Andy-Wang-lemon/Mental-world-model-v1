@@ -1,0 +1,12 @@
+{
+  "id": "4_pred_seeker__0172_d2630_u1",
+  "method": "picture",
+  "target_character": "SEEKER",
+  "raw_response": "SEEKER has not yet spoken. The only known interaction event is that RECOMMENDER greeted SEEKER and asked what genre SEEKER likes. SEEKER knows their own genre preference (even if unspecified to us), knows that RECOMMENDER asked about genre, and likely intends to respond to that question. SEEKER does **not** know what movie will be recommended next, what RECOMMENDER’s own preferences are, or whether any previous recommendation exists. There is no prior recommendation to give feedback on.\n\nSince RECOMMENDER directly asks “What genre do you like?”, the natural next move for SEEKER is to answer by expressing a genre preference. This aligns with expressing a preference, not giving feedback, not merely greeting/chit-chat, and not adding unrelated preference details beyond the immediate question.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

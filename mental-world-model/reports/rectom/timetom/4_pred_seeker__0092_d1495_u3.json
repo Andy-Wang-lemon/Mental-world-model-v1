@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0092_d1495_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi...How are you?...What kind of movies are you looking for?",
+      "information_available": "The recommender has greeted the seeker, asked how the seeker is, and asked what kind of movies the seeker is looking for.",
+      "preferences": "No explicit movie preference has been expressed or made available to the recommender yet.",
+      "belief_before": "No prior dialogue context; no specific beliefs about the recommender's intent.",
+      "belief_update": "The recommender is initiating a movie recommendation conversation and wants to know the seeker's movie preferences.",
+      "belief_after": "The recommender is ready to help with movie recommendations and needs the seeker to specify a genre or reference film.",
+      "emotion": "Neutral and polite.",
+      "intention": "Respond to the greeting and answer the recommender's question about movie preferences.",
+      "reaction_to_other": "Receptive and cooperative toward the recommender's greeting and questions.",
+      "conversational_goal": "Engage with the recommender and provide the information needed to get a recommendation.",
+      "changes_previous_interpretation": "No previous interpretation exists; this turn establishes the initial recommendation-dialogue frame."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close (2011)",
+      "information_available": "The recommender asked how the seeker is and what kind of movies the seeker wants. The seeker has now stated their mood and movie preference.",
+      "preferences": "Wants a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "The recommender is asking for movie preferences and may offer recommendations.",
+      "belief_update": "The recommender now knows the seeker's desired reference film/genre; the seeker can expect recommendations aligned with that preference.",
+      "belief_after": "The recommender has the necessary preference information to suggest a drama; the seeker awaits a recommendation.",
+      "emotion": "Polite, positive, and cooperative.",
+      "intention": "Obtain recommendations for a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "reaction_to_other": "Answers the recommender courteously and treats the recommender as someone who can help.",
+      "conversational_goal": "Elicit a suitable movie recommendation based on the stated preference.",
+      "changes_previous_interpretation": "Fulfills and refines the initial response; it does not contradict the prior interpretation."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Okay, well Road to Perdition (2002) is a good drama with Tom Hanks",
+      "information_available": "The recommender has suggested Road to Perdition (2002) and described it as a good drama with Tom Hanks. Prior context: the seeker requested a drama like Extremely Loud and Incredibly Close (2011).",
+      "preferences": "Still wants a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "The recommender may provide a drama recommendation matching the seeker's stated preference.",
+      "belief_update": "The recommender has offered Road to Perdition as a candidate and seems to regard it as a suitable drama.",
+      "belief_after": "A specific candidate recommendation is on the table; whether it is similar to the requested reference is not established by the recommender's description.",
+      "emotion": "Neutral and curious; possibly uncertain about fit.",
+      "intention": "Evaluate the suggested movie against the desired similarity, then accept, reject, or ask for alternatives.",
+      "reaction_to_other": "Receives and considers the recommender's suggestion; may need more evidence that it fits the request.",
+      "conversational_goal": "Assess whether Road to Perdition satisfies the request and continue the recommendation dialogue.",
+      "changes_previous_interpretation": "Yes: the seeker shifts from waiting for a recommendation to evaluating a concrete suggestion."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi...How are you?...What kind of movies are you looking for?\",\n    \"information_available\": \"The recommender has greeted the seeker, asked how the seeker is, and asked what kind of movies the seeker is looking for.\",\n    \"preferences\": \"No explicit movie preference has been expressed or made available to the recommender yet.\",\n    \"belief_before\": \"No prior dialogue context; no specific beliefs about the recommender's intent.\",\n    \"belief_update\": \"The recommender is initiating a movie recommendation conversation and wants to know the seeker's movie preferences.\",\n    \"belief_after\": \"The recommender is ready to help with movie recommendations and needs the seeker to specify a genre or reference film.\",\n    \"emotion\": \"Neutral and polite.\",\n    \"intention\": \"Respond to the greeting and answer the recommender's question about movie preferences.\",\n    \"reaction_to_other\": \"Receptive and cooperative toward the recommender's greeting and questions.\",\n    \"conversational_goal\": \"Engage with the recommender and provide the information needed to get a recommendation.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists; this turn establishes the initial recommendation-dialogue frame.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close (2011)\",\n    \"information_available\": \"The recommender asked how the seeker is and what kind of movies the seeker wants. The seeker has now stated their mood and movie preference.\",\n    \"preferences\": \"Wants a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"The recommender is asking for movie preferences and may offer recommendations.\",\n    \"belief_update\": \"The recommender now knows the seeker's desired reference film/genre; the seeker can expect recommendations aligned with that preference.\",\n    \"belief_after\": \"The recommender has the necessary preference information to suggest a drama; the seeker awaits a recommendation.\",\n    \"emotion\": \"Polite, positive, and cooperative.\",\n    \"intention\": \"Obtain recommendations for a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"reaction_to_other\": \"Answers the recommender courteously and treats the recommender as someone who can help.\",\n    \"conversational_goal\": \"Elicit a suitable movie recommendation based on the stated preference.\",\n    \"changes_previous_interpretation\": \"Fulfills and refines the initial response; it does not contradict the prior interpretation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Okay, well Road to Perdition (2002) is a good drama with Tom Hanks\",\n    \"information_available\": \"The recommender has suggested Road to Perdition (2002) and described it as a good drama with Tom Hanks. Prior context: the seeker requested a drama like Extremely Loud and Incredibly Close (2011).\",\n    \"preferences\": \"Still wants a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"The recommender may provide a drama recommendation matching the seeker's stated preference.\",\n    \"belief_update\": \"The recommender has offered Road to Perdition as a candidate and seems to regard it as a suitable drama.\",\n    \"belief_after\": \"A specific candidate recommendation is on the table; whether it is similar to the requested reference is not established by the recommender's description.\",\n    \"emotion\": \"Neutral and curious; possibly uncertain about fit.\",\n    \"intention\": \"Evaluate the suggested movie against the desired similarity, then accept, reject, or ask for alternatives.\",\n    \"reaction_to_other\": \"Receives and considers the recommender's suggestion; may need more evidence that it fits the request.\",\n    \"conversational_goal\": \"Assess whether Road to Perdition satisfies the request and continue the recommendation dialogue.\",\n    \"changes_previous_interpretation\": \"Yes: the seeker shifts from waiting for a recommendation to evaluating a concrete suggestion.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

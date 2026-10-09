@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：162  d2369_u11
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "参与者：RECOMMENDER；刺激动作：RECOMMENDER 对 SEEKER 说：Hi；Sister Act (1992) is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.；I like Boo! A Madea Halloween (2016) ...Madea is really funny.；That was pretty good....Walk Like a Man (1987) is an oldie but goodie....The guy is raised by wolves and has to learn to be human in order to get his inheritance.；What about Ghostbusters (2016) ...That was really funny.；It is great.；对象：SEEKER；场景：对话；刺激侧变化：RECOMMENDER 已向 SEEKER 说出多部电影名称及对应评价；我执侧重：SEEKER 可能把『自己的观影口味/偏好』放在我这边：RECOMMENDER 连续说出自己喜欢的片名与评价（Sister Act、Madea、Walk Like a Man、Ghostbusters 等），这会激活 SEEKER 把自己的喜好当成需要被看见、比较或守住的部分。；法执侧重：SEEKER 可能把 RECOMMENDER 对影片的评价（『is good』『really funny』『It is great』）执为影片本身固定具有的性质，而不是某人的主观判断。",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：参与者：RECOMMENDER；刺激动作：RECOMMENDER 对 SEEKER 说：Hi；Sister Act (1992) is good. So is Sister Act 2: Back in the Habit (1993) ...I like both of those.；I like Boo! A Madea Halloween (2016) ...Madea is really funny.；That was pretty good....Walk Like a Man (1987) is an oldie but goodie....The guy is raised by wolves and has to learn to be human in order to get his inheritance.；What about Ghostbusters (2016) ...That was really funny.；It is great.；对象：SEEKER；场景：对话；刺激侧变化：RECOMMENDER 已向 SEEKER 说出多部电影名称及对应评价；我执侧重：SEEKER 可能把『自己的观影口味/偏好』放在我这边：RECOMMENDER 连续说出自己喜欢的片名与评价（Sister Act、Madea、Walk Like a Man、Ghostbusters 等），这会激活 SEEKER 把自己的喜好当成需要被看见、比较或守住的部分。；法执侧重：SEEKER 可能把 RECOMMENDER 对影片的评价（『is good』『really funny』『It is great』）执为影片本身固定具有的性质，而不是某人的主观判断。",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "SEEKER greets; states love of comedy movies and names Bridesmaids and How to Lose a Guy in 10 Days as some favorite movies; says having seen those, both really good choices; says loves Neighbors with Seth Rogen and Zac Efron, says that one was pretty funny, and says Madea is hilarious in everything; mentions Meet the Parents or Wedding Crashers with Rachael McAdams, says that one is hilarious, says having seen the older movie and for some reason could not get into it; says hasn't seen that one but knows it has most of favorite SNL actresses on there, and thinks will look into that one.",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.9, "b": 0.7, "c": 0.5, "d": 0.3}
+选择说明：SEEKER directly responds to each recommended film with evaluations, making feedback the most direct next strategy.
+标准：D: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：No predicted next action states the strategy; only the past greeting/chit-chat is available.

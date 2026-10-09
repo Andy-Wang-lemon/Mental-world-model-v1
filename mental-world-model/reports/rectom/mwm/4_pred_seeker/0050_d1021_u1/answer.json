@@ -1,0 +1,77 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 50,
+  "item_id": "d1021_u1",
+  "dialogue_id": "1021",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "此刻在 SEEKER 的经验里，RECOMMENDER 的问候和“想找什么类型”不是中性的信息询问，而是把“我的观影口味”这个与我分不开的属性推到台前：它必须被收拢成一个可指认的类型标签，才能作为推荐对话继续的入口。电影推荐的世界因此被对象化为一个先要由我交出明确分类、才能推进的场域；类型不是可随意放置的偏好描述，而是需要守住的我方属性边界。",
+        "probability": 0.3797
+      },
+      {
+        "content": "此刻在 SEEKER 的经验里，RECOMMENDER 的问候和“想找什么类型”意味着推荐关系正按类型匹配的秩序展开；类型被体验为对方看待和对待自己的固定入口，因此“我的观影偏好”不是随手可给的信息，而是决定自己会被归入哪一类、会被如何匹配的我方属性。电影推荐对话因此首先显现为一个类型定位场：对方的问题在确认这个入口，而 SEEKER 要守住的是自己的口味不被错误归类。",
+        "probability": 0.3234
+      },
+      {
+        "content": "此刻在 SEEKER 的经验里，RECOMMENDER 的问候和“想找什么类型”被体验为对自己作为“看什么由我决定”的选择者位置的确认；但这一确认是以要求给出明确类型标签的方式出现的。电影推荐的世界因此被对象化为一个由 SEEKER 的选择权开启、又必须先收拢出一个标准分类才能推进的场域：类型标签是选择者位置得以落实的入口，而 RECOMMENDER 的询问在确认这个入口属于 SEEKER。",
+        "probability": 0.2969
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 觉得这句问候和询问并不只是随便要个电影类型，而是把自己“爱看什么”的那一部分推到了台前；那口味像是跟自己连在一起的东西，不能像普通信息一样随口交出。若必须给出一个类型，他心里并不把它当作轻描淡写的偏好说明，而觉得那会替自己的观影边界定性，于是先把“想找什么”收拢成一个需要谨慎指认的问题：要确认哪个标签才真是“我的”，才能让推荐继续下去。这种整理里带着守住自己口味的趋向，不情愿为了接话而草率交出一个并不准确的分类。",
+        "activation": 0.3797
+      },
+      {
+        "content": "SEEKER 听到这句问候，首先感到对方是在按类型匹配的秩序开启推荐：问类型不像单纯收集一条可随手交出的信息，而像在确认自己会被放入哪个入口。于是“自己的观影偏好”变得像一种需要守住的己方规定——一旦给错类型，就可能被错配、被当成另一类观众。SEEKER 因此倾向于先在内心盘算自己的口味边界，确认它不被轻率归类，再衡量这个入口是否值得如实交出。",
+        "activation": 0.3234
+      },
+      {
+        "content": "这声问候像是在把选片的主动权交还给我，让我处在“看什么由我决定”的位置上；但“想找什么类型”一出来，这份确认又像是要求我先给出一个明确标签。于是这个电影推荐场域既由我的选择权打开，又必须先收拢出一个标准分类才能继续推进：类型标签成了入口，而对方在问，就是在确认这个入口属于我。",
+        "activation": 0.2969
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "询问推荐",
+        "probability": 0.3902
+      },
+      {
+        "content": "请求思考时间",
+        "probability": 0.2717
+      },
+      {
+        "content": "请求列出选项",
+        "probability": 0.2023
+      },
+      {
+        "content": "要求先列选项",
+        "probability": 0.1358
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0.3902,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.3902 = 询问推荐 0.3902；D 0.0000。Only 'ask for recommendation' maps to option C; the others are not covered by any option.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

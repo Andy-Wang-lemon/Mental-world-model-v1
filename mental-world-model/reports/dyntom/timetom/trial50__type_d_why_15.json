@@ -1,0 +1,61 @@
+{
+  "id": "trial50__type_d_why_15",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Angela Hwang",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Kevin confirms he is not happy with his job, feels stuck and unfulfilled, and does not know where to start; he accepts Angela's offer to figure things out together.",
+      "belief_before": "Angela suspected Kevin might be unhappy with his construction job based on her observations; she was concerned but did not yet know the specifics.",
+      "belief_update": "Yes; Angela's suspicion is confirmed and deepened by Kevin's explanation.",
+      "belief_after": "Kevin is genuinely unhappy in his construction job, feels stuck, and is open to exploring options with Angela's support.",
+      "emotion": "Concerned, sympathetic, supportive, mildly hopeful",
+      "intention": "Help Kevin explore possible job or career options and figure out next steps together."
+    },
+    {
+      "time": 2,
+      "observed": "Kevin thanks Angela for the job openings and career counseling information; he says he has been thinking a lot and is interested in something more creative, possibly design or architecture.",
+      "belief_before": "Kevin is considering a career change and is open to Angela's support after their first conversation.",
+      "belief_update": "Yes; Angela's belief that Kevin is considering a change is strengthened and given a more specific direction.",
+      "belief_after": "Kevin is actively considering a career change and has a specific interest in creative fields such as design or architecture.",
+      "emotion": "Supportive, hopeful, encouraging, excited",
+      "intention": "Encourage Kevin to review the resources and continue exploring design or architecture options."
+    },
+    {
+      "time": 3,
+      "observed": "Kevin says he appreciates the career coach meeting but is not sure he is ready; Angela reassures and encourages him, and he agrees to give it a shot.",
+      "belief_before": "Kevin is hesitant about making a career change.",
+      "belief_update": "Yes, partially; Angela's belief that Kevin is hesitant is confirmed, but she also sees him willing to take a step forward.",
+      "belief_after": "Kevin is still hesitant about the career change, but he has agreed to meet with a career coach and may be open to a push.",
+      "emotion": "Frustrated and worried initially; somewhat relieved or encouraged after he agrees",
+      "intention": "Motivate Kevin, provide support, and help him follow through with the career coach."
+    },
+    {
+      "time": 4,
+      "observed": "Kevin reports that the career coach has been helpful, he has started online courses in design, and he feels more confident about the change.",
+      "belief_before": "Kevin is making progress in his career transition.",
+      "belief_update": "Yes; Angela's belief is confirmed and strengthened by concrete evidence of progress.",
+      "belief_after": "Kevin is actively progressing in his career transition, taking design courses, and becoming more confident.",
+      "emotion": "Proud, relieved, happy",
+      "intention": "Continue checking in on Kevin and offering help or support as needed."
+    },
+    {
+      "time": 5,
+      "observed": "Angela tells Kevin she organized a celebration party; Kevin is grateful and accepts, saying her support means a lot.",
+      "belief_before": "Kevin has successfully transitioned to a new career.",
+      "belief_update": "No major change; Angela's belief is reinforced and celebrated rather than revised.",
+      "belief_after": "Kevin has successfully transitioned to a new career and appreciates Angela's support.",
+      "emotion": "Happy, satisfied, proud",
+      "intention": "Celebrate Kevin's success and enjoy the party with him."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Kevin confirms he is not happy with his job, feels stuck and unfulfilled, and does not know where to start; he accepts Angela's offer to figure things out together.\",\n    \"belief_before\": \"Angela suspected Kevin might be unhappy with his construction job based on her observations; she was concerned but did not yet know the specifics.\",\n    \"belief_update\": \"Yes; Angela's suspicion is confirmed and deepened by Kevin's explanation.\",\n    \"belief_after\": \"Kevin is genuinely unhappy in his construction job, feels stuck, and is open to exploring options with Angela's support.\",\n    \"emotion\": \"Concerned, sympathetic, supportive, mildly hopeful\",\n    \"intention\": \"Help Kevin explore possible job or career options and figure out next steps together.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Kevin thanks Angela for the job openings and career counseling information; he says he has been thinking a lot and is interested in something more creative, possibly design or architecture.\",\n    \"belief_before\": \"Kevin is considering a career change and is open to Angela's support after their first conversation.\",\n    \"belief_update\": \"Yes; Angela's belief that Kevin is considering a change is strengthened and given a more specific direction.\",\n    \"belief_after\": \"Kevin is actively considering a career change and has a specific interest in creative fields such as design or architecture.\",\n    \"emotion\": \"Supportive, hopeful, encouraging, excited\",\n    \"intention\": \"Encourage Kevin to review the resources and continue exploring design or architecture options.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Kevin says he appreciates the career coach meeting but is not sure he is ready; Angela reassures and encourages him, and he agrees to give it a shot.\",\n    \"belief_before\": \"Kevin is hesitant about making a career change.\",\n    \"belief_update\": \"Yes, partially; Angela's belief that Kevin is hesitant is confirmed, but she also sees him willing to take a step forward.\",\n    \"belief_after\": \"Kevin is still hesitant about the career change, but he has agreed to meet with a career coach and may be open to a push.\",\n    \"emotion\": \"Frustrated and worried initially; somewhat relieved or encouraged after he agrees\",\n    \"intention\": \"Motivate Kevin, provide support, and help him follow through with the career coach.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Kevin reports that the career coach has been helpful, he has started online courses in design, and he feels more confident about the change.\",\n    \"belief_before\": \"Kevin is making progress in his career transition.\",\n    \"belief_update\": \"Yes; Angela's belief is confirmed and strengthened by concrete evidence of progress.\",\n    \"belief_after\": \"Kevin is actively progressing in his career transition, taking design courses, and becoming more confident.\",\n    \"emotion\": \"Proud, relieved, happy\",\n    \"intention\": \"Continue checking in on Kevin and offering help or support as needed.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Angela tells Kevin she organized a celebration party; Kevin is grateful and accepts, saying her support means a lot.\",\n    \"belief_before\": \"Kevin has successfully transitioned to a new career.\",\n    \"belief_update\": \"No major change; Angela's belief is reinforced and celebrated rather than revised.\",\n    \"belief_after\": \"Kevin has successfully transitioned to a new career and appreciates Angela's support.\",\n    \"emotion\": \"Happy, satisfied, proud\",\n    \"intention\": \"Celebrate Kevin's success and enjoy the party with him.\"\n  }\n]",
+  "final_response": "ANSWER: e",
+  "prediction": "e",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial50"
+}

@@ -1,0 +1,62 @@
+数据：4_pred_seeker
+题号：144  d2335_u4
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER 经验到 RECOMMENDER 的“Happy New year!”不是一句可听可不听的寒暄，而是把 SEEKER 记起并纳入对方关系范围的一个位置；这个位置一经触到就与 SEEKER 自身绑在一起。它同时被经验为一条必须对等回祝的社交规范：若没有回祝，关系上就是失当。随后那句关于《Daddy's Home (2015)》好笑的转述，在此视角下只是附着在新年问候之后的信息，不改变这个问候所要求的对等位置。",
+      "probability": 0.4439
+    },
+    {
+      "content": "SEEKER 经验到 RECOMMENDER 的新年祝福是对自己被记得、被纳入对方关系范围的确认，这份被问候的位置与自己分不开。紧接着 RECOMMENDER 提到《Daddy's Home (2015)》好笑，就不再是无关信息，而像是一个已经固定下来的可谈话题：SEEKER 被放入只能围绕它表态或附和、不能当作没听见的位置。",
+      "probability": 0.299
+    },
+    {
+      "content": "SEEKER 经验到 RECOMMENDER 转述《Daddy's Home (2015)》好笑，是在把 SEEKER 放进一个对话责任里：自己应当作为能接住、能给出回应的一方存在，不能只当旁听者。这个电影话题同时像是一个已经固定下来的可谈话题，SEEKER 只能围绕它表态或附和，而不能当作无关信息略过；前一句新年祝福则只是让这个被点名的对话位置更明确。",
+      "probability": 0.2572
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 的“Happy New year!”在 SEEKER 这里不是可听可不听的寒暄，而是自己被记起、被纳入对方关系范围的凭据；这个位置一被点到，就与 SEEKER 自身绑在一起，不能当作无关信息轻轻放下。与此同时，问候被纳入一条要对等回祝的规范：SEEKER 先前已发出“Hello! Happy New Year!”，RECOMMENDER 的回祝使这条规范得到满足，关系上的失当风险随之解除。后面关于《Daddy's Home (2015)》好笑的转述，只是附着在这个已被确认的问候位置之后的信息，不改变问候所确认的关系位置，也不改变对等回祝已经完成的事实。于是 SEEKER 的内心整理是把后续的喜剧推荐请求放在这个已被回应、已被纳入的关系框架里继续处理，而不是把它当作独立的新事项；对电影信息本身则保持次要的、可参考的位置。",
+      "activation": 0.4056
+    },
+    {
+      "content": "SEEKER 把 RECOMMENDER 回的新年快乐当作自己被记得、被放进对方关系范围的确认，这份被问候的位置已经和自己分不开；因此紧接着 RECOMMENDER 提到《Daddy's Home》好笑时，就不再是可以听过就算的无关信息，而像一个已经被对方递到面前、固定下来的可谈话题。SEEKER 心里觉得只能围绕它表态或附和，不能当作没听见，倾向于顺着这个话头接住，好让那份被记得、被纳入关系的感觉延续下去。",
+      "activation": 0.2975
+    },
+    {
+      "content": "SEEKER 听到 RECOMMENDER 说《Daddy's Home (2015)》好笑时，觉得这不是一句可以随便略过的闲话：它像被对方摆到台面上的可谈话题，也把 SEEKER 放到了需要接住、需要表态的对话位置上。他心里不愿只做旁听者，也不愿显得没有回应；但比起仅仅附和这部电影，他更想把自己的喜剧口味说清楚，于是顺着这个被点名的位置，把话题引向自己熟悉的《Step Brothers》和《The Hangover》，希望对方据此给出推荐。前一句新年祝福在此只是让这种被点名的在场感更明确。",
+      "activation": 0.2969
+    }
+  ],
+  "observed_action": "SEEKER向RECOMMENDER问好并祝新年快乐；SEEKER说希望RECOMMENDER给一些喜剧推荐，并表示如果这有帮助，他喜欢《Step Brothers》(2008)和《The Hangover》(2009)。",
+  "predicted_actions": [
+    {
+      "content": "SEEKER 对 RECOMMENDER 说：“谢谢。”",
+      "probability": 0.4473
+    },
+    {
+      "content": "SEEKER 对 RECOMMENDER 说：“谢谢推荐，也再次祝你新年快乐！”",
+      "probability": 0.2017
+    },
+    {
+      "content": "询问对比",
+      "probability": 0.1932
+    },
+    {
+      "content": "SEEKER 对 RECOMMENDER 说：“那部电影和《Step Brothers》相似吗？”",
+      "probability": 0.1578
+    }
+  ]
+}
+选择：D: Greetings, gratitude expression, or chit-chat utterances
+分数：{"a": 0, "b": 0, "c": 0, "d": 0.649}
+选择说明：A 0.0000；B 0.0000；C 0.0000；D 0.6490 = SEEKER 对 RECOMMENDER 说：“谢谢。” 0.4473 + SEEKER 对 RECOMMENDER 说：“谢谢推荐，也再次祝你新年快乐！” 0.2017。Actions 0 and 1 are gratitude/chit-chat; the comparison questions do not match the other strategy options.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：The predicted action thanks the recommender for the recommendation, which is feedback on the suggestion.

@@ -1,0 +1,61 @@
+{
+  "id": "trial51__type_c_how_12",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Christian Mensah",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Jonathan admits he has been keeping something from Christian, that he is in some trouble, and that he did not know how to tell him.",
+      "belief_before": "Jonathan is hiding something important from him.",
+      "belief_update": "Yes; Jonathan confirms he was hiding something and reveals he is in trouble.",
+      "belief_after": "Jonathan has been hiding a serious problem and is in trouble.",
+      "emotion": "Anxious and suspicious, then concerned and shocked.",
+      "intention": "To find out more about Jonathan's trouble and decide how to respond."
+    },
+    {
+      "time": 2,
+      "observed": "Jonathan says the situation is complicated, does not want to drag Christian into it, but admits he could use support and resources to get out of the mess.",
+      "belief_before": "Jonathan has been hiding a serious problem and is in trouble.",
+      "belief_update": "Yes; Jonathan's trouble is complicated, and he needs support and resources.",
+      "belief_after": "Jonathan needs Christian's help and support to get out of a complicated situation.",
+      "emotion": "Worried and empathetic.",
+      "intention": "To offer help and support Jonathan through his trouble."
+    },
+    {
+      "time": 3,
+      "observed": "Christian asks if the trouble is illegal; Jonathan says he cannot say for sure, might have gotten involved with the wrong people, but did not do anything illegal himself. Christian decides to look into it discreetly.",
+      "belief_before": "Jonathan is in complicated trouble and needs support, and Christian has begun to suspect the trouble may be related to criminal activity.",
+      "belief_update": "Yes; Jonathan may be entangled with wrong people, though he denies doing anything illegal, so the truth remains unclear.",
+      "belief_after": "Jonathan may be involved with dangerous or criminal people, but his guilt is uncertain and needs discreet investigation.",
+      "emotion": "Conflicted, concerned, and cautious.",
+      "intention": "To investigate the matter discreetly without alarming Jonathan and to ensure his safety."
+    },
+    {
+      "time": 4,
+      "observed": "Christian's investigation reveals that Jonathan is being framed. He tells Jonathan he has leads and plans to gather more evidence to prove Jonathan's innocence.",
+      "belief_before": "Jonathan may be involved with wrong people, but his guilt is uncertain and needs discreet investigation.",
+      "belief_update": "Yes; evidence indicates Jonathan is being framed rather than being guilty.",
+      "belief_after": "Jonathan is innocent and is being framed by someone; Christian needs evidence to clear his name.",
+      "emotion": "Determined and protective.",
+      "intention": "To gather evidence to prove Jonathan's innocence and clear his name."
+    },
+    {
+      "time": 5,
+      "observed": "Christian finds out the real culprit is someone close to both him and Jonathan. He tells Jonathan he plans to confront that person and bring them to justice.",
+      "belief_before": "Jonathan is being framed and needs evidence to clear his name.",
+      "belief_update": "Yes; the person responsible is someone close to and trusted by both Christian and Jonathan.",
+      "belief_after": "A trusted mutual acquaintance is the real culprit who framed Jonathan, which is a betrayal.",
+      "emotion": "Betrayed and resolute, with anger and concern.",
+      "intention": "To confront the real culprit and bring them to justice."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Jonathan admits he has been keeping something from Christian, that he is in some trouble, and that he did not know how to tell him.\",\n    \"belief_before\": \"Jonathan is hiding something important from him.\",\n    \"belief_update\": \"Yes; Jonathan confirms he was hiding something and reveals he is in trouble.\",\n    \"belief_after\": \"Jonathan has been hiding a serious problem and is in trouble.\",\n    \"emotion\": \"Anxious and suspicious, then concerned and shocked.\",\n    \"intention\": \"To find out more about Jonathan's trouble and decide how to respond.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Jonathan says the situation is complicated, does not want to drag Christian into it, but admits he could use support and resources to get out of the mess.\",\n    \"belief_before\": \"Jonathan has been hiding a serious problem and is in trouble.\",\n    \"belief_update\": \"Yes; Jonathan's trouble is complicated, and he needs support and resources.\",\n    \"belief_after\": \"Jonathan needs Christian's help and support to get out of a complicated situation.\",\n    \"emotion\": \"Worried and empathetic.\",\n    \"intention\": \"To offer help and support Jonathan through his trouble.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Christian asks if the trouble is illegal; Jonathan says he cannot say for sure, might have gotten involved with the wrong people, but did not do anything illegal himself. Christian decides to look into it discreetly.\",\n    \"belief_before\": \"Jonathan is in complicated trouble and needs support, and Christian has begun to suspect the trouble may be related to criminal activity.\",\n    \"belief_update\": \"Yes; Jonathan may be entangled with wrong people, though he denies doing anything illegal, so the truth remains unclear.\",\n    \"belief_after\": \"Jonathan may be involved with dangerous or criminal people, but his guilt is uncertain and needs discreet investigation.\",\n    \"emotion\": \"Conflicted, concerned, and cautious.\",\n    \"intention\": \"To investigate the matter discreetly without alarming Jonathan and to ensure his safety.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Christian's investigation reveals that Jonathan is being framed. He tells Jonathan he has leads and plans to gather more evidence to prove Jonathan's innocence.\",\n    \"belief_before\": \"Jonathan may be involved with wrong people, but his guilt is uncertain and needs discreet investigation.\",\n    \"belief_update\": \"Yes; evidence indicates Jonathan is being framed rather than being guilty.\",\n    \"belief_after\": \"Jonathan is innocent and is being framed by someone; Christian needs evidence to clear his name.\",\n    \"emotion\": \"Determined and protective.\",\n    \"intention\": \"To gather evidence to prove Jonathan's innocence and clear his name.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Christian finds out the real culprit is someone close to both him and Jonathan. He tells Jonathan he plans to confront that person and bring them to justice.\",\n    \"belief_before\": \"Jonathan is being framed and needs evidence to clear his name.\",\n    \"belief_update\": \"Yes; the person responsible is someone close to and trusted by both Christian and Jonathan.\",\n    \"belief_after\": \"A trusted mutual acquaintance is the real culprit who framed Jonathan, which is a betrayal.\",\n    \"emotion\": \"Betrayed and resolute, with anger and concern.\",\n    \"intention\": \"To confront the real culprit and bring them to justice.\"\n  }\n]",
+  "final_response": "ANSWER: f",
+  "prediction": "f",
+  "gold": "f",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial51"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0164_d2498_u5",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The SEEKER greeted them.\n- RECOMMENDER asked what kind of movie the SEEKER likes.\n- The SEEKER asked for movie recommendations they think are great to watch and stated they liked *Good Will Hunting* (1997).\n- RECOMMENDER recommended *The Outsiders* (1983) as their all-time favorite.\n- The SEEKER has already seen *The Outsiders* a while back.\n\nRECOMMENDER does **not** know:\n- Whether the SEEKER liked *The Outsiders* or disliked it.\n- Whether the SEEKER wants to rewatch it.\n- The SEEKER’s broader movie preferences beyond liking *Good Will Hunting*.\n- What other movies the SEEKER has seen.\n- Any other constraints, moods, or genre preferences the SEEKER may have.\n\nFrom RECOMMENDER’s perspective, the previous recommendation was already seen, so it does not satisfy the SEEKER’s original request for new recommendations. The SEEKER’s request is still active. RECOMMENDER can use the known preference—liking *Good Will Hunting*—to move toward another recommendation, either directly or by asking whether the SEEKER has seen a candidate movie. This corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

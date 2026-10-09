@@ -1,0 +1,52 @@
+{
+  "id": "3_pred_rec__0182_d2818_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "target": "RECOMMENDER",
+      "turn_speaker": "RECOMMENDER",
+      "observed": "RECOMMENDER says: 'Good evening!'",
+      "information_available": "No prior seeker utterance in this dialogue; only the recommender's own greeting is available.",
+      "preferences": "No specific preferences about the seeker or requested content are known yet. The recommender appears willing to interact politely.",
+      "belief_before": "No specific beliefs about the seeker's request or preferences.",
+      "belief_update": "The recommender has initiated the dialogue with a greeting.",
+      "belief_after": "The conversation is open; the recommender expects the seeker to respond or state a need.",
+      "emotion": "Polite, friendly, welcoming",
+      "intention": "Greet the seeker and initiate interaction.",
+      "reaction_to_other": "No other speaker turn to react to yet.",
+      "conversational_goal": "Establish contact and invite the seeker to make a request.",
+      "changes_previous_interpretation": "Not applicable; no previous turn."
+    },
+    {
+      "time": 2,
+      "target": "RECOMMENDER",
+      "turn_speaker": "SEEKER",
+      "observed": "SEEKER says: 'Hi are there any new movies out that are worth watching'",
+      "information_available": "The seeker greeted back and asked for new movies that are worth watching.",
+      "preferences": "The seeker is interested in new movies and wants recommendations for movies considered worth watching. Specific genre, mood, platform, or viewing preferences remain unknown.",
+      "belief_before": "The recommender had opened with a greeting and expected the seeker to respond or state a need.",
+      "belief_update": "Learns that the seeker wants movie recommendations, specifically about new movies worth watching.",
+      "belief_after": "The seeker is looking for current/new movie suggestions; the recommender should help by offering options or asking clarifying questions.",
+      "emotion": "Helpful, attentive, mildly positive",
+      "intention": "Respond to the movie request, possibly by suggesting new movies or clarifying the seeker's preferences.",
+      "reaction_to_other": "Acknowledges the seeker's greeting and treats the question as a request for help.",
+      "conversational_goal": "Provide useful new-movie recommendations and clarify preferences if needed.",
+      "changes_previous_interpretation": "Yes. The interaction is no longer just a greeting; it becomes a recommendation request for new movies."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"target\": \"RECOMMENDER\",\n    \"turn_speaker\": \"RECOMMENDER\",\n    \"observed\": \"RECOMMENDER says: 'Good evening!'\",\n    \"information_available\": \"No prior seeker utterance in this dialogue; only the recommender's own greeting is available.\",\n    \"preferences\": \"No specific preferences about the seeker or requested content are known yet. The recommender appears willing to interact politely.\",\n    \"belief_before\": \"No specific beliefs about the seeker's request or preferences.\",\n    \"belief_update\": \"The recommender has initiated the dialogue with a greeting.\",\n    \"belief_after\": \"The conversation is open; the recommender expects the seeker to respond or state a need.\",\n    \"emotion\": \"Polite, friendly, welcoming\",\n    \"intention\": \"Greet the seeker and initiate interaction.\",\n    \"reaction_to_other\": \"No other speaker turn to react to yet.\",\n    \"conversational_goal\": \"Establish contact and invite the seeker to make a request.\",\n    \"changes_previous_interpretation\": \"Not applicable; no previous turn.\"\n  },\n  {\n    \"time\": 2,\n    \"target\": \"RECOMMENDER\",\n    \"turn_speaker\": \"SEEKER\",\n    \"observed\": \"SEEKER says: 'Hi are there any new movies out that are worth watching'\",\n    \"information_available\": \"The seeker greeted back and asked for new movies that are worth watching.\",\n    \"preferences\": \"The seeker is interested in new movies and wants recommendations for movies considered worth watching. Specific genre, mood, platform, or viewing preferences remain unknown.\",\n    \"belief_before\": \"The recommender had opened with a greeting and expected the seeker to respond or state a need.\",\n    \"belief_update\": \"Learns that the seeker wants movie recommendations, specifically about new movies worth watching.\",\n    \"belief_after\": \"The seeker is looking for current/new movie suggestions; the recommender should help by offering options or asking clarifying questions.\",\n    \"emotion\": \"Helpful, attentive, mildly positive\",\n    \"intention\": \"Respond to the movie request, possibly by suggesting new movies or clarifying the seeker's preferences.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's greeting and treats the question as a request for help.\",\n    \"conversational_goal\": \"Provide useful new-movie recommendations and clarify preferences if needed.\",\n    \"changes_previous_interpretation\": \"Yes. The interaction is no longer just a greeting; it becomes a recommendation request for new movies.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "a",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

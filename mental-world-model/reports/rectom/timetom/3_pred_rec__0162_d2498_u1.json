@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0162_d2498_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "belief_before": "No prior information about the seeker or their needs.",
+      "belief_update": "The seeker has initiated contact with a greeting; their specific intent is not yet known.",
+      "belief_after": "The seeker is present and willing to interact, but no preferences or recommendation request have been stated.",
+      "emotion": "Neutral, open, mildly welcoming",
+      "intention": "Acknowledge the greeting and encourage the seeker to state what they need.",
+      "conversational_goal": "Establish contact and elicit the seeker's request."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"belief_before\": \"No prior information about the seeker or their needs.\",\n    \"belief_update\": \"The seeker has initiated contact with a greeting; their specific intent is not yet known.\",\n    \"belief_after\": \"The seeker is present and willing to interact, but no preferences or recommendation request have been stated.\",\n    \"emotion\": \"Neutral, open, mildly welcoming\",\n    \"intention\": \"Acknowledge the greeting and encourage the seeker to state what they need.\",\n    \"conversational_goal\": \"Establish contact and elicit the seeker's request.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": [
+    "e",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

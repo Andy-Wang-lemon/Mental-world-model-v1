@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0183_d2818_u4",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The SEEKER asked for new movies worth watching.\n- RECOMMENDER asked about genre preferences.\n- RECOMMENDER offered *Bright (2017)* as a good movie, noting it was good even without the back story.\n- SEEKER has not heard of *Bright (2017)*.\n\nRECOMMENDER does not know:\n- SEEKER’s preferred genres, because SEEKER did not answer that question.\n- Whether SEEKER is interested in *Bright* or wants more details about it.\n- What SEEKER already knows about movies in general or whether they have seen similar films.\n- What RECOMMENDER will actually say next, but the likely intent is inferable from SEEKER’s unfamiliarity with the recommendation.\n\nFrom RECOMMENDER’s perspective, SEEKER’s “never heard of that one” signals that the recommendation lacks enough context to be useful. Therefore, the natural next strategy is to explain the recommendation by giving background, plot, or reasons why it is worth watching. This matches option D.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

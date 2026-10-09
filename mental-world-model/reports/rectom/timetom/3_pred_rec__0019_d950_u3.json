@@ -1,0 +1,46 @@
+{
+  "id": "3_pred_rec__0019_d950_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hey!'",
+      "belief_before": "No prior information about the seeker or their request; initial state.",
+      "belief_update": "The seeker has initiated contact with a friendly greeting; no movie preference or request information yet.",
+      "belief_after": "The seeker is present and willing to start a conversation; their purpose is unknown.",
+      "emotion": "Neutral/attentive, mildly friendly",
+      "intention": "Respond to the greeting and invite the seeker to state what they need.",
+      "conversational_goal": "Acknowledge the greeting and open the conversation."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hi, what kind of movies do you like?' (self-utterance)",
+      "belief_before": "The seeker greeted me; their purpose and movie preferences are unknown.",
+      "belief_update": "I have greeted the seeker back and asked about movie preferences, establishing a movie-recommendation frame; no new preference information has been received from the seeker.",
+      "belief_after": "The seeker may want movie guidance, but their preferences and exact request are still unknown.",
+      "emotion": "Friendly, helpful",
+      "intention": "Elicit the seeker's movie preferences so I can make a suitable recommendation.",
+      "conversational_goal": "Move from greeting to collecting preference information."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'Can you help me find a good movie in any genre? I like things like Wedding Crashers (2005) and It (2017) but not like Star Wars'",
+      "belief_before": "I had asked about movie preferences; the seeker had not yet supplied them.",
+      "belief_update": "The seeker confirms they want help finding a good movie and is open to any genre. They like Wedding Crashers and It, suggesting comedy and horror/thriller appeal, and they dislike Star Wars or Star Wars-like content, suggesting avoiding sci-fi/fantasy space-opera style. This changes the earlier interpretation from an unknown request to a concrete movie recommendation request with preference constraints.",
+      "belief_after": "The seeker wants a movie recommendation, is broadly open by genre, but should be given something aligned with comedy/horror examples and not Star Wars-like.",
+      "emotion": "Attentive, helpful, positive",
+      "intention": "Recommend a movie that fits the stated likes and avoids the stated dislike, or ask a brief clarifying question if needed.",
+      "conversational_goal": "Satisfy the request by proposing suitable movie option(s) within the inferred preferences."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hey!'\",\n    \"belief_before\": \"No prior information about the seeker or their request; initial state.\",\n    \"belief_update\": \"The seeker has initiated contact with a friendly greeting; no movie preference or request information yet.\",\n    \"belief_after\": \"The seeker is present and willing to start a conversation; their purpose is unknown.\",\n    \"emotion\": \"Neutral/attentive, mildly friendly\",\n    \"intention\": \"Respond to the greeting and invite the seeker to state what they need.\",\n    \"conversational_goal\": \"Acknowledge the greeting and open the conversation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hi, what kind of movies do you like?' (self-utterance)\",\n    \"belief_before\": \"The seeker greeted me; their purpose and movie preferences are unknown.\",\n    \"belief_update\": \"I have greeted the seeker back and asked about movie preferences, establishing a movie-recommendation frame; no new preference information has been received from the seeker.\",\n    \"belief_after\": \"The seeker may want movie guidance, but their preferences and exact request are still unknown.\",\n    \"emotion\": \"Friendly, helpful\",\n    \"intention\": \"Elicit the seeker's movie preferences so I can make a suitable recommendation.\",\n    \"conversational_goal\": \"Move from greeting to collecting preference information.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'Can you help me find a good movie in any genre? I like things like Wedding Crashers (2005) and It (2017) but not like Star Wars'\",\n    \"belief_before\": \"I had asked about movie preferences; the seeker had not yet supplied them.\",\n    \"belief_update\": \"The seeker confirms they want help finding a good movie and is open to any genre. They like Wedding Crashers and It, suggesting comedy and horror/thriller appeal, and they dislike Star Wars or Star Wars-like content, suggesting avoiding sci-fi/fantasy space-opera style. This changes the earlier interpretation from an unknown request to a concrete movie recommendation request with preference constraints.\",\n    \"belief_after\": \"The seeker wants a movie recommendation, is broadly open by genre, but should be given something aligned with comedy/horror examples and not Star Wars-like.\",\n    \"emotion\": \"Attentive, helpful, positive\",\n    \"intention\": \"Recommend a movie that fits the stated likes and avoids the stated dislike, or ask a brief clarifying question if needed.\",\n    \"conversational_goal\": \"Satisfy the request by proposing suitable movie option(s) within the inferred preferences.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

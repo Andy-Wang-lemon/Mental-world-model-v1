@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 70,
+  "item_id": "d1127_u5",
+  "dialogue_id": "1127",
+  "utterance_pos": 5,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi, what movies you do like?\nSEEKER says: Hello I'm looking for a good Christmas movie, any genre.\nRECOMMENDER says: Okay, well Elf  (2003)  is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990) \nSEEKER says: I haven't seen Elf  (2003)  but I love Home Alone (1990) \nRECOMMENDER says: Elf is a funny movie to lift the spirits. The Holiday (2006)  is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi, what movies you do like?\nSEEKER says: Hello I'm looking for a good Christmas movie, any genre.\nRECOMMENDER says: Okay, well Elf  (2003)  is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990) \nSEEKER says: I haven't seen Elf  (2003)  but I love Home Alone (1990) \nRECOMMENDER says: Elf is a funny movie to lift the spirits. The Holiday (2006)  is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.4,
+    "c": 0.6,
+    "d": 0.2
+  },
+  "score_reason": "The seeker previously gave feedback on recommended movies, so giving feedback is the most directly supported next strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "3_pred_rec__0059_d1057_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hello!' The recommender has no additional information about the seeker, their preferences, constraints, or desired recommendation topic.",
+      "belief_before": "Before this turn, the recommender has no specific information about the seeker; only a generic expectation that a user may want a recommendation.",
+      "belief_update": "The seeker has initiated the conversation with a greeting, indicating presence and willingness to interact. No substantive request or preference has been provided yet. This is an initial turn, so no prior interpretation needs revision.",
+      "belief_after": "The recommender believes a dialogue is beginning and the seeker may soon state a request, but still knows nothing about the seeker's preferences or needs.",
+      "emotion": "Neutral, polite, and attentive; possibly mildly curious.",
+      "intention": "Respond politely to the greeting and encourage the seeker to state what they need.",
+      "conversational_goal": "Establish contact and prompt the seeker for a recommendation request or relevant topic."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hello!' The recommender has no additional information about the seeker, their preferences, constraints, or desired recommendation topic.\",\n    \"belief_before\": \"Before this turn, the recommender has no specific information about the seeker; only a generic expectation that a user may want a recommendation.\",\n    \"belief_update\": \"The seeker has initiated the conversation with a greeting, indicating presence and willingness to interact. No substantive request or preference has been provided yet. This is an initial turn, so no prior interpretation needs revision.\",\n    \"belief_after\": \"The recommender believes a dialogue is beginning and the seeker may soon state a request, but still knows nothing about the seeker's preferences or needs.\",\n    \"emotion\": \"Neutral, polite, and attentive; possibly mildly curious.\",\n    \"intention\": \"Respond politely to the greeting and encourage the seeker to state what they need.\",\n    \"conversational_goal\": \"Establish contact and prompt the seeker for a recommendation request or relevant topic.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": "e",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

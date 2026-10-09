@@ -1,0 +1,75 @@
+{
+  "id": "3_pred_rec__0090_d1495_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender greets the seeker and asks how they are and what kind of movies they are looking for.",
+      "information_available_to_target": "No specific information yet about the seeker's movie preferences; only that a recommendation dialogue is starting.",
+      "preferences": "Unknown seeker preferences.",
+      "belief_before": "The recommender does not yet know what the seeker wants to watch.",
+      "belief_update": "The recommender establishes that the seeker's genre/movie preferences are still unknown.",
+      "belief_after": "The recommender believes the seeker needs to specify a movie type before a useful recommendation can be made.",
+      "emotion": "neutral-friendly",
+      "intention": "Greet the seeker and elicit their movie preferences.",
+      "conversational_goal": "Open the recommendation conversation and ask what kind of movies the seeker is looking for.",
+      "reaction_to_other": "Not applicable; no prior seeker utterance has occurred.",
+      "changes_previous_interpretation": "No previous interpretation exists."
+    },
+    {
+      "time": 2,
+      "observed": "The seeker says hello, is good, and is looking for a drama like Extremely Loud and Incredibly Close (2011).",
+      "information_available_to_target": "The recommender now knows the seeker wants a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "preferences": "The seeker prefers drama, specifically something like Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "The recommender believed the seeker's movie preferences were unknown.",
+      "belief_update": "The seeker wants a drama recommendation similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_after": "The recommender believes the seeker wants a drama-toned recommendation related to that reference film.",
+      "emotion": "attentive/helpful",
+      "intention": "Understand the seeker's request and prepare a suitable drama recommendation.",
+      "conversational_goal": "Identify a drama that can satisfy the seeker's stated request.",
+      "reaction_to_other": "Acknowledges the seeker's genre and reference-film preference positively.",
+      "changes_previous_interpretation": "Yes; it changes the recommender's understanding from unknown preferences to a specific drama request."
+    },
+    {
+      "time": 3,
+      "observed": "The recommender suggests Road to Perdition (2002) as a good drama with Tom Hanks.",
+      "information_available_to_target": "The recommender knows the seeker wants a drama like Extremely Loud and Incredibly Close (2011), and the recommender knows Road to Perdition is a drama with Tom Hanks.",
+      "preferences": "The seeker has stated a preference for drama similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "The recommender believed the seeker wanted a drama-style recommendation.",
+      "belief_update": "Road to Perdition (2002) is a good drama with Tom Hanks and may fit the seeker's request.",
+      "belief_after": "The recommender believes Road to Perdition is a plausible recommendation for the seeker's drama request.",
+      "emotion": "helpful/confident",
+      "intention": "Offer Road to Perdition as a possible match for the seeker's drama preference.",
+      "conversational_goal": "Satisfy the seeker's request by recommending a suitable drama.",
+      "reaction_to_other": "Responds directly to the seeker's stated desire for a drama.",
+      "changes_previous_interpretation": "Yes; it shifts the recommender's stance from understanding the request to making a concrete recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "The seeker says they have not seen Road to Perdition, but they love Tom Hanks.",
+      "information_available_to_target": "The recommender now knows the seeker has not seen Road to Perdition and loves Tom Hanks.",
+      "preferences": "The seeker loves Tom Hanks and previously wanted a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "The recommender believed Road to Perdition might be a suitable drama recommendation.",
+      "belief_update": "The seeker has not seen Road to Perdition and has a strong positive preference for Tom Hanks.",
+      "belief_after": "The recommender believes Road to Perdition may be even more appealing because it stars Tom Hanks, while noting the seeker has not seen it yet.",
+      "emotion": "pleased/encouraged",
+      "intention": "Build on the seeker's Tom Hanks preference and encourage interest in the recommendation or continue toward a better match.",
+      "conversational_goal": "Use the shared interest in Tom Hanks to strengthen the recommendation and keep the dialogue productive.",
+      "reaction_to_other": "Reacts positively to the seeker's love of Tom Hanks; the seeker's not having seen the film is neutral information.",
+      "changes_previous_interpretation": "Yes; it adds a new actor preference and strengthens the fit of the Tom Hanks recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender greets the seeker and asks how they are and what kind of movies they are looking for.\",\n    \"information_available_to_target\": \"No specific information yet about the seeker's movie preferences; only that a recommendation dialogue is starting.\",\n    \"preferences\": \"Unknown seeker preferences.\",\n    \"belief_before\": \"The recommender does not yet know what the seeker wants to watch.\",\n    \"belief_update\": \"The recommender establishes that the seeker's genre/movie preferences are still unknown.\",\n    \"belief_after\": \"The recommender believes the seeker needs to specify a movie type before a useful recommendation can be made.\",\n    \"emotion\": \"neutral-friendly\",\n    \"intention\": \"Greet the seeker and elicit their movie preferences.\",\n    \"conversational_goal\": \"Open the recommendation conversation and ask what kind of movies the seeker is looking for.\",\n    \"reaction_to_other\": \"Not applicable; no prior seeker utterance has occurred.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"The seeker says hello, is good, and is looking for a drama like Extremely Loud and Incredibly Close (2011).\",\n    \"information_available_to_target\": \"The recommender now knows the seeker wants a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"preferences\": \"The seeker prefers drama, specifically something like Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"The recommender believed the seeker's movie preferences were unknown.\",\n    \"belief_update\": \"The seeker wants a drama recommendation similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_after\": \"The recommender believes the seeker wants a drama-toned recommendation related to that reference film.\",\n    \"emotion\": \"attentive/helpful\",\n    \"intention\": \"Understand the seeker's request and prepare a suitable drama recommendation.\",\n    \"conversational_goal\": \"Identify a drama that can satisfy the seeker's stated request.\",\n    \"reaction_to_other\": \"Acknowledges the seeker's genre and reference-film preference positively.\",\n    \"changes_previous_interpretation\": \"Yes; it changes the recommender's understanding from unknown preferences to a specific drama request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"The recommender suggests Road to Perdition (2002) as a good drama with Tom Hanks.\",\n    \"information_available_to_target\": \"The recommender knows the seeker wants a drama like Extremely Loud and Incredibly Close (2011), and the recommender knows Road to Perdition is a drama with Tom Hanks.\",\n    \"preferences\": \"The seeker has stated a preference for drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"The recommender believed the seeker wanted a drama-style recommendation.\",\n    \"belief_update\": \"Road to Perdition (2002) is a good drama with Tom Hanks and may fit the seeker's request.\",\n    \"belief_after\": \"The recommender believes Road to Perdition is a plausible recommendation for the seeker's drama request.\",\n    \"emotion\": \"helpful/confident\",\n    \"intention\": \"Offer Road to Perdition as a possible match for the seeker's drama preference.\",\n    \"conversational_goal\": \"Satisfy the seeker's request by recommending a suitable drama.\",\n    \"reaction_to_other\": \"Responds directly to the seeker's stated desire for a drama.\",\n    \"changes_previous_interpretation\": \"Yes; it shifts the recommender's stance from understanding the request to making a concrete recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"The seeker says they have not seen Road to Perdition, but they love Tom Hanks.\",\n    \"information_available_to_target\": \"The recommender now knows the seeker has not seen Road to Perdition and loves Tom Hanks.\",\n    \"preferences\": \"The seeker loves Tom Hanks and previously wanted a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"The recommender believed Road to Perdition might be a suitable drama recommendation.\",\n    \"belief_update\": \"The seeker has not seen Road to Perdition and has a strong positive preference for Tom Hanks.\",\n    \"belief_after\": \"The recommender believes Road to Perdition may be even more appealing because it stars Tom Hanks, while noting the seeker has not seen it yet.\",\n    \"emotion\": \"pleased/encouraged\",\n    \"intention\": \"Build on the seeker's Tom Hanks preference and encourage interest in the recommendation or continue toward a better match.\",\n    \"conversational_goal\": \"Use the shared interest in Tom Hanks to strengthen the recommendation and keep the dialogue productive.\",\n    \"reaction_to_other\": \"Reacts positively to the seeker's love of Tom Hanks; the seeker's not having seen the film is neutral information.\",\n    \"changes_previous_interpretation\": \"Yes; it adds a new actor preference and strengthens the fit of the Tom Hanks recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

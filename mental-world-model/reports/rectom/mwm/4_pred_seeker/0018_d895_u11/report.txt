@@ -1,0 +1,56 @@
+数据：4_pred_seeker
+题号：18  d895_u11
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER经验到：RECOMMENDER问favorite movies并追问是否看过The Truman Show、Rushmore、Reservoir Dogs等，不是收集中性资料，而是在触及“我是谁、我有没有品味”的自我标识；这些回答像属于SEEKER的所属物被拿上台面。与此同时，RECOMMENDER在未等到SEEKER回答前就连续抛出The Truman Show、Rushmore、The Big Lebowski、Pulp Fiction等大量片名，使“推荐”这件事在SEEKER这里呈现为不合其理：应先取得我的favorite movies，再据此筛选；大量选项本身也因此不被经验为丰盛，而被经验为未按应有的先后秩序展开。",
+      "probability": 0.3486
+    },
+    {
+      "content": "SEEKER经验到：在连续片名之后，RECOMMENDER把The River Wild描述为Kevin Bacon、Meryl Streep出演的荒野追杀、白水漂流惊悚片，并问would you like to try that one；这一刻是否尝试该片被对象化为放在SEEKER这一边的决定边界。即使RECOMMENDER先前未等SEEKER回答就抛出大量片名、未按“先取得我的favorite movies再筛选”的推荐之理展开，这个最终选择仍被经验为由SEEKER自己掌握，不易被对方的热情或片单替代。",
+      "probability": 0.3323
+    },
+    {
+      "content": "SEEKER经验到：RECOMMENDER一开口要求favorite movies，本来把“我的偏好应先被听见并纳入推荐”放到了中心；但RECOMMENDER未等回答就连续列出The Truman Show、Rushmore、The Big Lebowski、Pulp Fiction等多部片名，使这个位置在当下被对方的片单占据和跳过。于是“推荐电影”在SEEKER这里不是等待我偏好进入后再筛选，而是已经按大量片名先展开；SEEKER自己的偏好成为应该在场却被绕过的对象。",
+      "probability": 0.3191
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这些片名和看片经历不是无关紧要的资料，它们连着我认定自己是谁、有没有品味；对方一开口就问 favorite movies，又接连追问楚门、青春年少、落水狗这些，对我来说像在把我的所属物一件件拿上台面核对。更让我在意的是，他还没等我答完就抛出楚门、青春年少、大 Lebowski、低俗小说一大堆片名，这不像按我的口味来推荐，倒像跳过应有次序先把选项堆过来；所以那些选项在我这里不是丰盛，而是没落到我身上。可即便这样，我还是能在其中认出自己的偏好：迷失东京、异形、低俗小说、大 Lebowski 哪些合我，新版全面回忆哪里不对，我都有清楚判断。对没看过的狂野之河，我想先弄清它到底是什么，再决定它是否值得进入我的观影范围。",
+      "activation": 0.3762
+    },
+    {
+      "content": "RECOMMENDER 一开口要 favorite movies，我心里先立起的是：推荐应先听我的偏好，再据此筛片。可话还没落，The Truman Show、Rushmore、The Big Lebowski、Pulp Fiction 等片名已经成串压过来，我原本该在中心的位置被对方的片单占住、跳过，于是“推荐电影”变成先按他的大量选项展开，我的偏好成了应到场却被绕开的东西。这让我觉得顺序不对，大量片名也不像真按我的口味来推；但我并不因此把门关上，而是把 Lost in Translation、Aliens、Alien: Covenant 这类偏好补回场，用看过的经验去逐项裁量：喜欢的、已看过的、觉得好的、觉得新版缺了什么的，都成为我判断对方片单的依据；对没看过的 The River Wild 仍愿意问清它讲什么，再决定要不要试。",
+      "activation": 0.3153
+    },
+    {
+      "content": "我没看过《The River Wild》，对方说这是Kevin Bacon和Meryl Streep演的荒野追杀、白水漂流惊悚片，还问我要不要试试。此刻我先想知道它到底讲什么；要不要看这个决定终究落在我这里，不会因为他之前没等我回答就丢来一堆片名、也没先按我最喜欢的片子来筛，就顺势答应。片单再多、再热情，也不能替代我面对这部片时自己的判断。",
+      "activation": 0.3085
+    }
+  ],
+  "observed_action": "SEEKER 表示自己看过并喜欢《迷失东京》，喜欢《异形》和《异形：契约》；对是否看过《楚门的世界》和《青春年少》均回答是，并表示拥有两者的 DVD；表示《低俗小说》不错，但不喜欢新版《全面回忆》，觉得它缺少什么，无法确切指出，觉得《大 Lebowski》不错；对《落水狗》回应已看过；表示没看过《狂野之河》，并询问其内容。",
+  "predicted_actions": [
+    {
+      "content": "accepts a movie recommendation",
+      "probability": 0.6265
+    },
+    {
+      "content": "asks a clarifying question about a movie",
+      "probability": 0.277
+    },
+    {
+      "content": "婉拒推荐/要求换片",
+      "probability": 0.0965
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.723, "b": 0, "c": 0, "d": 0}
+选择说明：A 0.7230 = accepts a movie recommendation 0.6265 + 婉拒推荐/要求换片 0.0965；B 0.0000；C 0.0000；D 0.0000。Actions 0 and 2 are feedback on a previous recommendation, while 1 does not match any listed strategy.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

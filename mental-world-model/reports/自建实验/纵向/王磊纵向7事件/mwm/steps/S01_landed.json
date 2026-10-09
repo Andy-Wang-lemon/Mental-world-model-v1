@@ -1,0 +1,547 @@
+{
+  "events": [
+    {
+      "focus_person": "王磊",
+      "yuanwen": "高一时，王磊成绩一直在班级中下游，自己也觉得不是学习的料。一次月考后，班主任兼数学老师陈老师发现他几道难题思路很好，只是基础较差。放学后，陈老师把一本题册放到他面前：“以后每周三放学来找我，我单独给你讲半小时。先坚持一个月，敢不敢试试？”",
+      "stimulus_text": "高一时，王磊成绩一直在班级中下游，自己也觉得不是学习的料。一次月考后，班主任兼数学老师陈老师发现他几道难题思路很好，只是基础较差。放学后，陈老师把一本题册放到他面前：“以后每周三放学来找我，我单独给你讲半小时。先坚持一个月，敢不敢试试？”",
+      "stimulus_action_split": {
+        "stimulus_text": "高一时，王磊成绩一直在班级中下游，自己也觉得不是学习的料。一次月考后，班主任兼数学老师陈老师发现他几道难题思路很好，只是基础较差。放学后，陈老师把一本题册放到他面前：“以后每周三放学来找我，我单独给你讲半小时。先坚持一个月，敢不敢试试？”",
+        "has_observable_action": true,
+        "action_span": "抱题册表示先试一个月",
+        "action_description": "抱题册表示先试一个月"
+      },
+      "objective_event": {
+        "actors": [
+          "陈老师",
+          "王磊"
+        ],
+        "action": "放学后，陈老师把一本题册放到王磊面前，并对王磊说：“以后每周三放学来找我，我单独给你讲半小时。先坚持一个月，敢不敢试试？”",
+        "object": "王磊",
+        "scene": "高一时一次月考后、放学后",
+        "outcome_changes": [],
+        "role_changes": [
+          "陈老师提出承担每周三放学后对王磊单独讲半小时的辅导职责"
+        ],
+        "relationship_changes": [
+          "陈老师与王磊之间出现每周三放学后单独辅导的互动安排提议"
+        ],
+        "constraint_changes": [
+          "陈老师提出王磊每周三放学后去找他，并先坚持一个月"
+        ],
+        "resource_changes": [
+          "一本题册被放到王磊面前",
+          "每周三放学后半小时的单独辅导时间被提出"
+        ]
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "把“自己不是学习的料”当成自身不可分、难以改变的定性；陈老师指出难题思路好并提出单独辅导时，这一点仍可能被放在该定性下理解。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "把“敢不敢试试”当成对“我”胆量或能力的直接评判，是否接受每周三辅导被绑到“我行不行、敢不敢”上。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "把“成绩一直在班级中下游”当成自己所属的、与我分不开的位置；陈老师把题册放到面前并提出单独辅导时，这个位置仍可能作为自身身份被抓住。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "把陈老师提出的“每周三放学单独给我讲半小时”当成属于我的特殊关系或安排，不能只当作老师的外部职责提议。",
+          "confidence": 0.55,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "把“基础差”固定理解为学习的决定性障碍，认为即使难题思路好，也必须先解决基础才可能真正学好。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "把“成绩中下游”与“不是学习的料”固定绑定，认为成绩位置本来就说明学习能力，二者理应一致。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "把“先坚持一个月”执成一种硬性检验规则：只有完整坚持一个月才算数，否则就是不行或失败。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "把老师主动给中下游学生单独辅导固定理解为一种需要配得或回报的特殊对待，而非单纯的师生互动提议。",
+          "confidence": 0.6,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.34901158827539197,
+          "alambana_prior_probability": 0.34901158827539197,
+          "activation_alignment": 0.96,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6144000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.32719836400818003,
+          "alambana_prior_probability": 0.32719836400818003,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5760000000000002
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3237900477164281,
+          "alambana_prior_probability": 0.3237900477164281,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5700000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在王磊这里，陈老师把一本题册放到面前，并提出每周三放学后单独讲半小时、先坚持一个月，这些都被卷入一个已经定下的自我定性：成绩中下游就是自己真实的能力位置，而“不是学习的料”是这个位置不可分、难以改变的性质。于是单独辅导并不被当作对这一性质的改写，而像是附加在这个性质旁边的一次补救或暂设安排；“先坚持一个月”也被放在同一固定定性下，成为围绕这个学习者身份出现的条件，而非改变其身份的依据。",
+          "prior_probability": 0.34901158827539197,
+          "posterior_probability": 0.36153720079354873,
+          "action_compat": 0.85,
+          "action_likelihood": 0.8988241308793457,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6144000000000001,
+          "activation_alignment": 0.96,
+          "grounding_valid": true,
+          "grounding_reason": "未添加当前客观刺激中不存在的他人言行；题册、每周三放学后单独讲半小时、先坚持一个月等核心安排均被保留，相关表述属王磊的主观解释。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "在王磊的经验里，陈老师把一本题册放到面前，并提出以后每周三放学去找他、单独讲半小时、先坚持一个月，这个安排先被“自己不是学习的料”这一不可分且难改变的定性接住：单独辅导不被理解为对已有能力的确认，而是又一次落在“需要补”的位置上；连“敢不敢试试”也被放进这个定性里，成了要不要面对自己本来就是这种料的试探。与此同时，“基础差”被当成决定性的障碍，题册和每周三的半小时都被理解为必须先解决基础问题的补救安排；即使有单独辅导，也必须先把基础补好，才谈得上真正学好，否则“不是学习的料”这个定性不会被触动。",
+          "prior_probability": 0.32719836400818003,
+          "posterior_probability": 0.32704608708949445,
+          "action_compat": 0.8,
+          "action_likelihood": 0.867280163599182,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5760000000000002,
+          "activation_alignment": 0.9,
+          "grounding_valid": true,
+          "grounding_reason": "未添加他人言行；题册、每周三放学去找陈老师、单独讲半小时、先坚持一个月及“敢不敢试试”等核心提议均被保留，“基础差”“不是学习的料”属既有背景与王磊主观定性。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在王磊此刻的经验里，“敢不敢试试”被直接当成对“我”胆量和能力的当面评判，题册和每周三放学后单独辅导半小时的安排都退到这个评判后面：接受与否不再只是时间安排，而被经验成回答“我行不行、敢不敢”的方式。又因为成绩中下游被固定地看作“不是学习的料”的证据，这道评判更像是在验证那个早已该一致的能力位置，使陈老师的提议本身成为一种对胆量和资格的试探。",
+          "prior_probability": 0.3237900477164281,
+          "posterior_probability": 0.3114167121169567,
+          "action_compat": 0.75,
+          "action_likelihood": 0.8345262440354465,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5700000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "未添加客观刺激外的他人言行，均为王磊对“敢不敢试试”等的主观理解；保留了题册、每周三单独辅导和挑战这一核心变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": true,
+        "action_span": "抱题册表示先试一个月",
+        "action_description": "抱题册表示先试一个月",
+        "likelihoods": [
+          {
+            "alambana_id": "O_C1",
+            "likelihood": 0.85
+          },
+          {
+            "alambana_id": "O_C2",
+            "likelihood": 0.8
+          },
+          {
+            "alambana_id": "O_C3",
+            "likelihood": 0.75
+          }
+        ]
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.34901158827539197,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在王磊这里，陈老师把一本题册放到面前，并提出每周三放学后单独讲半小时、先坚持一个月，这些都被卷入一个已经定下的自我定性：成绩中下游就是自己真实的能力位置，而“不是学习的料”是这个位置不可分、难以改变的性质。于是单独辅导并不被当作对这一性质的改写，而像是附加在这个性质旁边的一次补救或暂设安排；“先坚持一个月”也被放在同一固定定性下，成为围绕这个学习者身份出现的条件，而非改变其身份的依据。",
+            "prior_probability": 0.34901158827539197,
+            "posterior_probability": 0.36153720079354873,
+            "action_compat": 0.85,
+            "action_likelihood": 0.8988241308793457,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6144000000000001,
+            "activation_alignment": 0.96,
+            "grounding_valid": true,
+            "grounding_reason": "未添加当前客观刺激中不存在的他人言行；题册、每周三放学后单独讲半小时、先坚持一个月等核心安排均被保留，相关表述属王磊的主观解释。"
+          },
+          "xiang": {
+            "text": "题册已经摆在我面前了。可我成绩中下游这个位置没变，不是学习的料这件事也没变，老师多讲半小时，不会把这一点抹掉。他说我几道难题思路好——那大概是碰巧，底子差才是真的我。每周三放学后半小时、先坚持一个月，听起来更像给我这个身份旁边临时搭的一级台阶、一次补救，而不是要把我换成另一个人；就算坚持下来了，一个月以后大概还是回到原来的样子。不过题册都递到跟前了，我把它抱过来，就算应下这一个月。试就试吧，反正也只是试试。",
+            "source": "推理",
+            "confidence": 0.82
+          },
+          "si": {
+            "text": "抱题册表示先试一个月",
+            "source": "原文",
+            "confidence": 0.24830092132150355
+          },
+          "mental_factors_nonzero": {
+            "无瞋": 0.24000000000000002,
+            "行舍": 0.3675,
+            "贪": 0.27999999999999997,
+            "慢": 0.3475,
+            "无明": 0.9225,
+            "疑": 0.4225,
+            "恶见": 0.7925,
+            "不信": 0.8725,
+            "懈怠": 0.6799999999999999,
+            "放逸": 0.42,
+            "昏沉": 0.17,
+            "不正知": 0.8075
+          },
+          "status": "active"
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.32719836400818003,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在王磊的经验里，陈老师把一本题册放到面前，并提出以后每周三放学去找他、单独讲半小时、先坚持一个月，这个安排先被“自己不是学习的料”这一不可分且难改变的定性接住：单独辅导不被理解为对已有能力的确认，而是又一次落在“需要补”的位置上；连“敢不敢试试”也被放进这个定性里，成了要不要面对自己本来就是这种料的试探。与此同时，“基础差”被当成决定性的障碍，题册和每周三的半小时都被理解为必须先解决基础问题的补救安排；即使有单独辅导，也必须先把基础补好，才谈得上真正学好，否则“不是学习的料”这个定性不会被触动。",
+            "prior_probability": 0.32719836400818003,
+            "posterior_probability": 0.32704608708949445,
+            "action_compat": 0.8,
+            "action_likelihood": 0.867280163599182,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5760000000000002,
+            "activation_alignment": 0.9,
+            "grounding_valid": true,
+            "grounding_reason": "未添加他人言行；题册、每周三放学去找陈老师、单独讲半小时、先坚持一个月及“敢不敢试试”等核心提议均被保留，“基础差”“不是学习的料”属既有背景与王磊主观定性。"
+          },
+          "xiang": {
+            "text": "王磊把题册抱在怀里，心里先是一紧：这大概还是因为自己底子差，得有人从头补。陈老师说他难题思路好，他不敢当真，觉得那只是老师给他找个由头；单独讲半小时、先坚持一个月，也都是先把基础填上的补救，不是说明他其实能学好。可老师已经把话说到这份上，他也不想当场退缩，于是决定先试一个月。只是他盘算着，就算去了、补了，自己是不是学习的料这个事也不会因此改变；得等基础真的补起来，才轮得到谈学得好不好。",
+            "source": "推理",
+            "confidence": 0.85
+          },
+          "si": {
+            "text": "抱题册表示先试一个月",
+            "source": "原文",
+            "confidence": 0.24830092132150355
+          },
+          "mental_factors_nonzero": {
+            "精进": 0.3025,
+            "无瞋": 0.35,
+            "不放逸": 0.245,
+            "行舍": 0.34,
+            "不覆": 0.345,
+            "贪": 0.21,
+            "慢": 0.3625,
+            "无明": 0.9075,
+            "疑": 0.2625,
+            "恶见": 0.655,
+            "不信": 0.7424999999999999,
+            "昏沉": 0.22,
+            "不正知": 0.8375
+          },
+          "status": "active"
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.3237900477164281,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在王磊此刻的经验里，“敢不敢试试”被直接当成对“我”胆量和能力的当面评判，题册和每周三放学后单独辅导半小时的安排都退到这个评判后面：接受与否不再只是时间安排，而被经验成回答“我行不行、敢不敢”的方式。又因为成绩中下游被固定地看作“不是学习的料”的证据，这道评判更像是在验证那个早已该一致的能力位置，使陈老师的提议本身成为一种对胆量和资格的试探。",
+            "prior_probability": 0.3237900477164281,
+            "posterior_probability": 0.3114167121169567,
+            "action_compat": 0.75,
+            "action_likelihood": 0.8345262440354465,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5700000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "未添加客观刺激外的他人言行，均为王磊对“敢不敢试试”等的主观理解；保留了题册、每周三单独辅导和挑战这一核心变化。"
+          },
+          "xiang": {
+            "text": "王磊觉得陈老师那句“敢不敢试试”是在当面掂量他：敢不敢接，有没有这个资格。题册和每周三放学后的半小时都退到后面，真正被摆到台面上的是——他是不是只能停在“不是学习的料”这个位置上。成绩中下游本来已经让他认了，可这句问法让他不能直接摇头，不然就等于承认自己连试一下的胆量都没有。他抱紧题册，心里想着先试一个月，不是为了马上变好，而是至少得让这个试探落在一个“敢”字上。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "抱题册表示先试一个月",
+            "source": "原文",
+            "confidence": 0.24830092132150355
+          },
+          "mental_factors_nonzero": {
+            "精进": 0.49,
+            "无瞋": 0.27,
+            "行舍": 0.26249999999999996,
+            "贪": 0.40499999999999997,
+            "慢": 0.477,
+            "无明": 0.8925,
+            "恶见": 0.5675,
+            "放逸": 0.27999999999999997,
+            "昏沉": 0.105,
+            "不正知": 0.6675
+          },
+          "status": "active"
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "精进": 0.2576346284935242,
+        "无瞋": 0.28570552147239264,
+        "不放逸": 0.08016359918200411,
+        "行舍": 0.32450408997955016,
+        "不覆": 0.1128834355828221,
+        "贪": 0.29756987048398087,
+        "慢": 0.39433878663940014,
+        "无明": 0.9078783231083845,
+        "疑": 0.23334696659850035,
+        "恶见": 0.674657464212679,
+        "不信": 0.5474573960463531,
+        "懈怠": 0.2373278800272665,
+        "放逸": 0.2372460804362645,
+        "昏沉": 0.1653135650988412,
+        "不正知": 0.7719853442399456
+      },
+      "mental_factors_final_nonzero": {
+        "精进": 0.2576346284935242,
+        "无瞋": 0.28570552147239264,
+        "不放逸": 0.08016359918200411,
+        "行舍": 0.32450408997955016,
+        "不覆": 0.1128834355828221,
+        "贪": 0.29756987048398087,
+        "慢": 0.39433878663940014,
+        "无明": 0.9078783231083845,
+        "疑": 0.23334696659850035,
+        "恶见": 0.674657464212679,
+        "不信": 0.5474573960463531,
+        "懈怠": 0.2373278800272665,
+        "放逸": 0.2372460804362645,
+        "昏沉": 0.1653135650988412,
+        "不正知": 0.7719853442399456
+      },
+      "cognition_candidates": {
+        "fresh_count_raw": 8,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 8,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 0,
+        "distinct_candidate_count": 0,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "mental_episode_count": 1,
+        "injected_bias_frames": [],
+        "h_prior": {
+          "working_set": [],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "cross_branch_event",
+          "lambda_eff": 0.0
+        },
+        "cognitive_frames": [
+          {
+            "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+            "mass": 0.36153720079354873
+          },
+          {
+            "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+            "mass": 0.32704608708949445
+          },
+          {
+            "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+            "mass": 0.3114167121169567
+          }
+        ]
+      }
+    }
+  ],
+  "focus_person": "王磊",
+  "llm_usage": {
+    "total_calls": 212,
+    "total_duration_ms": 1544085.0993359487,
+    "wall_clock_ms": 129308.38432999735
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "landed",
+    "step_id": "S01",
+    "event_index": 1,
+    "stimulus": "高一时，王磊成绩一直在班级中下游，自己也觉得不是学习的料。一次月考后，班主任兼数学老师陈老师发现他几道难题思路很好，只是基础较差。放学后，陈老师把一本题册放到他面前：“以后每周三放学来找我，我单独给你讲半小时。先坚持一个月，敢不敢试试？”",
+    "landed_action": "抱题册表示先试一个月",
+    "landed_probability": 0.24830092132150355,
+    "continuity_before": {
+      "person_id": "王磊",
+      "event_count": 0,
+      "mental_episode_count": 0,
+      "cognitive_frame_count": 0
+    },
+    "continuity_after": {
+      "person_id": "王磊",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 3
+    },
+    "cognitive_frames_after": [
+      {
+        "id": "bf_1",
+        "text": "陈老师把题册放到王磊面前并提出每周三放学后单独辅导半小时、先坚持一个月，而王磊把这件事理解为在自己“成绩中下游、不是学习的料”这一固定位置旁边临时添加的补救台阶；从此类似的额外辅导和短期尝试都被他当作不改变学习能力判断的条件性安排，而非重新确认或改写其身份的线索。",
+        "mass": 0.3615
+      },
+      {
+        "id": "bf_2",
+        "text": "陈老师指出王磊几道难题思路好并提供每周三单独辅导、先坚持一个月，王磊却把“基础差”当成决定学习的首要障碍，把题册和辅导看成先补基础、再谈学好的补救安排；从此类似的额外教学和短期坚持都被他理解为必须先扫清基础缺陷才可能改变学习结果，而非对已有思路能力的确认。",
+        "mass": 0.327
+      },
+      {
+        "id": "bf_3",
+        "text": "陈老师用“敢不敢试试”邀请王磊每周三放学后单独辅导一个月，王磊却把这一邀请当作对自己胆量与资格的当面评判，并把成绩中下游固定为“不是学习的料”的证据；从此类似的挑战式提议都被他理解为需要先证明“敢不敢、行不行”的资格试探，而非单纯的教学安排。",
+        "mass": 0.3114
+      }
+    ],
+    "mental_episodes_after": [
+      {
+        "event_id": "e1",
+        "theta": 0.82,
+        "text_summary": "高一时，王磊成绩一直在班级中下游，自己也觉得不是学习的料。一次月考后，班主任兼数学老师陈老师发现他几道难题思路很好，只是基础较差。放学后，陈老师把一本题册放到他面前：“以后每周三放学来找我，我单独给你讲半小时。先坚持一个月，敢不敢试试？”"
+      }
+    ]
+  }
+}

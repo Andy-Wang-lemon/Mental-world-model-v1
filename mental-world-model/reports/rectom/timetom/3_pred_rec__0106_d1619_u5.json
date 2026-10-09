@@ -1,0 +1,70 @@
+{
+  "id": "3_pred_rec__0106_d1619_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.",
+      "belief_before": "No prior information about this seeker; no established preferences or mental model yet.",
+      "belief_update": "A new user is greeting me and explicitly requesting drama/thriller recommendations.",
+      "belief_after": "The seeker wants drama/thriller films but has not yet given specific taste cues.",
+      "emotion": "Neutral, attentive, and ready to help.",
+      "intention": "Respond politely and begin gathering more information about the user's taste.",
+      "conversational_goal": "Establish a helpful recommender role and identify suitable drama/thriller options."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: im good yourself?",
+      "belief_before": "The seeker greeted me and asked how I am; they are looking for drama/thriller recommendations.",
+      "belief_update": "I should reciprocate the social greeting while keeping the conversation open for more preferences.",
+      "belief_after": "The conversation is now socially engaged; the user still has an open drama/thriller request.",
+      "emotion": "Friendly, casual, and approachable.",
+      "intention": "Answer their greeting and ask 'yourself?' to maintain rapport and encourage further dialogue.",
+      "conversational_goal": "Build a friendly tone before moving into actual recommendation territory."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: I love movies like Double Jeopardy  (1999)",
+      "belief_before": "The seeker wants drama/thriller movies but I do not know their specific taste yet.",
+      "belief_update": "The user likes Double Jeopardy, a crime thriller with suspense and a wrongfully accused protagonist.",
+      "belief_after": "The user likely enjoys 1990s-style thrillers with strong suspense, crime elements, and tense plots.",
+      "emotion": "More focused and confident about the type of film to suggest.",
+      "intention": "Use Double Jeopardy as a reference point for finding similar thrillers.",
+      "conversational_goal": "Tailor future recommendations to match the tone and era of Double Jeopardy."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Okay let me see....... have you seen The Resident (2011)  with Hilary Swank?...Also Nocturnal Animals  (2016)  is also a good one.",
+      "belief_before": "The user likes Double Jeopardy and is looking for drama/thriller films.",
+      "belief_update": "I can offer The Resident and Nocturnal Animals as possible matches, then check whether the user has seen them.",
+      "belief_after": "I have proposed two thriller options; the user's response will help narrow down their taste further.",
+      "emotion": "Helpful, slightly tentative while thinking of options.",
+      "intention": "Recommend two films and ask whether the user has seen them to gauge fit.",
+      "conversational_goal": "Move from broad preference gathering to concrete recommendations and feedback."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: Kiss the Girls  (1997)  is another one my favorites. Is that the movie when the guy from greys anatomy is a stalker and looks in her room?...Because that is a great movie!...I watched Nocturnal Animals  (2016)  but it was a little confusing for me.",
+      "belief_before": "The user likes Double Jeopardy and I have suggested The Resident and Nocturnal Animals.",
+      "belief_update": "The user also likes Kiss the Girls, another 1990s crime thriller. They may be confusing Kiss the Girls with The Resident when mentioning a 'Grey's Anatomy' actor as a stalker, since The Resident fits that description. Nocturnal Animals was too confusing for them.",
+      "belief_after": "The user prefers straightforward 1990s-style crime thrillers with clear suspense rather than ambiguous arthouse thrillers. There may be a film mix-up to clarify.",
+      "emotion": "Engaged and attentive, but slightly concerned about the possible confusion between titles.",
+      "intention": "Acknowledge Kiss the Girls, clarify which film has the Grey's Anatomy stalker, and avoid recommending confusing thrillers next.",
+      "conversational_goal": "Keep recommendations aligned with the user's favorite style while clearing up any misunderstanding and refining future suggestions."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.\",\n    \"belief_before\": \"No prior information about this seeker; no established preferences or mental model yet.\",\n    \"belief_update\": \"A new user is greeting me and explicitly requesting drama/thriller recommendations.\",\n    \"belief_after\": \"The seeker wants drama/thriller films but has not yet given specific taste cues.\",\n    \"emotion\": \"Neutral, attentive, and ready to help.\",\n    \"intention\": \"Respond politely and begin gathering more information about the user's taste.\",\n    \"conversational_goal\": \"Establish a helpful recommender role and identify suitable drama/thriller options.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: im good yourself?\",\n    \"belief_before\": \"The seeker greeted me and asked how I am; they are looking for drama/thriller recommendations.\",\n    \"belief_update\": \"I should reciprocate the social greeting while keeping the conversation open for more preferences.\",\n    \"belief_after\": \"The conversation is now socially engaged; the user still has an open drama/thriller request.\",\n    \"emotion\": \"Friendly, casual, and approachable.\",\n    \"intention\": \"Answer their greeting and ask 'yourself?' to maintain rapport and encourage further dialogue.\",\n    \"conversational_goal\": \"Build a friendly tone before moving into actual recommendation territory.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: I love movies like Double Jeopardy  (1999)\",\n    \"belief_before\": \"The seeker wants drama/thriller movies but I do not know their specific taste yet.\",\n    \"belief_update\": \"The user likes Double Jeopardy, a crime thriller with suspense and a wrongfully accused protagonist.\",\n    \"belief_after\": \"The user likely enjoys 1990s-style thrillers with strong suspense, crime elements, and tense plots.\",\n    \"emotion\": \"More focused and confident about the type of film to suggest.\",\n    \"intention\": \"Use Double Jeopardy as a reference point for finding similar thrillers.\",\n    \"conversational_goal\": \"Tailor future recommendations to match the tone and era of Double Jeopardy.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Okay let me see....... have you seen The Resident (2011)  with Hilary Swank?...Also Nocturnal Animals  (2016)  is also a good one.\",\n    \"belief_before\": \"The user likes Double Jeopardy and is looking for drama/thriller films.\",\n    \"belief_update\": \"I can offer The Resident and Nocturnal Animals as possible matches, then check whether the user has seen them.\",\n    \"belief_after\": \"I have proposed two thriller options; the user's response will help narrow down their taste further.\",\n    \"emotion\": \"Helpful, slightly tentative while thinking of options.\",\n    \"intention\": \"Recommend two films and ask whether the user has seen them to gauge fit.\",\n    \"conversational_goal\": \"Move from broad preference gathering to concrete recommendations and feedback.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: Kiss the Girls  (1997)  is another one my favorites. Is that the movie when the guy from greys anatomy is a stalker and looks in her room?...Because that is a great movie!...I watched Nocturnal Animals  (2016)  but it was a little confusing for me.\",\n    \"belief_before\": \"The user likes Double Jeopardy and I have suggested The Resident and Nocturnal Animals.\",\n    \"belief_update\": \"The user also likes Kiss the Girls, another 1990s crime thriller. They may be confusing Kiss the Girls with The Resident when mentioning a 'Grey's Anatomy' actor as a stalker, since The Resident fits that description. Nocturnal Animals was too confusing for them.\",\n    \"belief_after\": \"The user prefers straightforward 1990s-style crime thrillers with clear suspense rather than ambiguous arthouse thrillers. There may be a film mix-up to clarify.\",\n    \"emotion\": \"Engaged and attentive, but slightly concerned about the possible confusion between titles.\",\n    \"intention\": \"Acknowledge Kiss the Girls, clarify which film has the Grey's Anatomy stalker, and avoid recommending confusing thrillers next.\",\n    \"conversational_goal\": \"Keep recommendations aligned with the user's favorite style while clearing up any misunderstanding and refining future suggestions.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

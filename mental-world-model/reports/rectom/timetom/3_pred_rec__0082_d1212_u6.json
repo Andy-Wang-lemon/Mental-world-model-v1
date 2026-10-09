@@ -1,0 +1,103 @@
+{
+  "id": "3_pred_rec__0082_d1212_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender opens the dialogue by greeting the seeker and asking what kind of movies they are looking for.",
+      "information_available": "No prior seeker preferences or history are available; only the recommender's own opening question.",
+      "preferences": "Recommender's own movie preferences are not stated; acting as recommender, they initially treat the seeker's preferences as unknown.",
+      "belief_before": "Recommender has no information about the seeker's movie tastes.",
+      "belief_update": "The recommender initiates preference elicitation; no seeker information is received yet.",
+      "belief_after": "Recommender believes the seeker's movie preferences are still unknown.",
+      "emotion": "Neutral, polite, attentive.",
+      "intention": "Elicit the seeker's movie preferences.",
+      "reaction_to_other_speaker": "No other-speaker content yet.",
+      "conversational_goal": "Start the recommendation dialogue and gather initial preferences.",
+      "changes_previous_interpretation": "Initial turn; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says they want good science fiction movies that do not deal with superheroes.",
+      "information_available": "Recommender learns the seeker's genre preference and an exclusion criterion.",
+      "preferences": "Seeker prefers good science fiction and explicitly does not want superhero movies.",
+      "belief_before": "Recommender believed the seeker's movie preferences were unknown.",
+      "belief_update": "Seeker wants good non-superhero science fiction.",
+      "belief_after": "Recommender believes the seeker wants good science fiction without superhero elements, and has no seen-title information yet.",
+      "emotion": "Attentive, helpful, positive.",
+      "intention": "Use the stated genre and exclusion to formulate suitable recommendations.",
+      "reaction_to_other_speaker": "Receptive to the seeker's clarified preference.",
+      "conversational_goal": "Confirm the recommendation constraints and prepare candidate suggestions.",
+      "changes_previous_interpretation": "Yes; the seeker moves from unknown preferences to a clear genre and constraint."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks whether the seeker has seen Soylent Green (1973), calling it a classic.",
+      "information_available": "Recommender has the seeker's preference for good non-superhero science fiction; no seen-title information is known yet.",
+      "preferences": "Recommender treats Soylent Green as a classic science fiction candidate fitting the non-superhero constraint.",
+      "belief_before": "Recommender believes the seeker wants good non-superhero science fiction and does not yet know what the seeker has seen.",
+      "belief_update": "Recommender proposes Soylent Green as a possible classic science fiction recommendation and checks whether the seeker has seen it.",
+      "belief_after": "Recommender believes Soylent Green may fit the stated preferences, but the seeker's familiarity is unknown.",
+      "emotion": "Helpful, mildly enthusiastic about a classic.",
+      "intention": "Check whether Soylent Green is a viable recommendation for the seeker.",
+      "reaction_to_other_speaker": "No new reaction from the seeker yet; recommender is acting on the prior preference statement.",
+      "conversational_goal": "Offer a candidate and determine whether it has already been seen.",
+      "changes_previous_interpretation": "No new seeker information; recommender acts on the existing genre and exclusion preference."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have not seen Soylent Green, but they already know the twist.",
+      "information_available": "Recommender learns that Soylent Green is unseen but its twist is already known.",
+      "preferences": "Recommender may infer that a known twist reduces the value of Soylent Green as a fresh recommendation, though this is not stated explicitly.",
+      "belief_before": "Recommender believed Soylent Green might fit the seeker's non-superhero science fiction preference, but did not know if the seeker had seen it.",
+      "belief_update": "Seeker has not seen Soylent Green, but already knows its twist.",
+      "belief_after": "Recommender likely believes Soylent Green is less useful as a fresh recommendation because its twist is spoiled; another suggestion may be needed.",
+      "emotion": "Polite, slightly uncertain or disappointed; re-evaluating the candidate.",
+      "intention": "Adjust away from Soylent Green as a primary recommendation and consider another option.",
+      "reaction_to_other_speaker": "Acknowledges the seeker's response and treats the known twist as a limitation.",
+      "conversational_goal": "Find a science fiction recommendation that the seeker has not already had spoiled.",
+      "changes_previous_interpretation": "Yes; Soylent Green is now less suitable as a recommendation because the seeker knows its twist."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says 'Oh ok' and then says they are sure the seeker has probably seen E.T. the Extra-Terrestrial (1982).",
+      "information_available": "Recommender knows the seeker wants good non-superhero science fiction, has not seen Soylent Green, and already knows Soylent Green's twist.",
+      "preferences": "Recommender assumes E.T. is likely already seen; E.T. fits non-superhero science fiction but may not satisfy the need for novelty.",
+      "belief_before": "Recommender believed Soylent Green was less ideal because its twist is known, and still needed another suitable option.",
+      "belief_update": "Recommender acknowledges the Soylent Green response and shifts to checking whether the seeker has seen E.T.",
+      "belief_after": "Recommender believes E.T. is likely already seen; if confirmed, it is not a new recommendation, but it may serve as a familiar reference point.",
+      "emotion": "Conversational, mildly confident, gauging the seeker's familiarity.",
+      "intention": "Check whether E.T. has been seen and use that to calibrate further recommendations.",
+      "reaction_to_other_speaker": "Accepts the seeker's Soylent Green information and pivots to another classic science fiction title.",
+      "conversational_goal": "Determine the seeker's familiarity with well-known science fiction films and find an unseen option.",
+      "changes_previous_interpretation": "Yes; the recommender moves from Soylent Green toward E.T. as a new familiarity check."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says yes, they have seen E.T. and thought it was pretty good.",
+      "information_available": "Recommender learns that the seeker has seen E.T. and liked it.",
+      "preferences": "Seeker appears to like classic or accessible non-superhero science fiction such as E.T.; novelty still matters because E.T. is already seen.",
+      "belief_before": "Recommender believed E.T. was probably already seen and was awaiting confirmation.",
+      "belief_update": "Seeker confirms having seen E.T. and having liked it.",
+      "belief_after": "Recommender believes E.T. is seen and liked, so it is not a new recommendation; the seeker likely enjoys classic/accessible non-superhero science fiction. Soylent Green remains unseen but twist-known.",
+      "emotion": "Pleased, encouraged, positive.",
+      "intention": "Use the seeker's liking of E.T. as a taste signal and look for an unseen non-superhero science fiction recommendation.",
+      "reaction_to_other_speaker": "Positive reaction; sees some common ground in the seeker's enjoyment of E.T.",
+      "conversational_goal": "Refine the recommendation using confirmed taste information and propose a new suitable movie.",
+      "changes_previous_interpretation": "Yes; E.T. is now known to have been seen and liked, so it is removed as a new candidate and becomes a taste reference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender opens the dialogue by greeting the seeker and asking what kind of movies they are looking for.\",\n    \"information_available\": \"No prior seeker preferences or history are available; only the recommender's own opening question.\",\n    \"preferences\": \"Recommender's own movie preferences are not stated; acting as recommender, they initially treat the seeker's preferences as unknown.\",\n    \"belief_before\": \"Recommender has no information about the seeker's movie tastes.\",\n    \"belief_update\": \"The recommender initiates preference elicitation; no seeker information is received yet.\",\n    \"belief_after\": \"Recommender believes the seeker's movie preferences are still unknown.\",\n    \"emotion\": \"Neutral, polite, attentive.\",\n    \"intention\": \"Elicit the seeker's movie preferences.\",\n    \"reaction_to_other_speaker\": \"No other-speaker content yet.\",\n    \"conversational_goal\": \"Start the recommendation dialogue and gather initial preferences.\",\n    \"changes_previous_interpretation\": \"Initial turn; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says they want good science fiction movies that do not deal with superheroes.\",\n    \"information_available\": \"Recommender learns the seeker's genre preference and an exclusion criterion.\",\n    \"preferences\": \"Seeker prefers good science fiction and explicitly does not want superhero movies.\",\n    \"belief_before\": \"Recommender believed the seeker's movie preferences were unknown.\",\n    \"belief_update\": \"Seeker wants good non-superhero science fiction.\",\n    \"belief_after\": \"Recommender believes the seeker wants good science fiction without superhero elements, and has no seen-title information yet.\",\n    \"emotion\": \"Attentive, helpful, positive.\",\n    \"intention\": \"Use the stated genre and exclusion to formulate suitable recommendations.\",\n    \"reaction_to_other_speaker\": \"Receptive to the seeker's clarified preference.\",\n    \"conversational_goal\": \"Confirm the recommendation constraints and prepare candidate suggestions.\",\n    \"changes_previous_interpretation\": \"Yes; the seeker moves from unknown preferences to a clear genre and constraint.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks whether the seeker has seen Soylent Green (1973), calling it a classic.\",\n    \"information_available\": \"Recommender has the seeker's preference for good non-superhero science fiction; no seen-title information is known yet.\",\n    \"preferences\": \"Recommender treats Soylent Green as a classic science fiction candidate fitting the non-superhero constraint.\",\n    \"belief_before\": \"Recommender believes the seeker wants good non-superhero science fiction and does not yet know what the seeker has seen.\",\n    \"belief_update\": \"Recommender proposes Soylent Green as a possible classic science fiction recommendation and checks whether the seeker has seen it.\",\n    \"belief_after\": \"Recommender believes Soylent Green may fit the stated preferences, but the seeker's familiarity is unknown.\",\n    \"emotion\": \"Helpful, mildly enthusiastic about a classic.\",\n    \"intention\": \"Check whether Soylent Green is a viable recommendation for the seeker.\",\n    \"reaction_to_other_speaker\": \"No new reaction from the seeker yet; recommender is acting on the prior preference statement.\",\n    \"conversational_goal\": \"Offer a candidate and determine whether it has already been seen.\",\n    \"changes_previous_interpretation\": \"No new seeker information; recommender acts on the existing genre and exclusion preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have not seen Soylent Green, but they already know the twist.\",\n    \"information_available\": \"Recommender learns that Soylent Green is unseen but its twist is already known.\",\n    \"preferences\": \"Recommender may infer that a known twist reduces the value of Soylent Green as a fresh recommendation, though this is not stated explicitly.\",\n    \"belief_before\": \"Recommender believed Soylent Green might fit the seeker's non-superhero science fiction preference, but did not know if the seeker had seen it.\",\n    \"belief_update\": \"Seeker has not seen Soylent Green, but already knows its twist.\",\n    \"belief_after\": \"Recommender likely believes Soylent Green is less useful as a fresh recommendation because its twist is spoiled; another suggestion may be needed.\",\n    \"emotion\": \"Polite, slightly uncertain or disappointed; re-evaluating the candidate.\",\n    \"intention\": \"Adjust away from Soylent Green as a primary recommendation and consider another option.\",\n    \"reaction_to_other_speaker\": \"Acknowledges the seeker's response and treats the known twist as a limitation.\",\n    \"conversational_goal\": \"Find a science fiction recommendation that the seeker has not already had spoiled.\",\n    \"changes_previous_interpretation\": \"Yes; Soylent Green is now less suitable as a recommendation because the seeker knows its twist.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says 'Oh ok' and then says they are sure the seeker has probably seen E.T. the Extra-Terrestrial (1982).\",\n    \"information_available\": \"Recommender knows the seeker wants good non-superhero science fiction, has not seen Soylent Green, and already knows Soylent Green's twist.\",\n    \"preferences\": \"Recommender assumes E.T. is likely already seen; E.T. fits non-superhero science fiction but may not satisfy the need for novelty.\",\n    \"belief_before\": \"Recommender believed Soylent Green was less ideal because its twist is known, and still needed another suitable option.\",\n    \"belief_update\": \"Recommender acknowledges the Soylent Green response and shifts to checking whether the seeker has seen E.T.\",\n    \"belief_after\": \"Recommender believes E.T. is likely already seen; if confirmed, it is not a new recommendation, but it may serve as a familiar reference point.\",\n    \"emotion\": \"Conversational, mildly confident, gauging the seeker's familiarity.\",\n    \"intention\": \"Check whether E.T. has been seen and use that to calibrate further recommendations.\",\n    \"reaction_to_other_speaker\": \"Accepts the seeker's Soylent Green information and pivots to another classic science fiction title.\",\n    \"conversational_goal\": \"Determine the seeker's familiarity with well-known science fiction films and find an unseen option.\",\n    \"changes_previous_interpretation\": \"Yes; the recommender moves from Soylent Green toward E.T. as a new familiarity check.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says yes, they have seen E.T. and thought it was pretty good.\",\n    \"information_available\": \"Recommender learns that the seeker has seen E.T. and liked it.\",\n    \"preferences\": \"Seeker appears to like classic or accessible non-superhero science fiction such as E.T.; novelty still matters because E.T. is already seen.\",\n    \"belief_before\": \"Recommender believed E.T. was probably already seen and was awaiting confirmation.\",\n    \"belief_update\": \"Seeker confirms having seen E.T. and having liked it.\",\n    \"belief_after\": \"Recommender believes E.T. is seen and liked, so it is not a new recommendation; the seeker likely enjoys classic/accessible non-superhero science fiction. Soylent Green remains unseen but twist-known.\",\n    \"emotion\": \"Pleased, encouraged, positive.\",\n    \"intention\": \"Use the seeker's liking of E.T. as a taste signal and look for an unseen non-superhero science fiction recommendation.\",\n    \"reaction_to_other_speaker\": \"Positive reaction; sees some common ground in the seeker's enjoyment of E.T.\",\n    \"conversational_goal\": \"Refine the recommendation using confirmed taste information and propose a new suitable movie.\",\n    \"changes_previous_interpretation\": \"Yes; E.T. is now known to have been seen and liked, so it is removed as a new candidate and becomes a taste reference.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

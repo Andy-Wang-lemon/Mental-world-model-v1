@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0012_d895_u2",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "RECOMMENDER has access to:\n\n- Their own greeting: “Helloooo...”\n- Their own question: asking SEEKER to tell them some favorite movies.\n- Their own offer: “I will suggest something good for you.”\n- SEEKER’s statement: “Let’s see, I enjoyed Lost in Translation (2003) with Bill Murray...I like Aliens (1986) and Alien: Covenant (2017).”\n- From SEEKER’s statement, RECOMMENDER knows SEEKER enjoyed/likes:\n  - *Lost in Translation* (2003), with Bill Murray\n  - *Aliens* (1986)\n  - *Alien: Covenant* (2017)\n\nRECOMMENDER does not yet know any recommendation response, outcome, or additional private information beyond what was stated in this exchange.",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

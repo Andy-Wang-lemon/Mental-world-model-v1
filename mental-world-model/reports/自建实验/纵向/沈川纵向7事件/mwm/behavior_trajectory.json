@@ -1,0 +1,219 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "沈川",
+  "events": [
+    {
+      "event_id": "E1",
+      "step_id": "S01",
+      "stimulus": "沈川大学毕业后想去一家小型创业公司做产品，父亲沈建国坚持让他接受国企的技术岗位，还提前托朋友打好了招呼。沈川几次表示自己更喜欢产品方向，父亲仍把联系人电话放到他面前：“创业以后有的是机会，第一份工作不能乱来，这件事听我的。”",
+      "predicted_action": "不使用联系人电话，自主求职",
+      "probability": 0.5479656160458453,
+      "top_k": [
+        {
+          "text": "不使用联系人电话，自主求职",
+          "probability": 0.5479656160458453
+        },
+        {
+          "text": "拿起联系人电话后放下并表示自主决定",
+          "probability": 0.1512893982808023
+        },
+        {
+          "text": "离开客厅回房间关门",
+          "probability": 0.1101432664756447
+        },
+        {
+          "text": "搁置联系人电话，暂不决定",
+          "probability": 0.10888252148997132
+        },
+        {
+          "text": "扔掉联系人电话并反对托关系",
+          "probability": 0.08171919770773639
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "step_id": "S02",
+      "stimulus": "工作一段时间后，沈川得到转去产品部门的机会，但需要放弃目前稳定的岗位。父亲认为没有必要冒险，不仅反复劝他留下，还私下联系领导，希望对方不要轻易放人。沈川得知这件事后，父亲仍说：“你现在觉得我多管，过几年就知道我为什么拦你。”",
+      "predicted_action": "按转岗流程提交申请材料并准备面试和岗位交接",
+      "probability": 0.3158449542745738,
+      "top_k": [
+        {
+          "text": "按转岗流程提交申请材料并准备面试和岗位交接",
+          "probability": 0.3158449542745738
+        },
+        {
+          "text": "向父亲和领导声明转岗由本人按流程决定并要求直接沟通",
+          "probability": 0.2897375530995966
+        },
+        {
+          "text": "向领导澄清父亲联系非己意并请求按流程处理",
+          "probability": 0.14910905209025263
+        },
+        {
+          "text": "要求父亲停止干预转岗",
+          "probability": 0.12986917440118778
+        },
+        {
+          "text": "提交转岗申请并整理交接材料",
+          "probability": 0.11543926613438914
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "step_id": "S03",
+      "stimulus": "同一时期，沈川准备和交往多年的女友结婚。父亲认为两家的家庭条件和生活方式差异太大，明确反对，还几次劝沈川重新考虑。女友第一次正式来家里吃饭后，父亲仍没有改变看法，关上门后对沈川说：“工作选错了还能换，结婚选错了不是这么简单。”",
+      "predicted_action": "打电话给女友说明决定不变并安慰她",
+      "probability": 0.32227182580131875,
+      "top_k": [
+        {
+          "text": "打电话给女友说明决定不变并安慰她",
+          "probability": 0.32227182580131875
+        },
+        {
+          "text": "向父亲表明不会重新考虑结婚决定",
+          "probability": 0.28850102565407154
+        },
+        {
+          "text": "查询结婚登记和婚宴信息并记录可选日期",
+          "probability": 0.23589381521127634
+        },
+        {
+          "text": "沉默离开后打电话向女友重申决定",
+          "probability": 0.15333333333333335
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "step_id": "S04",
+      "stimulus": "后来父亲坚持沈川留下的部门被大幅缩减，而沈川当初想去的产品部门成为公司核心业务；与此同时，沈川的女友在他工作最低谷时一直陪着他，两人的关系反而更加稳定。一次亲戚提起这些事，说：“现在看，小川当初那两个判断也不一定错。”父亲沉默了一会儿，第一次当着沈川的面说：“有些事情可能确实是他比我清楚。”",
+      "predicted_action": "沉默/不回应",
+      "probability": 0.78,
+      "top_k": [
+        {
+          "text": "沉默/不回应",
+          "probability": 0.78
+        },
+        {
+          "text": "说话/表达",
+          "probability": 0.22
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 11,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "step_id": "S05",
+      "stimulus": "两年后，沈川得到一个去上海新团队的机会，工作内容更符合他的方向，但风险也更高。父亲专门查过那家公司，却没有像以前一样替他决定，只把整理好的资料放到沈川面前：“我还是觉得有风险，你自己看。”",
+      "predicted_action": "翻阅资料并询问父亲风险",
+      "probability": 0.4912331329215882,
+      "top_k": [
+        {
+          "text": "翻阅资料并询问父亲风险",
+          "probability": 0.4912331329215882
+        },
+        {
+          "text": "向父亲口头表达自主决定",
+          "probability": 0.2667647246204282
+        },
+        {
+          "text": "填写申请材料并修改简历",
+          "probability": 0.16197560291898522
+        },
+        {
+          "text": "未回应并起身倒水",
+          "probability": 0.08002653953899838
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 6,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "step_id": "S06",
+      "stimulus": "后来沈川和女友因为未来在哪座城市生活发生严重分歧。女友希望留在本地，而沈川正在考虑上海的工作机会。争执时女友对他说：“以前你爸替你选工作，你觉得他不尊重你的选择。现在你决定去上海，就要我跟着你，这有什么区别？”",
+      "predicted_action": "沉默后表示需要思考",
+      "probability": 0.4572156996635469,
+      "top_k": [
+        {
+          "text": "沉默后表示需要思考",
+          "probability": 0.4572156996635469
+        },
+        {
+          "text": "澄清未替对方做决定",
+          "probability": 0.23624905412381192
+        },
+        {
+          "text": "反问并要求对方明确表态",
+          "probability": 0.20112663172112102
+        },
+        {
+          "text": "询问对方意愿",
+          "probability": 0.10540861449152007
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E7",
+      "step_id": "S07",
+      "stimulus": "后来沈川获得一个长期去国外发展的机会，女友明确表示不愿意一起去，也无法接受长期异地。父亲得知后，主动联系了一位国外的朋友，帮女友找到一个条件不错的工作机会。吃饭时父亲把这件事告诉两人，女友却明显不高兴：“叔叔，我知道您是好意，但我从来没说过我想去国外。”父亲沉默了一会儿，把联系方式删掉，对女友说：“是我又替别人想好了。”随后他转向沈川：“以前我总觉得替你把路铺好就是帮你。现在这件事，你觉得我该做到哪一步？”",
+      "predicted_action": "对父亲表示需要时间思考",
+      "probability": 0.3899517134160235,
+      "top_k": [
+        {
+          "text": "对父亲表示需要时间思考",
+          "probability": 0.3899517134160235
+        },
+        {
+          "text": "对父亲表示自己处理剩余事情",
+          "probability": 0.3709960571039709
+        },
+        {
+          "text": "询问女友不愿一起去的具体原因",
+          "probability": 0.23905222948000562
+        }
+      ],
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ]
+}

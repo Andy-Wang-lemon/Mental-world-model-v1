@@ -1,0 +1,27 @@
+数据：4_pred_seeker
+题号：141  d2245_u4
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.\nRECOMMENDER says: Also Daddy's Home 2 (2017)  is out now I enjoyed Daddy's Home  (2015)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.\nRECOMMENDER says: Also Daddy's Home 2 (2017)  is out now I enjoyed Daddy's Home  (2015)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.9, "b": 0.2, "c": 0.55, "d": 0.1}
+选择说明：The last turn is a new movie recommendation, so SEEKER is most likely to give feedback on that suggestion.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0023_d950_u11",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the SEEKER:\n- Likes movies such as *Wedding Crashers*, *It*, *Superbad*, *The Wolf of Wall Street*, *Pineapple Express*, and *This Is the End*.\n- Likes Jonah Hill.\n- Did not love *Horrible Bosses*.\n- Dislikes or does not want *Star Wars*-like movies.\n- Had not seen or heard of *The Sitter* before RECOMMENDER suggested it.\n- Accepted the suggestion: “I will check it out…” and thanked RECOMMENDER.\n\nRECOMMENDER does **not** know:\n- Whether SEEKER has actually watched *The Sitter* yet.\n- Whether SEEKER will like *The Sitter*.\n- SEEKER’s full movie preferences beyond what was stated.\n- Whether SEEKER wants more recommendations now or is ending the conversation.\n- Any future reaction to the recommendation.\n\nAt the final turn, SEEKER says “Awesome, I will check it out... Thank you so much!” This is an acceptance of the recommendation plus gratitude. From RECOMMENDER’s perspective, the natural next move is not to give another recommendation or ask for more preferences, but to acknowledge the thanks and close politely or engage in brief chit-chat.\n\nANSWER: E",
+  "prediction": "e",
+  "gold": [
+    "b",
+    "e"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

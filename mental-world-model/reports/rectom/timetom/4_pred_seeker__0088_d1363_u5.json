@@ -1,0 +1,75 @@
+{
+  "id": "4_pred_seeker__0088_d1363_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender asks: 'Hi...What kind of movies are you into?'",
+      "belief_before": "No prior beliefs about this recommender or dialogue.",
+      "belief_update": "Recommender is initiating a movie recommendation conversation by asking about my preferences.",
+      "belief_after": "Recommender wants to learn my movie preferences in order to make recommendations.",
+      "emotion": "Neutral, open, mildly curious.",
+      "intention": "Respond with my movie preferences.",
+      "conversational_goal": "Get personalized movie recommendations by sharing what I like.",
+      "changes_previous_interpretation": "Initial turn; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "I say: 'I'm really into mystery movies....Maybe a good psychological thriller.'",
+      "belief_before": "Recommender is asking about my movie preferences to guide recommendations.",
+      "belief_update": "I state that I like mystery movies and possibly psychological thrillers.",
+      "belief_after": "Recommender now knows I prefer mystery and psychological-thriller films.",
+      "emotion": "Interested, hopeful.",
+      "intention": "Communicate my taste clearly so the recommender can suggest suitable movies.",
+      "conversational_goal": "Elicit recommendations that match mystery/psychological-thriller preferences.",
+      "changes_previous_interpretation": "No major change; it confirms the recommender’s initial purpose and adds specific preferences."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: 'Okay well Seven (1995) is a great thriller with Brad Pitt.'",
+      "belief_before": "Recommender knows I like mystery movies and psychological thrillers, and is expected to suggest a matching film.",
+      "belief_update": "Recommender suggests Seven as a great thriller, presenting it as relevant to my interests.",
+      "belief_after": "Seven is a candidate recommendation; I believe the recommender is trying to match my stated taste.",
+      "emotion": "Curious, mildly interested.",
+      "intention": "Consider Seven as a possible recommendation and decide whether to ask for more options.",
+      "conversational_goal": "Evaluate the suggested movie and/or seek further recommendations.",
+      "changes_previous_interpretation": "Yes; the conversation moves from preference elicitation to a concrete recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "I say: 'Do you have any recomendations?'",
+      "belief_before": "Recommender has already suggested Seven (1995) as a thriller.",
+      "belief_update": "I ask for recommendations, implying I want additional options or that Seven alone did not fully satisfy my request.",
+      "belief_after": "Recommender may provide more suggestions beyond Seven.",
+      "emotion": "Uncertain, still seeking.",
+      "intention": "Solicit recommendations, likely more options.",
+      "conversational_goal": "Get additional movie recommendations.",
+      "changes_previous_interpretation": "Yes; it suggests Seven may not be enough or that I want a broader set of options."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says: 'Along with Black Swan (2010).'",
+      "belief_before": "Recommender already suggested Seven, and I asked for recommendations.",
+      "belief_update": "Recommender adds Black Swan as another recommendation alongside Seven.",
+      "belief_after": "Recommender is offering at least two options: Seven and Black Swan, likely intended as psychological-thriller or related suggestions.",
+      "emotion": "Interested, curious, possibly pleased.",
+      "intention": "Consider both recommendations and possibly ask for more details or further options.",
+      "conversational_goal": "Obtain a suitable movie recommendation from the options given.",
+      "changes_previous_interpretation": "Yes; it clarifies that the recommender is providing multiple suggestions and that Seven is part of a set."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender asks: 'Hi...What kind of movies are you into?'\",\n    \"belief_before\": \"No prior beliefs about this recommender or dialogue.\",\n    \"belief_update\": \"Recommender is initiating a movie recommendation conversation by asking about my preferences.\",\n    \"belief_after\": \"Recommender wants to learn my movie preferences in order to make recommendations.\",\n    \"emotion\": \"Neutral, open, mildly curious.\",\n    \"intention\": \"Respond with my movie preferences.\",\n    \"conversational_goal\": \"Get personalized movie recommendations by sharing what I like.\",\n    \"changes_previous_interpretation\": \"Initial turn; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I say: 'I'm really into mystery movies....Maybe a good psychological thriller.'\",\n    \"belief_before\": \"Recommender is asking about my movie preferences to guide recommendations.\",\n    \"belief_update\": \"I state that I like mystery movies and possibly psychological thrillers.\",\n    \"belief_after\": \"Recommender now knows I prefer mystery and psychological-thriller films.\",\n    \"emotion\": \"Interested, hopeful.\",\n    \"intention\": \"Communicate my taste clearly so the recommender can suggest suitable movies.\",\n    \"conversational_goal\": \"Elicit recommendations that match mystery/psychological-thriller preferences.\",\n    \"changes_previous_interpretation\": \"No major change; it confirms the recommender’s initial purpose and adds specific preferences.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: 'Okay well Seven (1995) is a great thriller with Brad Pitt.'\",\n    \"belief_before\": \"Recommender knows I like mystery movies and psychological thrillers, and is expected to suggest a matching film.\",\n    \"belief_update\": \"Recommender suggests Seven as a great thriller, presenting it as relevant to my interests.\",\n    \"belief_after\": \"Seven is a candidate recommendation; I believe the recommender is trying to match my stated taste.\",\n    \"emotion\": \"Curious, mildly interested.\",\n    \"intention\": \"Consider Seven as a possible recommendation and decide whether to ask for more options.\",\n    \"conversational_goal\": \"Evaluate the suggested movie and/or seek further recommendations.\",\n    \"changes_previous_interpretation\": \"Yes; the conversation moves from preference elicitation to a concrete recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I say: 'Do you have any recomendations?'\",\n    \"belief_before\": \"Recommender has already suggested Seven (1995) as a thriller.\",\n    \"belief_update\": \"I ask for recommendations, implying I want additional options or that Seven alone did not fully satisfy my request.\",\n    \"belief_after\": \"Recommender may provide more suggestions beyond Seven.\",\n    \"emotion\": \"Uncertain, still seeking.\",\n    \"intention\": \"Solicit recommendations, likely more options.\",\n    \"conversational_goal\": \"Get additional movie recommendations.\",\n    \"changes_previous_interpretation\": \"Yes; it suggests Seven may not be enough or that I want a broader set of options.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says: 'Along with Black Swan (2010).'\",\n    \"belief_before\": \"Recommender already suggested Seven, and I asked for recommendations.\",\n    \"belief_update\": \"Recommender adds Black Swan as another recommendation alongside Seven.\",\n    \"belief_after\": \"Recommender is offering at least two options: Seven and Black Swan, likely intended as psychological-thriller or related suggestions.\",\n    \"emotion\": \"Interested, curious, possibly pleased.\",\n    \"intention\": \"Consider both recommendations and possibly ask for more details or further options.\",\n    \"conversational_goal\": \"Obtain a suitable movie recommendation from the options given.\",\n    \"changes_previous_interpretation\": \"Yes; it clarifies that the recommender is providing multiple suggestions and that Seven is part of a set.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "a",
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

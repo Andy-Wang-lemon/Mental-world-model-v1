@@ -1,0 +1,139 @@
+{
+  "id": "3_pred_rec__0094_d1495_u12",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets, asks how seeker is, and asks what kind of movies seeker is looking for. Information available: no prior info about seeker's movie preferences. Preferences: unknown.",
+      "belief_before": "Recommender has no information about the seeker's movie preferences; beliefs: seeker may want a recommendation but genre is unknown.",
+      "belief_update": "Recommender initiates preference elicitation; no previous interpretation to change.",
+      "belief_after": "Recommender still does not know the seeker's movie preferences; awaits answer.",
+      "emotion": "polite, friendly, expectant; reaction: N/A (no prior other-speaker turn).",
+      "intention": "Start conversation and learn the seeker's movie interests.",
+      "conversational_goal": "Ask for movie genre/preferences."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says hello, is good, and is looking for a drama like Extremely Loud and Incredibly Close (2011). Information available: seeker is well; wants a drama similar to that film.",
+      "belief_before": "Recommender has no information about the seeker's movie preferences.",
+      "belief_update": "Seeker wants a drama similar to Extremely Loud and Incredibly Close (2011). This changes the previous interpretation: preference is now known.",
+      "belief_after": "Recommender believes the seeker wants a drama similar to Extremely Loud and Incredibly Close (2011). Preferences: drama; reference title EL&IC.",
+      "emotion": "helpful, attentive; reaction: receives clear genre and reference title; ready to help.",
+      "intention": "Recommend a drama matching that request.",
+      "conversational_goal": "Find or suggest a suitable drama."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says Road to Perdition (2002) is a good drama with Tom Hanks. Information available: seeker wants a drama like EL&IC; recommender suggests Road to Perdition.",
+      "belief_before": "Recommender believes the seeker wants a drama similar to Extremely Loud and Incredibly Close (2011).",
+      "belief_update": "Recommender decides Road to Perdition is a suitable drama recommendation. No major change to previous interpretation; adds a candidate recommendation.",
+      "belief_after": "Recommender believes Road to Perdition is a good drama option for the seeker; preferences: seeker likes drama; recommender endorses Road to Perdition with Tom Hanks.",
+      "emotion": "confident, helpful; reaction: responds to the request with a suggestion.",
+      "intention": "Offer a specific drama recommendation.",
+      "conversational_goal": "Satisfy the drama request with Road to Perdition."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker has not seen Road to Perdition but loves Tom Hanks. Information available: seeker hasn't seen Road to Perdition; loves Tom Hanks.",
+      "belief_before": "Recommender believes Road to Perdition is a good drama option for the seeker.",
+      "belief_update": "Seeker has not seen Road to Perdition and loves Tom Hanks. This changes the previous interpretation by adding Tom Hanks as a strong preference.",
+      "belief_after": "Recommender knows the seeker likes Tom Hanks and can use Tom Hanks as a positive feature. Preferences: drama, likes Tom Hanks.",
+      "emotion": "encouraged, positive; reaction: seeker is open and gives a useful preference.",
+      "intention": "Leverage the Tom Hanks preference in further recommendations.",
+      "conversational_goal": "Recommend Tom Hanks dramas."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender suggests It's Kind of a Funny Story (2010) as a funny drama, and says Tom Hanks is great in Cast Away (2000), another classic. Information available: seeker loves Tom Hanks; recommender suggests these films.",
+      "belief_before": "Recommender knows the seeker loves Tom Hanks.",
+      "belief_update": "Recommender offers two options: one funny drama and one Tom Hanks classic. No change to known preferences; adds recommendations.",
+      "belief_after": "Recommender believes these are suitable options; awaits the seeker's reaction. Preferences: seeker likes Tom Hanks and drama; recommender endorses Cast Away and It's Kind of a Funny Story.",
+      "emotion": "enthusiastic, helpful; reaction: responds to Tom Hanks preference with relevant titles.",
+      "intention": "Provide more tailored options using Tom Hanks and drama.",
+      "conversational_goal": "Recommend Tom Hanks/drama films."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker has not seen It's Kind of a Funny Story either, and liked Cast Away (2000). Information available: seeker hasn't seen It's Kind of a Funny Story; liked Cast Away.",
+      "belief_before": "Recommender believes It's Kind of a Funny Story and Cast Away are suitable options.",
+      "belief_update": "Seeker has not seen It's Kind of a Funny Story; liked Cast Away. This changes the previous interpretation by confirming the Tom Hanks/Cast Away preference and narrowing recommendations.",
+      "belief_after": "Recommender confirms the seeker likes Tom Hanks and Cast Away; can continue with similar films. Preferences: drama, likes Tom Hanks, liked Cast Away.",
+      "emotion": "positive, validated; reaction: seeker affirms Cast Away; recommender gets a positive signal.",
+      "intention": "Continue recommending based on confirmed likes.",
+      "conversational_goal": "Suggest more dramas or Tom Hanks-like films."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says Cast Away is really good and recommends Spotlight (2015), another sad drama with Rachel McAdams. Information available: seeker liked Cast Away; recommender suggests Spotlight.",
+      "belief_before": "Recommender believes the seeker liked Cast Away and likes Tom Hanks.",
+      "belief_update": "Recommender offers Spotlight as another drama with Rachel McAdams. No change to known preferences; adds a new candidate.",
+      "belief_after": "Recommender believes Spotlight is a suitable drama option; awaits reaction. Preferences: seeker likes drama and Tom Hanks; recommender endorses Spotlight.",
+      "emotion": "positive, helpful; reaction: acknowledges Cast Away and pivots to a new title.",
+      "intention": "Recommend another drama, possibly broadening to Rachel McAdams.",
+      "conversational_goal": "Offer a new drama recommendation."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker has not seen Spotlight, but likes Rachel McAdams. Information available: seeker hasn't seen Spotlight; likes Rachel McAdams.",
+      "belief_before": "Recommender believes Spotlight is a suitable drama option.",
+      "belief_update": "Seeker has not seen Spotlight and likes Rachel McAdams. This changes the previous interpretation by adding Rachel McAdams as a preference.",
+      "belief_after": "Recommender knows Rachel McAdams is a positive feature; can recommend her films. Preferences: drama, likes Tom Hanks, liked Cast Away, likes Rachel McAdams.",
+      "emotion": "encouraged; reaction: seeker gives another actor preference.",
+      "intention": "Use the Rachel McAdams preference for further recommendations.",
+      "conversational_goal": "Recommend Rachel McAdams dramas."
+    },
+    {
+      "time": 9,
+      "observed": "Recommender says American History X (1998) is a great, sad drama with intense scenes, and asks if the seeker likes Brad Pitt. Information available: seeker likes Rachel McAdams; recommender suggests American History X and asks about Brad Pitt.",
+      "belief_before": "Recommender knows the seeker likes Rachel McAdams.",
+      "belief_update": "Recommender offers American History X and probes the seeker's Brad Pitt preference. No change to known preferences; adds a query.",
+      "belief_after": "Recommender is uncertain about Brad Pitt; awaits answer. Preferences: seeker likes Tom Hanks, Cast Away, Rachel McAdams; recommender endorses American History X.",
+      "emotion": "attentive, probing; reaction: responds to Rachel McAdams preference by shifting to another drama and asking about a new actor.",
+      "intention": "Recommend an intense drama and gather more actor preferences.",
+      "conversational_goal": "Ask about Brad Pitt while suggesting American History X."
+    },
+    {
+      "time": 10,
+      "observed": "Seeker says no, not a Brad fan. Information available: seeker does not like Brad Pitt.",
+      "belief_before": "Recommender is uncertain about Brad Pitt.",
+      "belief_update": "Seeker is not a Brad Pitt fan. This changes the previous interpretation by adding a negative preference for Brad Pitt.",
+      "belief_after": "Recommender knows to avoid Brad Pitt recommendations. Preferences: likes Tom Hanks, Cast Away, Rachel McAdams; dislikes Brad Pitt.",
+      "emotion": "neutral, adjusting; reaction: accepts the negative preference.",
+      "intention": "Pivot away from Brad Pitt.",
+      "conversational_goal": "Find another actor or movie preference."
+    },
+    {
+      "time": 11,
+      "observed": "Recommender says Allied (2016) is amazing and recommends it to everyone, then says 'Oh okay lol' and asks about Denzel Washington. Information available: seeker dislikes Brad Pitt; recommender recommends Allied and asks about Denzel.",
+      "belief_before": "Recommender knows the seeker is not a Brad Pitt fan.",
+      "belief_update": "Recommender still endorses Allied (a Brad Pitt movie) but also acknowledges the feedback and pivots to ask about Denzel Washington. This changes the previous interpretation by attempting to recover from the negative Brad Pitt preference.",
+      "belief_after": "Recommender is uncertain about Denzel; knows Brad Pitt is not a draw. Preferences: seeker likes Tom Hanks, Cast Away, Rachel McAdams; dislikes Brad Pitt; recommender loves Allied.",
+      "emotion": "slightly awkward or playful ('lol'), then probing; reaction: acknowledges 'not Brad fan' but still mentions Allied; seeks an alternative.",
+      "intention": "Acknowledge the negative Brad Pitt feedback while trying another actor (Denzel).",
+      "conversational_goal": "Find a new actor preference, especially Denzel Washington."
+    },
+    {
+      "time": 12,
+      "observed": "Seeker says yes, likes Denzel. Information available: seeker likes Denzel Washington.",
+      "belief_before": "Recommender is unsure about Denzel.",
+      "belief_update": "Seeker likes Denzel. This changes the previous interpretation by adding Denzel as a strong preference.",
+      "belief_after": "Recommender can recommend Denzel Washington films. Preferences: likes Tom Hanks, Cast Away, Rachel McAdams, Denzel Washington; dislikes Brad Pitt.",
+      "emotion": "positive, encouraged; reaction: seeker gives a positive actor preference; recommender will use it.",
+      "intention": "Recommend Denzel Washington movies.",
+      "conversational_goal": "Suggest a Denzel Washington drama or film."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets, asks how seeker is, and asks what kind of movies seeker is looking for. Information available: no prior info about seeker's movie preferences. Preferences: unknown.\",\n    \"belief_before\": \"Recommender has no information about the seeker's movie preferences; beliefs: seeker may want a recommendation but genre is unknown.\",\n    \"belief_update\": \"Recommender initiates preference elicitation; no previous interpretation to change.\",\n    \"belief_after\": \"Recommender still does not know the seeker's movie preferences; awaits answer.\",\n    \"emotion\": \"polite, friendly, expectant; reaction: N/A (no prior other-speaker turn).\",\n    \"intention\": \"Start conversation and learn the seeker's movie interests.\",\n    \"conversational_goal\": \"Ask for movie genre/preferences.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says hello, is good, and is looking for a drama like Extremely Loud and Incredibly Close (2011). Information available: seeker is well; wants a drama similar to that film.\",\n    \"belief_before\": \"Recommender has no information about the seeker's movie preferences.\",\n    \"belief_update\": \"Seeker wants a drama similar to Extremely Loud and Incredibly Close (2011). This changes the previous interpretation: preference is now known.\",\n    \"belief_after\": \"Recommender believes the seeker wants a drama similar to Extremely Loud and Incredibly Close (2011). Preferences: drama; reference title EL&IC.\",\n    \"emotion\": \"helpful, attentive; reaction: receives clear genre and reference title; ready to help.\",\n    \"intention\": \"Recommend a drama matching that request.\",\n    \"conversational_goal\": \"Find or suggest a suitable drama.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says Road to Perdition (2002) is a good drama with Tom Hanks. Information available: seeker wants a drama like EL&IC; recommender suggests Road to Perdition.\",\n    \"belief_before\": \"Recommender believes the seeker wants a drama similar to Extremely Loud and Incredibly Close (2011).\",\n    \"belief_update\": \"Recommender decides Road to Perdition is a suitable drama recommendation. No major change to previous interpretation; adds a candidate recommendation.\",\n    \"belief_after\": \"Recommender believes Road to Perdition is a good drama option for the seeker; preferences: seeker likes drama; recommender endorses Road to Perdition with Tom Hanks.\",\n    \"emotion\": \"confident, helpful; reaction: responds to the request with a suggestion.\",\n    \"intention\": \"Offer a specific drama recommendation.\",\n    \"conversational_goal\": \"Satisfy the drama request with Road to Perdition.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker has not seen Road to Perdition but loves Tom Hanks. Information available: seeker hasn't seen Road to Perdition; loves Tom Hanks.\",\n    \"belief_before\": \"Recommender believes Road to Perdition is a good drama option for the seeker.\",\n    \"belief_update\": \"Seeker has not seen Road to Perdition and loves Tom Hanks. This changes the previous interpretation by adding Tom Hanks as a strong preference.\",\n    \"belief_after\": \"Recommender knows the seeker likes Tom Hanks and can use Tom Hanks as a positive feature. Preferences: drama, likes Tom Hanks.\",\n    \"emotion\": \"encouraged, positive; reaction: seeker is open and gives a useful preference.\",\n    \"intention\": \"Leverage the Tom Hanks preference in further recommendations.\",\n    \"conversational_goal\": \"Recommend Tom Hanks dramas.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender suggests It's Kind of a Funny Story (2010) as a funny drama, and says Tom Hanks is great in Cast Away (2000), another classic. Information available: seeker loves Tom Hanks; recommender suggests these films.\",\n    \"belief_before\": \"Recommender knows the seeker loves Tom Hanks.\",\n    \"belief_update\": \"Recommender offers two options: one funny drama and one Tom Hanks classic. No change to known preferences; adds recommendations.\",\n    \"belief_after\": \"Recommender believes these are suitable options; awaits the seeker's reaction. Preferences: seeker likes Tom Hanks and drama; recommender endorses Cast Away and It's Kind of a Funny Story.\",\n    \"emotion\": \"enthusiastic, helpful; reaction: responds to Tom Hanks preference with relevant titles.\",\n    \"intention\": \"Provide more tailored options using Tom Hanks and drama.\",\n    \"conversational_goal\": \"Recommend Tom Hanks/drama films.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker has not seen It's Kind of a Funny Story either, and liked Cast Away (2000). Information available: seeker hasn't seen It's Kind of a Funny Story; liked Cast Away.\",\n    \"belief_before\": \"Recommender believes It's Kind of a Funny Story and Cast Away are suitable options.\",\n    \"belief_update\": \"Seeker has not seen It's Kind of a Funny Story; liked Cast Away. This changes the previous interpretation by confirming the Tom Hanks/Cast Away preference and narrowing recommendations.\",\n    \"belief_after\": \"Recommender confirms the seeker likes Tom Hanks and Cast Away; can continue with similar films. Preferences: drama, likes Tom Hanks, liked Cast Away.\",\n    \"emotion\": \"positive, validated; reaction: seeker affirms Cast Away; recommender gets a positive signal.\",\n    \"intention\": \"Continue recommending based on confirmed likes.\",\n    \"conversational_goal\": \"Suggest more dramas or Tom Hanks-like films.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says Cast Away is really good and recommends Spotlight (2015), another sad drama with Rachel McAdams. Information available: seeker liked Cast Away; recommender suggests Spotlight.\",\n    \"belief_before\": \"Recommender believes the seeker liked Cast Away and likes Tom Hanks.\",\n    \"belief_update\": \"Recommender offers Spotlight as another drama with Rachel McAdams. No change to known preferences; adds a new candidate.\",\n    \"belief_after\": \"Recommender believes Spotlight is a suitable drama option; awaits reaction. Preferences: seeker likes drama and Tom Hanks; recommender endorses Spotlight.\",\n    \"emotion\": \"positive, helpful; reaction: acknowledges Cast Away and pivots to a new title.\",\n    \"intention\": \"Recommend another drama, possibly broadening to Rachel McAdams.\",\n    \"conversational_goal\": \"Offer a new drama recommendation.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker has not seen Spotlight, but likes Rachel McAdams. Information available: seeker hasn't seen Spotlight; likes Rachel McAdams.\",\n    \"belief_before\": \"Recommender believes Spotlight is a suitable drama option.\",\n    \"belief_update\": \"Seeker has not seen Spotlight and likes Rachel McAdams. This changes the previous interpretation by adding Rachel McAdams as a preference.\",\n    \"belief_after\": \"Recommender knows Rachel McAdams is a positive feature; can recommend her films. Preferences: drama, likes Tom Hanks, liked Cast Away, likes Rachel McAdams.\",\n    \"emotion\": \"encouraged; reaction: seeker gives another actor preference.\",\n    \"intention\": \"Use the Rachel McAdams preference for further recommendations.\",\n    \"conversational_goal\": \"Recommend Rachel McAdams dramas.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Recommender says American History X (1998) is a great, sad drama with intense scenes, and asks if the seeker likes Brad Pitt. Information available: seeker likes Rachel McAdams; recommender suggests American History X and asks about Brad Pitt.\",\n    \"belief_before\": \"Recommender knows the seeker likes Rachel McAdams.\",\n    \"belief_update\": \"Recommender offers American History X and probes the seeker's Brad Pitt preference. No change to known preferences; adds a query.\",\n    \"belief_after\": \"Recommender is uncertain about Brad Pitt; awaits answer. Preferences: seeker likes Tom Hanks, Cast Away, Rachel McAdams; recommender endorses American History X.\",\n    \"emotion\": \"attentive, probing; reaction: responds to Rachel McAdams preference by shifting to another drama and asking about a new actor.\",\n    \"intention\": \"Recommend an intense drama and gather more actor preferences.\",\n    \"conversational_goal\": \"Ask about Brad Pitt while suggesting American History X.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"Seeker says no, not a Brad fan. Information available: seeker does not like Brad Pitt.\",\n    \"belief_before\": \"Recommender is uncertain about Brad Pitt.\",\n    \"belief_update\": \"Seeker is not a Brad Pitt fan. This changes the previous interpretation by adding a negative preference for Brad Pitt.\",\n    \"belief_after\": \"Recommender knows to avoid Brad Pitt recommendations. Preferences: likes Tom Hanks, Cast Away, Rachel McAdams; dislikes Brad Pitt.\",\n    \"emotion\": \"neutral, adjusting; reaction: accepts the negative preference.\",\n    \"intention\": \"Pivot away from Brad Pitt.\",\n    \"conversational_goal\": \"Find another actor or movie preference.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"Recommender says Allied (2016) is amazing and recommends it to everyone, then says 'Oh okay lol' and asks about Denzel Washington. Information available: seeker dislikes Brad Pitt; recommender recommends Allied and asks about Denzel.\",\n    \"belief_before\": \"Recommender knows the seeker is not a Brad Pitt fan.\",\n    \"belief_update\": \"Recommender still endorses Allied (a Brad Pitt movie) but also acknowledges the feedback and pivots to ask about Denzel Washington. This changes the previous interpretation by attempting to recover from the negative Brad Pitt preference.\",\n    \"belief_after\": \"Recommender is uncertain about Denzel; knows Brad Pitt is not a draw. Preferences: seeker likes Tom Hanks, Cast Away, Rachel McAdams; dislikes Brad Pitt; recommender loves Allied.\",\n    \"emotion\": \"slightly awkward or playful ('lol'), then probing; reaction: acknowledges 'not Brad fan' but still mentions Allied; seeks an alternative.\",\n    \"intention\": \"Acknowledge the negative Brad Pitt feedback while trying another actor (Denzel).\",\n    \"conversational_goal\": \"Find a new actor preference, especially Denzel Washington.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"Seeker says yes, likes Denzel. Information available: seeker likes Denzel Washington.\",\n    \"belief_before\": \"Recommender is unsure about Denzel.\",\n    \"belief_update\": \"Seeker likes Denzel. This changes the previous interpretation by adding Denzel as a strong preference.\",\n    \"belief_after\": \"Recommender can recommend Denzel Washington films. Preferences: likes Tom Hanks, Cast Away, Rachel McAdams, Denzel Washington; dislikes Brad Pitt.\",\n    \"emotion\": \"positive, encouraged; reaction: seeker gives a positive actor preference; recommender will use it.\",\n    \"intention\": \"Recommend Denzel Washington movies.\",\n    \"conversational_goal\": \"Suggest a Denzel Washington drama or film.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

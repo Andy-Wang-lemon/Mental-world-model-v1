@@ -1,0 +1,61 @@
+{
+  "id": "3_pred_rec__0036_d1002_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER asks for good new science fiction films, preferably already on DVD, to buy or rent online.",
+      "information_available": "Only the current request: genre is science fiction, wants 'new' films, and prefers DVD or online buy/rent availability.",
+      "preferences": "Recommender has no prior information about this seeker's taste. Inferred seeker preference: new science fiction films available on DVD or online. Recommender's preference: provide helpful, constraint-matching recommendations.",
+      "belief_before": "No prior context about this seeker or their viewing history.",
+      "belief_update": "Seeker wants science fiction recommendations and has availability constraints: preferably DVD and able to buy or rent online.",
+      "belief_after": "Seeker is requesting new science fiction films with DVD/online availability; their viewing history and specific tastes are unknown.",
+      "emotion": "Neutral, helpful.",
+      "intention": "To recommend suitable new science fiction films.",
+      "reaction_to_other": "Receptive and cooperative toward the request.",
+      "conversational_goal": "Acknowledge the request and move toward recommending appropriate science fiction titles.",
+      "changes_previous_interpretation": "No previous interpretation; establishes the baseline."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Sure thing. Have you seen Star Wars: The Force Awakens (2015)?'",
+      "information_available": "Prior seeker request plus Recommender's own willingness to help and chosen screening question about Star Wars: The Force Awakens.",
+      "preferences": "Recommender prefers to check whether the seeker has seen a popular recent science fiction film before recommending. Seeker's stated preferences remain unchanged.",
+      "belief_before": "Seeker wants new science fiction films on DVD/online; viewing history is unknown.",
+      "belief_update": "No new information from the seeker. Recommender treats Star Wars: The Force Awakens as a relevant science fiction title to check and asks whether the seeker has seen it.",
+      "belief_after": "The Force Awakens may be a candidate if unseen, but the seeker's familiarity with it is now an open question.",
+      "emotion": "Helpful, friendly, slightly inquisitive.",
+      "intention": "Narrow recommendation options by checking whether the seeker has already seen The Force Awakens.",
+      "reaction_to_other": "Cooperates with the seeker's request by beginning a clarifying question.",
+      "conversational_goal": "Elicit whether the seeker has seen The Force Awakens so the recommendation can be tailored.",
+      "changes_previous_interpretation": "No change to the core request; adds a clarification step and possible candidate title."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'lol, I have. Who hasn't'",
+      "information_available": "Prior context plus the seeker's answer that they have seen The Force Awakens and consider it commonly seen; the tone is amused and casual.",
+      "preferences": "Recommender should now avoid The Force Awakens and likely favor less obvious or different new science fiction. Seeker still wants science fiction with DVD/online availability and appears experienced with mainstream science fiction.",
+      "belief_before": "Recommender believed the seeker's familiarity with The Force Awakens was unknown.",
+      "belief_update": "Seeker confirms having seen The Force Awakens and implies it is obvious or very commonly seen.",
+      "belief_after": "The Force Awakens is ruled out. Seeker likely has mainstream science fiction familiarity, so Recommender needs alternative science fiction recommendations.",
+      "emotion": "Amused or self-aware, possibly slightly embarrassed, but still friendly.",
+      "intention": "Adjust recommendations away from The Force Awakens and toward other suitable new science fiction films.",
+      "reaction_to_other": "Recognizes the seeker's joke and the implied obviousness of the question.",
+      "conversational_goal": "Acknowledge the response and continue by offering alternative science fiction recommendations that better fit the seeker.",
+      "changes_previous_interpretation": "Yes; The Force Awakens is excluded and the seeker's familiarity with mainstream science fiction is updated upward, changing the recommendation strategy."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER asks for good new science fiction films, preferably already on DVD, to buy or rent online.\",\n    \"information_available\": \"Only the current request: genre is science fiction, wants 'new' films, and prefers DVD or online buy/rent availability.\",\n    \"preferences\": \"Recommender has no prior information about this seeker's taste. Inferred seeker preference: new science fiction films available on DVD or online. Recommender's preference: provide helpful, constraint-matching recommendations.\",\n    \"belief_before\": \"No prior context about this seeker or their viewing history.\",\n    \"belief_update\": \"Seeker wants science fiction recommendations and has availability constraints: preferably DVD and able to buy or rent online.\",\n    \"belief_after\": \"Seeker is requesting new science fiction films with DVD/online availability; their viewing history and specific tastes are unknown.\",\n    \"emotion\": \"Neutral, helpful.\",\n    \"intention\": \"To recommend suitable new science fiction films.\",\n    \"reaction_to_other\": \"Receptive and cooperative toward the request.\",\n    \"conversational_goal\": \"Acknowledge the request and move toward recommending appropriate science fiction titles.\",\n    \"changes_previous_interpretation\": \"No previous interpretation; establishes the baseline.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Sure thing. Have you seen Star Wars: The Force Awakens (2015)?'\",\n    \"information_available\": \"Prior seeker request plus Recommender's own willingness to help and chosen screening question about Star Wars: The Force Awakens.\",\n    \"preferences\": \"Recommender prefers to check whether the seeker has seen a popular recent science fiction film before recommending. Seeker's stated preferences remain unchanged.\",\n    \"belief_before\": \"Seeker wants new science fiction films on DVD/online; viewing history is unknown.\",\n    \"belief_update\": \"No new information from the seeker. Recommender treats Star Wars: The Force Awakens as a relevant science fiction title to check and asks whether the seeker has seen it.\",\n    \"belief_after\": \"The Force Awakens may be a candidate if unseen, but the seeker's familiarity with it is now an open question.\",\n    \"emotion\": \"Helpful, friendly, slightly inquisitive.\",\n    \"intention\": \"Narrow recommendation options by checking whether the seeker has already seen The Force Awakens.\",\n    \"reaction_to_other\": \"Cooperates with the seeker's request by beginning a clarifying question.\",\n    \"conversational_goal\": \"Elicit whether the seeker has seen The Force Awakens so the recommendation can be tailored.\",\n    \"changes_previous_interpretation\": \"No change to the core request; adds a clarification step and possible candidate title.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'lol, I have. Who hasn't'\",\n    \"information_available\": \"Prior context plus the seeker's answer that they have seen The Force Awakens and consider it commonly seen; the tone is amused and casual.\",\n    \"preferences\": \"Recommender should now avoid The Force Awakens and likely favor less obvious or different new science fiction. Seeker still wants science fiction with DVD/online availability and appears experienced with mainstream science fiction.\",\n    \"belief_before\": \"Recommender believed the seeker's familiarity with The Force Awakens was unknown.\",\n    \"belief_update\": \"Seeker confirms having seen The Force Awakens and implies it is obvious or very commonly seen.\",\n    \"belief_after\": \"The Force Awakens is ruled out. Seeker likely has mainstream science fiction familiarity, so Recommender needs alternative science fiction recommendations.\",\n    \"emotion\": \"Amused or self-aware, possibly slightly embarrassed, but still friendly.\",\n    \"intention\": \"Adjust recommendations away from The Force Awakens and toward other suitable new science fiction films.\",\n    \"reaction_to_other\": \"Recognizes the seeker's joke and the implied obviousness of the question.\",\n    \"conversational_goal\": \"Acknowledge the response and continue by offering alternative science fiction recommendations that better fit the seeker.\",\n    \"changes_previous_interpretation\": \"Yes; The Force Awakens is excluded and the seeker's familiarity with mainstream science fiction is updated upward, changing the recommendation strategy.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

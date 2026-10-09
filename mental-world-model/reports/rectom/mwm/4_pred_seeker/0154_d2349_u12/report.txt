@@ -1,0 +1,66 @@
+数据：4_pred_seeker
+题号：154  d2349_u12
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在 SEEKER 的经验里，RECOMMENDER 的新年问候后接连问 The Secret Life of Pets、Minions、Inside Out 是否看过，整段对话被对象化为一组围绕“我有没有看过”的自我核对题；这些片名像一张必须由我填写的观影履历表，看过或没看过都要给出明确交代，话题才能顺着共享观影经验继续下去。RECOMMENDER 对电影搞笑/可爱、儿子喜欢 Cars 3 等说法，则只是让这张履历表显得更亲切、更需要认真对应的背景。",
+      "probability": 0.3664
+    },
+    {
+      "content": "在 SEEKER 的经验里，RECOMMENDER 提到儿子很喜欢 Cars 3，不只是片单信息，而像是把自己拉进对方的家庭/亲子话题里的一种亲近标记：我在这段关系里被允许接触他儿子的喜好。与此同时，前面接连询问有没有看过 The Secret Life of Pets、Minions，以及后面推荐 Inside Out，都被对象化为需要我以“看过/没看过”明确交代来承接的共享话题；观影经验成为维持这段亲近互动的固定通路。",
+      "probability": 0.3419
+    },
+    {
+      "content": "在 SEEKER 的经验里，RECOMMENDER 说儿子很喜欢 Cars 3，被经验为把自己纳入家庭/亲子话题的亲近信号，仿佛自己在这段关系里有一个能被分享儿子喜好的位置。与此同时，RECOMMENDER 称 The Secret Life of Pets、Minions 等搞笑/可爱，又推荐 Inside Out，则被对象化成一份带有应然色彩的片单：这些片子值得看、应该觉得好，没看过就该补看。新年问候和逐项询问因此构成一个既亲近又要求我认可这份片单的对话场。",
+      "probability": 0.2917
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 把 RECOMMENDER 的新年问候和接连询问片名，整理成一组需要自己逐项核对的观影履历：看过就给出判断，没看过就说明并补上相近体验；他不觉得这是刁难，反而把对方说电影搞笑、可爱以及儿子喜欢 Cars 3 视为让这份履历表更亲切的背景。于是他在内心把 The Secret Life of Pets、Minions、Cars 3、Monsters, Inc. 等归入已看/未看、喜欢/不置可否、适合弟弟/待定的格子里，并倾向于用明确交代来维持共享话题，同时借机提出 Monsters, Inc. 来反向确认对方经验、推进选片。",
+      "activation": 0.4161
+    },
+    {
+      "content": "他提到儿子很喜欢 Cars 3，让我觉得这不只是片单信息，而像是把我拉进他的家庭、亲子话题里的一种亲近标记：我在这段关系里被允许接触他儿子的喜好。前面问 The Secret Life of Pets、Minions，后面又推荐 Inside Out，这些都被我感受成需要我用“看过/没看过”明确交代来承接的共享话题；观影经验像是维持这段亲近互动的固定通路。若我不接住这条通路，话题就容易断掉，所以我倾向于继续用真实的观影经验回应，并顺势把弟弟的喜好、今晚要看什么也放进这层共同话题里，让亲近感和实际选片需要一起延续下去。",
+      "activation": 0.3046
+    },
+    {
+      "content": "SEEKER 心里把对方提到儿子喜欢 Cars 3 当成一种把自己拉进家庭/亲子话题的亲近表示，觉得自己在这段关系里被给了一个可以分享孩子喜好的位置，因而对这份热络有几分领受，也想顺势接住；但对方把 The Secret Life of Pets、Minions 说成搞笑/可爱，又推荐 Inside Out，在他这里慢慢变成一张带应然意味的片单：值得看、应该觉得好、没看过似乎就该补。于是他在回应时一边维持新年问候和逐项询问的热度，一边不愿为合群而违心认可自己不喜欢的 The Secret Life of Pets；他更愿意把与弟弟经验相连的 Minions、自己真正喜欢的第一部 Cars 以及正在考虑的 Monsters, Inc. 拿出来讲，把 Cars 3 留作可能，把 Inside Out 看成还需再衡量的推荐。",
+      "activation": 0.2792
+    }
+  ],
+  "observed_action": "SEEKER greets and says he is looking for a children's movie for his little brother and is babysitting him tonight; he says Happy New Year; he says he is not really a fan of The Secret Life of Pets, liked the first half hour, but thought it got a little weird; he says yes, his brother dressed up as a minion for Halloween because he liked it so much; he says he hasn't seen Cars 3 but saw the first one and really liked it, and will keep it as a possibility; he says yes, with great life lessons for young kids, and asks whether the other person has seen Monsters, Inc., saying he is thinking of maybe showing it to his brother but hasn't seen it yet.",
+  "predicted_actions": [
+    {
+      "content": "回答没看过《头脑特工队》并将其列入候选清单",
+      "probability": 0.3728
+    },
+    {
+      "content": "询问电影是否适合弟弟",
+      "probability": 0.2138
+    },
+    {
+      "content": "询问《头脑特工队》是否适合学龄前小孩",
+      "probability": 0.1564
+    },
+    {
+      "content": "列出目前考虑的三部电影",
+      "probability": 0.1375
+    },
+    {
+      "content": "将电影记为备选",
+      "probability": 0.1195
+    }
+  ]
+}
+选择：C: Asks for a recommendation or expresses their preference
+分数：{"a": 0.3728, "b": 0.1375, "c": 0.4897, "d": 0}
+选择说明：A 0.3728 = 回答没看过《头脑特工队》并将其列入候选清单 0.3728；B 0.1375 = 列出目前考虑的三部电影 0.1375；C 0.4897 = 询问电影是否适合弟弟 0.2138 + 询问《头脑特工队》是否适合学龄前小孩 0.1564 + 将电影记为备选 0.1195；D 0.0000。0 gives feedback, 3 adds preference info, 1/2/4 ask for recommendations or express preferences, and none are greetings.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：The predicted next action is to answer that he hasn't seen Inside Out and list it as a candidate, which is feedback on the previously recommended movie.

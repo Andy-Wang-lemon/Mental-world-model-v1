@@ -1,0 +1,53 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 68,
+  "item_id": "d1127_u1",
+  "dialogue_id": "1127",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "这个问题被经验为一次对我个人电影偏好的索取：它指向一个属于我的、能代表我的电影品味，并且似乎在等待一个关于“我真正喜欢什么电影”的稳定、可陈述的答案。此刻，提问像一面镜子照向我的偏好，要求我从“我喜欢的电影”里辨认出那个可以被说出、并且算作我的答案。",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这问题一过来，我的电影偏好就被拉成一件属于我的东西：我得从看过的片子里认出一个能代表我的答案，而且最好稳定、说得清。心里随即开始翻找那些真正喜欢的片子，想把它们理成一条可以讲出来的线；若一时含糊，就仿佛连自己的品味也站不住。于是我倾向于给出一份确定的偏好，让这面镜子照出一个算作我的答案。",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "给出明确的电影偏好",
+        "probability": 0.88
+      },
+      {
+        "content": "询问偏好的具体指向",
+        "probability": 0.12
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0.88,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.8800 = 给出明确的电影偏好 0.8800；D 0.0000。给出明确的电影偏好直接对应表达偏好的策略，询问偏好具体指向不属于任何给定选项。",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

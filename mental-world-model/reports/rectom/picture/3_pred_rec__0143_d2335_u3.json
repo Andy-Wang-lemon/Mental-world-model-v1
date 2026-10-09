@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0143_d2335_u3",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The SEEKER greeted them and said “Happy New Year.”\n- RECOMMENDER already returned the greeting.\n- SEEKER is explicitly asking for comedy recommendations.\n- SEEKER likes *Step Brothers* (2008) and *The Hangover* (2009), and offered these as helpful preference signals.\n- SEEKER’s intention is to receive recommendations.\n- RECOMMENDER’s role is to recommend, so the next relevant move should advance that task.\n\nRECOMMENDER does not know:\n- The SEEKER’s broader film tastes beyond those two examples.\n- Whether the SEEKER has already seen obvious similar comedies.\n- What streaming services, age rating limits, or content preferences the SEEKER has.\n- Whether the SEEKER wants raunchy, buddy, party, or ensemble comedy more specifically.\n- Any personal details or past interaction history beyond this dialogue.\n\nFrom the required perspective, the most likely next strategy is for RECOMMENDER to respond to the recommendation request by providing comedy recommendations directly, or at least by inquiring further in service of making a recommendation. This matches option C better than greeting/chit-chat, generic response, or explanation alone.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

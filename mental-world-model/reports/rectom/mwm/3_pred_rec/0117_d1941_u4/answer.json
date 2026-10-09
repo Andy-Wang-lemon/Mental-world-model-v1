@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 117,
+  "item_id": "d1941_u4",
+  "dialogue_id": "1941",
+  "utterance_pos": 4,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello....Have you seen Star Wars: Episode VIII – The Last Jedi (2017)  ?\nSEEKER says: HI...I haven't seen that yet. I'm looking for a good thriller/  suspense movie.\nRECOMMENDER says: Have you seen Split (2017)  ?\nSEEKER says: Something like Gone Baby Gone (2007) ...Yea I watched that one and it was good!；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello....Have you seen Star Wars: Episode VIII – The Last Jedi (2017)  ?\nSEEKER says: HI...I haven't seen that yet. I'm looking for a good thriller/  suspense movie.\nRECOMMENDER says: Have you seen Split (2017)  ?\nSEEKER says: Something like Gone Baby Gone (2007) ...Yea I watched that one and it was good!；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.35,
+    "b": 0.55,
+    "c": 0.9,
+    "d": 0.25,
+    "e": 0.15
+  },
+  "score_reason": "The recommender has just received a clarified thriller preference, so the most direct next move is to provide or further narrow a recommendation.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

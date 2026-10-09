@@ -1,0 +1,166 @@
+{
+  "id": "4_pred_seeker__0098_d1495_u15",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER greets SEEKER, asks how SEEKER is, and asks what kind of movies SEEKER is looking for.",
+      "belief_before": "No prior dialogue; SEEKER has no information about the recommender's movie suggestions or preferences.",
+      "belief_update": "Recommender is opening a movie-recommendation exchange and wants SEEKER's viewing preferences. No previous interpretation to change.",
+      "belief_after": "SEEKER knows the recommender is ready to recommend movies but has not yet stated any movie preference.",
+      "emotion": "Polite and neutral.",
+      "intention": "Respond to the greeting and provide an initial movie preference.",
+      "conversational_goal": "Begin the recommendation conversation and clarify what to ask for."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says hello, is good, and is looking for a drama like Extremely Loud and Incredibly Close (2011).",
+      "belief_before": "Recommender has asked what kind of movies SEEKER wants.",
+      "belief_update": "SEEKER commits to wanting a drama similar to Extremely Loud and Incredibly Close (2011). This changes the prior lack of stated preference.",
+      "belief_after": "SEEKER has stated a desired genre and tone: drama resembling Extremely Loud and Incredibly Close.",
+      "emotion": "Polite and cooperative.",
+      "intention": "Get recommendations matching that drama.",
+      "conversational_goal": "Specify a target preference so the recommender can suggest relevant films."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER suggests Road to Perdition (2002) as a good drama with Tom Hanks.",
+      "belief_before": "SEEKER wants a drama like Extremely Loud and Incredibly Close.",
+      "belief_update": "Recommender proposes Road to Perdition and associates it with Tom Hanks. This adds a new candidate but does not reveal SEEKER's Tom Hanks preference yet.",
+      "belief_after": "SEEKER is aware of Road to Perdition as a candidate drama with Tom Hanks; SEEKER has not stated a view on it yet.",
+      "emotion": "Neutral and curious.",
+      "intention": "Evaluate whether Road to Perdition fits the request.",
+      "conversational_goal": "Consider and respond to the first recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says he has not seen Road to Perdition but loves Tom Hanks.",
+      "belief_before": "Road to Perdition was suggested with Tom Hanks.",
+      "belief_update": "SEEKER reveals no viewing of Road to Perdition and a positive preference for Tom Hanks. This changes the prior state where SEEKER's Tom Hanks preference was unknown.",
+      "belief_after": "SEEKER's preference for Tom Hanks is now expressed; Road to Perdition remains unseen.",
+      "emotion": "Positive about Tom Hanks.",
+      "intention": "Signal openness to Tom Hanks movies while not directly accepting Road to Perdition.",
+      "conversational_goal": "Guide the recommender toward Tom Hanks-related options."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER mentions It's Kind of a Funny Story (2010), then says Tom Hanks is great in Cast Away (2000), another classic.",
+      "belief_before": "SEEKER loves Tom Hanks and has not seen Road to Perdition.",
+      "belief_update": "Recommender adds It's Kind of a Funny Story and Cast Away as candidates; Cast Away is framed as a Tom Hanks classic. This expands the recommendation set.",
+      "belief_after": "SEEKER is aware of It's Kind of a Funny Story and Cast Away; Cast Away aligns with the known Tom Hanks preference.",
+      "emotion": "Interested.",
+      "intention": "Evaluate the new suggestions, especially the Tom Hanks one.",
+      "conversational_goal": "Respond to the expanded recommendation set."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says he has not seen It's Kind of a Funny Story either, and says he really liked Cast Away (2000).",
+      "belief_before": "Recommender suggested It's Kind of a Funny Story and Cast Away.",
+      "belief_update": "SEEKER reveals no viewing of It's Kind of a Funny Story and a positive prior reaction to Cast Away. This changes the prior state where SEEKER's Cast Away preference was unknown.",
+      "belief_after": "SEEKER's preference for Cast Away is now expressed; It's Kind of a Funny Story remains unseen.",
+      "emotion": "Enthusiastic and positive about Cast Away.",
+      "intention": "Confirm a liked movie and indirectly decline the unseen suggestion.",
+      "conversational_goal": "Narrow recommendations toward films like Cast Away or other liked dramas."
+    },
+    {
+      "time": 7,
+      "observed": "RECOMMENDER says Cast Away is really good and suggests Spotlight (2015) as another great drama with Rachel McAdams.",
+      "belief_before": "SEEKER liked Cast Away and has not seen It's Kind of a Funny Story.",
+      "belief_update": "Recommender affirms Cast Away and proposes Spotlight with Rachel McAdams. This adds a new candidate and introduces Rachel McAdams without SEEKER's preference being stated yet.",
+      "belief_after": "SEEKER is aware of Spotlight as a candidate drama with Rachel McAdams; SEEKER has not stated a view on Rachel McAdams yet.",
+      "emotion": "Neutral and curious.",
+      "intention": "Evaluate Spotlight.",
+      "conversational_goal": "Consider the next recommendation."
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER says he has not seen Spotlight either, but likes Rachel McAdams.",
+      "belief_before": "Spotlight was suggested with Rachel McAdams.",
+      "belief_update": "SEEKER reveals no viewing of Spotlight and a positive preference for Rachel McAdams. This changes the prior state where SEEKER's Rachel McAdams preference was unknown.",
+      "belief_after": "SEEKER's Rachel McAdams preference is now expressed; Spotlight remains unseen.",
+      "emotion": "Positive about Rachel McAdams.",
+      "intention": "Signal openness to Rachel McAdams films.",
+      "conversational_goal": "Guide the recommender toward Rachel McAdams-related options."
+    },
+    {
+      "time": 9,
+      "observed": "RECOMMENDER says American History X (1998) is sad but a great drama with intense scenes, then asks if SEEKER likes Brad Pitt.",
+      "belief_before": "SEEKER likes Rachel McAdams and has not seen Spotlight.",
+      "belief_update": "Recommender adds American History X and asks about Brad Pitt preference. This adds a candidate and a new preference query; SEEKER's Brad Pitt preference is not yet stated.",
+      "belief_after": "SEEKER is aware of American History X as a candidate and knows the recommender is checking Brad Pitt interest.",
+      "emotion": "Neutral and slightly uncertain.",
+      "intention": "Evaluate American History X and prepare to answer the Brad Pitt question.",
+      "conversational_goal": "Respond to the recommendation and the preference query."
+    },
+    {
+      "time": 10,
+      "observed": "SEEKER says no, he is not a Brad fan.",
+      "belief_before": "Recommender asked whether SEEKER likes Brad Pitt.",
+      "belief_update": "SEEKER reveals he is not a Brad Pitt fan. This changes the prior state where SEEKER's Brad Pitt preference was unknown.",
+      "belief_after": "SEEKER's non-preference for Brad Pitt is now expressed.",
+      "emotion": "Disinterested or mildly negative toward Brad Pitt.",
+      "intention": "Reject Brad Pitt-centered suggestions.",
+      "conversational_goal": "Filter out Brad Pitt options."
+    },
+    {
+      "time": 11,
+      "observed": "RECOMMENDER still praises Allied (2016) and recommends it, then asks about Denzel Washington.",
+      "belief_before": "SEEKER is not a Brad Pitt fan.",
+      "belief_update": "Recommender mentions Allied despite the Brad Pitt preference and asks about Denzel Washington. This adds an ill-aligned Brad Pitt candidate and a new Denzel preference query; SEEKER's Denzel preference is not yet stated.",
+      "belief_after": "SEEKER knows Allied is a Brad Pitt suggestion and that the recommender is now checking Denzel interest.",
+      "emotion": "Mildly dismissive or neutral; the recommender's 'Oh okay lol' suggests some awkwardness.",
+      "intention": "Respond to the Denzel query and likely disregard Allied.",
+      "conversational_goal": "Pivot recommendations away from Brad Pitt toward Denzel."
+    },
+    {
+      "time": 12,
+      "observed": "SEEKER says yeah, he likes Denzel.",
+      "belief_before": "Recommender asked about Denzel Washington.",
+      "belief_update": "SEEKER reveals a positive preference for Denzel Washington. This changes the prior state where SEEKER's Denzel preference was unknown.",
+      "belief_after": "SEEKER's Denzel preference is now expressed.",
+      "emotion": "Positive and agreeable.",
+      "intention": "Signal openness to Denzel movies.",
+      "conversational_goal": "Guide the recommender toward Denzel Washington options."
+    },
+    {
+      "time": 13,
+      "observed": "RECOMMENDER suggests Fences (2016), with Denzel Washington and Viola Davis, saying it had a great story.",
+      "belief_before": "SEEKER likes Denzel Washington.",
+      "belief_update": "Recommender proposes Fences as a Denzel Washington and Viola Davis drama with a great story. This adds a candidate aligned with SEEKER's stated Denzel preference.",
+      "belief_after": "SEEKER is aware of Fences as a candidate that aligns with the Denzel preference.",
+      "emotion": "Interested.",
+      "intention": "Evaluate Fences.",
+      "conversational_goal": "Consider the Denzel-aligned recommendation."
+    },
+    {
+      "time": 14,
+      "observed": "SEEKER says he saw previews for Fences but never got around to watching it, and thanks the recommender for the suggestions.",
+      "belief_before": "Fences was suggested with Denzel Washington and Viola Davis.",
+      "belief_update": "SEEKER reveals awareness of Fences through previews but no viewing, and expresses thanks. This shifts the exchange toward closure.",
+      "belief_after": "SEEKER has acknowledged Fences and signaled appreciation; the conversation is likely wrapping up.",
+      "emotion": "Appreciative.",
+      "intention": "Acknowledge the recommendation and close the exchange.",
+      "conversational_goal": "Thank the recommender and indicate the end of the request."
+    },
+    {
+      "time": 15,
+      "observed": "RECOMMENDER says SEEKER should watch Fences because it is really good, says you're welcome, and wishes good night.",
+      "belief_before": "SEEKER thanked the recommender and had not watched Fences.",
+      "belief_update": "Recommender encourages watching Fences and closes with a good-night. This confirms closure of the recommendation dialogue.",
+      "belief_after": "SEEKER knows the recommender endorses Fences and considers the conversation ended.",
+      "emotion": "Appreciative and neutral.",
+      "intention": "Accept the closing or end politely.",
+      "conversational_goal": "Conclude the dialogue."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER greets SEEKER, asks how SEEKER is, and asks what kind of movies SEEKER is looking for.\",\n    \"belief_before\": \"No prior dialogue; SEEKER has no information about the recommender's movie suggestions or preferences.\",\n    \"belief_update\": \"Recommender is opening a movie-recommendation exchange and wants SEEKER's viewing preferences. No previous interpretation to change.\",\n    \"belief_after\": \"SEEKER knows the recommender is ready to recommend movies but has not yet stated any movie preference.\",\n    \"emotion\": \"Polite and neutral.\",\n    \"intention\": \"Respond to the greeting and provide an initial movie preference.\",\n    \"conversational_goal\": \"Begin the recommendation conversation and clarify what to ask for.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says hello, is good, and is looking for a drama like Extremely Loud and Incredibly Close (2011).\",\n    \"belief_before\": \"Recommender has asked what kind of movies SEEKER wants.\",\n    \"belief_update\": \"SEEKER commits to wanting a drama similar to Extremely Loud and Incredibly Close (2011). This changes the prior lack of stated preference.\",\n    \"belief_after\": \"SEEKER has stated a desired genre and tone: drama resembling Extremely Loud and Incredibly Close.\",\n    \"emotion\": \"Polite and cooperative.\",\n    \"intention\": \"Get recommendations matching that drama.\",\n    \"conversational_goal\": \"Specify a target preference so the recommender can suggest relevant films.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER suggests Road to Perdition (2002) as a good drama with Tom Hanks.\",\n    \"belief_before\": \"SEEKER wants a drama like Extremely Loud and Incredibly Close.\",\n    \"belief_update\": \"Recommender proposes Road to Perdition and associates it with Tom Hanks. This adds a new candidate but does not reveal SEEKER's Tom Hanks preference yet.\",\n    \"belief_after\": \"SEEKER is aware of Road to Perdition as a candidate drama with Tom Hanks; SEEKER has not stated a view on it yet.\",\n    \"emotion\": \"Neutral and curious.\",\n    \"intention\": \"Evaluate whether Road to Perdition fits the request.\",\n    \"conversational_goal\": \"Consider and respond to the first recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says he has not seen Road to Perdition but loves Tom Hanks.\",\n    \"belief_before\": \"Road to Perdition was suggested with Tom Hanks.\",\n    \"belief_update\": \"SEEKER reveals no viewing of Road to Perdition and a positive preference for Tom Hanks. This changes the prior state where SEEKER's Tom Hanks preference was unknown.\",\n    \"belief_after\": \"SEEKER's preference for Tom Hanks is now expressed; Road to Perdition remains unseen.\",\n    \"emotion\": \"Positive about Tom Hanks.\",\n    \"intention\": \"Signal openness to Tom Hanks movies while not directly accepting Road to Perdition.\",\n    \"conversational_goal\": \"Guide the recommender toward Tom Hanks-related options.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER mentions It's Kind of a Funny Story (2010), then says Tom Hanks is great in Cast Away (2000), another classic.\",\n    \"belief_before\": \"SEEKER loves Tom Hanks and has not seen Road to Perdition.\",\n    \"belief_update\": \"Recommender adds It's Kind of a Funny Story and Cast Away as candidates; Cast Away is framed as a Tom Hanks classic. This expands the recommendation set.\",\n    \"belief_after\": \"SEEKER is aware of It's Kind of a Funny Story and Cast Away; Cast Away aligns with the known Tom Hanks preference.\",\n    \"emotion\": \"Interested.\",\n    \"intention\": \"Evaluate the new suggestions, especially the Tom Hanks one.\",\n    \"conversational_goal\": \"Respond to the expanded recommendation set.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says he has not seen It's Kind of a Funny Story either, and says he really liked Cast Away (2000).\",\n    \"belief_before\": \"Recommender suggested It's Kind of a Funny Story and Cast Away.\",\n    \"belief_update\": \"SEEKER reveals no viewing of It's Kind of a Funny Story and a positive prior reaction to Cast Away. This changes the prior state where SEEKER's Cast Away preference was unknown.\",\n    \"belief_after\": \"SEEKER's preference for Cast Away is now expressed; It's Kind of a Funny Story remains unseen.\",\n    \"emotion\": \"Enthusiastic and positive about Cast Away.\",\n    \"intention\": \"Confirm a liked movie and indirectly decline the unseen suggestion.\",\n    \"conversational_goal\": \"Narrow recommendations toward films like Cast Away or other liked dramas.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"RECOMMENDER says Cast Away is really good and suggests Spotlight (2015) as another great drama with Rachel McAdams.\",\n    \"belief_before\": \"SEEKER liked Cast Away and has not seen It's Kind of a Funny Story.\",\n    \"belief_update\": \"Recommender affirms Cast Away and proposes Spotlight with Rachel McAdams. This adds a new candidate and introduces Rachel McAdams without SEEKER's preference being stated yet.\",\n    \"belief_after\": \"SEEKER is aware of Spotlight as a candidate drama with Rachel McAdams; SEEKER has not stated a view on Rachel McAdams yet.\",\n    \"emotion\": \"Neutral and curious.\",\n    \"intention\": \"Evaluate Spotlight.\",\n    \"conversational_goal\": \"Consider the next recommendation.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER says he has not seen Spotlight either, but likes Rachel McAdams.\",\n    \"belief_before\": \"Spotlight was suggested with Rachel McAdams.\",\n    \"belief_update\": \"SEEKER reveals no viewing of Spotlight and a positive preference for Rachel McAdams. This changes the prior state where SEEKER's Rachel McAdams preference was unknown.\",\n    \"belief_after\": \"SEEKER's Rachel McAdams preference is now expressed; Spotlight remains unseen.\",\n    \"emotion\": \"Positive about Rachel McAdams.\",\n    \"intention\": \"Signal openness to Rachel McAdams films.\",\n    \"conversational_goal\": \"Guide the recommender toward Rachel McAdams-related options.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"RECOMMENDER says American History X (1998) is sad but a great drama with intense scenes, then asks if SEEKER likes Brad Pitt.\",\n    \"belief_before\": \"SEEKER likes Rachel McAdams and has not seen Spotlight.\",\n    \"belief_update\": \"Recommender adds American History X and asks about Brad Pitt preference. This adds a candidate and a new preference query; SEEKER's Brad Pitt preference is not yet stated.\",\n    \"belief_after\": \"SEEKER is aware of American History X as a candidate and knows the recommender is checking Brad Pitt interest.\",\n    \"emotion\": \"Neutral and slightly uncertain.\",\n    \"intention\": \"Evaluate American History X and prepare to answer the Brad Pitt question.\",\n    \"conversational_goal\": \"Respond to the recommendation and the preference query.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"SEEKER says no, he is not a Brad fan.\",\n    \"belief_before\": \"Recommender asked whether SEEKER likes Brad Pitt.\",\n    \"belief_update\": \"SEEKER reveals he is not a Brad Pitt fan. This changes the prior state where SEEKER's Brad Pitt preference was unknown.\",\n    \"belief_after\": \"SEEKER's non-preference for Brad Pitt is now expressed.\",\n    \"emotion\": \"Disinterested or mildly negative toward Brad Pitt.\",\n    \"intention\": \"Reject Brad Pitt-centered suggestions.\",\n    \"conversational_goal\": \"Filter out Brad Pitt options.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"RECOMMENDER still praises Allied (2016) and recommends it, then asks about Denzel Washington.\",\n    \"belief_before\": \"SEEKER is not a Brad Pitt fan.\",\n    \"belief_update\": \"Recommender mentions Allied despite the Brad Pitt preference and asks about Denzel Washington. This adds an ill-aligned Brad Pitt candidate and a new Denzel preference query; SEEKER's Denzel preference is not yet stated.\",\n    \"belief_after\": \"SEEKER knows Allied is a Brad Pitt suggestion and that the recommender is now checking Denzel interest.\",\n    \"emotion\": \"Mildly dismissive or neutral; the recommender's 'Oh okay lol' suggests some awkwardness.\",\n    \"intention\": \"Respond to the Denzel query and likely disregard Allied.\",\n    \"conversational_goal\": \"Pivot recommendations away from Brad Pitt toward Denzel.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"SEEKER says yeah, he likes Denzel.\",\n    \"belief_before\": \"Recommender asked about Denzel Washington.\",\n    \"belief_update\": \"SEEKER reveals a positive preference for Denzel Washington. This changes the prior state where SEEKER's Denzel preference was unknown.\",\n    \"belief_after\": \"SEEKER's Denzel preference is now expressed.\",\n    \"emotion\": \"Positive and agreeable.\",\n    \"intention\": \"Signal openness to Denzel movies.\",\n    \"conversational_goal\": \"Guide the recommender toward Denzel Washington options.\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"RECOMMENDER suggests Fences (2016), with Denzel Washington and Viola Davis, saying it had a great story.\",\n    \"belief_before\": \"SEEKER likes Denzel Washington.\",\n    \"belief_update\": \"Recommender proposes Fences as a Denzel Washington and Viola Davis drama with a great story. This adds a candidate aligned with SEEKER's stated Denzel preference.\",\n    \"belief_after\": \"SEEKER is aware of Fences as a candidate that aligns with the Denzel preference.\",\n    \"emotion\": \"Interested.\",\n    \"intention\": \"Evaluate Fences.\",\n    \"conversational_goal\": \"Consider the Denzel-aligned recommendation.\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"SEEKER says he saw previews for Fences but never got around to watching it, and thanks the recommender for the suggestions.\",\n    \"belief_before\": \"Fences was suggested with Denzel Washington and Viola Davis.\",\n    \"belief_update\": \"SEEKER reveals awareness of Fences through previews but no viewing, and expresses thanks. This shifts the exchange toward closure.\",\n    \"belief_after\": \"SEEKER has acknowledged Fences and signaled appreciation; the conversation is likely wrapping up.\",\n    \"emotion\": \"Appreciative.\",\n    \"intention\": \"Acknowledge the recommendation and close the exchange.\",\n    \"conversational_goal\": \"Thank the recommender and indicate the end of the request.\"\n  },\n  {\n    \"time\": 15,\n    \"observed\": \"RECOMMENDER says SEEKER should watch Fences because it is really good, says you're welcome, and wishes good night.\",\n    \"belief_before\": \"SEEKER thanked the recommender and had not watched Fences.\",\n    \"belief_update\": \"Recommender encourages watching Fences and closes with a good-night. This confirms closure of the recommendation dialogue.\",\n    \"belief_after\": \"SEEKER knows the recommender endorses Fences and considers the conversation ended.\",\n    \"emotion\": \"Appreciative and neutral.\",\n    \"intention\": \"Accept the closing or end politely.\",\n    \"conversational_goal\": \"Conclude the dialogue.\"\n  }\n]",
+  "final_response": "ANSWER: D",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

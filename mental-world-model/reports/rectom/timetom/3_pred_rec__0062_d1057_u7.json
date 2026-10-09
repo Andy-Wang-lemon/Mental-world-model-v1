@@ -1,0 +1,86 @@
+{
+  "id": "3_pred_rec__0062_d1057_u7",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hello!'",
+      "belief_before": "No prior knowledge about SEEKER; the dialogue is just beginning.",
+      "belief_update": "SEEKER is initiating contact; no preferences or request have been stated yet. No previous interpretation to revise.",
+      "belief_after": "SEEKER has greeted me and may be about to ask for something. SEEKER's preferences are unknown.",
+      "emotion": "neutral, polite, mildly welcoming",
+      "intention": "greet SEEKER and signal availability",
+      "conversational_goal": "establish contact and invite SEEKER to state a need"
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hello~'",
+      "belief_before": "SEEKER greeted me; no preferences or request yet.",
+      "belief_update": "I respond warmly. This does not add new information about SEEKER, but it keeps the conversation open.",
+      "belief_after": "SEEKER is in a greeting exchange; SEEKER's preferences are still unknown.",
+      "emotion": "friendly, pleasant",
+      "intention": "respond politely and encourage SEEKER to continue",
+      "conversational_goal": "open dialogue and prompt SEEKER's request"
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: can you help me find a good comedy today? ... I like things like Super Troopers (2001) and Beerfest (2006)",
+      "belief_before": "SEEKER is in a greeting exchange; no stated preferences yet.",
+      "belief_update": "SEEKER wants a comedy recommendation today and likes Super Troopers (2001) and Beerfest (2006). This starts a recommendation task and changes the prior no-task interpretation.",
+      "belief_after": "SEEKER is seeking a comedy and has shown preference for those two titles; no other constraints are known.",
+      "emotion": "helpful, engaged",
+      "intention": "provide a comedy recommendation aligned with SEEKER's stated likes",
+      "conversational_goal": "suggest a suitable comedy"
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Tommy Boy (1995) is one of my favorites",
+      "belief_before": "SEEKER wants a comedy and likes Super Troopers (2001) and Beerfest (2006).",
+      "belief_update": "I offer Tommy Boy (1995) as a favorite comedy. This implies I like Tommy Boy and present it as a recommendation candidate. No revision of the task interpretation yet.",
+      "belief_after": "SEEKER may be considering Tommy Boy; SEEKER's reaction to it is not yet known. My preference includes Tommy Boy as a personal favorite.",
+      "emotion": "enthusiastic, positive",
+      "intention": "recommend Tommy Boy and share a favorite",
+      "conversational_goal": "offer a comedy suggestion that fits SEEKER's request"
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: but not like Friday (1995) ... Awesome I love that one I have seen it a million times",
+      "belief_before": "SEEKER wants a comedy, likes Super Troopers (2001) and Beerfest (2006), and I recommended Tommy Boy (1995).",
+      "belief_update": "SEEKER adds a negative comparison to Friday (1995) and reacts positively to Tommy Boy, saying they love it and have seen it many times. This resolves uncertainty about Tommy Boy positively and adds a not-like-Friday constraint.",
+      "belief_after": "SEEKER loves Tommy Boy and has seen it many times; SEEKER does not want something like Friday (1995). The Tommy Boy recommendation was successful.",
+      "emotion": "pleased, validated, encouraged",
+      "intention": "acknowledge common ground and continue finding another comedy",
+      "conversational_goal": "maintain rapport and refine the next recommendation"
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says: Me too. Another good one is Spaceballs (1987)",
+      "belief_before": "SEEKER loves Tommy Boy, has seen it many times, and does not want something like Friday (1995).",
+      "belief_update": "I agree that I also love or have seen Tommy Boy and recommend Spaceballs (1987) as another good comedy. This reveals my preference for Spaceballs as a candidate. No new SEEKER reaction is available yet.",
+      "belief_after": "SEEKER may like Spaceballs; SEEKER's reaction to Spaceballs is not yet known. My preference includes Spaceballs as another good comedy, and there is common ground on Tommy Boy.",
+      "emotion": "agreeable, enthusiastic",
+      "intention": "affirm shared taste and offer another comedy suggestion",
+      "conversational_goal": "build on the successful Tommy Boy match and suggest Spaceballs"
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: I did see that one, but I didn't really like it... I do love 80s movies though",
+      "belief_before": "SEEKER loved Tommy Boy, does not want something like Friday (1995), and I recommended Spaceballs (1987).",
+      "belief_update": "SEEKER has seen Spaceballs but did not like it, and SEEKER loves 80s movies. This rejects Spaceballs and adds an 80s-movie preference, changing the recommendation direction.",
+      "belief_after": "SEEKER likes Tommy Boy, does not like Spaceballs, does not want Friday-like comedy, and loves 80s movies. A future recommendation should avoid Spaceballs and likely target 80s movies.",
+      "emotion": "slightly disappointed by the Spaceballs rejection, but attentive and optimistic about the 80s clue",
+      "intention": "adjust the recommendation away from Spaceballs and toward 80s movies",
+      "conversational_goal": "recover from the rejected suggestion and propose an 80s comedy"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hello!'\",\n    \"belief_before\": \"No prior knowledge about SEEKER; the dialogue is just beginning.\",\n    \"belief_update\": \"SEEKER is initiating contact; no preferences or request have been stated yet. No previous interpretation to revise.\",\n    \"belief_after\": \"SEEKER has greeted me and may be about to ask for something. SEEKER's preferences are unknown.\",\n    \"emotion\": \"neutral, polite, mildly welcoming\",\n    \"intention\": \"greet SEEKER and signal availability\",\n    \"conversational_goal\": \"establish contact and invite SEEKER to state a need\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hello~'\",\n    \"belief_before\": \"SEEKER greeted me; no preferences or request yet.\",\n    \"belief_update\": \"I respond warmly. This does not add new information about SEEKER, but it keeps the conversation open.\",\n    \"belief_after\": \"SEEKER is in a greeting exchange; SEEKER's preferences are still unknown.\",\n    \"emotion\": \"friendly, pleasant\",\n    \"intention\": \"respond politely and encourage SEEKER to continue\",\n    \"conversational_goal\": \"open dialogue and prompt SEEKER's request\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: can you help me find a good comedy today? ... I like things like Super Troopers (2001) and Beerfest (2006)\",\n    \"belief_before\": \"SEEKER is in a greeting exchange; no stated preferences yet.\",\n    \"belief_update\": \"SEEKER wants a comedy recommendation today and likes Super Troopers (2001) and Beerfest (2006). This starts a recommendation task and changes the prior no-task interpretation.\",\n    \"belief_after\": \"SEEKER is seeking a comedy and has shown preference for those two titles; no other constraints are known.\",\n    \"emotion\": \"helpful, engaged\",\n    \"intention\": \"provide a comedy recommendation aligned with SEEKER's stated likes\",\n    \"conversational_goal\": \"suggest a suitable comedy\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Tommy Boy (1995) is one of my favorites\",\n    \"belief_before\": \"SEEKER wants a comedy and likes Super Troopers (2001) and Beerfest (2006).\",\n    \"belief_update\": \"I offer Tommy Boy (1995) as a favorite comedy. This implies I like Tommy Boy and present it as a recommendation candidate. No revision of the task interpretation yet.\",\n    \"belief_after\": \"SEEKER may be considering Tommy Boy; SEEKER's reaction to it is not yet known. My preference includes Tommy Boy as a personal favorite.\",\n    \"emotion\": \"enthusiastic, positive\",\n    \"intention\": \"recommend Tommy Boy and share a favorite\",\n    \"conversational_goal\": \"offer a comedy suggestion that fits SEEKER's request\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: but not like Friday (1995) ... Awesome I love that one I have seen it a million times\",\n    \"belief_before\": \"SEEKER wants a comedy, likes Super Troopers (2001) and Beerfest (2006), and I recommended Tommy Boy (1995).\",\n    \"belief_update\": \"SEEKER adds a negative comparison to Friday (1995) and reacts positively to Tommy Boy, saying they love it and have seen it many times. This resolves uncertainty about Tommy Boy positively and adds a not-like-Friday constraint.\",\n    \"belief_after\": \"SEEKER loves Tommy Boy and has seen it many times; SEEKER does not want something like Friday (1995). The Tommy Boy recommendation was successful.\",\n    \"emotion\": \"pleased, validated, encouraged\",\n    \"intention\": \"acknowledge common ground and continue finding another comedy\",\n    \"conversational_goal\": \"maintain rapport and refine the next recommendation\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says: Me too. Another good one is Spaceballs (1987)\",\n    \"belief_before\": \"SEEKER loves Tommy Boy, has seen it many times, and does not want something like Friday (1995).\",\n    \"belief_update\": \"I agree that I also love or have seen Tommy Boy and recommend Spaceballs (1987) as another good comedy. This reveals my preference for Spaceballs as a candidate. No new SEEKER reaction is available yet.\",\n    \"belief_after\": \"SEEKER may like Spaceballs; SEEKER's reaction to Spaceballs is not yet known. My preference includes Spaceballs as another good comedy, and there is common ground on Tommy Boy.\",\n    \"emotion\": \"agreeable, enthusiastic\",\n    \"intention\": \"affirm shared taste and offer another comedy suggestion\",\n    \"conversational_goal\": \"build on the successful Tommy Boy match and suggest Spaceballs\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: I did see that one, but I didn't really like it... I do love 80s movies though\",\n    \"belief_before\": \"SEEKER loved Tommy Boy, does not want something like Friday (1995), and I recommended Spaceballs (1987).\",\n    \"belief_update\": \"SEEKER has seen Spaceballs but did not like it, and SEEKER loves 80s movies. This rejects Spaceballs and adds an 80s-movie preference, changing the recommendation direction.\",\n    \"belief_after\": \"SEEKER likes Tommy Boy, does not like Spaceballs, does not want Friday-like comedy, and loves 80s movies. A future recommendation should avoid Spaceballs and likely target 80s movies.\",\n    \"emotion\": \"slightly disappointed by the Spaceballs rejection, but attentive and optimistic about the 80s clue\",\n    \"intention\": \"adjust the recommendation away from Spaceballs and toward 80s movies\",\n    \"conversational_goal\": \"recover from the rejected suggestion and propose an 80s comedy\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

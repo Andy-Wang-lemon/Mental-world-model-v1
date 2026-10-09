@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Relation",
+  "type": "object",
+  "required": [
+    "source",
+    "target",
+    "description",
+    "relation_type",
+    "is_direct"
+  ],
+  "properties": {
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "关系发起方心所名称"
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "description": "关系指向方心所名称"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "原始关系描述"
+    },
+    "relation_type": {
+      "type": "string",
+      "enum": ["对治"],
+      "description": "关系类型（对治关系：完全互斥）"
+    },
+    "is_direct": {
+      "type": "boolean",
+      "description": "是否为直接关系（含「直接」）"
+    }
+  },
+  "additionalProperties": false
+}

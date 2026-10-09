@@ -1,0 +1,26 @@
+{
+  "id": "4_pred_seeker__0086_d1363_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender greets the target and asks, 'What kind of movies are you into?' Information available to the target is limited to this greeting and question. No movie preferences have been stated by the target yet.",
+      "belief_before": "No prior dialogue context; the target has not yet formed beliefs about this recommender or the recommendation task.",
+      "belief_update": "The target learns that the recommender is asking about their movie genre preferences. This is the initial turn, so there is no previous interpretation to revise.",
+      "belief_after": "The target believes the recommender wants to learn their movie tastes, likely to make tailored movie recommendations.",
+      "emotion": "Neutral/attentive; no emotional reaction from the target is yet observable.",
+      "intention": "Consider how to answer the question, likely intending to share movie preferences or ask for recommendations.",
+      "conversational_goal": "Respond to the recommender's question by indicating movie preferences so the recommender can suggest suitable movies."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender greets the target and asks, 'What kind of movies are you into?' Information available to the target is limited to this greeting and question. No movie preferences have been stated by the target yet.\",\n    \"belief_before\": \"No prior dialogue context; the target has not yet formed beliefs about this recommender or the recommendation task.\",\n    \"belief_update\": \"The target learns that the recommender is asking about their movie genre preferences. This is the initial turn, so there is no previous interpretation to revise.\",\n    \"belief_after\": \"The target believes the recommender wants to learn their movie tastes, likely to make tailored movie recommendations.\",\n    \"emotion\": \"Neutral/attentive; no emotional reaction from the target is yet observable.\",\n    \"intention\": \"Consider how to answer the question, likely intending to share movie preferences or ask for recommendations.\",\n    \"conversational_goal\": \"Respond to the recommender's question by indicating movie preferences so the recommender can suggest suitable movies.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

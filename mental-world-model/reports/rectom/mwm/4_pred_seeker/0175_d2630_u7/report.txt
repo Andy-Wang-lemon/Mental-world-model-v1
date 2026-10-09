@@ -1,0 +1,60 @@
+数据：4_pred_seeker
+题号：175  d2630_u7
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在SEEKER此刻的经验里，RECOMMENDER问“喜欢什么类型”以及“喜欢恐怖吗”并不是随口收集偏好，而是在要求他给出一个能与自身形象保持一致的立场声明；尤其horror被经验为一个必须明确表态的类别，不能喜欢或不喜欢都含糊过去。被点到的片名围绕这一点，成为检验他立场是否稳定、是否像同一个人会给出的回答的参照。",
+      "probability": 0.4061
+    },
+    {
+      "content": "在SEEKER此刻的经验里，RECOMMENDER点名的电影不是与己无关的片名，而是自身文化阅历的一部分，是否看过它们牵连着他在这个对话里的文化位置；同时，被归入horror的《Rumpelstiltskin》使恐怖片成为一个必须明确表态的类别，他经验到自己在“是否看过”与“是否喜欢horror”上都被要求给出确定的文化身份位置。",
+      "probability": 0.3296
+    },
+    {
+      "content": "在SEEKER此刻的经验里，RECOMMENDER点出的每部电影都变成一个非此即彼的事实坐标：看过或没看过，没有中间态；若没看过，他就在这个话题上被放到缺失位置。因此“喜欢什么类型”也不只是可随口说说的普通信息，而要与这些看过/没看过的固定事实共同维持一个不矛盾的自我形象。",
+      "probability": 0.2643
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 把这些提问收束成一个要求：他必须给出前后一致的口味声明，不能让人觉得自己是随口的、摇摆的。恐怖片需要被清楚排除，而 dramas 要持续作为他的自我定位。被点到的片名不是普通片单，而是检验他会不会偏离这个定位的参照；《There Will Be Blood》正好落在他愿意认领的严肃剧情一侧，所以他自然把它归入自己会爱的范围，并留意后面的片名也要用同一把尺子衡量，以免立场显得松动。",
+      "activation": 0.3651
+    },
+    {
+      "content": "这些电影被一个个点出来，就像必须填上「看过」或「没看过」的格子，没有中间态。我只喜欢剧情，不喜欢恐怖，所以没看过 Rumpelstiltskin 并不算缺口；There Will Be Blood 我看过而且喜欢，这正坐实了剧情片才是我认可的自己。现在问到《No Country for Old Men》，如果我没看过，这个事实就会把我放到缺失的位置上，可我又不能随口说看过，那样会跟我的偏好和已说的事实打架。我得把「喜欢剧情」这件事端稳，让每个看过或没看过的回答都跟它一致，不能露出矛盾。",
+      "activation": 0.3192
+    },
+    {
+      "content": "这些被点到的片名在我这里不是随便听听的，它们像在量我这一路看过什么、懂什么。《Rumpelstiltskin》被归到恐怖，就更让我要把自己和 horror 划开，免得被当成那种口味的人。我说喜欢戏剧、不喜欢恐怖，不只是答偏好，也是在摆明自己的文化位置。《There Will Be Blood》我确实看过且爱，这让我觉得这个位置站得住：我要的是那种有分量的剧情，而不是恐怖。接下来若再点到别的片，我会先掂量它是不是同一路，再决定认不认。",
+      "activation": 0.3157
+    }
+  ],
+  "observed_action": "SEEKER stated a preference for dramas; SEEKER stated not liking horror and liking dramas; SEEKER stated having seen There Will Be Blood and loving it.",
+  "predicted_actions": [
+    {
+      "content": "回答看过该片并归为喜欢的剧情片",
+      "probability": 0.6145
+    },
+    {
+      "content": "回答没看过该片并追问其类型",
+      "probability": 0.1486
+    },
+    {
+      "content": "ask if it is a drama",
+      "probability": 0.1437
+    },
+    {
+      "content": "不回答是否看过，重申喜欢剧情片、不喜欢恐怖片",
+      "probability": 0.0932
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.7631, "b": 0, "c": 0.0932, "d": 0}
+选择说明：A 0.7631 = 回答看过该片并归为喜欢的剧情片 0.6145 + 回答没看过该片并追问其类型 0.1486；B 0.0000；C 0.0932 = 不回答是否看过，重申喜欢剧情片、不喜欢恐怖片 0.0932；D 0.0000。Actions 0 and 1 give feedback on the recommended movie, action 3 expresses preference, action 2 is unrelated.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

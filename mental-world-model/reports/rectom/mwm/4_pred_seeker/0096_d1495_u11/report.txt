@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：96  d1495_u11
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hi...How are you?...What kind of movies are you looking for?\nSEEKER says: Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close  (2011) \nRECOMMENDER says: Okay, well Road to Perdition (2002)  is a good drama with Tom Hanks\nSEEKER says: I haven't seen that one, but I love Tom Hanks\nRECOMMENDER says: Or have you seen It's Kind of a Funny Story  (2010)  is funny drama...But Tom Hanks is great in Cast Away (2000)   it’s another classic\nSEEKER says；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hi...How are you?...What kind of movies are you looking for?\nSEEKER says: Hello, I'm good thanks. I'm looking for a drama like Extremely Loud and Incredibly Close  (2011) \nRECOMMENDER says: Okay, well Road to Perdition (2002)  is a good drama with Tom Hanks\nSEEKER says: I haven't seen that one, but I love Tom Hanks\nRECOMMENDER says: Or have you seen It's Kind of a Funny Story  (2010)  is funny drama...But Tom Hanks is great in Cast Away (2000)   it’s another classic\nSEEKER says；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.9, "b": 0.4, "c": 0.3, "d": 0.2}
+选择说明：The recommender just offered multiple movie suggestions, so SEEKER is most likely to give feedback on them next.
+标准：B: Add more information about their preferences, such as genres, actors, or past favorites
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：No predicted next action states the strategy; only the observed dialogue and abstract thoughts are present.

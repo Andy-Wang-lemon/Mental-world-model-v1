@@ -1,0 +1,78 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 173,
+  "item_id": "d2630_u3",
+  "dialogue_id": "2630",
+  "utterance_pos": 3,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "c"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nC: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER紧接着问出的“Do you like horror?”把“恐怖片”对象化为一个只能以喜欢/不喜欢二分的固定类别；这个问题不是单纯询问偏好，而像要求SEEKER把自己归入“喜欢恐怖片的人”或“不喜欢恐怖片的人”其中一侧，于是“喜不喜欢恐怖片”成了关于SEEKER是什么样人的自我标签，必须由SEEKER表态并认领。",
+        "probability": 0.3709
+      },
+      {
+        "content": "SEEKER听到“What genre do you like?”时，经验到的是一个要求自己界定并交出一个固定电影类型标签的对象化世界；“我的类型偏好”被体验为不能随便由对方归类的自我部分，而问题本身仿佛预设一个人理应能给出某种类型标签，否则就无法被理解。随后提到的Rumpelstiltskin(1995)与horror，也像是把话题往某个固定类型格子里安放。",
+        "probability": 0.3591
+      },
+      {
+        "content": "SEEKER听到RECOMMENDER提到“Rumpelstiltskin (1995)”并问是否看过时，这部片名被经验为一道与SEEKER自身位置有关的门槛：看过/没看过不只是关于一部电影的信息，而像在判定SEEKER是否算作看过、是否能接上这个话题。紧接着“Do you like horror?”又把恐怖片呈现为一个必须站队的固定类别，要求SEEKER按喜欢/不喜欢给自己定位。",
+        "probability": 0.2701
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "RECOMMENDER 刚听我说喜欢剧情片，紧接着就把话题抛到恐怖片上，还问「Do you like horror?」。在他这里，恐怖片像是一个只能喜欢或不喜欢的固定格子，这一问不是随便聊偏好，而是等我把自己放进其中一格。若我直接答喜欢或不喜欢，就等于承认这个二分能定义我是什么样的人。我不想被一个恐怖片类别牵着走；剧情片才是我已经说出的偏好，要不要喜欢恐怖片，不该变成对我这个人的归类。我宁可先守住自己刚才说的，不轻易在这个二选一里认领一侧。",
+        "activation": 0.3826
+      },
+      {
+        "content": "SEEKER听到“What genre do you like?”时，先把“喜欢什么类型”当作一个需要由自己交出确定标签的场合；说出“剧情片”既是给口味一个可被理解的界定，也是不让随后提到的恐怖片方向替自己归类。对话题被往固定类型格子里安放，SEEKER心里略有防备，但仍愿意交出一个属于自己的类型名。",
+        "activation": 0.326
+      },
+      {
+        "content": "SEEKER听到“Rumpelstiltskin (1995)”时，并不只觉得这是一个陌生的片名，而是立刻把它当成一道衡量自己位置的门槛：如果说没看过，似乎就暴露自己接不上这个话题、不够算作能聊这部片的人；如果说看过，又未必真有把握。紧接着“Do you like horror?”把恐怖片摆成一个必须站队的固定类别，他心里抗拒被喜欢/不喜欢简单二分，因为自己刚说过喜欢剧情片，此刻若被归到恐怖片一边或另一边，都像是在改写刚才的自我表述。于是内心一边想把“喜欢剧情片”守住为更准确的位置，一边盘算着怎样既不被片名门槛卡住，也不必按恐怖片的类别给自己下定义。",
+        "activation": 0.2914
+      }
+    ],
+    "observed_action": "SEEKER 表示自己喜欢剧情片。",
+    "predicted_actions": [
+      {
+        "content": "state preference for dramas over horror",
+        "probability": 0.6705
+      },
+      {
+        "content": "ask for reason",
+        "probability": 0.1596
+      },
+      {
+        "content": "提问",
+        "probability": 0.0913
+      },
+      {
+        "content": "询问影片类型与对方意图",
+        "probability": 0.0787
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0.6705,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.6705 = state preference for dramas over horror 0.6705；D 0.0000。Action 0 directly expresses a preference, matching option C's strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

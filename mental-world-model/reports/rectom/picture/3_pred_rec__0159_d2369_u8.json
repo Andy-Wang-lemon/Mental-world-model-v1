@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0159_d2369_u8",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER likes comedy movies and has named several favorites: *Bridesmaids*, *How to Lose a Guy in 10 Days*, *Neighbors*, *Meet the Parents*, and *Wedding Crashers*. RECOMMENDER also knows SEEKER has seen and liked *Sister Act* and *Sister Act 2*, finds Madea hilarious, and has seen *Walk Like a Man* but could not get into it. RECOMMENDER knows their own liked movies: *Sister Act*, *Sister Act 2*, *Boo! A Madea Halloween*, and *Walk Like a Man*. RECOMMENDER’s intention is to keep recommending suitable comedy movies.\n\nRECOMMENDER does **not** know whether SEEKER has seen other potential recommendations (e.g., *The Hangover*, *The Heat*, etc.), nor does RECOMMENDER know SEEKER’s exact preferences beyond the examples already mentioned. RECOMMENDER also does not know what specific movie SEEKER wants next.\n\nAt this point, SEEKER has just rejected *Walk Like a Man* and offered additional liked movies. Since RECOMMENDER’s role is to recommend movies, the most likely next strategy is to continue the recommendation process by suggesting another comedy, possibly based on the newly mentioned preferences. This corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

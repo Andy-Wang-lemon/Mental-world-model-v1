@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 9,
+  "item_id": "d622_u6",
+  "dialogue_id": "622",
+  "utterance_pos": 6,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "RECOMMENDER 此刻经验到：SEEKER 那句“want to help me find a fun movie for all ages”不是普通询问，而是一件已经落到自己身上的事；眼前的对象是一个必须由自己协助完成的找片任务。同时，“That one is a litle scary for my littles”一经出现，就化为一道硬边界——被点到的片子以及同类可能吓到幼儿的影片，在 RECOMMENDER 的经验里直接失去候选资格；可考虑的世界被压缩成既有趣、又不吓幼儿的影片范围，The Parent Trap (1998) 与 The Goonies 等名字都只能在这条边界内被掂量。",
+        "probability": 0.4225
+      },
+      {
+        "content": "RECOMMENDER 此刻经验到：自己站在必须替 SEEKER 判断全家适合看什么的推荐者位置上；而“适合所有年龄”被执成同一部片必须同时对幼儿和成人绝对安全，不能靠按年龄分层、也不能靠家长陪同来消解吓人点。于是，SEEKER 说“That one is a litle scary for my littles”在这个世界里不是可协商的提醒，而是一票否决；即使 SEEKER 提出 The Goonies 对孩子们可以、且自己已看过但未与家人同看，那也只是把候选放到“必须绝对全龄安全”这道尺子前，任何仍可能吓到幼儿的片子都不能算通过。",
+        "probability": 0.308
+      },
+      {
+        "content": "RECOMMENDER 此刻经验到：自己处在『能替 SEEKER 判断哪部片适合全家』的推荐者位置上，最终选择不是与己无关的事。『有趣』在眼前被固定成 The Parent Trap (1998) 那类合家欢/家庭喜剧的样子，SEEKER 说『the kids enjoyed it too』和『maybe something not animated』让这个对象世界收窄为：符合这种家庭喜剧模板、又不是动画、还能让全家一起看的影片，才像真正满足 SEEKER 偏好的候选。与此同时，SEEKER 说『That one is a litle scary for my littles』，把『对幼儿吓人』从候选空间中排除；SEEKER 又提出『the Goonies would be good for them I think』，并说『I have seen that but not with the family』，于是 The Goonies 在 RECOMMENDER 的所缘中成为一个被 SEEKER 交到推荐者位置上的候选：它被 SEEKER 看作对孩子们可用，且带着『自己看过但未与家人同看』这一经历；在法执把『有趣』固定为 The Parent Trap (1998) 那类合家欢/家庭喜剧的情况下，The Goonies 若要成为满足 SEEKER 偏好的对象，就被拉入『是否仍属于那类合家欢/家庭喜剧』的判定中，而『适合所有年龄』与『不能对幼儿吓人』则作为边界条件被同时扣在这个候选上。",
+        "probability": 0.2695
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这事不是随口问问，已经落到我身上了：我得把合适全家看的片子从记忆里翻出来。可一旦“会吓到幼儿”这条线出来，被点到的那部以及同类有这种风险的名字就不能再算候选；Avatar 若被归到吓人的一边，就得从家庭选项里拿掉。Parent Trap 是她喜欢的样式，Goonies 既然她说到孩子们还行、只是她自己没跟家人一起看过，就还能留在边界内掂量；但动画这条排除线也让先前的 Lego Batman 变得不那么稳。眼下只能在既有趣、又不吓幼儿的片子里继续筛，别的先放下。",
+        "activation": 0.3798
+      },
+      {
+        "content": "我在这里不是站在外面看热闹：她家最后看哪部片，跟我给出的判断是连在一起的。现在她说的“有趣”在我心里已经收成《The Parent Trap》那种合家欢、孩子也会喜欢的家庭喜剧样子；她说“maybe something not animated”，又把动画片往外推了一些。可她接着把《The Goonies》放到我面前，说这对孩子们可能不错，还说自己看过但没和家人一起看——这让我把它看成一个已经被她递到推荐者位置上的候选，而且它带着“可以成为全家一起看”的经历。只是在我把“有趣”固定成那种家庭喜剧模板时，它到底还算不算同一类合家欢，需要再掂量；同时“适合所有年龄”和“不能对幼儿吓人”像两道边线扣在它上面。我心里的倾向是把它先留在候选里，不轻易放掉，但又不能只因为她说好就把它当成完全合上模板的答案；我仍要在这个被收窄的对象世界里，把非动画、不吓到幼儿、能让全家一起看这些条件压在每一部片上，直到有一个像真正满足她偏好的对象浮现出来。",
+        "activation": 0.3106
+      },
+      {
+        "content": "我坐在推荐者的位置上，得替 SEEKER 把住“全家适合”这道关。“适合所有年龄”在我这里不是大致安全，而是同一部片必须同时对幼儿和成人绝对安全；家长陪看、按年龄分层都不算数。所以 SEEKER 说那部对小孩有点吓人，就等于一票否决，没有商量余地。Goonies 我自己觉得不错，SEEKER 也说孩子们可能可以，可只要仍有可能吓到幼儿，按我的尺子就不能算通过。手里的候选都还得重新掂量，不能把最终选择推回给 SEEKER。",
+        "activation": 0.3096
+      }
+    ],
+    "observed_action": "RECOMMENDER 打招呼；RECOMMENDER 说“Let me think....”，并提出《The Lego Batman Movie (2017)》；RECOMMENDER 表示《Avatar (2009)》适合作为家庭电影，并说《The Goonies (1985)》不错。",
+    "predicted_actions": [
+      {
+        "content": "RECOMMENDER 说：那就把 Avatar 从家庭片里拿掉。",
+        "probability": 0.2567
+      },
+      {
+        "content": "撤回先前对某电影的适合全家观看的推荐/候选资格",
+        "probability": 0.2276
+      },
+      {
+        "content": "保留候选",
+        "probability": 0.203
+      },
+      {
+        "content": "询问是否保留某片",
+        "probability": 0.1605
+      },
+      {
+        "content": "比较影片类型",
+        "probability": 0.1522
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 0.2,
+    "d": 0.0,
+    "e": 0.0
+  },
+  "score_reason": "Only a minor predicted action involves inquiring further, while the main predictions are retracting or keeping candidates.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

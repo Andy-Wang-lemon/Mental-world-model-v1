@@ -1,0 +1,64 @@
+数据：4_pred_seeker
+题号：13  d895_u1
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在SEEKER此刻的经验里，对方那句询问把「我最喜欢的电影」推到了一个必须由我交出的入口位置；这个列表不是普通信息，而是属于我、构成我品味的一部分。于是当前互动被经验成一种固定的交换：要得到推荐，似乎只能先由我把这份属于我的清单交出去，顺序本身就像理所当然。",
+      "probability": 0.3806
+    },
+    {
+      "content": "在SEEKER此刻的经验里，对方一边询问我喜欢的电影，一边说会推荐「适合你的好电影」，这使「什么适合我」的裁量位置被放到了对方那边；而互动又被经验成必须先由我交出 favorite movies，对方的推荐才成立。我的自主位置——由我自己决定喜欢什么、不接受什么——正在这个交换顺序里被触及。",
+      "probability": 0.3245
+    },
+    {
+      "content": "在SEEKER此刻的经验里，对方所说的「适合你的好电影」被固定成必须从我已列出的 favorite movies 中推导出来；好只被经验为与我既有喜好相吻合的那种好，不能是别种意义上的好。于是对方一问 favorite movies，就像在索取那个能决定何为「适合我」的、属于我的品味底本。",
+      "probability": 0.295
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 感到对方这一问不是随便问问：『我最喜欢的电影』被直接推到必须由我交出的入口位置，好像要得到推荐，就得先把自己品味的一部分亮出来。心中一边确认这份清单确实是属于我、能代表我的东西，不能当成普通资料随手给出去；一边又把『我先交出清单，对方再据此推荐』当作理所当然的流程，觉得不这样就走不通。于是内在生出一种被要求敞开边界的紧，既不愿意轻易把这份属于我的东西交出去，又觉得若要得到推荐，似乎只能顺着这个顺序走。",
+      "activation": 0.3806
+    },
+    {
+      "content": "SEEKER察觉到对方的问题里夹带着一个前置判断：由对方来定义「适合我的好电影」。这使「什么适合我」的裁量位置被放到了对方那边，而自己本应是自己喜好与不接受什么的最终决定者。同时，这个互动还预设了一个顺序——必须先交出favorite movies，对方的推荐才成立。SEEKER感到自己的自主位置在这个交换顺序里被触及；内心并不愿意轻易把「什么适合我」的判断权交出去，也不认为必须先暴露自己的喜好才能得到有价值的推荐。",
+      "activation": 0.3245
+    },
+    {
+      "content": "在SEEKER这里，对方要的并不只是几个片名，而是一份能反过来规定「什么才算适合我」的品味底本。所谓好推荐，已被他理解成必须从自己已说出的最爱电影中长出来；若不符合那串清单，哪怕别处再好，也像对自己无效。于是「favorite movies」这个词一出现，边界就被碰到了：那些片子不是中性资料，而是关于「我」、属于「我」的自我标识。给出去，就像把界定我该喜欢什么、什么才算好的尺度交到对方手里，让推荐变成按我的旧口味复写我；不给，又像把入口关上，使别人无从接近这个「我」。心中因此一面收紧，一面盘算哪些片名足以代表自己、哪些一交出去就会被误当成全部底本；真正被拿来衡量的，不是电影，而是要不要交出那份决定「适合我」的权柄。",
+      "activation": 0.295
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": [
+    {
+      "content": "提供片名/片单供推荐",
+      "probability": 0.398
+    },
+    {
+      "content": "请求按类型/偏好直接推荐",
+      "probability": 0.1812
+    },
+    {
+      "content": "质疑对方判断能力",
+      "probability": 0.1655
+    },
+    {
+      "content": "坚持自己判断适合性",
+      "probability": 0.1287
+    },
+    {
+      "content": "提供片名并附加免责说明",
+      "probability": 0.1267
+    }
+  ]
+}
+选择：B: Add more information about their preferences, such as genres, actors, or past favorites
+分数：{"a": 0.2942, "b": 0.5247, "c": 0.1812, "d": 0}
+选择说明：A 0.2942 = 质疑对方判断能力 0.1655 + 坚持自己判断适合性 0.1287；B 0.5247 = 提供片名/片单供推荐 0.3980 + 提供片名并附加免责说明 0.1267；C 0.1812 = 请求按类型/偏好直接推荐 0.1812；D 0.0000。Providing titles/lists adds preference info, requesting recommendation is asking, and judgment/suitability comments are feedback.
+标准：B: Add more information about their preferences, such as genres, actors, or past favorites
+结果：对

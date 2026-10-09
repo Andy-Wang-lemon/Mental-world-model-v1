@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：43  d1002_u14
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hey. Can you recommend some good new science fiction films? Preferably something already on DVD that I can buy or rent to watch online.\nRECOMMENDER says: Sure thing. Have you seen Star Wars: The Force Awakens (2015)  ?\nSEEKER says: lol, I have. Who hasn't\nRECOMMENDER says: Good point. :)...What about Passengers  (2016)  with Jennifer Laawrence and Chris Pratt?\nSEEKER says: No, what's that about?\nRECOMMENDER says: A guy (Pratt) is awakened prematurely on an interstellar space trip, a；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hey. Can you recommend some good new science fiction films? Preferably something already on DVD that I can buy or rent to watch online.\nRECOMMENDER says: Sure thing. Have you seen Star Wars: The Force Awakens (2015)  ?\nSEEKER says: lol, I have. Who hasn't\nRECOMMENDER says: Good point. :)...What about Passengers  (2016)  with Jennifer Laawrence and Chris Pratt?\nSEEKER says: No, what's that about?\nRECOMMENDER says: A guy (Pratt) is awakened prematurely on an interstellar space trip, a；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.92, "b": 0.31, "c": 0.27, "d": 0.12}
+选择说明：SEEKER is responding to the recommended film details, so giving feedback on that suggestion is the most direct next strategy.
+标准：D: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：No predicted next action or thought indicates SEEKER will use greetings, gratitude, or chit-chat.

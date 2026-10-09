@@ -1,0 +1,56 @@
+数据：3_pred_rec
+题号：195  d3089_u10
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "SEEKER 是直接来向我求助选一部好超级英雄电影的人，这让我把‘推荐者/懂超级英雄电影的人’这个位置经验为自己的一部分；他说的不喜欢 Spider-Man (2002)、爱经典和超人、要确认 The Dark Knight (2008) 是否恐怖，是此刻我必须贴合的条件，不是无关背景。现在他说没看过 The Dark Knight (2008)、会尝试它并致谢，这个片名就处在我这边用那些条件衡量出的对象位置上，致谢则让这轮选片请求收束。",
+      "probability": 0.5398
+    },
+    {
+      "content": "SEEKER 提出要找一部好超级英雄电影、又追问 The Dark Knight (2008) 是否恐怖，这被经验为落到我分内的选片任务；他的口味——不喜欢 Spider-Man (2002)、爱经典和超人——因此都成了这项任务必须满足的条件。此刻他说未看过 The Dark Knight (2008)、将尝试它并说谢谢，世界呈现为：需要我处理的选片困惑已对准这个片名，而他的告别语把这件事推到一个完成句点上。",
+      "probability": 0.4602
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "他一开始就直接来问我选一部好超级英雄片，这让我把推荐者和懂超级英雄片的位置归到自己这边；他嫌 Spider-Man (2002) 不对味，喜欢经典又喜欢超人，还问 The Dark Knight (2008) 吓不吓人，这些就是此刻我要贴合的条件。现在他说没看过 The Dark Knight (2008)，会试着看，还道谢，说明我给的“不吓人、很悬疑”对上了他的顾虑，这部片名就在我按那些条件衡量出的对象位置上，这轮选片请求也就收到他这里了。我对自己这个推荐位置是稳的，觉得这番回应算是把这单接住了。",
+      "activation": 0.5241
+    },
+    {
+      "content": "RECOMMENDER 把 SEEKER 找超级英雄片这件事当作自己该接住的选片任务，因此对方说过的不喜欢 Spider-Man (2002)、偏爱经典和超人，都自然成了他心里衡量推荐的现成条件。此刻 SEEKER 说没看过 The Dark Knight (2008)、准备去试，并道谢告别，这让他觉得原先悬着的选片问题已经对准了一个具体片名，自己的回答也已被接住；他会倾向于认为这次推荐已经走到可以收束的位置，TDK 作为答案大体成立，先前的悬疑说明也够用，不必再另起一堆补充，同时对 SEEKER 的偏好仍保持一份可继续参照的在意。",
+      "activation": 0.4759
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 Hello；说个人最喜欢的是 Spider-Man (2002)；说 Oh wow，问 Superman (1978) 怎么样，并表示偏好 Christopher Reeve 的那一版；说 Christopher Reeve 的超人比近期版本好，还说也喜欢 The Dark Knight (2008)；回答不吓人，但很悬疑，又说没看过 Captain America: The First Avenger，但听说不错。",
+  "predicted_actions": [
+    {
+      "content": "道别/结束对话",
+      "probability": 0.4095
+    },
+    {
+      "content": "回应感谢并祝观影愉快",
+      "probability": 0.3504
+    },
+    {
+      "content": "邀请分享观后感",
+      "probability": 0.1413
+    },
+    {
+      "content": "推荐电影",
+      "probability": 0.0536
+    },
+    {
+      "content": "表示以后可再咨询",
+      "probability": 0.0452
+    }
+  ]
+}
+选择：E: Greetings, gratitude expression, or chit-chat utterances
+分数：{"a": 0.1413, "b": 0.3504, "c": 0.0536, "d": 0, "e": 0.4547}
+选择说明：A 0.1413 = 邀请分享观后感 0.1413；B 0.3504 = 回应感谢并祝观影愉快 0.3504；C 0.0536 = 推荐电影 0.0536；D 0.0000；E 0.4547 = 道别/结束对话 0.4095 + 表示以后可再咨询 0.0452。Action 2 seeks feedback, 1 responds to thanks, 3 recommends a movie, and 0/4 are social closing utterances.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+结果：对

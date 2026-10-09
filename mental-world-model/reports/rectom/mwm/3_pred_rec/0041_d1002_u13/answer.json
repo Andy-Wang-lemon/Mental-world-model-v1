@@ -1,0 +1,78 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 41,
+  "item_id": "d1002_u13",
+  "dialogue_id": "1002",
+  "utterance_pos": 13,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在 RECOMMENDER 的所缘里，事情被组织成一个与自己分不开的达成目标：SEEKER 能实际获取并接受所推荐的科幻片。已发行 DVD、可购买或在线租赁是这一目标成立的前提，不合此条件的片目被排除在他的推荐世界之外；SEEKER 的‘Yeah, that's more my speed. :)’和最后‘I'll check them out. And they're all on DVD?’不是普通反馈，而是这个达成目标此刻的确认面——他给出的片单要同时落在 SEEKER 可获取且合口味的范围内。",
+        "probability": 0.3588
+      },
+      {
+        "content": "在 RECOMMENDER 的所缘里，SEEKER 的推荐请求不是远处的一个问题，而是落在他这个‘科幻电影推荐来源’位置上的事：对方要新科幻片、要已发行 DVD、可购买或在线租赁，这几项合在一起构成他眼前可推荐世界的边界。SEEKER 说‘lol, I have. Who hasn't’、追问‘what's that about?’、评‘Sounds melodramatic.’、又说‘more my speed. :)’、最后问‘all on DVD?’，这些在 RECOMMENDER 这里都成为同一条与己相关的线：只有符合 DVD/在线租赁条件的片目才进入他此刻所见的可推荐范围，不符合的则被挡在外面。",
+        "probability": 0.3297
+      },
+      {
+        "content": "在 RECOMMENDER 的所缘里，他给出的影片判断与推荐清单像是自己伸出去的一部分，SEEKER 对影片的每句回应、评价与追问都直接落在这份清单上。‘Sounds melodramatic.’被他当成一个固定的负面口味标记，凡被归入这一类的影片就不再适合进入合格推荐；‘Yeah, that's more my speed. :)’则划出另一类可以贴近的片。‘Oh okay. I never watched it because I thought it was a remake of the original.’以及最后‘all on DVD?’也都贴在这份由他给出的影片判断与清单上，成为对它的确认或追问。",
+        "probability": 0.3115
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "对方要的是新科幻片，而且得已出DVD、能买或在线租；这个条件一摆出来，我这边能拿出来的片目就先被这条边界筛了一遍。Star Wars那部人人看过，提了等于没提；Passengers虽被说melodramatic，但还在可推荐范围里，所以我先把它讲清楚，再顺着对方嫌慢的意思转向Life、The Thing、Pandorum这些更暗、更合他口味的。它们都满足可获取条件，此刻我关心的不是把每部都夸成多好，而是让符合条件又接得住他反应的片目排成一条线。最后他问是不是都在DVD，这正好压在这条边界上，我给出的片目就得经得起这个确认。",
+        "activation": 0.3545
+      },
+      {
+        "content": "SEEKER 最后问“它们都在 DVD 上吗”，这直接指向 RECOMMENDER 心里那个与自身分不开的达成目标：推荐的片子必须是他能实际拿到手的。他迅速在脑子里过了一遍刚提的片单——星战7、Passengers、Life、The Thing(2011)、Pandorum(2009)——这些都是近年上映过的商业片，按他的既有认识，它们理应都已发行 DVD 并可购买或租赁；若其中哪一部没有 DVD，那它就不该留在推荐里。SEEKER 说 Life“更合我速度”已经表明口味对上了，现在只剩获取条件这条硬门槛需要确认。他心里倾向于给出肯定答复，因为只有这些片同时落在“可获取”和“合口味”的范围内，他这次推荐才算真正达成。",
+        "activation": 0.3364
+      },
+      {
+        "content": "我的推荐清单像是我伸出去的一部分，SEEKER 的每句回应都直接落在这份清单上。听到‘Sounds melodramatic.’，我立刻把它当成一个固定的负面口味标记：Passengers 被归入这一类，就不该再作为合格推荐来强调，所以我承认它确实如此，但补充它仍算 okay，并赶紧转向 Life，因为它更 dark，更贴近他刚说出的‘more my speed’。当他确认‘Yeah, that's more my speed. :)’，这就划定了另一类可贴近的片，我便顺着这条线继续推 The Thing 和 Pandorum，强调不是翻拍、更黑暗、无浪漫，以维持清单对他的适配。之后他解释没看 The Thing 是因为以为是翻拍，以及最后追问是否都在 DVD 上，都落在我给出的判断和清单上，成为对它的确认或追问；我倾向于把这些追问纳入同一份延伸，用澄清和补充细节来巩固这份推荐的有效性。",
+        "activation": 0.309
+      }
+    ],
+    "observed_action": "RECOMMENDER says sure thing; asks whether SEEKER has seen Star Wars: The Force Awakens (2015); says good point and asks about Passengers (2016) with Jennifer Laawrence and Chris Pratt; describes a guy Pratt awakened prematurely on an interstellar space trip who wakes another passenger Lawrence for company while the ship is in danger of falling apart and they have to figure out why; says it is, but it is still an okay movie, and if that sounds too slow, suggests Life (2017) with Jake Gylenhal and Ryan Reynolds, a dark film about an alien life form from Mars; in that case also suggests The Thing (2011), saying it is not a remake of the original but a prequel, and tells the story of what happened to the Norwegians before the dog shows up at the US camp; says nope, entirely different story, and also suggests Pandorum (2009) with Dennis Quaid and Ben Foster, very similar to Passengers but much darker and no romance.",
+    "predicted_actions": [
+      {
+        "content": "告知电影有 DVD 可购买或在线租赁",
+        "probability": 0.7038
+      },
+      {
+        "content": "推荐电影优先级并告知有 DVD 或在线上租",
+        "probability": 0.2256
+      },
+      {
+        "content": "指示观看并询问从哪部开始",
+        "probability": 0.0377
+      },
+      {
+        "content": "提出无法获取时替换备选",
+        "probability": 0.0329
+      }
+    ]
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Responds to the seeker's question or statement",
+  "option_scores": {
+    "a": 0.0377,
+    "b": 0.7038,
+    "c": 0.2585,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.0377 = 指示观看并询问从哪部开始 0.0377；B 0.7038 = 告知电影有 DVD 可购买或在线租赁 0.7038；C 0.2585 = 推荐电影优先级并告知有 DVD 或在线上租 0.2256 + 提出无法获取时替换备选 0.0329；D 0.0000；E 0.0000。Action 2 asks which to start (A), 0 informs availability (B), and 1 and 3 provide or propose recommendations/alternatives (C).",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

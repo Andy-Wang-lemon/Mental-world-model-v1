@@ -1,0 +1,67 @@
+{
+  "id": "3_pred_rec__0001_d474_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi can you help me find a movie to watch'",
+      "information_available_to_target": "The seeker is asking for help finding a movie to watch. No genre or title constraints are known yet.",
+      "preferences": {
+        "target_speaker": "No personal movie preference stated; appears willing to help.",
+        "other_speaker": "Wants a movie to watch; no genre preference stated."
+      },
+      "belief_before": "No specific beliefs about the seeker's movie preferences yet.",
+      "belief_update": "The seeker wants assistance choosing a movie.",
+      "belief_after": "The seeker needs a movie recommendation, with no known genre restrictions.",
+      "emotion": "Neutral/helpful.",
+      "intention": "Offer assistance with a movie recommendation.",
+      "reaction_to_other": "Responds positively to the request for help.",
+      "conversational_goal": "Acknowledge the request and prepare to suggest a movie.",
+      "changes_previous_interpretation": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Yes, how about It (2017)?'",
+      "information_available_to_target": "The seeker has asked for help finding a movie. The recommender now suggests It (2017).",
+      "preferences": {
+        "target_speaker": "Willing to recommend; no personal genre preference stated.",
+        "other_speaker": "No genre preference has been stated yet."
+      },
+      "belief_before": "The seeker wants a movie recommendation and has not ruled out any genre.",
+      "belief_update": "The recommender proposes It (2017) as a candidate movie.",
+      "belief_after": "It (2017) is a reasonable candidate because no genre constraint has been given.",
+      "emotion": "Helpful/confident.",
+      "intention": "Provide a concrete movie recommendation.",
+      "reaction_to_other": "Answers the seeker's request affirmatively.",
+      "conversational_goal": "Offer a movie suggestion to satisfy the seeker's request.",
+      "changes_previous_interpretation": "No; this follows from the seeker's open-ended request."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I don't really like horror movies what about thrillers'",
+      "information_available_to_target": "The seeker dislikes horror movies and is asking about thrillers instead.",
+      "preferences": {
+        "target_speaker": "Likely prefers to accommodate the seeker's stated genre preference.",
+        "other_speaker": "Dislikes horror; prefers or asks for thrillers."
+      },
+      "belief_before": "It (2017) was a reasonable recommendation because no genre preference had been stated.",
+      "belief_update": "The seeker rejects horror and indicates a preference for thrillers.",
+      "belief_after": "It (2017) is unsuitable; the recommender should suggest thriller movies instead.",
+      "emotion": "Attentive, possibly apologetic/concerned.",
+      "intention": "Adjust the recommendation toward thrillers.",
+      "reaction_to_other": "Recognizes the rejection of the horror suggestion and the new genre preference.",
+      "conversational_goal": "Acknowledge the preference and recommend a thriller.",
+      "changes_previous_interpretation": "Yes; it invalidates the earlier assumption that It (2017) was suitable and updates the target genre to thriller."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi can you help me find a movie to watch'\",\n    \"information_available_to_target\": \"The seeker is asking for help finding a movie to watch. No genre or title constraints are known yet.\",\n    \"preferences\": {\n      \"target_speaker\": \"No personal movie preference stated; appears willing to help.\",\n      \"other_speaker\": \"Wants a movie to watch; no genre preference stated.\"\n    },\n    \"belief_before\": \"No specific beliefs about the seeker's movie preferences yet.\",\n    \"belief_update\": \"The seeker wants assistance choosing a movie.\",\n    \"belief_after\": \"The seeker needs a movie recommendation, with no known genre restrictions.\",\n    \"emotion\": \"Neutral/helpful.\",\n    \"intention\": \"Offer assistance with a movie recommendation.\",\n    \"reaction_to_other\": \"Responds positively to the request for help.\",\n    \"conversational_goal\": \"Acknowledge the request and prepare to suggest a movie.\",\n    \"changes_previous_interpretation\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Yes, how about It (2017)?'\",\n    \"information_available_to_target\": \"The seeker has asked for help finding a movie. The recommender now suggests It (2017).\",\n    \"preferences\": {\n      \"target_speaker\": \"Willing to recommend; no personal genre preference stated.\",\n      \"other_speaker\": \"No genre preference has been stated yet.\"\n    },\n    \"belief_before\": \"The seeker wants a movie recommendation and has not ruled out any genre.\",\n    \"belief_update\": \"The recommender proposes It (2017) as a candidate movie.\",\n    \"belief_after\": \"It (2017) is a reasonable candidate because no genre constraint has been given.\",\n    \"emotion\": \"Helpful/confident.\",\n    \"intention\": \"Provide a concrete movie recommendation.\",\n    \"reaction_to_other\": \"Answers the seeker's request affirmatively.\",\n    \"conversational_goal\": \"Offer a movie suggestion to satisfy the seeker's request.\",\n    \"changes_previous_interpretation\": \"No; this follows from the seeker's open-ended request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I don't really like horror movies what about thrillers'\",\n    \"information_available_to_target\": \"The seeker dislikes horror movies and is asking about thrillers instead.\",\n    \"preferences\": {\n      \"target_speaker\": \"Likely prefers to accommodate the seeker's stated genre preference.\",\n      \"other_speaker\": \"Dislikes horror; prefers or asks for thrillers.\"\n    },\n    \"belief_before\": \"It (2017) was a reasonable recommendation because no genre preference had been stated.\",\n    \"belief_update\": \"The seeker rejects horror and indicates a preference for thrillers.\",\n    \"belief_after\": \"It (2017) is unsuitable; the recommender should suggest thriller movies instead.\",\n    \"emotion\": \"Attentive, possibly apologetic/concerned.\",\n    \"intention\": \"Adjust the recommendation toward thrillers.\",\n    \"reaction_to_other\": \"Recognizes the rejection of the horror suggestion and the new genre preference.\",\n    \"conversational_goal\": \"Acknowledge the preference and recommend a thriller.\",\n    \"changes_previous_interpretation\": \"Yes; it invalidates the earlier assumption that It (2017) was suitable and updates the target genre to thriller.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

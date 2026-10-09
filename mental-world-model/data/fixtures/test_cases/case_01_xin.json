@@ -1,0 +1,28 @@
+{
+  "id": "case_01_xin",
+  "description": "体现「信」与「不信」对治关系的简短原文",
+  "yuanwen": "我知道坚持正确的事值得做，也愿意继续践行，不会因为没有立刻看到回报就放弃。",
+  "mock": {
+    "extraction": {
+      "suoyuan": {"text": "正确价值与践行"},
+      "xiang": {"text": "这是值得做的", "has_direct_evidence": true},
+      "si": {"text": "继续践行", "has_direct_evidence": true}
+    },
+    "elevated_scores": {
+      "信": 0.85,
+      "不信": 0.4
+    },
+    "stage_scores": {
+      "信": {"ye": 0.7, "xiandai": 0.7, "xiandai_confidence": 0.8},
+      "不信": {"ye": 0.4, "xiandai": 0.4, "xiandai_confidence": 0.7}
+    },
+    "reconcile": {
+      "信|不信": "信"
+    }
+  },
+  "assertions": {
+    "nonzero_final": ["信"],
+    "zero_final": ["不信"],
+    "extracted_suoyuan_confidence": 1.0
+  }
+}

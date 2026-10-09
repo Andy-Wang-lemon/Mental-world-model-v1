@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 81,
+  "item_id": "d1212_u4",
+  "dialogue_id": "1212",
+  "utterance_pos": 4,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Explains a recommendation with background or reasoning",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.4,
+    "c": 0.6,
+    "d": 0.9,
+    "e": 0.1
+  },
+  "score_reason": "The seeker's mention of knowing the twist invites the recommender to explain why the film is still worth watching.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record has no predicted next action, so the strategy must be inferred from the past recommendation exchange.",
+  "audit_level": "inferred"
+}

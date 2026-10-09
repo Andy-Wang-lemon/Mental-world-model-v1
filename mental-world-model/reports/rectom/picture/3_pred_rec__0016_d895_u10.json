@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0016_d895_u10",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER:\n- Liked *Lost in Translation*, *Aliens*, and *Alien: Covenant*.\n- Has seen and likes *The Truman Show*, *Rushmore*, *Pulp Fiction*, and *The Big Lebowski*.\n- Did not like *Total Recall* (2012), and prefers the original.\n- Has seen *Reservoir Dogs*. It is unclear whether SEEKER has seen *To Die For*, though RECOMMENDER’s comment suggests it may not be known or confirmed.\n- Has not seen *The River Wild* (1994) and is now asking what it is about.\n\nRECOMMENDER does **not** know:\n- Whether SEEKER has seen *Mystic River* or *Deep Impact*.\n- Whether SEEKER will like *The River Wild*.\n- Exactly which movie SEEKER will ultimately choose.\n\nGiven the final utterance, SEEKER directly asks, “What’s that about?” referring to *The River Wild*. The appropriate next strategy is therefore to respond to that question by explaining the recommended movie, likely giving background or reasoning about why it might suit SEEKER. This is more specific than merely “responding to a question” and fits the strategy of explaining a recommendation.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

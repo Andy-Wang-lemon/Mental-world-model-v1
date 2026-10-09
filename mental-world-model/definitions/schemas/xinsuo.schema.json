@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Xinsuo",
+  "type": "object",
+  "required": [
+    "name",
+    "suoyuan",
+    "shengqi_nian",
+    "ye",
+    "xiandai_xinli"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "心所名称"
+    },
+    "suoyuan": {
+      "type": "string",
+      "minLength": 1,
+      "description": "所缘境"
+    },
+    "shengqi_nian": {
+      "type": "string",
+      "minLength": 1,
+      "description": "生起的念头"
+    },
+    "ye": {
+      "type": "string",
+      "minLength": 1,
+      "description": "业"
+    },
+    "xiandai_xinli": {
+      "type": "string",
+      "minLength": 1,
+      "description": "用现代心理学语言，准确翻译"
+    }
+  },
+  "additionalProperties": false
+}

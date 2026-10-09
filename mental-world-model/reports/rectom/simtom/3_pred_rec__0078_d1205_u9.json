@@ -1,0 +1,13 @@
+{
+  "id": "3_pred_rec__0078_d1205_u9",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "RECOMMENDER has access only to the following conversation and their own actions within it:\n\n- SEEKER greeted them: “Hey How are you.”\n- RECOMMENDER replied, greeting SEEKER, asking how they are, and asking what kind of movies SEEKER likes.\n- SEEKER told RECOMMENDER:\n  - They are really into everything.\n  - They really like foreign movies.\n  - Foreign movies are “really my thing.”\n- RECOMMENDER recommended, because of the holidays:\n  - *Dr. Seuss’ How the Grinch Stole Christmas* (2000)\n  - *Christmas with the Kranks* (2004)\n  - RECOMMENDER asked whether SEEKER had seen either.\n- SEEKER said:\n  - No.\n  - They are not really a holidays person.\n  - They asked for other suggestions.\n- RECOMMENDER said “Oh, I see,” then recommended:\n  - *Halloween: The Curse of Michael Myers* (1995)\n  - RECOMMENDER asked whether SEEKER likes scary movies.\n- SEEKER said:\n  - No, not really.\n  - They have not seen it.\n  - They love Mike Myers, specifically his comedic stuff.\n- RECOMMENDER then recommended *Austin Powers*.\n- SEEKER asked which one that is and said they know there are three.\n\nRECOMMENDER’s own available actions include: greeting SEEKER, asking about movie preferences, making the above recommendations, asking whether SEEKER had seen the holiday movies, asking whether SEEKER likes scary movies, and recommending *Austin Powers*.\n\nNo prior interactions beyond this dialogue are provided.",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

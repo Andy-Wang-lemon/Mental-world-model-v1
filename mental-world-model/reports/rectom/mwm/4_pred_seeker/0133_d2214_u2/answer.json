@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 133,
+  "item_id": "d2214_u2",
+  "dialogue_id": "2214",
+  "utterance_pos": 2,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello. I've been hoping to find a movie similar to Alien  (1979)  or Halloween  (1978) \nRECOMMENDER says: How about A Nightmare on Elm Street (1984)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello. I've been hoping to find a movie similar to Alien  (1979)  or Halloween  (1978) \nRECOMMENDER says: How about A Nightmare on Elm Street (1984)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.35,
+    "c": 0.25,
+    "d": 0.15
+  },
+  "score_reason": "After the recommender offered a movie, the SEEKER is most directly expected to respond with feedback on that suggestion.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

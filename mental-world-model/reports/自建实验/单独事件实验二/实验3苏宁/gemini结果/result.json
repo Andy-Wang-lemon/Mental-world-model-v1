@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3苏宁.txt",
+  "agent": "苏宁",
+  "stimulus": "几年前，苏宁拿到国外研究生录取，出发前父亲需要做手术。哥哥刚有孩子，苏宁最终没有出国，留在家里几个月。后来她继续原来的工作，现在已经升职两次。一次吃饭聊到留学，母亲随口说：“你现在不是也挺好吗？当时幸好没去，不然哪有现在这些。”",
+  "thoughts": [
+    {
+      "text": "当时是我放弃了自己的前途选择成全家里，怎么在你们嘴里反倒成了侥幸？",
+      "probability": 0.55
+    },
+    {
+      "text": "我现在虽然升职了，但如果当初出国深造，明明可能会有更广阔、更不同的人生。",
+      "probability": 0.3
+    },
+    {
+      "text": "算了，他们永远不会真正明白我当年有多痛苦和遗憾，争辩这些也没有意义了。",
+      "probability": 0.15
+    }
+  ],
+  "top1": "当时是我放弃了自己的前途选择成全家里，怎么在你们嘴里反倒成了侥幸？",
+  "llm": {
+    "client": "http",
+    "model": "gemini-3.8-flash",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  }
+}

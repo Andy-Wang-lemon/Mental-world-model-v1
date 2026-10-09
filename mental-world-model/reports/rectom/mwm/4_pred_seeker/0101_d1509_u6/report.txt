@@ -1,0 +1,27 @@
+数据：4_pred_seeker
+题号：101  d1509_u6
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hi\nRECOMMENDER says: Hello, what kind of movie are you looking for?\nSEEKER says: I’m looking for some good thriller movies...I love he suspense sort of films like Seven  (1995) \nRECOMMENDER says: Ok, do you like Saw  (2004)  ?\nSEEKER says: That’s more gorey which I don’t like...I like Double Jeopardy  (1999) \nRECOMMENDER says: Oh ok. I've never seen Double Jeopardy  (1999)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hi\nRECOMMENDER says: Hello, what kind of movie are you looking for?\nSEEKER says: I’m looking for some good thriller movies...I love he suspense sort of films like Seven  (1995) \nRECOMMENDER says: Ok, do you like Saw  (2004)  ?\nSEEKER says: That’s more gorey which I don’t like...I like Double Jeopardy  (1999) \nRECOMMENDER says: Oh ok. I've never seen Double Jeopardy  (1999)；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：B: Add more information about their preferences, such as genres, actors, or past favorites
+分数：{"a": 0.4, "b": 0.85, "c": 0.6, "d": 0.1}
+选择说明：The seeker has just clarified dislikes and a positive example, so the record supports adding further preference details more directly than the other strategies.
+标准：B: Add more information about their preferences, such as genres, actors, or past favorites
+结果：对

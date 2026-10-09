@@ -1,0 +1,78 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 185,
+  "item_id": "d2818_u5",
+  "dialogue_id": "2818",
+  "utterance_pos": 5,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER的“Good evening!”与“你对什么电影类型感兴趣？”把“电影类型偏好”对象化为一件属于SEEKER自己、且要由SEEKER拿出来代表自己的东西；这个提问像了解一个人的固定入口，仿佛只有把清楚的类型清单交出去，这段对话才算完整。随后提到的《Bright》和《Star Wars: Episode VIII – The Last Jedi》被放在这个入口旁边，成为需要被归入或对照的类型坐标，而不是单纯由RECOMMENDER发出的观影信息。",
+        "probability": 0.4498
+      },
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER问“对什么电影类型感兴趣”仍先让“电影类型偏好”成为一件属于SEEKER自己、能代表SEEKER的东西；但更突出的是RECOMMENDER说《Bright》很好、即使没有背景故事。这句话被经验为在判定电影好坏时把“有无背景故事”摆成固定根据：一部电影的评价似乎要看它是否依赖背景故事，或者好电影本来就不需要背景故事。RECOMMENDER还提到《Star Wars: Episode VIII – The Last Jedi》，它在这一根据旁边出现，暂未改变这个“评价与背景故事挂钩”的对象化框架。",
+        "probability": 0.3011
+      },
+      {
+        "content": "在SEEKER此刻的经验里，“你对什么电影类型感兴趣？”仍被经验为要从自己这里取出一个属于自己、能代表自己的电影类型偏好；而RECOMMENDER说看过《Star Wars: Episode VIII – The Last Jedi》(2017)，这句话不再只是对方的个人观影经历，而被对象化为一个需要形成固定评价或站定立场的话题。《Bright》的提及也落在同一场对话中，但《Last Jedi》被突出为必须被评价、必须表态的对象。",
+        "probability": 0.2491
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这个问候和问题把“我喜欢什么类型”变成了一件需要我交出来、能代表我的事，好像不给出清楚的类型清单，这段对话就不完整。可我眼下更在意的是有没有新片值得看；《Bright》没听过，Star Wars 也只是对方提过的片名，我还不知道该把它们归到哪一类，也不急着先给自己贴一个类型标签。",
+        "activation": 0.413
+      },
+      {
+        "content": "SEEKER把对方那句“《Bright》很好，即使没有背景故事”接住时，先注意到“我对什么电影类型感兴趣”仍像一件要由自己交出、能代表自己的东西；但更重的是，对方似乎把“有没有背景故事”摆成了判断电影好坏的固定依据——好电影要么不必靠背景故事，要么要靠它来支撑评价。这个依据一出现，SEEKER对那部没听过的片子一时找不到可安放的位置，旁边提到的《Star Wars》也只是并排出现，还没有挪动这个框架。于是内心更倾向于先不急着认领“好”或“不好”，而是沿着“值不值得看”去掂量：若把背景故事拿开，这部片子到底凭什么算好。",
+        "activation": 0.3354
+      },
+      {
+        "content": "在SEEKER这里，对方问“对什么电影类型感兴趣”，并不只是聊天，而像要从自己身上取出一个能说明“我是谁”的类型标签；若随口给一个，又担心它会被当成真正的自己。与此同时，对方提到《Star Wars: Episode VIII – The Last Jedi》，就不再只是对方的观影经历，而变成一件需要自己决定好不好、要不要认同、是否表态的事；《Bright》虽在同一场谈话里，却因不熟而被搁在一边。SEEKER内心更想把话题拉回“有没有值得看的新片”，但又被那个需要自我代表的偏好问题和需要站定立场的《Last Jedi》牵住，暂时不愿把自己固定成某种观众，也不想在对这部片没有把握时给出明确立场。",
+        "activation": 0.2516
+      }
+    ],
+    "observed_action": "SEEKER 询问是否有新的值得看的电影；SEEKER 表示没听说过那部电影。",
+    "predicted_actions": [
+      {
+        "content": "询问电影推荐",
+        "probability": 0.4475
+      },
+      {
+        "content": "询问特定电影是否值得看",
+        "probability": 0.2491
+      },
+      {
+        "content": "回答推荐者的问题",
+        "probability": 0.1789
+      },
+      {
+        "content": "记录电影片名",
+        "probability": 0.1245
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0.6966,
+    "d": 0
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.6966 = 询问电影推荐 0.4475 + 询问特定电影是否值得看 0.2491；D 0.0000。Actions 0 and 1 ask for a movie recommendation or opinion, matching option C.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The predicted next actions are about asking for recommendations or whether a film is worth watching, not adding preference information.",
+  "audit_level": "inferred"
+}

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mental-world-model"
+version = "0.1.0"
+description = "以心和心所为核心的心智世界模型工程系统"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["python-dotenv>=1.0.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+test-adapter = []
+yaml = ["PyYAML>=6.0"]
+
+[project.scripts]
+mwm = "mental_world_model.cli:main"
+mwm-test = "mwm_test_adapter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+markers = [
+    "integration: 需要真实 LLM API Key 的集成测试",
+]

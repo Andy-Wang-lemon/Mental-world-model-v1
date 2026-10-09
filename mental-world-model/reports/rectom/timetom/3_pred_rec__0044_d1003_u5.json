@@ -1,0 +1,89 @@
+{
+  "id": "3_pred_rec__0044_d1003_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER asks: Hi friend. Can you recommend some good classic movies?",
+      "information_available": "SEEKER wants recommendations for good classic movies; no era or content constraints given.",
+      "preferences": "SEEKER values classic movies and asks for good ones; detailed taste unknown.",
+      "belief_before": "No prior knowledge of this SEEKER's movie preferences.",
+      "belief_update": "SEEKER is seeking classic movie recommendations.",
+      "belief_after": "SEEKER wants classic movie recommendations, but classic is undefined.",
+      "emotion": "Attentive and willing to help.",
+      "intention": "Respond helpfully to the movie recommendation request.",
+      "reaction_to_other": "Receives the request positively as a normal recommendation request.",
+      "conversational_goal": "Acknowledge the request and prepare to suggest suitable classic movies.",
+      "changes_previous_interpretation": "N/A; first turn establishes the initial request."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER asks: Sure! But by classic do you mean before the 70s or after?",
+      "information_available": "SEEKER wants good classic movies; no timeframe specified; I have asked for clarification.",
+      "preferences": "SEEKER wants classic movies; era preference unspecified.",
+      "belief_before": "SEEKER wants classic movie recommendations, but classic is undefined.",
+      "belief_update": "I treat era as a key ambiguity by asking before-70s vs after.",
+      "belief_after": "I need SEEKER's era choice before recommending.",
+      "emotion": "Cooperative, polite, and clarifying.",
+      "intention": "Clarify what classic means for SEEKER.",
+      "reaction_to_other": "Positive and responsive to SEEKER's request.",
+      "conversational_goal": "Narrow the request to a usable era criterion.",
+      "changes_previous_interpretation": "Clarifies that the previous request is not yet specific enough for a recommendation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: After",
+      "information_available": "SEEKER has selected after in response to before-70s vs after.",
+      "preferences": "SEEKER wants classic movies from after the 70s, i.e. post-1970s or 1970s onward.",
+      "belief_before": "I believed the era was unknown and needed clarification.",
+      "belief_update": "SEEKER means after the 70s when saying classic.",
+      "belief_after": "SEEKER wants good classic movies released after the 70s.",
+      "emotion": "Ready and satisfied with clarification.",
+      "intention": "Recommend a post-70s classic.",
+      "reaction_to_other": "Accepts the short answer as sufficient.",
+      "conversational_goal": "Provide a matching recommendation.",
+      "changes_previous_interpretation": "Resolves the era ambiguity from turn 2; now actionable."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Okay, How about Indecent Proposal (1993)? Demi Moor and Woodie Harrleson.",
+      "information_available": "SEEKER wants post-70s classic movies; I have proposed Indecent Proposal (1993).",
+      "preferences": "SEEKER wants post-70s classics; content preferences not yet stated.",
+      "belief_before": "SEEKER wants a good classic after the 70s.",
+      "belief_update": "I believe Indecent Proposal is a suitable post-70s classic candidate.",
+      "belief_after": "SEEKER may accept or reject Indecent Proposal; awaiting feedback.",
+      "emotion": "Helpful and optimistic.",
+      "intention": "Offer a concrete recommendation fitting the era criterion.",
+      "reaction_to_other": "Responsive to SEEKER's clarification.",
+      "conversational_goal": "Satisfy the request with a specific movie suggestion.",
+      "changes_previous_interpretation": "Moves from clarifying to recommending; no change to era interpretation."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: No, too risque for me",
+      "information_available": "SEEKER rejects Indecent Proposal because it is too risque; now know a content constraint.",
+      "preferences": "SEEKER wants post-70s classic movies but prefers non-risque or safe content; dislikes risque material.",
+      "belief_before": "I believed Indecent Proposal might fit based on era alone.",
+      "belief_update": "SEEKER's rejection reveals a preference against risque content.",
+      "belief_after": "Need a post-70s classic that is not risque.",
+      "emotion": "Attentive, perhaps apologetic or mildly corrected.",
+      "intention": "Adjust recommendation strategy to avoid risque films.",
+      "reaction_to_other": "Accepts rejection and treats it as useful preference information.",
+      "conversational_goal": "Recommend a safer, non-risque classic after the 70s.",
+      "changes_previous_interpretation": "Adds a new content constraint; previous interpretation based only on era is insufficient."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER asks: Hi friend. Can you recommend some good classic movies?\",\n    \"information_available\": \"SEEKER wants recommendations for good classic movies; no era or content constraints given.\",\n    \"preferences\": \"SEEKER values classic movies and asks for good ones; detailed taste unknown.\",\n    \"belief_before\": \"No prior knowledge of this SEEKER's movie preferences.\",\n    \"belief_update\": \"SEEKER is seeking classic movie recommendations.\",\n    \"belief_after\": \"SEEKER wants classic movie recommendations, but classic is undefined.\",\n    \"emotion\": \"Attentive and willing to help.\",\n    \"intention\": \"Respond helpfully to the movie recommendation request.\",\n    \"reaction_to_other\": \"Receives the request positively as a normal recommendation request.\",\n    \"conversational_goal\": \"Acknowledge the request and prepare to suggest suitable classic movies.\",\n    \"changes_previous_interpretation\": \"N/A; first turn establishes the initial request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER asks: Sure! But by classic do you mean before the 70s or after?\",\n    \"information_available\": \"SEEKER wants good classic movies; no timeframe specified; I have asked for clarification.\",\n    \"preferences\": \"SEEKER wants classic movies; era preference unspecified.\",\n    \"belief_before\": \"SEEKER wants classic movie recommendations, but classic is undefined.\",\n    \"belief_update\": \"I treat era as a key ambiguity by asking before-70s vs after.\",\n    \"belief_after\": \"I need SEEKER's era choice before recommending.\",\n    \"emotion\": \"Cooperative, polite, and clarifying.\",\n    \"intention\": \"Clarify what classic means for SEEKER.\",\n    \"reaction_to_other\": \"Positive and responsive to SEEKER's request.\",\n    \"conversational_goal\": \"Narrow the request to a usable era criterion.\",\n    \"changes_previous_interpretation\": \"Clarifies that the previous request is not yet specific enough for a recommendation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: After\",\n    \"information_available\": \"SEEKER has selected after in response to before-70s vs after.\",\n    \"preferences\": \"SEEKER wants classic movies from after the 70s, i.e. post-1970s or 1970s onward.\",\n    \"belief_before\": \"I believed the era was unknown and needed clarification.\",\n    \"belief_update\": \"SEEKER means after the 70s when saying classic.\",\n    \"belief_after\": \"SEEKER wants good classic movies released after the 70s.\",\n    \"emotion\": \"Ready and satisfied with clarification.\",\n    \"intention\": \"Recommend a post-70s classic.\",\n    \"reaction_to_other\": \"Accepts the short answer as sufficient.\",\n    \"conversational_goal\": \"Provide a matching recommendation.\",\n    \"changes_previous_interpretation\": \"Resolves the era ambiguity from turn 2; now actionable.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Okay, How about Indecent Proposal (1993)? Demi Moor and Woodie Harrleson.\",\n    \"information_available\": \"SEEKER wants post-70s classic movies; I have proposed Indecent Proposal (1993).\",\n    \"preferences\": \"SEEKER wants post-70s classics; content preferences not yet stated.\",\n    \"belief_before\": \"SEEKER wants a good classic after the 70s.\",\n    \"belief_update\": \"I believe Indecent Proposal is a suitable post-70s classic candidate.\",\n    \"belief_after\": \"SEEKER may accept or reject Indecent Proposal; awaiting feedback.\",\n    \"emotion\": \"Helpful and optimistic.\",\n    \"intention\": \"Offer a concrete recommendation fitting the era criterion.\",\n    \"reaction_to_other\": \"Responsive to SEEKER's clarification.\",\n    \"conversational_goal\": \"Satisfy the request with a specific movie suggestion.\",\n    \"changes_previous_interpretation\": \"Moves from clarifying to recommending; no change to era interpretation.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: No, too risque for me\",\n    \"information_available\": \"SEEKER rejects Indecent Proposal because it is too risque; now know a content constraint.\",\n    \"preferences\": \"SEEKER wants post-70s classic movies but prefers non-risque or safe content; dislikes risque material.\",\n    \"belief_before\": \"I believed Indecent Proposal might fit based on era alone.\",\n    \"belief_update\": \"SEEKER's rejection reveals a preference against risque content.\",\n    \"belief_after\": \"Need a post-70s classic that is not risque.\",\n    \"emotion\": \"Attentive, perhaps apologetic or mildly corrected.\",\n    \"intention\": \"Adjust recommendation strategy to avoid risque films.\",\n    \"reaction_to_other\": \"Accepts rejection and treats it as useful preference information.\",\n    \"conversational_goal\": \"Recommend a safer, non-risque classic after the 70s.\",\n    \"changes_previous_interpretation\": \"Adds a new content constraint; previous interpretation based only on era is insufficient.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

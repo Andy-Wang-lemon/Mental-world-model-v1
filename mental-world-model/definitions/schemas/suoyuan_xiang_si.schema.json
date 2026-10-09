@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SuoyuanXiangSiDefinitions",
+  "type": "object",
+  "required": ["suoyuan_jing", "xiang", "si", "summary"],
+  "properties": {
+    "suoyuan_jing": {
+      "type": "string",
+      "minLength": 1,
+      "description": "所缘境定义"
+    },
+    "xiang": {
+      "type": "string",
+      "minLength": 1,
+      "description": "想定义"
+    },
+    "si": {
+      "type": "string",
+      "minLength": 1,
+      "description": "思定义"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "description": "抽取说明"
+    }
+  },
+  "additionalProperties": false
+}

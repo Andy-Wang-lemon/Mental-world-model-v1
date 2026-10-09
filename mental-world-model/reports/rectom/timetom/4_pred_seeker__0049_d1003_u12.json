@@ -1,0 +1,139 @@
+{
+  "id": "4_pred_seeker__0049_d1003_u12",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hi friend. Can you recommend some good classic movies?' Info available: recommender is a friend/contact who may be able to suggest movies; no era/content preferences stated yet.",
+      "belief_before": "No prior dialogue; SEEKER believes a recommendation can be requested.",
+      "belief_update": "SEEKER initiates a request for classic movie recommendations. Interpretation change: initial request.",
+      "belief_after": "Recommender has been asked for classic movies; SEEKER awaits a response. Preferences: wants good classic movies; era unspecified.",
+      "emotion": "Friendly, curious, expectant. Reaction to other: N/A; SEEKER speaks first.",
+      "intention": "Ask for recommendations.",
+      "conversational_goal": "Obtain good classic movie recommendations."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Sure! But by classic do you mean before the 70s or after?' Info available: recommender is willing to help but needs era clarification.",
+      "belief_before": "Recommender may provide recommendations.",
+      "belief_update": "Recommender asks for a before/after 70s distinction. Interpretation change: refines the request; no movie candidate yet.",
+      "belief_after": "Recommender can help, but SEEKER must clarify 'classic.' Preferences: still good classic movies; era not yet specified by SEEKER.",
+      "emotion": "Cooperative, mildly clarifying. Reaction to other: accepts the clarifying question positively.",
+      "intention": "Prepare to answer the era question.",
+      "conversational_goal": "Clarify the request so recommendations fit."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'After' Info available: recommender's clarification request is pending; SEEKER can now specify era.",
+      "belief_before": "SEEKER needs to define 'classic' for the recommender.",
+      "belief_update": "SEEKER specifies 'after' the 70s. Interpretation change: adds an explicit era preference.",
+      "belief_after": "Recommender knows SEEKER wants post-70s classics. Preferences: classic movies after the 70s.",
+      "emotion": "Cooperative, concise. Reaction to other: answers the recommender directly.",
+      "intention": "Provide the requested era constraint.",
+      "conversational_goal": "Narrow the recommendation space to post-70s classics."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'Okay, How about Indecent Proposal (1993)? Demi Moor and Woodie Harrleson.' Info available: recommender suggests Indecent Proposal (1993) as a post-70s classic.",
+      "belief_before": "SEEKER expects a recommendation matching post-70s classics.",
+      "belief_update": "First concrete recommendation arrives: Indecent Proposal. Interpretation change: moves from criteria to a specific movie option.",
+      "belief_after": "Indecent Proposal is a candidate; SEEKER must evaluate it. Preferences: post-70s classic; no content constraints stated yet.",
+      "emotion": "Neutral, appraising. Reaction to other: considers the suggestion without yet accepting/rejecting.",
+      "intention": "Evaluate whether the suggested film fits.",
+      "conversational_goal": "Assess the first recommendation."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'No, too risque for me' Info available: SEEKER has rejected Indecent Proposal as too risque.",
+      "belief_before": "SEEKER was evaluating Indecent Proposal as a possible match.",
+      "belief_update": "SEEKER rejects Indecent Proposal and reveals a non-risque preference. Interpretation change: adds a content-sensitivity constraint.",
+      "belief_after": "Indecent Proposal is unsuitable; recommender should avoid risque films. Preferences: post-70s classics, but not risque content.",
+      "emotion": "Discomfort or mild negative reaction. Reaction to other: politely declines the recommendation.",
+      "intention": "Reject the suggestion and guide recommender toward suitable content.",
+      "conversational_goal": "Obtain a non-risque post-70s classic recommendation."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says: 'Okay, what about Sleepless in Seattle (1993)? Hanks and Ryan?' Info available: recommender offers Sleepless in Seattle (1993) after the risque rejection.",
+      "belief_before": "SEEKER wants a non-risque recommendation after rejecting Indecent Proposal.",
+      "belief_update": "New candidate: Sleepless in Seattle. Interpretation change: recommender adjusts; new concrete option.",
+      "belief_after": "Sleepless in Seattle may fit the non-risque post-70s preference. Preferences: post-70s classic, non-risque.",
+      "emotion": "Hopeful, considerate. Reaction to other: shows willingness to consider the adjusted suggestion.",
+      "intention": "Evaluate Sleepless in Seattle.",
+      "conversational_goal": "See if the new recommendation is suitable."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says: 'That's more my speed. It's been a while since I've seen it though.' Info available: SEEKER approves Sleepless in Seattle and reports having seen it before.",
+      "belief_before": "SEEKER was evaluating Sleepless in Seattle.",
+      "belief_update": "SEEKER approves Sleepless in Seattle as 'more my speed.' Interpretation change: confirms a preferred style and validates the recommender's adjustment.",
+      "belief_after": "Sleepless in Seattle matches SEEKER's taste; recommender has a positive signal. Preferences: likes Sleepless in Seattle; confirms non-risque, likely romantic/light classic preference.",
+      "emotion": "Positive, approving, slightly nostalgic. Reaction to other: affirms the recommender's suggestion.",
+      "intention": "Signal approval and imply interest in similar films.",
+      "conversational_goal": "Guide recommender toward more films like Sleepless in Seattle."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says: 'That's okay. Nothing wrong with that. Have you seen All the Right Moves (1983) with Tom Cruise?' Info available: recommender accepts Sleepless preference and asks about All the Right Moves (1983).",
+      "belief_before": "SEEKER has approved Sleepless in Seattle.",
+      "belief_update": "New question/recommendation: All the Right Moves. Interpretation change: adds another candidate and shifts from Sleepless to a Tom Cruise film.",
+      "belief_after": "All the Right Moves is a candidate; SEEKER needs to recall whether seen. Preferences: likes Sleepless in Seattle; non-risque post-70s classics.",
+      "emotion": "Curious, attentive. Reaction to other: accepts the recommender's shift to a new title.",
+      "intention": "Recall and assess All the Right Moves.",
+      "conversational_goal": "Respond to the seen/unseen question."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER says: 'Sadly I haven't. Is it good?' Info available: SEEKER has not seen All the Right Moves and asks about its quality.",
+      "belief_before": "SEEKER was considering whether they had seen All the Right Moves.",
+      "belief_update": "SEEKER reports not having seen it and seeks quality information. Interpretation change: keeps the candidate alive but adds uncertainty.",
+      "belief_after": "All the Right Moves is unseen; its quality is uncertain; recommender may clarify. Preferences: likes Sleepless in Seattle; non-risque; open if the film is good.",
+      "emotion": "Curious, mildly uncertain, receptive. Reaction to other: engages rather than rejects.",
+      "intention": "Ask for an assessment of All the Right Moves.",
+      "conversational_goal": "Decide whether All the Right Moves is worth watching."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER says: 'Yes. If you liked Ferris Bueller's Day Off (1986) you'll like this one....And while we're on Cruise, what about Days of Thunder (1990)?' Info available: recommender says All the Right Moves is good if SEEKER liked Ferris Bueller, and suggests Days of Thunder (1990).",
+      "belief_before": "SEEKER did not know if All the Right Moves was good.",
+      "belief_update": "Recommender gives a comparative endorsement and offers Days of Thunder. Interpretation change: adds a comparison cue and a new option.",
+      "belief_after": "All the Right Moves is likely good if SEEKER likes Ferris Bueller; Days of Thunder is another candidate. Preferences: likes Sleepless in Seattle; non-risque; no stated Ferris Bueller preference yet.",
+      "emotion": "Interested, considering. Reaction to other: receives the endorsement and new suggestion.",
+      "intention": "Evaluate both All the Right Moves and Days of Thunder.",
+      "conversational_goal": "Decide whether either suggested film fits."
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER says: 'No, never seen that either.' Info available: SEEKER has not seen Days of Thunder; 'either' also references not having seen All the Right Moves.",
+      "belief_before": "SEEKER was considering Days of Thunder.",
+      "belief_update": "SEEKER reports not having seen Days of Thunder. Interpretation change: removes ambiguity about Days of Thunder; no rejection.",
+      "belief_after": "Recommender knows SEEKER has not seen Days of Thunder (and still has not seen All the Right Moves). Preferences: no stated dislike; just unfamiliarity with these Cruise films.",
+      "emotion": "Neutral, slightly apologetic or matter-of-fact. Reaction to other: answers the recommender's question.",
+      "intention": "Clarify viewing history.",
+      "conversational_goal": "Respond accurately about seen/unseen status."
+    },
+    {
+      "time": 12,
+      "observed": "RECOMMENDER says: 'It's a really great film. You'll love it. Kind of like Regarding Henry (1991) but with race cars.' Info available: recommender strongly endorses Days of Thunder and compares it to Regarding Henry with race cars.",
+      "belief_before": "SEEKER had not seen Days of Thunder and did not know its quality.",
+      "belief_update": "Recommender says Days of Thunder is great, predicts SEEKER will love it, and compares it to Regarding Henry. Interpretation change: increases perceived appeal/quality of Days of Thunder.",
+      "belief_after": "Days of Thunder has a strong recommendation; its appeal may depend on liking Regarding Henry or racing. Preferences: likes Sleepless in Seattle; non-risque; Regarding Henry preference not stated.",
+      "emotion": "Intrigued, weighing the endorsement. Reaction to other: receives the strong endorsement, may be persuaded.",
+      "intention": "Consider whether to watch Days of Thunder.",
+      "conversational_goal": "Evaluate the final recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hi friend. Can you recommend some good classic movies?' Info available: recommender is a friend/contact who may be able to suggest movies; no era/content preferences stated yet.\",\n    \"belief_before\": \"No prior dialogue; SEEKER believes a recommendation can be requested.\",\n    \"belief_update\": \"SEEKER initiates a request for classic movie recommendations. Interpretation change: initial request.\",\n    \"belief_after\": \"Recommender has been asked for classic movies; SEEKER awaits a response. Preferences: wants good classic movies; era unspecified.\",\n    \"emotion\": \"Friendly, curious, expectant. Reaction to other: N/A; SEEKER speaks first.\",\n    \"intention\": \"Ask for recommendations.\",\n    \"conversational_goal\": \"Obtain good classic movie recommendations.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Sure! But by classic do you mean before the 70s or after?' Info available: recommender is willing to help but needs era clarification.\",\n    \"belief_before\": \"Recommender may provide recommendations.\",\n    \"belief_update\": \"Recommender asks for a before/after 70s distinction. Interpretation change: refines the request; no movie candidate yet.\",\n    \"belief_after\": \"Recommender can help, but SEEKER must clarify 'classic.' Preferences: still good classic movies; era not yet specified by SEEKER.\",\n    \"emotion\": \"Cooperative, mildly clarifying. Reaction to other: accepts the clarifying question positively.\",\n    \"intention\": \"Prepare to answer the era question.\",\n    \"conversational_goal\": \"Clarify the request so recommendations fit.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'After' Info available: recommender's clarification request is pending; SEEKER can now specify era.\",\n    \"belief_before\": \"SEEKER needs to define 'classic' for the recommender.\",\n    \"belief_update\": \"SEEKER specifies 'after' the 70s. Interpretation change: adds an explicit era preference.\",\n    \"belief_after\": \"Recommender knows SEEKER wants post-70s classics. Preferences: classic movies after the 70s.\",\n    \"emotion\": \"Cooperative, concise. Reaction to other: answers the recommender directly.\",\n    \"intention\": \"Provide the requested era constraint.\",\n    \"conversational_goal\": \"Narrow the recommendation space to post-70s classics.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'Okay, How about Indecent Proposal (1993)? Demi Moor and Woodie Harrleson.' Info available: recommender suggests Indecent Proposal (1993) as a post-70s classic.\",\n    \"belief_before\": \"SEEKER expects a recommendation matching post-70s classics.\",\n    \"belief_update\": \"First concrete recommendation arrives: Indecent Proposal. Interpretation change: moves from criteria to a specific movie option.\",\n    \"belief_after\": \"Indecent Proposal is a candidate; SEEKER must evaluate it. Preferences: post-70s classic; no content constraints stated yet.\",\n    \"emotion\": \"Neutral, appraising. Reaction to other: considers the suggestion without yet accepting/rejecting.\",\n    \"intention\": \"Evaluate whether the suggested film fits.\",\n    \"conversational_goal\": \"Assess the first recommendation.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'No, too risque for me' Info available: SEEKER has rejected Indecent Proposal as too risque.\",\n    \"belief_before\": \"SEEKER was evaluating Indecent Proposal as a possible match.\",\n    \"belief_update\": \"SEEKER rejects Indecent Proposal and reveals a non-risque preference. Interpretation change: adds a content-sensitivity constraint.\",\n    \"belief_after\": \"Indecent Proposal is unsuitable; recommender should avoid risque films. Preferences: post-70s classics, but not risque content.\",\n    \"emotion\": \"Discomfort or mild negative reaction. Reaction to other: politely declines the recommendation.\",\n    \"intention\": \"Reject the suggestion and guide recommender toward suitable content.\",\n    \"conversational_goal\": \"Obtain a non-risque post-70s classic recommendation.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says: 'Okay, what about Sleepless in Seattle (1993)? Hanks and Ryan?' Info available: recommender offers Sleepless in Seattle (1993) after the risque rejection.\",\n    \"belief_before\": \"SEEKER wants a non-risque recommendation after rejecting Indecent Proposal.\",\n    \"belief_update\": \"New candidate: Sleepless in Seattle. Interpretation change: recommender adjusts; new concrete option.\",\n    \"belief_after\": \"Sleepless in Seattle may fit the non-risque post-70s preference. Preferences: post-70s classic, non-risque.\",\n    \"emotion\": \"Hopeful, considerate. Reaction to other: shows willingness to consider the adjusted suggestion.\",\n    \"intention\": \"Evaluate Sleepless in Seattle.\",\n    \"conversational_goal\": \"See if the new recommendation is suitable.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says: 'That's more my speed. It's been a while since I've seen it though.' Info available: SEEKER approves Sleepless in Seattle and reports having seen it before.\",\n    \"belief_before\": \"SEEKER was evaluating Sleepless in Seattle.\",\n    \"belief_update\": \"SEEKER approves Sleepless in Seattle as 'more my speed.' Interpretation change: confirms a preferred style and validates the recommender's adjustment.\",\n    \"belief_after\": \"Sleepless in Seattle matches SEEKER's taste; recommender has a positive signal. Preferences: likes Sleepless in Seattle; confirms non-risque, likely romantic/light classic preference.\",\n    \"emotion\": \"Positive, approving, slightly nostalgic. Reaction to other: affirms the recommender's suggestion.\",\n    \"intention\": \"Signal approval and imply interest in similar films.\",\n    \"conversational_goal\": \"Guide recommender toward more films like Sleepless in Seattle.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says: 'That's okay. Nothing wrong with that. Have you seen All the Right Moves (1983) with Tom Cruise?' Info available: recommender accepts Sleepless preference and asks about All the Right Moves (1983).\",\n    \"belief_before\": \"SEEKER has approved Sleepless in Seattle.\",\n    \"belief_update\": \"New question/recommendation: All the Right Moves. Interpretation change: adds another candidate and shifts from Sleepless to a Tom Cruise film.\",\n    \"belief_after\": \"All the Right Moves is a candidate; SEEKER needs to recall whether seen. Preferences: likes Sleepless in Seattle; non-risque post-70s classics.\",\n    \"emotion\": \"Curious, attentive. Reaction to other: accepts the recommender's shift to a new title.\",\n    \"intention\": \"Recall and assess All the Right Moves.\",\n    \"conversational_goal\": \"Respond to the seen/unseen question.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER says: 'Sadly I haven't. Is it good?' Info available: SEEKER has not seen All the Right Moves and asks about its quality.\",\n    \"belief_before\": \"SEEKER was considering whether they had seen All the Right Moves.\",\n    \"belief_update\": \"SEEKER reports not having seen it and seeks quality information. Interpretation change: keeps the candidate alive but adds uncertainty.\",\n    \"belief_after\": \"All the Right Moves is unseen; its quality is uncertain; recommender may clarify. Preferences: likes Sleepless in Seattle; non-risque; open if the film is good.\",\n    \"emotion\": \"Curious, mildly uncertain, receptive. Reaction to other: engages rather than rejects.\",\n    \"intention\": \"Ask for an assessment of All the Right Moves.\",\n    \"conversational_goal\": \"Decide whether All the Right Moves is worth watching.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER says: 'Yes. If you liked Ferris Bueller's Day Off (1986) you'll like this one....And while we're on Cruise, what about Days of Thunder (1990)?' Info available: recommender says All the Right Moves is good if SEEKER liked Ferris Bueller, and suggests Days of Thunder (1990).\",\n    \"belief_before\": \"SEEKER did not know if All the Right Moves was good.\",\n    \"belief_update\": \"Recommender gives a comparative endorsement and offers Days of Thunder. Interpretation change: adds a comparison cue and a new option.\",\n    \"belief_after\": \"All the Right Moves is likely good if SEEKER likes Ferris Bueller; Days of Thunder is another candidate. Preferences: likes Sleepless in Seattle; non-risque; no stated Ferris Bueller preference yet.\",\n    \"emotion\": \"Interested, considering. Reaction to other: receives the endorsement and new suggestion.\",\n    \"intention\": \"Evaluate both All the Right Moves and Days of Thunder.\",\n    \"conversational_goal\": \"Decide whether either suggested film fits.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER says: 'No, never seen that either.' Info available: SEEKER has not seen Days of Thunder; 'either' also references not having seen All the Right Moves.\",\n    \"belief_before\": \"SEEKER was considering Days of Thunder.\",\n    \"belief_update\": \"SEEKER reports not having seen Days of Thunder. Interpretation change: removes ambiguity about Days of Thunder; no rejection.\",\n    \"belief_after\": \"Recommender knows SEEKER has not seen Days of Thunder (and still has not seen All the Right Moves). Preferences: no stated dislike; just unfamiliarity with these Cruise films.\",\n    \"emotion\": \"Neutral, slightly apologetic or matter-of-fact. Reaction to other: answers the recommender's question.\",\n    \"intention\": \"Clarify viewing history.\",\n    \"conversational_goal\": \"Respond accurately about seen/unseen status.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"RECOMMENDER says: 'It's a really great film. You'll love it. Kind of like Regarding Henry (1991) but with race cars.' Info available: recommender strongly endorses Days of Thunder and compares it to Regarding Henry with race cars.\",\n    \"belief_before\": \"SEEKER had not seen Days of Thunder and did not know its quality.\",\n    \"belief_update\": \"Recommender says Days of Thunder is great, predicts SEEKER will love it, and compares it to Regarding Henry. Interpretation change: increases perceived appeal/quality of Days of Thunder.\",\n    \"belief_after\": \"Days of Thunder has a strong recommendation; its appeal may depend on liking Regarding Henry or racing. Preferences: likes Sleepless in Seattle; non-risque; Regarding Henry preference not stated.\",\n    \"emotion\": \"Intrigued, weighing the endorsement. Reaction to other: receives the strong endorsement, may be persuaded.\",\n    \"intention\": \"Consider whether to watch Days of Thunder.\",\n    \"conversational_goal\": \"Evaluate the final recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

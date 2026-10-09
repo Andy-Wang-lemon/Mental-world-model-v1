@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 129,
+  "item_id": "d1992_u15",
+  "dialogue_id": "1992",
+  "utterance_pos": 15,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nD: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: hi what kind of movies do you like\nSEEKER says: Hi, how are you? I am looking for some good action movies, could you help?\nRECOMMENDER says: do you like hard core action or fun family action?\nSEEKER says: i love movies like Abduction  (2011)  and movies like Speed  (1994)  with Keanu Reeves. They could be either or I like both kinds of action films.\nRECOMMENDER says: a good old fun one that never gets old is Mad Max (1979) \nSEEKER says: I liked that one, but I thought Mad Max:；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: hi what kind of movies do you like\nSEEKER says: Hi, how are you? I am looking for some good action movies, could you help?\nRECOMMENDER says: do you like hard core action or fun family action?\nSEEKER says: i love movies like Abduction  (2011)  and movies like Speed  (1994)  with Keanu Reeves. They could be either or I like both kinds of action films.\nRECOMMENDER says: a good old fun one that never gets old is Mad Max (1979) \nSEEKER says: I liked that one, but I thought Mad Max:；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.4,
+    "c": 0.3,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER's last utterance is already evaluating the recommended Mad Max, so continuing feedback is the most directly supported next strategy.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

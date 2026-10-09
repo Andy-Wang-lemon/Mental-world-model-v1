@@ -1,0 +1,834 @@
+{
+  "events": [
+    {
+      "focus_person": "沈川",
+      "yuanwen": "同一时期，沈川准备和交往多年的女友结婚。父亲认为两家的家庭条件和生活方式差异太大，明确反对，还几次劝沈川重新考虑。女友第一次正式来家里吃饭后，父亲仍没有改变看法，关上门后对沈川说：“工作选错了还能换，结婚选错了不是这么简单。”",
+      "stimulus_text": "同一时期，沈川准备和交往多年的女友结婚。父亲认为两家的家庭条件和生活方式差异太大，明确反对，还几次劝沈川重新考虑。女友第一次正式来家里吃饭后，父亲仍没有改变看法，关上门后对沈川说：“工作选错了还能换，结婚选错了不是这么简单。”",
+      "stimulus_action_split": {
+        "stimulus_text": "同一时期，沈川准备和交往多年的女友结婚。父亲认为两家的家庭条件和生活方式差异太大，明确反对，还几次劝沈川重新考虑。女友第一次正式来家里吃饭后，父亲仍没有改变看法，关上门后对沈川说：“工作选错了还能换，结婚选错了不是这么简单。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "沈川",
+          "父亲",
+          "女友"
+        ],
+        "action": "父亲明确反对沈川与交往多年的女友结婚，几次劝沈川重新考虑；女友第一次正式来家里吃饭后，父亲仍没有改变看法，关上门后对沈川说：“工作选错了还能换，结婚选错了不是这么简单。”",
+        "object": "沈川与女友结婚一事",
+        "scene": "女友第一次正式来家里吃饭后，父亲关上门的场合",
+        "outcome_changes": [
+          "女友第一次正式来家里吃饭后，父亲对沈川与女友结婚的看法仍未改变"
+        ],
+        "role_changes": [],
+        "relationship_changes": [],
+        "constraint_changes": [
+          "父亲对沈川与女友结婚一事持明确反对立场，并几次劝沈川重新考虑"
+        ],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "沈川把与交往多年的女友结婚这一婚姻选择当成属于自己人生安排、不能由父亲以两家家庭条件和生活方式差异来否定或要求重新考虑的部分。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "沈川把‘婚姻由我自己决定’的自主位置当成与自己不可分，父亲明确反对并几次劝他重新考虑，正触到这个边界。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "沈川把女友，尤其在她第一次正式来家里吃饭后仍未被父亲接纳时，当成‘我这边’的人、自己未来生活的一部分，而不是可以被父亲按两家差异重新评估的对象。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "沈川把‘我和她结婚’这一判断当成自己正确性的延伸，不能接受父亲用‘结婚选错了不是这么简单’把它放进‘选错’框架来要求重审。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "沈川持这样的理解：婚姻应以两个人交往与感情本身为基础，家庭条件和生活方式差异不应成为否决或要求重新考虑的理由。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "沈川持这样的理解：成年子女的婚姻选择权在子女本人，父母至多给建议，不应明确反对或反复劝其重新考虑；父亲现在的做法越过了这条界线。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "沈川持这样的理解：交往多年已经构成足够依据，这段关系理应顺理成章走向结婚，不应因父亲的‘选错’警告被推翻。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f5",
+          "text": "沈川持这样的理解：婚姻不是像工作那样可以按风险比较、选错再换的选项，父亲用‘工作选错了还能换，结婚选错了不是这么简单’来衡量我和女友的婚姻，这套框架本身就不适用。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "沈川持这样的理解：女友第一次正式来家里吃饭后，父亲作为家长理应完成接纳或至少改变成见；父亲仍没有改变看法，就是不合‘理应如此’。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.33676975945017185,
+          "alambana_prior_probability": 0.33676975945017185,
+          "activation_alignment": 0.98,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6272000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.33333333333333337,
+          "alambana_prior_probability": 0.33333333333333337,
+          "activation_alignment": 0.97,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6208000000000001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.32989690721649484,
+          "alambana_prior_probability": 0.32989690721649484,
+          "activation_alignment": 0.96,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6144000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "关上门后，父亲这句话在沈川那里不是一般的长辈提醒，而是把“我和谁结婚”从我自己决定的事情，重新摆到父亲有权反对、有权要求重新考虑的位置上；父亲几次劝他重新考虑，使这个边界被具体地触到。父亲说“工作选错了还能换，结婚选错了不是这么简单”，在沈川的经验里是把婚姻选择权从他的自主位置移向父亲的判断，仿佛父亲仍可对这件事作最终把关。",
+          "prior_probability": 0.33676975945017185,
+          "posterior_probability": 0.33676975945017185,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6272000000000001,
+          "activation_alignment": 0.98,
+          "grounding_valid": true,
+          "grounding_reason": "所缘中的父亲反对、几次劝沈川重新考虑、关门后说那句话均来自客观刺激；将婚姻选择权移向父亲判断属于沈川的主观解释，不是伪造他人言行。它保留了父亲明确反对和劝他重新考虑这一核心约束变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "女友第一次正式来家里吃饭，在沈川的经验里本是把“她”放进自己未来生活、成为“我这边”的人；饭后父亲仍没有改变看法，关上门后说那句话，就把这段婚姻对象化成需要按两家家庭条件和生活方式差异重新衡量的选择，甚至是一个可能“选错”的风险。父亲不是在评价抽象的差异，而是在把沈川已经视为自己未来一部分的人，重新放回可被否决、可被要求重新考虑的位置上。",
+          "prior_probability": 0.33333333333333337,
+          "posterior_probability": 0.33333333333333337,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6208000000000001,
+          "activation_alignment": 0.97,
+          "grounding_valid": true,
+          "grounding_reason": "女友第一次正式来家里吃饭、饭后父亲仍不改变看法、关门后说那句话以及两家家庭条件和生活方式差异，均为刺激中已有信息；其余是沈川如何经验这一反对的主观解释，不是新增事实。它保留了父亲在见面后仍未改变反对立场这一关键结果。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在沈川此刻的经验里，父亲关上门后的反对同时压到两层：一层是“婚姻由我自己决定”，父亲几次劝他重新考虑并把“工作选错了还能换，结婚选错了不是这么简单”摆出来，像是否认这件事该由沈川自己定；另一层是婚姻应以两人交往与感情为基础，而父亲仍以两家家庭条件和生活方式差异来反对，等于把感情本身放到可被条件否决的位置。于是父亲的话不只是意见，而是越过了他认定的界线，也否定了他理解中婚姻的根据。",
+          "prior_probability": 0.32989690721649484,
+          "posterior_probability": 0.32989690721649484,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6144000000000001,
+          "activation_alignment": 0.96,
+          "grounding_valid": true,
+          "grounding_reason": "父亲关门后反对、几次劝重新考虑、说“工作选错了还能换，结婚选错了不是这么简单”、仍以家庭条件和生活方式差异反对，均可在刺激中找到；所缘对其越过界线、否定婚姻根据的判断属于主观解释。它保留了父亲明确反对并劝沈川重新考虑这一核心约束变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.33676975945017185,
+          "alambana": {
+            "id": "O_C1",
+            "text": "关上门后，父亲这句话在沈川那里不是一般的长辈提醒，而是把“我和谁结婚”从我自己决定的事情，重新摆到父亲有权反对、有权要求重新考虑的位置上；父亲几次劝他重新考虑，使这个边界被具体地触到。父亲说“工作选错了还能换，结婚选错了不是这么简单”，在沈川的经验里是把婚姻选择权从他的自主位置移向父亲的判断，仿佛父亲仍可对这件事作最终把关。",
+            "prior_probability": 0.33676975945017185,
+            "posterior_probability": 0.33676975945017185,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6272000000000001,
+            "activation_alignment": 0.98,
+            "grounding_valid": true,
+            "grounding_reason": "所缘中的父亲反对、几次劝沈川重新考虑、关门后说那句话均来自客观刺激；将婚姻选择权移向父亲判断属于沈川的主观解释，不是伪造他人言行。它保留了父亲明确反对和劝他重新考虑这一核心约束变化。"
+          },
+          "xiang": {
+            "text": "关上门后，父亲这句话在沈川心里不像一般的长辈提醒，而像一道越过边界的裁断：他和谁结婚，本是自己多年关系走到今天的决定，却被父亲重新摆到“可以反对、可以劝你重新考虑”的位置上。父亲说工作选错了还能换，结婚选错了不是这么简单，在他听来反而显出父亲把婚姻也当成需要由长辈把关、必要时推翻的选择，仿佛父亲仍握有最终判断的权力。这使他更确认，成年子女的婚姻选择权应在自己手里，父母至多表达建议，不能以反对和反复劝说来替他重新划定能不能结婚的界线；父亲的做法越过了这条界线，他不能把父亲这句话当作自己必须服从的结论，也不愿让女友和这段关系被放进父亲“重新考虑”的裁决里。",
+            "source": "推理",
+            "confidence": 0.87
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "慢": 0.34876224261218436,
+            "行舍": 0.10681153414211078,
+            "忿": 0.3082494117647059,
+            "善见": 0.46565356719093853,
+            "无惭": 0.019257925753015624,
+            "无愧": 0.07336084842798475,
+            "瞋": 0.38975028132992323,
+            "不嫉": 0.011225063938618924,
+            "精进": 0.3015472277639258,
+            "不害": 0.24633336386444318,
+            "贪": 0.3474318806835024,
+            "恶见": 0.0177260358056266,
+            "无瞋": 0.10963807012121604,
+            "无贪": 0.07676589152729271,
+            "不放逸": 0.5375256120968002,
+            "惭": 0.22424255754475703,
+            "无痴": 0.16322847246917035,
+            "掉举": 0.17295999999999997,
+            "诳": 0.00415918158567775,
+            "无明": 0.4500525831202046,
+            "信": 0.661524853285189
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "打电话给女友说明决定不变并安慰她",
+              "probability": 0.3684210526315789,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "向父亲表明不会重新考虑结婚决定",
+              "probability": 0.32748538011695905,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "查询结婚登记和婚宴信息并记录可选日期",
+              "probability": 0.30409356725146197,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.33333333333333337,
+          "alambana": {
+            "id": "O_C2",
+            "text": "女友第一次正式来家里吃饭，在沈川的经验里本是把“她”放进自己未来生活、成为“我这边”的人；饭后父亲仍没有改变看法，关上门后说那句话，就把这段婚姻对象化成需要按两家家庭条件和生活方式差异重新衡量的选择，甚至是一个可能“选错”的风险。父亲不是在评价抽象的差异，而是在把沈川已经视为自己未来一部分的人，重新放回可被否决、可被要求重新考虑的位置上。",
+            "prior_probability": 0.33333333333333337,
+            "posterior_probability": 0.33333333333333337,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f3"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6208000000000001,
+            "activation_alignment": 0.97,
+            "grounding_valid": true,
+            "grounding_reason": "女友第一次正式来家里吃饭、饭后父亲仍不改变看法、关门后说那句话以及两家家庭条件和生活方式差异，均为刺激中已有信息；其余是沈川如何经验这一反对的主观解释，不是新增事实。它保留了父亲在见面后仍未改变反对立场这一关键结果。"
+          },
+          "xiang": {
+            "text": "沈川听出父亲这句话不是在谈抽象的两家差异，而是把已经进入自己未来生活的女友重新摆回可比较、可否决、可能“选错”的位置。这与他认定婚姻只该由两人交往和感情本身决定的理解相抵触，因此他难以接受这种把“我这边的人”重新客体化衡量的方式。他觉得父亲用“工作选错还能换”来类比婚姻，恰恰忽略了这个对象在他这里已不是可替换的选项；他仍把女友牢牢归在自己未来生活之内，不愿按父亲给出的家庭条件与生活方式差异框架去重新考虑，并由此对父亲的反对生出更深的隔阂与抵触。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "慢": 0.44812224261218436,
+            "行舍": 0.10681153414211078,
+            "忿": 0.35240941176470586,
+            "善见": 0.13077356719093858,
+            "无惭": 0.019257925753015624,
+            "不正知": 0.31279999999999997,
+            "无愧": 0.15064084842798475,
+            "瞋": 0.5443102813299233,
+            "不嫉": 0.011225063938618924,
+            "精进": 0.16538722776392578,
+            "不害": 0.051293363864443164,
+            "贪": 0.5549838806835025,
+            "恶见": 0.3121260358056266,
+            "无瞋": 0.10963807012121604,
+            "无贪": 0.07676589152729271,
+            "不放逸": 0.38480561209680025,
+            "惭": 0.040242557544757036,
+            "无痴": 0.16322847246917035,
+            "诳": 0.00415918158567775,
+            "无明": 0.48317258312020456,
+            "信": 0.179444853285189
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "沉默离开后打电话向女友重申决定",
+              "probability": 0.46,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "联系婚庆公司和酒店确定婚礼日期与预算",
+              "probability": 0.32,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "对父亲表明拒绝后离开房间",
+              "probability": 0.22,
+              "supporting_mental_factors": []
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.32989690721649484,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在沈川此刻的经验里，父亲关上门后的反对同时压到两层：一层是“婚姻由我自己决定”，父亲几次劝他重新考虑并把“工作选错了还能换，结婚选错了不是这么简单”摆出来，像是否认这件事该由沈川自己定；另一层是婚姻应以两人交往与感情为基础，而父亲仍以两家家庭条件和生活方式差异来反对，等于把感情本身放到可被条件否决的位置。于是父亲的话不只是意见，而是越过了他认定的界线，也否定了他理解中婚姻的根据。",
+            "prior_probability": 0.32989690721649484,
+            "posterior_probability": 0.32989690721649484,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6144000000000001,
+            "activation_alignment": 0.96,
+            "grounding_valid": true,
+            "grounding_reason": "父亲关门后反对、几次劝重新考虑、说“工作选错了还能换，结婚选错了不是这么简单”、仍以家庭条件和生活方式差异反对，均可在刺激中找到；所缘对其越过界线、否定婚姻根据的判断属于主观解释。它保留了父亲明确反对并劝沈川重新考虑这一核心约束变化。"
+          },
+          "xiang": {
+            "text": "沈川当下把父亲关门后的话听成两层否定：父亲几次劝他重新考虑，又把结婚与工作相提并论，等于不承认这件事最终该由他自己拿主意；而仍以两家家庭条件和生活方式差异来反对，也等于说他和女友多年交往与感情本身不足以作为婚姻的根据。这两层叠在一起，使他觉得父亲越过了自己认定的界线，不只是提供一个意见。他内心并没有因此松动原来的认定，反而更清楚自己在这件事上要守住什么：婚姻的根据在他和女友的交往与感情，而不是可以被家庭条件比较随时否决的东西。",
+            "source": "推理",
+            "confidence": 0.86
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "慢": 0.4407622426121844,
+            "行舍": 0.2687315341421108,
+            "忿": 0.27696941176470585,
+            "善见": 0.13077356719093858,
+            "无惭": 0.019257925753015624,
+            "无愧": 0.07336084842798475,
+            "瞋": 0.2756702813299232,
+            "不嫉": 0.011225063938618924,
+            "精进": 0.16538722776392578,
+            "不害": 0.051293363864443164,
+            "贪": 0.3801838806835024,
+            "恶见": 0.0177260358056266,
+            "无瞋": 0.10963807012121604,
+            "无贪": 0.07676589152729271,
+            "不放逸": 0.6019256120968002,
+            "惭": 0.040242557544757036,
+            "无痴": 0.16322847246917035,
+            "诳": 0.00415918158567775,
+            "无明": 0.023172583120204603,
+            "信": 0.656004853285189
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "约见女友并告知坚持原决定",
+              "probability": 0.40462427745664736,
+              "supporting_mental_factors": [
+                "信",
+                "贪",
+                "不放逸",
+                "精进",
+                "无痴",
+                "善见"
+              ]
+            },
+            {
+              "text": "向父亲声明婚事自主并留在原处",
+              "probability": 0.3179190751445087,
+              "supporting_mental_factors": [
+                "信",
+                "不放逸",
+                "慢",
+                "行舍",
+                "无痴",
+                "善见"
+              ]
+            },
+            {
+              "text": "联系婚庆公司确认婚宴场地和时间",
+              "probability": 0.2774566473988439,
+              "supporting_mental_factors": [
+                "信",
+                "不放逸",
+                "精进",
+                "贪",
+                "无痴"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "打电话给女友说明决定不变并安慰她",
+          "probability": 0.32227182580131875,
+          "dominant_mental_factors": [
+            "信",
+            "不放逸",
+            "精进",
+            "贪",
+            "无痴"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.33676975945017185,
+              "conditional_probability": 0.3684210526315789,
+              "contribution": 0.12407306927111594
+            },
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33333333333333337,
+              "conditional_probability": 0.32,
+              "contribution": 0.10666666666666669
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32989690721649484,
+              "conditional_probability": 0.2774566473988439,
+              "contribution": 0.09153208986353613
+            }
+          ]
+        },
+        {
+          "text": "向父亲表明不会重新考虑结婚决定",
+          "probability": 0.28850102565407154,
+          "dominant_mental_factors": [
+            "信",
+            "不放逸",
+            "慢",
+            "行舍",
+            "无痴"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.33676975945017185,
+              "conditional_probability": 0.32748538011695905,
+              "contribution": 0.11028717268543639
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32989690721649484,
+              "conditional_probability": 0.3179190751445087,
+              "contribution": 0.10488051963530183
+            },
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33333333333333337,
+              "conditional_probability": 0.22,
+              "contribution": 0.07333333333333335
+            }
+          ]
+        },
+        {
+          "text": "查询结婚登记和婚宴信息并记录可选日期",
+          "probability": 0.23589381521127634,
+          "dominant_mental_factors": [
+            "信",
+            "贪",
+            "不放逸",
+            "精进",
+            "无痴"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.32989690721649484,
+              "conditional_probability": 0.40462427745664736,
+              "contribution": 0.13348429771765685
+            },
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.33676975945017185,
+              "conditional_probability": 0.30409356725146197,
+              "contribution": 0.1024095174936195
+            }
+          ]
+        },
+        {
+          "text": "沉默离开后打电话向女友重申决定",
+          "probability": 0.15333333333333335,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33333333333333337,
+              "conditional_probability": 0.46,
+              "contribution": 0.15333333333333335
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "信": 0.43419243986254297,
+        "精进": 0.06230240549828179,
+        "惭": 0.08419243986254296,
+        "不放逸": 0.43719931271477663,
+        "行舍": 0.07257731958762886,
+        "不害": 0.08924398625429554,
+        "善见": 0.15323024054982817,
+        "贪": 0.501680412371134,
+        "瞋": 0.49386597938144333,
+        "慢": 0.4062371134020618,
+        "无明": 0.40365979381443307,
+        "恶见": 0.13333333333333336,
+        "忿": 0.38097938144329896,
+        "无愧": 0.035,
+        "掉举": 0.07914089347079038,
+        "不正知": 0.1416666666666667
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 12,
+        "distinct_candidate_count": 11,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "父亲在沈川因转岗产品部门要放弃稳定岗位时反复劝他留下、私下联系领导不要放人并说“过几年就知道我为什么拦你”，沈川由此把这类以“以后你会明白”正当化、把他想走的方向压回稳定岗位的介入理解为越过本人和公司流程的越界外力，而不是值得重新权衡的职业忠告。",
+            "mass": 0.4309
+          },
+          {
+            "id": "bf_2",
+            "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+            "mass": 0.3512
+          },
+          {
+            "id": "bf_3",
+            "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+            "mass": 0.3367
+          },
+          {
+            "id": "bf_4",
+            "text": "父亲在沈川要转岗产品部门时私下联系他的领导沟通不要放人，把他从本应由成年人与领导、流程自行处理的位置上绕开，并说“过几年就知道我为什么拦你”，沈川由此把这类以“为你好”插手成年子女工作决定的举动理解为父亲先站到领导一边替代他处理事务，而不是他该领受的资源。",
+            "mass": 0.3166
+          },
+          {
+            "id": "bf_5",
+            "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+            "mass": 0.3121
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "父亲在沈川因转岗产品部门要放弃稳定岗位时反复劝他留下、私下联系领导不要放人并说“过几年就知道我为什么拦你”，沈川由此把这类以“以后你会明白”正当化、把他想走的方向压回稳定岗位的介入理解为越过本人和公司流程的越界外力，而不是值得重新权衡的职业忠告。",
+              "mass": 0.4309
+            },
+            {
+              "id": "bf_2",
+              "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+              "mass": 0.3512
+            },
+            {
+              "id": "bf_3",
+              "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+              "mass": 0.3367
+            },
+            {
+              "id": "bf_4",
+              "text": "父亲在沈川要转岗产品部门时私下联系他的领导沟通不要放人，把他从本应由成年人与领导、流程自行处理的位置上绕开，并说“过几年就知道我为什么拦你”，沈川由此把这类以“为你好”插手成年子女工作决定的举动理解为父亲先站到领导一边替代他处理事务，而不是他该领受的资源。",
+              "mass": 0.3166
+            },
+            {
+              "id": "bf_5",
+              "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+              "mass": 0.3121
+            }
+          ],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.264
+        }
+      }
+    }
+  ],
+  "focus_person": "沈川",
+  "llm_usage": {
+    "total_calls": 236,
+    "total_duration_ms": 2153321.924394142,
+    "wall_clock_ms": 290506.32838399906
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S03",
+    "event_index": 3,
+    "stimulus": "同一时期，沈川准备和交往多年的女友结婚。父亲认为两家的家庭条件和生活方式差异太大，明确反对，还几次劝沈川重新考虑。女友第一次正式来家里吃饭后，父亲仍没有改变看法，关上门后对沈川说：“工作选错了还能换，结婚选错了不是这么简单。”",
+    "top_action": "打电话给女友说明决定不变并安慰她",
+    "top_probability": 0.32227182580131875,
+    "top_k": [
+      {
+        "text": "打电话给女友说明决定不变并安慰她",
+        "probability": 0.32227182580131875
+      },
+      {
+        "text": "向父亲表明不会重新考虑结婚决定",
+        "probability": 0.28850102565407154
+      },
+      {
+        "text": "查询结婚登记和婚宴信息并记录可选日期",
+        "probability": 0.23589381521127634
+      },
+      {
+        "text": "沉默离开后打电话向女友重申决定",
+        "probability": 0.15333333333333335
+      }
+    ],
+    "continuity_before": {
+      "person_id": "沈川",
+      "event_count": 2,
+      "mental_episode_count": 2,
+      "cognitive_frame_count": 5
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "父亲在沈川因转岗产品部门要放弃稳定岗位时反复劝他留下、私下联系领导不要放人并说“过几年就知道我为什么拦你”，沈川由此把这类以“以后你会明白”正当化、把他想走的方向压回稳定岗位的介入理解为越过本人和公司流程的越界外力，而不是值得重新权衡的职业忠告。",
+        "mass": 0.4309
+      },
+      {
+        "id": "bf_2",
+        "text": "父亲托朋友打好招呼、把联系人电话放到沈川面前并说“这件事听我的”，要沈川接受国企技术岗位，这在沈川的理解里成为父亲越过他本人替他决定第一份工作方向的证据；从此他把这类父母提前托关系并当面施压的安排，看成违反“成年子女职业选择应由本人决定”规则的越界，而非可供自己权衡的求职资源。",
+        "mass": 0.3512
+      },
+      {
+        "id": "bf_3",
+        "text": "父亲放下联系人电话、以“创业以后有的是机会”把进入创业公司做产品推到以后，并已托朋友打好招呼，这在沈川的理解里成为用国企技术岗位覆盖他当前路径的安排；从此他把这类父母以“以后有机会”为由推后本人当前选择并代以既定岗位的做法，看成越过成年子女职业选择界限的外力，而不是普通建议。",
+        "mass": 0.3367
+      },
+      {
+        "id": "bf_4",
+        "text": "父亲在沈川要转岗产品部门时私下联系他的领导沟通不要放人，把他从本应由成年人与领导、流程自行处理的位置上绕开，并说“过几年就知道我为什么拦你”，沈川由此把这类以“为你好”插手成年子女工作决定的举动理解为父亲先站到领导一边替代他处理事务，而不是他该领受的资源。",
+        "mass": 0.3166
+      },
+      {
+        "id": "bf_5",
+        "text": "父亲把联系人电话和已托好的关系放到沈川面前，要把他第一份工作安到与产品方向不一致的国企技术岗位，并说“这件事听我的”，这在沈川的理解里成为不符合第一份工作应与个人兴趣和产品方向一致之要求的安排；从此他把这类父母安排的、与个人兴趣和产品方向不一致的第一份工作，看成一开始就不该被接受的岗位，而不再是可考虑的选择。",
+        "mass": 0.3121
+      }
+    ],
+    "fresh_count_raw": 9,
+    "historical_count_raw": 0,
+    "fresh_branch_count": 9,
+    "historical_branch_count": 0,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 12,
+      "distinct_candidate_count": 11,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

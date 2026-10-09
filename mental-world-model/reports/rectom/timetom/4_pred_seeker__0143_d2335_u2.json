@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0143_d2335_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hello! Happy New Year!'",
+      "information_available": "SEEKER knows she has greeted the recommender and offered a New Year wish; no response from the other speaker is available yet.",
+      "preferences": "Prefers a polite, friendly social opening; as a seeker, may later prefer helpful recommendations, but this is not yet expressed.",
+      "belief_before": "No prior conversational information from this dialogue; the other speaker is presumably present or reachable.",
+      "belief_update": "SEEKER chooses to initiate contact with a greeting and New Year wish.",
+      "belief_after": "She expects or hopes for a reciprocal greeting or acknowledgment.",
+      "emotion": "Cheerful, friendly, positive.",
+      "intention": "Greet the other speaker and open the interaction.",
+      "reaction_to_other": "Not applicable yet; no other-speaker turn has occurred.",
+      "conversational_goal": "Establish social contact and set a friendly tone for the dialogue.",
+      "changes_previous_interpretation": "No previous turn; this establishes the baseline interpretation."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Happy New year!'",
+      "information_available": "SEEKER hears the recommender reciprocate the New Year greeting; the tone appears friendly and socially cooperative.",
+      "preferences": "Prefers polite reciprocal interaction; likely still oriented toward eventually making a recommendation request, though none is expressed in this turn.",
+      "belief_before": "She had greeted the recommender and expected a reciprocal or at least acknowledging response.",
+      "belief_update": "The recommender reciprocated the greeting, confirming responsiveness and social politeness.",
+      "belief_after": "She can treat the recommender as friendly and cooperative, and may be ready to continue the conversation or move toward her recommendation-seeking purpose.",
+      "emotion": "Pleased, positive, socially satisfied.",
+      "intention": "Acknowledge the reciprocated greeting and continue the dialogue.",
+      "reaction_to_other": "Appreciative and satisfied; the greeting was returned as hoped.",
+      "conversational_goal": "Maintain rapport and transition toward the recommendation request or next conversational step.",
+      "changes_previous_interpretation": "Confirms the prior expectation of a friendly response; does not contradict the initial greeting interpretation, but updates the recommender's inferred cooperativeness."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hello! Happy New Year!'\",\n    \"information_available\": \"SEEKER knows she has greeted the recommender and offered a New Year wish; no response from the other speaker is available yet.\",\n    \"preferences\": \"Prefers a polite, friendly social opening; as a seeker, may later prefer helpful recommendations, but this is not yet expressed.\",\n    \"belief_before\": \"No prior conversational information from this dialogue; the other speaker is presumably present or reachable.\",\n    \"belief_update\": \"SEEKER chooses to initiate contact with a greeting and New Year wish.\",\n    \"belief_after\": \"She expects or hopes for a reciprocal greeting or acknowledgment.\",\n    \"emotion\": \"Cheerful, friendly, positive.\",\n    \"intention\": \"Greet the other speaker and open the interaction.\",\n    \"reaction_to_other\": \"Not applicable yet; no other-speaker turn has occurred.\",\n    \"conversational_goal\": \"Establish social contact and set a friendly tone for the dialogue.\",\n    \"changes_previous_interpretation\": \"No previous turn; this establishes the baseline interpretation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Happy New year!'\",\n    \"information_available\": \"SEEKER hears the recommender reciprocate the New Year greeting; the tone appears friendly and socially cooperative.\",\n    \"preferences\": \"Prefers polite reciprocal interaction; likely still oriented toward eventually making a recommendation request, though none is expressed in this turn.\",\n    \"belief_before\": \"She had greeted the recommender and expected a reciprocal or at least acknowledging response.\",\n    \"belief_update\": \"The recommender reciprocated the greeting, confirming responsiveness and social politeness.\",\n    \"belief_after\": \"She can treat the recommender as friendly and cooperative, and may be ready to continue the conversation or move toward her recommendation-seeking purpose.\",\n    \"emotion\": \"Pleased, positive, socially satisfied.\",\n    \"intention\": \"Acknowledge the reciprocated greeting and continue the dialogue.\",\n    \"reaction_to_other\": \"Appreciative and satisfied; the greeting was returned as hoped.\",\n    \"conversational_goal\": \"Maintain rapport and transition toward the recommendation request or next conversational step.\",\n    \"changes_previous_interpretation\": \"Confirms the prior expectation of a friendly response; does not contradict the initial greeting interpretation, but updates the recommender's inferred cooperativeness.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

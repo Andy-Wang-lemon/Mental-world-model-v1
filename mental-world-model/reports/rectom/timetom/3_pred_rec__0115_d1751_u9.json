@@ -1,0 +1,106 @@
+{
+  "id": "3_pred_rec__0115_d1751_u9",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Seeker says: 'HI i'm looking for a really god horror movie....Sorry Good!'",
+      "belief_before": "I have no prior information about this seeker's taste; I expect a straightforward movie recommendation request.",
+      "belief_update": "The seeker wants a horror movie, and 'god' appears to be a typo for 'good'.",
+      "belief_after": "The seeker is looking for a good horror film, but I don't yet know their preferred subgenre.",
+      "emotion": "Attentive and neutral",
+      "intention": "Parse the request and prepare to offer useful horror recommendations.",
+      "conversational_goal": "Help the seeker find a good horror movie."
+    },
+    {
+      "time": 2,
+      "observed": "I say: 'The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha'",
+      "belief_before": "I momentarily interpreted 'god' literally as 'God' and thought the seeker wanted a religious movie.",
+      "belief_update": "I realize the seeker meant 'good', so The Passion of the Christ was off-target.",
+      "belief_after": "The seeker wants a good horror movie, not a religious film; I need to switch to actual horror recommendations.",
+      "emotion": "Embarrassed but lighthearted, laughing off the mistake",
+      "intention": "Correct my misunderstanding and pivot to real horror films.",
+      "conversational_goal": "Recover from the mismatch and get the recommendation task back on track."
+    },
+    {
+      "time": 3,
+      "observed": "Seeker says: 'My bad!'",
+      "belief_before": "I just made an off-target religious recommendation and explained my misunderstanding.",
+      "belief_update": "The seeker accepts the blame for the typo, so there is no tension between us.",
+      "belief_after": "The misunderstanding is fully resolved; we are aligned on finding a horror movie.",
+      "emotion": "Relieved and amused",
+      "intention": "Acknowledge the exchange and continue with appropriate horror suggestions.",
+      "conversational_goal": "Maintain rapport and move forward productively."
+    },
+    {
+      "time": 4,
+      "observed": "I say: 'The Green Inferno (2013) is a great horror movie...Insidious (2011) is another classic horror film'",
+      "belief_before": "The seeker wants a good horror movie and the earlier misunderstanding is behind us.",
+      "belief_update": "The Green Inferno and Insidious are credible horror films that may satisfy the seeker's request.",
+      "belief_after": "The seeker now has two horror options; I need feedback to narrow down their taste.",
+      "emotion": "Helpful and confident",
+      "intention": "Offer two well-regarded horror films and see how the seeker reacts.",
+      "conversational_goal": "Identify which type of horror the seeker prefers."
+    },
+    {
+      "time": 5,
+      "observed": "Seeker says: 'SOmething more along the lines of The Texas Chainsaw Massacre (2003)'",
+      "belief_before": "The seeker might be open to general horror films.",
+      "belief_update": "The Texas Chainsaw Massacre reference indicates a preference for gory, violent, slasher-style horror.",
+      "belief_after": "The seeker prefers gory/slasher horror, not just any horror film.",
+      "emotion": "Attentive and engaged",
+      "intention": "Adjust my recommendations to match a gory/slasher subgenre.",
+      "conversational_goal": "Find a horror movie that matches the requested tone and intensity."
+    },
+    {
+      "time": 6,
+      "observed": "I say: 'If you like gory then I would suggest The Last House on the Left (2009) ...What about House at the End of the Street (2012) ...Or maybe you would like Hostiles (2017)'",
+      "belief_before": "The seeker likes gory horror along the lines of The Texas Chainsaw Massacre.",
+      "belief_update": "The Last House on the Left and House at the End of the Street seem fitting; Hostiles is violent and gritty and might also appeal.",
+      "belief_after": "I have offered a shortlist of gory/violent options and now need the seeker's reaction.",
+      "emotion": "Eager and accommodating",
+      "intention": "Provide a few viable matches for the gory/slasher preference.",
+      "conversational_goal": "Narrow the options down to one movie the seeker will enjoy."
+    },
+    {
+      "time": 7,
+      "observed": "Seeker says: 'Oh yeah! I really like that one. I think I'll watch The Last House on the Left (2009)'",
+      "belief_before": "The seeker is considering my gory horror suggestions.",
+      "belief_update": "The seeker likes and chooses The Last House on the Left.",
+      "belief_after": "The recommendation is accepted; the search is essentially complete.",
+      "emotion": "Pleased and satisfied",
+      "intention": "Acknowledge their choice and prepare to wrap up the interaction.",
+      "conversational_goal": "Confirm a successful recommendation."
+    },
+    {
+      "time": 8,
+      "observed": "I say: 'Okay, hope you enjoyed my suggestions.'",
+      "belief_before": "The seeker has decided on The Last House on the Left.",
+      "belief_update": "No further recommendations are needed; the dialogue is moving toward closure.",
+      "belief_after": "The seeker has a movie to watch and seems satisfied with the help.",
+      "emotion": "Polite and content",
+      "intention": "Close the conversation warmly and politely.",
+      "conversational_goal": "End the dialogue on a positive note."
+    },
+    {
+      "time": 9,
+      "observed": "Seeker says: 'Thanks for all your help!'",
+      "belief_before": "The recommendation interaction is ending.",
+      "belief_update": "The seeker is grateful and considers the help valuable.",
+      "belief_after": "The conversation succeeded; both parties can part amicably.",
+      "emotion": "Glad and appreciated",
+      "intention": "Accept the thanks and say goodbye if needed.",
+      "conversational_goal": "Complete the exchange with mutual goodwill."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Seeker says: 'HI i'm looking for a really god horror movie....Sorry Good!'\",\n    \"belief_before\": \"I have no prior information about this seeker's taste; I expect a straightforward movie recommendation request.\",\n    \"belief_update\": \"The seeker wants a horror movie, and 'god' appears to be a typo for 'good'.\",\n    \"belief_after\": \"The seeker is looking for a good horror film, but I don't yet know their preferred subgenre.\",\n    \"emotion\": \"Attentive and neutral\",\n    \"intention\": \"Parse the request and prepare to offer useful horror recommendations.\",\n    \"conversational_goal\": \"Help the seeker find a good horror movie.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"I say: 'The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha'\",\n    \"belief_before\": \"I momentarily interpreted 'god' literally as 'God' and thought the seeker wanted a religious movie.\",\n    \"belief_update\": \"I realize the seeker meant 'good', so The Passion of the Christ was off-target.\",\n    \"belief_after\": \"The seeker wants a good horror movie, not a religious film; I need to switch to actual horror recommendations.\",\n    \"emotion\": \"Embarrassed but lighthearted, laughing off the mistake\",\n    \"intention\": \"Correct my misunderstanding and pivot to real horror films.\",\n    \"conversational_goal\": \"Recover from the mismatch and get the recommendation task back on track.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Seeker says: 'My bad!'\",\n    \"belief_before\": \"I just made an off-target religious recommendation and explained my misunderstanding.\",\n    \"belief_update\": \"The seeker accepts the blame for the typo, so there is no tension between us.\",\n    \"belief_after\": \"The misunderstanding is fully resolved; we are aligned on finding a horror movie.\",\n    \"emotion\": \"Relieved and amused\",\n    \"intention\": \"Acknowledge the exchange and continue with appropriate horror suggestions.\",\n    \"conversational_goal\": \"Maintain rapport and move forward productively.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"I say: 'The Green Inferno (2013) is a great horror movie...Insidious (2011) is another classic horror film'\",\n    \"belief_before\": \"The seeker wants a good horror movie and the earlier misunderstanding is behind us.\",\n    \"belief_update\": \"The Green Inferno and Insidious are credible horror films that may satisfy the seeker's request.\",\n    \"belief_after\": \"The seeker now has two horror options; I need feedback to narrow down their taste.\",\n    \"emotion\": \"Helpful and confident\",\n    \"intention\": \"Offer two well-regarded horror films and see how the seeker reacts.\",\n    \"conversational_goal\": \"Identify which type of horror the seeker prefers.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Seeker says: 'SOmething more along the lines of The Texas Chainsaw Massacre (2003)'\",\n    \"belief_before\": \"The seeker might be open to general horror films.\",\n    \"belief_update\": \"The Texas Chainsaw Massacre reference indicates a preference for gory, violent, slasher-style horror.\",\n    \"belief_after\": \"The seeker prefers gory/slasher horror, not just any horror film.\",\n    \"emotion\": \"Attentive and engaged\",\n    \"intention\": \"Adjust my recommendations to match a gory/slasher subgenre.\",\n    \"conversational_goal\": \"Find a horror movie that matches the requested tone and intensity.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"I say: 'If you like gory then I would suggest The Last House on the Left (2009) ...What about House at the End of the Street (2012) ...Or maybe you would like Hostiles (2017)'\",\n    \"belief_before\": \"The seeker likes gory horror along the lines of The Texas Chainsaw Massacre.\",\n    \"belief_update\": \"The Last House on the Left and House at the End of the Street seem fitting; Hostiles is violent and gritty and might also appeal.\",\n    \"belief_after\": \"I have offered a shortlist of gory/violent options and now need the seeker's reaction.\",\n    \"emotion\": \"Eager and accommodating\",\n    \"intention\": \"Provide a few viable matches for the gory/slasher preference.\",\n    \"conversational_goal\": \"Narrow the options down to one movie the seeker will enjoy.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Seeker says: 'Oh yeah! I really like that one. I think I'll watch The Last House on the Left (2009)'\",\n    \"belief_before\": \"The seeker is considering my gory horror suggestions.\",\n    \"belief_update\": \"The seeker likes and chooses The Last House on the Left.\",\n    \"belief_after\": \"The recommendation is accepted; the search is essentially complete.\",\n    \"emotion\": \"Pleased and satisfied\",\n    \"intention\": \"Acknowledge their choice and prepare to wrap up the interaction.\",\n    \"conversational_goal\": \"Confirm a successful recommendation.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"I say: 'Okay, hope you enjoyed my suggestions.'\",\n    \"belief_before\": \"The seeker has decided on The Last House on the Left.\",\n    \"belief_update\": \"No further recommendations are needed; the dialogue is moving toward closure.\",\n    \"belief_after\": \"The seeker has a movie to watch and seems satisfied with the help.\",\n    \"emotion\": \"Polite and content\",\n    \"intention\": \"Close the conversation warmly and politely.\",\n    \"conversational_goal\": \"End the dialogue on a positive note.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Seeker says: 'Thanks for all your help!'\",\n    \"belief_before\": \"The recommendation interaction is ending.\",\n    \"belief_update\": \"The seeker is grateful and considers the help valuable.\",\n    \"belief_after\": \"The conversation succeeded; both parties can part amicably.\",\n    \"emotion\": \"Glad and appreciated\",\n    \"intention\": \"Accept the thanks and say goodbye if needed.\",\n    \"conversational_goal\": \"Complete the exchange with mutual goodwill.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": "e",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

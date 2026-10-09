@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0199_d5802_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender greets me and asks what kind of movies I am looking for.",
+      "preferences": "No movie preference has been expressed yet; I am open at this point.",
+      "belief_before": "No dialogue-specific belief about the recommender or recommendation topic yet.",
+      "belief_update": "Recommender is initiating a movie recommendation conversation and needs my genre or type preference.",
+      "belief_after": "Recommender is willing to help and is asking for my movie preferences.",
+      "emotion": "Neutral and attentive, likely open to help.",
+      "intention": "Engage with the recommender and prepare to state what I want to watch.",
+      "conversational_goal": "Get a useful movie recommendation by answering the recommender's question.",
+      "reaction_to_other": "Receptive to the greeting and question.",
+      "interpretation_change": "Starts the interaction; no previous interpretation to revise."
+    },
+    {
+      "time": 2,
+      "observed": "Recommender asked what kind of movies I am looking for. I respond by greeting and asking for a good comedy, possibly with action.",
+      "preferences": "I want a good comedy movie, and it can also include action.",
+      "belief_before": "Recommender can recommend movies if I specify the kind I want.",
+      "belief_update": "I have clarified my preference as comedy with optional action.",
+      "belief_after": "Recommender should now be able to suggest a comedy or action-comedy movie.",
+      "emotion": "Polite and hopeful.",
+      "intention": "Request a recommendation that matches my stated preferences.",
+      "conversational_goal": "Elicit a suitable comedy or action-comedy recommendation.",
+      "reaction_to_other": "Cooperative response to the recommender's question.",
+      "interpretation_change": "Yes: the request shifts from open-ended to a specific comedy/action preference."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender suggests The Other Guys (2010), says they just saw it, calls it pretty funny, and asks if I have seen it.",
+      "preferences": "I am still seeking a good comedy movie that can also have action.",
+      "belief_before": "Recommender may suggest a movie matching my comedy/action request.",
+      "belief_update": "Recommender has a specific candidate, The Other Guys, and believes it is funny; recommender wants to know whether I have seen it.",
+      "belief_after": "The Other Guys is a potential recommendation; I need to consider whether it fits my preference and respond about whether I have seen it.",
+      "emotion": "Curious and interested, with mild evaluation of the suggestion.",
+      "intention": "Consider the recommendation and prepare to respond to the recommender's question.",
+      "conversational_goal": "Evaluate the suggested movie and continue toward choosing a suitable recommendation.",
+      "reaction_to_other": "Attentive and likely appreciative/interested in the recommender's suggestion.",
+      "interpretation_change": "Yes: the dialogue moves from awaiting a recommendation to evaluating a concrete candidate."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender greets me and asks what kind of movies I am looking for.\",\n    \"preferences\": \"No movie preference has been expressed yet; I am open at this point.\",\n    \"belief_before\": \"No dialogue-specific belief about the recommender or recommendation topic yet.\",\n    \"belief_update\": \"Recommender is initiating a movie recommendation conversation and needs my genre or type preference.\",\n    \"belief_after\": \"Recommender is willing to help and is asking for my movie preferences.\",\n    \"emotion\": \"Neutral and attentive, likely open to help.\",\n    \"intention\": \"Engage with the recommender and prepare to state what I want to watch.\",\n    \"conversational_goal\": \"Get a useful movie recommendation by answering the recommender's question.\",\n    \"reaction_to_other\": \"Receptive to the greeting and question.\",\n    \"interpretation_change\": \"Starts the interaction; no previous interpretation to revise.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Recommender asked what kind of movies I am looking for. I respond by greeting and asking for a good comedy, possibly with action.\",\n    \"preferences\": \"I want a good comedy movie, and it can also include action.\",\n    \"belief_before\": \"Recommender can recommend movies if I specify the kind I want.\",\n    \"belief_update\": \"I have clarified my preference as comedy with optional action.\",\n    \"belief_after\": \"Recommender should now be able to suggest a comedy or action-comedy movie.\",\n    \"emotion\": \"Polite and hopeful.\",\n    \"intention\": \"Request a recommendation that matches my stated preferences.\",\n    \"conversational_goal\": \"Elicit a suitable comedy or action-comedy recommendation.\",\n    \"reaction_to_other\": \"Cooperative response to the recommender's question.\",\n    \"interpretation_change\": \"Yes: the request shifts from open-ended to a specific comedy/action preference.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender suggests The Other Guys (2010), says they just saw it, calls it pretty funny, and asks if I have seen it.\",\n    \"preferences\": \"I am still seeking a good comedy movie that can also have action.\",\n    \"belief_before\": \"Recommender may suggest a movie matching my comedy/action request.\",\n    \"belief_update\": \"Recommender has a specific candidate, The Other Guys, and believes it is funny; recommender wants to know whether I have seen it.\",\n    \"belief_after\": \"The Other Guys is a potential recommendation; I need to consider whether it fits my preference and respond about whether I have seen it.\",\n    \"emotion\": \"Curious and interested, with mild evaluation of the suggestion.\",\n    \"intention\": \"Consider the recommendation and prepare to respond to the recommender's question.\",\n    \"conversational_goal\": \"Evaluate the suggested movie and continue toward choosing a suitable recommendation.\",\n    \"reaction_to_other\": \"Attentive and likely appreciative/interested in the recommender's suggestion.\",\n    \"interpretation_change\": \"Yes: the dialogue moves from awaiting a recommendation to evaluating a concrete candidate.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

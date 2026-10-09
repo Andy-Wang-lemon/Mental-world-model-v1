@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 179,
+  "item_id": "d2773_u6",
+  "dialogue_id": "2773",
+  "utterance_pos": 6,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d",
+    "a"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning\nA: Ask for preference or seeks feedback from the seeker",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello\nSEEKER says: Hi I am looking for a good drama any ideas?\nRECOMMENDER says: Have you seen Gladiator  (2000)  ?\nSEEKER says: No I have not really not a fan of that kind I prefer things like Armageddon  (1997) \nRECOMMENDER says: If you like love stories, The Notebook (2013)  is good...Have you seen Deep Impact  (1998)  &gt; That is another one like Armageddon\nSEEKER says: I think I am the only person on the planet to not see The Notebook (2013)  really need to...Yes I loved；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello\nSEEKER says: Hi I am looking for a good drama any ideas?\nRECOMMENDER says: Have you seen Gladiator  (2000)  ?\nSEEKER says: No I have not really not a fan of that kind I prefer things like Armageddon  (1997) \nRECOMMENDER says: If you like love stories, The Notebook (2013)  is good...Have you seen Deep Impact  (1998)  &gt; That is another one like Armageddon\nSEEKER says: I think I am the only person on the planet to not see The Notebook (2013)  really need to...Yes I loved；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.6,
+    "b": 0.75,
+    "c": 0.95,
+    "d": 0.55,
+    "e": 0.1
+  },
+  "score_reason": "The recommender's role and prior turns center on offering or probing for recommendations, so option C is most directly supported.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "No predicted next action is given, only past dialogue and a thought echoing it.",
+  "audit_level": "inferred"
+}

@@ -1,0 +1,64 @@
+数据：4_pred_seeker
+题号：176  d2630_u9
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在SEEKER这里，RECOMMENDER问「What genre do you like?」和「Do you like horror?」并不是可随意搁置的普通信息，而是把「自己喜欢的电影类型，尤其对恐怖片的偏好」摆到必须由自身取向来承接的自我界定位置；随后从类型偏好转向逐部片目核对，则呈现为聊电影本应如此的固定展开形式。",
+      "probability": 0.3881
+    },
+    {
+      "content": "在SEEKER这里，RECOMMENDER接连点名《Rumpelstiltskin》《There Will Be Blood》《No Country for Old Men》《Fargo》并逐一询问是否看过时，这些片名不是无关的片目，而是被放到「与我有关」的位置上，构成衡量自身电影阅历与文化资格的刻度；而先问类型偏好、再逐部核对是否看过，则像这类对话本来如此的固定形式。",
+      "probability": 0.3698
+    },
+    {
+      "content": "在SEEKER这里，RECOMMENDER从类型偏好问到恐怖片，再连续以这些片目询问共同经验，构成一个「能否接上这些片目、能否进入同一电影话题」的对话者位置；这个位置被经验为与自己有关，不易当作与己无关的事；同时这种先问类型、再逐部核对的展开方式，像对话本来的固定形式。",
+      "probability": 0.242
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "对方问喜欢什么类型、又问是否喜欢恐怖片，这不是可以随便搁置的信息；对我来说，这等于要我把自己的观影取向摆出来：我是站在剧情片这边的，不喜欢恐怖片，这一点很明确，也不是需要含糊或迁就的回答。接着对方从类型偏好转到一部部具体片名来核对，这种问法被我当作聊电影自然该有的推进方式，所以不显得突兀；我顺着这个形式给出自己的取向和看过与否，遇到真正喜欢的片子会确认，尤其是科恩兄弟的作品，会自然生出还想知道他们有没有别的片子的念头。",
+      "activation": 0.3738
+    },
+    {
+      "content": "这些片名在SEEKER这里不是随手一提，而是被收进一张与自身有关的清单：喜欢剧情片、不喜欢恐怖片是坐标，看过并喜欢《There Will Be Blood》和《No Country for Old Men》是对自己电影阅历的确认，能接上科恩兄弟的话题则让这份确认继续延伸。对方先问类型偏好、再逐部核对是否看过，也被当作这类交谈本来该有的次序。于是SEEKER顺势把自己放在熟悉剧情片与科恩兄弟作品的位置上，让对话沿着这个刻度往下走。",
+      "activation": 0.3642
+    },
+    {
+      "content": "在对方从类型偏好一路问到具体片名时，我这边感到的不是无关的片单核对，而是在试我能不能站进同一条电影话题里。喜欢剧情片、不喜欢恐怖片这条界线先被摆明，接着《血色将至》和《老无所依》都能接上，尤其科恩兄弟这条线让我觉得共同话题还有可延展的余地。先问类型、再逐部问看没看过，像这类对话本来的走法，所以我顺着这些位置回应并不勉强；心里更愿意把能接上的片目继续谈下去。",
+      "activation": 0.262
+    }
+  ],
+  "observed_action": "SEEKER表示自己喜欢剧情片；表示不喜欢恐怖片，喜欢剧情片；回答看过《There Will Be Blood》并喜欢该片；回答看过《No Country for Old Men》，并询问科恩兄弟还有没有别的作品。",
+  "predicted_actions": [
+    {
+      "content": "说看过《Fargo》并喜欢",
+      "probability": 0.6134
+    },
+    {
+      "content": "回答看过《冰血暴》并表达喜欢",
+      "probability": 0.1321
+    },
+    {
+      "content": "表达偏好并请求推荐",
+      "probability": 0.1077
+    },
+    {
+      "content": "回答没看过《冰血暴》并询问是否值得看",
+      "probability": 0.0734
+    },
+    {
+      "content": "回答看过《冰血暴》并请求推荐科恩兄弟剧情片",
+      "probability": 0.0734
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.7455, "b": 0, "c": 0.2545, "d": 0}
+选择说明：A 0.7455 = 说看过《Fargo》并喜欢 0.6134 + 回答看过《冰血暴》并表达喜欢 0.1321；B 0.0000；C 0.2545 = 表达偏好并请求推荐 0.1077 + 回答没看过《冰血暴》并询问是否值得看 0.0734 + 回答看过《冰血暴》并请求推荐科恩兄弟剧情片 0.0734；D 0.0000。0–1 give feedback on the recommended movie, while 2–4 request recommendations or express preferences.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

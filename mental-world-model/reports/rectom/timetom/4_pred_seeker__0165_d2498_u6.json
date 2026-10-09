@@ -1,0 +1,79 @@
+{
+  "id": "4_pred_seeker__0165_d2498_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi",
+      "belief_before": "No prior dialogue context; SEEKER has not yet learned anything about the recommender.",
+      "belief_update": "SEEKER has initiated contact with a greeting.",
+      "belief_after": "A conversation is open; the other speaker may respond.",
+      "emotion": "neutral, mildly expectant",
+      "intention": "greet and open a dialogue",
+      "conversational_goal": "start the conversation"
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello!...What kind of movie do you like?",
+      "belief_before": "SEEKER has greeted; no response yet, no movie preference or recommender knowledge.",
+      "belief_update": "The recommender has greeted SEEKER and asked what kind of movies SEEKER likes.",
+      "belief_after": "The recommender is engaged and wants SEEKER's movie preferences; a recommendation may be possible.",
+      "emotion": "neutral, cooperative",
+      "intention": "respond to the question and provide movie preferences or ask for recommendations",
+      "conversational_goal": "move the dialogue toward obtaining a movie recommendation"
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)",
+      "belief_before": "The recommender has asked what kind of movies SEEKER likes and appears willing to recommend.",
+      "belief_update": "SEEKER has explicitly requested great movie recommendations and disclosed liking Good Will Hunting (1997).",
+      "belief_after": "The recommender knows SEEKER likes Good Will Hunting and wants a great movie to watch.",
+      "emotion": "hopeful, interested",
+      "intention": "obtain a recommendation that may fit SEEKER's taste",
+      "conversational_goal": "ask for a movie recommendation while giving a taste signal"
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders (1983)",
+      "belief_before": "SEEKER has asked for great movie recommendations and has revealed liking Good Will Hunting (1997).",
+      "belief_update": "The recommender names The Outsiders (1983) as their all-time favorite, making it the current candidate recommendation.",
+      "belief_after": "The Outsiders (1983) is the current recommendation and is highly valued by the recommender.",
+      "emotion": "curious, neutral",
+      "intention": "consider whether the recommended movie fits SEEKER's request and taste",
+      "conversational_goal": "evaluate the recommender's suggestion and decide whether to accept it or seek alternatives"
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: Seen that a while back.",
+      "belief_before": "The current recommendation is The Outsiders (1983), the recommender's all-time favorite.",
+      "belief_update": "SEEKER has already seen The Outsiders (1983) before, so it is not a new viewing option.",
+      "belief_after": "The Outsiders (1983) is unlikely to satisfy the request for a movie to watch now; another recommendation is needed.",
+      "emotion": "neutral to mildly unenthusiastic",
+      "intention": "signal prior viewing and implicitly request a different recommendation",
+      "conversational_goal": "redirect the recommender toward a new suggestion"
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER says: Depends on what type of movie you want to watch...",
+      "belief_before": "SEEKER has already seen The Outsiders (1983) and still needs a useful new recommendation.",
+      "belief_update": "The recommender is not yet offering another specific title and instead says the choice depends on the type of movie SEEKER wants.",
+      "belief_after": "To get a useful recommendation, SEEKER needs to specify a movie type, genre, or mood. Interpretation shifts from accepting a specific title to clarifying preferences.",
+      "emotion": "neutral, slightly expectant or needing to clarify",
+      "intention": "provide a movie type or ask for options so the recommender can suggest something new",
+      "conversational_goal": "clarify desired movie type to obtain a fresh recommendation"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi\",\n    \"belief_before\": \"No prior dialogue context; SEEKER has not yet learned anything about the recommender.\",\n    \"belief_update\": \"SEEKER has initiated contact with a greeting.\",\n    \"belief_after\": \"A conversation is open; the other speaker may respond.\",\n    \"emotion\": \"neutral, mildly expectant\",\n    \"intention\": \"greet and open a dialogue\",\n    \"conversational_goal\": \"start the conversation\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello!...What kind of movie do you like?\",\n    \"belief_before\": \"SEEKER has greeted; no response yet, no movie preference or recommender knowledge.\",\n    \"belief_update\": \"The recommender has greeted SEEKER and asked what kind of movies SEEKER likes.\",\n    \"belief_after\": \"The recommender is engaged and wants SEEKER's movie preferences; a recommendation may be possible.\",\n    \"emotion\": \"neutral, cooperative\",\n    \"intention\": \"respond to the question and provide movie preferences or ask for recommendations\",\n    \"conversational_goal\": \"move the dialogue toward obtaining a movie recommendation\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)\",\n    \"belief_before\": \"The recommender has asked what kind of movies SEEKER likes and appears willing to recommend.\",\n    \"belief_update\": \"SEEKER has explicitly requested great movie recommendations and disclosed liking Good Will Hunting (1997).\",\n    \"belief_after\": \"The recommender knows SEEKER likes Good Will Hunting and wants a great movie to watch.\",\n    \"emotion\": \"hopeful, interested\",\n    \"intention\": \"obtain a recommendation that may fit SEEKER's taste\",\n    \"conversational_goal\": \"ask for a movie recommendation while giving a taste signal\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Well, if you want my all time favorite, it's The Outsiders (1983)\",\n    \"belief_before\": \"SEEKER has asked for great movie recommendations and has revealed liking Good Will Hunting (1997).\",\n    \"belief_update\": \"The recommender names The Outsiders (1983) as their all-time favorite, making it the current candidate recommendation.\",\n    \"belief_after\": \"The Outsiders (1983) is the current recommendation and is highly valued by the recommender.\",\n    \"emotion\": \"curious, neutral\",\n    \"intention\": \"consider whether the recommended movie fits SEEKER's request and taste\",\n    \"conversational_goal\": \"evaluate the recommender's suggestion and decide whether to accept it or seek alternatives\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: Seen that a while back.\",\n    \"belief_before\": \"The current recommendation is The Outsiders (1983), the recommender's all-time favorite.\",\n    \"belief_update\": \"SEEKER has already seen The Outsiders (1983) before, so it is not a new viewing option.\",\n    \"belief_after\": \"The Outsiders (1983) is unlikely to satisfy the request for a movie to watch now; another recommendation is needed.\",\n    \"emotion\": \"neutral to mildly unenthusiastic\",\n    \"intention\": \"signal prior viewing and implicitly request a different recommendation\",\n    \"conversational_goal\": \"redirect the recommender toward a new suggestion\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER says: Depends on what type of movie you want to watch...\",\n    \"belief_before\": \"SEEKER has already seen The Outsiders (1983) and still needs a useful new recommendation.\",\n    \"belief_update\": \"The recommender is not yet offering another specific title and instead says the choice depends on the type of movie SEEKER wants.\",\n    \"belief_after\": \"To get a useful recommendation, SEEKER needs to specify a movie type, genre, or mood. Interpretation shifts from accepting a specific title to clarifying preferences.\",\n    \"emotion\": \"neutral, slightly expectant or needing to clarify\",\n    \"intention\": \"provide a movie type or ask for options so the recommender can suggest something new\",\n    \"conversational_goal\": \"clarify desired movie type to obtain a fresh recommendation\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

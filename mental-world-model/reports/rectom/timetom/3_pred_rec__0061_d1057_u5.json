@@ -1,0 +1,89 @@
+{
+  "id": "3_pred_rec__0061_d1057_u5",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hello!'",
+      "information_available": "The seeker has initiated the conversation with a greeting. No topic or preferences are known yet.",
+      "preferences": "Recommender's own preferences not yet revealed.",
+      "belief_before": "No prior beliefs about this seeker or conversation.",
+      "belief_update": "The seeker is present and has greeted me.",
+      "belief_after": "A conversation has been initiated by the seeker; they may make a request next.",
+      "emotion": "Neutral, mildly attentive/curious.",
+      "intention": "Acknowledge the greeting and allow the seeker to continue.",
+      "reaction_to_other": "Neutral-positive; greeting received as friendly opening.",
+      "conversational_goal": "Establish contact and invite the seeker to state their request.",
+      "changes_previous_interpretation": "N/A; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: 'Hello~'",
+      "information_available": "The seeker greeted me. I am responding; no recommendation topic has been stated.",
+      "preferences": "Recommender's own preferences not yet revealed.",
+      "belief_before": "The seeker has greeted me and may be about to ask something.",
+      "belief_update": "I choose to reply with a friendly greeting; no new information about the seeker is gained.",
+      "belief_after": "The conversation is open and active; the seeker still has not stated a request.",
+      "emotion": "Friendly, relaxed.",
+      "intention": "Return the greeting politely and keep the conversation going.",
+      "reaction_to_other": "Friendly and reciprocal.",
+      "conversational_goal": "Maintain rapport and prompt the seeker to continue.",
+      "changes_previous_interpretation": "No; it only confirms the greeting phase."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)'",
+      "information_available": "The seeker wants help finding a good comedy and likes Super Troopers (2001) and Beerfest (2006).",
+      "preferences": "Recommender's own preferences still not revealed.",
+      "belief_before": "The seeker greeted me but had not yet stated what they want.",
+      "belief_update": "The seeker is asking for a comedy recommendation and has cited Super Troopers and Beerfest as examples they like.",
+      "belief_after": "The seeker wants a comedy; they likely enjoy broad/raunchy comedy similar to Super Troopers and Beerfest, though only those examples are known.",
+      "emotion": "Helpful, attentive.",
+      "intention": "Prepare to recommend a comedy that may fit the seeker's stated tastes.",
+      "reaction_to_other": "Responsive and cooperative; treats the request as actionable.",
+      "conversational_goal": "Understand the comedy preference and provide a suitable recommendation.",
+      "changes_previous_interpretation": "Yes; the interaction shifts from greeting to a specific recommendation request."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: 'Tommy Boy (1995) is one of my favorites'",
+      "information_available": "The seeker wants a comedy and likes Super Troopers (2001) and Beerfest (2006). I am now offering a title.",
+      "preferences": "Recommender likes Tommy Boy (1995) and considers it one of his favorites.",
+      "belief_before": "The seeker wants a good comedy and likes Super Troopers and Beerfest.",
+      "belief_update": "I recommend Tommy Boy and reveal that it is a personal favorite; I believe it is a plausible comedy recommendation.",
+      "belief_after": "Tommy Boy has been offered as my recommendation; the seeker has not yet reacted to it.",
+      "emotion": "Positive, enthusiastic about a favorite.",
+      "intention": "Share a comedy I personally like and satisfy the seeker's request.",
+      "reaction_to_other": "Responsive and personally engaged; shares taste rather than just generic options.",
+      "conversational_goal": "Give the seeker a concrete comedy recommendation.",
+      "changes_previous_interpretation": "Yes; it moves from gathering preference to making a specific recommendation and adds my own preference."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says: 'but not like Friday (1995) ...Awesome I love that one I have seen it a million times'",
+      "information_available": "The seeker says they do not want something like Friday (1995) and that they love Tommy Boy but have seen it many times.",
+      "preferences": "Recommender still likes Tommy Boy (1995). Beliefs about seeker's preferences: seeker likes Tommy Boy but has seen it many times and does not want recommendations like Friday (1995).",
+      "belief_before": "I recommended Tommy Boy as a comedy favorite, based on the seeker's request and liking for Super Troopers and Beerfest.",
+      "belief_update": "The seeker likes Tommy Boy but has already seen it extensively, so it is not a novel recommendation. The seeker also introduces a negative constraint: not like Friday (1995).",
+      "belief_after": "Tommy Boy is validated as liked but not useful as a new suggestion; future recommendations should avoid Friday-like comedy and probably be new to the seeker.",
+      "emotion": "Pleased by the shared love for Tommy Boy, while becoming more attentive to the already-seen and negative-preference constraints.",
+      "intention": "Acknowledge the feedback, appreciate the shared taste, and refine the next recommendation.",
+      "reaction_to_other": "Positive about the seeker loving Tommy Boy; attentive and adaptive to the new constraint.",
+      "conversational_goal": "Adjust the recommendation strategy: find a comedy not like Friday that the seeker has not already seen many times.",
+      "changes_previous_interpretation": "Yes; the prior recommendation is accepted but marked as non-novel, and a new negative constraint is added."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hello!'\",\n    \"information_available\": \"The seeker has initiated the conversation with a greeting. No topic or preferences are known yet.\",\n    \"preferences\": \"Recommender's own preferences not yet revealed.\",\n    \"belief_before\": \"No prior beliefs about this seeker or conversation.\",\n    \"belief_update\": \"The seeker is present and has greeted me.\",\n    \"belief_after\": \"A conversation has been initiated by the seeker; they may make a request next.\",\n    \"emotion\": \"Neutral, mildly attentive/curious.\",\n    \"intention\": \"Acknowledge the greeting and allow the seeker to continue.\",\n    \"reaction_to_other\": \"Neutral-positive; greeting received as friendly opening.\",\n    \"conversational_goal\": \"Establish contact and invite the seeker to state their request.\",\n    \"changes_previous_interpretation\": \"N/A; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: 'Hello~'\",\n    \"information_available\": \"The seeker greeted me. I am responding; no recommendation topic has been stated.\",\n    \"preferences\": \"Recommender's own preferences not yet revealed.\",\n    \"belief_before\": \"The seeker has greeted me and may be about to ask something.\",\n    \"belief_update\": \"I choose to reply with a friendly greeting; no new information about the seeker is gained.\",\n    \"belief_after\": \"The conversation is open and active; the seeker still has not stated a request.\",\n    \"emotion\": \"Friendly, relaxed.\",\n    \"intention\": \"Return the greeting politely and keep the conversation going.\",\n    \"reaction_to_other\": \"Friendly and reciprocal.\",\n    \"conversational_goal\": \"Maintain rapport and prompt the seeker to continue.\",\n    \"changes_previous_interpretation\": \"No; it only confirms the greeting phase.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)'\",\n    \"information_available\": \"The seeker wants help finding a good comedy and likes Super Troopers (2001) and Beerfest (2006).\",\n    \"preferences\": \"Recommender's own preferences still not revealed.\",\n    \"belief_before\": \"The seeker greeted me but had not yet stated what they want.\",\n    \"belief_update\": \"The seeker is asking for a comedy recommendation and has cited Super Troopers and Beerfest as examples they like.\",\n    \"belief_after\": \"The seeker wants a comedy; they likely enjoy broad/raunchy comedy similar to Super Troopers and Beerfest, though only those examples are known.\",\n    \"emotion\": \"Helpful, attentive.\",\n    \"intention\": \"Prepare to recommend a comedy that may fit the seeker's stated tastes.\",\n    \"reaction_to_other\": \"Responsive and cooperative; treats the request as actionable.\",\n    \"conversational_goal\": \"Understand the comedy preference and provide a suitable recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; the interaction shifts from greeting to a specific recommendation request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: 'Tommy Boy (1995) is one of my favorites'\",\n    \"information_available\": \"The seeker wants a comedy and likes Super Troopers (2001) and Beerfest (2006). I am now offering a title.\",\n    \"preferences\": \"Recommender likes Tommy Boy (1995) and considers it one of his favorites.\",\n    \"belief_before\": \"The seeker wants a good comedy and likes Super Troopers and Beerfest.\",\n    \"belief_update\": \"I recommend Tommy Boy and reveal that it is a personal favorite; I believe it is a plausible comedy recommendation.\",\n    \"belief_after\": \"Tommy Boy has been offered as my recommendation; the seeker has not yet reacted to it.\",\n    \"emotion\": \"Positive, enthusiastic about a favorite.\",\n    \"intention\": \"Share a comedy I personally like and satisfy the seeker's request.\",\n    \"reaction_to_other\": \"Responsive and personally engaged; shares taste rather than just generic options.\",\n    \"conversational_goal\": \"Give the seeker a concrete comedy recommendation.\",\n    \"changes_previous_interpretation\": \"Yes; it moves from gathering preference to making a specific recommendation and adds my own preference.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says: 'but not like Friday (1995) ...Awesome I love that one I have seen it a million times'\",\n    \"information_available\": \"The seeker says they do not want something like Friday (1995) and that they love Tommy Boy but have seen it many times.\",\n    \"preferences\": \"Recommender still likes Tommy Boy (1995). Beliefs about seeker's preferences: seeker likes Tommy Boy but has seen it many times and does not want recommendations like Friday (1995).\",\n    \"belief_before\": \"I recommended Tommy Boy as a comedy favorite, based on the seeker's request and liking for Super Troopers and Beerfest.\",\n    \"belief_update\": \"The seeker likes Tommy Boy but has already seen it extensively, so it is not a novel recommendation. The seeker also introduces a negative constraint: not like Friday (1995).\",\n    \"belief_after\": \"Tommy Boy is validated as liked but not useful as a new suggestion; future recommendations should avoid Friday-like comedy and probably be new to the seeker.\",\n    \"emotion\": \"Pleased by the shared love for Tommy Boy, while becoming more attentive to the already-seen and negative-preference constraints.\",\n    \"intention\": \"Acknowledge the feedback, appreciate the shared taste, and refine the next recommendation.\",\n    \"reaction_to_other\": \"Positive about the seeker loving Tommy Boy; attentive and adaptive to the new constraint.\",\n    \"conversational_goal\": \"Adjust the recommendation strategy: find a comedy not like Friday that the seeker has not already seen many times.\",\n    \"changes_previous_interpretation\": \"Yes; the prior recommendation is accepted but marked as non-novel, and a new negative constraint is added.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

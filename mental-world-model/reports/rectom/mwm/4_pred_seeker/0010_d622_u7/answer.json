@@ -1,0 +1,81 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 10,
+  "item_id": "d622_u7",
+  "dialogue_id": "622",
+  "utterance_pos": 7,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 这里，RECOMMENDER 接连说出的 The Lego Batman Movie、Avatar、The Goonies、Harry Potter 被对象化为一份已经递到自己面前的固定推荐清单；而「要看的电影」仍必须由自己这边确定下来，因此这些片名呈现为有待逐项考虑、比较并从中作出选择的候选条目。RECOMMENDER 的“Let me think...”与连续提名，只让这份清单继续展开，并没有替自己完成那个要由自己确定的选择。",
+        "probability": 0.3636
+      },
+      {
+        "content": "在 SEEKER 这里，RECOMMENDER 说出的片名被对象化为一份固定推荐清单；同时「适合家庭观看」被归到自己这一边，成为选片时不能忽略的观影需求。Avatar 因被说成 good for a family movie 而在清单中显得与这一需求相对应，The Lego Batman Movie、The Goonies、Harry Potter 则作为待逐项对照的候选出现；它们是否同样满足家庭观看条件，仍以未定状态摆在 SEEKER 的对象化视野里。",
+        "probability": 0.3497
+      },
+      {
+        "content": "在 SEEKER 这里，要看的电影仍是要由自己这边确定下来的事，RECOMMENDER 说出的 The Lego Batman Movie、Avatar、The Goonies、Harry Potter 因而被排成待选片名。其中 Avatar 带着“适合家庭”的属性、The Goonies 带着“好”的属性被直接对象化，仿佛这些性质本已固定在电影自身之上，而不是随观看场合与观看对象而变的判断；选择于是呈现为对这些自带好坏标签的片名进行取舍。",
+        "probability": 0.2867
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这些片名到我这里已经排成一份候选清单：The Lego Batman Movie、Avatar、The Goonies、Harry Potter。要看的电影仍得由我自己从中定下来，所以它们不是答案，而是一条条待比较、待筛选的条目。我会先按“适合所有年龄、最好不是动画”来衡量：乐高蝙蝠侠可能先被动画这一点挡住；Avatar 让我想到对家里小的孩子可能偏吓人；The Goonies 倒是更像对他们合适，可我已经看过、只是没和家人一起看过，这又让我犹豫它算不算此刻最合适的选择；Harry Potter 刚被提出来，还得放进同一张单子里继续比。对方说“Let me think...”和接连提名，只是把清单越铺越长，并没有替我把那个最终选择完成。眼下我还没有一个足够让我直接拍板的片名，只能继续在这些候选中逐项掂量，围绕孩子会不会害怕、能不能全家一起看、以及是否够有趣来收窄。",
+        "activation": 0.3947
+      },
+      {
+        "content": "我把 RECOMMENDER 说的那些片名收成一份待逐项对照的清单：Avatar 被说成 good for a family movie，就先和“适合家庭观看”这一条对上；The Lego Batman Movie 是动画，刚说过也许要非动画，所以它得往后放一放；The Goonies 我自己觉得对孩子会不错，但我看过、家里还没一起看过，这让我对它既熟悉又没底；Harry Potter 还悬着，得看会不会对小孩偏吓人。整体上，我还是拿“适合所有年龄段、孩子不被吓到、能全家一起看”来掂量这些候选，不急着认定哪个就是答案。",
+        "activation": 0.307
+      },
+      {
+        "content": "在 SEEKER 这里，找电影这件事仍然落在自己手上：RECOMMENDER 提的 The Lego Batman Movie、Avatar、The Goonies、Harry Potter 被一一收进待选名单，变成自己要从中挑出一个的东西。Avatar 被说成适合家庭，The Goonies 被说成好，这些说法很快被当作片子本身自带的标签来对待；但 SEEKER 同时拿自家 littles 来对照，觉得其中一部有点吓人，于是“适合家庭”在自己这里不再是一贴就准的固定性质。对 The Goonies，虽然认可它好，也想到自己看过、孩子还没一起看过，这个“好”能不能直接搬到全家观看的场合，心里并不完全踏实。The Parent Trap 的经验还在起作用：有趣、孩子喜欢、非动画，这些成了衡量后面片名的尺子。Harry Potter 刚被提出，也自然被放进候选列，但还没被真正掂量。整体上，SEEKER 仍在把这些片名按是否适合所有年龄、是否会让小孩害怕、是否非动画、是否全家能一起看的标准来取舍，并希望最后由自己定下一个合适的。",
+        "activation": 0.2982
+      }
+    ],
+    "observed_action": "SEEKER 打招呼并请求帮助找一部适合所有年龄段的有趣电影；SEEKER 表示自己喜欢《The Parent Trap (1998)》这类片子，说那是好片，孩子们也喜欢，并说也许要非动画的；SEEKER 表示那一部对自家小孩有点吓人，说《The Goonies》对他们会不错，并说自己看过但没和家人一起看过。",
+    "predicted_actions": [
+      {
+        "content": "询问特定电影是否吓到小孩",
+        "probability": 0.2698
+      },
+      {
+        "content": "比较候选",
+        "probability": 0.2673
+      },
+      {
+        "content": "提议全家一起看某电影",
+        "probability": 0.2347
+      },
+      {
+        "content": "排除候选",
+        "probability": 0.1234
+      },
+      {
+        "content": "把 Harry Potter 暂时搁置、留作候选，等之后再定",
+        "probability": 0.1049
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.4956,
+    "b": 0,
+    "c": 0.2347,
+    "d": 0
+  },
+  "score_reason": "A 0.4956 = 比较候选 0.2673 + 排除候选 0.1234 + 把 Harry Potter 暂时搁置、留作候选，等之后再定 0.1049；B 0.0000；C 0.2347 = 提议全家一起看某电影 0.2347；D 0.0000。Actions 1, 3, and 4 are feedback/evaluation of candidates, while action 2 expresses a preference; no actions match B or D.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

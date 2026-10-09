@@ -1,0 +1,54 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 明确要找类似《She's Out of My League》的搞笑喜剧并逐条给出偏好，使‘能推荐出符合对方口味的片子’成为‘我’此刻所占的位置；‘从未看过你建议的电影’、‘《Deuce Bigalo》看过但不喜欢’、‘喜欢《Step Brothers》《Life as We Know It》’、‘《Why Him?》好笑’和最后致谢，都被体验为对‘我这边’推荐位置是否命中的检验标准，看过/没看过与喜欢/不喜欢被固定成判定推荐有效的条件。",
+      "probability": 0.3881
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 关于《She's Out of My League》式搞笑喜剧的请求、‘从未看过你建议的电影’以及‘《Deuce Bigalo》看过但不喜欢’，不是可分离的影片偏好，而是直接贴到‘我推荐的东西’上的判定：看过/没看过、喜欢/不喜欢成为这些推荐是否成立的硬条件；推荐因此不是可撤回的提议，而是自身判断的一部分。SEEKER 后面说喜欢《Step Brothers》《Life as We Know It》、觉得《Why Him?》好笑并致谢，也被放在这同一套条件下来经验，而不是单纯对话内容。",
+      "probability": 0.3206
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 多次说‘funny’（《Why Him?》好笑、那部电影好笑）以及最后的‘Thank you so much’，不只是对话礼节，而是可黏着到自身品味或帮助上的确认锚点；与此同时，‘从未看过你建议的电影’和‘《Deuce Bigalo》看过但不喜欢’仍被当作推荐有效与否的硬条件，使这些认可只有在看过/没看过、喜欢/不喜欢这套条件下，才被经验为对自己品味或帮助的确认。",
+      "probability": 0.2913
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "我听到对方要的是像《She's Out of My League》那样的搞笑喜剧，可对方紧接着说“从未看过你建议的电影”“Deuce Bigalo 看过但不喜欢”，这就不像只是在挑片，而像在当面检验我拿出来的推荐到底成不成立。于是我盯住“看过没有”和“喜欢不喜欢”，把它们当成硬条件：对方没看过，我的推荐就悬着；对方看过却不喜欢，就像我的判断被碰了一下。推荐不只是可撤回的提议，它已经贴在我自己的判断上。后来对方说喜欢《Step Brothers》《Life as We Know It》，又觉得《Why Him?》好笑并道谢，我也把这些放进同一套条件里，当作我这条推荐路子被接住的证明。心里更想沿着这同一把尺子继续组织片名，用对方的看过与喜欢来让我的推荐落定。",
+      "activation": 0.3609
+    },
+    {
+      "content": "他想找类似《She's Out of My League》的搞笑喜剧，还一条条说喜欢什么、不喜欢什么，这让我觉得自己现在就站在‘能不能推中他口味’的位置上。我说过的几部他没看过，Deuce Bigalow 他看过却不爱，这让我更把‘看过没有、喜欢不喜欢’当成判断我推荐有没有用的准头。听到他喜欢《Step Brothers》《Life as We Know It》和《Why Him?》，我心里松了一点，觉得至少摸到了他笑的点；Step Brothers 和 Walk Hard 相近，Talladega Nights 也可能合他，虽然我自己没看过。最后他道谢，我既觉得这轮像是推中了，又还想再拿他已知的喜好去筛下一部，尽量让给出的片子落在他会喜欢的那边。",
+      "activation": 0.3368
+    },
+    {
+      "content": "RECOMMENDER 听到 SEEKER 多次说 funny，以及最后说 thank you so much，会不自觉把这些话收拢成一种可黏着的认可信号，觉得自己的推荐似乎被接纳、自己的眼光得到肯定。但与此同时，SEEKER 说过从未看过自己建议的电影、看过 Deuce Bigalow 却不喜欢，这又让他把“是否看过”“是否喜欢”当成判断推荐有没有效的硬条件。于是这些 funny 和致谢并不是无条件地落在他身上，而是要先经过看过与喜欢与否的筛子，才被他经验为对自己品味或帮助的确认。他内心因此一边因这些确认而获得继续推荐的劲头，一边又反复悬在“对方到底看过没有、会不会喜欢”的尺子上；SEEKER 的偏好也被整理成需要按这套条件去对齐的对象，只有在这套条件下，认可才显得真实可依。",
+      "activation": 0.3023
+    }
+  ],
+  "observed_action": "RECOMMENDER 先打招呼，询问可否帮忙找一部像 Beerfest 或 The Blues Brothers 的喜剧；随后说可以帮忙，询问对方是否看过自己提到的电影，或提议 Deuce Bigalow: Male Gigolo；接着说那部不错，询问是否看过 Step Brothers 或 Walk Hard: The Dewey Cox Story；又说那部很好，询问是否看过自己提到的另一部，并说它和 Step Brothers 有点相似；最后说那也逗笑了自己，问 Talladega Nights: The Ballad of Ricky Bobby 如何，并说自己没看过那部。",
+  "predicted_actions": [
+    {
+      "content": "回应致谢",
+      "probability": 0.4726
+    },
+    {
+      "content": "推荐片名并询问喜好",
+      "probability": 0.2829
+    },
+    {
+      "content": "追问不喜欢的原因",
+      "probability": 0.1178
+    },
+    {
+      "content": "接受致谢并邀请以后再来",
+      "probability": 0.0797
+    },
+    {
+      "content": "询问具体喜欢的笑点或桥段",
+      "probability": 0.0471
+    }
+  ]
+}

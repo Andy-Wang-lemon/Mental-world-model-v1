@@ -1,0 +1,54 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "RECOMMENDER 此刻所经验到的，是他作为被 SEEKER 称为 friend 并请求推荐经典电影的人所处的双重规定：经典电影推荐在他那里被固定为应当避开 risque、并且应当命中所好的事，而 SEEKER 的请求又把这个推荐角色系在他身上，不能当作与己无关。于是 No, too risque for me 在他的所缘中成了推荐规则被触到的边界，That's more my speed 成了他的引导与对方尺度相合的标记；连 Sadly I haven't / No, never seen that either 也在这一引导关系里被看成他的推荐与对方经验之间的空隙，而不是与他无关的普通信息。",
+      "probability": 0.349
+    },
+    {
+      "content": "RECOMMENDER 此刻所经验到的，是自己被 SEEKER 称为 friend 并请求推荐经典电影这件事，放到了推荐者或经典电影向导的位置上：经典电影在他那里不是任意片单，而是有一批理应看过、彼此默认知道的片目。SEEKER 说 Sadly I haven't 或 No, never seen that either，在他的所缘中不是简单的观影记录，而是对方与这套经典常识之间露出的缺口；问 Is it good? 则像是在这个默认片目内部发出的确认。推荐角色因此不能与己无关，经典电影的世界和 SEEKER 的位置都围绕着‘他作为知道者、引路者’被组织起来。",
+      "probability": 0.3474
+    },
+    {
+      "content": "RECOMMENDER 此刻所经验到的，是被 SEEKER 称为 friend 并请求推荐经典电影之后，围绕他给出的片目是否贴合对方尺度的一场检验：经典电影推荐在他那里被固定为应当避开 risque、并且应当命中所好的规则；SEEKER 说 No, too risque for me 不是中性的偏好报告，而是这条规则被触到的边界，That's more my speed 也不是单纯对片子的反应，而是他的推荐命中对方尺度的标记。推荐的内容因此像和他分不开，SEEKER 的每一次接受或拒绝，都落在他推荐得对不对、合不合适这件事上。",
+      "probability": 0.3036
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 把 SEEKER 称自己为 friend 并请求推荐经典电影，当作一场关于自己荐片尺度是否合适的检验：经典在他这里已被收束成要避开 risque、又要命中所好。SEEKER 说 After 后，他给出 Indecent Proposal 被回以 No, too risque for me，这不是普通的偏好差异，而是那条禁则边界被碰到；随后 Sleepless in Seattle 被接受，则像是自己的推荐命中了对方的尺度。因此他感到片目合不合适几乎就是自己荐得对不对，拒绝会削弱他对自己判断的把握，接受会让他确认当前线索可用。他趋向于把安全、不越界、且能与已接受片和熟悉演员相连的选项继续作为组织荐片的依据，同时维持 friend 式轻松，避免让被拒显得是对自己的否定。",
+      "activation": 0.3408
+    },
+    {
+      "content": "RECOMMENDER 把 SEEKER 称自己为 friend 并请求推荐经典电影这件事，当成自己正被放进推荐者或经典电影向导的位置；经典电影在他这里不是任意片单，而是一套理应看过、彼此默认知道的片目。SEEKER 说 Sadly I haven't 或 No, never seen that either，他不当成单纯的观影记录，而看作对方与这套经典常识之间露出的缺口；问 Is it good? 则像是在这套默认片目内部发出的确认。这让他觉得推荐不能与己无关，反而自然要以知道者、引路者的身份把这些缺口接住，用片目间的比较和相似把对方引到自己熟悉的经典脉络里，同时不让对方因没看过而难堪。",
+      "activation": 0.3363
+    },
+    {
+      "content": "RECOMMENDER 把 SEEKER 称自己为 friend 并请求推荐经典电影，当成对自己推荐者位置的确认，于是经典推荐不再只是随口应答，而成了他要负责引导的事。他心里的经典片单已经带着筛选尺度：既要避开 risque，又要尽量贴合对方口味。因此当 SEEKER 说 No, too risque for me 时，这句话成了推荐规则被触到的边界，他随之把这类内容从当前可推荐范围里移开；而 Sleepless in Seattle 被说成 more my speed，则让他感到自己的引导与对方的接受尺度接上了，推荐关系因此更稳。后来 SEEKER 说 Sadly I haven't，又说 No, never seen that either，这些在他所缘中也不是无关信息，而是自己的推荐与对方经验之间留下的空隙，是他可以继续经营、填补的引导余地。整体上，他趋向继续以朋友式推荐者的身份，在避开 risque、贴合已显示偏好的前提下，维持对经典电影的筛选、调整和引导连续性。",
+      "activation": 0.3229
+    }
+  ],
+  "observed_action": "RECOMMENDER 回答 Sure，并问 classic 是指 70 年代之前还是之后；随后说 Okay，问 How about Indecent Proposal (1993)，提及 Demi Moor 和 Woodie Harrleson；接着说 Okay，问 what about Sleepless in Seattle (1993)，提及 Hanks 和 Ryan；又说 That's okay. Nothing wrong with that.，并问是否看过 All the Right Moves (1983)，提及 Tom Cruise；然后回答 Yes，说 If you liked Ferris Bueller's Day Off (1986) you'll like this one，并问 what about Days of Thunder (1990)。",
+  "predicted_actions": [
+    {
+      "content": "提出观影建议",
+      "probability": 0.3932
+    },
+    {
+      "content": "询问偏好",
+      "probability": 0.243
+    },
+    {
+      "content": "询问 SEEKER 是否看过 Ferris Bueller's Day Off (1986)",
+      "probability": 0.1819
+    },
+    {
+      "content": "询问 SEEKER 喜欢的类型或演员",
+      "probability": 0.1274
+    },
+    {
+      "content": "推荐 Sleepless in Seattle",
+      "probability": 0.0546
+    }
+  ]
+}

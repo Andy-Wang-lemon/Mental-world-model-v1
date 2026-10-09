@@ -1,0 +1,34 @@
+{
+  "id": "4_pred_seeker__0117_d1941_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender greets the seeker and asks whether the seeker has seen Star Wars: Episode VIII – The Last Jedi (2017).",
+      "information_available": "The seeker hears the recommender's greeting and question. The seeker knows the recommender is asking about their familiarity with The Last Jedi.",
+      "preferences": "Unknown. No preference about Star Wars, The Last Jedi, or films in general has been expressed by the seeker in this turn.",
+      "belief_before": "No prior dialogue context is available, so the seeker has no specific beliefs about the recommender's film interests or recommendation intent.",
+      "belief_update": "The seeker learns that the recommender considers Star Wars: Episode VIII – The Last Jedi (2017) relevant to the conversation and wants to know if the seeker has seen it.",
+      "belief_after": "The recommender is likely preparing to discuss or recommend The Last Jedi, or a related film, and will use the seeker's answer to guide the next move.",
+      "emotion": "Neutral and attentive, with possible mild curiosity about why the film is being asked about.",
+      "intention": "To respond truthfully about whether they have seen the film and to continue the conversation with the recommender.",
+      "reaction_to_other": "Polite and receptive; no negative reaction is indicated.",
+      "conversational_goal": "Answer the recommender's question and allow the recommendation or discussion to proceed.",
+      "interpretation_change": "This is the initial turn, so it establishes context rather than changing any previous interpretation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender greets the seeker and asks whether the seeker has seen Star Wars: Episode VIII – The Last Jedi (2017).\",\n    \"information_available\": \"The seeker hears the recommender's greeting and question. The seeker knows the recommender is asking about their familiarity with The Last Jedi.\",\n    \"preferences\": \"Unknown. No preference about Star Wars, The Last Jedi, or films in general has been expressed by the seeker in this turn.\",\n    \"belief_before\": \"No prior dialogue context is available, so the seeker has no specific beliefs about the recommender's film interests or recommendation intent.\",\n    \"belief_update\": \"The seeker learns that the recommender considers Star Wars: Episode VIII – The Last Jedi (2017) relevant to the conversation and wants to know if the seeker has seen it.\",\n    \"belief_after\": \"The recommender is likely preparing to discuss or recommend The Last Jedi, or a related film, and will use the seeker's answer to guide the next move.\",\n    \"emotion\": \"Neutral and attentive, with possible mild curiosity about why the film is being asked about.\",\n    \"intention\": \"To respond truthfully about whether they have seen the film and to continue the conversation with the recommender.\",\n    \"reaction_to_other\": \"Polite and receptive; no negative reaction is indicated.\",\n    \"conversational_goal\": \"Answer the recommender's question and allow the recommendation or discussion to proceed.\",\n    \"interpretation_change\": \"This is the initial turn, so it establishes context rather than changing any previous interpretation.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "d",
+    "a",
+    "c"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

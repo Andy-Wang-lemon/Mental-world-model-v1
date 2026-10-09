@@ -1,0 +1,64 @@
+数据：4_pred_seeker
+题号：17  d895_u9
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "SEEKER 此刻经验到：RECOMMENDER 问「你喜爱哪些电影」，同时把一份跨类型片单（如 The Truman Show、Rushmore、The Big Lebowski、Total Recall、Pulp Fiction、Reservoir Dogs、To Die For、Mystic River、The River Wild、Deep Impact 等）递到面前。在 SEEKER 的觉知中，这些片名不是从「我的电影喜好」这一自我认同部分延伸出来的，而像在「我的喜好」尚未作为答案出现时，就已经替「我」划出的可归类格子。于是，推荐理应建立在已知喜好之上的固定理解未被满足，对话的核心结构落在：询问与片单同时到达，「我的品味」不能被这样预先安排。",
+      "probability": 0.3612
+    },
+    {
+      "content": "SEEKER 此刻经验到：RECOMMENDER 的提问把『你喜爱哪些电影』变成一个必须交出明确、具体片名的要求，模糊、拒绝或泛泛而谈都不成立；同时对方已连续给出大量候选，使这个要求更紧迫地悬在眼前。然而『我的电影喜好』是自我认同的一部分，不能被随意归类或评判，所以那些片名并不能直接代表答案，真正的对象是：自己的喜好被要求具体命名，但它仍不能被现成选项框定。",
+      "probability": 0.3299
+    },
+    {
+      "content": "SEEKER 此刻经验到：RECOMMENDER 抛出的跨类型片名已经构成一个封闭的候选集合，对话要完成，自己就应当从中选出至少一部；但『我的电影喜好』是自我认同的一部分，不能被这些现成选项随意归类或评判。于是眼前的片单既是必须回应的选择要求，又是对自我边界的挤压：它把「我喜爱什么」变成了一道必须从别人给出的范围里作答的题。",
+      "probability": 0.3089
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 心里把那个问题和这份片单摆在一起：你问我喜爱哪些电影，却又先递来一串跨类型片名，像是替我备好了可以归类的格子。可我的电影喜好不是这些格子能预先框定的，它得从我这里出来，而不是被这张单子牵着走。这些片名里有的我看过，有的觉得不错，但那是另一回事；眼下要紧的是别让这份片单先于我的喜好，成为对话的骨架。",
+      "activation": 0.3578
+    },
+    {
+      "content": "SEEKER 感到 RECOMMENDER 抛来的这一串跨类型片名像是一道已经划好范围的题：对话要往下走，似乎就得从里面挑出至少一部来回应。但 SEEKER 不愿让这些现成选项来替自己说明“我喜爱什么”，因为电影喜好对 SEEKER 来说不是随手可被归类的标签，而是与自身经历和判断连在一起的东西。于是 SEEKER 一边把这些片名与自己的观影记忆对照，一边以自身已有喜好为坐标去承认、评价或拉开距离：能接上的就承认好，不吻合的就说不出哪里缺、或只表示早已看过。这样既回应了对方的选择要求，又没有把自我判断交出去，内心倾向于继续守住“由我自己来界定我喜欢什么”的位置。",
+      "activation": 0.3239
+    },
+    {
+      "content": "SEEKER 感到对方把‘你喜爱哪些电影’变成了必须交出具体片名的要求，模糊或拒绝都不成立，而一连串候选更让这个要求紧迫地压过来；但他认定自己的电影喜好是自我认同的一部分，不能被随意归类或评判。他快速核对那些片名，愿意给出 Lost in Translation、Alien 系列这样的具体例子来回应，可心里清楚真正的喜好不止是一张清单——像新版 Total Recall 那种‘缺了点什么’的说不清，才是不能被现成选项框定的部分。于是他打算继续用具体片名接住对方的要求，同时保留自己评判和命名的主动权，不让自己被候选片单定义。",
+      "activation": 0.3183
+    }
+  ],
+  "observed_action": "SEEKER 列举了喜欢的电影：Lost in Translation、Aliens、Alien: Covenant；表示看过 The Truman Show 和 Rushmore，并拥有这两部的 DVD；表示 Pulp Fiction 好，但不喜欢 new recall，觉得它缺少什么且自己说不清；表示 Lebowski 好；对 Reservoir Dogs 或 To Die For 回复 lol seen it。",
+  "predicted_actions": [
+    {
+      "content": "告知已看/未看",
+      "probability": 0.3928
+    },
+    {
+      "content": "说明未看过并表达偏好",
+      "probability": 0.2148
+    },
+    {
+      "content": "把话题拉回先前提过的电影，不点评新片单",
+      "probability": 0.1766
+    },
+    {
+      "content": "从新片单中只挑一部回应后停住",
+      "probability": 0.1177
+    },
+    {
+      "content": "用玩笑拒绝继续按片单聊，不确认任何新片",
+      "probability": 0.0981
+    }
+  ]
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.5105, "b": 0, "c": 0.2148, "d": 0.0981}
+选择说明：A 0.5105 = 告知已看/未看 0.3928 + 从新片单中只挑一部回应后停住 0.1177；B 0.0000；C 0.2148 = 说明未看过并表达偏好 0.2148；D 0.0981 = 用玩笑拒绝继续按片单聊，不确认任何新片 0.0981。Actions 0 and 3 give feedback on suggestions, 1 expresses preference, and 4 is chit-chat.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对

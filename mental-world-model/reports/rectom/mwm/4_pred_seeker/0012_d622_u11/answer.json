@@ -1,0 +1,78 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 12,
+  "item_id": "d622_u11",
+  "dialogue_id": "622",
+  "utterance_pos": 11,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "SEEKER 听到 RECOMMENDER 依次说出《The Lego Batman Movie (2017)》《Avatar (2009)》《The Goonies (1985)》《Harry Potter movies》《Lemony Snicket's A Series of Unfortunate Events (2004)》《Alice in Wonderland (2005)》等片名，并把“10岁可以、5岁不确定”这一年龄边界收在自己这边；这些片名不被取为一般观众适用的候选，而是被放到“能不能同时照顾我这里的10岁与5岁、让全家一起看”这一固定标准下分拣。于是，《Avatar (2009)》被说成适合家庭电影、《The Goonies (1985)》被说成不错、《Lemony Snicket's A Series of Unfortunate Events (2004)》被说成不错，都仍要回到这两道年龄门槛上取；只被关联到10岁、或对5岁仍不确定的候选，就呈现为尚未满足“家庭电影”标准的对象。",
+        "probability": 0.424
+      },
+      {
+        "content": "SEEKER 把 RECOMMENDER 的回应放在“为我提供答案”的位置上；所列片名和最后“you're welcome”被取为自己请求已被承接、候选信息已归入自己这边。与此同时，SEEKER 又把“家庭电影”执成必须同时照顾10岁与5岁、能让全家一起看；因此这些已归入的候选仍被放到双重年龄门槛上取，凡只被说成适合10岁、或对5岁仍不确定的，就呈现为虽已被承接、但尚未满足固定标准的对象。",
+        "probability": 0.2985
+      },
+      {
+        "content": "SEEKER 把“10岁可以、5岁不确定”这一年龄边界收在自己这边，同时把 RECOMMENDER 的推荐取成应当给出确定、可直接采用的答案。片名一部部被说出时，SEEKER 经验到的不是一份松散候选，而是一份尚待收口的推荐：每部片子都要回到“对我这边的10岁/5岁是否合适”来取，而“10 yo, yes, I'm not sure about 5 y.o.”使整个推荐在关键年龄条件上留下空缺，理应有一个明确适龄结论来消除这一不确定；最后“you're welcome”也不能填上这个空缺。",
+        "probability": 0.2775
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 听到这些片名，并未取为一般观众可看的候选，而是当即收回到自己这边的两道年龄门槛：10岁可以，5岁不确定。于是每部片名都要在「能不能同时照顾家里的10岁和5岁、让全家一起看」这一标准下过筛。被说成适合家庭电影的《Avatar》、被说成不错的《The Goonies》和《Lemony Snicket》，以及只关联到10岁的《Harry Potter》，都仍要回到5岁这一关来掂量；只被说成适合10岁或对5岁仍不确定的，便觉得还没满足「家庭电影」的要求。对《Alice in Wonderland》，觉得它可能对5岁有点吓人，所以虽然听起来不错，心里仍把它搁在待定或排除的位置；对《Goonies》则一边觉得对小孩有点吓人，一边又觉得对他们可能不错，因为自己看过但没和家人一起。整体上，SEEKER 在按自己的年龄边界和全家同看的标准筛选，倾向于接受那些能同时通过10岁和5岁两关的选项，对只过一关或不确定的保持犹豫。",
+        "activation": 0.3824
+      },
+      {
+        "content": "SEEKER听着一串片名出来，心里并不把它们当成随便看看的清单，而是逐个拿自家5岁和10岁去卡：Batman动画先排除，Avatar也许可以，Goonies记得自己看过、觉得孩子们可能行，Harry Potter没看过所以问5岁和10岁能不能看。最让他悬着的是那句“10岁可以、5岁不确定”——这恰好是他最需要被定下来的边界，推荐到这儿像是缺了一块；Lemony Snicket和Alice出来，他仍要再分一次：Alice对5岁可能有点吓人，其他可以。“you're welcome”只是收住了对话，没有补上那个适龄结论。于是他心里的推荐还没有完全收紧成可用的答案，仍旧等着一个能同时安顿5岁和10岁的明确说法。",
+        "activation": 0.3383
+      },
+      {
+        "content": "RECOMMENDER 是在接我的请求、给我答案；这些片名和最后的 you're welcome 都该算作信息已经到我这边。可我要找的是全家电影，标准是10岁和5岁都能看、能一起看，不能只被说成适合10岁就算了。Goonies 被说对他们不错，我自己的印象也能接受，先放进可全家考虑的候选；Harry Potter 那些我完全没看过，虽然被提出来，但5岁和10岁合不合适还没底，不能算满足。Lemony Snicket 听起来可以，Alice 对5岁可能太吓人，所以 Alice 不能过全家的门槛，其他能同时照顾两个年龄的才真满足。整体上我认可这番回应，已把可用的候选收下，但筛选仍在按双重年龄门槛继续。",
+        "activation": 0.2793
+      }
+    ],
+    "observed_action": "SEEKER 打招呼并请求帮忙找一部适合所有年龄的有趣电影；表示自己喜欢《The Parent Trap (1998)》这类电影，说那是好片、孩子们也喜欢，并提出也许不要动画；说那部对家里的小孩有点吓人，认为《The Goonies》对他们会不错，还说自己看过但没有和家人一起看；说自己从未看过那些，问是否适合5岁和10岁孩子；说那些听起来也好，Alice对5岁可能有点吓人但其他可以，并道谢。",
+    "predicted_actions": [
+      {
+        "content": "排除某电影",
+        "probability": 0.3518
+      },
+      {
+        "content": "道谢并认可",
+        "probability": 0.2898
+      },
+      {
+        "content": "列入备选",
+        "probability": 0.2094
+      },
+      {
+        "content": "搁置影片",
+        "probability": 0.149
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.7102,
+    "b": 0,
+    "c": 0,
+    "d": 0.2898
+  },
+  "score_reason": "A 0.7102 = 排除某电影 0.3518 + 列入备选 0.2094 + 搁置影片 0.1490；B 0.0000；C 0.0000；D 0.2898 = 道谢并认可 0.2898。Actions 0,2,3 respond to a suggested movie, while 1 expresses thanks and acknowledgment.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "The predicted action \"道谢并认可\" directly states a gratitude expression, matching strategy D.",
+  "audit_level": "explicit"
+}

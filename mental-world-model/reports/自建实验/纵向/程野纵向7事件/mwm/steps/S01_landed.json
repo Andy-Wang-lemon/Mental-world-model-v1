@@ -1,0 +1,431 @@
+{
+  "events": [
+    {
+      "focus_person": "程野",
+      "yuanwen": "程野和苏妍是同公司同级员工，也恋爱三年。两人都很上进，同时竞争一个晋升名额。程野资历更久，也一直承担更多项目。最终领导宣布苏妍晋升，程野落选。散会后，苏妍追上程野说：“我知道你也很想要这个位置，今晚我们还庆祝吗？”",
+      "stimulus_text": "程野和苏妍是同公司同级员工，也恋爱三年。两人都很上进，同时竞争一个晋升名额。程野资历更久，也一直承担更多项目。最终领导宣布苏妍晋升，程野落选。散会后，苏妍追上程野说：“我知道你也很想要这个位置，今晚我们还庆祝吗？”",
+      "stimulus_action_split": {
+        "stimulus_text": "程野和苏妍是同公司同级员工，也恋爱三年。两人都很上进，同时竞争一个晋升名额。程野资历更久，也一直承担更多项目。最终领导宣布苏妍晋升，程野落选。散会后，苏妍追上程野说：“我知道你也很想要这个位置，今晚我们还庆祝吗？”",
+        "has_observable_action": true,
+        "action_span": "拒绝参加庆祝",
+        "action_description": "拒绝参加庆祝"
+      },
+      "objective_event": {
+        "actors": [
+          "领导",
+          "苏妍",
+          "程野"
+        ],
+        "action": "领导宣布苏妍晋升、程野落选；散会后，苏妍追上程野并对程野说：‘我知道你也很想要这个位置，今晚我们还庆祝吗？’",
+        "object": "苏妍、程野（言语对象）",
+        "scene": "公司；散会后",
+        "outcome_changes": [
+          "领导宣布苏妍获得晋升名额",
+          "程野未获得该晋升名额"
+        ],
+        "role_changes": [
+          "苏妍获得晋升职位"
+        ],
+        "relationship_changes": [
+          "苏妍与程野竞争同一晋升名额的关系结束"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "程野把‘同级员工兼竞争者’这一身份执为‘我’，将落选读成对‘我这个更资深者’的否定，而非仅是一个职位结果。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "程野把与苏妍的三年恋爱关系执为‘我的关系/我的伴侣’，因此在同一晋升名额竞争中，苏妍的胜出可能被纳入‘我的所有物被分走’的自我边界来经验。",
+          "confidence": 0.75,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "程野将职场晋升执为一条固定法则：资历更久、承担更多项目就应当获得晋升；领导宣布苏妍晋升、自己落选，被理解为该法则被破坏的现实。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "程野把‘同一晋升名额’执为一种零和判定：苏妍得到就等于自己被判定为不该得到，二者不能在同一关系里各自成立。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "程野把苏妍‘今晚我们还庆祝吗’的追问执为一种固定关系脚本：在竞争结果已定后，庆祝与自己的落选不能并置，因而这句话被理解为对既定关系边界和优先次序的测试。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.3392857142857143,
+          "alambana_prior_probability": 0.5053191489361702,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.3321428571428572,
+          "alambana_prior_probability": 0.4946808510638298,
+          "activation_alignment": 0.93,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.5952000000000002
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f3"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.32857142857142857,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.92,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.5888000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在程野此刻的经验里，领导宣布苏妍晋升、自己落选，直接撞上一条固定法则：资历更久、承担更多项目就应当获得晋升。这个晋升名额被他经验为‘本应属于我的位置’，苏妍得到它，不只是另一个人的结果，而是那条法则被现实破坏的证据；他的落选则是对‘这个位置本应属于我’的直接否定。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个被破坏的法则中，像发生在他的应得位置失守之后的确认。",
+          "prior_probability": 0.5053191489361702,
+          "posterior_probability": 0.5053191489361702,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "文本内容均为程野对已发生刺激的主观解释，未添加苏妍、领导等人的额外言行或事实；同时保留了领导宣布苏妍晋升、程野落选以及苏妍追问是否庆祝的核心事件。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "在程野此刻的经验里，同一个晋升名额只有一个，苏妍得到它，就等于自己被判定为不该得到它；二者不能在同一关系里各自成立。领导宣布苏妍晋升、自己落选，被经验成她的获得与他的被否处在同一个零和判定里，而不是两个各自成立的结果。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个零和结构中：她的庆祝询问仿佛是站在她得到、他被判定不该得到的同一格子里发出。",
+          "prior_probability": 0.4946808510638298,
+          "posterior_probability": 0.4946808510638298,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.5952000000000002,
+          "activation_alignment": 0.93,
+          "grounding_valid": true,
+          "grounding_reason": "零和关系与判定均为程野的主观所缘，未伪造当前刺激中不存在的他人言行或事实；领导宣布结果、程野落选及苏妍的庆祝询问均被保留。",
+          "combo_id": "C2"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": true,
+        "action_span": "拒绝参加庆祝",
+        "action_description": "拒绝参加庆祝",
+        "likelihoods": [
+          {
+            "alambana_id": "O_C1",
+            "likelihood": 1.0
+          },
+          {
+            "alambana_id": "O_C2",
+            "likelihood": 1.0
+          }
+        ]
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.5053191489361702,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在程野此刻的经验里，领导宣布苏妍晋升、自己落选，直接撞上一条固定法则：资历更久、承担更多项目就应当获得晋升。这个晋升名额被他经验为‘本应属于我的位置’，苏妍得到它，不只是另一个人的结果，而是那条法则被现实破坏的证据；他的落选则是对‘这个位置本应属于我’的直接否定。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个被破坏的法则中，像发生在他的应得位置失守之后的确认。",
+            "prior_probability": 0.5053191489361702,
+            "posterior_probability": 0.5053191489361702,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "文本内容均为程野对已发生刺激的主观解释，未添加苏妍、领导等人的额外言行或事实；同时保留了领导宣布苏妍晋升、程野落选以及苏妍追问是否庆祝的核心事件。"
+          },
+          "xiang": {
+            "text": "领导宣布苏妍晋升、自己落选的那一刻，程野心里那条“资历更久、承担更多项目就应当晋升”的法则像被现实硬生生撞裂了；这个名额本应是他的位置，如今苏妍得到它，不只是另一个人胜出，而是对他的应得位置的否定。苏妍追上来问“我知道你也很想要这个位置，今晚我们还庆祝吗？”这句话落在这片失守里，更像是对他落选事实的确认。他很难把这件事当成值得庆祝的结果，内心对“庆祝”产生抗拒和排斥，觉得若去庆祝，就等于承认那个本应属于自己的位置已经不属于自己，也等于默认那条被破坏的法则可以这样被接受。于是他的内心造作趋向是拒绝参加庆祝，不愿把这份落选包装成共同喜事。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "拒绝参加庆祝",
+            "source": "原文",
+            "confidence": 0.41427916360968453
+          },
+          "mental_factors_nonzero": {
+            "贪": 0.74,
+            "瞋": 0.665,
+            "慢": 0.8475,
+            "无明": 0.8925,
+            "恶见": 0.85,
+            "忿": 0.45249999999999996,
+            "恨": 0.2625,
+            "覆": 0.16499999999999998,
+            "嫉": 0.7625,
+            "懈怠": 0.27499999999999997,
+            "放逸": 0.2925,
+            "不正知": 0.665
+          },
+          "status": "active"
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.4946808510638298,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在程野此刻的经验里，同一个晋升名额只有一个，苏妍得到它，就等于自己被判定为不该得到它；二者不能在同一关系里各自成立。领导宣布苏妍晋升、自己落选，被经验成她的获得与他的被否处在同一个零和判定里，而不是两个各自成立的结果。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个零和结构中：她的庆祝询问仿佛是站在她得到、他被判定不该得到的同一格子里发出。",
+            "prior_probability": 0.4946808510638298,
+            "posterior_probability": 0.4946808510638298,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "raw_combo_score": 0.5952000000000002,
+            "activation_alignment": 0.93,
+            "grounding_valid": true,
+            "grounding_reason": "零和关系与判定均为程野的主观所缘，未伪造当前刺激中不存在的他人言行或事实；领导宣布结果、程野落选及苏妍的庆祝询问均被保留。"
+          },
+          "xiang": {
+            "text": "程野在心里把这次晋升看成一个只能有一个赢家的判定：苏妍拿到名额，就等于他被判定为不配拿；领导宣布的是她的获得，同时也是他的被否。苏妍追来问‘今晚我们还庆祝吗’，在他听来不是一件可以与他无关的喜事，而是落在这个零和格子里——她站在得到的位置上邀请他一起庆祝，等于要他承认并陪同那个把他排除在外的结果。因此这个庆祝对他而言不是分享喜悦，而是对自己的落选再加一次确认，他心里无法把它当作两人各自成立的事来接受。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "拒绝参加庆祝",
+            "source": "原文",
+            "confidence": 0.41427916360968453
+          },
+          "mental_factors_nonzero": {
+            "不害": 0.255,
+            "贪": 0.7925,
+            "瞋": 0.66,
+            "慢": 0.6575,
+            "无明": 0.8525,
+            "恶见": 0.49,
+            "忿": 0.405,
+            "嫉": 0.895,
+            "无愧": 0.12249999999999998,
+            "不信": 0.3,
+            "放逸": 0.30999999999999994,
+            "昏沉": 0.355,
+            "不正知": 0.8475
+          },
+          "status": "active"
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "不害": 0.1261436170212766,
+        "贪": 0.765970744680851,
+        "瞋": 0.6625265957446809,
+        "慢": 0.7535106382978725,
+        "无明": 0.8727127659574468,
+        "恶见": 0.6719148936170213,
+        "忿": 0.4290026595744681,
+        "恨": 0.13264627659574468,
+        "覆": 0.08337765957446808,
+        "嫉": 0.8280452127659574,
+        "无愧": 0.06059840425531914,
+        "不信": 0.14840425531914894,
+        "懈怠": 0.1389627659574468,
+        "放逸": 0.301156914893617,
+        "昏沉": 0.17561170212765959,
+        "不正知": 0.755279255319149
+      },
+      "mental_factors_final_nonzero": {
+        "不害": 0.1261436170212766,
+        "贪": 0.765970744680851,
+        "瞋": 0.6625265957446809,
+        "慢": 0.7535106382978725,
+        "无明": 0.8727127659574468,
+        "恶见": 0.6719148936170213,
+        "忿": 0.4290026595744681,
+        "恨": 0.13264627659574468,
+        "覆": 0.08337765957446808,
+        "嫉": 0.8280452127659574,
+        "无愧": 0.06059840425531914,
+        "不信": 0.14840425531914894,
+        "懈怠": 0.1389627659574468,
+        "放逸": 0.301156914893617,
+        "昏沉": 0.17561170212765959,
+        "不正知": 0.755279255319149
+      },
+      "cognition_candidates": {
+        "fresh_count_raw": 6,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 6,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 0,
+        "distinct_candidate_count": 0,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "mental_episode_count": 1,
+        "injected_bias_frames": [],
+        "mental": {
+          "enabled": true,
+          "apply_mode": "cross_branch_event",
+          "lambda_eff": 0.0
+        },
+        "cognitive_frames": [
+          {
+            "text": "在程野此刻的经验里，领导宣布苏妍晋升、自己落选，直接撞上一条固定法则：资历更久、承担更多项目就应当获得晋升。这个晋升名额被他经验为‘本应属于我的位置’，苏妍得到它，不只是另一个人的结果，而是那条法则被现实破坏的证据；他的落选则是对‘这个位置本应属于我’的直接否定。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个被破坏的法则中，像发生在他的应得位置失守之后的确认。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野将职场晋升执为一条固定法则：资历更久、承担更多项目就应当获得晋升；领导宣布苏妍晋升、自己落选，被理解为该法则被破坏的现实。",
+            "mass": 0.5053191489361702
+          },
+          {
+            "text": "在程野此刻的经验里，同一个晋升名额只有一个，苏妍得到它，就等于自己被判定为不该得到它；二者不能在同一关系里各自成立。领导宣布苏妍晋升、自己落选，被经验成她的获得与他的被否处在同一个零和判定里，而不是两个各自成立的结果。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个零和结构中：她的庆祝询问仿佛是站在她得到、他被判定不该得到的同一格子里发出。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野把‘同一晋升名额’执为一种零和判定：苏妍得到就等于自己被判定为不该得到，二者不能在同一关系里各自成立。",
+            "mass": 0.4946808510638298
+          }
+        ]
+      }
+    }
+  ],
+  "focus_person": "程野",
+  "llm_usage": {
+    "total_calls": 166,
+    "total_duration_ms": 1821894.974835997,
+    "wall_clock_ms": 886989.3118290001
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "landed",
+    "step_id": "S01",
+    "event_index": 1,
+    "stimulus": "程野和苏妍是同公司同级员工，也恋爱三年。两人都很上进，同时竞争一个晋升名额。程野资历更久，也一直承担更多项目。最终领导宣布苏妍晋升，程野落选。散会后，苏妍追上程野说：“我知道你也很想要这个位置，今晚我们还庆祝吗？”",
+    "landed_action": "拒绝参加庆祝",
+    "landed_probability": 0.41427916360968453,
+    "continuity_before": {
+      "person_id": "程野",
+      "event_count": 0,
+      "mental_episode_count": 0,
+      "cognitive_frame_count": 0
+    },
+    "continuity_after": {
+      "person_id": "程野",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 2
+    },
+    "cognitive_frames_after": [
+      {
+        "id": "bf_1",
+        "text": "在程野此刻的经验里，领导宣布苏妍晋升、自己落选，直接撞上一条固定法则：资历更久、承担更多项目就应当获得晋升。这个晋升名额被他经验为‘本应属于我的位置’，苏妍得到它，不只是另一个人的结果，而是那条法则被现实破坏的证据；他的落选则是对‘这个位置本应属于我’的直接否定。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个被破坏的法则中，像发生在他的应得位置失守之后的确认。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野将职场晋升执为一条固定法则：资历更久、承担更多项目就应当获得晋升；领导宣布苏妍晋升、自己落选，被理解为该法则被破坏的现实。",
+        "mass": 0.5053
+      },
+      {
+        "id": "bf_2",
+        "text": "在程野此刻的经验里，同一个晋升名额只有一个，苏妍得到它，就等于自己被判定为不该得到它；二者不能在同一关系里各自成立。领导宣布苏妍晋升、自己落选，被经验成她的获得与他的被否处在同一个零和判定里，而不是两个各自成立的结果。苏妍追上来问‘我知道你也很想要这个位置，今晚我们还庆祝吗？’这句话也落在这个零和结构中：她的庆祝询问仿佛是站在她得到、他被判定不该得到的同一格子里发出。\n我执：程野把‘资历更久、承担更多项目’执为‘晋升名额本应属于我’，将竞争结果直接绑定到‘我的应得位置’上。\n法执：程野把‘同一晋升名额’执为一种零和判定：苏妍得到就等于自己被判定为不该得到，二者不能在同一关系里各自成立。",
+        "mass": 0.4947
+      }
+    ],
+    "mental_episodes_after": [
+      {
+        "event_id": "e1",
+        "theta": 0.9,
+        "text_summary": "程野和苏妍是同公司同级员工，也恋爱三年。两人都很上进，同时竞争一个晋升名额。程野资历更久，也一直承担更多项目。最终领导宣布苏妍晋升，程野落选。散会后，苏妍追上程野说：“我知道你也很想要这个位置，今晚我们还庆祝吗？”"
+      }
+    ]
+  }
+}

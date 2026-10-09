@@ -1,0 +1,30 @@
+{
+  "experiment": "单独事件实验二",
+  "protocol": "llm_single_event_thought",
+  "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3陈溪.txt",
+  "agent": "陈溪",
+  "stimulus": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+  "thoughts": [
+    {
+      "text": "当年我妈住院你根本没怎么出现，哪来的“什么时候有事都在”。",
+      "probability": 0.55
+    },
+    {
+      "text": "有些缺席大概只有我自己记得，她早就不当回事了，就当场面话听听吧。",
+      "probability": 0.3
+    },
+    {
+      "text": "过去的事翻篇了，现在能一直一起玩、每年旅行，这样也算难得了。",
+      "probability": 0.15
+    }
+  ],
+  "top1": "当年我妈住院你根本没怎么出现，哪来的“什么时候有事都在”。",
+  "llm": {
+    "client": "http",
+    "model": "gemini-3.8-flash",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "seed": null
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "id": "3_pred_rec__0122_d1992_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: hi what kind of movies do you like",
+      "information_available": "No prior information about the seeker; this is the opening of the dialogue.",
+      "preferences": "No known preferences yet.",
+      "belief_before": "I am starting a recommendation conversation and know nothing about the seeker's taste.",
+      "belief_update": "I have not received any new information about the seeker yet.",
+      "belief_after": "I need to learn the seeker's movie preferences before recommending anything.",
+      "emotion": "Neutral, open and helpful.",
+      "intention": "Elicit the seeker's movie preferences.",
+      "reaction_to_other": "No prior response to react to; initiating warmly.",
+      "conversational_goal": "Open the recommendation dialogue and gather initial information.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hi, how are you? I am looking for some good action movies, could you help?",
+      "information_available": "The seeker greeted me and explicitly asked for help finding good action movies.",
+      "preferences": "Seeker is interested in action movies, but the specific subgenre is still unknown.",
+      "belief_before": "I am waiting to learn what kinds of movies the seeker likes.",
+      "belief_update": "The seeker wants action movies and is being polite and cooperative.",
+      "belief_after": "The seeker is looking for action movies, but I do not yet know whether they prefer a particular style.",
+      "emotion": "Engaged and motivated to help.",
+      "intention": "Narrow down what kind of action movie the seeker wants.",
+      "reaction_to_other": "I feel the seeker is friendly and genuinely looking for recommendations.",
+      "conversational_goal": "Continue toward a useful action-movie recommendation.",
+      "interpretation_change": "This turn gives the first real information about the seeker, changing my initial open-ended approach to a more focused action-movie search."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: do you like hard core action or fun family action?",
+      "information_available": "The seeker asked for action movies; I already know that. My current utterance is an attempt to clarify the subtype.",
+      "preferences": "Seeker likes action movies generally; hardcore vs. family action is still unknown.",
+      "belief_before": "The seeker wants action movies, but I need more specificity to make a good recommendation.",
+      "belief_update": "No new information from the seeker at this turn; I am actively eliciting a preference.",
+      "belief_after": "The seeker's action-movie preference is broad and needs clarification.",
+      "emotion": "Curious and attentive.",
+      "intention": "Ask a clarifying question to determine the desired action subgenre.",
+      "reaction_to_other": "I am responding to the seeker's vague request by offering concrete options.",
+      "conversational_goal": "Elicit enough detail to make a tailored recommendation.",
+      "interpretation_change": "No new interpretation change; this turn continues the clarification process."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: i love movies like Abduction (2011) and movies like Speed (1994) with Keanu Reeves. They could be either or I like both kinds of action films.",
+      "information_available": "The seeker gave specific examples and stated openness to both hardcore and family action.",
+      "preferences": "Seeker likes action films similar to Abduction and Speed, including Keanu Reeves films; open to both hardcore and family action.",
+      "belief_before": "I asked whether the seeker prefers hardcore or family action and was waiting for an answer.",
+      "belief_update": "The seeker provided concrete reference points and is not narrowly fixed to one action style.",
+      "belief_after": "The seeker enjoys action films with suspense, thrill, and energetic pacing, and is flexible about tone.",
+      "emotion": "Pleased and more confident about being able to recommend something fitting.",
+      "intention": "Use this newly specified taste to choose a suitable action-movie recommendation.",
+      "reaction_to_other": "I appreciate the concrete examples; they make the seeker's preferences much clearer.",
+      "conversational_goal": "Move from clarification to making a recommendation.",
+      "interpretation_change": "Yes, this turn significantly changes my interpretation: the seeker's taste is more specific than a general action-movie request."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER says: a good old fun one that never gets old is Mad Max (1979)",
+      "information_available": "I know the seeker likes action movies like Abduction and Speed and is open to both action styles.",
+      "preferences": "Seeker likes energetic action-thrillers and is flexible about hardcore vs. family action.",
+      "belief_before": "The seeker would likely enjoy a fun, solid action movie; Mad Max could be a good fit.",
+      "belief_update": "I am offering Mad Max as an older but enjoyable action film that matches the seeker's openness.",
+      "belief_after": "The recommendation may be appropriate, but I do not yet know if the seeker has seen it or how they will respond.",
+      "emotion": "Optimistic and helpful.",
+      "intention": "Recommend a specific action movie that aligns with the seeker's stated preferences.",
+      "reaction_to_other": "I am trying to give the seeker an enjoyable recommendation based on their examples.",
+      "conversational_goal": "Deliver a concrete recommendation and see if it resonates.",
+      "interpretation_change": "No major change; this turn follows logically from the clarified preferences."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says: I liked that one, but I thought Mad Max: Fury Road (2015) the newer one with Tom Hardy better",
+      "information_available": "The seeker has seen Mad Max (1979), liked it, but preferred the newer Mad Max: Fury Road.",
+      "preferences": "Seeker likes modern, high-energy action films; prefers Fury Road over the original; Tom Hardy's version appealed more.",
+      "belief_before": "I believed Mad Max (1979) would be a fitting choice because it is a fun classic action film.",
+      "belief_update": "The seeker liked the recommendation but clearly favors newer, more visually intense action films.",
+      "belief_after": "The seeker's taste leans toward modern high-octane action; future recommendations should prioritize newer films with strong spectacle.",
+      "emotion": "Somewhat surprised but informed; slightly disappointed that the pick was not ideal, but glad the seeker liked it.",
+      "intention": "Adjust my mental model of the seeker's preferences for future recommendations.",
+      "reaction_to_other": "I appreciate the feedback and recognize that the seeker has a clear preference for the newer style.",
+      "conversational_goal": "Refine recommendation accuracy based on the seeker's response.",
+      "interpretation_change": "Yes, this turn changes my interpretation: the seeker is not just flexible about old and new action films; they specifically prefer newer, more modern action filmmaking."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: hi what kind of movies do you like\",\n    \"information_available\": \"No prior information about the seeker; this is the opening of the dialogue.\",\n    \"preferences\": \"No known preferences yet.\",\n    \"belief_before\": \"I am starting a recommendation conversation and know nothing about the seeker's taste.\",\n    \"belief_update\": \"I have not received any new information about the seeker yet.\",\n    \"belief_after\": \"I need to learn the seeker's movie preferences before recommending anything.\",\n    \"emotion\": \"Neutral, open and helpful.\",\n    \"intention\": \"Elicit the seeker's movie preferences.\",\n    \"reaction_to_other\": \"No prior response to react to; initiating warmly.\",\n    \"conversational_goal\": \"Open the recommendation dialogue and gather initial information.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hi, how are you? I am looking for some good action movies, could you help?\",\n    \"information_available\": \"The seeker greeted me and explicitly asked for help finding good action movies.\",\n    \"preferences\": \"Seeker is interested in action movies, but the specific subgenre is still unknown.\",\n    \"belief_before\": \"I am waiting to learn what kinds of movies the seeker likes.\",\n    \"belief_update\": \"The seeker wants action movies and is being polite and cooperative.\",\n    \"belief_after\": \"The seeker is looking for action movies, but I do not yet know whether they prefer a particular style.\",\n    \"emotion\": \"Engaged and motivated to help.\",\n    \"intention\": \"Narrow down what kind of action movie the seeker wants.\",\n    \"reaction_to_other\": \"I feel the seeker is friendly and genuinely looking for recommendations.\",\n    \"conversational_goal\": \"Continue toward a useful action-movie recommendation.\",\n    \"interpretation_change\": \"This turn gives the first real information about the seeker, changing my initial open-ended approach to a more focused action-movie search.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: do you like hard core action or fun family action?\",\n    \"information_available\": \"The seeker asked for action movies; I already know that. My current utterance is an attempt to clarify the subtype.\",\n    \"preferences\": \"Seeker likes action movies generally; hardcore vs. family action is still unknown.\",\n    \"belief_before\": \"The seeker wants action movies, but I need more specificity to make a good recommendation.\",\n    \"belief_update\": \"No new information from the seeker at this turn; I am actively eliciting a preference.\",\n    \"belief_after\": \"The seeker's action-movie preference is broad and needs clarification.\",\n    \"emotion\": \"Curious and attentive.\",\n    \"intention\": \"Ask a clarifying question to determine the desired action subgenre.\",\n    \"reaction_to_other\": \"I am responding to the seeker's vague request by offering concrete options.\",\n    \"conversational_goal\": \"Elicit enough detail to make a tailored recommendation.\",\n    \"interpretation_change\": \"No new interpretation change; this turn continues the clarification process.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: i love movies like Abduction (2011) and movies like Speed (1994) with Keanu Reeves. They could be either or I like both kinds of action films.\",\n    \"information_available\": \"The seeker gave specific examples and stated openness to both hardcore and family action.\",\n    \"preferences\": \"Seeker likes action films similar to Abduction and Speed, including Keanu Reeves films; open to both hardcore and family action.\",\n    \"belief_before\": \"I asked whether the seeker prefers hardcore or family action and was waiting for an answer.\",\n    \"belief_update\": \"The seeker provided concrete reference points and is not narrowly fixed to one action style.\",\n    \"belief_after\": \"The seeker enjoys action films with suspense, thrill, and energetic pacing, and is flexible about tone.\",\n    \"emotion\": \"Pleased and more confident about being able to recommend something fitting.\",\n    \"intention\": \"Use this newly specified taste to choose a suitable action-movie recommendation.\",\n    \"reaction_to_other\": \"I appreciate the concrete examples; they make the seeker's preferences much clearer.\",\n    \"conversational_goal\": \"Move from clarification to making a recommendation.\",\n    \"interpretation_change\": \"Yes, this turn significantly changes my interpretation: the seeker's taste is more specific than a general action-movie request.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER says: a good old fun one that never gets old is Mad Max (1979)\",\n    \"information_available\": \"I know the seeker likes action movies like Abduction and Speed and is open to both action styles.\",\n    \"preferences\": \"Seeker likes energetic action-thrillers and is flexible about hardcore vs. family action.\",\n    \"belief_before\": \"The seeker would likely enjoy a fun, solid action movie; Mad Max could be a good fit.\",\n    \"belief_update\": \"I am offering Mad Max as an older but enjoyable action film that matches the seeker's openness.\",\n    \"belief_after\": \"The recommendation may be appropriate, but I do not yet know if the seeker has seen it or how they will respond.\",\n    \"emotion\": \"Optimistic and helpful.\",\n    \"intention\": \"Recommend a specific action movie that aligns with the seeker's stated preferences.\",\n    \"reaction_to_other\": \"I am trying to give the seeker an enjoyable recommendation based on their examples.\",\n    \"conversational_goal\": \"Deliver a concrete recommendation and see if it resonates.\",\n    \"interpretation_change\": \"No major change; this turn follows logically from the clarified preferences.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says: I liked that one, but I thought Mad Max: Fury Road (2015) the newer one with Tom Hardy better\",\n    \"information_available\": \"The seeker has seen Mad Max (1979), liked it, but preferred the newer Mad Max: Fury Road.\",\n    \"preferences\": \"Seeker likes modern, high-energy action films; prefers Fury Road over the original; Tom Hardy's version appealed more.\",\n    \"belief_before\": \"I believed Mad Max (1979) would be a fitting choice because it is a fun classic action film.\",\n    \"belief_update\": \"The seeker liked the recommendation but clearly favors newer, more visually intense action films.\",\n    \"belief_after\": \"The seeker's taste leans toward modern high-octane action; future recommendations should prioritize newer films with strong spectacle.\",\n    \"emotion\": \"Somewhat surprised but informed; slightly disappointed that the pick was not ideal, but glad the seeker liked it.\",\n    \"intention\": \"Adjust my mental model of the seeker's preferences for future recommendations.\",\n    \"reaction_to_other\": \"I appreciate the feedback and recognize that the seeker has a clear preference for the newer style.\",\n    \"conversational_goal\": \"Refine recommendation accuracy based on the seeker's response.\",\n    \"interpretation_change\": \"Yes, this turn changes my interpretation: the seeker is not just flexible about old and new action films; they specifically prefer newer, more modern action filmmaking.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

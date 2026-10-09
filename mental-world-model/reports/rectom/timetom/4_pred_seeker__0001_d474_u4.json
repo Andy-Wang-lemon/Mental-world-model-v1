@@ -1,0 +1,75 @@
+{
+  "id": "4_pred_seeker__0001_d474_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi can you help me find a movie to watch",
+      "information_available": "No prior dialogue context. SEEKER wants help finding a movie.",
+      "preferences": "Wants a movie to watch; no genre preference expressed yet.",
+      "belief_before": "No prior belief about the recommender in this dialogue.",
+      "belief_update": "SEEKER initiates a request for movie recommendation help.",
+      "belief_after": "Expects the recommender to offer a movie suggestion.",
+      "emotion": "Neutral/curious.",
+      "intention": "Get help choosing a movie.",
+      "reaction_to_other_speaker": "Not applicable; SEEKER speaks first.",
+      "likely_conversational_goal": "Initiate a recommendation request.",
+      "changes_previous_interpretation": "Not applicable; initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Yes, how about It (2017)?",
+      "information_available": "Recommender agreed to help and proposed It (2017).",
+      "preferences": "Still only wants a movie; no genre preference has been stated by SEEKER at this point.",
+      "belief_before": "Recommender may be able to help; no movie candidate yet.",
+      "belief_update": "Recommender has suggested It (2017) as a candidate.",
+      "belief_after": "It (2017) is now an available suggested movie; SEEKER still needs to decide how to respond.",
+      "emotion": "Neutral/considering; no explicit negative reaction yet.",
+      "intention": "Evaluate the suggested movie and decide how to respond.",
+      "reaction_to_other_speaker": "Receives the suggestion; likely considering it.",
+      "likely_conversational_goal": "Respond to the recommendation by accepting, rejecting, or clarifying preferences.",
+      "changes_previous_interpretation": "Yes: moves from having no candidate to having a concrete movie suggestion."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: I don't really like horror movies what about thrillers",
+      "information_available": "Recommender offered It (2017). SEEKER treats or recognizes It as horror and now states a preference against horror and for thrillers.",
+      "preferences": "Dislikes horror movies; wants or prefers thrillers.",
+      "belief_before": "Recommender suggested It (2017), which conflicts with SEEKER's horror aversion; recommender may not yet know this preference.",
+      "belief_update": "SEEKER rejects the horror direction and redirects the request toward thrillers.",
+      "belief_after": "Recommender should now avoid horror and suggest a thriller instead.",
+      "emotion": "Mild dissatisfaction/objection; assertive but still engaged.",
+      "intention": "Correct the recommendation direction and obtain a thriller suggestion.",
+      "reaction_to_other_speaker": "Declines or objects to the horror suggestion while maintaining the conversation.",
+      "likely_conversational_goal": "Ask for a thriller recommendation.",
+      "changes_previous_interpretation": "Yes: clarifies preferences and makes the previous horror suggestion unsuitable."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: The Silence of the Lambs (1991)",
+      "information_available": "SEEKER previously said they dislike horror and want thrillers. Recommender now proposes The Silence of the Lambs (1991).",
+      "preferences": "Dislikes horror; wants or prefers thrillers.",
+      "belief_before": "Recommender was expected to respond to the thriller request after the horror rejection.",
+      "belief_update": "Recommender has suggested The Silence of the Lambs as a candidate.",
+      "belief_after": "A thriller/crime-thriller candidate is on the table; SEEKER may evaluate whether it fits their thriller preference or contains unwanted horror elements.",
+      "emotion": "Curious/considering; possibly cautiously optimistic if perceived as a thriller, but no explicit reaction yet.",
+      "intention": "Assess whether this recommendation satisfies the stated thriller preference.",
+      "reaction_to_other_speaker": "Acknowledges the recommender's attempt to comply with the thriller request.",
+      "likely_conversational_goal": "Decide whether to accept the suggestion or ask for another option.",
+      "changes_previous_interpretation": "Yes: updates from the rejected horror suggestion to a potential thriller suggestion aligned with SEEKER's stated preference."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi can you help me find a movie to watch\",\n    \"information_available\": \"No prior dialogue context. SEEKER wants help finding a movie.\",\n    \"preferences\": \"Wants a movie to watch; no genre preference expressed yet.\",\n    \"belief_before\": \"No prior belief about the recommender in this dialogue.\",\n    \"belief_update\": \"SEEKER initiates a request for movie recommendation help.\",\n    \"belief_after\": \"Expects the recommender to offer a movie suggestion.\",\n    \"emotion\": \"Neutral/curious.\",\n    \"intention\": \"Get help choosing a movie.\",\n    \"reaction_to_other_speaker\": \"Not applicable; SEEKER speaks first.\",\n    \"likely_conversational_goal\": \"Initiate a recommendation request.\",\n    \"changes_previous_interpretation\": \"Not applicable; initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Yes, how about It (2017)?\",\n    \"information_available\": \"Recommender agreed to help and proposed It (2017).\",\n    \"preferences\": \"Still only wants a movie; no genre preference has been stated by SEEKER at this point.\",\n    \"belief_before\": \"Recommender may be able to help; no movie candidate yet.\",\n    \"belief_update\": \"Recommender has suggested It (2017) as a candidate.\",\n    \"belief_after\": \"It (2017) is now an available suggested movie; SEEKER still needs to decide how to respond.\",\n    \"emotion\": \"Neutral/considering; no explicit negative reaction yet.\",\n    \"intention\": \"Evaluate the suggested movie and decide how to respond.\",\n    \"reaction_to_other_speaker\": \"Receives the suggestion; likely considering it.\",\n    \"likely_conversational_goal\": \"Respond to the recommendation by accepting, rejecting, or clarifying preferences.\",\n    \"changes_previous_interpretation\": \"Yes: moves from having no candidate to having a concrete movie suggestion.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: I don't really like horror movies what about thrillers\",\n    \"information_available\": \"Recommender offered It (2017). SEEKER treats or recognizes It as horror and now states a preference against horror and for thrillers.\",\n    \"preferences\": \"Dislikes horror movies; wants or prefers thrillers.\",\n    \"belief_before\": \"Recommender suggested It (2017), which conflicts with SEEKER's horror aversion; recommender may not yet know this preference.\",\n    \"belief_update\": \"SEEKER rejects the horror direction and redirects the request toward thrillers.\",\n    \"belief_after\": \"Recommender should now avoid horror and suggest a thriller instead.\",\n    \"emotion\": \"Mild dissatisfaction/objection; assertive but still engaged.\",\n    \"intention\": \"Correct the recommendation direction and obtain a thriller suggestion.\",\n    \"reaction_to_other_speaker\": \"Declines or objects to the horror suggestion while maintaining the conversation.\",\n    \"likely_conversational_goal\": \"Ask for a thriller recommendation.\",\n    \"changes_previous_interpretation\": \"Yes: clarifies preferences and makes the previous horror suggestion unsuitable.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: The Silence of the Lambs (1991)\",\n    \"information_available\": \"SEEKER previously said they dislike horror and want thrillers. Recommender now proposes The Silence of the Lambs (1991).\",\n    \"preferences\": \"Dislikes horror; wants or prefers thrillers.\",\n    \"belief_before\": \"Recommender was expected to respond to the thriller request after the horror rejection.\",\n    \"belief_update\": \"Recommender has suggested The Silence of the Lambs as a candidate.\",\n    \"belief_after\": \"A thriller/crime-thriller candidate is on the table; SEEKER may evaluate whether it fits their thriller preference or contains unwanted horror elements.\",\n    \"emotion\": \"Curious/considering; possibly cautiously optimistic if perceived as a thriller, but no explicit reaction yet.\",\n    \"intention\": \"Assess whether this recommendation satisfies the stated thriller preference.\",\n    \"reaction_to_other_speaker\": \"Acknowledges the recommender's attempt to comply with the thriller request.\",\n    \"likely_conversational_goal\": \"Decide whether to accept the suggestion or ask for another option.\",\n    \"changes_previous_interpretation\": \"Yes: updates from the rejected horror suggestion to a potential thriller suggestion aligned with SEEKER's stated preference.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

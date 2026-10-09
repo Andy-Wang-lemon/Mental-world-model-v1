@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0008_d622_u4",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "From RECOMMENDER’s perspective, available information is limited to the current conversation:\n\n- RECOMMENDER said: “Hi.”\n- RECOMMENDER heard SEEKER say: “hi...want to help me find a fun movie for all ages?”\n- RECOMMENDER said: “Let me think....The Lego Batman Movie (2017) ?”\n- RECOMMENDER heard SEEKER say: “I like things like The Parent Trap (1998) ...Oh yeah that was a good one. the kids enjoyed it too....maybe something not animated”\n\nTherefore RECOMMENDER knows:\n- SEEKER wants help finding a fun movie for all ages.\n- SEEKER likes things like *The Parent Trap* (1998).\n- SEEKER thought *The Parent Trap* was good.\n- SEEKER says their kids enjoyed *The Parent Trap*.\n- SEEKER may want something not animated.\n- RECOMMENDER suggested *The Lego Batman Movie* (2017).\n\nNo other prior interactions, hidden events, or private information are available to RECOMMENDER.",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

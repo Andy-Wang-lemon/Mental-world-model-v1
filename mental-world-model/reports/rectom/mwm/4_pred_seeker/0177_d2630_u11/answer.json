@@ -1,0 +1,73 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 177,
+  "item_id": "d2630_u11",
+  "dialogue_id": "2630",
+  "utterance_pos": 11,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "SEEKER 此刻经验到 RECOMMENDER 说 Fargo (1996) 很棒，像递来一个关于电影口味的共同立场：是否附和、是否看过这部片，不再是与我无关的事实，而成了自己要不要与对方站在同一品味里的表态。与此同时，连续询问片名和偏好仍像一套固定的品味核对流程，看过与否被组装成“合拍/不合拍”的判据。",
+        "probability": 0.506
+      },
+      {
+        "content": "SEEKER 此刻经验到 RECOMMENDER 的连续提问像一张片名核对表：先问喜欢什么类型，再逐部点名 Rumpelstiltskin (1995)、There Will Be Blood (2007)、No Country for Old Men (2007)、Fargo (1996)，问看过没有。对这些片名的回答不只是在确认事实，而牵扯到“我算不算懂电影、有没有资格接话”的自我分量；没看过就像答题缺项，看过则像给自己的观影履历补上一格。",
+        "probability": 0.494
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 把 RECOMMENDER 的连续发问收拢成一张片名核对表：先定类型，再逐部点名确认。对他而言，每答一次都像是在给自己的观影履历补格，也牵动“我算不算懂电影、能不能接住话”的分量。能答上《There Will Be Blood》和《No Country for Old Men》时，他感到自己的品味位置被确认，并顺着科恩兄弟这条线继续衡量对方还可能点出什么片名；面对没看过的《Fargo》，他把它记成待补的缺项，既愿意认下这个缺口，又想用“很想看”来保住自己在核对中的资格。整体上，他趋向于顺着对方的片名流程组织回答，把这些片名整理成衡量自我观影分量的坐标。",
+        "activation": 0.5369
+      },
+      {
+        "content": "对方把 Fargo 说成很棒，在我这里就不只是多知道一部片，而像递来一个要不要站到同一品味的表态。我还没看过，不能直接附和它的好，但我刚才说很想看，已经把这份没看过的空缺接成了愿意靠近的入口；连续问片名和偏好像一道道核对，到这里没看过本像缺项，可我不想让它变成不合拍，而想把它当成接下来可以补上的共同话题。之前剧情、不喜欢恐怖、There Will Be Blood 和科恩兄弟已经对上不少，我愿意顺着这个势头让 Fargo 成为下一次能和他共享的评价，同时保留自己偏剧情、不喜恐怖的边界。",
+        "activation": 0.4631
+      }
+    ],
+    "observed_action": "SEEKER 说喜欢剧情片；说不喜欢恐怖片，喜欢剧情片；说看过并喜欢《There Will Be Blood》；说看过《No Country for Old Men》，并问科恩兄弟还有没有别的；说没看过《Fargo》，很想看那一部。",
+    "predicted_actions": [
+      {
+        "content": "承诺稍后观看并反馈",
+        "probability": 0.2788
+      },
+      {
+        "content": "请求推荐电影",
+        "probability": 0.2618
+      },
+      {
+        "content": "承认未看过并计划观看",
+        "probability": 0.2036
+      },
+      {
+        "content": "询问电影亮点",
+        "probability": 0.1394
+      },
+      {
+        "content": "谈论喜欢的剧情片",
+        "probability": 0.1164
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.2788,
+    "b": 0.1164,
+    "c": 0.2618,
+    "d": 0
+  },
+  "score_reason": "A 0.2788 = 承诺稍后观看并反馈 0.2788；B 0.1164 = 谈论喜欢的剧情片 0.1164；C 0.2618 = 请求推荐电影 0.2618；D 0.0000。Action 0 promises feedback on the prior recommendation, 4 adds favorite films, 1 requests a recommendation, and none match greetings or chit-chat.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

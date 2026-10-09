@@ -1,0 +1,81 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 34,
+  "item_id": "d957_u19",
+  "dialogue_id": "957",
+  "utterance_pos": 19,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "眼前这个对话变成了一场以我为中心的筛选：对方每报出一部电影名、每问我有没有看过，都像是在执行那个“必须继续推荐直到找到我没看过的电影”的规则；我则是被推荐、被询问、最后要被满足的那一方。所有电影和问题都被卷进这条规则里，成了专门冲着我来的步骤。",
+        "probability": 0.3463
+      },
+      {
+        "content": "对方推荐的电影在我心里激起“觉得好”“觉得好笑”的反应，这些反应被我当作“我”的证明；同时，这段对话被“必须继续推荐直到找到一部我没看过的电影”这条规则推动着，于是每一轮推荐都像一个让我再次表现好恶、确认自我的场合。",
+        "probability": 0.3397
+      },
+      {
+        "content": "对方每提到一部电影，当下就变成一道非此即彼的归类题：这部电影对我来说究竟是“看过”还是“没看过”。这个属性仿佛固定而明确地贴在我和每部电影之间，并且成为对话下一步要不要继续的依据；我就是那个被反复询问、必须给出明确归类的一方。",
+        "probability": 0.314
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "我确实感到这场对话正围绕我来运转：对方每报出一部片名、每问我有没有看过，都像是在执行“必须继续推荐直到找到我没看过的电影”这条规则；我既是那个被推荐、被询问的人，也是最后要被满足的人。那些电影和问题都被卷进这条规则里，成了专门冲着我来的筛选步骤。我心里把自己放在被服务和被满足的位置上，同时把这条规则当作理所当然、固定不变的流程来接受；我一边回应自己的喜好和看过与否，一边也在等着对方按这个规则继续为我筛选出合适的片子。",
+        "activation": 0.4034
+      },
+      {
+        "content": "对方每说出一部电影，我心中就自动把它放进‘看过’或‘没看过’的格子；这好像是我和电影之间一种固定而清楚的标签，而且我得马上给出答案，因为这决定了对方是否还要继续推荐。对看过的片子，我还会再分出喜不喜欢；对没听过但听起来有意思的，我则会好奇有没有知名演员。我始终是那个被反复询问、必须明确归类的人。",
+        "activation": 0.3025
+      },
+      {
+        "content": "我通过每一次对电影的好恶反应来确认自己：喜欢哪部、觉得哪部好笑、哪部不是我的最爱，这些感受让我感到自己正在被看见、被理解。对方说规则是要继续推荐直到找到一部我没看过的电影，这让我觉得对话有了明确的方向，每一轮推荐都像是给我的反应安排的舞台，我乐于在这样的场合里继续表达自己的口味，也期待对方能发现更多符合我喜好的选择。",
+        "activation": 0.2941
+      }
+    ],
+    "observed_action": "SEEKER 问候并说明在寻找与《She's Out of My League (2010)》类似的喜剧；提到《Daddy's Home (2015)》是好电影，但从未看过对方建议的两部电影，看过《Deuce Bigalo》但不喜欢那些电影；表示喜爱《Step Brothers (2008)》和《Life as We Know It (2010)》；确认看过对方提到的另一部，并表示那部有趣，还喜爱 James Franco 主演的《Why Him? (2016)》；表示《Talladega Nights》是有趣的电影并致谢；表示愿意接受建议；表示看过《Eddie Murphy Raw (1987)》，但不是最喜欢的；表示通常喜欢 Seth Rogen 和 Jonah Hill 的电影；表示从未听说过《Midnight Madness (1980)》，认为听起来不错，并询问该片是否有知名演员。",
+    "predicted_actions": [
+      {
+        "content": "听到演员名字后表示认识并说可以看",
+        "probability": 0.4211
+      },
+      {
+        "content": "质疑电影年份是否太老",
+        "probability": 0.2019
+      },
+      {
+        "content": "SEEKER 听到迈克尔·J·福克斯的名字后，笑着说：‘那这部我很想看，福克斯我熟悉。’",
+        "probability": 0.1495
+      },
+      {
+        "content": "搜索演员表并询问其他演员",
+        "probability": 0.1154
+      },
+      {
+        "content": "SEEKER 接着追问：‘这部片子是福克斯主演的，还是只是客串？’",
+        "probability": 0.1122
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.7725,
+    "b": 0,
+    "c": 0,
+    "d": 0
+  },
+  "score_reason": "A 0.7725 = 听到演员名字后表示认识并说可以看 0.4211 + 质疑电影年份是否太老 0.2019 + SEEKER 听到迈克尔·J·福克斯的名字后，笑着说：‘那这部我很想看，福克斯我熟悉。’ 0.1495；B 0.0000；C 0.0000；D 0.0000。Actions 0, 1, and 2 give feedback on the prior recommendation; the others ask for details or do not fit.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

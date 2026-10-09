@@ -1,0 +1,44 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 114,
+  "item_id": "d1751_u6",
+  "dialogue_id": "1751",
+  "utterance_pos": 6,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!\nRECOMMENDER says: The Green Inferno  (2013)  is a great horror movie...Insidious  (2011)  is another classic horror film\nSEEKER says: SOmething more along the lines of The Texas Chainsaw Massacre  (2003) \nRECOMMENDER says: If you like gory then I would suggest The Last House on the Left  (2009) ...What abou；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\nRECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\nSEEKER says: My bad!\nRECOMMENDER says: The Green Inferno  (2013)  is a great horror movie...Insidious  (2011)  is another classic horror film\nSEEKER says: SOmething more along the lines of The Texas Chainsaw Massacre  (2003) \nRECOMMENDER says: If you like gory then I would suggest The Last House on the Left  (2009) ...What abou；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.85,
+    "b": 0.6,
+    "c": 0.5,
+    "d": 0.15
+  },
+  "score_reason": "SEEKER is most likely responding to the recommender's latest movie suggestion, so giving feedback is directly supported.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

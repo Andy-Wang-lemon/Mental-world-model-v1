@@ -1,0 +1,66 @@
+数据：4_pred_seeker
+题号：191  d2818_u17
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "此刻，SEEKER 经验到：RECOMMENDER 问“What movie genres are you interested in?”不是普通寒暄，而是要求他先把自己界定成某一类观众；随后一连串片名——Bright、Star Wars: Episode VIII – The Last Jedi、Coco、Wonder Woman、It、Braveheart——被取成按类型分派的条件式选项，只有先确定“我是哪类观众”，这些推荐才显出适合或不适合自己的意义。电影聊天被组织成一个固定流程：类型标签在前，片单按 animation、action、horror 等类别随后落下，SEEKER 在这一流程中经验到的是被要求交出自我分类，而不是可随意作答的信息交换。",
+      "probability": 0.3756
+    },
+    {
+      "content": "此刻，SEEKER 经验到：RECOMMENDER 谈 It (2017) 后问“Not scary enough for you?”，这句话不是与己无关的询问，而是对自己恐怖片耐受度或胆量的评判，触及他划入自我边界的阈值。与此同时，对方先问类型、再按 animation、action、horror 分派片单的流程仍被取为电影聊天的既定次序；It 和“Not scary enough for you?”因此落进 horror 这一格，成为判断他是否属于该类型观众、胆量够不够的标记，而不是可以轻巧略过的普通话题。",
+      "probability": 0.317
+    },
+    {
+      "content": "此刻，SEEKER 经验到：RECOMMENDER 列出的 Bright、Star Wars: Episode VIII – The Last Jedi、Coco、Wonder Woman、It、Braveheart，以及“I haven't seen that one, might have to check it out. I've been told to watch that and Braveheart (1995) lol”，不是普通片单，而是一张衡量观影履历和片单熟悉度的清单；“看过/没看过”被取成自己是否跟得上对话、是否算合格影迷的位置界线。这一清单仍被放在“先问类型、再按类型给推荐”的固定流程中：片名按 animation、action、horror 等标签分派，SEEKER 在其中经验到每部片都在对照自己的熟悉度，并标出他此刻处在什么位置。",
+      "probability": 0.3074
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 把这句“What movie genres are you interested in?”听成一道要先交出的自我归类题：仿佛必须先承认自己是恐怖片迷、动画片迷或动作片迷，后面那串片名才会按类型各归各位。他内心并不想被一个类型标签钉住，觉得“喜欢各种电影”才更贴近自己，于是把“儿童片接恐怖片”拿来当反证：类型不必二选一，自己可以随心情和精力切换。那些推荐——Bright、Star Wars、Coco、Wonder Woman、It、Braveheart——在他这里不是先按类型筛选的候选，而是先看当下想不想看、累不累、有没有在待看清单上；他对“Not scary enough for you?”也归到精力问题而非类型胆量问题。整体上，他一面感到对方在用类型流程组织聊天，一面又用“我什么都看”把这种分类要求轻轻推开，不愿让类型标签决定自己是谁、该看什么。",
+      "activation": 0.3767
+    },
+    {
+      "content": "SEEKER 在听到 RECOMMENDER 谈过 It 后紧接着问“Not scary enough for you?”时，并不把它只当作随口的片单询问；他感到这句话在探问甚至标记自己与恐怖片的关系，像是在判断他的胆量或耐受度，这碰到他把这类阈值划入自我边界的地方。与此同时，先前“先问类型、再按 animation、action、horror 分派”的聊天次序仍在他心里成立，所以 It 和这句话自然被放进 horror 那一格，成为他是否算合格恐怖片观众的一个记号。于是他倾向于把“不够吓人”的暗示从自己身上移开：不是他怕或不够胆，而是当时太累，且他本来就有看电影睡着的怪习惯；这既维持了他能接受恐怖片、并非被吓退的自我形象，也不打断对方按类型推荐、他按类型回应的既有轨道。",
+      "activation": 0.3365
+    },
+    {
+      "content": "SEEKER 把对方报出的片名逐个与自己的记忆对照：Bright 没听过，星战系列不感冒但看过其中一部，Coco 已列入今晚待看，Wonder Woman 听过好评，It 看过却睡着，Braveheart 也耳熟。这张清单在他这里不只是推荐，而是量度自己观影履历的尺子——没听过的片名让他略感漏拍，看过或听过的则被他迅速收进‘跟得上’的一边。他顺承对方先问类型、再按类型给片的顺序，用‘各种类型都看、儿童片接恐怖片’来重新标定自己的位置，把看片睡着说成个人怪癖而非片单落后，并借《Waiting for Armageddon》/《Armageddon》的更正把话题拉回自己熟悉的经验。对方说没看过那部、可能去查，他把这理解为对方接住了自己的推荐，于是更愿意继续在类型标签和看过/没看过的对照中，把自己安放在一个不算外行、还能贡献片单的位置上。",
+      "activation": 0.2869
+    }
+  ],
+  "observed_action": "SEEKER 问候后询问是否有值得看的新电影；说没听说过某一部；说自己喜欢各种电影，会先看儿童片再看恐怖片；说除《星球大战》外不是粉丝，又说看过某部、可能要看那部；说《Coco》在待看清单上、今晚可能看；说听说过《Wonder Woman》好评，并说先看恐怖片再看动画片是好方法；说最近晚上看《It》时睡着了、需要再看；回答不是电影不够吓人，而是自己很累；说自己看电影时睡觉有点怪，喜欢《Waiting for Armageddon》，但它每次约十分钟就让自己睡着，随后更正为《Armageddon》。",
+  "predicted_actions": [
+    {
+      "content": "推荐电影并建议加入待看清单",
+      "probability": 0.3066
+    },
+    {
+      "content": "声称看电影时容易睡着",
+      "probability": 0.285
+    },
+    {
+      "content": "自述选片标准",
+      "probability": 0.1556
+    },
+    {
+      "content": "表示未看过但听说不错",
+      "probability": 0.1406
+    },
+    {
+      "content": "转移话题到动画片",
+      "probability": 0.1122
+    }
+  ]
+}
+选择：C: Asks for a recommendation or expresses their preference
+分数：{"a": 0.1406, "b": 0.1556, "c": 0.3066, "d": 0.285}
+选择说明：A 0.1406 = 表示未看过但听说不错 0.1406；B 0.1556 = 自述选片标准 0.1556；C 0.3066 = 推荐电影并建议加入待看清单 0.3066；D 0.2850 = 声称看电影时容易睡着 0.2850。Action 3 gives feedback, 2 adds preference info, 0 expresses preference via recommendation, 1 is chit-chat, and 4 is just a topic shift.
+标准：A: Give feedback on the previously recommended movie or suggestion
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：A predicted next action, “表示未看过但听说不错,” states giving feedback on a previously recommended movie.

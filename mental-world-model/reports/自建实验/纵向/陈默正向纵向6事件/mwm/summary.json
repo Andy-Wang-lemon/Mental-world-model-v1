@@ -1,0 +1,95 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "陈默",
+  "total_events": 6,
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06"
+  ],
+  "behavior_trajectory": [
+    "E1 → 有限认可数据并要求进一步验证，暂不调整现有方案",
+    "E2 → 要求补充材料后再讨论或答复",
+    "E3 → 要求林可整理书面材料后再决定下一步",
+    "E4 → 要求林可先自行整理/核对材料后再沟通",
+    "E5 → 要求书面明确贡献、责任与汇报/署名规则",
+    "E6 → 要求先以书面或公开方式确认贡献、署名和汇报关系再继续参与"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "predicted_action": "有限认可数据并要求进一步验证，暂不调整现有方案",
+      "probability": 0.2718926553672316,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "predicted_action": "要求补充材料后再讨论或答复",
+      "probability": 0.25312500000000004,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 10,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "predicted_action": "要求林可整理书面材料后再决定下一步",
+      "probability": 0.32438585970694356,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 12,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "predicted_action": "要求林可先自行整理/核对材料后再沟通",
+      "probability": 0.65,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 10,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "predicted_action": "要求书面明确贡献、责任与汇报/署名规则",
+      "probability": 0.6545454545454545,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "predicted_action": "要求先以书面或公开方式确认贡献、署名和汇报关系再继续参与",
+      "probability": 0.36444444444444446,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 11,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ],
+  "final_continuity": {
+    "person_id": "陈默",
+    "event_count": 6,
+    "mental_episode_count": 6,
+    "cognitive_frame_count": 11
+  }
+}

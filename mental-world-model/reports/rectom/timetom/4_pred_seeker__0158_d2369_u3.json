@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0158_d2369_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi",
+      "information_available": "Recommender has only said 'Hi' so far.",
+      "preferences": "No movie preferences have been expressed or are available from the dialogue up to this turn.",
+      "belief_before": "No prior dialogue context or beliefs about the recommender.",
+      "belief_update": "The recommender has initiated contact with a greeting.",
+      "belief_after": "The recommender is present and has greeted me.",
+      "emotion": "Neutral, mildly curious/open.",
+      "intention": "Acknowledge the greeting and engage in conversation.",
+      "conversational_goal": "Respond politely and begin the interaction.",
+      "reaction_to_other": "Neutral/friendly; no negative reaction.",
+      "interpretation_change": "No previous interpretation to change; this is the initial contact."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hello...I love comedy movies...Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) are some of my favorite movies",
+      "information_available": "Recommender said 'Hi'; SEEKER knows their own stated preferences.",
+      "preferences": "Loves comedy movies; favorites include Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003).",
+      "belief_before": "The recommender is present and has greeted me.",
+      "belief_update": "I have greeted back and disclosed that I love comedy movies, naming two favorites.",
+      "belief_after": "The recommender now knows I love comedy and has examples of my favorite movies.",
+      "emotion": "Positive/enthusiastic.",
+      "intention": "Share movie taste and invite relevant recommendations.",
+      "conversational_goal": "Signal genre preferences so the recommender can suggest similar movies.",
+      "reaction_to_other": "Cooperative, friendly response to the greeting.",
+      "interpretation_change": "Yes—the dialogue shifts from a simple greeting to explicit preference sharing and recommendation seeking."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Sister Act (1992) is good. So is Sister Act 2: Back in the Habit (1993)...I like both of those.",
+      "information_available": "Recommender said 'Hi'; SEEKER stated comedy preferences and examples; recommender suggested Sister Act and Sister Act 2 and said they like both.",
+      "preferences": "Unchanged: loves comedy movies; likes Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003).",
+      "belief_before": "The recommender knows I love comedy and my favorite examples; the conversation is open for recommendations.",
+      "belief_update": "The recommender thinks Sister Act and Sister Act 2 are good and personally likes both.",
+      "belief_after": "The recommender is offering comedy recommendations and may share my taste in comedy.",
+      "emotion": "Interested and receptive; not yet explicitly positive or negative about the suggestions.",
+      "intention": "Evaluate the recommended films and continue the recommendation dialogue.",
+      "conversational_goal": "Consider whether these recommendations match my preferences and respond or ask for more options.",
+      "reaction_to_other": "Receptive to the recommender's suggestions.",
+      "interpretation_change": "Yes—the recommender moves from greeting/acknowledgment to active recommendation; I may update my view of the recommender's taste or helpfulness."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi\",\n    \"information_available\": \"Recommender has only said 'Hi' so far.\",\n    \"preferences\": \"No movie preferences have been expressed or are available from the dialogue up to this turn.\",\n    \"belief_before\": \"No prior dialogue context or beliefs about the recommender.\",\n    \"belief_update\": \"The recommender has initiated contact with a greeting.\",\n    \"belief_after\": \"The recommender is present and has greeted me.\",\n    \"emotion\": \"Neutral, mildly curious/open.\",\n    \"intention\": \"Acknowledge the greeting and engage in conversation.\",\n    \"conversational_goal\": \"Respond politely and begin the interaction.\",\n    \"reaction_to_other\": \"Neutral/friendly; no negative reaction.\",\n    \"interpretation_change\": \"No previous interpretation to change; this is the initial contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hello...I love comedy movies...Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003) are some of my favorite movies\",\n    \"information_available\": \"Recommender said 'Hi'; SEEKER knows their own stated preferences.\",\n    \"preferences\": \"Loves comedy movies; favorites include Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003).\",\n    \"belief_before\": \"The recommender is present and has greeted me.\",\n    \"belief_update\": \"I have greeted back and disclosed that I love comedy movies, naming two favorites.\",\n    \"belief_after\": \"The recommender now knows I love comedy and has examples of my favorite movies.\",\n    \"emotion\": \"Positive/enthusiastic.\",\n    \"intention\": \"Share movie taste and invite relevant recommendations.\",\n    \"conversational_goal\": \"Signal genre preferences so the recommender can suggest similar movies.\",\n    \"reaction_to_other\": \"Cooperative, friendly response to the greeting.\",\n    \"interpretation_change\": \"Yes—the dialogue shifts from a simple greeting to explicit preference sharing and recommendation seeking.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Sister Act (1992) is good. So is Sister Act 2: Back in the Habit (1993)...I like both of those.\",\n    \"information_available\": \"Recommender said 'Hi'; SEEKER stated comedy preferences and examples; recommender suggested Sister Act and Sister Act 2 and said they like both.\",\n    \"preferences\": \"Unchanged: loves comedy movies; likes Bridesmaids (2011) and How to Lose a Guy in 10 Days (2003).\",\n    \"belief_before\": \"The recommender knows I love comedy and my favorite examples; the conversation is open for recommendations.\",\n    \"belief_update\": \"The recommender thinks Sister Act and Sister Act 2 are good and personally likes both.\",\n    \"belief_after\": \"The recommender is offering comedy recommendations and may share my taste in comedy.\",\n    \"emotion\": \"Interested and receptive; not yet explicitly positive or negative about the suggestions.\",\n    \"intention\": \"Evaluate the recommended films and continue the recommendation dialogue.\",\n    \"conversational_goal\": \"Consider whether these recommendations match my preferences and respond or ask for more options.\",\n    \"reaction_to_other\": \"Receptive to the recommender's suggestions.\",\n    \"interpretation_change\": \"Yes—the recommender moves from greeting/acknowledgment to active recommendation; I may update my view of the recommender's taste or helpfulness.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "4_pred_seeker__0061_d1057_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello!",
+      "belief_before": "No prior beliefs about the recommender or dialogue task; conversation has not started.",
+      "belief_update": "SEEKER initiates contact with a greeting.",
+      "belief_after": "Conversation is open; SEEKER awaits a response from the recommender.",
+      "emotion": "Neutral/polite.",
+      "intention": "Greet and open the interaction.",
+      "conversational_goal": "Establish contact and prepare to continue the conversation.",
+      "preferences": "Not yet stated.",
+      "reaction_to_other": "None; no other-speaker turn yet.",
+      "interpretation_change": "Initial turn; no previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: Hello~",
+      "belief_before": "Conversation is open; SEEKER awaits a response from the recommender.",
+      "belief_update": "The recommender returns the greeting.",
+      "belief_after": "The recommender is present and responsive; SEEKER can continue the conversation.",
+      "emotion": "Friendly/neutral.",
+      "intention": "Continue the interaction after the greeting.",
+      "conversational_goal": "Maintain contact and respond appropriately to the greeting.",
+      "preferences": "Not yet stated.",
+      "reaction_to_other": "Receives a friendly greeting; positive/neutral acknowledgment.",
+      "interpretation_change": "Confirms an active interlocutor; no prior substantive interpretation to change."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)",
+      "belief_before": "The recommender is present and responsive; SEEKER has not yet stated what they want.",
+      "belief_update": "SEEKER asks for help finding a good comedy and provides example comedies they like.",
+      "belief_after": "The recommender now knows SEEKER wants a comedy and has example preferences: Super Troopers (2001) and Beerfest (2006).",
+      "emotion": "Hopeful/engaged.",
+      "intention": "Request a comedy recommendation tailored to stated taste.",
+      "conversational_goal": "Obtain a good comedy recommendation, ideally similar to Super Troopers and Beerfest.",
+      "preferences": "Likes comedy; explicitly likes Super Troopers (2001) and Beerfest (2006); likely wants similar comedy.",
+      "reaction_to_other": "No new recommender turn; based on prior greeting, SEEKER expects a helpful response.",
+      "interpretation_change": "Clarifies and extends the request; previous interpretation of available interlocutor remains, now with task details."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER says: Tommy Boy (1995) is one of my favorites",
+      "belief_before": "The recommender knows SEEKER wants a comedy and has example preferences; SEEKER expects a recommendation.",
+      "belief_update": "The recommender suggests Tommy Boy (1995) and states it is one of their favorites.",
+      "belief_after": "Tommy Boy is now a candidate recommendation; the recommender personally likes it, but SEEKER has not yet judged whether it matches Super Troopers and Beerfest.",
+      "emotion": "Curious/uncertain; possibly mildly interested.",
+      "intention": "Evaluate the suggested movie against stated preferences and decide how to respond.",
+      "conversational_goal": "Assess whether Tommy Boy is a good comedy fit and potentially continue toward a final choice.",
+      "preferences": "Still likes comedy and examples Super Troopers and Beerfest; no stated preference for or against Tommy Boy yet.",
+      "reaction_to_other": "Acknowledges the recommendation; may appreciate the suggestion but is unsure of fit.",
+      "interpretation_change": "Adds a specific candidate where before there was only a request; does not revise earlier preferences."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello!\",\n    \"belief_before\": \"No prior beliefs about the recommender or dialogue task; conversation has not started.\",\n    \"belief_update\": \"SEEKER initiates contact with a greeting.\",\n    \"belief_after\": \"Conversation is open; SEEKER awaits a response from the recommender.\",\n    \"emotion\": \"Neutral/polite.\",\n    \"intention\": \"Greet and open the interaction.\",\n    \"conversational_goal\": \"Establish contact and prepare to continue the conversation.\",\n    \"preferences\": \"Not yet stated.\",\n    \"reaction_to_other\": \"None; no other-speaker turn yet.\",\n    \"interpretation_change\": \"Initial turn; no previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: Hello~\",\n    \"belief_before\": \"Conversation is open; SEEKER awaits a response from the recommender.\",\n    \"belief_update\": \"The recommender returns the greeting.\",\n    \"belief_after\": \"The recommender is present and responsive; SEEKER can continue the conversation.\",\n    \"emotion\": \"Friendly/neutral.\",\n    \"intention\": \"Continue the interaction after the greeting.\",\n    \"conversational_goal\": \"Maintain contact and respond appropriately to the greeting.\",\n    \"preferences\": \"Not yet stated.\",\n    \"reaction_to_other\": \"Receives a friendly greeting; positive/neutral acknowledgment.\",\n    \"interpretation_change\": \"Confirms an active interlocutor; no prior substantive interpretation to change.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001) and Beerfest (2006)\",\n    \"belief_before\": \"The recommender is present and responsive; SEEKER has not yet stated what they want.\",\n    \"belief_update\": \"SEEKER asks for help finding a good comedy and provides example comedies they like.\",\n    \"belief_after\": \"The recommender now knows SEEKER wants a comedy and has example preferences: Super Troopers (2001) and Beerfest (2006).\",\n    \"emotion\": \"Hopeful/engaged.\",\n    \"intention\": \"Request a comedy recommendation tailored to stated taste.\",\n    \"conversational_goal\": \"Obtain a good comedy recommendation, ideally similar to Super Troopers and Beerfest.\",\n    \"preferences\": \"Likes comedy; explicitly likes Super Troopers (2001) and Beerfest (2006); likely wants similar comedy.\",\n    \"reaction_to_other\": \"No new recommender turn; based on prior greeting, SEEKER expects a helpful response.\",\n    \"interpretation_change\": \"Clarifies and extends the request; previous interpretation of available interlocutor remains, now with task details.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER says: Tommy Boy (1995) is one of my favorites\",\n    \"belief_before\": \"The recommender knows SEEKER wants a comedy and has example preferences; SEEKER expects a recommendation.\",\n    \"belief_update\": \"The recommender suggests Tommy Boy (1995) and states it is one of their favorites.\",\n    \"belief_after\": \"Tommy Boy is now a candidate recommendation; the recommender personally likes it, but SEEKER has not yet judged whether it matches Super Troopers and Beerfest.\",\n    \"emotion\": \"Curious/uncertain; possibly mildly interested.\",\n    \"intention\": \"Evaluate the suggested movie against stated preferences and decide how to respond.\",\n    \"conversational_goal\": \"Assess whether Tommy Boy is a good comedy fit and potentially continue toward a final choice.\",\n    \"preferences\": \"Still likes comedy and examples Super Troopers and Beerfest; no stated preference for or against Tommy Boy yet.\",\n    \"reaction_to_other\": \"Acknowledges the recommendation; may appreciate the suggestion but is unsure of fit.\",\n    \"interpretation_change\": \"Adds a specific candidate where before there was only a request; does not revise earlier preferences.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

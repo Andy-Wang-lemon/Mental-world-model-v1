@@ -1,0 +1,74 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 157,
+  "item_id": "d2369_u1",
+  "dialogue_id": "2369",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances\nC: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在 SEEKER 这里，这声“Hi”被经验为一个有固定社交含义的招呼：它不是无指向的声音事件，而是朝“我”发出、指向开启互动的一声招呼；那个被招呼的接收者位置与“我”分不开，不能当作与我无关。",
+        "probability": 0.5294
+      },
+      {
+        "content": "在 SEEKER 这里，这声“Hi”一出现，就呈现为一种先定的招呼—接收角色结构：RECOMMENDER 位于发出招呼的一方，SEEKER 位于被指定接收的一方；这个结构仿佛本来如此、理应如此，而“我”就在那个接收位置上，不能当作与我无关。",
+        "probability": 0.4706
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 把这声“Hi”收摄为一个有固定社交含义的招呼：它不是在周围飘过、可当作无关的声音，而是明确朝向“我”发出、意味着开启互动的招呼。那个被招呼的位置与“我”分不开，因此 SEEKER 在内心确认“这是给我的”，并把这声招呼纳入与自己相关的互动框架中，形成一种需要认真对待该招呼含义的认知整理。",
+        "activation": 0.5294
+      },
+      {
+        "content": "这声“Hi”一出现，并不像一个可以随便放过的声音，它立刻把我放进了“被招呼者”的位置：对方在发出，我在接收。这个位置像是先于这声招呼就已摆好，理应如此，不需要再问是否与我有关。于是内在先确认：我已被指定为这一招呼的接收一方，不能把自己挪到局外；接下来无论我怎样承接，都只能从这个已被安置的位置内部开始。",
+        "activation": 0.4706
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "向 RECOMMENDER 打招呼",
+        "probability": 0.3738
+      },
+      {
+        "content": "发出“嗯”并转向对方",
+        "probability": 0.1995
+      },
+      {
+        "content": "不出声转向对方",
+        "probability": 0.1745
+      },
+      {
+        "content": "点头不出声",
+        "probability": 0.1371
+      },
+      {
+        "content": "询问 RECOMMENDER 是否有事",
+        "probability": 0.115
+      }
+    ]
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0,
+    "b": 0,
+    "c": 0,
+    "d": 0.3738
+  },
+  "score_reason": "A 0.0000；B 0.0000；C 0.0000；D 0.3738 = 向 RECOMMENDER 打招呼 0.3738。Only action 0 directly matches the greeting/chit-chat strategy in option D.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

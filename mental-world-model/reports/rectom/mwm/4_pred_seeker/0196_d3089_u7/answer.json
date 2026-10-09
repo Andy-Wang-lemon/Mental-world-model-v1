@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 196,
+  "item_id": "d3089_u7",
+  "dialogue_id": "3089",
+  "utterance_pos": 7,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "此刻，RECOMMENDER接连说出的‘my personal favorite’、‘I prefer’、‘so much better’以及片名，在SEEKER经验中不是单纯信息，而是一场品味展示与比较；SEEKER自己的观影口味与判断是否被对方承接，成为与自身分不开、需要被承认的对象。同时，这个被分享片单的情境被经验为一条对话规则：既然对方给出个人最爱和‘I also like’，此处理应回以同类个人最爱或片单。",
+        "probability": 0.4024
+      },
+      {
+        "content": "此刻，RECOMMENDER的‘Hello’和分享个人最爱，在SEEKER经验中成了开启共同话题、进入同好/对等关系的入口；能否接住并延续这个共同话题，被体验为自身关系状态的一部分。与此同时，片单式分享又使这个情境被经验为一条对话规则：被分享电影偏好后，理应回以个人最爱或片单，以维持这条共同话题。",
+        "probability": 0.3239
+      },
+      {
+        "content": "此刻，RECOMMENDER的‘how about Superman (1978)?’和‘I also like The Dark Knight (2008)’在SEEKER经验中构成一份片单式推荐，像一个可能引导自己选片的框架；自主选择电影、不被动跟随对方片单，成为SEEKER这边需要守住的自我边界。与此同时，被分享电影偏好的情境仍被经验为必须回以个人最爱或片单的对话规则，因此回应的内容被当成自主边界与交换规则同时拉扯的对象。",
+        "probability": 0.2737
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER听见对方接连摆出个人最爱、偏好和优劣比较，觉得这不只是在报片名，而是在亮出品味并等自己接住；自己的观影判断若不被承接，会像自己被轻放一边，因此想让自己说出的喜好得到承认。同时，对方给了个人最爱和‘我也喜欢’，SEEKER感到这里该顺着交换同类信息，于是内心想把话说成既表明自己的口味，又不让刚才对《蜘蛛侠》的否定变成扫兴。",
+        "activation": 0.3881
+      },
+      {
+        "content": "SEEKER把RECOMMENDER接连给出的片名整理成一份带有引导意味的片单：它像是可供参考的建议，又像一种可能替自己定下选片方向的框架。因此SEEKER心里升起守住自主选择电影的需要，不愿因为对方偏好而被动跟随；但被分享电影偏好的情境又被经验为应当回以个人最爱或片单的对话规则，回应内容便同时被自主边界与交换规则拉扯。与此同时，SEEKER对经典和超人角色的真实喜爱使他对Superman (1978)一类推荐并非全然排斥，只是这种认可更倾向被放在自己判断之内，而不是直接纳入对方片单。于是SEEKER的内心趋向是：可以承认对方推荐中有合意之处，却仍要保留自己选片的决定权，不把对方片单当成必须服从的标准，也不因交换规则而放弃自己的偏好位置。",
+        "activation": 0.3196
+      },
+      {
+        "content": "RECOMMENDER 的 Hello 和分享个人最爱，被 SEEKER 组织成一个共同话题的入口：这不仅是影片信息交换，也牵动 SEEKER 能否处在同好、对等的关系里。于是 SEEKER 觉得应当接住这条片单式分享，回以自己的偏好或片单，才算把话题延续下去。对《蜘蛛侠》(2002) 的不满意被当作真实偏好来讲，而对经典和超人角色的喜欢则成为可对接的点；SEEKER 的内心因此偏向在保持自我口味的同时，借由共同认可的经典维系与 RECOMMENDER 的同好感，并避免让话题断掉。",
+        "activation": 0.2922
+      }
+    ],
+    "observed_action": "SEEKER 说你好，并说自己在找一部好的超级英雄电影；SEEKER 承认《蜘蛛侠》(2002) 没有让自己满意；SEEKER 说自己喜欢好的经典，也喜欢超人这个角色。",
+    "predicted_actions": [
+      {
+        "content": "澄清对《蜘蛛侠》的负面评价只是个人口味",
+        "probability": 0.3137
+      },
+      {
+        "content": "询问对方最喜欢的里夫超人电影",
+        "probability": 0.2519
+      },
+      {
+        "content": "请求优先推荐一部里夫超人电影",
+        "probability": 0.1747
+      },
+      {
+        "content": "说明自己最喜欢的电影",
+        "probability": 0.1528
+      },
+      {
+        "content": "表示赞同",
+        "probability": 0.107
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.3137,
+    "b": 0,
+    "c": 0.3275,
+    "d": 0.107
+  },
+  "score_reason": "A 0.3137 = 澄清对《蜘蛛侠》的负面评价只是个人口味 0.3137；B 0.0000；C 0.3275 = 请求优先推荐一部里夫超人电影 0.1747 + 说明自己最喜欢的电影 0.1528；D 0.1070 = 表示赞同 0.1070。Action 0 gives feedback on a movie, 2 requests a recommendation, 3 expresses a preference, and 4 agrees.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "A predicted next action says SEEKER will clarify the negative Spider-Man comment as personal taste, which is feedback on the previously recommended movie.",
+  "audit_level": "direct"
+}

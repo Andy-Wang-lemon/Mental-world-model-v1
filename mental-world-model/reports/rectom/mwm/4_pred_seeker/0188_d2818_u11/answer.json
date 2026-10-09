@@ -1,0 +1,82 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 188,
+  "item_id": "d2818_u11",
+  "dialogue_id": "2818",
+  "utterance_pos": 11,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER那句“What movie genres are you interested in?”不是可轻放过去的寒暄，而是直接指向“我是谁”的查问：自己的电影类型偏好被对象化为自我标识的一部分。于是这个问句变成一道必须被具体类型或片名填满的程序；若找不到明确答案，交流就像卡在缺口上。后续关于Bright、The Last Jedi、Coco、Wonder Woman的推荐在此视角下只是背景性举例，尚未改变这个核心：SEEKER要先确认自己的类型归属，问句才算被正常接住。",
+        "probability": 0.3715
+      },
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER接连推荐Bright、The Last Jedi、Coco、Wonder Woman并假设可能喜欢的类型，被对象化为一条测试两人观影口味是否一致、关系是否接上的线索；推荐得准不准，被SEEKER放到自己这边来衡量。与此同时，最初“What movie genres are you interested in?”仍是一道固定程序：SEEKER必须给出明确的电影类型或片名，对话才算正常进行；否则，即便对方推荐再多，他也感到这个询问悬着未完成。",
+        "probability": 0.3606
+      },
+      {
+        "content": "在SEEKER此刻的经验里，RECOMMENDER先以“Good evening!”主动问候，又连续给出多部电影与观影建议，这一串话被对象化为自己被关注、被纳入对方兴趣范围的证据；因此这次交流不能只被当作普通信息交换。可是那声问候和推荐又都收束到“What movie genres are you interested in?”上：SEEKER必须报出明确的类型或片名，这个被关注的开场才算被正常回应；否则对话就像停在未填好的固定程序前。",
+        "probability": 0.2679
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "对方这一问不是可以随便带过的寒暄，而是在要我给出“我是谁”的标签；若只泛泛带过，交流就像缺了一块。我的电影偏好不能只被当作无关信息，它得用具体类型或有代表性的片名来认领，否则这个问句就没有被真正接住。好在我确实可以把“各种类型都看，儿童片后面接恐怖片”拿来当作自己的归属，同时把星球大战划到例外之外；Bright、The Last Jedi、Coco、Wonder Woman 这些推荐眼下更像是围绕这个核心的举例，我先要确认自己的类型位置，才会觉得对话继续得下去。",
+        "activation": 0.4199
+      },
+      {
+        "content": "他问我喜欢什么类型，这个问题还悬着，我得给出明确的类型或片名，对话才算正常接上。我说喜欢各种类型，还会先看儿童片再看恐怖片，这样应该算回答了。他推荐的Bright我没听过，星战我不是粉丝，但Coco我本来就想看，也许今晚就看那个。他推荐得准不准，其实也在看我们口味合不合。如果Coco合我意，那说明我们还能聊到一块。Wonder Woman是动作片，我也不是不能看。总之，我得拿自己的口味去量他的推荐，再决定哪些接住。",
+        "activation": 0.3123
+      },
+      {
+        "content": "SEEKER 觉得对方主动问候又接连推荐电影，是在把自己拉进他的观影兴趣圈里，不能只当成一次普通的信息交换；可这些推荐最后都压到“你喜欢什么类型”这个问题上，于是 SEEKER 感到必须赶紧报出明确的类型或片名，才算把这份被关注接住。于是他强调自己各种类型都看，还拿儿童片接恐怖片作例子，又顺着对方提的片说在短名单上、今晚可能看，好让对话不悬在那个没被填完的问题前，也让自己确实被对方认真纳入兴趣范围。",
+        "activation": 0.2677
+      }
+    ],
+    "observed_action": "SEEKER 询问是否有值得看的新电影；SEEKER 说没听说过那部；SEEKER 说自己喜欢各种类型的电影，会先看儿童电影再看恐怖片；SEEKER 说除了 start wars 不是粉丝，哦对，看过那部，可能得看那部；SEEKER 说那部也在短名单上，可能今晚看那部。",
+    "predicted_actions": [
+      {
+        "content": "陈述个人电影偏好",
+        "probability": 0.2835
+      },
+      {
+        "content": "states a movie viewing plan",
+        "probability": 0.2677
+      },
+      {
+        "content": "表示会观看某片",
+        "probability": 0.2388
+      },
+      {
+        "content": "选定今晚优先观看《Coco》",
+        "probability": 0.126
+      },
+      {
+        "content": "附和推荐人的观影顺序并称自己也有该习惯",
+        "probability": 0.084
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.084,
+    "b": 0,
+    "c": 0.2835,
+    "d": 0
+  },
+  "score_reason": "A 0.0840 = 附和推荐人的观影顺序并称自己也有该习惯 0.0840；B 0.0000；C 0.2835 = 陈述个人电影偏好 0.2835；D 0.0000。Action 4 directly agrees with the recommender's viewing order, and action 0 states a personal movie preference, matching option C.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "The predicted action of choosing Coco as tonight's priority directly amounts to feedback on the previously recommended movie.",
+  "audit_level": "direct"
+}

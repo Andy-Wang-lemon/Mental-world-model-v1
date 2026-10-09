@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 64,
+  "item_id": "d1057_u11",
+  "dialogue_id": "1057",
+  "utterance_pos": 11,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello!\nRECOMMENDER says: Hello~\nSEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001)  and Beerfest (2006) \nRECOMMENDER says: Tommy Boy (1995)  is one of my favorites\nSEEKER says: but not like Friday  (1995) ...Awesome I love that one  I have seen it a million times\nRECOMMENDER says: Me too. Another good one is Spaceballs (1987) \nSEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\nRECOMMENDER says: Ok；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello!\nRECOMMENDER says: Hello~\nSEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001)  and Beerfest (2006) \nRECOMMENDER says: Tommy Boy (1995)  is one of my favorites\nSEEKER says: but not like Friday  (1995) ...Awesome I love that one  I have seen it a million times\nRECOMMENDER says: Me too. Another good one is Spaceballs (1987) \nSEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\nRECOMMENDER says: Ok；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.45,
+    "b": 0.55,
+    "c": 0.95,
+    "d": 0.6,
+    "e": 0.1
+  },
+  "score_reason": "The recommender just acknowledged the seeker's 80s preference and the context calls for an 80s comedy recommendation next.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

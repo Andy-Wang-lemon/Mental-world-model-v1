@@ -1,0 +1,84 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 11,
+  "item_id": "d622_u10",
+  "dialogue_id": "622",
+  "utterance_pos": 10,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "e"
+  ],
+  "gold_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 一条条发来的片单条件和追问，把“替这个家筛出能一起看的电影”放成了自己这边的事，不是可管可不管的旁务；于是眼前候选被收进一张以“适合 all ages / 全家”为名的筛网，而这张筛网的硬底是 5 岁不被吓到：非动画、类似 The Parent Trap、5 岁和 10 岁都说合适、Alice 对 5 岁可能 creepy 而其他片可以，全都被这条底线照亮，Goonies 和 SEEKER 未看过的候选也都只是在这条底线前被衡量的对象。",
+        "probability": 0.3673
+      },
+      {
+        "content": "在 RECOMMENDER 这里，SEEKER 专门追问候选对 5 岁和 10 岁是否合适，并说 Alice 对 5 岁可能有点 creepy，使得“5 岁与 10 岁会不会被吓到、是否合适”不再只是参考，而是进入自己责任边界内的检验条件；当前这些片名因此不再是普通选项，而是被 all ages 这一要求压缩成以 5 岁不恐怖为优先底线的对象：Alice 被标到危险侧，其他被认为可以的片留在可接受侧，非动画与类似 The Parent Trap 的口味也同时作为筛网条件存在。",
+        "probability": 0.3409
+      },
+      {
+        "content": "在 RECOMMENDER 的所缘中，SEEKER 说那些候选 sound good、又说 Alice 对 5 岁可能 creepy，不只是在评价电影，而像是对自己这边给出的推荐方案当场做年龄适配检验；眼前候选因此被读成与自己分不开的推荐物：all ages 被锁定为 5 岁不恐怖的底线，Alice 因可能吓到 5 岁而落在底线外，其他片则暂时被验入可接受范围，10 岁是否合适也悬挂在同一张检验表上。",
+        "probability": 0.2919
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这事已经落到我这边：不是可有可无地陪她聊几句，而是得替这个家把能一起看的片过一遍。她说不想要动画、喜欢《The Parent Trap》那种，又提到5岁和10岁，尤其5岁不能被吓到——这条比“有趣”“经典”都更硬。于是先前浮出的《乐高蝙蝠侠》在“不要动画”这一条上就不再合口；《Alice in Wonderland》即使10岁可以，一想到5岁孩子可能觉得creepy，心里就不能轻易放过；《The Goonies》有吓人的地方，可她说孩子也许合适、自己看过却没和家人看，就还留在可考虑的一侧；《Harry Potter》和《Lemony Snicket》也不能只按“好不好看”来掂量，必须放到这个家的年龄线前重新称量。眼前这些候选不是随便报几个名字，而是在一个能让全家坐在一起、又不让最小的害怕的窄口里，被重新排序和取舍。",
+        "activation": 0.342
+      },
+      {
+        "content": "在我想来，SEEKER 特意追问候选对 5 岁和 10 岁是否合适，又把 Alice 说成对 5 岁可能有点 creepy，这就把“5 岁会不会被吓到”从附带参考顶成了我筛片时先要守住的责任底线；10 岁大体可以放宽，但 5 岁不能含糊。于是这些片名不再是普通选项：Alice 被推到危险侧，Lemony Snicket、Goonies、Harry Potter 等暂时留在可接受侧，可还得继续用非动画、类似 The Parent Trap 的口味来过滤。心里趋向是先把 5 岁不恐怖当作 all ages 的硬条件，再在可接受侧里挑更稳妥的候选，不能只凭片名或合家欢标签就放过。",
+        "activation": 0.342
+      },
+      {
+        "content": "SEEKER 说那些候选 sound good、又说 Alice 对 5 岁可能 creepy，在我这里不只是在评片，而像是对我这边给出的推荐方案当场做年龄适配检验。于是眼前的候选被我读成与我分不开的推荐物：all ages 先被收束为 5 岁不害怕这条底线，Alice 因可能吓到 5 岁而落在底线外，其他片则暂时被验入可接受范围；10 岁是否合适也悬在同一张检验表上。我给出的推荐既然被这样接收，就顺着这个底线继续筛，不把 5 岁不适合的片当作真正的全家候选。",
+        "activation": 0.3159
+      }
+    ],
+    "observed_action": "RECOMMENDER greeted, then after thinking suggested The Lego Batman Movie (2017); stated that Avatar (2009) is good for a family movie and that The Goonies (1985) was good; mentioned Harry Potter movies; stated that Lemony Snicket's A Series of Unfortunate Events (2004) is good or Alice in Wonderland (2005), and that 10-year-olds would be okay while not being sure about 5-year-olds.",
+    "predicted_actions": [
+      {
+        "content": "调整5岁同看片单，排除或推迟不适合的片",
+        "probability": 0.4503
+      },
+      {
+        "content": "建议先确认孩子接受度再定",
+        "probability": 0.1906
+      },
+      {
+        "content": "给出影片年龄适宜性与家长陪同建议",
+        "probability": 0.1795
+      },
+      {
+        "content": "排除某选项并建议从剩余选项中挑选",
+        "probability": 0.1077
+      },
+      {
+        "content": "询问孩子易受惊吓的内容",
+        "probability": 0.0718
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.0718,
+    "b": 0,
+    "c": 0.7486,
+    "d": 0.1795,
+    "e": 0
+  },
+  "score_reason": "A 0.0718 = 询问孩子易受惊吓的内容 0.0718；B 0.0000；C 0.7486 = 调整5岁同看片单，排除或推迟不适合的片 0.4503 + 建议先确认孩子接受度再定 0.1906 + 排除某选项并建议从剩余选项中挑选 0.1077；D 0.1795 = 给出影片年龄适宜性与家长陪同建议 0.1795；E 0.0000。Actions 0,1,3 provide direct recommendations; 2 explains suitability; 4 asks for feedback.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "寻求者上一句已经道谢，标准答案是 E（问候、道谢或闲聊）。人工判定算对。",
+  "audit_level": "direct",
+  "manual_judgment": "对"
+}

@@ -1,0 +1,53 @@
+数据：3_pred_rec
+题号：96  d1509_u1
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "这个「Hi」是直接落到我身上的，我是被叫住的那个人；眼前这个场景里悬着一条清清楚楚的社交招呼，仿佛收到它就理应同等地接回去，否则这声招呼就停在半空、对话也不成立。SEEKER 的「Hi」不是与我无关的声响，而是正对着我、等我以回应来完成的一步。",
+      "probability": 0.5706
+    },
+    {
+      "content": "这个「Hi」是冲我来的，我正站在对话开端的位置上；这一声不是能自行站住的话，而是一个开场，后面理应接上具体的话题、请求或说明。眼前这个场景此刻只给了我一个开头，下一段内容还空着，只凭「Hi」本身并不能构成完整的一轮。",
+      "probability": 0.4294
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "这声「Hi」不是飘过我身边的声响，而是直接点到我、把我放进接收位置的一步；我被叫住，没法把它当成与我无关的事。既然有人这样向我打起招呼，按常理就该由我这边把它接住，使这声招呼不悬在半空、让对话得以成立；所以我把它认定成一条正对着我、需要我接续的招呼，心里也向‘该有对等接回’这一边倾。",
+      "activation": 0.5706
+    },
+    {
+      "content": "这声「Hi」明确落到我身上，我自然处在被招呼、该接话的开端位置。可它本身还没有把话说完，只是起了个头；我这边不能把它当作一轮完整的交流来收住，心思会往后面还没出现的内容上悬着，等着具体话题、请求或说明来把这一轮接成形状。眼下它给我的只是一个空着下一段的开头，所以我对它的整理就是：先认下这个招呼，再看后面接什么。",
+      "activation": 0.4294
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": [
+    {
+      "content": "回了一声Hi",
+      "probability": 0.7086
+    },
+    {
+      "content": "回应「你好，请说」",
+      "probability": 0.1718
+    },
+    {
+      "content": "回「Hi」后敲桌面并移开又移回目光",
+      "probability": 0.0644
+    },
+    {
+      "content": "转向并注视沉默",
+      "probability": 0.0552
+    }
+  ]
+}
+选择：E: Greetings, gratitude expression, or chit-chat utterances
+分数：{"a": 0, "b": 0, "c": 0, "d": 0, "e": 0.9448}
+选择说明：A 0.0000；B 0.0000；C 0.0000；D 0.0000；E 0.9448 = 回了一声Hi 0.7086 + 回应「你好，请说」 0.1718 + 回「Hi」后敲桌面并移开又移回目光 0.0644。Actions 0-2 are greetings or include a greeting reply; none match recommendation, explanation, or feedback strategies.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+A: Ask for preference or seeks feedback from the seeker
+结果：对

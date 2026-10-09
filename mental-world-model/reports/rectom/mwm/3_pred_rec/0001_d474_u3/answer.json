@@ -1,0 +1,92 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 1,
+  "item_id": "d474_u3",
+  "dialogue_id": "474",
+  "utterance_pos": 3,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的求片和补上的「不喜欢恐怖、那惊悚呢」并不是两条可慢慢处理的偏好，而是把这个对话压成一个必须立刻由某个具体片名填满的缺口；他把自己「能马上报出片名的人」这个身份放在缺口正中央，觉得若没有产出一个具体作品，这个推荐者身份就像当场落空。与此同时，那些高知名度、常被提及的作品在他眼中自动浮现为默认安全答案，仿佛它们天然适合被推荐，连「先确认它会不会撞上 SEEKER 不喜欢的恐怖类型」都不必成为前置步骤；于是当前这条「惊悚」线索也被他经验为一个可以继续用热门片名填充的类别槽，而不是需要重新核查的禁忌边界。",
+        "probability": 0.2593
+      },
+      {
+        "content": "SEEKER 一开口，找电影这件事就落到我这边，成了此刻与我分不开的事；眼前要处理的对象被组织成类型偏好：不喜欢恐怖片被理解成恐怖片应当被排除，而惊悚片则作为可以拿来替代讨论的候选类别浮出来。",
+        "probability": 0.254
+      },
+      {
+        "content": "SEEKER 的求助使找电影成为我的事；他说的不喜欢恐怖片与问到的惊悚片，在我这里被看成两个清楚分开的类别——恐怖片被放到排除的一侧，惊悚片仍留在可以接受、可以继续考虑的一侧。",
+        "probability": 0.2469
+      },
+      {
+        "content": "SEEKER 把找电影的请求交给我，这请求便成了我的事；眼前的电影选择被理解为按类型标签筛选的过程：先确认要排除什么，SEEKER 说不喜欢恐怖片便使恐怖片归入排除项，剩下的类型才构成可选范围，惊悚片正被放在这个范围里看。",
+        "probability": 0.2398
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 一开口求片，我这边就感到对话被压成一个必须立刻用具体片名填满的缺口；我把自己「能马上报出片名的人」这个身份放在缺口正中央，觉得不给出一个具体作品，这个推荐者身份就像当场落空。于是那些高知名度、常被提及的作品自动浮现为默认安全答案，仿佛它们天然适合推荐，连先确认它会不会撞上 SEEKER 不喜欢的恐怖类型都不必成为前置步骤；当前这条「惊悚」线索也被我经验成一个可以继续用热门片名填充的类别槽，而不是需要重新核查的禁忌边界。所以我顺着这个默认答案说出「Yes, how about It (2017)?」，用这个具体片名把缺口填上。",
+        "activation": 0.2593
+      },
+      {
+        "content": "找电影这事既然落到我这边，SEEKER 一说不喜欢恐怖片，我就把恐怖片划出可选范围，It 这类自然也不再合适；惊悚片可以当作替代方向浮上来，接下来该围绕惊悚片去考虑。",
+        "activation": 0.2549
+      },
+      {
+        "content": "SEEKER 来求助，这件事就落到了我这边，帮他把电影找出来是眼下要接住的事；他说不喜欢恐怖片，于是恐怖片这一类不再适合继续放在可看范围里，刚才那种推荐方向也就不必再坚持，而他问到的惊悚片在我这里仍是另一个清楚的类别，可以继续当成筛片的方向。找片的重心因此从恐怖片一侧移开，顺着惊悚片这一侧重新收束。",
+        "activation": 0.2469
+      },
+      {
+        "content": "我把 SEEKER 的找片请求收为自己的事；按类型标签来筛，他既然说不喜欢恐怖片，恐怖片就该归入排除项，剩下的类型才构成可选范围，他提到的惊悚片正在这个范围里。之前我说出 It 时，没把这一层排除关系放在前面，现在看它属于要排掉的一类，心里便把这个选项移开，只在剩余类型中重新掂量。",
+        "activation": 0.2389
+      }
+    ],
+    "observed_action": "RECOMMENDER 说：Yes，how about It (2017)？",
+    "predicted_actions": [
+      {
+        "content": "换惊悚片",
+        "probability": 0.3613
+      },
+      {
+        "content": "ask SEEKER to name a liked thriller",
+        "probability": 0.2683
+      },
+      {
+        "content": "排除恐怖片，转向惊悚片",
+        "probability": 0.1506
+      },
+      {
+        "content": "推荐具体惊悚片",
+        "probability": 0.1108
+      },
+      {
+        "content": "提供选项并询问选择",
+        "probability": 0.1091
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Ask for preference or seeks feedback from the seeker",
+  "option_scores": {
+    "a": 1.0,
+    "b": 0.0,
+    "c": 0.0,
+    "d": 0.0,
+    "e": 0.0
+  },
+  "score_reason": "The record's predicted actions include asking the seeker to name a liked thriller and providing options and asking for choice, which directly paraphrase asking for preference or seeking feedback.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "下一步预测里有推荐具体惊悚片，以及给出选项再问对方，这就是直接推荐或再询问。",
+  "audit_level": "direct",
+  "manual_judgment": "对"
+}

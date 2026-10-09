@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 84,
+  "item_id": "d1212_u9",
+  "dialogue_id": "1212",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Add more information about their preferences, such as genres, actors, or past favorites",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982) \nSEEKER says: Yes, I have seen that one and thought it was pretty good.\nRECOMMENDER says: Not sure if it's considered sci-fi, b；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hello, what kind of movies are you looking for?\nSEEKER says: I suppose good science fiction movies that don't deal with superheroes.\nRECOMMENDER says: Have you seen Soylent Green (1973) ? It's a classic\nSEEKER says: I have not, although I do know the twist already.\nRECOMMENDER says: Oh ok. I'm sure you've probably seen E.T. the Extra-Terrestrial (1982) \nSEEKER says: Yes, I have seen that one and thought it was pretty good.\nRECOMMENDER says: Not sure if it's considered sci-fi, b；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.6,
+    "c": 0.5,
+    "d": 0.2
+  },
+  "score_reason": "The record shows SEEKER responding to a recommendation with feedback, so the next strategy most directly continues that pattern.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record has no predicted next actions or thoughts about what to do next, only the past conversation, so the strategy cannot be directly supported.",
+  "audit_level": "inferred"
+}

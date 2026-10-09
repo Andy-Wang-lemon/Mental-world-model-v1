@@ -1,0 +1,50 @@
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "此刻在 RECOMMENDER 所缘中，SEEKER 的每条反馈——‘too risque’、‘某部更合我的口味但久未看’、‘那部好吗/没看过’、‘另一部也没看过’，以及最后道谢并说要去 Netflix 查片——都不是孤立影片信息，而是对‘我这个能推荐经典佳片、品味该被接受的人’的当场裁断。连续未看过与拒绝被收进来时，仍在‘经典推荐本应被采纳、至少对方应该看过’的应有走向里衡量；因此感谢与查 Netflix 也只像把这份应有走向暂时搁置，而非让推荐者身份不再被触及。",
+      "probability": 0.4019
+    },
+    {
+      "content": "此刻在 RECOMMENDER 所缘中，这份经典片单不是外在于我的影片集合，而是‘我的东西’；SEEKER 说某部更合口味，被经验为对‘我的推荐’的确认，而‘没看过’、‘从未看过’同样落在‘我的清单’上，牵动的是这份属于我的清单被怎样对待。按‘推荐本应被明确采纳、至少应被看过’的理，SEEKER 对多项未看过或 too risque 的反馈让这份清单的应有归宿悬空，最后道谢和去 Netflix 查片则被收进‘我的清单是否真被接住’这一对象里。",
+      "probability": 0.3771
+    },
+    {
+      "content": "此刻在 RECOMMENDER 所缘中，这次与 SEEKER 之间一问一答、最后以道谢和‘去 Netflix 查哪些可看、今天稍后看’收束的推荐—回应关系，是与‘我’分不开的在场对象；SEEKER 的接受、拒绝与未看过，都被放在‘经典推荐本应被采纳、至少对方应看过’的走向里衡量。于是‘这段关系是否就到此为止’也在当前被经验为与我有关的未决之事，而不仅是一段普通对话结束。",
+      "probability": 0.2209
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 把 SEEKER 的每条反馈收束为对「我这个能推荐经典佳片、品味该被接受的人」的当场裁断：too risque、久未看、那部好吗/没看过、另一部也没看过，都不只是孤立片目信息，而是在「经典推荐本应被采纳、至少对方应该看过」的应有走向里被衡量。因此连续的未看过与拒绝并未使这条走向失效，反而让 RECOMMENDER 更倾向于把反馈整理成对方口味与观看史的问题，并维持自己仍可推荐得对的判断；最后的道谢与要去 Netflix 查片，也只像把这份应有走向暂时搁置，而不是让推荐者身份不再被触及，所以内心仍留着一种未被真正确认的悬置，并趋向于继续沿着对方已接受的口味把推荐关系续住。",
+      "activation": 0.4243
+    },
+    {
+      "content": "这份片单是我拿出来的，Sleepless in Seattle 被说成更合口味，我把它当成对‘我的推荐’的点头。可 Indecent Proposal 被说 too risque，All the Right Moves 和 Days of Thunder 又被说没看过、从没看过，按推荐该被采纳、至少对方该看过的理，这几处反馈让我这份清单的落点悬着。但它们不说明清单不行，只是他还没对上；最后他谢过、说去 Netflix 查哪些能看，这话我得收进来掂量——我的清单到底有没有被接住。那就继续把合他口味的片子指给他，让这份属于我的清单真落到他的观看里。",
+      "activation": 0.3341
+    },
+    {
+      "content": "此刻我把与 SEEKER 这一问一答的推荐—回应关系看成与我分不开的在场之事：他的接受、拒绝、没看过，都不只是零散反馈，而是在衡量这批经典推荐是否被采纳、他至少是否该看过的走向。道谢和要去 Netflix 查哪些可看、今天稍后看，表面像收束，却让我觉得这段连接仍悬着——若他之后真看了，我的推荐才算落到实处，这段关系也不算到此为止；若只是道谢而去，那推荐本该被认可、被使用的预期便落了空，我心里仍会把这当成与我有关的未决之事，而不是一段普通对话的结束。",
+      "activation": 0.2415
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 Sure，并询问 classic 是指 70 年代之前还是之后；说 Okay，并提议 Indecent Proposal (1993)，提到 Demi Moor 和 Woodie Harrleson；说 Okay，并提议 Sleepless in Seattle (1993)，提到 Hanks 和 Ryan；说 That's okay、Nothing wrong with that，并询问对方是否看过 All the Right Moves (1983)，提到 Tom Cruise；说 Yes，并说如果对方喜欢 Ferris Bueller's Day Off (1986) 就会喜欢这一部，且在谈 Cruise 时提议 Days of Thunder (1990)；说这是一部 really great film、对方会 love it，并说它有点像 Regarding Henry (1991)，但有 race cars。",
+  "predicted_actions": [
+    {
+      "content": "向对方推荐电影",
+      "probability": 0.4407
+    },
+    {
+      "content": "询问对方偏好以继续推荐",
+      "probability": 0.3002
+    },
+    {
+      "content": "回复感谢",
+      "probability": 0.218
+    },
+    {
+      "content": "强调特定影片推荐",
+      "probability": 0.0411
+    }
+  ]
+}

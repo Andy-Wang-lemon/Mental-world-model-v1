@@ -1,0 +1,30 @@
+{
+  "id": "4_pred_seeker__0080_d1212_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello, what kind of movies are you looking for?",
+      "information_available_to_target": "The recommender has greeted the seeker and asked what kind of movies the seeker wants.",
+      "preferences": "No movie preferences have been stated yet by the seeker.",
+      "belief_before": "No prior dialogue information from the recommender; the seeker has not yet received any specific question or recommendation.",
+      "belief_update": "The seeker learns that the recommender is soliciting the seeker's desired movie kind or genre.",
+      "belief_after": "The seeker believes the recommender is ready to help and needs information about the seeker's movie preferences.",
+      "emotion": "Neutral/attentive; no strong emotional cue in this turn.",
+      "intention": "To respond to the recommender's question, likely by indicating a movie kind or preference.",
+      "conversational_goal": "Answer the recommender's question so the recommender can suggest suitable movies.",
+      "reaction_to_other_speaker": "Receptive and cooperative toward the recommender's greeting and question.",
+      "changes_previous_interpretation": "No previous interpretation exists for this initial turn."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello, what kind of movies are you looking for?\",\n    \"information_available_to_target\": \"The recommender has greeted the seeker and asked what kind of movies the seeker wants.\",\n    \"preferences\": \"No movie preferences have been stated yet by the seeker.\",\n    \"belief_before\": \"No prior dialogue information from the recommender; the seeker has not yet received any specific question or recommendation.\",\n    \"belief_update\": \"The seeker learns that the recommender is soliciting the seeker's desired movie kind or genre.\",\n    \"belief_after\": \"The seeker believes the recommender is ready to help and needs information about the seeker's movie preferences.\",\n    \"emotion\": \"Neutral/attentive; no strong emotional cue in this turn.\",\n    \"intention\": \"To respond to the recommender's question, likely by indicating a movie kind or preference.\",\n    \"conversational_goal\": \"Answer the recommender's question so the recommender can suggest suitable movies.\",\n    \"reaction_to_other_speaker\": \"Receptive and cooperative toward the recommender's greeting and question.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists for this initial turn.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

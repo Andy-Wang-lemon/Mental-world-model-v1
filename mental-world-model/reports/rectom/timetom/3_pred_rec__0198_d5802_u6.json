@@ -1,0 +1,79 @@
+{
+  "id": "3_pred_rec__0198_d5802_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "The recommender greets the seeker and asks what kind of movies the seeker is looking for today.",
+      "belief_before": "No specific information about the seeker's movie preferences yet; only that a recommendation may be requested.",
+      "belief_update": "No new preference information from the seeker yet; the recommender initiates by requesting a genre or type.",
+      "belief_after": "The recommender is waiting to learn the seeker's movie preferences.",
+      "emotion": "Friendly, helpful, attentive.",
+      "intention": "Open the recommendation dialogue and elicit the seeker's preferences.",
+      "conversational_goal": "Find out what kind of movie the seeker wants."
+    },
+    {
+      "time": 2,
+      "observed": "The seeker asks for a good comedy movie and says it can also have action in it.",
+      "belief_before": "The recommender knows only that the seeker may want a movie recommendation, with no genre specified.",
+      "belief_update": "The seeker wants a good comedy, optionally with action.",
+      "belief_after": "The seeker is interested in comedy or comedy-action movies.",
+      "emotion": "Attentive, positive, ready to help.",
+      "intention": "Select a comedy or action-comedy recommendation.",
+      "conversational_goal": "Provide a movie recommendation matching the seeker's stated comedy/action preference."
+    },
+    {
+      "time": 3,
+      "observed": "The recommender suggests The Other Guys (2010), says he just saw it and found it pretty funny, and asks if the seeker has seen it.",
+      "belief_before": "The seeker wants a good comedy, possibly with action.",
+      "belief_update": "The Other Guys is a candidate recommendation that fits comedy/action and the recommender personally found it funny.",
+      "belief_after": "The recommender believes The Other Guys may be suitable, but does not yet know whether the seeker has seen it or liked it.",
+      "emotion": "Enthusiastic, helpful, positive.",
+      "intention": "Offer a specific movie recommendation and check whether the seeker is familiar with it.",
+      "conversational_goal": "Propose a first comedy/action recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "The seeker says they have seen The Other Guys, thought it was pretty funny, and asks for other suggestions.",
+      "belief_before": "The recommender has suggested The Other Guys and is waiting to hear whether the seeker has seen it or liked it.",
+      "belief_update": "The seeker has seen The Other Guys, liked it, and wants additional suggestions.",
+      "belief_after": "The seeker likes at least one comedy/action movie similar to The Other Guys and remains open to more recommendations.",
+      "emotion": "Encouraged, positive, helpful.",
+      "intention": "Suggest another comedy/action movie that may fit the seeker's taste.",
+      "conversational_goal": "Continue recommending movies based on the seeker's positive response."
+    },
+    {
+      "time": 5,
+      "observed": "The recommender suggests Tropic Thunder (2008).",
+      "belief_before": "The seeker liked The Other Guys and asked for other suggestions.",
+      "belief_update": "Tropic Thunder is offered as another comedy/action candidate that may satisfy the seeker.",
+      "belief_after": "The recommender believes Tropic Thunder could be a suitable next recommendation, but the seeker's reaction is still unknown.",
+      "emotion": "Helpful, expectant, positive.",
+      "intention": "Provide a second movie recommendation.",
+      "conversational_goal": "Offer another option to continue the recommendation dialogue."
+    },
+    {
+      "time": 6,
+      "observed": "The seeker says they did not like Tropic Thunder.",
+      "belief_before": "The recommender has suggested Tropic Thunder as a possible comedy/action fit and is awaiting feedback.",
+      "belief_update": "The seeker rejects Tropic Thunder; the assumption that this recommendation would fit is disconfirmed.",
+      "belief_after": "Tropic Thunder is not acceptable to the seeker, and the recommender needs to adjust or gather more specific preferences.",
+      "emotion": "Apologetic, uncertain, mildly disappointed.",
+      "intention": "Recover from the negative feedback by asking for clarification or offering a different recommendation.",
+      "conversational_goal": "Refine the recommendation approach and continue helping the seeker find a movie they like."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"The recommender greets the seeker and asks what kind of movies the seeker is looking for today.\",\n    \"belief_before\": \"No specific information about the seeker's movie preferences yet; only that a recommendation may be requested.\",\n    \"belief_update\": \"No new preference information from the seeker yet; the recommender initiates by requesting a genre or type.\",\n    \"belief_after\": \"The recommender is waiting to learn the seeker's movie preferences.\",\n    \"emotion\": \"Friendly, helpful, attentive.\",\n    \"intention\": \"Open the recommendation dialogue and elicit the seeker's preferences.\",\n    \"conversational_goal\": \"Find out what kind of movie the seeker wants.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"The seeker asks for a good comedy movie and says it can also have action in it.\",\n    \"belief_before\": \"The recommender knows only that the seeker may want a movie recommendation, with no genre specified.\",\n    \"belief_update\": \"The seeker wants a good comedy, optionally with action.\",\n    \"belief_after\": \"The seeker is interested in comedy or comedy-action movies.\",\n    \"emotion\": \"Attentive, positive, ready to help.\",\n    \"intention\": \"Select a comedy or action-comedy recommendation.\",\n    \"conversational_goal\": \"Provide a movie recommendation matching the seeker's stated comedy/action preference.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"The recommender suggests The Other Guys (2010), says he just saw it and found it pretty funny, and asks if the seeker has seen it.\",\n    \"belief_before\": \"The seeker wants a good comedy, possibly with action.\",\n    \"belief_update\": \"The Other Guys is a candidate recommendation that fits comedy/action and the recommender personally found it funny.\",\n    \"belief_after\": \"The recommender believes The Other Guys may be suitable, but does not yet know whether the seeker has seen it or liked it.\",\n    \"emotion\": \"Enthusiastic, helpful, positive.\",\n    \"intention\": \"Offer a specific movie recommendation and check whether the seeker is familiar with it.\",\n    \"conversational_goal\": \"Propose a first comedy/action recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"The seeker says they have seen The Other Guys, thought it was pretty funny, and asks for other suggestions.\",\n    \"belief_before\": \"The recommender has suggested The Other Guys and is waiting to hear whether the seeker has seen it or liked it.\",\n    \"belief_update\": \"The seeker has seen The Other Guys, liked it, and wants additional suggestions.\",\n    \"belief_after\": \"The seeker likes at least one comedy/action movie similar to The Other Guys and remains open to more recommendations.\",\n    \"emotion\": \"Encouraged, positive, helpful.\",\n    \"intention\": \"Suggest another comedy/action movie that may fit the seeker's taste.\",\n    \"conversational_goal\": \"Continue recommending movies based on the seeker's positive response.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"The recommender suggests Tropic Thunder (2008).\",\n    \"belief_before\": \"The seeker liked The Other Guys and asked for other suggestions.\",\n    \"belief_update\": \"Tropic Thunder is offered as another comedy/action candidate that may satisfy the seeker.\",\n    \"belief_after\": \"The recommender believes Tropic Thunder could be a suitable next recommendation, but the seeker's reaction is still unknown.\",\n    \"emotion\": \"Helpful, expectant, positive.\",\n    \"intention\": \"Provide a second movie recommendation.\",\n    \"conversational_goal\": \"Offer another option to continue the recommendation dialogue.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"The seeker says they did not like Tropic Thunder.\",\n    \"belief_before\": \"The recommender has suggested Tropic Thunder as a possible comedy/action fit and is awaiting feedback.\",\n    \"belief_update\": \"The seeker rejects Tropic Thunder; the assumption that this recommendation would fit is disconfirmed.\",\n    \"belief_after\": \"Tropic Thunder is not acceptable to the seeker, and the recommender needs to adjust or gather more specific preferences.\",\n    \"emotion\": \"Apologetic, uncertain, mildly disappointed.\",\n    \"intention\": \"Recover from the negative feedback by asking for clarification or offering a different recommendation.\",\n    \"conversational_goal\": \"Refine the recommendation approach and continue helping the seeker find a movie they like.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

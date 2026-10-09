@@ -1,0 +1,16 @@
+{
+  "id": "3_pred_rec__0043_d1003_u3",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "RECOMMENDER has access to:\n\n- SEEKER greeted them and asked: “Can you recommend some good classic movies?”\n- RECOMMENDER replied: “Sure! But by classic do you mean before the 70s or after?”\n- SEEKER answered: “After.”\n\nSo RECOMMENDER knows:\n- SEEKER wants recommendations for good classic movies.\n- RECOMMENDER asked whether SEEKER meant before the 70s or after.\n- SEEKER clarified that they mean after the 70s.\n- RECOMMENDER’s own offer to help and clarifying question.\n\nNo other information is available to RECOMMENDER.",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

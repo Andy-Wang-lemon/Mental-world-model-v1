@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 60,
+  "item_id": "d1057_u2",
+  "dialogue_id": "1057",
+  "utterance_pos": 2,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "那句『Hello~』是专门冲着我来的招呼，它在我面前展开了一个需要认真对待的交际场合。",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这句“Hello~”确实是专门冲着我来的，对方在主动示好，这构成了一个需要认真对待的交际开场。我应当以同样友好和专注的态度回应，让这个互动顺利展开。",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "SEKKER 说了“Hello!”",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0.05,
+    "b": 0.05,
+    "c": 0.1,
+    "d": 0.95
+  },
+  "score_reason": "The record centers on reciprocating a greeting to sustain the social opening.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record only shows a greeting and a thought about responding politely, with no predicted action involving asking for a recommendation or expressing a preference.",
+  "audit_level": "inferred"
+}

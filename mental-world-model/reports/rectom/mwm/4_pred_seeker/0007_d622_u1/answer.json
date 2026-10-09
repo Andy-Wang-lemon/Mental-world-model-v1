@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 7,
+  "item_id": "d622_u1",
+  "dialogue_id": "622",
+  "utterance_pos": 1,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances\nC: Asks for a recommendation or expresses their preference",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "此刻，RECOMMENDER的“Hi”不是泛泛环境里的声音，而是朝SEEKER发出的定向招呼；SEEKER被安放在“被招呼者”的位置上，这声招呼因此成为与我有关的社交启动信号。同时，这个场景被经验为只沿着寒暄—回应的固定脚本展开：招呼既已出现，接下来的互动轨道就被预设为寒暄与回应，而不是无关话语或其他展开方式。",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER把这声“Hi”从环境声响中拣出，认作正对着自己来的招呼，于是将自身放在“被招呼者”的位置上，感到这句话与自己相关而非无关。接着，这个场景被整理成一条已经启动的寒暄—回应轨道：招呼既已出口，接下来的展开便被预先理解为寒暄与回应，而不是可任意岔开或当作无关话语。由此，SEEKER内心形成的是接住这个话头的取向：认同此刻需要沿这条轨道进入互动，并倾向于把心力放在如何回应、如何让寒暄继续上；在没有外在行动证据的情况下，这只停留在内在的认可与预备状态。",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0.0,
+    "b": 0.0,
+    "c": 0.0,
+    "d": 1.0
+  },
+  "score_reason": "The record explicitly describes SEEKER adopting a greeting-response and chit-chat continuation orientation, matching option D.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

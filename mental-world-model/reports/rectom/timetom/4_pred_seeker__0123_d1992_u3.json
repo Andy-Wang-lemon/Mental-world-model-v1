@@ -1,0 +1,55 @@
+{
+  "id": "4_pred_seeker__0123_d1992_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: hi what kind of movies do you like",
+      "belief_before": "SEEKER is in a recommendation dialogue and expects to receive help with movies.",
+      "belief_update": "Recommender is asking for SEEKER's movie preferences to tailor suggestions.",
+      "belief_after": "Recommender needs SEEKER's genre or taste preferences; SEEKER should provide them.",
+      "emotion": "neutral, polite",
+      "intention": "to obtain movie recommendations from the recommender",
+      "conversational_goal": "respond to the recommender's question and request movie help",
+      "preferences": "not yet specified in dialogue; SEEKER's movie preferences are unknown at this point",
+      "reaction": "attentive and cooperative; willing to engage",
+      "interpretation_change": "initial turn; no prior interpretation to change"
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hi, how are you? I am looking for some good action movies, could you help?",
+      "belief_before": "Recommender wants to know SEEKER's movie preferences to provide recommendations.",
+      "belief_update": "SEEKER states a preference for good action movies and asks for help.",
+      "belief_after": "Recommender knows SEEKER seeks action movie recommendations and may ask clarifying questions.",
+      "emotion": "polite, friendly, hopeful",
+      "intention": "to get recommendations for good action movies",
+      "conversational_goal": "request action movie recommendations and engage politely",
+      "preferences": "likes/is looking for good action movies",
+      "reaction": "responds positively to the recommender's question and asks for assistance",
+      "interpretation_change": "previous interpretation was generic movie preference; now specified as action movies"
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: do you like hard core action or fun family action?",
+      "belief_before": "Recommender knows SEEKER wants action movies and is trying to help.",
+      "belief_update": "Recommender is asking SEEKER to specify a subgenre of action: hard core vs fun family.",
+      "belief_after": "Recommender needs SEEKER's action subgenre preference to narrow recommendations.",
+      "emotion": "neutral, considering",
+      "intention": "to answer the subgenre question to get more tailored action recommendations",
+      "conversational_goal": "specify whether they prefer hard core action or fun family action",
+      "preferences": "prefers action movies; subgenre not yet specified",
+      "reaction": "cooperative; likely to answer the clarifying question",
+      "interpretation_change": "previous interpretation was general action; now refined to need a specific action subgenre"
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: hi what kind of movies do you like\",\n    \"belief_before\": \"SEEKER is in a recommendation dialogue and expects to receive help with movies.\",\n    \"belief_update\": \"Recommender is asking for SEEKER's movie preferences to tailor suggestions.\",\n    \"belief_after\": \"Recommender needs SEEKER's genre or taste preferences; SEEKER should provide them.\",\n    \"emotion\": \"neutral, polite\",\n    \"intention\": \"to obtain movie recommendations from the recommender\",\n    \"conversational_goal\": \"respond to the recommender's question and request movie help\",\n    \"preferences\": \"not yet specified in dialogue; SEEKER's movie preferences are unknown at this point\",\n    \"reaction\": \"attentive and cooperative; willing to engage\",\n    \"interpretation_change\": \"initial turn; no prior interpretation to change\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hi, how are you? I am looking for some good action movies, could you help?\",\n    \"belief_before\": \"Recommender wants to know SEEKER's movie preferences to provide recommendations.\",\n    \"belief_update\": \"SEEKER states a preference for good action movies and asks for help.\",\n    \"belief_after\": \"Recommender knows SEEKER seeks action movie recommendations and may ask clarifying questions.\",\n    \"emotion\": \"polite, friendly, hopeful\",\n    \"intention\": \"to get recommendations for good action movies\",\n    \"conversational_goal\": \"request action movie recommendations and engage politely\",\n    \"preferences\": \"likes/is looking for good action movies\",\n    \"reaction\": \"responds positively to the recommender's question and asks for assistance\",\n    \"interpretation_change\": \"previous interpretation was generic movie preference; now specified as action movies\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: do you like hard core action or fun family action?\",\n    \"belief_before\": \"Recommender knows SEEKER wants action movies and is trying to help.\",\n    \"belief_update\": \"Recommender is asking SEEKER to specify a subgenre of action: hard core vs fun family.\",\n    \"belief_after\": \"Recommender needs SEEKER's action subgenre preference to narrow recommendations.\",\n    \"emotion\": \"neutral, considering\",\n    \"intention\": \"to answer the subgenre question to get more tailored action recommendations\",\n    \"conversational_goal\": \"specify whether they prefer hard core action or fun family action\",\n    \"preferences\": \"prefers action movies; subgenre not yet specified\",\n    \"reaction\": \"cooperative; likely to answer the clarifying question\",\n    \"interpretation_change\": \"previous interpretation was general action; now refined to need a specific action subgenre\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

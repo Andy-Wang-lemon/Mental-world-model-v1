@@ -1,0 +1,80 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 44,
+  "item_id": "d1003_u5",
+  "dialogue_id": "1003",
+  "utterance_pos": 5,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "RECOMMENDER感到，SEEKER这句‘Can you recommend...’不是飘在别处的普通问话，而是正对着自己所在的‘推荐者’位置来的；这个请求一出现，就把RECOMMENDER作为被指向的角色卷进来。与此同时，‘classic movies’在RECOMMENDER的经验里像有一份本来如此、公认固定的正典片目，‘some good classic movies’只能从这份现成清单里被理解。SEEKER随后只说‘After’，并未改变这个结构：请求仍落在RECOMMENDER这个身份上，经典仍像一份待从中选取的固定片目。",
+        "probability": 0.4087
+      },
+      {
+        "content": "RECOMMENDER经验到，SEEKER要的是‘good classic movies’，而‘什么是好经典’这件事在自己这里不是可随手让渡的公共信息，它牵连着自身对经典的品味、判断和知识，像是与自己分不开的一部分。同时，‘classic movies’被经验为存在一份固定公认的正典片目，好坏评价只能在这份本来如此的清单内部发生。SEEKER后面的‘After’没有提供新的片名或标准，只让这份由自己裁量、又受正典清单限定的询问悬在那里。",
+        "probability": 0.3613
+      },
+      {
+        "content": "RECOMMENDER感到，SEEKER说的‘Hi friend’不是与我无关的外部标签，而是冲着RECOMMENDER而来的关系位置：对方把‘朋友’这个称呼落到了我身上。紧接着的‘Can you recommend...’也被经验为一个固定的任务式请求，它只能由给出推荐来完成，而不只是开启一个可随意闲聊的话题。SEEKER随后说‘After’，但没有取消这个被称作朋友、又被要求推荐的结构。",
+        "probability": 0.23
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "RECOMMENDER感到SEEKER这句询问不是飘在别处的普通问话，而是正对着自己所在的推荐者位置来的，自己已经被这个请求卷入，必须就这个身份给出回应；同时他把“classic movies”看成一份本来就有、公认固定的正典片目，于是要先弄清对方说的经典是70年代之前还是之后，才能从那份现成清单里确定可选范围。SEEKER只说“After”后，他仍感到请求落在自己这个推荐者身份上，也仍把经典视为一份按年代划开的固定片目，便在后70年代的经典条目中检索，认定《Indecent Proposal (1993)》属于可推出的片目，于是提出它并附带演员信息作为确认。",
+        "activation": 0.3972
+      },
+      {
+        "content": "SEEKER要的是good classic movies，后来只补了一个After，这并没有替我定下什么是好。经典在我这里像有一份相对固定的片目，我能做的是按年代把它切开，在后70年代这一段里找，而不是离开这份片目另造标准。既然他问的是我的推荐，好不好就落在我自己的见识和口味上，这份裁量我不觉得该随手让出去。于是我把After收成一个范围，接着在后70年代那些我认得有代表性的片子里挑一部够得上经典、也适合此时拿出来的，比如Indecent Proposal (1993)这类有明星、有年代标记的作品；这是在我认定的正典边界内做出的取舍。至于它合不合他的口味，我此刻还是以我的片目感为准。",
+        "activation": 0.34
+      },
+      {
+        "content": "RECOMMENDER心里把SEEKER这声“Hi friend”收了下来，觉得这不是与我无关的外部标签，而是对方把“朋友”这个关系位置落到了自己身上；因此紧接着的“Can you recommend...”也不只是可接可不接的话头，而成了已经指派给自己的推荐任务。“After”一出来，范围虽然明确了，但“被称作朋友、又被要求推荐”的结构没有被撤掉，反而更需要用具体片名来回应。先问清classic是七十年代之前还是之后，只是把任务范围钉准；随后给出《Indecent Proposal》才像是在兑现这个被叫朋友又被要求推荐的位置。此时给推荐是应当的，不能只闲谈，也不能空着不答。",
+        "activation": 0.2629
+      }
+    ],
+    "observed_action": "RECOMMENDER 说 Sure，并问 classic 是指 70 年代之前还是之后；随后说 Okay，并提出 Indecent Proposal (1993) 怎么样，提到 Demi Moor 和 Woodie Harrleson。",
+    "predicted_actions": [
+      {
+        "content": "收回推荐并道歉",
+        "probability": 0.4978
+      },
+      {
+        "content": "改推荐另一部没有风险内容的后70年代经典",
+        "probability": 0.3653
+      },
+      {
+        "content": "询问“too risque”具体指什么",
+        "probability": 0.103
+      },
+      {
+        "content": "表示无法推荐",
+        "probability": 0.034
+      }
+    ]
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Responds to the seeker's question or statement",
+  "option_scores": {
+    "a": 0.103,
+    "b": 0.5318,
+    "c": 0.3653,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.1030 = 询问“too risque”具体指什么 0.1030；B 0.5318 = 收回推荐并道歉 0.4978 + 表示无法推荐 0.0340；C 0.3653 = 改推荐另一部没有风险内容的后70年代经典 0.3653；D 0.0000；E 0.0000。Action 2 seeks clarification, action 1 provides a new recommendation, and actions 0 and 3 are responses to the seeker.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "A predicted next action says RECOMMENDER will recommend another post-70s classic, directly reflecting strategy C of providing a recommendation.",
+  "audit_level": "direct"
+}

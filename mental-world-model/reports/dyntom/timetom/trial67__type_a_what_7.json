@@ -1,0 +1,61 @@
+{
+  "id": "trial67__type_a_what_7",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Vincent Chinana",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Vincent learns at the diner that Patrick is considering a new construction venture and views it as a good opportunity, though Patrick says he is still weighing his options.",
+      "belief_before": "Vincent had no specific knowledge of Patrick's new construction investment plans and likely assumed Patrick's business affairs were relatively stable.",
+      "belief_update": "Yes. Vincent learns Patrick is contemplating a risky new investment venture.",
+      "belief_after": "Vincent believes the construction venture is risky and could jeopardize Patrick's financial security; he thinks Patrick should reconsider or delay until he has more information.",
+      "emotion": "Worried and concerned.",
+      "intention": "Persuade Patrick to reconsider or delay the investment until more information is gathered."
+    },
+    {
+      "time": 2,
+      "observed": "Vincent notices Patrick avoiding detailed discussion about the investment, confronts him about not being transparent, and hears Patrick apologize and agree to explain everything.",
+      "belief_before": "Vincent believed Patrick was weighing a risky investment and had said he would think it over; Vincent expected openness from Patrick.",
+      "belief_update": "Yes. Vincent learns that Patrick has been evasive and withholding details about the investment.",
+      "belief_after": "Vincent believes Patrick has not been transparent and may be hiding complications, leaving Vincent feeling betrayed even though Patrick agrees to explain.",
+      "emotion": "Betrayed, hurt, and suspicious.",
+      "intention": "Demand full transparency and get Patrick to explain all the investment details."
+    },
+    {
+      "time": 3,
+      "observed": "During a detailed discussion at Vincent's garage, Vincent learns the investment situation is serious and that Patrick might lose a significant amount if it does not turn around. Vincent offers Patrick a loan to cover short-term losses, and Patrick accepts gratefully.",
+      "belief_before": "Vincent believed Patrick had been evasive and that the investment details might be problematic, but he did not yet know how serious the troubles were.",
+      "belief_update": "Yes. Vincent learns the investment troubles are severe and that Patrick faces possible significant losses.",
+      "belief_after": "Vincent believes Patrick is in serious financial jeopardy with this investment and needs help; Vincent is willing to support him financially in the short term.",
+      "emotion": "Concerned, sympathetic, and supportive.",
+      "intention": "Lend Patrick money to cover short-term losses and help him through the investment troubles."
+    },
+    {
+      "time": 4,
+      "observed": "A month later at a coffee shop, Vincent learns new information showing the venture might actually turn a profit. Patrick confirms things are looking up. Vincent apologizes for doubting Patrick earlier and proposes a joint venture.",
+      "belief_before": "Vincent believed the investment was in serious trouble and could cause significant losses; he had doubted Patrick's judgment and had been helping cover short-term losses.",
+      "belief_update": "Yes. New information suggests the venture may become profitable, changing Vincent's negative assessment.",
+      "belief_after": "Vincent believes the venture now has real profit potential and that a joint venture with Patrick could be worthwhile.",
+      "emotion": "Relieved, optimistic, and apologetic for earlier doubts.",
+      "intention": "Discuss the future with Patrick and work out the details of a joint venture."
+    },
+    {
+      "time": 5,
+      "observed": "Vincent and Patrick meet at Vincent's house, express optimism about their joint venture, and begin drafting a business plan together.",
+      "belief_before": "Vincent believed the venture had potential and that forming a joint venture with Patrick was a good idea.",
+      "belief_update": "No major change. The event confirms Vincent's prior optimism and the value of partnering with Patrick.",
+      "belief_after": "Vincent believes that combining his and Patrick's skills can make the joint venture successful, and that careful planning is important.",
+      "emotion": "Optimistic, enthusiastic, and determined.",
+      "intention": "Draft a detailed business plan and set up the joint venture for success."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Vincent learns at the diner that Patrick is considering a new construction venture and views it as a good opportunity, though Patrick says he is still weighing his options.\",\n    \"belief_before\": \"Vincent had no specific knowledge of Patrick's new construction investment plans and likely assumed Patrick's business affairs were relatively stable.\",\n    \"belief_update\": \"Yes. Vincent learns Patrick is contemplating a risky new investment venture.\",\n    \"belief_after\": \"Vincent believes the construction venture is risky and could jeopardize Patrick's financial security; he thinks Patrick should reconsider or delay until he has more information.\",\n    \"emotion\": \"Worried and concerned.\",\n    \"intention\": \"Persuade Patrick to reconsider or delay the investment until more information is gathered.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Vincent notices Patrick avoiding detailed discussion about the investment, confronts him about not being transparent, and hears Patrick apologize and agree to explain everything.\",\n    \"belief_before\": \"Vincent believed Patrick was weighing a risky investment and had said he would think it over; Vincent expected openness from Patrick.\",\n    \"belief_update\": \"Yes. Vincent learns that Patrick has been evasive and withholding details about the investment.\",\n    \"belief_after\": \"Vincent believes Patrick has not been transparent and may be hiding complications, leaving Vincent feeling betrayed even though Patrick agrees to explain.\",\n    \"emotion\": \"Betrayed, hurt, and suspicious.\",\n    \"intention\": \"Demand full transparency and get Patrick to explain all the investment details.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"During a detailed discussion at Vincent's garage, Vincent learns the investment situation is serious and that Patrick might lose a significant amount if it does not turn around. Vincent offers Patrick a loan to cover short-term losses, and Patrick accepts gratefully.\",\n    \"belief_before\": \"Vincent believed Patrick had been evasive and that the investment details might be problematic, but he did not yet know how serious the troubles were.\",\n    \"belief_update\": \"Yes. Vincent learns the investment troubles are severe and that Patrick faces possible significant losses.\",\n    \"belief_after\": \"Vincent believes Patrick is in serious financial jeopardy with this investment and needs help; Vincent is willing to support him financially in the short term.\",\n    \"emotion\": \"Concerned, sympathetic, and supportive.\",\n    \"intention\": \"Lend Patrick money to cover short-term losses and help him through the investment troubles.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"A month later at a coffee shop, Vincent learns new information showing the venture might actually turn a profit. Patrick confirms things are looking up. Vincent apologizes for doubting Patrick earlier and proposes a joint venture.\",\n    \"belief_before\": \"Vincent believed the investment was in serious trouble and could cause significant losses; he had doubted Patrick's judgment and had been helping cover short-term losses.\",\n    \"belief_update\": \"Yes. New information suggests the venture may become profitable, changing Vincent's negative assessment.\",\n    \"belief_after\": \"Vincent believes the venture now has real profit potential and that a joint venture with Patrick could be worthwhile.\",\n    \"emotion\": \"Relieved, optimistic, and apologetic for earlier doubts.\",\n    \"intention\": \"Discuss the future with Patrick and work out the details of a joint venture.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Vincent and Patrick meet at Vincent's house, express optimism about their joint venture, and begin drafting a business plan together.\",\n    \"belief_before\": \"Vincent believed the venture had potential and that forming a joint venture with Patrick was a good idea.\",\n    \"belief_update\": \"No major change. The event confirms Vincent's prior optimism and the value of partnering with Patrick.\",\n    \"belief_after\": \"Vincent believes that combining his and Patrick's skills can make the joint venture successful, and that careful planning is important.\",\n    \"emotion\": \"Optimistic, enthusiastic, and determined.\",\n    \"intention\": \"Draft a detailed business plan and set up the joint venture for success.\"\n  }\n]",
+  "final_response": "ANSWER: d",
+  "prediction": "d",
+  "gold": "d",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial67"
+}

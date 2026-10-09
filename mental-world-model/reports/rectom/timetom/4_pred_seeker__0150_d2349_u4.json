@@ -1,0 +1,56 @@
+{
+  "id": "4_pred_seeker__0150_d2349_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER initiates the dialogue: he is looking for a children's movie for his little brother because he is babysitting him tonight. No recommender utterance has occurred yet. Preferences: a children's movie suitable for his little brother, for tonight.",
+      "belief_before": "No prior dialogue context.",
+      "belief_update": "Forms a request and context for the recommendation; expects the recommender may help find a children's movie.",
+      "belief_after": "Recommender is likely to suggest a children's movie; SEEKER still needs a recommendation.",
+      "emotion": "Friendly, helpful, eager.",
+      "intention": "Ask for a children's movie recommendation for his little brother.",
+      "conversational_goal": "Get suitable children's movie suggestions for babysitting tonight."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says 'Hi happy new year.' This is the first recommender turn SEEKER hears. Preferences remain a children's movie for his little brother tonight.",
+      "belief_before": "SEEKER has requested a children's movie and is waiting for a recommendation.",
+      "belief_update": "Recommender is friendly and offers a New Year greeting, but has not yet addressed the movie request. The new turn adds social greeting and does not change the core request.",
+      "belief_after": "Recommender may still provide a movie recommendation after greeting; SEEKER remains waiting.",
+      "emotion": "Polite, mildly expectant; positive reaction to the friendly greeting.",
+      "intention": "Acknowledge the greeting while keeping the movie request open.",
+      "conversational_goal": "Maintain rapport and move the conversation toward the movie recommendation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says 'Happy New Year.' He is reciprocating the recommender's greeting. No movie title has been mentioned yet.",
+      "belief_before": "Recommender greeted him but has not yet recommended a movie.",
+      "belief_update": "SEEKER responds politely to the greeting; this maintains social rapport but does not resolve the movie request.",
+      "belief_after": "Greeting is reciprocated; SEEKER still awaits a children's movie recommendation.",
+      "emotion": "Cheerful, polite.",
+      "intention": "Reciprocate the greeting and keep dialogue open.",
+      "conversational_goal": "Stay courteous and signal readiness for the recommender to suggest a movie."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER asks whether SEEKER has seen The Secret Life of Pets (2016). This is the first movie candidate proposed. SEEKER's known preference is for a children's movie for his little brother.",
+      "belief_before": "SEEKER was waiting for a movie recommendation after exchanging greetings.",
+      "belief_update": "Recommender proposes The Secret Life of Pets (2016) as a possible candidate and asks if SEEKER has seen it. New interpretation: recommender is now addressing the movie request.",
+      "belief_after": "SEEKER has a candidate children's movie to evaluate for suitability; he needs to answer whether he has seen it and decide if it fits.",
+      "emotion": "Interested, hopeful, engaged.",
+      "intention": "Consider The Secret Life of Pets (2016) for his little brother and respond about whether he has seen it.",
+      "conversational_goal": "Evaluate the recommended movie and continue toward choosing a suitable children's movie."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER initiates the dialogue: he is looking for a children's movie for his little brother because he is babysitting him tonight. No recommender utterance has occurred yet. Preferences: a children's movie suitable for his little brother, for tonight.\",\n    \"belief_before\": \"No prior dialogue context.\",\n    \"belief_update\": \"Forms a request and context for the recommendation; expects the recommender may help find a children's movie.\",\n    \"belief_after\": \"Recommender is likely to suggest a children's movie; SEEKER still needs a recommendation.\",\n    \"emotion\": \"Friendly, helpful, eager.\",\n    \"intention\": \"Ask for a children's movie recommendation for his little brother.\",\n    \"conversational_goal\": \"Get suitable children's movie suggestions for babysitting tonight.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says 'Hi happy new year.' This is the first recommender turn SEEKER hears. Preferences remain a children's movie for his little brother tonight.\",\n    \"belief_before\": \"SEEKER has requested a children's movie and is waiting for a recommendation.\",\n    \"belief_update\": \"Recommender is friendly and offers a New Year greeting, but has not yet addressed the movie request. The new turn adds social greeting and does not change the core request.\",\n    \"belief_after\": \"Recommender may still provide a movie recommendation after greeting; SEEKER remains waiting.\",\n    \"emotion\": \"Polite, mildly expectant; positive reaction to the friendly greeting.\",\n    \"intention\": \"Acknowledge the greeting while keeping the movie request open.\",\n    \"conversational_goal\": \"Maintain rapport and move the conversation toward the movie recommendation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says 'Happy New Year.' He is reciprocating the recommender's greeting. No movie title has been mentioned yet.\",\n    \"belief_before\": \"Recommender greeted him but has not yet recommended a movie.\",\n    \"belief_update\": \"SEEKER responds politely to the greeting; this maintains social rapport but does not resolve the movie request.\",\n    \"belief_after\": \"Greeting is reciprocated; SEEKER still awaits a children's movie recommendation.\",\n    \"emotion\": \"Cheerful, polite.\",\n    \"intention\": \"Reciprocate the greeting and keep dialogue open.\",\n    \"conversational_goal\": \"Stay courteous and signal readiness for the recommender to suggest a movie.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER asks whether SEEKER has seen The Secret Life of Pets (2016). This is the first movie candidate proposed. SEEKER's known preference is for a children's movie for his little brother.\",\n    \"belief_before\": \"SEEKER was waiting for a movie recommendation after exchanging greetings.\",\n    \"belief_update\": \"Recommender proposes The Secret Life of Pets (2016) as a possible candidate and asks if SEEKER has seen it. New interpretation: recommender is now addressing the movie request.\",\n    \"belief_after\": \"SEEKER has a candidate children's movie to evaluate for suitability; he needs to answer whether he has seen it and decide if it fits.\",\n    \"emotion\": \"Interested, hopeful, engaged.\",\n    \"intention\": \"Consider The Secret Life of Pets (2016) for his little brother and respond about whether he has seen it.\",\n    \"conversational_goal\": \"Evaluate the recommended movie and continue toward choosing a suitable children's movie.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

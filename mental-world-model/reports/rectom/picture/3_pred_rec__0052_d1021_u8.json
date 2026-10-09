@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0052_d1021_u8",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The seeker wants a film of any genre with a woman in the lead / a good heroine.\n- The seeker has not seen *The Blind Side* and seemed interested in it.\n- The seeker has seen *The Help* and liked it, saying it made her cry and laugh.\n- The seeker tried to watch *Precious* but could not because it was too sad for her.\n- The seeker disclosed that being overweight in her early 20s made *Precious* bring back painful memories.\n\nRECOMMENDER does not know:\n- What specific genres or tones the seeker prefers beyond “any genre” and “good heroine.”\n- Whether the seeker wants to avoid all sad or weight-related themes, or only *Precious*-like ones.\n- Which other female-led films the seeker has or has not seen.\n- What exact movie would be best next, or whether the seeker will accept any next suggestion.\n- The seeker’s full emotional state beyond what was just stated.\n\nGiven the last turn, the seeker rejected *Precious* with a personal, emotional reason. The recommender should likely acknowledge this briefly, but the recommender’s main ongoing task is still to suggest another female-led film. The prior pattern also shows the recommender repeatedly moves from one suggestion to another. Therefore the next strategy is most likely to provide another recommendation, either directly or by asking whether the seeker has seen a candidate film.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

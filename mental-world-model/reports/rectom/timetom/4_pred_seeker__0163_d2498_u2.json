@@ -1,0 +1,36 @@
+{
+  "id": "4_pred_seeker__0163_d2498_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says 'Hi' to start the interaction. No other speaker utterance is present yet.",
+      "belief_before": "SEEKER has no specific information about the recommender or the conversation beyond being in a recommendation dialogue.",
+      "belief_update": "No new information from another speaker; SEEKER only initiates contact.",
+      "belief_after": "SEEKER believes the conversation has been opened and awaits a response.",
+      "emotion": "Neutral, polite.",
+      "intention": "Greet the recommender and initiate dialogue.",
+      "conversational_goal": "Open the conversation, likely to eventually seek a movie recommendation."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says 'Hello!...What kind of movie do you like?'",
+      "belief_before": "SEEKER believes the conversation has been opened and is awaiting a response; no information about the recommender's intent yet.",
+      "belief_update": "SEEKER learns the recommender is responsive, greets back, and asks about the SEEKER's movie preferences to guide recommendations.",
+      "belief_after": "SEEKER believes the recommender is engaged and wants to know their movie tastes in order to make a recommendation.",
+      "emotion": "Interested, cooperative, possibly pleased by the response.",
+      "intention": "Answer the recommender's question by stating movie preferences.",
+      "conversational_goal": "Provide preference information so the recommender can suggest a suitable movie."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says 'Hi' to start the interaction. No other speaker utterance is present yet.\",\n    \"belief_before\": \"SEEKER has no specific information about the recommender or the conversation beyond being in a recommendation dialogue.\",\n    \"belief_update\": \"No new information from another speaker; SEEKER only initiates contact.\",\n    \"belief_after\": \"SEEKER believes the conversation has been opened and awaits a response.\",\n    \"emotion\": \"Neutral, polite.\",\n    \"intention\": \"Greet the recommender and initiate dialogue.\",\n    \"conversational_goal\": \"Open the conversation, likely to eventually seek a movie recommendation.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says 'Hello!...What kind of movie do you like?'\",\n    \"belief_before\": \"SEEKER believes the conversation has been opened and is awaiting a response; no information about the recommender's intent yet.\",\n    \"belief_update\": \"SEEKER learns the recommender is responsive, greets back, and asks about the SEEKER's movie preferences to guide recommendations.\",\n    \"belief_after\": \"SEEKER believes the recommender is engaged and wants to know their movie tastes in order to make a recommendation.\",\n    \"emotion\": \"Interested, cooperative, possibly pleased by the response.\",\n    \"intention\": \"Answer the recommender's question by stating movie preferences.\",\n    \"conversational_goal\": \"Provide preference information so the recommender can suggest a suitable movie.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

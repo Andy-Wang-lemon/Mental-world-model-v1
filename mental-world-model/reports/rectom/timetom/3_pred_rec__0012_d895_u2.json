@@ -1,0 +1,47 @@
+{
+  "id": "3_pred_rec__0012_d895_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'Helloooo...Can you tell me some of your favorite movies and I will suggest something good for you?'",
+      "information_available": "No prior information about the seeker or their movie preferences; only the recommender's own opening prompt.",
+      "preferences": "Unknown.",
+      "belief_before": "No information about the seeker's tastes has been provided yet.",
+      "belief_update": "No new information about the seeker from this utterance; it creates an expectation that the seeker will provide favorite movies.",
+      "belief_after": "The seeker's preferences remain unknown, so a personalized recommendation cannot yet be made.",
+      "emotion": "Friendly, enthusiastic, inviting.",
+      "intention": "Initiate preference elicitation and prepare to recommend a movie based on the seeker's favorites.",
+      "reaction": "N/A—no other speaker turn has occurred yet.",
+      "conversational_goal": "Ask the seeker for favorite movies so a good recommendation can be made.",
+      "changes_previous_interpretation": "N/A—no previous turn to reinterpret."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Let's see, I enjoyed Lost in Translation (2003) with Bill Murray...I like Aliens (1986) and Alien: Covenant (2017)'",
+      "information_available": "The seeker has now stated liked movies: Lost in Translation (2003), Aliens (1986), and Alien: Covenant (2017).",
+      "preferences": "Likes Bill Murray, the Alien franchise, sci-fi/horror/action, and possibly atmospheric or character-driven films such as Lost in Translation.",
+      "belief_before": "Before this turn, the recommender believed the seeker had not yet provided preferences and was waiting for favorite movies.",
+      "belief_update": "Learns that the seeker enjoyed Lost in Translation with Bill Murray and likes Aliens and Alien: Covenant.",
+      "belief_after": "Has an initial preference profile sufficient to start forming a personalized recommendation, likely drawing on sci-fi/horror/action and/or Bill Murray-related or atmospheric films.",
+      "emotion": "Attentive, curious, positive.",
+      "intention": "Process the stated preferences and formulate a suitable movie recommendation.",
+      "reaction": "Accepts and registers the seeker's preferences as useful input.",
+      "conversational_goal": "Acknowledge the liked movies and suggest something good based on them.",
+      "changes_previous_interpretation": "Yes—moves from unknown preferences to a concrete initial preference profile."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'Helloooo...Can you tell me some of your favorite movies and I will suggest something good for you?'\",\n    \"information_available\": \"No prior information about the seeker or their movie preferences; only the recommender's own opening prompt.\",\n    \"preferences\": \"Unknown.\",\n    \"belief_before\": \"No information about the seeker's tastes has been provided yet.\",\n    \"belief_update\": \"No new information about the seeker from this utterance; it creates an expectation that the seeker will provide favorite movies.\",\n    \"belief_after\": \"The seeker's preferences remain unknown, so a personalized recommendation cannot yet be made.\",\n    \"emotion\": \"Friendly, enthusiastic, inviting.\",\n    \"intention\": \"Initiate preference elicitation and prepare to recommend a movie based on the seeker's favorites.\",\n    \"reaction\": \"N/A—no other speaker turn has occurred yet.\",\n    \"conversational_goal\": \"Ask the seeker for favorite movies so a good recommendation can be made.\",\n    \"changes_previous_interpretation\": \"N/A—no previous turn to reinterpret.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Let's see, I enjoyed Lost in Translation (2003) with Bill Murray...I like Aliens (1986) and Alien: Covenant (2017)'\",\n    \"information_available\": \"The seeker has now stated liked movies: Lost in Translation (2003), Aliens (1986), and Alien: Covenant (2017).\",\n    \"preferences\": \"Likes Bill Murray, the Alien franchise, sci-fi/horror/action, and possibly atmospheric or character-driven films such as Lost in Translation.\",\n    \"belief_before\": \"Before this turn, the recommender believed the seeker had not yet provided preferences and was waiting for favorite movies.\",\n    \"belief_update\": \"Learns that the seeker enjoyed Lost in Translation with Bill Murray and likes Aliens and Alien: Covenant.\",\n    \"belief_after\": \"Has an initial preference profile sufficient to start forming a personalized recommendation, likely drawing on sci-fi/horror/action and/or Bill Murray-related or atmospheric films.\",\n    \"emotion\": \"Attentive, curious, positive.\",\n    \"intention\": \"Process the stated preferences and formulate a suitable movie recommendation.\",\n    \"reaction\": \"Accepts and registers the seeker's preferences as useful input.\",\n    \"conversational_goal\": \"Acknowledge the liked movies and suggest something good based on them.\",\n    \"changes_previous_interpretation\": \"Yes—moves from unknown preferences to a concrete initial preference profile.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

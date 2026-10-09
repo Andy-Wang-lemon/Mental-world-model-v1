@@ -1,0 +1,27 @@
+{
+  "id": "case_04_yi",
+  "description": "「疑」对治「信」：对承诺与价值仍摇摆不定",
+  "yuanwen": "我不确定这样做是否真有意义，也拿不准该不该继续相信，心里反复犹疑。",
+  "mock": {
+    "extraction": {
+      "suoyuan": {"text": "这样做是否有意义"},
+      "xiang": {"text": "不确定", "has_direct_evidence": true},
+      "si": {"text": "反复犹疑是否该继续相信", "has_direct_evidence": true}
+    },
+    "elevated_scores": {
+      "疑": 0.87,
+      "信": 0.42
+    },
+    "stage_scores": {
+      "疑": {"ye": 0.72, "xiandai": 0.75, "xiandai_confidence": 0.82},
+      "信": {"ye": 0.38, "xiandai": 0.4, "xiandai_confidence": 0.68}
+    },
+    "reconcile": {
+      "疑|信": "疑"
+    }
+  },
+  "assertions": {
+    "nonzero_final": ["疑"],
+    "zero_final": ["信"]
+  }
+}

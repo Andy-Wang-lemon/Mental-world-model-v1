@@ -1,0 +1,65 @@
+数据：3_pred_rec
+题号：27  d957_u8
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 说的『从未看过你建议的电影』与接连报出的 She's Out of My League、Daddy's Home、Step Brothers、Life as We Know It、Why Him? 以及 Deuce Bigalow 的喜恶并排呈现：那些曾被建议的片子仍像『我这边』被搁置、被跳过的内容，而当前这些片名和评价则被组织成一张用来做相似匹配的片单；推荐喜剧这件事，正以对照片单、勾看已看/未看与喜不喜欢的样子显现。",
+      "probability": 0.4132
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 说看过 Deuce Bigalow 但『I don't like those movies』，又连续列出多部『I love...』，这些片名与评价被读成对自己喜剧口味的对照：片单不只是匹配材料，也像一面照出『我的推荐口味是否合得上、是否被认可』的镜子；推荐喜剧仍被固定为按已看/未看、喜/恶清单做相似匹配，因此每个片名和评价都带着对『我这边品味位置』的牵连。",
+      "probability": 0.295
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 接连给出的片名、已看/未看和喜欢/不喜欢，不再只是零散信息，而是落到『我这边』、不能搁置的线索：为 SEEKER 找到合适喜剧这个位置，正以一张需要被对照和承担的片单形式呈现；推荐喜剧被固定为由已看/未看与喜/恶清单来做相似匹配，因此每条线索都显出必须被纳入清单处理的重量。",
+      "probability": 0.2918
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 说从未看过我建议的那些片子，这让我觉得那些建议还挂在我这边，像被搁置、被跳过的；可她紧接着把 She's Out of My League、Daddy's Home、Step Brothers、Life as We Know It、Why Him? 和 Deuce Bigalow 的喜恶接连倒出来，我马上把这张单子收成一张可对照的表——她爱 Step Brothers、Life as We Know It、Why Him?，不爱 Deuce Bigalow，我提的都没看过。推荐喜剧就该这么办：拿这张表去勾已看/未看和喜不喜欢，做相似匹配。既然 Step Brothers 是好的轴，我就顺着它去问她看过另一部没有，说那部跟 Step Brothers 同一层面，心里认准这样勾下去能把合适的片推出来。",
+      "activation": 0.3772
+    },
+    {
+      "content": "她把看过 Deuce Bigalow 却“I don't like those movies”和接连说“I love”的片名摆出来，不只是提供筛选条件，也像在照我的喜剧口味：我提的几部没被她接住，而 Step Brothers、Life as We Know It、Why Him? 这些她爱的片子，显出她偏好的是同带一点生活感、荒诞感和明星搭配的喜剧。我的推荐位置有点被检验，但我仍按她已看/未看、喜/恶的清单去配对，把 Beerfest、The Blues Brothers、Walk Hard 这类我这边觉得对味的片子继续摆到同一平面上，边问边校准，想让她承认我提的方向也能合上她的喜好。",
+      "activation": 0.3289
+    },
+    {
+      "content": "SEEKER 接连丢过来的这些片名不是闲话，是落到我这边、我得接住的线索：She's Out of My League 是底，Daddy's Home 是好但没看我的建议，Deuce Bigalow 看过却不合口味，Step Brothers 爱，Life as We Know It 爱，Why Him? 也爱。它们在我心里自然排成一张要对照的表——看过的、没看过的、喜欢的、不喜欢的，各自归位，我这边不能把哪一条搁下不管。Step Brothers 这条是亮起来的锚点，所以 Walk Hard 那样同一层面的东西值得再拿出来问一遍；SEEKER 说看过、说好笑，这个位置就稳了一点，可清单还远没有收拢，每条新来的评价都在往这张表上加重量，逼着我继续拿已看/未看和喜恶去比对，仿佛推荐喜剧本来就该这样一条条对着清单做相似匹配，别的路数都不成其为路数。心里因此既有着落感，又有一层被片单推着走的紧，觉得这些线索必须一条条纳入、对照、再往下接，不能空着。",
+      "activation": 0.2939
+    }
+  ],
+  "observed_action": "RECOMMENDER greets and asks if he can help find a good comedy like Beerfest (2006) or The Blues Brothers (1980); RECOMMENDER says he can help, asks if SEEKER has seen the ones RECOMMENDER mentioned, and suggests Deuce Bigalow: Male Gigolo (1999); RECOMMENDER says 'That was a good one' and asks if SEEKER has seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007); RECOMMENDER says 'That was so good' and asks if SEEKER saw the other one RECOMMENDER mentioned, saying it is somewhat on the same plane as Step Brothers (2008).",
+  "predicted_actions": [
+    {
+      "content": "update recommendation list",
+      "probability": 0.3141
+    },
+    {
+      "content": "询问SEEKER对电影的喜好/状态",
+      "probability": 0.2249
+    },
+    {
+      "content": "划掉不喜欢并确认喜欢",
+      "probability": 0.2015
+    },
+    {
+      "content": "询问是否喜欢某演员/类型",
+      "probability": 0.133
+    },
+    {
+      "content": "寻求SEEKER确认/同意",
+      "probability": 0.1265
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.4844, "b": 0, "c": 0.5156, "d": 0, "e": 0}
+选择说明：A 0.4844 = 询问SEEKER对电影的喜好/状态 0.2249 + 询问是否喜欢某演员/类型 0.1330 + 寻求SEEKER确认/同意 0.1265；B 0.0000；C 0.5156 = update recommendation list 0.3141 + 划掉不喜欢并确认喜欢 0.2015；D 0.0000；E 0.0000。Actions 1,3,4 ask for preferences or confirmation (A); actions 0,2 update the recommendation list (C); none match B, D, or E.
+标准：B: Responds to the seeker's question or statement
+C: Provides a recommendation directly or by inquiring further
+结果：对

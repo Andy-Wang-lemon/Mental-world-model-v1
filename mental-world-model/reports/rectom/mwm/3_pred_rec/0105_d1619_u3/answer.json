@@ -1,0 +1,47 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 105,
+  "item_id": "d1619_u3",
+  "dialogue_id": "1619",
+  "utterance_pos": 3,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement\nC: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.\nRECOMMENDER says: im good yourself?\nSEEKER says: I love movies like Double Jeopardy  (1999)；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.\nRECOMMENDER says: im good yourself?\nSEEKER says: I love movies like Double Jeopardy  (1999)；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.35,
+    "b": 0.45,
+    "c": 0.85,
+    "d": 0.25,
+    "e": 0.15
+  },
+  "score_reason": "The seeker has stated a movie preference, so the recommender should next provide or pursue a recommendation.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

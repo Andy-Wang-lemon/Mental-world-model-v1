@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0134_d2214_u7",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- SEEKER is looking for a movie similar to *Alien* (1979) or *Halloween* (1978).\n- SEEKER loved the *A Nightmare on Elm Street* series.\n- SEEKER watched the *Friday the 13th* series but was not as into it.\n- SEEKER found *The Thing* (1982) fun.\n- SEEKER also found *The Blob* (1988) fun.\n- RECOMMENDER has already been offering suggestions by asking whether SEEKER has seen or would like certain movies.\n\nRECOMMENDER does not know:\n- Which specific next movie SEEKER has or has not seen.\n- Whether SEEKER prefers sci-fi horror, slasher horror, creature features, practical effects, etc.\n- Whether SEEKER wants another recommendation immediately or wants to discuss the already-mentioned films.\n- Any streaming availability, era, or content constraints SEEKER may have.\n\nGiven that SEEKER’s last utterance is positive feedback plus another liked movie, and RECOMMENDER’s ongoing goal is to recommend similar films, the most likely next strategy is to continue offering a recommendation, probably by asking about another film. That matches option C.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

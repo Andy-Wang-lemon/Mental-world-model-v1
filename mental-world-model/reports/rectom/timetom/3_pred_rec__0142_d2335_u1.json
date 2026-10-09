@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0142_d2335_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: \"Hello! Happy New Year!\"",
+      "belief_before": "No prior dialogue context; the recommender does not yet know the seeker or their recommendation needs.",
+      "belief_update": "The seeker is opening the conversation with a polite greeting and a New Year wish, but has not yet stated any recommendation request or preference.",
+      "belief_after": "The seeker is friendly and appears to be initiating a conversation; no concrete recommendation need or preference is known yet.",
+      "emotion": "Positive and receptive, with a courteous social tone.",
+      "intention": "Reciprocate the greeting politely and invite the seeker to explain what they are looking for.",
+      "conversational_goal": "Acknowledge the greeting, maintain rapport, and prompt the seeker toward stating their recommendation request.",
+      "preferences": "No seeker preferences are known yet; the recommender has no task-specific preference beyond being ready to assist.",
+      "reaction_to_other": "Likely interprets the seeker as polite and approachable.",
+      "changes_previous_interpretation": "No previous interpretation exists; this turn initializes the recommender's model of the seeker."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: \\\"Hello! Happy New Year!\\\"\",\n    \"belief_before\": \"No prior dialogue context; the recommender does not yet know the seeker or their recommendation needs.\",\n    \"belief_update\": \"The seeker is opening the conversation with a polite greeting and a New Year wish, but has not yet stated any recommendation request or preference.\",\n    \"belief_after\": \"The seeker is friendly and appears to be initiating a conversation; no concrete recommendation need or preference is known yet.\",\n    \"emotion\": \"Positive and receptive, with a courteous social tone.\",\n    \"intention\": \"Reciprocate the greeting politely and invite the seeker to explain what they are looking for.\",\n    \"conversational_goal\": \"Acknowledge the greeting, maintain rapport, and prompt the seeker toward stating their recommendation request.\",\n    \"preferences\": \"No seeker preferences are known yet; the recommender has no task-specific preference beyond being ready to assist.\",\n    \"reaction_to_other\": \"Likely interprets the seeker as polite and approachable.\",\n    \"changes_previous_interpretation\": \"No previous interpretation exists; this turn initializes the recommender's model of the seeker.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "e",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

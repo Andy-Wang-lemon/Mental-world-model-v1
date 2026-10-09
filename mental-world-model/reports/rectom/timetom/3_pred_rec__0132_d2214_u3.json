@@ -1,0 +1,61 @@
+{
+  "id": "3_pred_rec__0132_d2214_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hello. I've been hoping to find a movie similar to Alien (1979) or Halloween (1978).",
+      "belief_before": "No prior beliefs about this seeker.",
+      "belief_update": "Seeker is looking for a movie similar to Alien (1979) or Halloween (1978).",
+      "belief_after": "Seeker likely enjoys sci-fi horror and classic slasher/horror films.",
+      "emotion": "Attentive and helpful.",
+      "intention": "Understand the request and prepare a suitable recommendation.",
+      "conversational_goal": "Acknowledge the request and offer a movie that fits the stated preferences.",
+      "information_available": "Seeker's greeting and stated desire for a movie similar to Alien or Halloween.",
+      "preferences": "Interest in Alien and Halloween implies liking sci-fi horror and classic slasher/horror.",
+      "reaction_to_other": "Neutral-positive; sees seeker as a horror fan with specific reference points.",
+      "changes_previous_interpretation": "N/A (initial turn)."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: How about A Nightmare on Elm Street (1984).",
+      "belief_before": "Seeker wants a movie similar to Alien or Halloween.",
+      "belief_update": "Recommender considers A Nightmare on Elm Street a plausible horror/slasher/supernatural match.",
+      "belief_after": "Recommender believes this recommendation may satisfy the seeker's request.",
+      "emotion": "Helpful, optimistic.",
+      "intention": "Offer a specific movie recommendation.",
+      "conversational_goal": "Suggest a candidate and check if the seeker likes it.",
+      "information_available": "Seeker's turn 1 request; recommender's own knowledge of horror films.",
+      "preferences": "Seeker likely enjoys horror, especially slasher/supernatural horror.",
+      "reaction_to_other": "Responsive to the seeker's stated preferences.",
+      "changes_previous_interpretation": "No change to the earlier interpretation; converts it into a concrete recommendation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: I loved that series as well.",
+      "belief_before": "Recommender believed A Nightmare on Elm Street might match the seeker's horror/slasher preferences.",
+      "belief_update": "Seeker confirms they loved the A Nightmare on Elm Street series, so the recommendation was successful and their horror-franchise interest is broad.",
+      "belief_after": "Recommender is more confident the seeker enjoys classic horror/slasher series and may welcome similar suggestions.",
+      "emotion": "Pleased, encouraged, positive.",
+      "intention": "Continue recommending similar horror/slasher movies or ask for more preferences.",
+      "conversational_goal": "Build on the successful recommendation and maintain rapport while refining the next suggestion.",
+      "information_available": "Seeker's turn 1 request, recommender's turn 2 recommendation, and seeker's turn 3 response.",
+      "preferences": "Seeker loved the Nightmare on Elm Street series as well, strengthening evidence for broad horror/slasher franchise fandom.",
+      "reaction_to_other": "Positive; sees seeker as receptive and knowledgeable.",
+      "changes_previous_interpretation": "Yes: earlier inference becomes confirmed preference; confidence increases."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hello. I've been hoping to find a movie similar to Alien (1979) or Halloween (1978).\",\n    \"belief_before\": \"No prior beliefs about this seeker.\",\n    \"belief_update\": \"Seeker is looking for a movie similar to Alien (1979) or Halloween (1978).\",\n    \"belief_after\": \"Seeker likely enjoys sci-fi horror and classic slasher/horror films.\",\n    \"emotion\": \"Attentive and helpful.\",\n    \"intention\": \"Understand the request and prepare a suitable recommendation.\",\n    \"conversational_goal\": \"Acknowledge the request and offer a movie that fits the stated preferences.\",\n    \"information_available\": \"Seeker's greeting and stated desire for a movie similar to Alien or Halloween.\",\n    \"preferences\": \"Interest in Alien and Halloween implies liking sci-fi horror and classic slasher/horror.\",\n    \"reaction_to_other\": \"Neutral-positive; sees seeker as a horror fan with specific reference points.\",\n    \"changes_previous_interpretation\": \"N/A (initial turn).\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: How about A Nightmare on Elm Street (1984).\",\n    \"belief_before\": \"Seeker wants a movie similar to Alien or Halloween.\",\n    \"belief_update\": \"Recommender considers A Nightmare on Elm Street a plausible horror/slasher/supernatural match.\",\n    \"belief_after\": \"Recommender believes this recommendation may satisfy the seeker's request.\",\n    \"emotion\": \"Helpful, optimistic.\",\n    \"intention\": \"Offer a specific movie recommendation.\",\n    \"conversational_goal\": \"Suggest a candidate and check if the seeker likes it.\",\n    \"information_available\": \"Seeker's turn 1 request; recommender's own knowledge of horror films.\",\n    \"preferences\": \"Seeker likely enjoys horror, especially slasher/supernatural horror.\",\n    \"reaction_to_other\": \"Responsive to the seeker's stated preferences.\",\n    \"changes_previous_interpretation\": \"No change to the earlier interpretation; converts it into a concrete recommendation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: I loved that series as well.\",\n    \"belief_before\": \"Recommender believed A Nightmare on Elm Street might match the seeker's horror/slasher preferences.\",\n    \"belief_update\": \"Seeker confirms they loved the A Nightmare on Elm Street series, so the recommendation was successful and their horror-franchise interest is broad.\",\n    \"belief_after\": \"Recommender is more confident the seeker enjoys classic horror/slasher series and may welcome similar suggestions.\",\n    \"emotion\": \"Pleased, encouraged, positive.\",\n    \"intention\": \"Continue recommending similar horror/slasher movies or ask for more preferences.\",\n    \"conversational_goal\": \"Build on the successful recommendation and maintain rapport while refining the next suggestion.\",\n    \"information_available\": \"Seeker's turn 1 request, recommender's turn 2 recommendation, and seeker's turn 3 response.\",\n    \"preferences\": \"Seeker loved the Nightmare on Elm Street series as well, strengthening evidence for broad horror/slasher franchise fandom.\",\n    \"reaction_to_other\": \"Positive; sees seeker as receptive and knowledgeable.\",\n    \"changes_previous_interpretation\": \"Yes: earlier inference becomes confirmed preference; confidence increases.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

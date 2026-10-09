@@ -1,0 +1,66 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 59,
+  "item_id": "d1057_u1",
+  "dialogue_id": "1057",
+  "utterance_pos": 1,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "e"
+  ],
+  "gold_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "这声“Hello!”在RECOMMENDER的经验中成了专门冲着自己而来的招呼：自己是被对方寻找和联系的一方，这个说话者因此被呈现为一个带着待满足的需求来接触自己的人。",
+        "probability": 0.625
+      },
+      {
+        "content": "在RECOMMENDER所缘到的世界里，“Hello!”这一句话被组织为一个朝向“推荐者”而来的招呼；RECOMMENDER将对方执取为一位前来寻求服务的用户，并把彼此当下的关系执取为服务关系。同时，RECOMMENDER以“用户主动向推荐者说话就意味着对方有需求待满足”这一固定理解，把这一声问候捕捉为对方带着需求前来接洽的信号。",
+        "probability": 0.375
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这声“Hello!”是专门冲着我来的，对方主动找到我、向我开口，说明他带着某种需要来接触我。我因此把自己放在被求助、被寻找的位置上，并倾向于把接下来的互动看作一次需要由我来承接和回应的请求。",
+        "activation": 0.625
+      },
+      {
+        "content": "RECOMMENDER将这声‘Hello!’认定为一位用户主动前来接洽的信号，心中明确对方是带着需求来找自己这位推荐者的。它随即把眼前的互动定位成服务关系的开端，感到自己应当承担起回应用户期待的责任。这声招呼被它看作进入服务流程的自然入口，内心已升起一种准备倾听并着手满足对方需求的造作趋向。",
+        "activation": 0.375
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": [
+      {
+        "content": "greet and offer help",
+        "probability": 0.625
+      },
+      {
+        "content": "询问需求",
+        "probability": 0.24
+      },
+      {
+        "content": "问候并等待",
+        "probability": 0.135
+      }
+    ]
+  },
+  "predicted_answer": "e",
+  "adapter_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "option_scores": {
+    "a": 0.24,
+    "b": 0,
+    "c": 0,
+    "d": 0,
+    "e": 0.76
+  },
+  "score_reason": "A 0.2400 = 询问需求 0.2400；B 0.0000；C 0.0000；D 0.0000；E 0.7600 = greet and offer help 0.6250 + 问候并等待 0.1350。Greeting actions map to E, while asking needs maps to asking preference under A.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

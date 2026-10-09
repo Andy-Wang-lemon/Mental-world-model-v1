@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 70,
+  "item_id": "d1127_u8",
+  "dialogue_id": "1127",
+  "utterance_pos": 8,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi, what movies you do like?\nSEEKER says: Hello I'm looking for a good Christmas movie, any genre.\nRECOMMENDER says: Okay, well Elf  (2003)  is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990) \nSEEKER says: I haven't seen Elf  (2003)  but I love Home Alone (1990) \nRECOMMENDER says: Elf is a funny movie to lift the spirits. The Holiday (2006)  is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi, what movies you do like?\nSEEKER says: Hello I'm looking for a good Christmas movie, any genre.\nRECOMMENDER says: Okay, well Elf  (2003)  is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990) \nSEEKER says: I haven't seen Elf  (2003)  but I love Home Alone (1990) \nRECOMMENDER says: Elf is a funny movie to lift the spirits. The Holiday (2006)  is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.4,
+    "b": 0.3,
+    "c": 0.9,
+    "d": 0.6,
+    "e": 0.1
+  },
+  "score_reason": "The record shows RECOMMENDER directly providing multiple Christmas movie recommendations, so C is most directly supported.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "No predicted next action or thought about what to do next is provided.",
+  "audit_level": "inferred"
+}

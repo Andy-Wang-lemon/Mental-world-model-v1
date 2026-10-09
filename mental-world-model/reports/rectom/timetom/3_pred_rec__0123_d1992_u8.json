@@ -1,0 +1,99 @@
+{
+  "id": "3_pred_rec__0123_d1992_u8",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'hi what kind of movies do you like'",
+      "belief_before": "No prior information about the seeker's movie tastes.",
+      "belief_update": "No user information yet; this is an opening prompt.",
+      "belief_after": "The seeker has not yet expressed preferences; I need to ask an opening question.",
+      "emotion": "Neutral and friendly.",
+      "intention": "Elicit the user's general movie preferences.",
+      "conversational_goal": "Open the recommendation dialogue and identify a starting genre."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Hi, how are you? I am looking for some good action movies, could you help?'",
+      "belief_before": "I asked about movie types; no specific preference known yet.",
+      "belief_update": "This changes the interpretation from unknown to clear: the seeker wants action movies and is asking for help.",
+      "belief_after": "The seeker is interested in action movies and is open to recommendations.",
+      "emotion": "Engaged and helpful.",
+      "intention": "Clarify the kind of action movie the seeker wants.",
+      "conversational_goal": "Narrow down the action subgenre before recommending."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: 'do you like hard core action or fun family action?'",
+      "belief_before": "The seeker wants action movies, but the specific style is unknown.",
+      "belief_update": "No new user information; I am asking a clarifying question.",
+      "belief_after": "The seeker has not answered yet; two possible action preferences are on the table.",
+      "emotion": "Curious and probing.",
+      "intention": "Get the seeker to choose between hardcore and lighter/family action.",
+      "conversational_goal": "Refine the recommendation criteria."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: 'i love movies like Abduction (2011) and movies like Speed (1994) with Keanu Reeves. They could be either or I like both kinds of action films.'",
+      "belief_before": "The seeker likes action but I do not know which subgenre.",
+      "belief_update": "This changes the interpretation: the seeker likes both hardcore and family/fun action, with examples including Abduction and Speed.",
+      "belief_after": "The seeker has broad action tastes; either style is acceptable.",
+      "emotion": "Satisfied and informed.",
+      "intention": "Use the examples and broad preference to choose a recommendation.",
+      "conversational_goal": "Recommend an action movie likely to match a broad, enthusiastic action fan."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER says: 'a good old fun one that never gets old is Mad Max (1979)'",
+      "belief_before": "The seeker likes both action styles and gave examples from the 1990s/2010s.",
+      "belief_update": "I decide to recommend a classic fun action film; no new seeker information.",
+      "belief_after": "Mad Max (1979) is proposed as a candidate; the seeker's reaction is still unknown.",
+      "emotion": "Confident and nostalgic.",
+      "intention": "Offer a well-regarded fun action classic.",
+      "conversational_goal": "Make an initial recommendation that fits the seeker's stated broad action preference."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says: 'I liked that one, but I thought Mad Max: Fury Road (2015) the newer one with Tom Hardy better'",
+      "belief_before": "I recommended the original Mad Max and thought it could be a good fit.",
+      "belief_update": "This changes the interpretation: the seeker has seen the original and liked it, but prefers the newer, more modern Fury Road.",
+      "belief_after": "The seeker favors newer, more modern high-octane action over older classics.",
+      "emotion": "A bit recalibrated; noting a clear preference.",
+      "intention": "Adjust future recommendations toward more contemporary action films.",
+      "conversational_goal": "Pivot from older action to more recent high-energy action movies."
+    },
+    {
+      "time": 7,
+      "observed": "RECOMMENDER says: 'of course - the most popular one out right now is Star Wars: Episode VIII – The Last Jedi (2017)'",
+      "belief_before": "The seeker prefers newer action like Mad Max: Fury Road.",
+      "belief_update": "No new seeker information; I choose a popular recent blockbuster as the next suggestion.",
+      "belief_after": "Star Wars: The Last Jedi is recommended; I assume its popularity and modern action will appeal.",
+      "emotion": "Optimistic and enthusiastic.",
+      "intention": "Recommend a currently popular, modern action-heavy movie.",
+      "conversational_goal": "Suggest a widely liked recent film that might match the preference for newer action."
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER says: 'I could never get into the Star Wars movies'",
+      "belief_before": "I recommended Star Wars: The Last Jedi as a popular modern choice.",
+      "belief_update": "This changes the interpretation: the seeker is not interested in the Star Wars franchise, so that recommendation was off-target.",
+      "belief_after": "Avoid Star Wars/sci-fi franchise suggestions; continue looking for a different modern action film.",
+      "emotion": "Slightly disappointed but accepting and recalibrating.",
+      "intention": "Acknowledge the mismatch and seek another action recommendation that fits better.",
+      "conversational_goal": "Recover from the rejected recommendation and find a more suitable modern action movie."
+    }
+  ],
+  "temporal_state_raw": "```json\n[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'hi what kind of movies do you like'\",\n    \"belief_before\": \"No prior information about the seeker's movie tastes.\",\n    \"belief_update\": \"No user information yet; this is an opening prompt.\",\n    \"belief_after\": \"The seeker has not yet expressed preferences; I need to ask an opening question.\",\n    \"emotion\": \"Neutral and friendly.\",\n    \"intention\": \"Elicit the user's general movie preferences.\",\n    \"conversational_goal\": \"Open the recommendation dialogue and identify a starting genre.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Hi, how are you? I am looking for some good action movies, could you help?'\",\n    \"belief_before\": \"I asked about movie types; no specific preference known yet.\",\n    \"belief_update\": \"This changes the interpretation from unknown to clear: the seeker wants action movies and is asking for help.\",\n    \"belief_after\": \"The seeker is interested in action movies and is open to recommendations.\",\n    \"emotion\": \"Engaged and helpful.\",\n    \"intention\": \"Clarify the kind of action movie the seeker wants.\",\n    \"conversational_goal\": \"Narrow down the action subgenre before recommending.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: 'do you like hard core action or fun family action?'\",\n    \"belief_before\": \"The seeker wants action movies, but the specific style is unknown.\",\n    \"belief_update\": \"No new user information; I am asking a clarifying question.\",\n    \"belief_after\": \"The seeker has not answered yet; two possible action preferences are on the table.\",\n    \"emotion\": \"Curious and probing.\",\n    \"intention\": \"Get the seeker to choose between hardcore and lighter/family action.\",\n    \"conversational_goal\": \"Refine the recommendation criteria.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: 'i love movies like Abduction (2011) and movies like Speed (1994) with Keanu Reeves. They could be either or I like both kinds of action films.'\",\n    \"belief_before\": \"The seeker likes action but I do not know which subgenre.\",\n    \"belief_update\": \"This changes the interpretation: the seeker likes both hardcore and family/fun action, with examples including Abduction and Speed.\",\n    \"belief_after\": \"The seeker has broad action tastes; either style is acceptable.\",\n    \"emotion\": \"Satisfied and informed.\",\n    \"intention\": \"Use the examples and broad preference to choose a recommendation.\",\n    \"conversational_goal\": \"Recommend an action movie likely to match a broad, enthusiastic action fan.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER says: 'a good old fun one that never gets old is Mad Max (1979)'\",\n    \"belief_before\": \"The seeker likes both action styles and gave examples from the 1990s/2010s.\",\n    \"belief_update\": \"I decide to recommend a classic fun action film; no new seeker information.\",\n    \"belief_after\": \"Mad Max (1979) is proposed as a candidate; the seeker's reaction is still unknown.\",\n    \"emotion\": \"Confident and nostalgic.\",\n    \"intention\": \"Offer a well-regarded fun action classic.\",\n    \"conversational_goal\": \"Make an initial recommendation that fits the seeker's stated broad action preference.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says: 'I liked that one, but I thought Mad Max: Fury Road (2015) the newer one with Tom Hardy better'\",\n    \"belief_before\": \"I recommended the original Mad Max and thought it could be a good fit.\",\n    \"belief_update\": \"This changes the interpretation: the seeker has seen the original and liked it, but prefers the newer, more modern Fury Road.\",\n    \"belief_after\": \"The seeker favors newer, more modern high-octane action over older classics.\",\n    \"emotion\": \"A bit recalibrated; noting a clear preference.\",\n    \"intention\": \"Adjust future recommendations toward more contemporary action films.\",\n    \"conversational_goal\": \"Pivot from older action to more recent high-energy action movies.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"RECOMMENDER says: 'of course - the most popular one out right now is Star Wars: Episode VIII – The Last Jedi (2017)'\",\n    \"belief_before\": \"The seeker prefers newer action like Mad Max: Fury Road.\",\n    \"belief_update\": \"No new seeker information; I choose a popular recent blockbuster as the next suggestion.\",\n    \"belief_after\": \"Star Wars: The Last Jedi is recommended; I assume its popularity and modern action will appeal.\",\n    \"emotion\": \"Optimistic and enthusiastic.\",\n    \"intention\": \"Recommend a currently popular, modern action-heavy movie.\",\n    \"conversational_goal\": \"Suggest a widely liked recent film that might match the preference for newer action.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER says: 'I could never get into the Star Wars movies'\",\n    \"belief_before\": \"I recommended Star Wars: The Last Jedi as a popular modern choice.\",\n    \"belief_update\": \"This changes the interpretation: the seeker is not interested in the Star Wars franchise, so that recommendation was off-target.\",\n    \"belief_after\": \"Avoid Star Wars/sci-fi franchise suggestions; continue looking for a different modern action film.\",\n    \"emotion\": \"Slightly disappointed but accepting and recalibrating.\",\n    \"intention\": \"Acknowledge the mismatch and seek another action recommendation that fits better.\",\n    \"conversational_goal\": \"Recover from the rejected recommendation and find a more suitable modern action movie.\"\n  }\n]\n```",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

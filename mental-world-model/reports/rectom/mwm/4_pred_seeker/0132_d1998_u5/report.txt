@@ -1,0 +1,29 @@
+数据：4_pred_seeker
+题号：132  d1998_u5
+焦点：SEEKER
+原题：What strategy will SEEKER use next?
+MWM：
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hey how's it going?...What type of movies are you looking for?\nSEEKER says: It's going well, thank you for asking. I am looking for some good comedy movies, do you think you could help?...Some of my favorite movies are Bridesmaids  (2011)  and Superbad  (2007) \nRECOMMENDER says: Have you seen Airplane! (1980)  or The Naked Gun  ? Those are older but very funny....Step Brothers  (2008)  is funny if you like kind of gross humor...Office Space (1999)  is one movie I think is funny；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hey how's it going?...What type of movies are you looking for?\nSEEKER says: It's going well, thank you for asking. I am looking for some good comedy movies, do you think you could help?...Some of my favorite movies are Bridesmaids  (2011)  and Superbad  (2007) \nRECOMMENDER says: Have you seen Airplane! (1980)  or The Naked Gun  ? Those are older but very funny....Step Brothers  (2008)  is funny if you like kind of gross humor...Office Space (1999)  is one movie I think is funny；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：A: Give feedback on the previously recommended movie or suggestion
+分数：{"a": 0.85, "b": 0.55, "c": 0.4, "d": 0.2}
+选择说明：After the recommender's suggestions, the seeker is most directly positioned to give feedback on those options.
+标准：D: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：No predicted next action is provided; only past dialogue shows greeting/gratitude or chit-chat.

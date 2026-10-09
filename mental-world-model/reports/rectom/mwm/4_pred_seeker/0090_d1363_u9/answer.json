@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 90,
+  "item_id": "d1363_u9",
+  "dialogue_id": "1363",
+  "utterance_pos": 9,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Hi...What kind of movies are you into?\nSEEKER says: I'm really into mystery movies....Maybe a good psychological thriller.\nRECOMMENDER says: Okay well Seven  (1995)  is a great thriller with Brad Pitt\nSEEKER says: Do you have any recomendations?\nRECOMMENDER says: Along with Black Swan  (2010) \nSEEKER says: Oh great! I love Brad Pitt....I heard black swan was more of drama. DO you have any other suggestions?\nRECOMMENDER says: That movie is amazing. It starrs brad pitt and morgan；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Hi...What kind of movies are you into?\nSEEKER says: I'm really into mystery movies....Maybe a good psychological thriller.\nRECOMMENDER says: Okay well Seven  (1995)  is a great thriller with Brad Pitt\nSEEKER says: Do you have any recomendations?\nRECOMMENDER says: Along with Black Swan  (2010) \nSEEKER says: Oh great! I love Brad Pitt....I heard black swan was more of drama. DO you have any other suggestions?\nRECOMMENDER says: That movie is amazing. It starrs brad pitt and morgan；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.3,
+    "b": 0.4,
+    "c": 0.9,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER's last turn explicitly asks for other suggestions, and the recommender's reply did not provide new options, so the next strategy is to ask for a recommendation or express preference.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record contains no predicted next actions; only the past dialogue (e.g., \"Oh great!\") hints at a gratitude/chit-chat strategy, so the connection is only inferable.",
+  "audit_level": "inferred"
+}

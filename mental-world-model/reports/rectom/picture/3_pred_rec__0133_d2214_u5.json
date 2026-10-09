@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0133_d2214_u5",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER is looking for a movie similar to *Alien* (1979) or *Halloween* (1978). SEEKER loved *A Nightmare on Elm Street* (1984), and SEEKER has seen *Friday the 13th* (1980) but was not very into it. RECOMMENDER does not know precisely why SEEKER disliked *Friday the 13th*, nor SEEKER’s finer-grained preferences, nor whether SEEKER has seen other possible horror movies.\n\nGiven this, RECOMMENDER is still in a recommendation cycle and has just received mildly negative feedback about *Friday the 13th*. The likely next move is to continue narrowing down options by offering another recommendation, often indirectly by asking whether SEEKER has seen another similar title. This matches option C.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

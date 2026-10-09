@@ -1,0 +1,13 @@
+{
+  "id": "3_pred_rec__0173_d2630_u6",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "The RECOMMENDER has access to:\n\n- Their own greeting and question: “Hi... What genre do you like?”\n- The SEEKER’s reply: “I like dramas.”\n- Their own question: “Have you ever seen Rumpelstiltskin (1995)?” and their own comment: “That is more of a horror movie though. Do you like horror?”\n- The SEEKER’s reply: “no, i don't like horror...i like dramas.”\n- Their own follow-up question: “Have you ever seen There Will Be Blood (2007)?”\n- The SEEKER’s reply: “yes, love that one.”\n\nThe RECOMMENDER knows the SEEKER prefers dramas, dislikes horror, and has seen and loved *There Will Be Blood*. The RECOMMENDER does not know whether the SEEKER has actually seen *Rumpelstiltskin*, because the SEEKER never directly answered that question.",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

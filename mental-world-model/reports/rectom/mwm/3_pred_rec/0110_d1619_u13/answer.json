@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 110,
+  "item_id": "d1619_u13",
+  "dialogue_id": "1619",
+  "utterance_pos": 13,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "e"
+  ],
+  "gold_output": "E: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.\nRECOMMENDER says: im good yourself?\nSEEKER says: I love movies like Double Jeopardy  (1999) \nRECOMMENDER says: Okay let me see....... have you seen The Resident (2011)  with Hilary Swank?...Also Nocturnal Animals  (2016)  is also a good one.\nSEEKER says: Kiss the Girls  (1997)  is another one my favorites. Is that the movie when the guy from greys anatomy is a stalker and looks in her room?...Because that is a great；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.\nRECOMMENDER says: im good yourself?\nSEEKER says: I love movies like Double Jeopardy  (1999) \nRECOMMENDER says: Okay let me see....... have you seen The Resident (2011)  with Hilary Swank?...Also Nocturnal Animals  (2016)  is also a good one.\nSEEKER says: Kiss the Girls  (1997)  is another one my favorites. Is that the movie when the guy from greys anatomy is a stalker and looks in her room?...Because that is a great；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "b",
+  "adapter_output": "B: Responds to the seeker's question or statement",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.9,
+    "c": 0.6,
+    "d": 0.5,
+    "e": 0.1
+  },
+  "score_reason": "The seeker just asked a question about Kiss the Girls, so the recommender most directly responds to that question or statement.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "The record has no predicted next actions and no thought about doing a greeting, gratitude, or chit-chat next.",
+  "audit_level": "inferred"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "4_pred_seeker__0069_d1127_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: 'Hi, what movies you do like?'",
+      "information_available": "SEEKER hears a greeting and a question asking what movies SEEKER likes. No specific movie preferences or recommendation options have been provided yet.",
+      "preferences": "Not yet stated in the dialogue; SEEKER has not revealed any movie likes or dislikes.",
+      "belief_before": "No prior dialogue-based beliefs about this recommender or any recommendations.",
+      "belief_update": "SEEKER learns that the recommender is asking for SEEKER's movie preferences.",
+      "belief_after": "SEEKER believes the recommender is asking about movie likes, likely to offer recommendations based on them.",
+      "emotion": "Neutral/polite; possibly expectant.",
+      "intention": "Respond to the recommender and engage in the recommendation dialogue.",
+      "reaction_to_other_speaker": "Accepts the greeting and question without negative reaction.",
+      "conversational_goal": "Answer the recommender's question or move toward stating what SEEKER wants.",
+      "changes_previous_interpretation": "None; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: 'Hello I'm looking for a good Christmas movie, any genre.'",
+      "information_available": "SEEKER has heard the recommender ask what movies SEEKER likes. SEEKER now provides their own request: a good Christmas movie, any genre.",
+      "preferences": "Wants a good Christmas movie; genre is unrestricted.",
+      "belief_before": "SEEKER believes the recommender can help find movies based on stated preferences.",
+      "belief_update": "SEEKER expresses and clarifies their own request to guide the recommender.",
+      "belief_after": "SEEKER believes the recommender now knows the target category is Christmas movies, with any genre acceptable.",
+      "emotion": "Hopeful/positive.",
+      "intention": "Ask for recommendations for a good Christmas movie.",
+      "reaction_to_other_speaker": "Responds to the recommender's question by giving a more specific request.",
+      "conversational_goal": "Obtain Christmas movie recommendations from the recommender.",
+      "changes_previous_interpretation": "Yes; the prior open preference question is narrowed to a Christmas movie request, any genre."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: 'Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)'",
+      "information_available": "SEEKER hears two recommendations: Elf (2003), described as a funny Christmas movie with Will Ferrel, and Home Alone (1990), described as a classic.",
+      "preferences": "Wants a good Christmas movie; any genre. The recommender's descriptions may match that preference, but SEEKER has not yet chosen.",
+      "belief_before": "SEEKER believes the recommender may offer Christmas movie options based on the earlier request.",
+      "belief_update": "SEEKER learns that Elf is a funny Christmas movie with Will Ferrel and that Home Alone is a classic Christmas movie.",
+      "belief_after": "SEEKER now has two concrete candidate Christmas movies to consider.",
+      "emotion": "Interested/considering; possibly appreciative.",
+      "intention": "Evaluate the recommendations, choose one, or ask for more details or options.",
+      "reaction_to_other_speaker": "Likely receptive to the recommender's suggestions; no rejection is indicated.",
+      "conversational_goal": "Narrow toward selecting a good Christmas movie from the recommended options.",
+      "changes_previous_interpretation": "Yes; the dialogue moves from a request for Christmas movies to receiving specific candidate recommendations."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: 'Hi, what movies you do like?'\",\n    \"information_available\": \"SEEKER hears a greeting and a question asking what movies SEEKER likes. No specific movie preferences or recommendation options have been provided yet.\",\n    \"preferences\": \"Not yet stated in the dialogue; SEEKER has not revealed any movie likes or dislikes.\",\n    \"belief_before\": \"No prior dialogue-based beliefs about this recommender or any recommendations.\",\n    \"belief_update\": \"SEEKER learns that the recommender is asking for SEEKER's movie preferences.\",\n    \"belief_after\": \"SEEKER believes the recommender is asking about movie likes, likely to offer recommendations based on them.\",\n    \"emotion\": \"Neutral/polite; possibly expectant.\",\n    \"intention\": \"Respond to the recommender and engage in the recommendation dialogue.\",\n    \"reaction_to_other_speaker\": \"Accepts the greeting and question without negative reaction.\",\n    \"conversational_goal\": \"Answer the recommender's question or move toward stating what SEEKER wants.\",\n    \"changes_previous_interpretation\": \"None; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: 'Hello I'm looking for a good Christmas movie, any genre.'\",\n    \"information_available\": \"SEEKER has heard the recommender ask what movies SEEKER likes. SEEKER now provides their own request: a good Christmas movie, any genre.\",\n    \"preferences\": \"Wants a good Christmas movie; genre is unrestricted.\",\n    \"belief_before\": \"SEEKER believes the recommender can help find movies based on stated preferences.\",\n    \"belief_update\": \"SEEKER expresses and clarifies their own request to guide the recommender.\",\n    \"belief_after\": \"SEEKER believes the recommender now knows the target category is Christmas movies, with any genre acceptable.\",\n    \"emotion\": \"Hopeful/positive.\",\n    \"intention\": \"Ask for recommendations for a good Christmas movie.\",\n    \"reaction_to_other_speaker\": \"Responds to the recommender's question by giving a more specific request.\",\n    \"conversational_goal\": \"Obtain Christmas movie recommendations from the recommender.\",\n    \"changes_previous_interpretation\": \"Yes; the prior open preference question is narrowed to a Christmas movie request, any genre.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: 'Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)'\",\n    \"information_available\": \"SEEKER hears two recommendations: Elf (2003), described as a funny Christmas movie with Will Ferrel, and Home Alone (1990), described as a classic.\",\n    \"preferences\": \"Wants a good Christmas movie; any genre. The recommender's descriptions may match that preference, but SEEKER has not yet chosen.\",\n    \"belief_before\": \"SEEKER believes the recommender may offer Christmas movie options based on the earlier request.\",\n    \"belief_update\": \"SEEKER learns that Elf is a funny Christmas movie with Will Ferrel and that Home Alone is a classic Christmas movie.\",\n    \"belief_after\": \"SEEKER now has two concrete candidate Christmas movies to consider.\",\n    \"emotion\": \"Interested/considering; possibly appreciative.\",\n    \"intention\": \"Evaluate the recommendations, choose one, or ask for more details or options.\",\n    \"reaction_to_other_speaker\": \"Likely receptive to the recommender's suggestions; no rejection is indicated.\",\n    \"conversational_goal\": \"Narrow toward selecting a good Christmas movie from the recommended options.\",\n    \"changes_previous_interpretation\": \"Yes; the dialogue moves from a request for Christmas movies to receiving specific candidate recommendations.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

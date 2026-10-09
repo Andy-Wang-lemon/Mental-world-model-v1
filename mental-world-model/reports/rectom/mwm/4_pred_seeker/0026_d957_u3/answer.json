@@ -1,0 +1,54 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 26,
+  "item_id": "d957_u3",
+  "dialogue_id": "957",
+  "utterance_pos": 3,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "b",
+    "a"
+  ],
+  "gold_output": "B: Add more information about their preferences, such as genres, actors, or past favorites\nA: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "RECOMMENDER给出的三部片名（Beerfest、The Blues Brothers、Deuce Bigalow）像是已经摆在自己面前的一组固定选项，必须逐个纳入考虑并作出回应；同时，自己正被置于‘被推荐者’的位置，‘接下来该由我答复’这个互动中的位置似乎成了与自己不可分的一部分。",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "看到RECOMMENDER一次性列出Beerfest、The Blues Brothers和Deuce Bigalow这几部片名，SEEKER觉得这些像是被摆在自己面前的一组既定选项，似乎需要自己去逐一掂量并作出回应。与此同时，他意识到自己正处在被推荐者的位置上，『接下来该由我答复』这个互动中的位置仿佛已经与自己分不开。他心里其实有自己的喜剧偏好——类似She's Out of My League那种，因此在把那些推荐当作候选的同时，他更想把自己的口味明确说出来，好让对方的推荐不至于偏离自己的期待。",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "SEEKER回应推荐者，表示自己在寻找有趣的喜剧电影，并说明想找与《She's Out of My League》相似的作品。",
+    "predicted_actions": [
+      {
+        "content": "询问候选影片与参照影片的相似性",
+        "probability": 0.55
+      },
+      {
+        "content": "要求按参照影片重新推荐",
+        "probability": 0.45
+      }
+    ]
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.55,
+    "b": 0,
+    "c": 0.45,
+    "d": 0
+  },
+  "score_reason": "A 0.5500 = 询问候选影片与参照影片的相似性 0.5500；B 0.0000；C 0.4500 = 要求按参照影片重新推荐 0.4500；D 0.0000。Action 0 gives feedback on the previous suggestion, while action 1 requests a new recommendation.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

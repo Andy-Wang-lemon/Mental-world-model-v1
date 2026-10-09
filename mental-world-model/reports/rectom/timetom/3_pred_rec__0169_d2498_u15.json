@@ -1,0 +1,184 @@
+{
+  "id": "3_pred_rec__0169_d2498_u15",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER: Hi",
+      "belief_before": "No prior information about SEEKER.",
+      "belief_update": "SEEKER is greeting me and likely wants to interact.",
+      "belief_after": "SEEKER is present and initiating a conversation.",
+      "emotion": "neutral/friendly",
+      "intention": "Respond to the greeting.",
+      "conversational_goal": "Open conversation and discover what SEEKER wants.",
+      "changes_previous_interpretation": "No prior interpretation; establishes initial contact."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER (self): Hello!...What kind of movie do you like?",
+      "belief_before": "SEEKER greeted me.",
+      "belief_update": "I asked about movie preferences; no new SEEKER information yet.",
+      "belief_after": "I need SEEKER's movie preferences.",
+      "emotion": "friendly/curious",
+      "intention": "Ask about SEEKER's movie taste.",
+      "conversational_goal": "Elicit SEEKER's preferences to guide recommendations.",
+      "changes_previous_interpretation": "No conflict; moves from greeting to preference elicitation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)",
+      "belief_before": "SEEKER wants a movie recommendation; preferences were unknown.",
+      "belief_update": "SEEKER likes Good Will Hunting (1997) and wants great movie recommendations.",
+      "belief_after": "SEEKER likely appreciates drama/quality films; I can recommend based on that.",
+      "emotion": "helpful/positive",
+      "intention": "Recommend a movie.",
+      "conversational_goal": "Provide a recommendation aligned with SEEKER's stated liking.",
+      "changes_previous_interpretation": "Adds concrete preference; refines from unknown to Good Will Hunting."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER (self): Well, if you want my all time favorite, it's The Outsiders (1983)",
+      "belief_before": "SEEKER liked Good Will Hunting and asked for recommendations.",
+      "belief_update": "I offered The Outsiders as my all-time favorite; no new SEEKER information.",
+      "belief_after": "Awaiting SEEKER's reaction to The Outsiders.",
+      "emotion": "enthusiastic",
+      "intention": "Share my all-time favorite movie.",
+      "conversational_goal": "Recommend a favorite movie.",
+      "changes_previous_interpretation": "No change in the SEEKER model; action follows stated preference."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER: Seen that a while back.",
+      "belief_before": "I recommended The Outsiders.",
+      "belief_update": "SEEKER has already seen The Outsiders and gives no clear like/dislike.",
+      "belief_after": "The recommendation was not novel; I need another suggestion.",
+      "emotion": "slightly deflated/neutral",
+      "intention": "Adjust and continue recommending.",
+      "conversational_goal": "Find an unseen movie for SEEKER.",
+      "changes_previous_interpretation": "Updates recommendation status: The Outsiders already seen."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER (self): Depends on what type of movie you want to watch...",
+      "belief_before": "SEEKER has seen The Outsiders and has not stated a clear preference.",
+      "belief_update": "I asked for genre/type; no new SEEKER information.",
+      "belief_after": "I need more specific genre preferences.",
+      "emotion": "tentative/considering",
+      "intention": "Narrow down the movie type.",
+      "conversational_goal": "Elicit genre preference to improve recommendation.",
+      "changes_previous_interpretation": "Moves from specific favorite to broader genre clarification."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER: Was good....Any that you like and would recommend...Your top three.",
+      "belief_before": "SEEKER had seen The Outsiders; preferences were still broad.",
+      "belief_update": "SEEKER thought The Outsiders was good and wants my top three recommendations.",
+      "belief_after": "SEEKER liked my favorite and values my taste; I can share more favorites.",
+      "emotion": "encouraged/pleased",
+      "intention": "Provide top three favorites.",
+      "conversational_goal": "Recommend multiple liked movies.",
+      "changes_previous_interpretation": "Confirms positive reaction to The Outsiders; request shifts to top three."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER (self): I loved 50 First Dates (2004) ...so cute!",
+      "belief_before": "SEEKER liked The Outsiders and asked for my top three.",
+      "belief_update": "I recommended 50 First Dates; no new SEEKER information.",
+      "belief_after": "Awaiting SEEKER's reaction to 50 First Dates.",
+      "emotion": "warm/enthusiastic",
+      "intention": "Share a loved movie.",
+      "conversational_goal": "Recommend a favorite romantic comedy.",
+      "changes_previous_interpretation": "No change in the SEEKER model; adds another recommendation."
+    },
+    {
+      "time": 9,
+      "observed": "SEEKER: Seen that one.",
+      "belief_before": "I recommended 50 First Dates.",
+      "belief_update": "SEEKER has already seen 50 First Dates; no like/dislike stated.",
+      "belief_after": "Another recommendation is not novel; I need a different option.",
+      "emotion": "slightly disappointed/neutral",
+      "intention": "Continue recommending.",
+      "conversational_goal": "Find an unseen movie.",
+      "changes_previous_interpretation": "Updates seen-status: 50 First Dates already seen."
+    },
+    {
+      "time": 10,
+      "observed": "RECOMMENDER (self): I love anything to do with Hawaii!",
+      "belief_before": "SEEKER has seen 50 First Dates.",
+      "belief_update": "I revealed my love for Hawaii; no new SEEKER information.",
+      "belief_after": "SEEKER knows I like Hawaii; I may use that as a recommendation angle.",
+      "emotion": "excited/affectionate",
+      "intention": "Pivot to Hawaii-related recommendations.",
+      "conversational_goal": "Share personal interest and lead toward a recommendation.",
+      "changes_previous_interpretation": "No change in the SEEKER model; introduces new self-preference."
+    },
+    {
+      "time": 11,
+      "observed": "SEEKER: Cool",
+      "belief_before": "I shared my love of Hawaii.",
+      "belief_update": "SEEKER acknowledges with minimal interest; no new preference.",
+      "belief_after": "SEEKER is polite but not necessarily enthusiastic about Hawaii.",
+      "emotion": "neutral/encouraged",
+      "intention": "Continue with a Hawaii-related recommendation.",
+      "conversational_goal": "Test a Hawaii documentary recommendation.",
+      "changes_previous_interpretation": "Slight update: SEEKER gives neutral acknowledgment, not strong interest."
+    },
+    {
+      "time": 12,
+      "observed": "RECOMMENDER (self): There is a documentary called The Hawaiians (1970) on Netflix.",
+      "belief_before": "SEEKER gave neutral acknowledgment to Hawaii.",
+      "belief_update": "I recommended The Hawaiians; no new SEEKER information.",
+      "belief_after": "Awaiting SEEKER's reaction to The Hawaiians.",
+      "emotion": "informative/helpful",
+      "intention": "Recommend a specific documentary.",
+      "conversational_goal": "Offer an unseen Hawaii-related documentary.",
+      "changes_previous_interpretation": "No change in the SEEKER model; action follows Hawaii interest."
+    },
+    {
+      "time": 13,
+      "observed": "SEEKER: Haven’t seen that one.",
+      "belief_before": "I recommended The Hawaiians.",
+      "belief_update": "SEEKER has not seen The Hawaiians; possible openness.",
+      "belief_after": "The recommendation is novel; SEEKER may be interested.",
+      "emotion": "pleased/validated",
+      "intention": "Engage further on documentaries.",
+      "conversational_goal": "Continue conversation and encourage interest.",
+      "changes_previous_interpretation": "Updates seen-status: The Hawaiians unseen."
+    },
+    {
+      "time": 14,
+      "observed": "RECOMMENDER (self): I'm a nerd and love documentaries",
+      "belief_before": "SEEKER has not seen The Hawaiians.",
+      "belief_update": "I revealed that I love documentaries; no new SEEKER information.",
+      "belief_after": "SEEKER knows I like documentaries and self-identify as a nerd.",
+      "emotion": "self-deprecating/enthusiastic",
+      "intention": "Share identity and justify the documentary recommendation.",
+      "conversational_goal": "Connect over documentary interest.",
+      "changes_previous_interpretation": "No change in the SEEKER model; adds self-disclosure."
+    },
+    {
+      "time": 15,
+      "observed": "SEEKER: Me too but I like more the financial ones or the ones about becoming self aware.",
+      "belief_before": "I love documentaries; SEEKER has not seen The Hawaiians.",
+      "belief_update": "SEEKER also likes documentaries but prefers financial or self-awareness topics.",
+      "belief_after": "We share documentary interest, but SEEKER's subgenre preference differs from Hawaii/history.",
+      "emotion": "positive/curious",
+      "intention": "Adjust to SEEKER's documentary subgenres.",
+      "conversational_goal": "Maintain rapport and potentially recommend financial/self-awareness documentaries.",
+      "changes_previous_interpretation": "Significant update: SEEKER likes documentaries but not necessarily Hawaii; preference refined to financial/self-awareness."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER: Hi\",\n    \"belief_before\": \"No prior information about SEEKER.\",\n    \"belief_update\": \"SEEKER is greeting me and likely wants to interact.\",\n    \"belief_after\": \"SEEKER is present and initiating a conversation.\",\n    \"emotion\": \"neutral/friendly\",\n    \"intention\": \"Respond to the greeting.\",\n    \"conversational_goal\": \"Open conversation and discover what SEEKER wants.\",\n    \"changes_previous_interpretation\": \"No prior interpretation; establishes initial contact.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER (self): Hello!...What kind of movie do you like?\",\n    \"belief_before\": \"SEEKER greeted me.\",\n    \"belief_update\": \"I asked about movie preferences; no new SEEKER information yet.\",\n    \"belief_after\": \"I need SEEKER's movie preferences.\",\n    \"emotion\": \"friendly/curious\",\n    \"intention\": \"Ask about SEEKER's movie taste.\",\n    \"conversational_goal\": \"Elicit SEEKER's preferences to guide recommendations.\",\n    \"changes_previous_interpretation\": \"No conflict; moves from greeting to preference elicitation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER: Can you recommend to me any movies that you think is a great movie to watch?...I liked Good Will Hunting (1997)\",\n    \"belief_before\": \"SEEKER wants a movie recommendation; preferences were unknown.\",\n    \"belief_update\": \"SEEKER likes Good Will Hunting (1997) and wants great movie recommendations.\",\n    \"belief_after\": \"SEEKER likely appreciates drama/quality films; I can recommend based on that.\",\n    \"emotion\": \"helpful/positive\",\n    \"intention\": \"Recommend a movie.\",\n    \"conversational_goal\": \"Provide a recommendation aligned with SEEKER's stated liking.\",\n    \"changes_previous_interpretation\": \"Adds concrete preference; refines from unknown to Good Will Hunting.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER (self): Well, if you want my all time favorite, it's The Outsiders (1983)\",\n    \"belief_before\": \"SEEKER liked Good Will Hunting and asked for recommendations.\",\n    \"belief_update\": \"I offered The Outsiders as my all-time favorite; no new SEEKER information.\",\n    \"belief_after\": \"Awaiting SEEKER's reaction to The Outsiders.\",\n    \"emotion\": \"enthusiastic\",\n    \"intention\": \"Share my all-time favorite movie.\",\n    \"conversational_goal\": \"Recommend a favorite movie.\",\n    \"changes_previous_interpretation\": \"No change in the SEEKER model; action follows stated preference.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER: Seen that a while back.\",\n    \"belief_before\": \"I recommended The Outsiders.\",\n    \"belief_update\": \"SEEKER has already seen The Outsiders and gives no clear like/dislike.\",\n    \"belief_after\": \"The recommendation was not novel; I need another suggestion.\",\n    \"emotion\": \"slightly deflated/neutral\",\n    \"intention\": \"Adjust and continue recommending.\",\n    \"conversational_goal\": \"Find an unseen movie for SEEKER.\",\n    \"changes_previous_interpretation\": \"Updates recommendation status: The Outsiders already seen.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER (self): Depends on what type of movie you want to watch...\",\n    \"belief_before\": \"SEEKER has seen The Outsiders and has not stated a clear preference.\",\n    \"belief_update\": \"I asked for genre/type; no new SEEKER information.\",\n    \"belief_after\": \"I need more specific genre preferences.\",\n    \"emotion\": \"tentative/considering\",\n    \"intention\": \"Narrow down the movie type.\",\n    \"conversational_goal\": \"Elicit genre preference to improve recommendation.\",\n    \"changes_previous_interpretation\": \"Moves from specific favorite to broader genre clarification.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER: Was good....Any that you like and would recommend...Your top three.\",\n    \"belief_before\": \"SEEKER had seen The Outsiders; preferences were still broad.\",\n    \"belief_update\": \"SEEKER thought The Outsiders was good and wants my top three recommendations.\",\n    \"belief_after\": \"SEEKER liked my favorite and values my taste; I can share more favorites.\",\n    \"emotion\": \"encouraged/pleased\",\n    \"intention\": \"Provide top three favorites.\",\n    \"conversational_goal\": \"Recommend multiple liked movies.\",\n    \"changes_previous_interpretation\": \"Confirms positive reaction to The Outsiders; request shifts to top three.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER (self): I loved 50 First Dates (2004) ...so cute!\",\n    \"belief_before\": \"SEEKER liked The Outsiders and asked for my top three.\",\n    \"belief_update\": \"I recommended 50 First Dates; no new SEEKER information.\",\n    \"belief_after\": \"Awaiting SEEKER's reaction to 50 First Dates.\",\n    \"emotion\": \"warm/enthusiastic\",\n    \"intention\": \"Share a loved movie.\",\n    \"conversational_goal\": \"Recommend a favorite romantic comedy.\",\n    \"changes_previous_interpretation\": \"No change in the SEEKER model; adds another recommendation.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"SEEKER: Seen that one.\",\n    \"belief_before\": \"I recommended 50 First Dates.\",\n    \"belief_update\": \"SEEKER has already seen 50 First Dates; no like/dislike stated.\",\n    \"belief_after\": \"Another recommendation is not novel; I need a different option.\",\n    \"emotion\": \"slightly disappointed/neutral\",\n    \"intention\": \"Continue recommending.\",\n    \"conversational_goal\": \"Find an unseen movie.\",\n    \"changes_previous_interpretation\": \"Updates seen-status: 50 First Dates already seen.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"RECOMMENDER (self): I love anything to do with Hawaii!\",\n    \"belief_before\": \"SEEKER has seen 50 First Dates.\",\n    \"belief_update\": \"I revealed my love for Hawaii; no new SEEKER information.\",\n    \"belief_after\": \"SEEKER knows I like Hawaii; I may use that as a recommendation angle.\",\n    \"emotion\": \"excited/affectionate\",\n    \"intention\": \"Pivot to Hawaii-related recommendations.\",\n    \"conversational_goal\": \"Share personal interest and lead toward a recommendation.\",\n    \"changes_previous_interpretation\": \"No change in the SEEKER model; introduces new self-preference.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"SEEKER: Cool\",\n    \"belief_before\": \"I shared my love of Hawaii.\",\n    \"belief_update\": \"SEEKER acknowledges with minimal interest; no new preference.\",\n    \"belief_after\": \"SEEKER is polite but not necessarily enthusiastic about Hawaii.\",\n    \"emotion\": \"neutral/encouraged\",\n    \"intention\": \"Continue with a Hawaii-related recommendation.\",\n    \"conversational_goal\": \"Test a Hawaii documentary recommendation.\",\n    \"changes_previous_interpretation\": \"Slight update: SEEKER gives neutral acknowledgment, not strong interest.\"\n  },\n  {\n    \"time\": 12,\n    \"observed\": \"RECOMMENDER (self): There is a documentary called The Hawaiians (1970) on Netflix.\",\n    \"belief_before\": \"SEEKER gave neutral acknowledgment to Hawaii.\",\n    \"belief_update\": \"I recommended The Hawaiians; no new SEEKER information.\",\n    \"belief_after\": \"Awaiting SEEKER's reaction to The Hawaiians.\",\n    \"emotion\": \"informative/helpful\",\n    \"intention\": \"Recommend a specific documentary.\",\n    \"conversational_goal\": \"Offer an unseen Hawaii-related documentary.\",\n    \"changes_previous_interpretation\": \"No change in the SEEKER model; action follows Hawaii interest.\"\n  },\n  {\n    \"time\": 13,\n    \"observed\": \"SEEKER: Haven’t seen that one.\",\n    \"belief_before\": \"I recommended The Hawaiians.\",\n    \"belief_update\": \"SEEKER has not seen The Hawaiians; possible openness.\",\n    \"belief_after\": \"The recommendation is novel; SEEKER may be interested.\",\n    \"emotion\": \"pleased/validated\",\n    \"intention\": \"Engage further on documentaries.\",\n    \"conversational_goal\": \"Continue conversation and encourage interest.\",\n    \"changes_previous_interpretation\": \"Updates seen-status: The Hawaiians unseen.\"\n  },\n  {\n    \"time\": 14,\n    \"observed\": \"RECOMMENDER (self): I'm a nerd and love documentaries\",\n    \"belief_before\": \"SEEKER has not seen The Hawaiians.\",\n    \"belief_update\": \"I revealed that I love documentaries; no new SEEKER information.\",\n    \"belief_after\": \"SEEKER knows I like documentaries and self-identify as a nerd.\",\n    \"emotion\": \"self-deprecating/enthusiastic\",\n    \"intention\": \"Share identity and justify the documentary recommendation.\",\n    \"conversational_goal\": \"Connect over documentary interest.\",\n    \"changes_previous_interpretation\": \"No change in the SEEKER model; adds self-disclosure.\"\n  },\n  {\n    \"time\": 15,\n    \"observed\": \"SEEKER: Me too but I like more the financial ones or the ones about becoming self aware.\",\n    \"belief_before\": \"I love documentaries; SEEKER has not seen The Hawaiians.\",\n    \"belief_update\": \"SEEKER also likes documentaries but prefers financial or self-awareness topics.\",\n    \"belief_after\": \"We share documentary interest, but SEEKER's subgenre preference differs from Hawaii/history.\",\n    \"emotion\": \"positive/curious\",\n    \"intention\": \"Adjust to SEEKER's documentary subgenres.\",\n    \"conversational_goal\": \"Maintain rapport and potentially recommend financial/self-awareness documentaries.\",\n    \"changes_previous_interpretation\": \"Significant update: SEEKER likes documentaries but not necessarily Hawaii; preference refined to financial/self-awareness.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

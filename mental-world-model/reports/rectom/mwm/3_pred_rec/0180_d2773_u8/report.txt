@@ -1,0 +1,28 @@
+数据：3_pred_rec
+题号：180  d2773_u8
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：RECOMMENDER says: Hello\nSEEKER says: Hi I am looking for a good drama any ideas?\nRECOMMENDER says: Have you seen Gladiator  (2000)  ?\nSEEKER says: No I have not really not a fan of that kind I prefer things like Armageddon  (1997) \nRECOMMENDER says: If you like love stories, The Notebook (2013)  is good...Have you seen Deep Impact  (1998)  &gt; That is another one like Armageddon\nSEEKER says: I think I am the only person on the planet to not see The Notebook (2013)  really need to...Yes I loved；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：RECOMMENDER says: Hello\nSEEKER says: Hi I am looking for a good drama any ideas?\nRECOMMENDER says: Have you seen Gladiator  (2000)  ?\nSEEKER says: No I have not really not a fan of that kind I prefer things like Armageddon  (1997) \nRECOMMENDER says: If you like love stories, The Notebook (2013)  is good...Have you seen Deep Impact  (1998)  &gt; That is another one like Armageddon\nSEEKER says: I think I am the only person on the planet to not see The Notebook (2013)  really need to...Yes I loved；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.4, "b": 0.6, "c": 0.9, "d": 0.5, "e": 0.1}
+选择说明：The recommender is most directly supported to continue giving or soliciting movie recommendations after the seeker's latest response.
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

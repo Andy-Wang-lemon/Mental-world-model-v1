@@ -1,0 +1,46 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 184,
+  "item_id": "d2818_u6",
+  "dialogue_id": "2818",
+  "utterance_pos": 6,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：RECOMMENDER says: Good evening!\nSEEKER says: Hi are there any new movies out that are worth watching\nRECOMMENDER says: What movie genres are you interested in?...I thought Bright (2017)  was really good, even without the back story.\nSEEKER says: hmm never heard of that one\nRECOMMENDER says: I saw Star Wars: Episode VIII – The Last Jedi (2017)  as well.\nSEEKER says: I really like all kinds of movies I will watch a kids movie followed by a horror flick；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.45,
+    "b": 0.62,
+    "c": 0.92,
+    "d": 0.35,
+    "e": 0.05
+  },
+  "score_reason": "The recommender has been recommending movies and the seeker just expressed broad genre openness, so providing a recommendation directly or by inquiring further is most supported.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "No predicted next action is provided, and the record only shows past recommendations, so the next strategy cannot be directly supported.",
+  "audit_level": "inferred"
+}

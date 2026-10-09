@@ -1,0 +1,29 @@
+数据：3_pred_rec
+题号：104  d1619_u1
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "场景：SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "probability": 1.0
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "在此所缘下：场景：SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+      "activation": 1.0
+    }
+  ],
+  "observed_action": "",
+  "predicted_actions": []
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.4, "b": 0.5, "c": 0.9, "d": 0.3, "e": 0.2}
+选择说明：The seeker explicitly requests drama/thriller recommendations, so the recommender most directly provides a recommendation or asks a clarifying preference.
+标准：E: Greetings, gratitude expression, or chit-chat utterances
+结果：错
+核对：记录未支持标准策略，保持错
+核对说明：There is no predicted next action; only the scene and thoughts mention the seeker's greeting and movie request.

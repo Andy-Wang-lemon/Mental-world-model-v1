@@ -1,0 +1,36 @@
+{
+  "id": "3_pred_rec__0116_d1941_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hello....Have you seen Star Wars: Episode VIII – The Last Jedi (2017)?",
+      "belief_before": "I have no prior information about this seeker's preferences; this is the start of a recommendation dialogue.",
+      "belief_update": "No substantive belief update yet; I have initiated contact and asked a preliminary question about a specific movie.",
+      "belief_after": "I still do not know the seeker's genre preferences, but I have opened the conversation and invited a response.",
+      "emotion": "Neutral, polite, friendly, and open.",
+      "intention": "To greet the user and check whether they have seen a well-known movie, using this as a possible starting point for recommendation.",
+      "conversational_goal": "Open the dialogue, establish rapport, and gather initial information from the seeker."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: HI...I haven't seen that yet. I'm looking for a good thriller/suspense movie.",
+      "belief_before": "I just asked whether the seeker had seen Star Wars: The Last Jedi; I did not yet know their preferred genres.",
+      "belief_update": "The seeker has not seen Star Wars: The Last Jedi and explicitly wants a thriller/suspense movie. This changes my interpretation: Star Wars is likely not the target recommendation, and I should pivot to the user's stated genre.",
+      "belief_after": "The seeker is looking for a good thriller/suspense movie and has not seen the film I mentioned. My recommendation should now focus on thriller/suspense titles.",
+      "emotion": "Attentive, responsive, and mentally recalibrating from my initial suggestion to the user's stated preference.",
+      "intention": "Acknowledge the seeker's preference and prepare to recommend a thriller/suspense movie that fits their request.",
+      "conversational_goal": "Adapt to the seeker's genre preference and provide a relevant, satisfying recommendation."
+    }
+  ],
+  "temporal_state_raw": "```json\n[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hello....Have you seen Star Wars: Episode VIII – The Last Jedi (2017)?\",\n    \"belief_before\": \"I have no prior information about this seeker's preferences; this is the start of a recommendation dialogue.\",\n    \"belief_update\": \"No substantive belief update yet; I have initiated contact and asked a preliminary question about a specific movie.\",\n    \"belief_after\": \"I still do not know the seeker's genre preferences, but I have opened the conversation and invited a response.\",\n    \"emotion\": \"Neutral, polite, friendly, and open.\",\n    \"intention\": \"To greet the user and check whether they have seen a well-known movie, using this as a possible starting point for recommendation.\",\n    \"conversational_goal\": \"Open the dialogue, establish rapport, and gather initial information from the seeker.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: HI...I haven't seen that yet. I'm looking for a good thriller/suspense movie.\",\n    \"belief_before\": \"I just asked whether the seeker had seen Star Wars: The Last Jedi; I did not yet know their preferred genres.\",\n    \"belief_update\": \"The seeker has not seen Star Wars: The Last Jedi and explicitly wants a thriller/suspense movie. This changes my interpretation: Star Wars is likely not the target recommendation, and I should pivot to the user's stated genre.\",\n    \"belief_after\": \"The seeker is looking for a good thriller/suspense movie and has not seen the film I mentioned. My recommendation should now focus on thriller/suspense titles.\",\n    \"emotion\": \"Attentive, responsive, and mentally recalibrating from my initial suggestion to the user's stated preference.\",\n    \"intention\": \"Acknowledge the seeker's preference and prepare to recommend a thriller/suspense movie that fits their request.\",\n    \"conversational_goal\": \"Adapt to the seeker's genre preference and provide a relevant, satisfying recommendation.\"\n  }\n]\n```",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

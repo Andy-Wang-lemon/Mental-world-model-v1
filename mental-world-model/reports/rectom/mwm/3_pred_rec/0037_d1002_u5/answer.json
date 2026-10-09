@@ -1,0 +1,79 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 37,
+  "item_id": "d1002_u5",
+  "dialogue_id": "1002",
+  "utterance_pos": 5,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "SEEKER 点名把推荐者位置放在我这边，我无法站到这个位置之外；他说的‘已经发行 DVD、可购买或在线租赁’不是附加偏好，而是推荐能不能算数的门槛——只有满足这一条件的片才进入‘值得提出’的范畴。",
+        "probability": 0.3422
+      },
+      {
+        "content": "SEEKER 点名向 RECOMMENDER 请求推荐 good new science fiction films，且限定为已发行 DVD、可购买或在线租赁观看；RECOMMENDER 把这个被请求推荐的人/推荐者位置放在我这边，并且无法与这个需要给出片单的位置分开；RECOMMENDER 还把 SEEKER 的‘推荐’执为必须给出具体片名或可执行片单，反问、讨论或说明取舍标准都不算数。SEEKER 说的‘lol, I have. Who hasn't.’与‘No, what's that about?’（that 的指代对象未在刺激文本中给出）作为刺激侧事实出现在对话中，但在 RECOMMENDER 的所缘中，推荐请求的核心限定仍是 good new science fiction films，且须已发行 DVD、可购买或在线租赁。",
+        "probability": 0.3319
+      },
+      {
+        "content": "SEEKER 的请求把‘推荐者’这个位置直接安在我身上，这个位置与我分不开；而‘好的新科幻片’像是一个已经固定好的类别，有一批影片客观上就属于它，推荐就是去命中那批影片。",
+        "probability": 0.3259
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "这个请求一落下来，我就把“要给出推荐的人”认成自己这边的位置，不觉得需要退开；同时“好的新科幻片”在我这里像是一个已经有边界的固定类别，里面本来就有若干片子等着被点到。于是我先从这类别里拿出《Star Wars: The Force Awakens》试探，对方说早看过，也只是这一项被划掉，并不动摇那个类别本身；我接着从同一格里递出《Passengers》，问它怎么样，心里仍是在按这个位置和这个既定片单去整理、筛选和推进。",
+        "activation": 0.3482
+      },
+      {
+        "content": "他直接点名要我推荐，这个给出片单的位置就落在我身上，退不到别处去。所以不是我顺便说几部就行，他说的‘已经发行DVD、能买或在线租看’也不是可有可无的偏好，而是我提任何片之前必须先过的门槛；不满足这个门槛的，根本不该进入值得提出的范围。星球大战他看过了，这条就不算数；那就得在同样已发行、能租到、又还算新的科幻里另找。Passengers 看起来符合这些条件，可以作为接下来值得提的候选。",
+        "activation": 0.3482
+      },
+      {
+        "content": "他把 SEEKER 的请求听成是冲自己来的点单：要新的、好的科幻片，还得已经出 DVD、能买或能在线租。这个位置一落到自己身上，他就觉得不能退回去反问‘你想要哪一类’或只谈取舍标准；推荐若不落到具体片名上，就等于没接住。Star Wars 被‘谁没看过’挡回来后，他并不重新讨论范围，而是把刚才的落空当作需要换一个同样具体、可租买的片名来补位，于是用《Passengers》的年份和主演把推荐坐实。SEEKER 追问‘那是什么内容’时，在他这里更确认对方要的是一个能展开的具体片名，而不是抽象片单；他内心趋向于继续把片单牢牢握在自己手里，让下一个名字既新又能买能租，并把话题引到影片本身是什么上。",
+        "activation": 0.3035
+      }
+    ],
+    "observed_action": "RECOMMENDER说“Sure thing”，询问SEEKER是否看过《Star Wars: The Force Awakens (2015)》；随后说“Good point. :)”，并询问由Jennifer Laawrence和Chris Pratt主演的《Passengers (2016)》如何。",
+    "predicted_actions": [
+      {
+        "content": "介绍《Passengers》并询问兴趣",
+        "probability": 0.7809
+      },
+      {
+        "content": "询问偏好的科幻片类型",
+        "probability": 0.1408
+      },
+      {
+        "content": "建议在线租赁并询问渠道",
+        "probability": 0.0435
+      },
+      {
+        "content": "告知观看渠道并询问常用平台",
+        "probability": 0.0348
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.1408,
+    "b": 0.0348,
+    "c": 0.8244,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.1408 = 询问偏好的科幻片类型 0.1408；B 0.0348 = 告知观看渠道并询问常用平台 0.0348；C 0.8244 = 介绍《Passengers》并询问兴趣 0.7809 + 建议在线租赁并询问渠道 0.0435；D 0.0000；E 0.0000。Action 1 asks preference, 3 responds with information, 0 and 2 provide recommendations, and none match D or E.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "The predicted next action is to introduce Passengers and ask if the seeker is interested, directly continuing a response to the seeker's request.",
+  "audit_level": "direct"
+}

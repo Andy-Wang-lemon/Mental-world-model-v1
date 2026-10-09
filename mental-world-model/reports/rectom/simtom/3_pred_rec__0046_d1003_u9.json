@@ -1,0 +1,17 @@
+{
+  "id": "3_pred_rec__0046_d1003_u9",
+  "method": "simtom",
+  "target_character": "RECOMMENDER",
+  "perspective": "RECOMMENDER has access to:\n\n- SEEKER asked for recommendations of good classic movies.\n- RECOMMENDER asked whether SEEKER meant classics before the 70s or after.\n- SEEKER said “After.”\n- RECOMMENDER suggested *Indecent Proposal* (1993), mentioning Demi Moore and Woody Harrelson.\n- SEEKER rejected it as “too risque.”\n- RECOMMENDER suggested *Sleepless in Seattle* (1993), mentioning Hanks and Ryan.\n- SEEKER said that was “more my speed” and that it had been a while since seeing it.\n- RECOMMENDER responded that it was okay and there was nothing wrong with that.\n- RECOMMENDER asked whether SEEKER had seen *All the Right Moves* (1983) with Tom Cruise.\n- SEEKER said they had not seen it and asked, “Is it good?”\n\nRECOMMENDER has no access to any other hidden events, private thoughts, or information beyond this exchange.",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": [
+    "b",
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0074_d1205_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: 'Hey How are you.' No prior dialogue is available, so RECOMMENDER only observes a casual greeting and a question about RECOMMENDER's state.",
+      "belief_before": "RECOMMENDER has no information about SEEKER's preferences, needs, or recommendation goal in this dialogue.",
+      "belief_update": "SEEKER is opening the conversation socially and politely; there is not yet any explicit request for a recommendation. This is the first turn, so there is no previous interpretation to revise; it establishes the initial context.",
+      "belief_after": "SEEKER appears friendly and may be about to engage in a recommendation dialogue, but their preferences and needs remain unknown.",
+      "emotion": "Neutral to mildly positive; polite and socially engaged.",
+      "intention": "Acknowledge the greeting, reciprocate the social check-in, and be ready to help with a recommendation if asked.",
+      "conversational_goal": "Maintain rapport and invite SEEKER to continue or state what they are looking for."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: 'Hey How are you.' No prior dialogue is available, so RECOMMENDER only observes a casual greeting and a question about RECOMMENDER's state.\",\n    \"belief_before\": \"RECOMMENDER has no information about SEEKER's preferences, needs, or recommendation goal in this dialogue.\",\n    \"belief_update\": \"SEEKER is opening the conversation socially and politely; there is not yet any explicit request for a recommendation. This is the first turn, so there is no previous interpretation to revise; it establishes the initial context.\",\n    \"belief_after\": \"SEEKER appears friendly and may be about to engage in a recommendation dialogue, but their preferences and needs remain unknown.\",\n    \"emotion\": \"Neutral to mildly positive; polite and socially engaged.\",\n    \"intention\": \"Acknowledge the greeting, reciprocate the social check-in, and be ready to help with a recommendation if asked.\",\n    \"conversational_goal\": \"Maintain rapport and invite SEEKER to continue or state what they are looking for.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": [
+    "e",
+    "a"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

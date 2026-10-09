@@ -1,0 +1,55 @@
+{
+  "id": "4_pred_seeker__0087_d1363_u3",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says: 'Hi...What kind of movies are you into?'",
+      "preferences": "Not yet stated in the dialogue; the Seeker's specific movie preferences are not available from prior turns.",
+      "belief_before": "No prior dialogue context with this recommender.",
+      "belief_update": "The recommender is starting a movie-recommendation conversation and wants to learn the Seeker's movie tastes.",
+      "belief_after": "The recommender needs the Seeker's preferences before recommending a movie.",
+      "emotion": "Neutral/curious.",
+      "intention": "Respond to the recommender's question.",
+      "reaction_to_other": "Cooperative and open; the greeting/question is friendly and relevant.",
+      "conversational_goal": "Share movie preferences so the recommender can make a suitable suggestion.",
+      "changes_previous_interpretation": "No previous turn; this establishes the initial recommendation context."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'I'm really into mystery movies....Maybe a good psychological thriller.'",
+      "preferences": "Likes mystery movies; interested in a good psychological thriller.",
+      "belief_before": "The recommender has asked what kinds of movies the Seeker is into.",
+      "belief_update": "The Seeker chooses to disclose mystery and psychological-thriller preferences.",
+      "belief_after": "The recommender now knows the Seeker likes mystery and psychological thriller.",
+      "emotion": "Enthusiastic/interested.",
+      "intention": "Clarify the genre they want.",
+      "reaction_to_other": "Responsive and cooperative toward the recommender's question.",
+      "conversational_goal": "Guide the recommender toward a fitting movie recommendation.",
+      "changes_previous_interpretation": "Yes: the earlier open preference request is now narrowed to mystery/psychological thriller."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: 'Okay well Seven (1995) is a great thriller with Brad Pitt.'",
+      "preferences": "Likes mystery movies and psychological thrillers; now evaluating Seven against those preferences.",
+      "belief_before": "The recommender knows the Seeker wants mystery/psychological thriller and has offered a recommendation.",
+      "belief_update": "The recommender believes Seven is a good thriller and is worth suggesting.",
+      "belief_after": "Seven is a specific candidate recommendation; it is a thriller, but its fit with mystery/psychological-thriller preferences is not yet confirmed to the Seeker.",
+      "emotion": "Curious/interested, with cautious evaluation.",
+      "intention": "Evaluate whether Seven matches their preferences.",
+      "reaction_to_other": "Receptive to the suggestion but not yet fully committed.",
+      "conversational_goal": "Decide whether to accept Seven, ask for more details, or request another recommendation.",
+      "changes_previous_interpretation": "Yes: the Seeker shifts from waiting for a recommendation to assessing a concrete suggested movie."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says: 'Hi...What kind of movies are you into?'\",\n    \"preferences\": \"Not yet stated in the dialogue; the Seeker's specific movie preferences are not available from prior turns.\",\n    \"belief_before\": \"No prior dialogue context with this recommender.\",\n    \"belief_update\": \"The recommender is starting a movie-recommendation conversation and wants to learn the Seeker's movie tastes.\",\n    \"belief_after\": \"The recommender needs the Seeker's preferences before recommending a movie.\",\n    \"emotion\": \"Neutral/curious.\",\n    \"intention\": \"Respond to the recommender's question.\",\n    \"reaction_to_other\": \"Cooperative and open; the greeting/question is friendly and relevant.\",\n    \"conversational_goal\": \"Share movie preferences so the recommender can make a suitable suggestion.\",\n    \"changes_previous_interpretation\": \"No previous turn; this establishes the initial recommendation context.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'I'm really into mystery movies....Maybe a good psychological thriller.'\",\n    \"preferences\": \"Likes mystery movies; interested in a good psychological thriller.\",\n    \"belief_before\": \"The recommender has asked what kinds of movies the Seeker is into.\",\n    \"belief_update\": \"The Seeker chooses to disclose mystery and psychological-thriller preferences.\",\n    \"belief_after\": \"The recommender now knows the Seeker likes mystery and psychological thriller.\",\n    \"emotion\": \"Enthusiastic/interested.\",\n    \"intention\": \"Clarify the genre they want.\",\n    \"reaction_to_other\": \"Responsive and cooperative toward the recommender's question.\",\n    \"conversational_goal\": \"Guide the recommender toward a fitting movie recommendation.\",\n    \"changes_previous_interpretation\": \"Yes: the earlier open preference request is now narrowed to mystery/psychological thriller.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: 'Okay well Seven (1995) is a great thriller with Brad Pitt.'\",\n    \"preferences\": \"Likes mystery movies and psychological thrillers; now evaluating Seven against those preferences.\",\n    \"belief_before\": \"The recommender knows the Seeker wants mystery/psychological thriller and has offered a recommendation.\",\n    \"belief_update\": \"The recommender believes Seven is a good thriller and is worth suggesting.\",\n    \"belief_after\": \"Seven is a specific candidate recommendation; it is a thriller, but its fit with mystery/psychological-thriller preferences is not yet confirmed to the Seeker.\",\n    \"emotion\": \"Curious/interested, with cautious evaluation.\",\n    \"intention\": \"Evaluate whether Seven matches their preferences.\",\n    \"reaction_to_other\": \"Receptive to the suggestion but not yet fully committed.\",\n    \"conversational_goal\": \"Decide whether to accept Seven, ask for more details, or request another recommendation.\",\n    \"changes_previous_interpretation\": \"Yes: the Seeker shifts from waiting for a recommendation to assessing a concrete suggested movie.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "c",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

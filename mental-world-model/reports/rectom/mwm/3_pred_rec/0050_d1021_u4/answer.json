@@ -1,0 +1,80 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 50,
+  "item_id": "d1021_u4",
+  "dialogue_id": "1021",
+  "utterance_pos": 4,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "b",
+    "c",
+    "d"
+  ],
+  "gold_output": "B: Responds to the seeker's question or statement\nC: Provides a recommendation directly or by inquiring further\nD: Explains a recommendation with background or reasoning",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在RECOMMENDER这里，SEEKER的话被对象化为一道必须按条件接准的影片选择：任意类型、女性主角、今天想看good heroine；尤其“good heroine”被固定理解为坚强、会救助或领养小孩、能承担牺牲的那类女性形象。紧接着那句关于“她领养黑人小孩”的确认问句，只是把这个固定形象进一步钉在眼前，使当前局面成为自己不能选错、不能失守的能力身份测试。",
+        "probability": 0.3459
+      },
+      {
+        "content": "在RECOMMENDER这里，SEEKER提出的任意类型、女性主角、想看good heroine，被对象化为需要自己按条件命中的影片选择；而“No I have not....That's the one about her adopting the black kid right?”则被理解成一道只能以是或否对应到某一部唯一影片的确认——那部片子以“她领养黑人小孩”作为固定标识。当前局面就是在这个固定标识与SEEKER的确认之间核对，同时仍落在自己不能选错片的能力线上。",
+        "probability": 0.3411
+      },
+      {
+        "content": "在RECOMMENDER这里，SEEKER“今天想看good heroine”的当下偏好被收成自己这边要接住的事，而不是无关的外部需求；“good heroine”随即被对象化为坚强、救助或领养小孩、承担牺牲的那类女性形象。SEEKER紧接着确认“领养黑人小孩”的那部片，正好让这个固定形象落到一个具体片名上，当前要接住的就是这个形象与那部影片之间的对应。",
+        "probability": 0.313
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "她想看 good heroine，这条件听着宽，其实一点都不宽——good heroine 在我这里就是那种坚强、会救助小孩、甚至领养小孩、肯承担牺牲的女性。她紧接着追问《The Blind Side》是不是领养黑人小孩，正说明她脑子里也是这个固定形象。Sandra Bullock 那部正好卡在这个点上，我提它，是按她的条件接准了，不是乱推；只要沿着这个固定形象给片，就不会失手，也不会显得我连这种明确要求都接不住。",
+        "activation": 0.3462
+      },
+      {
+        "content": "在RECOMMENDER这里，SEEKER要的是任意类型、女性主角、能带出good heroine感的片子，这不是泛泛闲聊，而是把“能否按她的条件挑中”摆到了眼前；她没给类型，反而更像在看我能不能把女性主角这条线抓准，不能让她觉得推荐失手。她又说没看过，并问“那部是不是讲她领养黑人小孩的”，这句话被收束成一道只需回答是或否的核对：Sandra Bullock那部片子，在此时此地就是由“她领养黑人小孩”这个唯一标识来定位。眼下最自然的认知是把这条标识与《The Blind Side》扣合，确认她没看过这一事实，并把它当作与女性主角条件相容的候选；同时仍旧警觉：真正要守的是别在条件命中上出错，而不是只抓住一个剧情标签。",
+        "activation": 0.3365
+      },
+      {
+        "content": "她今天要的“good heroine”在我这里不是无关的外部需求，而是当下要接住的偏好；我把它认成坚强、肯救助或领养小孩、能承担牺牲的那类女性。她紧接着追问那部领养黑人小孩的片子，这个形象就自然落到《The Blind Side》的 Sandra Bullock 身上。眼下要接住的就是这条对应：她说的 heroine 大概率就是这位母亲形象，而这部片是否合她今天的胃口，也要顺着这条线确认下去。",
+        "activation": 0.3173
+      }
+    ],
+    "observed_action": "RECOMMENDER says hello and asks what kind of movie SEEKER is looking for; RECOMMENDER asks whether SEEKER has seen The Blind Side (2009) with Sandra Bullock.",
+    "predicted_actions": [
+      {
+        "content": "说明推荐理由",
+        "probability": 0.5364
+      },
+      {
+        "content": "简短确认后停止",
+        "probability": 0.229
+      },
+      {
+        "content": "确认并建议观看",
+        "probability": 0.1262
+      },
+      {
+        "content": "询问good heroine标准",
+        "probability": 0.1085
+      }
+    ]
+  },
+  "predicted_answer": "d",
+  "adapter_output": "D: Explains a recommendation with background or reasoning",
+  "option_scores": {
+    "a": 0.1085,
+    "b": 0.229,
+    "c": 0.1262,
+    "d": 0.5364,
+    "e": 0
+  },
+  "score_reason": "A 0.1085 = 询问good heroine标准 0.1085；B 0.2290 = 简短确认后停止 0.2290；C 0.1262 = 确认并建议观看 0.1262；D 0.5364 = 说明推荐理由 0.5364；E 0.0000。Action 0 explains reasoning, 1 confirms and stops, 2 suggests watching, 3 asks about preference criteria.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

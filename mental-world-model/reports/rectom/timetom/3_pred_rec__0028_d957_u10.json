@@ -1,0 +1,116 @@
+{
+  "id": "3_pred_rec__0028_d957_u10",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender initiates: 'hey there...Can I help you find a good comedy like Beerfest (2006) or The Blues Brothers (1980)'",
+      "belief_before": "No prior dialogue; no known seeker preferences.",
+      "belief_update": "His own opening frames the possible topic as comedy similar to Beerfest or The Blues Brothers.",
+      "belief_after": "Seeker may want a comedy recommendation; specific taste unknown. Preferences known: none yet.",
+      "emotion": "Friendly, helpful, welcoming.",
+      "intention": "Offer help and invite the seeker to state a request.",
+      "conversational_goal": "Open the dialogue and elicit the seeker's movie preferences. No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'Hi! I'm looking for some funny comedy movies. Something similar to She's Out of My League (2010)'",
+      "belief_before": "Seeker may want a comedy; no confirmed preferences beyond the recommender's own Beerfest/Blues Brothers opening.",
+      "belief_update": "Seeker explicitly wants funny comedy movies similar to She's Out of My League (2010).",
+      "belief_after": "Seeker's preference: funny comedies, with She's Out of My League as a similarity anchor. Beerfest/Blues Brothers relevance still unknown.",
+      "emotion": "Attentive, positive, ready to help.",
+      "intention": "Use She's Out of My League as a reference for recommendations.",
+      "conversational_goal": "Clarify the request and prepare relevant comedy suggestions."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: 'Oh cool ok I can help...Have you seen the ones I mentioned...Or how about Deuce Bigalow: Male Gigolo (1999)'",
+      "belief_before": "Seeker wants funny comedy similar to She's Out of My League; Recommender does not yet know whether seeker has seen Beerfest or The Blues Brothers.",
+      "belief_update": "Recommender proposes Deuce Bigalow as a candidate and asks about Beerfest/Blues Brothers familiarity.",
+      "belief_after": "Seeker's familiarity with Beerfest/Blues Brothers is unknown; Deuce Bigalow is now offered as a possible match. Known preference: funny comedies similar to She's Out of My League.",
+      "emotion": "Enthusiastic, helpful; positive reaction to seeker ('Oh cool ok').",
+      "intention": "Recommend a comedy and check whether the seeker has seen earlier options.",
+      "conversational_goal": "Narrow options by checking seen/liked titles and offering another comedy. Adds a specific recommendation; no contradiction yet."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says: 'Daddy's Home (2015) is also a good movie, but I have never seen the movies you suggested...Deuce Bigalo I have seen but I don't like those movies'",
+      "belief_before": "Seeker wants funny comedy similar to She's Out of My League; Recommender had proposed Deuce Bigalow and asked about Beerfest/Blues Brothers.",
+      "belief_update": "Seeker has not seen Beerfest or The Blues Brothers; has seen Deuce Bigalow but dislikes it/those movies; likes Daddy's Home (2015).",
+      "belief_after": "Positive preference: Daddy's Home; negative preference: Deuce Bigalow; Beerfest/Blues Brothers unseen. Seeker likes funny comedies similar to She's Out of My League.",
+      "emotion": "Adjusting, still positive; accepts feedback.",
+      "intention": "Avoid Deuce Bigalow-like suggestions and shift toward Daddy's Home/She's Out of My League appeal.",
+      "conversational_goal": "Refine the recommendation strategy using likes and dislikes. Yes: Deuce Bigalow is ruled out as a good fit; seeker's taste is clearer."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender says: 'That was a good one. Have you seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007)'",
+      "belief_before": "Seeker likes Daddy's Home and She's Out of My League; dislikes Deuce Bigalow; has not seen Beerfest/Blues Brothers.",
+      "belief_update": "Recommender agrees Daddy's Home was good and suggests Step Brothers and Walk Hard as next comedies.",
+      "belief_after": "Step Brothers and Walk Hard are candidate recommendations; seeker's response to them is unknown. Known likes: Daddy's Home, She's Out of My League; dislike: Deuce Bigalow.",
+      "emotion": "Positive, validating; agrees with seeker's Daddy's Home comment.",
+      "intention": "Recommend comedies likely to fit the seeker's taste and seek feedback.",
+      "conversational_goal": "Test highly similar comedy titles against the seeker's preferences. Updates recommendation set based on Daddy's Home like and Deuce Bigalow dislike."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says: 'I love step brothers!...I love Step Brothers (2008)...I also love the movie Life as We Know It (2010)'",
+      "belief_before": "Seeker likes Daddy's Home and She's Out of My League; dislikes Deuce Bigalow; Step Brothers and Walk Hard were just suggested and responses unknown.",
+      "belief_update": "Seeker loves Step Brothers (2008) and also loves Life as We Know It (2010); no clear response about Walk Hard yet.",
+      "belief_after": "Strong positive preferences: Step Brothers, Life as We Know It, Daddy's Home, She's Out of My League. Dislike: Deuce Bigalow. Walk Hard status still unknown.",
+      "emotion": "Pleased, encouraged; positive reaction to seeker's enthusiasm.",
+      "intention": "Use Step Brothers as a strong anchor and check the remaining suggested title, Walk Hard.",
+      "conversational_goal": "Continue narrowing by confirming/denying the other recommendation and finding more matches. Yes: Step Brothers becomes a confirmed strong positive signal."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says: 'That was so good! Did you see the other one I mentioned? It is somewhat on the same plane as Step Brothers (2008)'",
+      "belief_before": "Seeker loves Step Brothers and Life as We Know It; Walk Hard was suggested but not yet confirmed seen or liked.",
+      "belief_update": "Recommender reinforces Step Brothers appeal and asks specifically about Walk Hard, framing it as similar to Step Brothers.",
+      "belief_after": "Walk Hard remains unknown; Step Brothers is a confirmed strong positive signal. Known likes: Step Brothers, Life as We Know It, Daddy's Home, She's Out of My League; dislike: Deuce Bigalow.",
+      "emotion": "Enthusiastic, engaged; shares excitement with seeker.",
+      "intention": "Check Walk Hard as a potential recommendation and keep focus on shared comedy taste.",
+      "conversational_goal": "Determine whether Walk Hard fits and sustain momentum. No major reinterpretation; continues the same recommendation thread."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says: 'Yes I have, that one is funny!...I also love the movie with James Franco called Why Him%3F (2016)'",
+      "belief_before": "Seeker loves Step Brothers and Life as We Know It; Walk Hard status unknown; Recommender asked about Walk Hard.",
+      "belief_update": "Seeker has seen Walk Hard and found it funny (positive); also loves Why Him? (2016).",
+      "belief_after": "Positive preferences now include Walk Hard, Why Him?, Step Brothers, Life as We Know It, Daddy's Home, and She's Out of My League. Dislike: Deuce Bigalow. Unseen: Beerfest, The Blues Brothers.",
+      "emotion": "Happy, validated, amused; positive reaction to seeker.",
+      "intention": "Use the expanded set of liked comedies to suggest another title.",
+      "conversational_goal": "Build on positive signals and propose more similar comedies. Yes: Walk Hard is confirmed as liked; Why Him? is added as a new positive preference."
+    },
+    {
+      "time": 9,
+      "observed": "Recommender says: 'haha made me laugh too. what about Talladega Nights: The Ballad of Ricky Bobby (2006) ...I haven't seen that one'",
+      "belief_before": "Seeker likes Walk Hard, Why Him?, Step Brothers, Life as We Know It, Daddy's Home, and She's Out of My League; dislikes Deuce Bigalow.",
+      "belief_update": "Recommender shares amusement, suggests Talladega Nights as another comedy, and indicates he has not seen Talladega Nights himself, so he cannot personally vouch for it.",
+      "belief_after": "Talladega Nights is a new candidate recommendation; Recommender's own knowledge of it is limited. Seeker's taste profile remains strongly positive for similar comedies.",
+      "emotion": "Amused, friendly; laughs with seeker ('made me laugh too').",
+      "intention": "Offer another likely comedy match despite lacking personal familiarity.",
+      "conversational_goal": "Get seeker's reaction to Talladega Nights and continue the successful recommendation flow. Adds new candidate; no major reinterpretation of prior preferences."
+    },
+    {
+      "time": 10,
+      "observed": "Seeker says: 'That is a funny movie...Thank you so much!'",
+      "belief_before": "Recommender had suggested Talladega Nights and noted he had not seen it; seeker's reaction was unknown.",
+      "belief_update": "Seeker confirms Talladega Nights is funny (positive) and thanks the recommender.",
+      "belief_after": "Recommendation is successful; seeker is satisfied and has a positive view of Talladega Nights. Known likes include Talladega Nights in addition to prior positives; dislike Deuce Bigalow.",
+      "emotion": "Gratified, pleased; positive reaction to seeker's thanks.",
+      "intention": "Acknowledge thanks and conclude or remain available for more recommendations.",
+      "conversational_goal": "Close the recommendation exchange on a positive note. Yes: Talladega Nights is confirmed as liked; final state is successful recommendation."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender initiates: 'hey there...Can I help you find a good comedy like Beerfest (2006) or The Blues Brothers (1980)'\",\n    \"belief_before\": \"No prior dialogue; no known seeker preferences.\",\n    \"belief_update\": \"His own opening frames the possible topic as comedy similar to Beerfest or The Blues Brothers.\",\n    \"belief_after\": \"Seeker may want a comedy recommendation; specific taste unknown. Preferences known: none yet.\",\n    \"emotion\": \"Friendly, helpful, welcoming.\",\n    \"intention\": \"Offer help and invite the seeker to state a request.\",\n    \"conversational_goal\": \"Open the dialogue and elicit the seeker's movie preferences. No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'Hi! I'm looking for some funny comedy movies. Something similar to She's Out of My League (2010)'\",\n    \"belief_before\": \"Seeker may want a comedy; no confirmed preferences beyond the recommender's own Beerfest/Blues Brothers opening.\",\n    \"belief_update\": \"Seeker explicitly wants funny comedy movies similar to She's Out of My League (2010).\",\n    \"belief_after\": \"Seeker's preference: funny comedies, with She's Out of My League as a similarity anchor. Beerfest/Blues Brothers relevance still unknown.\",\n    \"emotion\": \"Attentive, positive, ready to help.\",\n    \"intention\": \"Use She's Out of My League as a reference for recommendations.\",\n    \"conversational_goal\": \"Clarify the request and prepare relevant comedy suggestions.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: 'Oh cool ok I can help...Have you seen the ones I mentioned...Or how about Deuce Bigalow: Male Gigolo (1999)'\",\n    \"belief_before\": \"Seeker wants funny comedy similar to She's Out of My League; Recommender does not yet know whether seeker has seen Beerfest or The Blues Brothers.\",\n    \"belief_update\": \"Recommender proposes Deuce Bigalow as a candidate and asks about Beerfest/Blues Brothers familiarity.\",\n    \"belief_after\": \"Seeker's familiarity with Beerfest/Blues Brothers is unknown; Deuce Bigalow is now offered as a possible match. Known preference: funny comedies similar to She's Out of My League.\",\n    \"emotion\": \"Enthusiastic, helpful; positive reaction to seeker ('Oh cool ok').\",\n    \"intention\": \"Recommend a comedy and check whether the seeker has seen earlier options.\",\n    \"conversational_goal\": \"Narrow options by checking seen/liked titles and offering another comedy. Adds a specific recommendation; no contradiction yet.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says: 'Daddy's Home (2015) is also a good movie, but I have never seen the movies you suggested...Deuce Bigalo I have seen but I don't like those movies'\",\n    \"belief_before\": \"Seeker wants funny comedy similar to She's Out of My League; Recommender had proposed Deuce Bigalow and asked about Beerfest/Blues Brothers.\",\n    \"belief_update\": \"Seeker has not seen Beerfest or The Blues Brothers; has seen Deuce Bigalow but dislikes it/those movies; likes Daddy's Home (2015).\",\n    \"belief_after\": \"Positive preference: Daddy's Home; negative preference: Deuce Bigalow; Beerfest/Blues Brothers unseen. Seeker likes funny comedies similar to She's Out of My League.\",\n    \"emotion\": \"Adjusting, still positive; accepts feedback.\",\n    \"intention\": \"Avoid Deuce Bigalow-like suggestions and shift toward Daddy's Home/She's Out of My League appeal.\",\n    \"conversational_goal\": \"Refine the recommendation strategy using likes and dislikes. Yes: Deuce Bigalow is ruled out as a good fit; seeker's taste is clearer.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender says: 'That was a good one. Have you seen Step Brothers (2008) or Walk Hard: The Dewey Cox Story (2007)'\",\n    \"belief_before\": \"Seeker likes Daddy's Home and She's Out of My League; dislikes Deuce Bigalow; has not seen Beerfest/Blues Brothers.\",\n    \"belief_update\": \"Recommender agrees Daddy's Home was good and suggests Step Brothers and Walk Hard as next comedies.\",\n    \"belief_after\": \"Step Brothers and Walk Hard are candidate recommendations; seeker's response to them is unknown. Known likes: Daddy's Home, She's Out of My League; dislike: Deuce Bigalow.\",\n    \"emotion\": \"Positive, validating; agrees with seeker's Daddy's Home comment.\",\n    \"intention\": \"Recommend comedies likely to fit the seeker's taste and seek feedback.\",\n    \"conversational_goal\": \"Test highly similar comedy titles against the seeker's preferences. Updates recommendation set based on Daddy's Home like and Deuce Bigalow dislike.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says: 'I love step brothers!...I love Step Brothers (2008)...I also love the movie Life as We Know It (2010)'\",\n    \"belief_before\": \"Seeker likes Daddy's Home and She's Out of My League; dislikes Deuce Bigalow; Step Brothers and Walk Hard were just suggested and responses unknown.\",\n    \"belief_update\": \"Seeker loves Step Brothers (2008) and also loves Life as We Know It (2010); no clear response about Walk Hard yet.\",\n    \"belief_after\": \"Strong positive preferences: Step Brothers, Life as We Know It, Daddy's Home, She's Out of My League. Dislike: Deuce Bigalow. Walk Hard status still unknown.\",\n    \"emotion\": \"Pleased, encouraged; positive reaction to seeker's enthusiasm.\",\n    \"intention\": \"Use Step Brothers as a strong anchor and check the remaining suggested title, Walk Hard.\",\n    \"conversational_goal\": \"Continue narrowing by confirming/denying the other recommendation and finding more matches. Yes: Step Brothers becomes a confirmed strong positive signal.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says: 'That was so good! Did you see the other one I mentioned? It is somewhat on the same plane as Step Brothers (2008)'\",\n    \"belief_before\": \"Seeker loves Step Brothers and Life as We Know It; Walk Hard was suggested but not yet confirmed seen or liked.\",\n    \"belief_update\": \"Recommender reinforces Step Brothers appeal and asks specifically about Walk Hard, framing it as similar to Step Brothers.\",\n    \"belief_after\": \"Walk Hard remains unknown; Step Brothers is a confirmed strong positive signal. Known likes: Step Brothers, Life as We Know It, Daddy's Home, She's Out of My League; dislike: Deuce Bigalow.\",\n    \"emotion\": \"Enthusiastic, engaged; shares excitement with seeker.\",\n    \"intention\": \"Check Walk Hard as a potential recommendation and keep focus on shared comedy taste.\",\n    \"conversational_goal\": \"Determine whether Walk Hard fits and sustain momentum. No major reinterpretation; continues the same recommendation thread.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says: 'Yes I have, that one is funny!...I also love the movie with James Franco called Why Him%3F (2016)'\",\n    \"belief_before\": \"Seeker loves Step Brothers and Life as We Know It; Walk Hard status unknown; Recommender asked about Walk Hard.\",\n    \"belief_update\": \"Seeker has seen Walk Hard and found it funny (positive); also loves Why Him? (2016).\",\n    \"belief_after\": \"Positive preferences now include Walk Hard, Why Him?, Step Brothers, Life as We Know It, Daddy's Home, and She's Out of My League. Dislike: Deuce Bigalow. Unseen: Beerfest, The Blues Brothers.\",\n    \"emotion\": \"Happy, validated, amused; positive reaction to seeker.\",\n    \"intention\": \"Use the expanded set of liked comedies to suggest another title.\",\n    \"conversational_goal\": \"Build on positive signals and propose more similar comedies. Yes: Walk Hard is confirmed as liked; Why Him? is added as a new positive preference.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"Recommender says: 'haha made me laugh too. what about Talladega Nights: The Ballad of Ricky Bobby (2006) ...I haven't seen that one'\",\n    \"belief_before\": \"Seeker likes Walk Hard, Why Him?, Step Brothers, Life as We Know It, Daddy's Home, and She's Out of My League; dislikes Deuce Bigalow.\",\n    \"belief_update\": \"Recommender shares amusement, suggests Talladega Nights as another comedy, and indicates he has not seen Talladega Nights himself, so he cannot personally vouch for it.\",\n    \"belief_after\": \"Talladega Nights is a new candidate recommendation; Recommender's own knowledge of it is limited. Seeker's taste profile remains strongly positive for similar comedies.\",\n    \"emotion\": \"Amused, friendly; laughs with seeker ('made me laugh too').\",\n    \"intention\": \"Offer another likely comedy match despite lacking personal familiarity.\",\n    \"conversational_goal\": \"Get seeker's reaction to Talladega Nights and continue the successful recommendation flow. Adds new candidate; no major reinterpretation of prior preferences.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"Seeker says: 'That is a funny movie...Thank you so much!'\",\n    \"belief_before\": \"Recommender had suggested Talladega Nights and noted he had not seen it; seeker's reaction was unknown.\",\n    \"belief_update\": \"Seeker confirms Talladega Nights is funny (positive) and thanks the recommender.\",\n    \"belief_after\": \"Recommendation is successful; seeker is satisfied and has a positive view of Talladega Nights. Known likes include Talladega Nights in addition to prior positives; dislike Deuce Bigalow.\",\n    \"emotion\": \"Gratified, pleased; positive reaction to seeker's thanks.\",\n    \"intention\": \"Acknowledge thanks and conclude or remain available for more recommendations.\",\n    \"conversational_goal\": \"Close the recommendation exchange on a positive note. Yes: Talladega Nights is confirmed as liked; final state is successful recommendation.\"\n  }\n]",
+  "final_response": "ANSWER: E",
+  "prediction": "e",
+  "gold": "e",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

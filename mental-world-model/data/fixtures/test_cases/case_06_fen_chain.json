@@ -1,0 +1,20 @@
+{
+  "id": "case_06_fen_chain",
+  "description": "忿→恨→恼链：忿为 0 时恨、恼依序不判断",
+  "yuanwen": "虽有不满，但我并未对人起怨怼，只是平静说明事实。",
+  "mock": {
+    "extraction": {
+      "suoyuan": {"text": "说明事实"},
+      "xiang": {"text": "并未起怨怼", "has_direct_evidence": true},
+      "si": {"text": "平静说明", "has_direct_evidence": true}
+    },
+    "elevated_scores": {
+      "忿": 0.2
+    },
+    "default_score": 0.0
+  },
+  "assertions": {
+    "zero_final": ["忿", "恨", "恼"],
+    "skipped": ["恨", "恼"]
+  }
+}

@@ -1,0 +1,57 @@
+数据：3_pred_rec
+题号：36  d1002_u3
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 一开口就把‘能给出好科幻片推荐的人’这个位置整个放到我身上：眼前要呈现的对象不是随便的科幻片，而是先被‘已发行 DVD、可购买或在线租赁观看’筛过的片单，不符合这条线的影片根本进不了这个对象域。‘lol, I have. Who hasn't’则像提示这个推荐者位置并不稳——若我给出的东西被当作人人都看过而搁置，那搁置的不只是片目，而是‘我’这个推荐者本身。",
+      "probability": 0.3522
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 的请求把眼前组织成一个可获取片源的领域：新科幻片要已发行 DVD、能买或在线上租，而‘我知道这些片源在哪’正是被请求激活的位置。‘lol, I have. Who hasn't’只是说明某些片对 SEEKER 不新鲜，却没有拆掉这个知识优势的位置——我仍然是从可购买、可租赁的片源中去辨认对象的人。",
+      "probability": 0.3492
+    },
+    {
+      "content": "在 RECOMMENDER 的所缘里，SEEKER 那句‘lol, I have. Who hasn't’不是普通附和，而像把我正给出的推荐照成‘谁没看过’的普通物；于是‘新科幻片’这个对象被套上双重条件：既要已发行 DVD、可购买或在线租赁，又必须避开人人都看过的那一圈。只要推荐落进‘谁没看过’的范围，我的推荐就不够特别，自我价值也随之被削掉。",
+      "probability": 0.2986
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "对方要的是已发行 DVD、可购买或在线租赁观看的新科幻片，这条筛选线先于片目存在，不符合的片子进不了这个对象域。可他一开口就把‘能给出好科幻片推荐的人’整个搁到我身上，而‘lol, I have. Who hasn't’像是在说我的开场选择太寻常——若接下来只是顺着大众片单走，被搁置的就不只是片名，而是我这个推荐者。得先问他看没看过《原力觉醒》，借这句确认把范围收窄，再往更符合‘新’且不落俗套的片子上探，同时不能越过 DVD 可购或可租这条底线。",
+      "activation": 0.3697
+    },
+    {
+      "content": "原来我提的星战7在他眼里只是‘谁没看过’的普通片；我原先说Sure thing时以为这能算一个新科幻片的引子，现在它被这句话照得毫无特别。‘新科幻片’这个对象因此被加上双重筛选：既要已发行DVD、可购买或在线租赁，又得避开人人都看过的那一圈；若落进‘谁没看过’，我的推荐就不够特别，自我价值也被削掉。于是我对推荐的标准收紧，倾向于另找一部既符合可获取条件、又不在大众共识里的片子，好让推荐重新站住。",
+      "activation": 0.3242
+    },
+    {
+      "content": "他开口要新科幻片，还限定已出DVD、能买或能在线租，这一下就把我要看的范围收在我熟悉的片源里。我知道哪些片已经能买到或租到，这个位置正被他的请求坐实；他说‘谁没看过’只是把星战7划成旧片，并没有把我从这个位置上挪开。眼下仍要在可获取的片源里继续辨认：哪些既算新科幻，又不是他这种观众早已看过的；先拿最显眼、最容易租到的一部来试探，也仍是自然的整理方式。",
+      "activation": 0.3062
+    }
+  ],
+  "observed_action": "RECOMMENDER 说 Sure thing，并问 SEEKER 是否看过 Star Wars: The Force Awakens (2015)。",
+  "predicted_actions": [
+    {
+      "content": "推荐一部冷门新科幻片并对比大众片",
+      "probability": 0.4652
+    },
+    {
+      "content": "询问是否看过另一部冷门新科幻片",
+      "probability": 0.3932
+    },
+    {
+      "content": "回应质疑并承认开场太大众、说明筛选条件",
+      "probability": 0.1416
+    }
+  ]
+}
+选择：C: Provides a recommendation directly or by inquiring further
+分数：{"a": 0.3932, "b": 0.1416, "c": 0.4652, "d": 0, "e": 0}
+选择说明：A 0.3932 = 询问是否看过另一部冷门新科幻片 0.3932；B 0.1416 = 回应质疑并承认开场太大众、说明筛选条件 0.1416；C 0.4652 = 推荐一部冷门新科幻片并对比大众片 0.4652；D 0.0000；E 0.0000。Action 0 recommends (C), action 1 asks for feedback (A), and action 2 responds to doubts (B).
+标准：C: Provides a recommendation directly or by inquiring further
+D: Explains a recommendation with background or reasoning
+结果：对

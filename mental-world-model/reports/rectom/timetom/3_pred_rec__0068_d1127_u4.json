@@ -1,0 +1,75 @@
+{
+  "id": "3_pred_rec__0068_d1127_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender asks what movies the seeker likes.",
+      "information_available": "Only the beginning of the dialogue; no information yet about the seeker's movie preferences.",
+      "preferences": "Recommender's own preference is to learn the seeker's tastes so recommendations can be made; believed seeker preferences are unknown.",
+      "belief_before": "No beliefs yet about the seeker's movie preferences.",
+      "belief_update": "No update from the other speaker; recommender is initiating information gathering.",
+      "belief_after": "The recommender still does not know what movies the seeker likes and is waiting for an answer.",
+      "emotion": "Neutral, polite, inviting.",
+      "intention": "Ask an opening question to discover the seeker's movie preferences.",
+      "conversational_goal": "Establish the seeker's preference profile before recommending.",
+      "reaction_to_other_speaker": "Not applicable; no prior seeker utterance.",
+      "changes_previous_interpretation": "Not applicable; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says he or she is looking for a good Christmas movie, any genre.",
+      "information_available": "Recommender has asked what movies the seeker likes and now hears that the seeker wants a good Christmas movie with no genre restriction.",
+      "preferences": "Believed seeker preference: wants a good Christmas movie; genre is open. Recommender still lacks specific title preferences.",
+      "belief_before": "The seeker's movie preferences are unknown.",
+      "belief_update": "The seeker wants a good Christmas movie and is open to any genre.",
+      "belief_after": "The seeker's immediate request is a Christmas movie with unrestricted genre.",
+      "emotion": "Attentive and helpful.",
+      "intention": "Prepare to recommend Christmas movies that fit the seeker's request.",
+      "conversational_goal": "Identify suitable Christmas movie options for the seeker.",
+      "reaction_to_other_speaker": "Registers the seeker's request as clear and cooperative.",
+      "changes_previous_interpretation": "Yes; the earlier open preference question is narrowed to a Christmas movie request with any genre."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender suggests Elf (2003) as a funny Christmas movie and Home Alone (1990) as another classic.",
+      "information_available": "Recommender knows the seeker wants a good Christmas movie of any genre and has not yet given feedback on specific titles.",
+      "preferences": "Believed seeker preference: Christmas movie, any genre. Recommender's own preference in this turn is to offer a funny option and a classic option.",
+      "belief_before": "The seeker wants a good Christmas movie and has no stated genre restriction.",
+      "belief_update": "No new information from the seeker; recommender commits to two candidate recommendations.",
+      "belief_after": "Elf and Home Alone are both relevant Christmas movie options for the seeker.",
+      "emotion": "Helpful and positive.",
+      "intention": "Provide Christmas movie options that match the seeker's request.",
+      "conversational_goal": "Offer useful candidates and prompt the seeker's reaction.",
+      "reaction_to_other_speaker": "Responds directly to the seeker's Christmas-movie request.",
+      "changes_previous_interpretation": "No; the recommendations follow consistently from the previous request."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says he or she has not seen Elf (2003) but loves Home Alone (1990).",
+      "information_available": "Recommender knows the seeker wants a good Christmas movie, any genre; has offered Elf and Home Alone; and now knows the seeker has not seen Elf but loves Home Alone.",
+      "preferences": "Believed seeker preference: likes Home Alone, is unfamiliar with Elf, and remains open to Christmas movies. Recommender may weakly infer interest in classic Christmas favorites, but not strongly from this alone.",
+      "belief_before": "The seeker wants a Christmas movie, and Elf and Home Alone were offered as possible options.",
+      "belief_update": "The seeker loves Home Alone and has not seen Elf.",
+      "belief_after": "Home Alone is a confirmed liked Christmas movie; Elf is an unseen possible option; feedback can guide further recommendations.",
+      "emotion": "Pleased or encouraged by the positive reaction to Home Alone; neutral or curious about Elf.",
+      "intention": "Use the feedback to refine or continue recommendations.",
+      "conversational_goal": "Acknowledge the feedback and move toward a more tailored suggestion, such as offering Elf or recommending movies similar to Home Alone.",
+      "reaction_to_other_speaker": "Receives positive feedback on Home Alone and learns the seeker is unfamiliar with Elf.",
+      "changes_previous_interpretation": "Yes; one offered title is now confirmed liked and the other is unseen, so the recommendation state becomes more differentiated."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender asks what movies the seeker likes.\",\n    \"information_available\": \"Only the beginning of the dialogue; no information yet about the seeker's movie preferences.\",\n    \"preferences\": \"Recommender's own preference is to learn the seeker's tastes so recommendations can be made; believed seeker preferences are unknown.\",\n    \"belief_before\": \"No beliefs yet about the seeker's movie preferences.\",\n    \"belief_update\": \"No update from the other speaker; recommender is initiating information gathering.\",\n    \"belief_after\": \"The recommender still does not know what movies the seeker likes and is waiting for an answer.\",\n    \"emotion\": \"Neutral, polite, inviting.\",\n    \"intention\": \"Ask an opening question to discover the seeker's movie preferences.\",\n    \"conversational_goal\": \"Establish the seeker's preference profile before recommending.\",\n    \"reaction_to_other_speaker\": \"Not applicable; no prior seeker utterance.\",\n    \"changes_previous_interpretation\": \"Not applicable; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says he or she is looking for a good Christmas movie, any genre.\",\n    \"information_available\": \"Recommender has asked what movies the seeker likes and now hears that the seeker wants a good Christmas movie with no genre restriction.\",\n    \"preferences\": \"Believed seeker preference: wants a good Christmas movie; genre is open. Recommender still lacks specific title preferences.\",\n    \"belief_before\": \"The seeker's movie preferences are unknown.\",\n    \"belief_update\": \"The seeker wants a good Christmas movie and is open to any genre.\",\n    \"belief_after\": \"The seeker's immediate request is a Christmas movie with unrestricted genre.\",\n    \"emotion\": \"Attentive and helpful.\",\n    \"intention\": \"Prepare to recommend Christmas movies that fit the seeker's request.\",\n    \"conversational_goal\": \"Identify suitable Christmas movie options for the seeker.\",\n    \"reaction_to_other_speaker\": \"Registers the seeker's request as clear and cooperative.\",\n    \"changes_previous_interpretation\": \"Yes; the earlier open preference question is narrowed to a Christmas movie request with any genre.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender suggests Elf (2003) as a funny Christmas movie and Home Alone (1990) as another classic.\",\n    \"information_available\": \"Recommender knows the seeker wants a good Christmas movie of any genre and has not yet given feedback on specific titles.\",\n    \"preferences\": \"Believed seeker preference: Christmas movie, any genre. Recommender's own preference in this turn is to offer a funny option and a classic option.\",\n    \"belief_before\": \"The seeker wants a good Christmas movie and has no stated genre restriction.\",\n    \"belief_update\": \"No new information from the seeker; recommender commits to two candidate recommendations.\",\n    \"belief_after\": \"Elf and Home Alone are both relevant Christmas movie options for the seeker.\",\n    \"emotion\": \"Helpful and positive.\",\n    \"intention\": \"Provide Christmas movie options that match the seeker's request.\",\n    \"conversational_goal\": \"Offer useful candidates and prompt the seeker's reaction.\",\n    \"reaction_to_other_speaker\": \"Responds directly to the seeker's Christmas-movie request.\",\n    \"changes_previous_interpretation\": \"No; the recommendations follow consistently from the previous request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says he or she has not seen Elf (2003) but loves Home Alone (1990).\",\n    \"information_available\": \"Recommender knows the seeker wants a good Christmas movie, any genre; has offered Elf and Home Alone; and now knows the seeker has not seen Elf but loves Home Alone.\",\n    \"preferences\": \"Believed seeker preference: likes Home Alone, is unfamiliar with Elf, and remains open to Christmas movies. Recommender may weakly infer interest in classic Christmas favorites, but not strongly from this alone.\",\n    \"belief_before\": \"The seeker wants a Christmas movie, and Elf and Home Alone were offered as possible options.\",\n    \"belief_update\": \"The seeker loves Home Alone and has not seen Elf.\",\n    \"belief_after\": \"Home Alone is a confirmed liked Christmas movie; Elf is an unseen possible option; feedback can guide further recommendations.\",\n    \"emotion\": \"Pleased or encouraged by the positive reaction to Home Alone; neutral or curious about Elf.\",\n    \"intention\": \"Use the feedback to refine or continue recommendations.\",\n    \"conversational_goal\": \"Acknowledge the feedback and move toward a more tailored suggestion, such as offering Elf or recommending movies similar to Home Alone.\",\n    \"reaction_to_other_speaker\": \"Receives positive feedback on Home Alone and learns the seeker is unfamiliar with Elf.\",\n    \"changes_previous_interpretation\": \"Yes; one offered title is now confirmed liked and the other is unseen, so the recommendation state becomes more differentiated.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

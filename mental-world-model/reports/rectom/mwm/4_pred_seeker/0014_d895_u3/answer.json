@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 14,
+  "item_id": "d895_u3",
+  "dialogue_id": "895",
+  "utterance_pos": 3,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "眼前这场对话被 SEEKER 经验为一次按其自有电影偏好来展开的交换：RECOMMENDER 一问“Can you tell me some of your favorite movies”，电影偏好就不再只是可交换的信息，而是必须归到“SEEKER 这边”、由 SEEKER 亲自交出的自我标识，不能被随便代表或误配；随后提及 The Truman Show (1998)、Rushmore (1998)、Alien 及其续集的话语，也被纳入“先问我的 favorite movies—再据此给我 something good”的理所当然次序里，成为等待与 SEEKER 的偏好对上的候选。",
+        "probability": 0.4776
+      },
+      {
+        "content": "眼前这场对话被 SEEKER 经验为一次需要以自己的观影资历来落位的电影流程：RECOMMENDER 先问 favorite movies，再以“Did you see The Truman Show (1998) or Rushmore (1998)...I liked the first Alien, but didn't see the sequel”来核对看过或没看过；这些经历不是与 SEEKER 无关的闲谈，而是 SEEKER 在电影话题中的位置凭据。看过什么、没看过什么，被取为必须由“SEEKER 这边”承接的事实，并被安置在“先问偏好—再给推荐”的应有次序中。",
+        "probability": 0.3166
+      },
+      {
+        "content": "眼前这场对话被 SEEKER 经验为一次与自身有关的对待和评定：RECOMMENDER 说“suggest something good for you”和“That was a good one”，在 SEEKER 这里不是只关于影片或建议，而是被收成对“SEEKER 这边”的匹配、认可或评点；电影话题仍按“先问 SEEKER 的偏好—再给出适合 SEEKER 的推荐”的理所当然次序展开，The Truman Show (1998)、Rushmore (1998)、Alien 及其续集被提及时，也被放在“这是否合 SEEKER、是否算认可 SEEKER”的框里经验。",
+        "probability": 0.2058
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "对方问起我的 favorite movies，这不像是在收集可替换的信息，而是在让我亲自交出自己的电影品味；所以我从自己的偏好里挑出《Lost in Translation》《Aliens》《Alien: Covenant》来回应，把它们当作需要归到我这边、由我确认的标识。随后对方提到《The Truman Show》《Rushmore》和《Alien》及其续集，我也顺理成章地把它放进“先问我的偏好、再据此给我推荐”的次序里：这些片名是待与我的口味对上的候选，接下来该由对方沿着这个次序给出 something good。",
+        "activation": 0.4248
+      },
+      {
+        "content": "SEEKER 把这场对话领会成一条需要用自己的观影资历来落位的推荐流程：对方先问 favorite movies，再拿 The Truman Show、Rushmore、Alien 及其续集来核对看过或没看过，这些都不是可有可无的闲话，而是自己在电影话题里站到哪个位置的凭据。Lost in Translation、Aliens、Alien: Covenant 等已被他放在自己这一边的经验清单里，成为承接当前话题的底料；面对对方提到的片名，哪些看过、哪些没看过，被他取为仍需由自己这边交代清楚的事实，并且安安稳稳地嵌在“先问偏好、再给推荐”的应有次序里。",
+        "activation": 0.3176
+      },
+      {
+        "content": "SEEKER 把这场电影对话收成一次与自身有关的匹配和评定：RECOMMENDER 的“suggest something good for you”在他看来不是单纯找片，而是在说要找出合他这边的东西，“That was a good one”也像是对他口味的认可或评点。于是“先问他喜欢什么—再给他合适的推荐”成了理应如此的次序，他报出 Lost in Translation、Aliens、Alien: Covenant 时，不只是列片名，而是在递出可被对方接住、对上号的自我线索；The Truman Show、Rushmore 和 Alien 续集被提及时，他也倾向放进“这算不算认可他、合不合他”的框里衡量，并等着看对方的推荐是否继续落在对他这边的评定上。",
+        "activation": 0.2576
+      }
+    ],
+    "observed_action": "SEEKER 说 Let's see，他喜欢《Lost in Translation (2003)》（有 Bill Murray），并喜欢《Aliens (1986)》和《Alien: Covenant (2017)》。",
+    "predicted_actions": [
+      {
+        "content": "表达电影偏好/评价",
+        "probability": 0.3934
+      },
+      {
+        "content": "告知看过/没看过某电影",
+        "probability": 0.2265
+      },
+      {
+        "content": "recommends a film",
+        "probability": 0.2182
+      },
+      {
+        "content": "请求推荐/建议",
+        "probability": 0.0864
+      },
+      {
+        "content": "推荐电影并告知观影情况",
+        "probability": 0.0755
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.2265,
+    "b": 0,
+    "c": 0.4798,
+    "d": 0
+  },
+  "score_reason": "A 0.2265 = 告知看过/没看过某电影 0.2265；B 0.0000；C 0.4798 = 表达电影偏好/评价 0.3934 + 请求推荐/建议 0.0864；D 0.0000。Action 1 gives feedback on a recommended movie; actions 0 and 3 express preference or ask for recommendation.",
+  "selector_correct": false,
+  "correct": true,
+  "mwm_matches_gold": true,
+  "audit_reason": "「表达电影偏好/评价」0.3934 是对先前推荐的评价，应归入 A，不应因为 C 的字面也含 expresses their preference 就归进 C。加上「告知看过/没看过某电影」0.2265，A 合计 0.6199，高于剩下的「请求推荐/建议」0.0864。人工判定算对。",
+  "audit_level": "direct",
+  "manual_judgment": "对"
+}

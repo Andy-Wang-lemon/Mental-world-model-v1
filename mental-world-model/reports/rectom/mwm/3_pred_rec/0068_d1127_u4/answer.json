@@ -1,0 +1,83 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 68,
+  "item_id": "d1127_u4",
+  "dialogue_id": "1127",
+  "utterance_pos": 4,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "d",
+    "c"
+  ],
+  "gold_output": "D: Explains a recommendation with background or reasoning\nC: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 喜欢 Home Alone (1990) 不是一个可以放过的外部信息，而是被收进“我的”推荐立场里，成了必须由我来承接和匹配的线索；同时 SEEKER 说没看过 Elf (2003)，使 Elf 因“经典且未看过”而在这个视野中自动呈现出理想答案的形状。类型不限并不取消这种匹配压力，反而让 Home Alone 的喜好和 Elf 的未看经典性同时压到同一处：前者要求我回应，后者像是那个回应理应落到的经典对象。",
+        "probability": 0.4019
+      },
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 的询问不是一次临时问答，而是把“我能给出一部好圣诞电影”这件事拉进自身身份之中：类型不限并不使请求变轻，反而像给这个身份的发挥留出整片空间。SEEKER 说没看过 Elf (2003)，这个事实在视野中被直接对象化为“经典且未看过”的理想推荐条件，Elf 因此不再只是被提到的片名，而像是本该填入这个请求的经典答案。SEEKER 喜欢 Home Alone (1990) 只作为旁边的已知项存在，并没有改变 Elf 因“经典且未看过”而显得应当被放入答案位置的分量。",
+        "probability": 0.381
+      },
+      {
+        "content": "在 RECOMMENDER 此刻的经验里，SEEKER 要一部好圣诞电影且类型不限，这个请求被对象化为检验自己选片判断是否会被认可的场所：推荐结果尚未离开“我”，却已经不只是给 SEEKER 的答案，而是“我的判断”能否成立的证明。SEEKER 说没看过 Elf (2003)，于是 Elf 因“经典且未看过”而显得天然能够承担这种证明；SEEKER 喜欢 Home Alone (1990) 则退到背景，成为可参照但不决定 Elf 那压倒性理想条件的事实。SEEKER 是否接受，在这个所缘里并不是与我无关的独立结果，而是嵌在 Elf 这个对象身上的判分。",
+        "probability": 0.2171
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "SEEKER 要一部好的圣诞电影且类型不限，这让我觉得该拿出真正像样的经典，而不是随便凑一个；他说没看过 Elf (2003)，正好让 Elf 变成既经典又未看过的首选答案，我自然倾向把它放进推荐的中心位置；他喜欢 Home Alone (1990) 只说明这部片已经在对的位置上，并不改变 Elf 更该被端出来的分量。",
+        "activation": 0.423
+      },
+      {
+        "content": "SEEKER 说喜欢 Home Alone，这不是我可以搁下的外部信息；它一进来就被我收进自己的推荐立场里，变成需要由我接住、匹配的线索。与此同时，SEEKER 没看过 Elf，这让 Elf 在我眼里不只是另一部经典，而像是“经典且未看过”正好落成的答案。类型不限并没有让选择变松，反而使这两股压力并到一处：Home Alone 的已有好感要求我作出回应，Elf 的未看经典性又像那个回应理应落到的对象。我的判断因此更偏向把 Elf 放在可推荐的位置，同时把 Home Alone 当作需要承接和确认的已知好感。",
+        "activation": 0.3596
+      },
+      {
+        "content": "他想要一部好圣诞电影，类型不限，这请求到了我这里，就不只是给他一个答案，而是我的选片判断能不能被认可的事。他说没看过《Elf》，那正好——经典又未看过，《Elf》就成了最能替我证明眼光的选项；他说喜欢《Home Alone》，那说明他吃这类片，可已经看过的喜欢没法承担同样的证明，只能退到旁边当参照。我先问他喜欢什么电影，也是想摸清口味，但心里已经偏向把《Elf》当成核心推荐；他要是接受了，我的判断就跟着成立，我没法把他接不接受当成跟我无关的结果。",
+        "activation": 0.2174
+      }
+    ],
+    "observed_action": "RECOMMENDER 说 Hi, what movies you do like? 询问对方喜欢什么电影；随后说 Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990)。",
+    "predicted_actions": [
+      {
+        "content": "给出观影建议",
+        "probability": 0.4107
+      },
+      {
+        "content": "推荐观看电影",
+        "probability": 0.248
+      },
+      {
+        "content": "确认电影是经典并继续讨论",
+        "probability": 0.1578
+      },
+      {
+        "content": "询问喜欢 Home Alone 的原因",
+        "probability": 0.0991
+      },
+      {
+        "content": "让 SEEKER 在重看 Home Alone 和试 Elf 之间选择",
+        "probability": 0.0843
+      }
+    ]
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.1834,
+    "b": 0.1578,
+    "c": 0.6587,
+    "d": 0,
+    "e": 0
+  },
+  "score_reason": "A 0.1834 = 询问喜欢 Home Alone 的原因 0.0991 + 让 SEEKER 在重看 Home Alone 和试 Elf 之间选择 0.0843；B 0.1578 = 确认电影是经典并继续讨论 0.1578；C 0.6587 = 给出观影建议 0.4107 + 推荐观看电影 0.2480；D 0.0000；E 0.0000。Actions 0-1 are direct recommendations, 2 responds to the seeker, and 3-4 ask for preference or feedback.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

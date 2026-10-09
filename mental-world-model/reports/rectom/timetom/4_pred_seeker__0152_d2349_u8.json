@@ -1,0 +1,96 @@
+{
+  "id": "4_pred_seeker__0152_d2349_u8",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER opens: he is looking for a children's movie for his little brother, whom he is babysitting tonight. Information available: only his own request; no recommender suggestions yet. Preferences: wants a children's movie; no specific genre or title preference stated. Reaction to other: none yet.",
+      "belief_before": "No prior context about the recommender; has a task to find a suitable children's movie for his little brother tonight.",
+      "belief_update": "Establishes the recommendation need.",
+      "belief_after": "Needs a children's movie for his little brother; awaiting recommendations.",
+      "emotion": "Friendly, helpful, slightly task-focused.",
+      "intention": "Ask the recommender for a children's movie suggestion.",
+      "conversational_goal": "Get a suitable movie recommendation for his little brother."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER greets and says 'Happy New Year.' Information available: recommender is present and friendly/social; no movie suggestion yet. Preferences: still wants a children's movie. Reaction to other: receives a polite holiday greeting.",
+      "belief_before": "Needs a children's movie for his little brother; recommender's role and helpfulness are not yet known.",
+      "belief_update": "Recommender is polite and willing to engage socially; the request has not yet been addressed.",
+      "belief_after": "Recommender is friendly; seeker still needs a children's movie recommendation.",
+      "emotion": "Polite, positive.",
+      "intention": "Respond to the greeting and keep the request active.",
+      "conversational_goal": "Maintain rapport while steering toward a movie recommendation."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER replies 'Happy New Year.' Information available: recommender greeted him; no suggestion yet. Preferences: wants a children's movie. Reaction to other: reciprocates the greeting politely.",
+      "belief_before": "Recommender is friendly; seeker still needs a children's movie recommendation.",
+      "belief_update": "Social greeting is reciprocated; no new movie information is introduced.",
+      "belief_after": "Recommender is friendly; seeker awaits a recommendation.",
+      "emotion": "Polite, neutral-positive.",
+      "intention": "Acknowledge the greeting and keep the conversation open.",
+      "conversational_goal": "Continue the interaction so the recommender can suggest a movie."
+    },
+    {
+      "time": 4,
+      "observed": "RECOMMENDER suggests The Secret Life of Pets (2016). Information available: recommender has offered a concrete children's movie candidate. Preferences: seeker wants a children's movie; no opinion on this title yet. Reaction to other: receives the suggestion.",
+      "belief_before": "Recommender is friendly; seeker awaits a children's movie recommendation.",
+      "belief_update": "New candidate introduced: The Secret Life of Pets. Seeker can now evaluate it against his preferences.",
+      "belief_after": "The Secret Life of Pets is a candidate; seeker still needs to decide if it suits his brother.",
+      "emotion": "Curious, neutral.",
+      "intention": "Consider or respond to the suggested movie.",
+      "conversational_goal": "Evaluate whether The Secret Life of Pets is a good fit."
+    },
+    {
+      "time": 5,
+      "observed": "SEEKER says he is not really a fan of The Secret Life of Pets; he liked the first half hour but thought it got a little weird. Information available: he has seen it and has a specific evaluation. Preferences: dislikes the later/weird part and is not a fan overall. Reaction to other: politely declines the recommender's suggestion.",
+      "belief_before": "The Secret Life of Pets is the current candidate; recommender suggested it.",
+      "belief_update": "Seeker rejects The Secret Life of Pets and conveys that weird turns are a negative preference/concern.",
+      "belief_after": "The Secret Life of Pets is unsuitable; recommender should suggest something else.",
+      "emotion": "Polite disagreement.",
+      "intention": "Reject the current suggestion and guide the recommender toward a better fit.",
+      "conversational_goal": "Get a different children's movie recommendation."
+    },
+    {
+      "time": 6,
+      "observed": "RECOMMENDER suggests Minions (2015) and says those movies are hilarious. Information available: recommender has offered a new candidate, Minions, and endorses its humor. Preferences: seeker wants a children's movie; prior dislike of weird later parts may still matter. Reaction to other: receives a new suggestion.",
+      "belief_before": "The Secret Life of Pets is unsuitable; seeker still needs a children's movie.",
+      "belief_update": "New candidate introduced: Minions; recommender believes it is hilarious.",
+      "belief_after": "Minions is a candidate to evaluate; previous rejection of The Secret Life of Pets remains.",
+      "emotion": "Curious, open.",
+      "intention": "Consider Minions and respond to the recommender.",
+      "conversational_goal": "Assess whether Minions fits his brother."
+    },
+    {
+      "time": 7,
+      "observed": "SEEKER says 'Yes!' and explains his brother dressed up as a minion for Halloween because he liked it so much. Information available: he has seen Minions; his brother liked it strongly. Preferences: positive association with Minions for his brother; likely enthusiastic about it. Reaction to other: positively affirms the recommender's Minions suggestion.",
+      "belief_before": "Minions is the current candidate; recommender called it hilarious.",
+      "belief_update": "Confirms Minions is familiar and strongly liked by the brother; this makes it a positive but already-seen option.",
+      "belief_after": "Minions is a good fit for the brother's taste, though the family has already seen it; seeker may still need a new or unseen movie or a similar recommendation.",
+      "emotion": "Enthusiastic, positive.",
+      "intention": "Share positive association and signal that Minions is suitable for his brother.",
+      "conversational_goal": "Affirm the recommendation and help recommender infer the brother's taste."
+    },
+    {
+      "time": 8,
+      "observed": "RECOMMENDER says his son is really into Cars 3 (2017). Information available: recommender mentions Cars 3 as another children's movie his son likes; it functions as a new suggestion. Preferences: seeker wants a children's movie for his brother; Minions is known and liked by the brother. Reaction to other: receives another recommendation.",
+      "belief_before": "Minions is a positive, already-seen fit; seeker may need another suitable children's movie.",
+      "belief_update": "New candidate introduced: Cars 3, endorsed indirectly via recommender's son's interest.",
+      "belief_after": "Cars 3 is a candidate to evaluate for his brother; Minions remains a positive but already-seen option.",
+      "emotion": "Curious, neutral.",
+      "intention": "Consider Cars 3 and decide whether it fits.",
+      "conversational_goal": "Evaluate the new Cars 3 suggestion for the brother."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER opens: he is looking for a children's movie for his little brother, whom he is babysitting tonight. Information available: only his own request; no recommender suggestions yet. Preferences: wants a children's movie; no specific genre or title preference stated. Reaction to other: none yet.\",\n    \"belief_before\": \"No prior context about the recommender; has a task to find a suitable children's movie for his little brother tonight.\",\n    \"belief_update\": \"Establishes the recommendation need.\",\n    \"belief_after\": \"Needs a children's movie for his little brother; awaiting recommendations.\",\n    \"emotion\": \"Friendly, helpful, slightly task-focused.\",\n    \"intention\": \"Ask the recommender for a children's movie suggestion.\",\n    \"conversational_goal\": \"Get a suitable movie recommendation for his little brother.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER greets and says 'Happy New Year.' Information available: recommender is present and friendly/social; no movie suggestion yet. Preferences: still wants a children's movie. Reaction to other: receives a polite holiday greeting.\",\n    \"belief_before\": \"Needs a children's movie for his little brother; recommender's role and helpfulness are not yet known.\",\n    \"belief_update\": \"Recommender is polite and willing to engage socially; the request has not yet been addressed.\",\n    \"belief_after\": \"Recommender is friendly; seeker still needs a children's movie recommendation.\",\n    \"emotion\": \"Polite, positive.\",\n    \"intention\": \"Respond to the greeting and keep the request active.\",\n    \"conversational_goal\": \"Maintain rapport while steering toward a movie recommendation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER replies 'Happy New Year.' Information available: recommender greeted him; no suggestion yet. Preferences: wants a children's movie. Reaction to other: reciprocates the greeting politely.\",\n    \"belief_before\": \"Recommender is friendly; seeker still needs a children's movie recommendation.\",\n    \"belief_update\": \"Social greeting is reciprocated; no new movie information is introduced.\",\n    \"belief_after\": \"Recommender is friendly; seeker awaits a recommendation.\",\n    \"emotion\": \"Polite, neutral-positive.\",\n    \"intention\": \"Acknowledge the greeting and keep the conversation open.\",\n    \"conversational_goal\": \"Continue the interaction so the recommender can suggest a movie.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"RECOMMENDER suggests The Secret Life of Pets (2016). Information available: recommender has offered a concrete children's movie candidate. Preferences: seeker wants a children's movie; no opinion on this title yet. Reaction to other: receives the suggestion.\",\n    \"belief_before\": \"Recommender is friendly; seeker awaits a children's movie recommendation.\",\n    \"belief_update\": \"New candidate introduced: The Secret Life of Pets. Seeker can now evaluate it against his preferences.\",\n    \"belief_after\": \"The Secret Life of Pets is a candidate; seeker still needs to decide if it suits his brother.\",\n    \"emotion\": \"Curious, neutral.\",\n    \"intention\": \"Consider or respond to the suggested movie.\",\n    \"conversational_goal\": \"Evaluate whether The Secret Life of Pets is a good fit.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"SEEKER says he is not really a fan of The Secret Life of Pets; he liked the first half hour but thought it got a little weird. Information available: he has seen it and has a specific evaluation. Preferences: dislikes the later/weird part and is not a fan overall. Reaction to other: politely declines the recommender's suggestion.\",\n    \"belief_before\": \"The Secret Life of Pets is the current candidate; recommender suggested it.\",\n    \"belief_update\": \"Seeker rejects The Secret Life of Pets and conveys that weird turns are a negative preference/concern.\",\n    \"belief_after\": \"The Secret Life of Pets is unsuitable; recommender should suggest something else.\",\n    \"emotion\": \"Polite disagreement.\",\n    \"intention\": \"Reject the current suggestion and guide the recommender toward a better fit.\",\n    \"conversational_goal\": \"Get a different children's movie recommendation.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"RECOMMENDER suggests Minions (2015) and says those movies are hilarious. Information available: recommender has offered a new candidate, Minions, and endorses its humor. Preferences: seeker wants a children's movie; prior dislike of weird later parts may still matter. Reaction to other: receives a new suggestion.\",\n    \"belief_before\": \"The Secret Life of Pets is unsuitable; seeker still needs a children's movie.\",\n    \"belief_update\": \"New candidate introduced: Minions; recommender believes it is hilarious.\",\n    \"belief_after\": \"Minions is a candidate to evaluate; previous rejection of The Secret Life of Pets remains.\",\n    \"emotion\": \"Curious, open.\",\n    \"intention\": \"Consider Minions and respond to the recommender.\",\n    \"conversational_goal\": \"Assess whether Minions fits his brother.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"SEEKER says 'Yes!' and explains his brother dressed up as a minion for Halloween because he liked it so much. Information available: he has seen Minions; his brother liked it strongly. Preferences: positive association with Minions for his brother; likely enthusiastic about it. Reaction to other: positively affirms the recommender's Minions suggestion.\",\n    \"belief_before\": \"Minions is the current candidate; recommender called it hilarious.\",\n    \"belief_update\": \"Confirms Minions is familiar and strongly liked by the brother; this makes it a positive but already-seen option.\",\n    \"belief_after\": \"Minions is a good fit for the brother's taste, though the family has already seen it; seeker may still need a new or unseen movie or a similar recommendation.\",\n    \"emotion\": \"Enthusiastic, positive.\",\n    \"intention\": \"Share positive association and signal that Minions is suitable for his brother.\",\n    \"conversational_goal\": \"Affirm the recommendation and help recommender infer the brother's taste.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"RECOMMENDER says his son is really into Cars 3 (2017). Information available: recommender mentions Cars 3 as another children's movie his son likes; it functions as a new suggestion. Preferences: seeker wants a children's movie for his brother; Minions is known and liked by the brother. Reaction to other: receives another recommendation.\",\n    \"belief_before\": \"Minions is a positive, already-seen fit; seeker may need another suitable children's movie.\",\n    \"belief_update\": \"New candidate introduced: Cars 3, endorsed indirectly via recommender's son's interest.\",\n    \"belief_after\": \"Cars 3 is a candidate to evaluate for his brother; Minions remains a positive but already-seen option.\",\n    \"emotion\": \"Curious, neutral.\",\n    \"intention\": \"Consider Cars 3 and decide whether it fits.\",\n    \"conversational_goal\": \"Evaluate the new Cars 3 suggestion for the brother.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

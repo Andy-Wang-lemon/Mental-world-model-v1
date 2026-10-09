@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0019_d950_u3",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The SEEKER greeted and then answered the recommender’s question about movie preferences.\n- The SEEKER wants help finding a good movie in any genre.\n- The SEEKER likes movies like *Wedding Crashers* (2005) and *It* (2017).\n- The SEEKER does not want something like *Star Wars*.\n- It is now RECOMMENDER’s turn to respond.\n\nRECOMMENDER may also be able to infer, if using movie metadata, that *Wedding Crashers* is comedy/romance, *It* is horror, and *Star Wars* is sci-fi/space opera. However, the SEEKER did not explicitly state that they like all comedies, all horror, or dislike all sci-fi; those are only inferable from examples.\n\nRECOMMENDER does not know:\n- The SEEKER’s exact preferred genre or mood for this request.\n- Whether the SEEKER wants something closer to comedy/romance, horror, or another genre.\n- Whether “not like Star Wars” means excluding only Star Wars, all sci-fi, or all space/fantasy films.\n- Which movies the SEEKER has already seen.\n- Any other constraints such as release era, rating, language, streaming availability, or content restrictions.\n- Whether the SEEKER wants a direct recommendation, a list, or further narrowing questions.\n\nGiven the dialogue, the recommender has just received enough initial preference information to move forward with the recommendation task. The next likely strategy is to either recommend directly or ask a focused follow-up to narrow down a recommendation. It is not merely greeting, explaining an existing recommendation, or only acknowledging the question.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": "c",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "4_pred_seeker__0013_d895_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER observes the RECOMMENDER greeting them and asking for their favorite movies, with a promise to suggest something good. No SEEKER preferences have been disclosed yet.",
+      "belief_before": "SEEKER has no prior information from this dialogue about the RECOMMENDER or their recommendation ability.",
+      "belief_update": "SEEKER learns that the RECOMMENDER wants their favorite movies and claims they can use them to make a good recommendation.",
+      "belief_after": "SEEKER believes the RECOMMENDER is asking for movie preferences and is positioned as someone who will offer a recommendation. This is the initial turn, so it sets the baseline rather than revising a previous interpretation.",
+      "emotion": "Neutral to mildly receptive; no explicit emotional reaction is stated.",
+      "intention": "SEEKER likely intends to decide whether to share favorite movies or otherwise engage with the RECOMMENDER's request.",
+      "conversational_goal": "To participate in the recommendation exchange, probably by providing movie preferences in order to receive a suggestion."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER observes the RECOMMENDER greeting them and asking for their favorite movies, with a promise to suggest something good. No SEEKER preferences have been disclosed yet.\",\n    \"belief_before\": \"SEEKER has no prior information from this dialogue about the RECOMMENDER or their recommendation ability.\",\n    \"belief_update\": \"SEEKER learns that the RECOMMENDER wants their favorite movies and claims they can use them to make a good recommendation.\",\n    \"belief_after\": \"SEEKER believes the RECOMMENDER is asking for movie preferences and is positioned as someone who will offer a recommendation. This is the initial turn, so it sets the baseline rather than revising a previous interpretation.\",\n    \"emotion\": \"Neutral to mildly receptive; no explicit emotional reaction is stated.\",\n    \"intention\": \"SEEKER likely intends to decide whether to share favorite movies or otherwise engage with the RECOMMENDER's request.\",\n    \"conversational_goal\": \"To participate in the recommendation exchange, probably by providing movie preferences in order to receive a suggestion.\"\n  }\n]",
+  "final_response": "ANSWER: B",
+  "prediction": "b",
+  "gold": "b",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

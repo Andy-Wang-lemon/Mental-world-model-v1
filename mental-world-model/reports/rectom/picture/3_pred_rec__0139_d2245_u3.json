@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0139_d2245_u3",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the SEEKER:\n- Greeted and asked for new comedy movies.\n- Wants to see *A Bad Moms Christmas (2017)* but it is not on Amazon yet.\n- Was recommended *Girls Trip (2017)* and *Baywatch (2017)*.\n- Saw and liked *Girls Trip (2017)*.\n- Has not seen *Baywatch (2017)* and has heard it received bad reviews.\n\nRECOMMENDER does **not** know:\n- Whether the SEEKER would actually like *Baywatch* despite the bad reviews.\n- What other comedies the SEEKER has already seen.\n- The SEEKER’s precise subgenre preferences beyond the fact that they liked *Girls Trip* and want *A Bad Moms Christmas*.\n- Whether the SEEKER explicitly wants another recommendation right now, though the ongoing movie-seeking context implies it.\n\nGiven this, the SEEKER has just given feedback: one recommendation was liked, and the other is now doubtful. To keep helping the SEEKER find a new comedy, RECOMMENDER is most likely to move forward by offering another recommendation or asking about a specific title. That corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

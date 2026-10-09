@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "3_pred_rec",
+  "index": 77,
+  "item_id": "d1205_u7",
+  "dialogue_id": "1205",
+  "utterance_pos": 7,
+  "focus_person": "RECOMMENDER",
+  "question": "What strategy will RECOMMENDER use next?",
+  "gold": [
+    "c"
+  ],
+  "gold_output": "C: Provides a recommendation directly or by inquiring further",
+  "representation": {
+    "focus_person": "RECOMMENDER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hey How are you\nRECOMMENDER says: Hello, how are you? What kind of movies do you like?\nSEEKER says: I amreally into everything...I really like foreign movies as well...it is really my thing\nRECOMMENDER says: Because of the holidays, I would recommend Dr. Seuss' How the Grinch Stole Christmas  (2000)  and Christmas with the Kranks (2004)  . Have you seen either of these?\nSEEKER says: no, I am not really a holiday's person...do you have any other suggestions?\nRECOMMENDER says: Oh, I s；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hey How are you\nRECOMMENDER says: Hello, how are you? What kind of movies do you like?\nSEEKER says: I amreally into everything...I really like foreign movies as well...it is really my thing\nRECOMMENDER says: Because of the holidays, I would recommend Dr. Seuss' How the Grinch Stole Christmas  (2000)  and Christmas with the Kranks (2004)  . Have you seen either of these?\nSEEKER says: no, I am not really a holiday's person...do you have any other suggestions?\nRECOMMENDER says: Oh, I s；我执侧重：事件与RECOMMENDER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Provides a recommendation directly or by inquiring further",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.3,
+    "c": 0.9,
+    "d": 0.2,
+    "e": 0.1
+  },
+  "score_reason": "The seeker explicitly asked for other suggestions, so the recommender is most likely to provide a new recommendation or ask a follow-up to refine it.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

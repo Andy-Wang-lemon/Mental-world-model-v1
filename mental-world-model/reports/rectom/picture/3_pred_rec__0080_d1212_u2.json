@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0080_d1212_u2",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- It greeted the SEEKER and asked what kind of movies they are looking for.\n- The SEEKER wants “good science fiction movies that don’t deal with superheroes.”\n- Its own intention is to help recommend movies.\n\nRECOMMENDER does not know:\n- Which specific sci-fi movies the SEEKER has already seen or liked.\n- The SEEKER’s preferred subgenres, era, mood, or tolerance for violence/complexity.\n- Whether the SEEKER wants a direct recommendation now or more clarification first.\n- Any external facts about the SEEKER beyond the current utterance.\n\nGiven that the SEEKER has provided a clear genre plus a constraint, the recommender’s natural next move is to advance toward a recommendation. It may either suggest a specific sci-fi film or inquire further in a way that leads to a recommendation, such as asking whether the seeker has seen a particular title. This matches the strategy of providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

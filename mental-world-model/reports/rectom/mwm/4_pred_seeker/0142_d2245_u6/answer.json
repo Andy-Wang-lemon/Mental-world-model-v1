@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 142,
+  "item_id": "d2245_u6",
+  "dialogue_id": "2245",
+  "utterance_pos": 6,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a",
+    "d"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion\nD: Greetings, gratitude expression, or chit-chat utterances",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.\nRECOMMENDER says: Also Daddy's Home 2 (2017)  is out now I enjoyed Daddy's Home  (2015) \nSEEKER says: That might be one to consider....I li；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello...Happy New Year...Do you known any new comedy movies that are out?...I want to see A Bad Moms Christmas (2017)  but it isn't on Amazon yet.\nRECOMMENDER says: Girls Trip (2017)  was funny so was Baywatch  (2017) \nSEEKER says: I saw Girls Trip (2017) ....That was funny....I didn't see Baywatch  (2017) . I heard that it received bad reviews.\nRECOMMENDER says: Also Daddy's Home 2 (2017)  is out now I enjoyed Daddy's Home  (2015) \nSEEKER says: That might be one to consider....I li；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "a",
+  "adapter_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "option_scores": {
+    "a": 0.9,
+    "b": 0.3,
+    "c": 0.5,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER is directly responding to the latest movie suggestion with an evaluation/consideration, matching feedback on a recommendation.",
+  "selector_correct": true,
+  "correct": true,
+  "mwm_matches_gold": null,
+  "audit_reason": ""
+}

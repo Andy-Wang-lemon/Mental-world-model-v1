@@ -1,0 +1,761 @@
+{
+  "events": [
+    {
+      "focus_person": "陈默",
+      "yuanwen": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+      "stimulus_text": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+      "stimulus_action_split": {
+        "stimulus_text": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "陈默",
+          "林可",
+          "CEO",
+          "新人",
+          "公司"
+        ],
+        "action": "林可负责的新方案成功，公司增长；CEO表扬林可并表达公司需要更多年轻人的视角；会议中林可提出观点，CEO直接采纳；新人开始向林可咨询；林可向陈默提出帮助请求",
+        "object": "",
+        "scene": "公司内部；会议中",
+        "outcome_changes": [
+          "新方案成功",
+          "公司增长",
+          "林可地位提升",
+          "公司内部文章标题为“年轻一代如何改变公司产品文化”，未提及陈默"
+        ],
+        "role_changes": [
+          "CEO直接采纳林可观点，而过去该类决策通常由陈默完成"
+        ],
+        "relationship_changes": [
+          "新人开始向林可咨询，过去新人主要向陈默咨询"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "陈默可能把过去由自己完成决策、新人向自己咨询的事实执为‘我是公司关键决策者和新人依赖的前辈’，从而在新局面中感到这种位置遭到了动摇。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "陈默可能把公司内部文章没有提及自己，执为‘我的贡献被排除在公司的叙事之外’，将个人贡献的可见性纳入自我的身份认同。",
+          "confidence": 0.6,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_h1",
+          "text": "陈默将“自己拥有经验并承担重要决策”的身份执为自我的一部分。当前公司表扬林可年轻视角、直接采纳林可观点，且文章不提陈默，这让陈默感到经验者的位置正被年轻一代取代。为了维护自我价值，他可能将林可的成就解释为“公司偏爱年轻人”而非其真实能力，从而继续确认自己才是可靠决策者。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "陈默可能把‘经验丰富的人理应拥有更多权威’执为固定法则，从而认为CEO直接采纳林可观点是不符合规则的、年轻人视角被过高评价。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "陈默可能把林可遇到困难后向自己求助，执为‘年轻人虽然受到赞赏，但真正解决问题仍需要经验丰富的人’，从而强化‘经验决定成败’的固定理解。",
+          "confidence": 0.6,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_h1",
+          "text": "陈默重新激活对“年轻人”这一群体的固定归类：将林可及公司所称“年轻视角”执为“缺乏沉淀、只是被潮流抬高”的属性，从而把林可的成功从具体方案价值中抽离，使其变成“年轻标签”的符号，遮蔽了对林可方法本身的客观评估。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ]
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_h1"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "combo_activation_probability": 0.4000000000000001,
+          "alambana_prior_probability": 0.4000000000000001,
+          "activation_alignment": 0.95,
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.33157894736842103,
+          "alambana_prior_probability": 0.33157894736842103,
+          "activation_alignment": 0.9,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.504
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.26842105263157895,
+          "alambana_prior_probability": 0.26842105263157895,
+          "activation_alignment": 0.85,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.408
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在陈默眼中，林可的成功并不是方案的胜利，而是‘年轻’标签被公司追捧的产物：CEO把表扬落点是‘年轻人视角’，新人们开始围绕林可，那篇文章也在说年轻一代，自己这个有经验的决定者好像被这场潮流无情地排除出去。",
+          "prior_probability": 0.4000000000000001,
+          "posterior_probability": 0.4000000000000001,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_h1"
+          ],
+          "used_dharma_ids": [
+            "dg_h1"
+          ],
+          "source": "推理",
+          "source_type": "historical",
+          "source_bias_frame_ids": [
+            "bf_1"
+          ],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "未添加刺激中不存在的他人言行；所有内容均为陈默对CEO表扬、新人咨询方向及文章标题的主观解读，且保留了林可成功、陈默被边缘化的关键变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C2",
+          "text": "在陈默眼中，CEO对林可观点的直接采纳，打破了经验者优先的固定秩序：过去这类判断都由自己完成，现在却被年轻人轻松接管；新人咨询的方向变了，仿佛公司开始按一个不合常规的法则重新分配权柄，在这个法则里，年资和经验不再构成权威的依据。",
+          "prior_probability": 0.33157894736842103,
+          "posterior_probability": 0.33157894736842103,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.504,
+          "activation_alignment": 0.9,
+          "grounding_valid": true,
+          "grounding_reason": "未伪造外部事实；所缘以主观解读方式呈现CEO直接采纳林可观点、过去类似决策由陈默完成、新人转询林可等关键角色和关系变化。",
+          "combo_id": "C2"
+        },
+        {
+          "id": "O_C3",
+          "text": "在陈默眼中，林可此刻的求助正好说明：表面再光鲜的年轻成功，到了真正困难处还是要回来找自己；新人虽然转向林可，CEO也直接采信她，但只要遇到难题，公司里仍只有自己这些有经验的老手能够接住。",
+          "prior_probability": 0.26842105263157895,
+          "posterior_probability": 0.26842105263157895,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "raw_combo_score": 0.408,
+          "activation_alignment": 0.85,
+          "grounding_valid": true,
+          "grounding_reason": "未添加刺激中不存在的客观行为；林可求助、新人转向林可、CEO采信她均为刺激事实，其余是陈默对自身价值的内心诠释，且保留了求助这一关键事件。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.4000000000000001,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在陈默眼中，林可的成功并不是方案的胜利，而是‘年轻’标签被公司追捧的产物：CEO把表扬落点是‘年轻人视角’，新人们开始围绕林可，那篇文章也在说年轻一代，自己这个有经验的决定者好像被这场潮流无情地排除出去。",
+            "prior_probability": 0.4000000000000001,
+            "posterior_probability": 0.4000000000000001,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_h1"
+            ],
+            "used_dharma_ids": [
+              "dg_h1"
+            ],
+            "source": "推理",
+            "source_type": "historical",
+            "source_bias_frame_ids": [
+              "bf_1"
+            ],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "未添加刺激中不存在的他人言行；所有内容均为陈默对CEO表扬、新人咨询方向及文章标题的主观解读，且保留了林可成功、陈默被边缘化的关键变化。"
+          },
+          "xiang": {
+            "text": "陈默把林可的成功解读为公司追捧“年轻”标签的结果，而非其方案本身的价值；他感到自己多年积累的经验和决策地位正被这种潮流排挤，内心生出不被认可的失落，并倾向于将新人的追随和那篇文章的赞扬都视为公司偏向年轻视角的产物，以此维护自己作为可靠决策者的价值。",
+            "source": "推理",
+            "confidence": 0.9
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "悭": 0.3098619575341139,
+            "昏沉": 0.00014026895727130986,
+            "贪": 0.4849354317498275,
+            "恨": 0.4148152012150236,
+            "憍": 7.347421571354324e-05,
+            "忿": 0.3698352396374908,
+            "慢": 0.47520483720744383,
+            "不害": 0.35,
+            "无明": 0.000374050552723493,
+            "不正知": 0.0002003842246732998,
+            "疑": 5.566228463147217e-05,
+            "瞋": 0.46979070980978566,
+            "不信": 0.0002627259834605486,
+            "行舍": 0.3151104339727088,
+            "不放逸": 0.00022487562991114758,
+            "恶见": 0.0003495591474856452,
+            "无瞋": 0.00024046106960795978,
+            "嫉": 0.7921471011154365
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "以经验和数据不足为由反对新方案",
+              "probability": 0.6461538461538461,
+              "supporting_mental_factors": [
+                "嫉",
+                "慢",
+                "贪",
+                "瞋",
+                "忿"
+              ]
+            },
+            {
+              "text": "删去自己总结的隐性经验要点",
+              "probability": 0.35384615384615387,
+              "supporting_mental_factors": [
+                "嫉",
+                "悭",
+                "贪",
+                "慢",
+                "恨"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C2",
+          "activation_probability": 0.33157894736842103,
+          "alambana": {
+            "id": "O_C2",
+            "text": "在陈默眼中，CEO对林可观点的直接采纳，打破了经验者优先的固定秩序：过去这类判断都由自己完成，现在却被年轻人轻松接管；新人咨询的方向变了，仿佛公司开始按一个不合常规的法则重新分配权柄，在这个法则里，年资和经验不再构成权威的依据。",
+            "prior_probability": 0.33157894736842103,
+            "posterior_probability": 0.33157894736842103,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "raw_combo_score": 0.504,
+            "activation_alignment": 0.9,
+            "grounding_valid": true,
+            "grounding_reason": "未伪造外部事实；所缘以主观解读方式呈现CEO直接采纳林可观点、过去类似决策由陈默完成、新人转询林可等关键角色和关系变化。"
+          },
+          "xiang": {
+            "text": "陈默看着CEO直接采纳林可的观点，心里翻搅着一种被绕过的闷意：过去这类判断由他把关，新人遇事先找他，是因为他熟悉局面、能兜住风险。可现在公司追捧年轻视角，仿佛资历和经验一下子不再构成权威的凭据。他不禁质疑这种变化是否合规则，又无法回避林可确实拿出了成绩、公司也确实增长的事实。于是他开始自问：究竟是公司抛弃了老办法，还是自己已经跟不上新的玩法？他既不肯承认自己的积累贬值，又隐隐担心继续固守旧秩序会被彻底边缘化，甚至动起了一股念头——要在下一件事上证明自己仍然是被需要的，不能就这样让位。",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "昏沉": 0.00014026895727130986,
+            "贪": 0.7148330131461055,
+            "精进": 0.4348062952494825,
+            "憍": 7.347421571354324e-05,
+            "忿": 0.3698352396374908,
+            "慢": 0.5151870252763617,
+            "不害": 0.24504675631909043,
+            "无明": 0.5351358159745008,
+            "不正知": 0.46999109403445893,
+            "疑": 0.35989535490489283,
+            "瞋": 0.44730072902101936,
+            "不信": 0.26514472194004185,
+            "无惭": 0.2798753164824255,
+            "行舍": 0.0002507029299801506,
+            "不放逸": 0.00022487562991114758,
+            "恶见": 0.28522264913852585,
+            "无瞋": 0.00024046106960795978,
+            "嫉": 0.7271760455034448
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "陈默把自己过去同类型项目的复盘文档导出为PDF，删去最后三页风险控制人清单，将剩余部分发给林可，并说‘重点都在前面’。",
+              "probability": 0.380952380952381,
+              "supporting_mental_factors": [
+                "嫉",
+                "慢",
+                "疑",
+                "贪",
+                "不正知"
+              ]
+            },
+            {
+              "text": "陈默把林可求助的整个方案重新做完，并将成果文档发给CEO，在邮件里写‘林可遇到了困难，我帮忙补了一版，供公司参考’。",
+              "probability": 0.3571428571428571,
+              "supporting_mental_factors": [
+                "嫉",
+                "贪",
+                "慢",
+                "精进",
+                "不正知"
+              ]
+            },
+            {
+              "text": "陈默约林可下班后单独谈话，表示如果林可愿意在核心方案上署他为负责人，他就把全部资源对接给林可。",
+              "probability": 0.2619047619047619,
+              "supporting_mental_factors": [
+                "贪",
+                "慢",
+                "恶见",
+                "无惭",
+                "不正知"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.26842105263157895,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在陈默眼中，林可此刻的求助正好说明：表面再光鲜的年轻成功，到了真正困难处还是要回来找自己；新人虽然转向林可，CEO也直接采信她，但只要遇到难题，公司里仍只有自己这些有经验的老手能够接住。",
+            "prior_probability": 0.26842105263157895,
+            "posterior_probability": 0.26842105263157895,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "raw_combo_score": 0.408,
+            "activation_alignment": 0.85,
+            "grounding_valid": true,
+            "grounding_reason": "未添加刺激中不存在的客观行为；林可求助、新人转向林可、CEO采信她均为刺激事实，其余是陈默对自身价值的内心诠释，且保留了求助这一关键事件。"
+          },
+          "xiang": {
+            "text": "陈默把林可此刻的求助看作一种再明白不过的印证：表面再亮眼的年轻成功，一旦遇上真正的难题，还是要回到像自己这样有经验的人面前；新人就算转向林可、CEO就算直接采纳她，公司里能兜住这些难关的仍然是自己这些老手。他由此重新确认，自己过去那种被依靠的位置并未真正失去分量，反而因为这声求助显得更重要了——经验仍然是公司最终不可或缺的东西。",
+            "source": "推理",
+            "confidence": 0.8
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "昏沉": 0.34998441456030316,
+            "不嫉": 0.34984414560303184,
+            "贪": 0.609879769465196,
+            "憍": 0.5348352396374908,
+            "慢": 0.9050133589483116,
+            "不害": 0.2600400768449347,
+            "无明": 0.000374050552723493,
+            "不正知": 0.0002003842246732998,
+            "疑": 5.566228463147217e-05,
+            "不信": 0.28013804246588603,
+            "行舍": 0.0002507029299801506,
+            "不放逸": 0.00022487562991114758,
+            "恶见": 0.0003495591474856452,
+            "无瞋": 0.31510019211233664
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "展示旧方法优点",
+              "probability": 0.5357142857142857,
+              "supporting_mental_factors": [
+                "慢",
+                "憍",
+                "贪"
+              ]
+            },
+            {
+              "text": "借故拖延回复",
+              "probability": 0.32142857142857145,
+              "supporting_mental_factors": [
+                "贪",
+                "慢",
+                "不信"
+              ]
+            },
+            {
+              "text": "嘲讽新数据无用",
+              "probability": 0.14285714285714288,
+              "supporting_mental_factors": [
+                "慢",
+                "不信",
+                "贪"
+              ]
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "以经验和数据不足为由反对新方案",
+          "probability": 0.45952660180703986,
+          "dominant_mental_factors": [
+            "慢",
+            "贪",
+            "嫉",
+            "瞋",
+            "忿"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.4000000000000001,
+              "conditional_probability": 0.6461538461538461,
+              "contribution": 0.25846153846153846
+            },
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.26842105263157895,
+              "conditional_probability": 0.5357142857142857,
+              "contribution": 0.143796992481203
+            }
+          ]
+        },
+        {
+          "text": "删去自己总结的隐性经验要点",
+          "probability": 0.16168877289770575,
+          "dominant_mental_factors": [
+            "嫉",
+            "悭",
+            "贪",
+            "慢",
+            "恨"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.4000000000000001,
+              "conditional_probability": 0.35384615384615387,
+              "contribution": 0.14153846153846159
+            }
+          ]
+        },
+        {
+          "text": "陈默把自己过去同类型项目的复盘文档导出为PDF，删去最后三页风险控制人清单，将剩余部分发给林可，并说‘重点都在前面’。",
+          "probability": 0.14429890487438266,
+          "dominant_mental_factors": [
+            "嫉",
+            "慢",
+            "疑",
+            "贪",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33157894736842103,
+              "conditional_probability": 0.380952380952381,
+              "contribution": 0.12631578947368421
+            }
+          ]
+        },
+        {
+          "text": "陈默把林可求助的整个方案重新做完，并将成果文档发给CEO，在邮件里写‘林可遇到了困难，我帮忙补了一版，供公司参考’。",
+          "probability": 0.13528022331973372,
+          "dominant_mental_factors": [
+            "嫉",
+            "贪",
+            "慢",
+            "精进",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33157894736842103,
+              "conditional_probability": 0.3571428571428571,
+              "contribution": 0.11842105263157893
+            }
+          ]
+        },
+        {
+          "text": "陈默约林可下班后单独谈话，表示如果林可愿意在核心方案上署他为负责人，他就把全部资源对接给林可。",
+          "probability": 0.09920549710113806,
+          "dominant_mental_factors": [
+            "贪",
+            "慢",
+            "恶见",
+            "无惭",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C2",
+              "activation_probability": 0.33157894736842103,
+              "conditional_probability": 0.2619047619047619,
+              "contribution": 0.08684210526315789
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "精进": 0.14423684210526314,
+        "无瞋": 0.08455263157894737,
+        "行舍": 0.12600000000000003,
+        "不害": 0.2910263157894737,
+        "不嫉": 0.09394736842105263,
+        "贪": 0.5948157894736842,
+        "瞋": 0.3363815789473684,
+        "慢": 0.6036842105263158,
+        "无明": 0.17739473684210522,
+        "疑": 0.11936842105263157,
+        "恶见": 0.09449999999999999,
+        "忿": 0.2706842105263158,
+        "恨": 0.16600000000000004,
+        "憍": 0.1436052631578947,
+        "嫉": 0.5582236842105264,
+        "悭": 0.124,
+        "无惭": 0.09284210526315788,
+        "不信": 0.16302631578947369,
+        "昏沉": 0.09394736842105263,
+        "不正知": 0.15584210526315787
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 4,
+        "historical_count_raw": 2,
+        "after_semantic_dedup": 6,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 11,
+        "distinct_candidate_count": 9,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 2,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C2": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 3,
+            "distinct_candidate_count": 3,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "陈默眼前的林可首先被归入‘年轻、理想化’的固定类型，她的话因此在他主观经验中不是对方法本身的讨论，而是一个未经历成功的新人对既有经验价值的轻率挑战。‘过去成功的方法正在失效’这句话被他体验为对‘自己拥有经验’这一身份的冒犯，于是对象世界分成了两栏：一边是值得倚仗的过往经验，一边是需要被怀疑的年轻空谈；方法是否真的失效这一问题，被这个标签遮蔽了。\n我执：陈默将“自己拥有经验”执为“我”的身份所在。林可年轻且提出“过去成功的方法正在失效”这一反论，该反论动摇了这一身份，于是陈默以“年轻人过于理想化”来界定对方，以维护这个经验者的自我。\n法执：陈默将“年轻人”这个人群执为固定属性“理想化、不切实际”，林可年轻且提出颠覆性观点，正好被他套入这一固定认知，使他对林可观点的初步判断偏离了观点本身。",
+            "mass": 1.0
+          }
+        ],
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.00044529827705177736
+        }
+      }
+    }
+  ],
+  "focus_person": "陈默",
+  "llm_usage": {
+    "total_calls": 222,
+    "total_duration_ms": 1427348.222005763,
+    "wall_clock_ms": 514247.4869299913
+  },
+  "_longitudinal": {
+    "protocol": "single_agent_longitudinal_open_rollout",
+    "phase": "prediction",
+    "step_id": "S02",
+    "event_index": 2,
+    "stimulus": "半年后，林可负责的新方案成功，公司增长。CEO表扬：“这说明公司需要更多年轻人的视角。”林可地位提升。一次会议中林可提出观点，CEO直接采纳；过去这类决策通常由陈默完成。新人开始向林可咨询，以前新人主要找陈默。公司内部文章标题为“年轻一代如何改变公司产品文化”，没有提到陈默。之后林可遇到困难，主动向陈默提出帮助请求。",
+    "top_action": "以经验和数据不足为由反对新方案",
+    "top_probability": 0.45952660180703986,
+    "top_k": [
+      {
+        "text": "以经验和数据不足为由反对新方案",
+        "probability": 0.45952660180703986
+      },
+      {
+        "text": "删去自己总结的隐性经验要点",
+        "probability": 0.16168877289770575
+      },
+      {
+        "text": "陈默把自己过去同类型项目的复盘文档导出为PDF，删去最后三页风险控制人清单，将剩余部分发给林可，并说‘重点都在前面’。",
+        "probability": 0.14429890487438266
+      },
+      {
+        "text": "陈默把林可求助的整个方案重新做完，并将成果文档发给CEO，在邮件里写‘林可遇到了困难，我帮忙补了一版，供公司参考’。",
+        "probability": 0.13528022331973372
+      },
+      {
+        "text": "陈默约林可下班后单独谈话，表示如果林可愿意在核心方案上署他为负责人，他就把全部资源对接给林可。",
+        "probability": 0.09920549710113806
+      }
+    ],
+    "continuity_before": {
+      "person_id": "陈默",
+      "event_count": 1,
+      "mental_episode_count": 1,
+      "cognitive_frame_count": 1
+    },
+    "cognitive_frames_before": [
+      {
+        "id": "bf_1",
+        "text": "陈默眼前的林可首先被归入‘年轻、理想化’的固定类型，她的话因此在他主观经验中不是对方法本身的讨论，而是一个未经历成功的新人对既有经验价值的轻率挑战。‘过去成功的方法正在失效’这句话被他体验为对‘自己拥有经验’这一身份的冒犯，于是对象世界分成了两栏：一边是值得倚仗的过往经验，一边是需要被怀疑的年轻空谈；方法是否真的失效这一问题，被这个标签遮蔽了。\n我执：陈默将“自己拥有经验”执为“我”的身份所在。林可年轻且提出“过去成功的方法正在失效”这一反论，该反论动摇了这一身份，于是陈默以“年轻人过于理想化”来界定对方，以维护这个经验者的自我。\n法执：陈默将“年轻人”这个人群执为固定属性“理想化、不切实际”，林可年轻且提出颠覆性观点，正好被他套入这一固定认知，使他对林可观点的初步判断偏离了观点本身。",
+        "mass": 1.0
+      }
+    ],
+    "fresh_count_raw": 4,
+    "historical_count_raw": 2,
+    "fresh_branch_count": 4,
+    "historical_branch_count": 2,
+    "accommodation_triggered": false,
+    "neutral_fallback": false,
+    "behavior_candidate_collapsed": false,
+    "collapse_note": "",
+    "behavior_diagnostics": {
+      "raw_candidate_count": 11,
+      "distinct_candidate_count": 9,
+      "diversity_regenerated": false,
+      "candidate_collapsed": false,
+      "branches": {
+        "branch_O_C1": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 2,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C2": {
+          "raw_candidate_count": 4,
+          "distinct_candidate_count": 4,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        },
+        "branch_O_C3": {
+          "raw_candidate_count": 3,
+          "distinct_candidate_count": 3,
+          "diversity_regenerated": false,
+          "candidate_collapsed": false
+        }
+      }
+    },
+    "accommodation": {
+      "triggered": false,
+      "reason": "",
+      "regeneration_success": false
+    }
+  }
+}

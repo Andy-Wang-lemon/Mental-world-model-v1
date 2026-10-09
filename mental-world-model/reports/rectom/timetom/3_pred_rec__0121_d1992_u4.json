@@ -1,0 +1,75 @@
+{
+  "id": "3_pred_rec__0121_d1992_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "I opened the conversation with a greeting and asked what kinds of movies the user likes.",
+      "information_available": "I know I am a recommender and that a seeker has started a recommendation session, but I do not know their movie tastes yet.",
+      "preferences": "I prefer to gather some information about the user's taste before suggesting movies.",
+      "belief_before": "I believe the user wants a movie recommendation, but I do not yet know what kind of movies they enjoy.",
+      "belief_update": "No new user information has been provided yet; my question is an attempt to start eliciting preferences.",
+      "belief_after": "I believe I need to learn the user's movie preferences before I can make useful recommendations.",
+      "emotion": "Friendly and neutral.",
+      "intention": "Elicit basic movie preferences from the user.",
+      "reaction_to_other_speaker": "No reaction yet; this is my opening move in the dialogue.",
+      "conversational_goal": "Initiate the recommendation dialogue and discover what kinds of movies the user likes.",
+      "interpretation_change": false
+    },
+    {
+      "time": 2,
+      "observed": "The seeker greeted me, said they are looking for good action movies, and asked if I can help.",
+      "information_available": "The seeker is polite, wants action movies, and has explicitly requested help.",
+      "preferences": "I prefer to use the user's stated genre preference as the starting point for recommendations.",
+      "belief_before": "I believed the user had unknown movie tastes and likely wanted a recommendation.",
+      "belief_update": "The user specifically likes action movies and is expecting assistance from me.",
+      "belief_after": "The user is interested in action films and needs suggestions within that genre.",
+      "emotion": "Engaged and ready to help.",
+      "intention": "Acknowledge their request and narrow down what type of action movie they would enjoy.",
+      "reaction_to_other_speaker": "The seeker is responsive and polite; their request gives me a clear genre direction.",
+      "conversational_goal": "Move from the opening question into an action-movie recommendation session.",
+      "interpretation_change": "Yes: the previous open-ended preference question now has a genre-specific answer."
+    },
+    {
+      "time": 3,
+      "observed": "I asked whether they prefer hard-core action or fun family action.",
+      "information_available": "The user likes action movies but has not specified a subgenre; I offered two broad categories: hard-core action and fun family action.",
+      "preferences": "I prefer to categorize action films to make my recommendations more targeted.",
+      "belief_before": "I believed the user likes action movies, but I did not know whether they lean toward intense action or family-friendly action.",
+      "belief_update": "I recognized that action films can be split into categories, and asking this question will help refine the recommendation.",
+      "belief_after": "The user's answer will reveal a subgenre preference and help me choose relevant options.",
+      "emotion": "Curious and helpful.",
+      "intention": "Clarify the user's action subgenre preference.",
+      "reaction_to_other_speaker": "The user gave a broad genre, so I am responding with a clarifying question.",
+      "conversational_goal": "Narrow down the recommendation space.",
+      "interpretation_change": "No major change; this is a natural continuation of the seeker's action-movie request."
+    },
+    {
+      "time": 4,
+      "observed": "The user said they love movies like Abduction (2011) and Speed (1994) with Keanu Reeves, and that they like both hard-core and fun family action films.",
+      "information_available": "The user likes action films similar to Abduction and Speed, enjoys Keanu Reeves-style action, and is open to both hard-core and family-friendly action.",
+      "preferences": "I prefer to use concrete example movies as anchors for the recommendation set.",
+      "belief_before": "I thought the user might have a narrower action preference, either hard-core or fun family action.",
+      "belief_update": "The user's action taste is broad; they are open to both subgenres and have given useful reference movies.",
+      "belief_after": "The user is flexible and can be served by action recommendations in both categories, with Abduction and Speed as useful comparison points.",
+      "emotion": "Pleased and clearer about the user's taste.",
+      "intention": "Use the example movies to generate a set of suitable action recommendations.",
+      "reaction_to_other_speaker": "The user is easy to help and has provided strong, concrete cues about their movie taste.",
+      "conversational_goal": "Provide recommendations that match the user's stated examples while remaining open to both action styles.",
+      "interpretation_change": "Yes: the previous assumption that the user might prefer one action subgenre is replaced by an understanding that they like both."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"I opened the conversation with a greeting and asked what kinds of movies the user likes.\",\n    \"information_available\": \"I know I am a recommender and that a seeker has started a recommendation session, but I do not know their movie tastes yet.\",\n    \"preferences\": \"I prefer to gather some information about the user's taste before suggesting movies.\",\n    \"belief_before\": \"I believe the user wants a movie recommendation, but I do not yet know what kind of movies they enjoy.\",\n    \"belief_update\": \"No new user information has been provided yet; my question is an attempt to start eliciting preferences.\",\n    \"belief_after\": \"I believe I need to learn the user's movie preferences before I can make useful recommendations.\",\n    \"emotion\": \"Friendly and neutral.\",\n    \"intention\": \"Elicit basic movie preferences from the user.\",\n    \"reaction_to_other_speaker\": \"No reaction yet; this is my opening move in the dialogue.\",\n    \"conversational_goal\": \"Initiate the recommendation dialogue and discover what kinds of movies the user likes.\",\n    \"interpretation_change\": false\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"The seeker greeted me, said they are looking for good action movies, and asked if I can help.\",\n    \"information_available\": \"The seeker is polite, wants action movies, and has explicitly requested help.\",\n    \"preferences\": \"I prefer to use the user's stated genre preference as the starting point for recommendations.\",\n    \"belief_before\": \"I believed the user had unknown movie tastes and likely wanted a recommendation.\",\n    \"belief_update\": \"The user specifically likes action movies and is expecting assistance from me.\",\n    \"belief_after\": \"The user is interested in action films and needs suggestions within that genre.\",\n    \"emotion\": \"Engaged and ready to help.\",\n    \"intention\": \"Acknowledge their request and narrow down what type of action movie they would enjoy.\",\n    \"reaction_to_other_speaker\": \"The seeker is responsive and polite; their request gives me a clear genre direction.\",\n    \"conversational_goal\": \"Move from the opening question into an action-movie recommendation session.\",\n    \"interpretation_change\": \"Yes: the previous open-ended preference question now has a genre-specific answer.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"I asked whether they prefer hard-core action or fun family action.\",\n    \"information_available\": \"The user likes action movies but has not specified a subgenre; I offered two broad categories: hard-core action and fun family action.\",\n    \"preferences\": \"I prefer to categorize action films to make my recommendations more targeted.\",\n    \"belief_before\": \"I believed the user likes action movies, but I did not know whether they lean toward intense action or family-friendly action.\",\n    \"belief_update\": \"I recognized that action films can be split into categories, and asking this question will help refine the recommendation.\",\n    \"belief_after\": \"The user's answer will reveal a subgenre preference and help me choose relevant options.\",\n    \"emotion\": \"Curious and helpful.\",\n    \"intention\": \"Clarify the user's action subgenre preference.\",\n    \"reaction_to_other_speaker\": \"The user gave a broad genre, so I am responding with a clarifying question.\",\n    \"conversational_goal\": \"Narrow down the recommendation space.\",\n    \"interpretation_change\": \"No major change; this is a natural continuation of the seeker's action-movie request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"The user said they love movies like Abduction (2011) and Speed (1994) with Keanu Reeves, and that they like both hard-core and fun family action films.\",\n    \"information_available\": \"The user likes action films similar to Abduction and Speed, enjoys Keanu Reeves-style action, and is open to both hard-core and family-friendly action.\",\n    \"preferences\": \"I prefer to use concrete example movies as anchors for the recommendation set.\",\n    \"belief_before\": \"I thought the user might have a narrower action preference, either hard-core or fun family action.\",\n    \"belief_update\": \"The user's action taste is broad; they are open to both subgenres and have given useful reference movies.\",\n    \"belief_after\": \"The user is flexible and can be served by action recommendations in both categories, with Abduction and Speed as useful comparison points.\",\n    \"emotion\": \"Pleased and clearer about the user's taste.\",\n    \"intention\": \"Use the example movies to generate a set of suitable action recommendations.\",\n    \"reaction_to_other_speaker\": \"The user is easy to help and has provided strong, concrete cues about their movie taste.\",\n    \"conversational_goal\": \"Provide recommendations that match the user's stated examples while remaining open to both action styles.\",\n    \"interpretation_change\": \"Yes: the previous assumption that the user might prefer one action subgenre is replaced by an understanding that they like both.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

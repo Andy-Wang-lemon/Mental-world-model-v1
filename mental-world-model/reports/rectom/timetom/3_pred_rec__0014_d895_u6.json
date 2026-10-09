@@ -1,0 +1,79 @@
+{
+  "id": "3_pred_rec__0014_d895_u6",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender opens the dialogue, greets Seeker, and asks for Seeker's favorite movies so Recommender can suggest something good.",
+      "belief_before": "No information yet about Seeker's movie tastes.",
+      "belief_update": "Recommender initiates preference elicitation; no new external information received yet.",
+      "belief_after": "Recommender knows only that Seeker has been asked for favorite movies; no taste data yet.",
+      "emotion": "Friendly, enthusiastic, inviting.",
+      "intention": "Get Seeker to share favorite movies.",
+      "conversational_goal": "Start the recommendation dialogue and gather initial preference data."
+    },
+    {
+      "time": 2,
+      "observed": "Recommender hears Seeker say they enjoyed Lost in Translation (2003) with Bill Murray and like Aliens (1986) and Alien: Covenant (2017).",
+      "belief_before": "No taste information; Recommender had just asked for favorite movies.",
+      "belief_update": "Seeker likes or positively mentions Lost in Translation, Aliens, and Alien: Covenant; possible interest in Bill Murray, sci-fi/horror, and the Alien franchise.",
+      "belief_after": "Recommender has initial Seeker preferences: Lost in Translation, Aliens, Alien: Covenant.",
+      "emotion": "Attentive, positive.",
+      "intention": "Use these favorites to generate relevant recommendations.",
+      "conversational_goal": "Gather enough preference data to make suggestions."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says Lost in Translation was good, asks whether Seeker has seen The Truman Show (1998) or Rushmore (1998), and says they liked the first Alien but did not see the sequel.",
+      "belief_before": "Seeker likes Lost in Translation, Aliens, and Alien: Covenant.",
+      "belief_update": "Recommender expresses their own taste, including liking Lost in Translation by calling it good, liking the first Alien, and not having seen the Alien sequel. Recommender also probes whether Seeker has seen Truman Show or Rushmore. This changes the previous interpretation by adding Recommender's own preferences and candidate-check questions.",
+      "belief_after": "Known Seeker preferences remain Lost in Translation, Aliens, Alien: Covenant. Unknown whether Seeker has seen Truman Show or Rushmore. Recommender's own preferences now include a positive view of Lost in Translation and the first Alien, and no viewing of the Alien sequel.",
+      "emotion": "Warm, engaged, mildly nostalgic.",
+      "intention": "Find common ground and test possible related movies.",
+      "conversational_goal": "Narrow down recommendation candidates by checking what Seeker has seen."
+    },
+    {
+      "time": 4,
+      "observed": "Recommender hears Seeker confirm 'Yes and yes! I have both on dvd' in response to the Truman Show/Rushmore question.",
+      "belief_before": "Recommender had asked whether Seeker had seen The Truman Show or Rushmore; Seeker's known tastes include Lost in Translation, Aliens, and Alien: Covenant.",
+      "belief_update": "Seeker has seen and owns both The Truman Show and Rushmore. This resolves the prior uncertainty and changes it into known seen/owned titles.",
+      "belief_after": "Recommender knows Seeker has seen and owns Truman Show and Rushmore, in addition to liking Lost in Translation, Aliens, and Alien: Covenant.",
+      "emotion": "Pleased, encouraged.",
+      "intention": "Use the overlap to suggest other films.",
+      "conversational_goal": "Move toward offering recommendations based on confirmed overlap."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender responds 'Awesome!', suggests The Big Lebowski, Total Recall (2012), and Pulp Fiction (1994), says they are trying to give many options across genres, and corrects a typo to The Big Lebowski.",
+      "belief_before": "Seeker likes Lost in Translation, Aliens, and Alien: Covenant; has seen and owns Truman Show and Rushmore.",
+      "belief_update": "Recommender selects and offers The Big Lebowski, Total Recall (2012), and Pulp Fiction as candidate recommendations across genres. This changes the prior interpretation from information gathering to actual recommendation offering.",
+      "belief_after": "Recommender has proposed three options and is awaiting Seeker's reactions; still knows prior preferences.",
+      "emotion": "Enthusiastic, helpful, slightly flustered by the typo.",
+      "intention": "Provide varied recommendation choices.",
+      "conversational_goal": "Elicit feedback on the suggested films and find a good recommendation."
+    },
+    {
+      "time": 6,
+      "observed": "Recommender hears Seeker say Pulp Fiction was good, did not like the new recall/Total Recall (2012) and found it lacking something they cannot name, and says Lebowski was good.",
+      "belief_before": "Recommender had suggested The Big Lebowski, Total Recall (2012), and Pulp Fiction; knew Seeker liked Lost in Translation, Aliens, and Alien: Covenant and had seen and owned Truman Show and Rushmore.",
+      "belief_update": "Seeker liked Pulp Fiction and The Big Lebowski, disliked Total Recall (2012), and cannot articulate why. This changes the taste model by adding positive signals for Pulp Fiction and Lebowski and a negative signal for Total Recall (2012).",
+      "belief_after": "Recommender knows Seeker's reactions to the three suggestions: positive for Pulp Fiction and Lebowski, negative for Total Recall (2012). Recommender can infer to avoid films similar to Total Recall (2012) and continue in liked directions.",
+      "emotion": "Pleased by positive feedback, curious and possibly concerned about the negative reaction.",
+      "intention": "Adjust future recommendations based on this feedback.",
+      "conversational_goal": "Refine the recommendation and continue the dialogue using Seeker's reactions."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender opens the dialogue, greets Seeker, and asks for Seeker's favorite movies so Recommender can suggest something good.\",\n    \"belief_before\": \"No information yet about Seeker's movie tastes.\",\n    \"belief_update\": \"Recommender initiates preference elicitation; no new external information received yet.\",\n    \"belief_after\": \"Recommender knows only that Seeker has been asked for favorite movies; no taste data yet.\",\n    \"emotion\": \"Friendly, enthusiastic, inviting.\",\n    \"intention\": \"Get Seeker to share favorite movies.\",\n    \"conversational_goal\": \"Start the recommendation dialogue and gather initial preference data.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Recommender hears Seeker say they enjoyed Lost in Translation (2003) with Bill Murray and like Aliens (1986) and Alien: Covenant (2017).\",\n    \"belief_before\": \"No taste information; Recommender had just asked for favorite movies.\",\n    \"belief_update\": \"Seeker likes or positively mentions Lost in Translation, Aliens, and Alien: Covenant; possible interest in Bill Murray, sci-fi/horror, and the Alien franchise.\",\n    \"belief_after\": \"Recommender has initial Seeker preferences: Lost in Translation, Aliens, Alien: Covenant.\",\n    \"emotion\": \"Attentive, positive.\",\n    \"intention\": \"Use these favorites to generate relevant recommendations.\",\n    \"conversational_goal\": \"Gather enough preference data to make suggestions.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says Lost in Translation was good, asks whether Seeker has seen The Truman Show (1998) or Rushmore (1998), and says they liked the first Alien but did not see the sequel.\",\n    \"belief_before\": \"Seeker likes Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"belief_update\": \"Recommender expresses their own taste, including liking Lost in Translation by calling it good, liking the first Alien, and not having seen the Alien sequel. Recommender also probes whether Seeker has seen Truman Show or Rushmore. This changes the previous interpretation by adding Recommender's own preferences and candidate-check questions.\",\n    \"belief_after\": \"Known Seeker preferences remain Lost in Translation, Aliens, Alien: Covenant. Unknown whether Seeker has seen Truman Show or Rushmore. Recommender's own preferences now include a positive view of Lost in Translation and the first Alien, and no viewing of the Alien sequel.\",\n    \"emotion\": \"Warm, engaged, mildly nostalgic.\",\n    \"intention\": \"Find common ground and test possible related movies.\",\n    \"conversational_goal\": \"Narrow down recommendation candidates by checking what Seeker has seen.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Recommender hears Seeker confirm 'Yes and yes! I have both on dvd' in response to the Truman Show/Rushmore question.\",\n    \"belief_before\": \"Recommender had asked whether Seeker had seen The Truman Show or Rushmore; Seeker's known tastes include Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"belief_update\": \"Seeker has seen and owns both The Truman Show and Rushmore. This resolves the prior uncertainty and changes it into known seen/owned titles.\",\n    \"belief_after\": \"Recommender knows Seeker has seen and owns Truman Show and Rushmore, in addition to liking Lost in Translation, Aliens, and Alien: Covenant.\",\n    \"emotion\": \"Pleased, encouraged.\",\n    \"intention\": \"Use the overlap to suggest other films.\",\n    \"conversational_goal\": \"Move toward offering recommendations based on confirmed overlap.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender responds 'Awesome!', suggests The Big Lebowski, Total Recall (2012), and Pulp Fiction (1994), says they are trying to give many options across genres, and corrects a typo to The Big Lebowski.\",\n    \"belief_before\": \"Seeker likes Lost in Translation, Aliens, and Alien: Covenant; has seen and owns Truman Show and Rushmore.\",\n    \"belief_update\": \"Recommender selects and offers The Big Lebowski, Total Recall (2012), and Pulp Fiction as candidate recommendations across genres. This changes the prior interpretation from information gathering to actual recommendation offering.\",\n    \"belief_after\": \"Recommender has proposed three options and is awaiting Seeker's reactions; still knows prior preferences.\",\n    \"emotion\": \"Enthusiastic, helpful, slightly flustered by the typo.\",\n    \"intention\": \"Provide varied recommendation choices.\",\n    \"conversational_goal\": \"Elicit feedback on the suggested films and find a good recommendation.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Recommender hears Seeker say Pulp Fiction was good, did not like the new recall/Total Recall (2012) and found it lacking something they cannot name, and says Lebowski was good.\",\n    \"belief_before\": \"Recommender had suggested The Big Lebowski, Total Recall (2012), and Pulp Fiction; knew Seeker liked Lost in Translation, Aliens, and Alien: Covenant and had seen and owned Truman Show and Rushmore.\",\n    \"belief_update\": \"Seeker liked Pulp Fiction and The Big Lebowski, disliked Total Recall (2012), and cannot articulate why. This changes the taste model by adding positive signals for Pulp Fiction and Lebowski and a negative signal for Total Recall (2012).\",\n    \"belief_after\": \"Recommender knows Seeker's reactions to the three suggestions: positive for Pulp Fiction and Lebowski, negative for Total Recall (2012). Recommender can infer to avoid films similar to Total Recall (2012) and continue in liked directions.\",\n    \"emotion\": \"Pleased by positive feedback, curious and possibly concerned about the negative reaction.\",\n    \"intention\": \"Adjust future recommendations based on this feedback.\",\n    \"conversational_goal\": \"Refine the recommendation and continue the dialogue using Seeker's reactions.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "c"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

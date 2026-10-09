@@ -1,0 +1,75 @@
+{
+  "id": "3_pred_rec__0178_d2773_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says 'Hello' to start the dialogue.",
+      "information_available": "No information yet about the seeker or their preferences; only that the recommender has initiated contact.",
+      "preferences": "Target's own preferences are not specified; no seeker preferences are known.",
+      "belief_before": "Initial state before any dialogue content from the seeker.",
+      "belief_update": "No substantive update; recommender has only greeted.",
+      "belief_after": "The conversation is open, and the seeker's identity, needs, and preferences are unknown.",
+      "emotion": "Neutral/polite",
+      "intention": "Greet the seeker and open conversation.",
+      "reaction": "No other-speaker turn yet; not applicable.",
+      "conversational_goal": "Establish contact and invite the seeker to state what they want.",
+      "changes_previous_interpretation": "N/A (initial turn)."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: 'Hi I am looking for a good drama any ideas?'",
+      "information_available": "Recommender now knows the seeker wants a good drama and is asking for ideas.",
+      "preferences": "Seeker's stated genre preference: drama. Target's own movie preferences remain unspecified.",
+      "belief_before": "Conversation is open; seeker's needs and preferences are unknown.",
+      "belief_update": "Seeker explicitly requests a good drama recommendation.",
+      "belief_after": "Seeker is looking for drama recommendations and is open to ideas.",
+      "emotion": "Attentive/helpful",
+      "intention": "Provide or prepare a drama recommendation.",
+      "reaction": "Receptive to the request; no negative reaction indicated.",
+      "conversational_goal": "Respond to the request with suitable drama suggestions or clarifying questions.",
+      "changes_previous_interpretation": "Yes: the recommender moves from no known request to a specific 'drama recommendation' request."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender says: 'Have you seen Gladiator (2000)?'",
+      "information_available": "Recommender knows from the prior turn that the seeker wants a good drama; recommender is now checking whether the seeker has seen Gladiator.",
+      "preferences": "Seeker preference known: wants a good drama. Target implies Gladiator may be a suitable drama recommendation.",
+      "belief_before": "Seeker wants a good drama and is open to ideas.",
+      "belief_update": "Recommender selects Gladiator (2000) as a possible drama suggestion and asks if the seeker has seen it.",
+      "belief_after": "Gladiator is a candidate recommendation; if the seeker has not seen it, it may satisfy the drama request, but familiarity is unknown.",
+      "emotion": "Helpful/engaged",
+      "intention": "Check familiarity with Gladiator and offer it as a possible drama.",
+      "reaction": "Responds to the seeker's request by proposing a concrete title.",
+      "conversational_goal": "Narrow the recommendation by testing whether Gladiator fits the seeker's viewing history and taste.",
+      "changes_previous_interpretation": "Yes: moves from a general drama request to a specific candidate recommendation."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says: 'No I have not really not a fan of that kind I prefer things like Armageddon (1997).'",
+      "information_available": "Recommender learns the seeker has not seen Gladiator, is not a fan of 'that kind' (Gladiator-type historical/epic action-drama), and prefers films like Armageddon (1997).",
+      "preferences": "Seeker preferences updated: dislikes Gladiator-type films; likes Armageddon (1997)-like films, likely action/sci-fi/disaster/blockbuster with dramatic stakes. Target's own preferences remain unspecified.",
+      "belief_before": "Gladiator may fit the seeker's request for a good drama; seeker may or may not have seen it.",
+      "belief_update": "Seeker has not seen Gladiator, rejects that kind of film, and prefers Armageddon-like films.",
+      "belief_after": "Gladiator should be avoided as a recommendation; seeker's 'drama' interest is better interpreted as action/sci-fi/disaster/blockbuster drama or emotionally charged spectacle.",
+      "emotion": "Corrected/adjusting; possibly surprised but cooperative.",
+      "intention": "Revise recommendation strategy toward films similar to Armageddon (1997) and away from Gladiator-type films.",
+      "reaction": "Accepts the rejection and preference clarification as important feedback.",
+      "conversational_goal": "Acknowledge feedback, avoid Gladiator-type suggestions, and propose or ask toward Armageddon-like options.",
+      "changes_previous_interpretation": "Yes: the previous assumption that Gladiator could satisfy the drama request is disconfirmed; recommender updates the taste model."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says 'Hello' to start the dialogue.\",\n    \"information_available\": \"No information yet about the seeker or their preferences; only that the recommender has initiated contact.\",\n    \"preferences\": \"Target's own preferences are not specified; no seeker preferences are known.\",\n    \"belief_before\": \"Initial state before any dialogue content from the seeker.\",\n    \"belief_update\": \"No substantive update; recommender has only greeted.\",\n    \"belief_after\": \"The conversation is open, and the seeker's identity, needs, and preferences are unknown.\",\n    \"emotion\": \"Neutral/polite\",\n    \"intention\": \"Greet the seeker and open conversation.\",\n    \"reaction\": \"No other-speaker turn yet; not applicable.\",\n    \"conversational_goal\": \"Establish contact and invite the seeker to state what they want.\",\n    \"changes_previous_interpretation\": \"N/A (initial turn).\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: 'Hi I am looking for a good drama any ideas?'\",\n    \"information_available\": \"Recommender now knows the seeker wants a good drama and is asking for ideas.\",\n    \"preferences\": \"Seeker's stated genre preference: drama. Target's own movie preferences remain unspecified.\",\n    \"belief_before\": \"Conversation is open; seeker's needs and preferences are unknown.\",\n    \"belief_update\": \"Seeker explicitly requests a good drama recommendation.\",\n    \"belief_after\": \"Seeker is looking for drama recommendations and is open to ideas.\",\n    \"emotion\": \"Attentive/helpful\",\n    \"intention\": \"Provide or prepare a drama recommendation.\",\n    \"reaction\": \"Receptive to the request; no negative reaction indicated.\",\n    \"conversational_goal\": \"Respond to the request with suitable drama suggestions or clarifying questions.\",\n    \"changes_previous_interpretation\": \"Yes: the recommender moves from no known request to a specific 'drama recommendation' request.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender says: 'Have you seen Gladiator (2000)?'\",\n    \"information_available\": \"Recommender knows from the prior turn that the seeker wants a good drama; recommender is now checking whether the seeker has seen Gladiator.\",\n    \"preferences\": \"Seeker preference known: wants a good drama. Target implies Gladiator may be a suitable drama recommendation.\",\n    \"belief_before\": \"Seeker wants a good drama and is open to ideas.\",\n    \"belief_update\": \"Recommender selects Gladiator (2000) as a possible drama suggestion and asks if the seeker has seen it.\",\n    \"belief_after\": \"Gladiator is a candidate recommendation; if the seeker has not seen it, it may satisfy the drama request, but familiarity is unknown.\",\n    \"emotion\": \"Helpful/engaged\",\n    \"intention\": \"Check familiarity with Gladiator and offer it as a possible drama.\",\n    \"reaction\": \"Responds to the seeker's request by proposing a concrete title.\",\n    \"conversational_goal\": \"Narrow the recommendation by testing whether Gladiator fits the seeker's viewing history and taste.\",\n    \"changes_previous_interpretation\": \"Yes: moves from a general drama request to a specific candidate recommendation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says: 'No I have not really not a fan of that kind I prefer things like Armageddon (1997).'\",\n    \"information_available\": \"Recommender learns the seeker has not seen Gladiator, is not a fan of 'that kind' (Gladiator-type historical/epic action-drama), and prefers films like Armageddon (1997).\",\n    \"preferences\": \"Seeker preferences updated: dislikes Gladiator-type films; likes Armageddon (1997)-like films, likely action/sci-fi/disaster/blockbuster with dramatic stakes. Target's own preferences remain unspecified.\",\n    \"belief_before\": \"Gladiator may fit the seeker's request for a good drama; seeker may or may not have seen it.\",\n    \"belief_update\": \"Seeker has not seen Gladiator, rejects that kind of film, and prefers Armageddon-like films.\",\n    \"belief_after\": \"Gladiator should be avoided as a recommendation; seeker's 'drama' interest is better interpreted as action/sci-fi/disaster/blockbuster drama or emotionally charged spectacle.\",\n    \"emotion\": \"Corrected/adjusting; possibly surprised but cooperative.\",\n    \"intention\": \"Revise recommendation strategy toward films similar to Armageddon (1997) and away from Gladiator-type films.\",\n    \"reaction\": \"Accepts the rejection and preference clarification as important feedback.\",\n    \"conversational_goal\": \"Acknowledge feedback, avoid Gladiator-type suggestions, and propose or ask toward Armageddon-like options.\",\n    \"changes_previous_interpretation\": \"Yes: the previous assumption that Gladiator could satisfy the drama request is disconfirmed; recommender updates the taste model.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

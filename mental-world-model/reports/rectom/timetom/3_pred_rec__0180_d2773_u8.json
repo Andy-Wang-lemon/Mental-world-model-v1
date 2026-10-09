@@ -1,0 +1,123 @@
+{
+  "id": "3_pred_rec__0180_d2773_u8",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Recommender says \"Hello\" to begin the conversation.",
+      "belief_before": "No information about the seeker yet.",
+      "belief_update": "No new information about the seeker is obtained; the conversation has just started.",
+      "belief_after": "Seeker is present and available for dialogue; no preferences known.",
+      "emotion": "Neutral, polite, welcoming.",
+      "intention": "Greet the seeker and initiate interaction.",
+      "conversational_goal": "Open the conversation and invite the seeker to state a request.",
+      "preferences": "Unknown.",
+      "reaction_to_seeker": "None yet; awaiting response.",
+      "interpretation_change": "No previous interpretation to change."
+    },
+    {
+      "time": 2,
+      "observed": "Seeker says: \"Hi I am looking for a good drama any ideas?\"",
+      "belief_before": "Seeker is present; no preferences known.",
+      "belief_update": "Seeker wants a good drama recommendation.",
+      "belief_after": "Seeker is seeking drama recommendations; likely wants drama options.",
+      "emotion": "Attentive and helpful.",
+      "intention": "Provide a drama recommendation.",
+      "conversational_goal": "Recommend a good drama.",
+      "preferences": "Stated interest in \"a good drama\"; specifics unknown.",
+      "reaction_to_seeker": "Responsive to the request.",
+      "interpretation_change": "Yes: updated from no preference information to seeker wants drama."
+    },
+    {
+      "time": 3,
+      "observed": "Recommender asks: \"Have you seen Gladiator (2000)?\"",
+      "belief_before": "Seeker wants a good drama; other preferences unknown.",
+      "belief_update": "Recommender tests Gladiator as a candidate; no new seeker information.",
+      "belief_after": "Seeker wants drama; familiarity with Gladiator is unknown.",
+      "emotion": "Helpful and inquiring.",
+      "intention": "Check whether the seeker has seen or considered Gladiator as a drama option.",
+      "conversational_goal": "Narrow the recommendation by gauging familiarity with a candidate.",
+      "preferences": "Seeker wants drama; compatibility with Gladiator unknown.",
+      "reaction_to_seeker": "Engaged and responsive to the drama request.",
+      "interpretation_change": "No: continues the drama-recommendation interpretation."
+    },
+    {
+      "time": 4,
+      "observed": "Seeker says they have not seen Gladiator, are not a fan of that kind, and prefer things like Armageddon (1997).",
+      "belief_before": "Seeker wants drama; Gladiator familiarity unknown.",
+      "belief_update": "Seeker has not seen Gladiator, dislikes that kind, and prefers Armageddon-like films.",
+      "belief_after": "Seeker's preference is toward Armageddon-like movies rather than Gladiator-style drama; the initial drama request should be reinterpreted broadly.",
+      "emotion": "Adjusting, empathetic, mildly corrected.",
+      "intention": "Revise recommendations toward Armageddon-like titles.",
+      "conversational_goal": "Recover from the mismatch and offer better-fitting options.",
+      "preferences": "Prefers Armageddon (1997)-like films; not a fan of Gladiator-type films.",
+      "reaction_to_seeker": "Accepts the correction and adapts.",
+      "interpretation_change": "Yes: Gladiator/drama assumption is weakened; Armageddon-like preference becomes central."
+    },
+    {
+      "time": 5,
+      "observed": "Recommender suggests The Notebook (2013) if the seeker likes love stories and asks whether the seeker has seen Deep Impact (1998), which is like Armageddon.",
+      "belief_before": "Seeker prefers Armageddon-like films and dislikes Gladiator-type films; may still be open to drama or love stories.",
+      "belief_update": "Recommender offers two branches, love story and Armageddon-like, and tests Deep Impact; no new seeker information.",
+      "belief_after": "Seeker may like love stories/The Notebook and/or Armageddon-like Deep Impact; Deep Impact familiarity is unknown.",
+      "emotion": "Helpful, accommodating, slightly uncertain due to mixed genres.",
+      "intention": "Offer alternatives covering drama/love story and Armageddon-like action/disaster.",
+      "conversational_goal": "Provide relevant recommendations and test Deep Impact.",
+      "preferences": "Seeker likely likes Armageddon-like films; love-story interest unknown.",
+      "reaction_to_seeker": "Responds to the stated Armageddon preference and hedges with a love-story option.",
+      "interpretation_change": "No: operationalizes the updated preference without overturning it."
+    },
+    {
+      "time": 6,
+      "observed": "Seeker says they have not seen The Notebook but really need to, and that they loved Deep Impact (1998).",
+      "belief_before": "Seeker may like The Notebook if interested in love stories; Deep Impact familiarity unknown.",
+      "belief_update": "Seeker has not seen The Notebook, is interested in seeing it, and loved Deep Impact.",
+      "belief_after": "Deep Impact was a successful recommendation; The Notebook is an acceptable/possible recommendation; seeker likes at least some Armageddon-like films.",
+      "emotion": "Encouraged, positive, validated.",
+      "intention": "Continue with recommendations aligned to confirmed likes and follow up on The Notebook/Deep Impact.",
+      "conversational_goal": "Build on the successful Deep Impact recommendation and keep recommending.",
+      "preferences": "Loved Deep Impact (1998); interested in The Notebook (2013); Armageddon-like preference confirmed.",
+      "reaction_to_seeker": "Pleased by the positive feedback and encouraged.",
+      "interpretation_change": "Yes: confirms Deep Impact preference and Notebook openness, strengthening the previous update."
+    },
+    {
+      "time": 7,
+      "observed": "Recommender says The Notebook is really good and \"You will like it,\" then asks if the seeker likes action movies.",
+      "belief_before": "Seeker loved Deep Impact, has not seen The Notebook but wants to, and likes Armageddon-like films.",
+      "belief_update": "Recommender expresses confidence about The Notebook and probes action-movie preference; no new seeker information.",
+      "belief_after": "Action preference is unknown; The Notebook interest remains; action genre may guide next recommendations.",
+      "emotion": "Friendly, confident, encouraging.",
+      "intention": "Reassure about The Notebook and assess action-movie preference.",
+      "conversational_goal": "Narrow the next recommendation by checking action interest.",
+      "preferences": "Confirmed Armageddon/Deep Impact-like taste; action preference unknown.",
+      "reaction_to_seeker": "Responsive and encouraging.",
+      "interpretation_change": "No: shifts focus toward action inquiry without overturning earlier interpretation."
+    },
+    {
+      "time": 8,
+      "observed": "Seeker says they do like action movies and just watched John Wick: Chapter 2 (2017) last night.",
+      "belief_before": "Seeker may like action; action preference unknown.",
+      "belief_update": "Seeker likes action movies and recently watched John Wick: Chapter 2.",
+      "belief_after": "Seeker has confirmed an action preference and recent John Wick 2 viewing; action/thriller/neo-noir recommendations are now viable.",
+      "emotion": "Enthusiastic and engaged.",
+      "intention": "Recommend action movies, possibly similar to John Wick 2, or ask about John Wick.",
+      "conversational_goal": "Provide an action-oriented recommendation aligned with the confirmed preference.",
+      "preferences": "Likes action movies; watched John Wick: Chapter 2 recently; previously loved Deep Impact and Armageddon-like films.",
+      "reaction_to_seeker": "Positive and encouraged by the confirmed genre interest.",
+      "interpretation_change": "Yes: action preference is confirmed and gives a concrete anchor for recommendations."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Recommender says \\\"Hello\\\" to begin the conversation.\",\n    \"belief_before\": \"No information about the seeker yet.\",\n    \"belief_update\": \"No new information about the seeker is obtained; the conversation has just started.\",\n    \"belief_after\": \"Seeker is present and available for dialogue; no preferences known.\",\n    \"emotion\": \"Neutral, polite, welcoming.\",\n    \"intention\": \"Greet the seeker and initiate interaction.\",\n    \"conversational_goal\": \"Open the conversation and invite the seeker to state a request.\",\n    \"preferences\": \"Unknown.\",\n    \"reaction_to_seeker\": \"None yet; awaiting response.\",\n    \"interpretation_change\": \"No previous interpretation to change.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Seeker says: \\\"Hi I am looking for a good drama any ideas?\\\"\",\n    \"belief_before\": \"Seeker is present; no preferences known.\",\n    \"belief_update\": \"Seeker wants a good drama recommendation.\",\n    \"belief_after\": \"Seeker is seeking drama recommendations; likely wants drama options.\",\n    \"emotion\": \"Attentive and helpful.\",\n    \"intention\": \"Provide a drama recommendation.\",\n    \"conversational_goal\": \"Recommend a good drama.\",\n    \"preferences\": \"Stated interest in \\\"a good drama\\\"; specifics unknown.\",\n    \"reaction_to_seeker\": \"Responsive to the request.\",\n    \"interpretation_change\": \"Yes: updated from no preference information to seeker wants drama.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Recommender asks: \\\"Have you seen Gladiator (2000)?\\\"\",\n    \"belief_before\": \"Seeker wants a good drama; other preferences unknown.\",\n    \"belief_update\": \"Recommender tests Gladiator as a candidate; no new seeker information.\",\n    \"belief_after\": \"Seeker wants drama; familiarity with Gladiator is unknown.\",\n    \"emotion\": \"Helpful and inquiring.\",\n    \"intention\": \"Check whether the seeker has seen or considered Gladiator as a drama option.\",\n    \"conversational_goal\": \"Narrow the recommendation by gauging familiarity with a candidate.\",\n    \"preferences\": \"Seeker wants drama; compatibility with Gladiator unknown.\",\n    \"reaction_to_seeker\": \"Engaged and responsive to the drama request.\",\n    \"interpretation_change\": \"No: continues the drama-recommendation interpretation.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Seeker says they have not seen Gladiator, are not a fan of that kind, and prefer things like Armageddon (1997).\",\n    \"belief_before\": \"Seeker wants drama; Gladiator familiarity unknown.\",\n    \"belief_update\": \"Seeker has not seen Gladiator, dislikes that kind, and prefers Armageddon-like films.\",\n    \"belief_after\": \"Seeker's preference is toward Armageddon-like movies rather than Gladiator-style drama; the initial drama request should be reinterpreted broadly.\",\n    \"emotion\": \"Adjusting, empathetic, mildly corrected.\",\n    \"intention\": \"Revise recommendations toward Armageddon-like titles.\",\n    \"conversational_goal\": \"Recover from the mismatch and offer better-fitting options.\",\n    \"preferences\": \"Prefers Armageddon (1997)-like films; not a fan of Gladiator-type films.\",\n    \"reaction_to_seeker\": \"Accepts the correction and adapts.\",\n    \"interpretation_change\": \"Yes: Gladiator/drama assumption is weakened; Armageddon-like preference becomes central.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Recommender suggests The Notebook (2013) if the seeker likes love stories and asks whether the seeker has seen Deep Impact (1998), which is like Armageddon.\",\n    \"belief_before\": \"Seeker prefers Armageddon-like films and dislikes Gladiator-type films; may still be open to drama or love stories.\",\n    \"belief_update\": \"Recommender offers two branches, love story and Armageddon-like, and tests Deep Impact; no new seeker information.\",\n    \"belief_after\": \"Seeker may like love stories/The Notebook and/or Armageddon-like Deep Impact; Deep Impact familiarity is unknown.\",\n    \"emotion\": \"Helpful, accommodating, slightly uncertain due to mixed genres.\",\n    \"intention\": \"Offer alternatives covering drama/love story and Armageddon-like action/disaster.\",\n    \"conversational_goal\": \"Provide relevant recommendations and test Deep Impact.\",\n    \"preferences\": \"Seeker likely likes Armageddon-like films; love-story interest unknown.\",\n    \"reaction_to_seeker\": \"Responds to the stated Armageddon preference and hedges with a love-story option.\",\n    \"interpretation_change\": \"No: operationalizes the updated preference without overturning it.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"Seeker says they have not seen The Notebook but really need to, and that they loved Deep Impact (1998).\",\n    \"belief_before\": \"Seeker may like The Notebook if interested in love stories; Deep Impact familiarity unknown.\",\n    \"belief_update\": \"Seeker has not seen The Notebook, is interested in seeing it, and loved Deep Impact.\",\n    \"belief_after\": \"Deep Impact was a successful recommendation; The Notebook is an acceptable/possible recommendation; seeker likes at least some Armageddon-like films.\",\n    \"emotion\": \"Encouraged, positive, validated.\",\n    \"intention\": \"Continue with recommendations aligned to confirmed likes and follow up on The Notebook/Deep Impact.\",\n    \"conversational_goal\": \"Build on the successful Deep Impact recommendation and keep recommending.\",\n    \"preferences\": \"Loved Deep Impact (1998); interested in The Notebook (2013); Armageddon-like preference confirmed.\",\n    \"reaction_to_seeker\": \"Pleased by the positive feedback and encouraged.\",\n    \"interpretation_change\": \"Yes: confirms Deep Impact preference and Notebook openness, strengthening the previous update.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"Recommender says The Notebook is really good and \\\"You will like it,\\\" then asks if the seeker likes action movies.\",\n    \"belief_before\": \"Seeker loved Deep Impact, has not seen The Notebook but wants to, and likes Armageddon-like films.\",\n    \"belief_update\": \"Recommender expresses confidence about The Notebook and probes action-movie preference; no new seeker information.\",\n    \"belief_after\": \"Action preference is unknown; The Notebook interest remains; action genre may guide next recommendations.\",\n    \"emotion\": \"Friendly, confident, encouraging.\",\n    \"intention\": \"Reassure about The Notebook and assess action-movie preference.\",\n    \"conversational_goal\": \"Narrow the next recommendation by checking action interest.\",\n    \"preferences\": \"Confirmed Armageddon/Deep Impact-like taste; action preference unknown.\",\n    \"reaction_to_seeker\": \"Responsive and encouraging.\",\n    \"interpretation_change\": \"No: shifts focus toward action inquiry without overturning earlier interpretation.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"Seeker says they do like action movies and just watched John Wick: Chapter 2 (2017) last night.\",\n    \"belief_before\": \"Seeker may like action; action preference unknown.\",\n    \"belief_update\": \"Seeker likes action movies and recently watched John Wick: Chapter 2.\",\n    \"belief_after\": \"Seeker has confirmed an action preference and recent John Wick 2 viewing; action/thriller/neo-noir recommendations are now viable.\",\n    \"emotion\": \"Enthusiastic and engaged.\",\n    \"intention\": \"Recommend action movies, possibly similar to John Wick 2, or ask about John Wick.\",\n    \"conversational_goal\": \"Provide an action-oriented recommendation aligned with the confirmed preference.\",\n    \"preferences\": \"Likes action movies; watched John Wick: Chapter 2 recently; previously loved Deep Impact and Armageddon-like films.\",\n    \"reaction_to_seeker\": \"Positive and encouraged by the confirmed genre interest.\",\n    \"interpretation_change\": \"Yes: action preference is confirmed and gives a concrete anchor for recommendations.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

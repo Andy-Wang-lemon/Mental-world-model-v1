@@ -1,0 +1,59 @@
+{
+  "id": "4_pred_seeker__0100_d1509_u4",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says 'Hi' to open the interaction. No other dialogue content is available yet.",
+      "belief_before": "No prior conversation context; the recommender and their expectations are unknown.",
+      "belief_update": "SEEKER has initiated contact by greeting.",
+      "belief_after": "SEEKER expects a response and has not yet shared any movie preferences or request.",
+      "emotion": "Neutral/polite, mildly anticipatory.",
+      "intention": "Greet and begin the conversation.",
+      "conversational_goal": "Open a recommendation dialogue."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER observes RECOMMENDER say 'Hello, what kind of movie are you looking for?'",
+      "belief_before": "SEEKER has greeted and is waiting for a reply; no recommender response was available before this turn. SEEKER may have existing movie preferences, but none have been shared in the dialogue.",
+      "belief_update": "Recommender is responsive and asks SEEKER to specify the kind of movie they want.",
+      "belief_after": "SEEKER knows the recommender wants genre/type information; SEEKER's specific movie preferences are not yet stated in the dialogue.",
+      "emotion": "Engaged and ready to answer; cooperative reaction to the recommender's question.",
+      "intention": "Answer the recommender's question by describing the desired movie type.",
+      "conversational_goal": "Provide preference information so the recommender can make a relevant suggestion."
+    },
+    {
+      "time": 3,
+      "observed": "SEEKER says: 'I’m looking for some good thriller movies...I love the suspense sort of films like Seven (1995).'",
+      "belief_before": "Recommender has asked what kind of movie SEEKER is looking for. SEEKER has a preference for thriller/suspense films like Seven (1995) but has not yet communicated it to the recommender.",
+      "belief_update": "SEEKER states that they are looking for good thriller movies and love suspense films like Seven (1995), making the preference explicit.",
+      "belief_after": "Recommender now knows SEEKER wants thrillers/suspense similar to Seven (1995). SEEKER expects suggestions aligned with that taste.",
+      "emotion": "Enthusiastic/eager; expresses enjoyment of suspenseful thrillers.",
+      "intention": "Inform the recommender of their taste and steer recommendations toward films like Seven (1995).",
+      "conversational_goal": "Elicit thriller/suspense recommendations that match the stated preference."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER observes RECOMMENDER say 'Ok, do you like Saw (2004)?'",
+      "belief_before": "SEEKER has told the recommender they want good thriller/suspense movies like Seven (1995). The recommender has acknowledged this and is expected to suggest a match.",
+      "belief_update": "Recommender asks whether SEEKER likes Saw (2004). This shifts the dialogue from genre-level preference to a specific title query and implies the recommender associates Saw with SEEKER's stated thriller/suspense interest.",
+      "belief_after": "SEEKER believes the recommender is testing/proposing Saw (2004) as a potential recommendation. SEEKER's own view of Saw is not yet stated; they may evaluate whether it fits the Seven-like suspense preference.",
+      "emotion": "Curious/evaluative; receptive but assessing the recommender's suggestion.",
+      "intention": "Assess Saw (2004) against their preference and prepare to answer whether they like it.",
+      "conversational_goal": "Respond to the recommender's candidate title and guide whether to continue with Saw or seek alternatives."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says 'Hi' to open the interaction. No other dialogue content is available yet.\",\n    \"belief_before\": \"No prior conversation context; the recommender and their expectations are unknown.\",\n    \"belief_update\": \"SEEKER has initiated contact by greeting.\",\n    \"belief_after\": \"SEEKER expects a response and has not yet shared any movie preferences or request.\",\n    \"emotion\": \"Neutral/polite, mildly anticipatory.\",\n    \"intention\": \"Greet and begin the conversation.\",\n    \"conversational_goal\": \"Open a recommendation dialogue.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER observes RECOMMENDER say 'Hello, what kind of movie are you looking for?'\",\n    \"belief_before\": \"SEEKER has greeted and is waiting for a reply; no recommender response was available before this turn. SEEKER may have existing movie preferences, but none have been shared in the dialogue.\",\n    \"belief_update\": \"Recommender is responsive and asks SEEKER to specify the kind of movie they want.\",\n    \"belief_after\": \"SEEKER knows the recommender wants genre/type information; SEEKER's specific movie preferences are not yet stated in the dialogue.\",\n    \"emotion\": \"Engaged and ready to answer; cooperative reaction to the recommender's question.\",\n    \"intention\": \"Answer the recommender's question by describing the desired movie type.\",\n    \"conversational_goal\": \"Provide preference information so the recommender can make a relevant suggestion.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"SEEKER says: 'I’m looking for some good thriller movies...I love the suspense sort of films like Seven (1995).'\",\n    \"belief_before\": \"Recommender has asked what kind of movie SEEKER is looking for. SEEKER has a preference for thriller/suspense films like Seven (1995) but has not yet communicated it to the recommender.\",\n    \"belief_update\": \"SEEKER states that they are looking for good thriller movies and love suspense films like Seven (1995), making the preference explicit.\",\n    \"belief_after\": \"Recommender now knows SEEKER wants thrillers/suspense similar to Seven (1995). SEEKER expects suggestions aligned with that taste.\",\n    \"emotion\": \"Enthusiastic/eager; expresses enjoyment of suspenseful thrillers.\",\n    \"intention\": \"Inform the recommender of their taste and steer recommendations toward films like Seven (1995).\",\n    \"conversational_goal\": \"Elicit thriller/suspense recommendations that match the stated preference.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER observes RECOMMENDER say 'Ok, do you like Saw (2004)?'\",\n    \"belief_before\": \"SEEKER has told the recommender they want good thriller/suspense movies like Seven (1995). The recommender has acknowledged this and is expected to suggest a match.\",\n    \"belief_update\": \"Recommender asks whether SEEKER likes Saw (2004). This shifts the dialogue from genre-level preference to a specific title query and implies the recommender associates Saw with SEEKER's stated thriller/suspense interest.\",\n    \"belief_after\": \"SEEKER believes the recommender is testing/proposing Saw (2004) as a potential recommendation. SEEKER's own view of Saw is not yet stated; they may evaluate whether it fits the Seven-like suspense preference.\",\n    \"emotion\": \"Curious/evaluative; receptive but assessing the recommender's suggestion.\",\n    \"intention\": \"Assess Saw (2004) against their preference and prepare to answer whether they like it.\",\n    \"conversational_goal\": \"Respond to the recommender's candidate title and guide whether to continue with Saw or seek alternatives.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": [
+    "a",
+    "b"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

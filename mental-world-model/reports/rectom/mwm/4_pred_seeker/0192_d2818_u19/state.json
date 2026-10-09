@@ -1,0 +1,54 @@
+{
+  "focus_person": "SEEKER",
+  "objects": [
+    {
+      "content": "在 SEEKER 的所缘里，RECOMMENDER 问 What movie genres are you interested in? 不是可随意交换的信息，而是要求把“我喜欢什么类型”拿出去代表自己；随后 If you like animation, or a kids movie、If you like Action、horror movie then an animation kids movie 等说法，被经验为一个个固定类型格子，片名像标签一样等待 SEEKER 把自己安放进某一格才算回应了对方；最后的 Have a good night! 也没有取消这个归类要求，反而让“我究竟属于哪一类”悬在那里。",
+      "probability": 0.385
+    },
+    {
+      "content": "在 SEEKER 的所缘里，RECOMMENDER 列出的 Bright、Star Wars: Episode VIII – The Last Jedi、Coco、Wonder Woman、It 等片名被当作一份观影资历清单：看过或没看过在“我这边”被掂量，用来确认自己有没有进入对方所说的圈内；同时 If you like animation...、If you like Action...、horror movie then an animation kids movie 又把这份清单切成固定类型，SEEKER 经验到的是：片名不只是内容建议，而是按类型排列的资格标记，Not scary enough for you? 更像是在核对这份标记够不够。",
+      "probability": 0.3398
+    },
+    {
+      "content": "在 SEEKER 的所缘里，Not scary enough for you? 不是单纯询问片单口味，而是把“我能承受多少恐怖”当成自我边界来指认；It (2017) 被放在 horror movie 这个有固定边界的类别里，RECOMMENDER 说自己会先看 horror movie 再看 animation kids movie 来平复神经，更让 SEEKER 经验到自己的胆量或胃口被拿来与一个明确的恐怖片边界对照，分类问题因此变成对自身界限的确认。",
+      "probability": 0.2752
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "RECOMMENDER 问 What movie genres are you interested in? 在 SEEKER 这里不是一道可随便回答的信息题，而像要 SEEKER 把口味交出去、当成能代表自己的标签。SEEKER 不愿被塞进单一格子，于是“all kinds”和“kids movie followed by a horror flick”成了保持自我不被定型的说法；随后每一句 If you like animation、If you like Action、horror then animation 都像递来一个现成分类槽，片名则是槽上的样本。SEEKER 对 Bright、Star Wars、Coco、Wonder Woman、It 的接话，重点不在证明自己属于哪类观众，而在逐个掂量这些片名与当下的自己是否合拍：没听过、不是粉丝、可能今晚看、看睡着了还要再看，都是把推荐还原成可取舍的单个选项，而不是接受类型标签。最后的 Have a good night! 没有消除那项归类要求，反而留下“我究竟属于哪一类”的悬空；SEEKER 的内在趋向仍是把偏好保持为宽泛、流动、可跨类型的，不让别人用几个类型格子把自己定死。",
+      "activation": 0.385
+    },
+    {
+      "content": "这些片名一出来，SEEKER心里先不是单纯按内容挑片，而是把每个片名放进“我这边”的观影资历格里掂量：没听过 Bright 时像空了一格，说“没听过”；对 Star Wars 先划出不是粉丝，又补一句“看过那部、也许会看”，像在标记上补一笔；Coco 被列进短名单、Wonder Woman 得到“听过好评”的印证，都是在确认自己与对方所列圈内标记有没有交集。类型标签也被感受为资格边界：SEEKER说自己什么类型都看、儿童片接恐怖片，既是不愿被单一类型钉死，也是向对方显示自己的观影幅面够宽。Not scary enough? 则像在核对这份标记够不够，SEEKER用“太累”“看片会睡”来重述，不是否认片子的分量，而是把评价标准拉回自己的实际状态；末尾反过来劝对方看 Armageddon 和 Braveheart，像在清单上回填自己可支配的资格项。整体趋向是：想把自己的观影版图与对方清单对齐，既不愿被类型框死，也不愿在“看过/没看过”的标记上显得空白。",
+      "activation": 0.3232
+    },
+    {
+      "content": "SEEKER 把 RECOMMENDER 那句 Not scary enough for you? 收进来时，并不当成对片单口味的普通追问，而像是对自己承受恐怖界限的一次点名：It 被归在 horror movie 里，对方还说自己要再看 animation kids movie 来平复，这让他感到自己的胆量和胃口被拿去和一条明确的恐怖片边界对照。于是分类不再只是选片标签，而成了确认自己属于哪一边。他倾向把“看 It 睡着”重新解释为太累与看电影易睡的个人习惯，而不是恐怖门槛不够；同时仍保留自己可以 kids movie 接 horror flick 的宽泛口味，不愿让固定类型替自己划线。整体上，他接受推荐，却要把对自己的定义权留在自己手里，继续以混杂、随性、不被单一类型框定的方式看待观影和自己。",
+      "activation": 0.2918
+    }
+  ],
+  "observed_action": "SEEKER asks whether there are any new movies worth watching; says SEEKER had never heard of Bright; says SEEKER likes all kinds of movies and will watch a kids movie followed by a horror movie; says SEEKER is not a Star Wars fan, says SEEKER did see that one and may have to watch it; says Coco is on SEEKER's short list and SEEKER may check it out tonight; says SEEKER has heard great things about Wonder Woman and says that is a good way to do it; says SEEKER fell asleep to It the other night and needs to watch it again; says SEEKER was just really tired, states SEEKER is weird with sleeping while watching movies, mentions SEEKER loves Waiting for Armageddon (2009) but it puts SEEKER out in about 10 minutes every time, and corrects the title to Armageddon (1997); tells the recommender that the recommender needs to watch both.",
+  "predicted_actions": [
+    {
+      "content": "说自己什么类型都看",
+      "probability": 0.4761
+    },
+    {
+      "content": "向推荐者道晚安并感谢推荐",
+      "probability": 0.2655
+    },
+    {
+      "content": "道晚安",
+      "probability": 0.1374
+    },
+    {
+      "content": "选定今晚看 Coco",
+      "probability": 0.1057
+    },
+    {
+      "content": "向推荐者解释看 It 睡着的原因",
+      "probability": 0.0154
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "3_pred_rec__0138_d2245_u1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "RECOMMENDER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets the RECOMMENDER, wishes Happy New Year, asks if the RECOMMENDER knows any new comedy movies that are out, and states they want to see A Bad Moms Christmas (2017) but it is not on Amazon yet. The SEEKER is friendly, direct, and seeking comedy recommendations with a specific title and platform constraint.",
+      "belief_before": "No prior information about the SEEKER or their preferences is available in this dialogue.",
+      "belief_update": "The SEEKER is interested in new comedy movies, specifically wants A Bad Moms Christmas (2017), and has found that it is not yet available on Amazon. They are asking whether the RECOMMENDER knows of any new comedy movies. No previous interpretation exists to change; this turn establishes the initial context.",
+      "belief_after": "The RECOMMENDER believes the SEEKER wants recommendations for new comedy movies and may also need help finding A Bad Moms Christmas or a suitable alternative, especially given the Amazon availability issue.",
+      "emotion": "Friendly, attentive, and ready to help.",
+      "intention": "Respond to the SEEKER's request by identifying new comedy movies and, if possible, addressing the specific interest in A Bad Moms Christmas and its current unavailability on Amazon.",
+      "conversational_goal": "Acknowledge the greeting, answer the question about new comedy movies, and provide helpful recommendation information that accounts for the SEEKER's stated preferences and platform constraint."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets the RECOMMENDER, wishes Happy New Year, asks if the RECOMMENDER knows any new comedy movies that are out, and states they want to see A Bad Moms Christmas (2017) but it is not on Amazon yet. The SEEKER is friendly, direct, and seeking comedy recommendations with a specific title and platform constraint.\",\n    \"belief_before\": \"No prior information about the SEEKER or their preferences is available in this dialogue.\",\n    \"belief_update\": \"The SEEKER is interested in new comedy movies, specifically wants A Bad Moms Christmas (2017), and has found that it is not yet available on Amazon. They are asking whether the RECOMMENDER knows of any new comedy movies. No previous interpretation exists to change; this turn establishes the initial context.\",\n    \"belief_after\": \"The RECOMMENDER believes the SEEKER wants recommendations for new comedy movies and may also need help finding A Bad Moms Christmas or a suitable alternative, especially given the Amazon availability issue.\",\n    \"emotion\": \"Friendly, attentive, and ready to help.\",\n    \"intention\": \"Respond to the SEEKER's request by identifying new comedy movies and, if possible, addressing the specific interest in A Bad Moms Christmas and its current unavailability on Amazon.\",\n    \"conversational_goal\": \"Acknowledge the greeting, answer the question about new comedy movies, and provide helpful recommendation information that accounts for the SEEKER's stated preferences and platform constraint.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

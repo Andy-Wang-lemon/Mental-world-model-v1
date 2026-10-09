@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0112_d1751_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!",
+      "information_available": "SEEKER has not received any recommendation yet. They know they typed 'god' but corrected it to 'good'.",
+      "preferences": "Wants a really good horror movie.",
+      "belief_before": "No prior beliefs about the recommender are available in this dialogue.",
+      "belief_update": "SEEKER clarifies that the intended word is 'good', not 'god', and that the desired genre is horror.",
+      "belief_after": "SEEKER likely believes the recommender should now understand they want a good horror movie.",
+      "emotion": "Eager and casual, with slight embarrassment or self-correction about the typo.",
+      "intention": "Ask for a good horror movie recommendation.",
+      "reaction_to_other": "N/A; no other-speaker turn has occurred yet.",
+      "conversational_goal": "Obtain a recommendation for a really good horror movie.",
+      "changes_previous_interpretation": "N/A"
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha",
+      "information_available": "SEEKER hears the recommender suggest The Passion of the Christ, then admit they thought 'god' meant religious, then apologize and laugh.",
+      "preferences": "Still wants a really good horror movie, not a religious film.",
+      "belief_before": "SEEKER believed the recommender had understood the corrected request for a good horror movie.",
+      "belief_update": "SEEKER learns the recommender initially misread 'god' as religious and suggested The Passion of the Christ, but the recommender now recognizes the mistake.",
+      "belief_after": "SEEKER likely believes the recommender now understands they want horror and may adjust to give a horror recommendation.",
+      "emotion": "Mild amusement or awkward patience at the religious misunderstanding.",
+      "intention": "Continue seeking a good horror movie recommendation.",
+      "reaction_to_other": "Finds the recommender's misinterpretation somewhat funny or awkward; may accept the apology and wait for a corrected suggestion.",
+      "conversational_goal": "Get the recommender back on track toward recommending a good horror movie.",
+      "changes_previous_interpretation": "Yes; SEEKER's expectation that the recommender would directly answer the horror request changes to recognizing the recommender initially misread the typo, though SEEKER's original goal is unchanged."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: HI i'm looking for a really god horror movie....Sorry Good!\",\n    \"information_available\": \"SEEKER has not received any recommendation yet. They know they typed 'god' but corrected it to 'good'.\",\n    \"preferences\": \"Wants a really good horror movie.\",\n    \"belief_before\": \"No prior beliefs about the recommender are available in this dialogue.\",\n    \"belief_update\": \"SEEKER clarifies that the intended word is 'good', not 'god', and that the desired genre is horror.\",\n    \"belief_after\": \"SEEKER likely believes the recommender should now understand they want a good horror movie.\",\n    \"emotion\": \"Eager and casual, with slight embarrassment or self-correction about the typo.\",\n    \"intention\": \"Ask for a good horror movie recommendation.\",\n    \"reaction_to_other\": \"N/A; no other-speaker turn has occurred yet.\",\n    \"conversational_goal\": \"Obtain a recommendation for a really good horror movie.\",\n    \"changes_previous_interpretation\": \"N/A\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: The Passion of the Christ (2004) ...Oh sorry I thought you meant religious haha\",\n    \"information_available\": \"SEEKER hears the recommender suggest The Passion of the Christ, then admit they thought 'god' meant religious, then apologize and laugh.\",\n    \"preferences\": \"Still wants a really good horror movie, not a religious film.\",\n    \"belief_before\": \"SEEKER believed the recommender had understood the corrected request for a good horror movie.\",\n    \"belief_update\": \"SEEKER learns the recommender initially misread 'god' as religious and suggested The Passion of the Christ, but the recommender now recognizes the mistake.\",\n    \"belief_after\": \"SEEKER likely believes the recommender now understands they want horror and may adjust to give a horror recommendation.\",\n    \"emotion\": \"Mild amusement or awkward patience at the religious misunderstanding.\",\n    \"intention\": \"Continue seeking a good horror movie recommendation.\",\n    \"reaction_to_other\": \"Finds the recommender's misinterpretation somewhat funny or awkward; may accept the apology and wait for a corrected suggestion.\",\n    \"conversational_goal\": \"Get the recommender back on track toward recommending a good horror movie.\",\n    \"changes_previous_interpretation\": \"Yes; SEEKER's expectation that the recommender would directly answer the horror request changes to recognizing the recommender initially misread the typo, though SEEKER's original goal is unchanged.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "a",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,612 @@
+{
+  "events": [
+    {
+      "focus_person": "陈溪",
+      "yuanwen": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+      "stimulus_text": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+      "stimulus_action_split": {
+        "stimulus_text": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": ""
+      },
+      "objective_event": {
+        "actors": [
+          "陈溪",
+          "何雨",
+          "在场朋友"
+        ],
+        "action": "有人说：“她们关系保持得真好。”何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+        "object": "陈溪与何雨的关系",
+        "scene": "朋友聚餐",
+        "outcome_changes": [],
+        "role_changes": [
+          "何雨在准备婚礼"
+        ],
+        "relationship_changes": [
+          "陈溪母亲住院的一个多月期间，陈溪与何雨只见过一次",
+          "之后陈溪与何雨重新经常见面，并每年一起旅行"
+        ],
+        "constraint_changes": [],
+        "resource_changes": []
+      },
+      "self_grasping": [
+        {
+          "id": "sg_f1",
+          "text": "陈溪可能把与何雨认识十年、被朋友称作“关系保持得真好”的这段友谊，当成自己这边不可分割的关系，不能当作与己无关。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f2",
+          "text": "陈溪可能把“自己是被何雨‘什么时候有事都在’这句话所覆盖的人”这一位置，当成不能在何雨那里失去的自我位置；母亲住院一个多月只见过一次、何雨当时准备婚礼，与何雨当众说“有事都在”并置，使这个位置需要被确认。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f3",
+          "text": "陈溪可能把“我们俩这么多年就没断过”以及后来每年一起旅行所代表的关系连续性，当成自己生活里理所当然存在的一部分，不能接受它被母亲住院期间的少见面所否定。",
+          "confidence": 0.74,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "sg_f4",
+          "text": "陈溪可能把朋友聚餐中别人对她们关系的称赞，当成对自己这个人、自己这段关系经营成果的确认，不能只当作一句普通客套。",
+          "confidence": 0.66,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "dharma_grasping": [
+        {
+          "id": "dg_f1",
+          "text": "陈溪可能把“真正的好朋友、十年关系就应当什么时候有事都在”执为固定标准；何雨当众说出这句话，而陈溪母亲住院期间何雨因准备婚礼只见过一次，这种落差会被她理解为友谊应然规则的检验。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f2",
+          "text": "陈溪可能把“关系没断、保持得好”执为“见面频率不能明显下降、重要时刻不能缺席”的固定形态；母亲住院一个多月只见过一次与之后重新经常见面、每年旅行被放在同一段关系叙事里，她可能认为只有持续见面和共同旅行才算不断。",
+          "confidence": 0.8,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f3",
+          "text": "陈溪可能把“何雨准备婚礼所以当时只见过一次”执为完全可以解释的例外，从而认为关系本质没有变化、不需要重新理解这段友谊。",
+          "confidence": 0.73,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f4",
+          "text": "陈溪可能把“认识十年”本身执为关系质量的固定保证，认为十年时间就理应包容母亲住院期间的少见面，也理应让“没断过”成立。",
+          "confidence": 0.72,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        },
+        {
+          "id": "dg_f5",
+          "text": "陈溪可能把何雨在朋友聚餐中笑着回应“我们俩这么多年就没断过”执为公开承认即等于实际关系状态，认为当众这样说就可以覆盖母亲住院期间只见过一次的事实。",
+          "confidence": 0.7,
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": []
+        }
+      ],
+      "grasping_combos": [
+        {
+          "combo_id": "C1",
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.35185185185185186,
+          "alambana_prior_probability": 0.521978021978022,
+          "activation_alignment": 0.95,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001
+        },
+        {
+          "combo_id": "C2",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "combo_activation_probability": 0.32592592592592595,
+          "alambana_prior_probability": 0.0,
+          "activation_alignment": 0.88,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5632000000000001
+        },
+        {
+          "combo_id": "C3",
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "combo_activation_probability": 0.32222222222222224,
+          "alambana_prior_probability": 0.47802197802197804,
+          "activation_alignment": 0.87,
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5568000000000001
+        }
+      ],
+      "subjective_alambanas": [
+        {
+          "id": "O_C1",
+          "text": "在陈溪此刻的经验里，何雨当众笑着说“我们俩这么多年就没断过，什么时候有事都在”，并不是一句普通客套，而是把她放在何雨“有事都在”这句话所覆盖的人的位置上；这个位置是她不能在何雨那里失去的自我位置。可母亲住院一个多月里，何雨正忙着准备婚礼，两人只见过一次，这件事被这句当众承诺照出来，成了这个位置是否仍然被覆盖的检验点。朋友说“她们关系保持得真好”，更把这一位置推到台前；陈溪经验到的是，“真正的好朋友、十年关系就应当什么时候有事都在”这条固定标准正被何雨当众说出，而母亲住院期间的只见过一次则作为落差，等待被这句话重新覆盖或抵消。后来重新经常见面、每年一起旅行，在此刻也进入同一标准的核对之中，而不是独立于这个标准之外的事实。",
+          "prior_probability": 0.521978021978022,
+          "posterior_probability": 0.521978021978022,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f2"
+          ],
+          "used_dharma_ids": [
+            "dg_f1"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.6080000000000001,
+          "activation_alignment": 0.95,
+          "grounding_valid": true,
+          "grounding_reason": "未添加客观刺激中不存在的他人言行或事实，仅对既有言行和关系变化作陈溪侧主观解释；保留了何雨准备婚礼、母亲住院期间只见过一次、之后重新经常见面并每年旅行等关键关系变化。",
+          "combo_id": "C1"
+        },
+        {
+          "id": "O_C3",
+          "text": "在陈溪此刻的经验里，朋友说“她们关系保持得真好”、何雨笑着说“我们俩这么多年就没断过，什么时候有事都在”，把“关系没断、保持得好”具体化为一种固定形态：见面频率不能明显下降，重要时刻不能缺席。母亲住院一个多月里，何雨正忙着准备婚礼，两人只见过一次，这在她所执的形态下成了一个明显缺口；后来两人重新经常见面、每年一起旅行，又被放进同一段关系叙事里，仿佛只有持续见面和共同旅行才算不断。何雨当众的“什么时候有事都在”于是被她经验为对“没断”形态的确认，可母亲住院期间只见过一次仍在同一形态标准下显影，使“保持得好”这句话不再是单纯夸赞，而是对关系固定形态是否成立的当场衡量。",
+          "prior_probability": 0.47802197802197804,
+          "posterior_probability": 0.47802197802197804,
+          "action_compat": 1.0,
+          "action_likelihood": 1.0,
+          "action_informed": false,
+          "confidence": 0.5,
+          "used_self_ids": [
+            "sg_f1"
+          ],
+          "used_dharma_ids": [
+            "dg_f2"
+          ],
+          "source": "推理",
+          "source_type": "fresh",
+          "source_bias_frame_ids": [],
+          "reactivated_h_ids": [],
+          "raw_combo_score": 0.5568000000000001,
+          "activation_alignment": 0.87,
+          "grounding_valid": true,
+          "grounding_reason": "对“关系没断、保持得好”的固定形态理解属主观解释，未添加刺激中不存在的他人言行；保留了何雨准备婚礼、母亲住院期间只见过一次、之后重新经常见面并旅行等核心关系变化。",
+          "combo_id": "C3"
+        }
+      ],
+      "action_evidence": {
+        "has_observable_action": false,
+        "action_span": "",
+        "action_description": "",
+        "likelihoods": []
+      },
+      "branches": [
+        {
+          "branch_id": "branch_O_C1",
+          "activation_probability": 0.521978021978022,
+          "alambana": {
+            "id": "O_C1",
+            "text": "在陈溪此刻的经验里，何雨当众笑着说“我们俩这么多年就没断过，什么时候有事都在”，并不是一句普通客套，而是把她放在何雨“有事都在”这句话所覆盖的人的位置上；这个位置是她不能在何雨那里失去的自我位置。可母亲住院一个多月里，何雨正忙着准备婚礼，两人只见过一次，这件事被这句当众承诺照出来，成了这个位置是否仍然被覆盖的检验点。朋友说“她们关系保持得真好”，更把这一位置推到台前；陈溪经验到的是，“真正的好朋友、十年关系就应当什么时候有事都在”这条固定标准正被何雨当众说出，而母亲住院期间的只见过一次则作为落差，等待被这句话重新覆盖或抵消。后来重新经常见面、每年一起旅行，在此刻也进入同一标准的核对之中，而不是独立于这个标准之外的事实。",
+            "prior_probability": 0.521978021978022,
+            "posterior_probability": 0.521978021978022,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f2"
+            ],
+            "used_dharma_ids": [
+              "dg_f1"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.6080000000000001,
+            "activation_alignment": 0.95,
+            "grounding_valid": true,
+            "grounding_reason": "未添加客观刺激中不存在的他人言行或事实，仅对既有言行和关系变化作陈溪侧主观解释；保留了何雨准备婚礼、母亲住院期间只见过一次、之后重新经常见面并每年旅行等关键关系变化。"
+          },
+          "xiang": {
+            "text": "何雨当众说“什么时候有事都在”，陈溪心里先是一紧：这句话像是在众人面前认下她，把她放在一个不能被替代的位置上；可母亲住院一个多月、何雨忙着婚礼只来过一次的那段，也跟着被这句话照亮，变成她必须在这句话里安放、又不太安得下的地方。她觉得朋友说的“关系保持得真好”不能只是场面话，十年、每年旅行、重新常来往，都应当证明“有事都在”是真的；于是她一边愿意把何雨这句话当成对自己的确认，一边又忍不住用母亲住院那段去量这句话的成色。她不想让这个位置在何雨那里掉下去，也不愿承认那条标准可能本来就有缝；此刻她更倾向于把只见过一次解释成婚礼所迫、后来补上的来往才是关系的正文，好让何雨当众给出的覆盖重新合拢。可这个解释并没有完全落定，她心里仍悬着一个核对：如果真是什么时候有事都在，那母亲住院时那一个多月的空白，到底算不算数。",
+            "source": "推理",
+            "confidence": 0.82
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "无瞋": 0.40499999999999997,
+            "贪": 0.8575,
+            "无明": 0.69,
+            "疑": 0.7799999999999999,
+            "恶见": 0.365,
+            "无愧": 0.1575,
+            "掉举": 0.5569999999999999,
+            "不正知": 0.49999999999999994
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "替何雨解释并强调后来来往",
+              "probability": 0.5263157894736842,
+              "supporting_mental_factors": [
+                "贪",
+                "无明",
+                "无瞋",
+                "不正知",
+                "恶见"
+              ]
+            },
+            {
+              "text": "附和并转移话题",
+              "probability": 0.2631578947368421,
+              "supporting_mental_factors": [
+                "贪",
+                "无明",
+                "掉举",
+                "无瞋",
+                "不正知"
+              ]
+            },
+            {
+              "text": "私下发消息追问并约见",
+              "probability": 0.2105263157894737,
+              "supporting_mental_factors": [
+                "疑",
+                "掉举",
+                "贪"
+              ]
+            }
+          ]
+        },
+        {
+          "branch_id": "branch_O_C3",
+          "activation_probability": 0.47802197802197804,
+          "alambana": {
+            "id": "O_C3",
+            "text": "在陈溪此刻的经验里，朋友说“她们关系保持得真好”、何雨笑着说“我们俩这么多年就没断过，什么时候有事都在”，把“关系没断、保持得好”具体化为一种固定形态：见面频率不能明显下降，重要时刻不能缺席。母亲住院一个多月里，何雨正忙着准备婚礼，两人只见过一次，这在她所执的形态下成了一个明显缺口；后来两人重新经常见面、每年一起旅行，又被放进同一段关系叙事里，仿佛只有持续见面和共同旅行才算不断。何雨当众的“什么时候有事都在”于是被她经验为对“没断”形态的确认，可母亲住院期间只见过一次仍在同一形态标准下显影，使“保持得好”这句话不再是单纯夸赞，而是对关系固定形态是否成立的当场衡量。",
+            "prior_probability": 0.47802197802197804,
+            "posterior_probability": 0.47802197802197804,
+            "action_compat": 1.0,
+            "action_likelihood": 1.0,
+            "action_informed": false,
+            "confidence": 0.5,
+            "used_self_ids": [
+              "sg_f1"
+            ],
+            "used_dharma_ids": [
+              "dg_f2"
+            ],
+            "source": "推理",
+            "source_type": "fresh",
+            "source_bias_frame_ids": [],
+            "reactivated_h_ids": [],
+            "raw_combo_score": 0.5568000000000001,
+            "activation_alignment": 0.87,
+            "grounding_valid": true,
+            "grounding_reason": "对“关系没断、保持得好”的固定形态理解属主观解释，未添加刺激中不存在的他人言行；保留了何雨准备婚礼、母亲住院期间只见过一次、之后重新经常见面并旅行等核心关系变化。"
+          },
+          "xiang": {
+            "text": "陈溪听着何雨当众说“这么多年就没断过，什么时候有事都在”，心里先是一热，随即这话像一把尺子落到自己身上：没断就该是见面不断、大事在场，这段关系不能被她放到与己无关的位置。她马上想到母亲住院那一个多月，何雨正忙婚礼，两人只见过一次——按这把尺子，那是个缺口。后来重新常常见面、每年一起旅行，也被她放进同一条线里，仿佛只有持续见面和共同旅行才撑得住“不断”。她感到“保持得好”不再只是朋友的夸赞，而是当场对这段关系固定形态是否成立的衡量；她想认下这份好，却又无法让那个缺口在何雨的笑里轻轻滑过去。",
+            "source": "推理",
+            "confidence": 0.83
+          },
+          "si": {
+            "text": "",
+            "source": "推理",
+            "confidence": 0.0
+          },
+          "mental_factors_nonzero": {
+            "贪": 0.825,
+            "瞋": 0.215,
+            "慢": 0.22999999999999998,
+            "无明": 0.8500000000000001,
+            "疑": 0.5449999999999999,
+            "恶见": 0.5399999999999999,
+            "放逸": 0.21,
+            "掉举": 0.54,
+            "不正知": 0.51
+          },
+          "status": "active",
+          "behaviors": [
+            {
+              "text": "不接话并低头吃喝",
+              "probability": 0.4044943820224719,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "接话并碰杯",
+              "probability": 0.30337078651685395,
+              "supporting_mental_factors": []
+            },
+            {
+              "text": "提起旧事并看着对方",
+              "probability": 0.29213483146067415,
+              "supporting_mental_factors": []
+            }
+          ]
+        }
+      ],
+      "aggregated_behaviors": [
+        {
+          "text": "替何雨解释并强调后来来往",
+          "probability": 0.30864197530864196,
+          "dominant_mental_factors": [
+            "贪",
+            "无明",
+            "无瞋",
+            "不正知",
+            "恶见"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.521978021978022,
+              "conditional_probability": 0.5263157894736842,
+              "contribution": 0.27472527472527475
+            }
+          ]
+        },
+        {
+          "text": "不接话并低头吃喝",
+          "probability": 0.21722846441947566,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.47802197802197804,
+              "conditional_probability": 0.4044943820224719,
+              "contribution": 0.19335720459315967
+            }
+          ]
+        },
+        {
+          "text": "接话并碰杯",
+          "probability": 0.16292134831460675,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.47802197802197804,
+              "conditional_probability": 0.30337078651685395,
+              "contribution": 0.14501790344486976
+            }
+          ]
+        },
+        {
+          "text": "提起旧事并看着对方",
+          "probability": 0.15688722430295465,
+          "dominant_mental_factors": [],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C3",
+              "activation_probability": 0.47802197802197804,
+              "conditional_probability": 0.29213483146067415,
+              "contribution": 0.13964686998394865
+            }
+          ]
+        },
+        {
+          "text": "附和并转移话题",
+          "probability": 0.15432098765432098,
+          "dominant_mental_factors": [
+            "贪",
+            "无明",
+            "掉举",
+            "无瞋",
+            "不正知"
+          ],
+          "branch_contributions": [
+            {
+              "branch_id": "branch_O_C1",
+              "activation_probability": 0.521978021978022,
+              "conditional_probability": 0.2631578947368421,
+              "contribution": 0.13736263736263737
+            }
+          ]
+        }
+      ],
+      "mental_factors_event_nonzero": {
+        "无瞋": 0.2114010989010989,
+        "贪": 0.8419642857142857,
+        "瞋": 0.10277472527472528,
+        "慢": 0.10994505494505494,
+        "无明": 0.7664835164835165,
+        "疑": 0.6676648351648351,
+        "恶见": 0.4486538461538462,
+        "无愧": 0.08221153846153846,
+        "放逸": 0.10038461538461539,
+        "掉举": 0.5488736263736265,
+        "不正知": 0.5047802197802198
+      },
+      "mental_report_mode": "per_branch_only",
+      "cognition_candidates": {
+        "fresh_count_raw": 9,
+        "historical_count_raw": 0,
+        "after_semantic_dedup": 9,
+        "valid_after_alignment_gate": 3
+      },
+      "accommodation": {
+        "triggered": false,
+        "reason": "",
+        "regeneration_success": false
+      },
+      "neutral_fallback": {
+        "used": false
+      },
+      "used_neutral_fallback": false,
+      "behavior_diagnostics": {
+        "raw_candidate_count": 8,
+        "distinct_candidate_count": 8,
+        "diversity_regenerated": false,
+        "candidate_collapsed": false,
+        "branches": {
+          "branch_O_C1": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          },
+          "branch_O_C3": {
+            "raw_candidate_count": 4,
+            "distinct_candidate_count": 4,
+            "diversity_regenerated": false,
+            "candidate_collapsed": false
+          }
+        }
+      },
+      "continuity": {
+        "cognitive_enabled": true,
+        "injected_bias_frames": [
+          {
+            "id": "bf_1",
+            "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_2",
+            "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_3",
+            "text": "朋友骗了我，我对他不满，以及不信任",
+            "mass": 1.0
+          },
+          {
+            "id": "bf_4",
+            "text": "组织评价标准可能正在偏向新人",
+            "mass": 0.7285
+          },
+          {
+            "id": "bf_5",
+            "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+            "mass": 0.6758
+          }
+        ],
+        "h_prior": {
+          "working_set": [
+            {
+              "id": "bf_1",
+              "text": "对方正在挑战我的资格\n我执：把自己定位为有资格的当事人\n法执：把对方行为理解成对既有秩序的冲击",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_2",
+              "text": "陈默把CEO的安排理解为自己已经无法继续完全置身项目之外，因为被重新纳入共同责任。\n我执：自己重新成为这项任务责任的一部分\n法执：CEO已经把共同提交方案变成必须处理的工作要求",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_3",
+              "text": "朋友骗了我，我对他不满，以及不信任",
+              "mass": 1.0
+            },
+            {
+              "id": "bf_4",
+              "text": "组织评价标准可能正在偏向新人",
+              "mass": 0.7285
+            },
+            {
+              "id": "bf_5",
+              "text": "陈默把当前局面重新体验为旧方法可能已经失效、自己的专业身份正在被重新衡量。\n我执：把自己的旧方法与专业身份绑在一起\n法执：过去有效的方法正在失效，需要另找新方法",
+              "mass": 0.6758
+            }
+          ],
+          "triggered_ids": [],
+          "bindings": {}
+        },
+        "mental": {
+          "enabled": true,
+          "apply_mode": "per_branch_prediction",
+          "lambda_eff": 0.0
+        }
+      }
+    }
+  ],
+  "focus_person": "陈溪",
+  "llm_usage": {
+    "total_calls": 155,
+    "total_duration_ms": 1483286.289645781,
+    "wall_clock_ms": 294006.56104800873
+  },
+  "_experiment": {
+    "name": "单独事件实验二",
+    "event_file": "/Users/shitou/Desktop/其他文件/心智世界模型/心智世界模型（代码）/mental-world-model/data/实验3陈溪.txt",
+    "agent": "陈溪",
+    "stimulus": "陈溪和何雨认识十年。陈溪母亲住院的一个多月里，何雨正忙着准备婚礼，两人只见过一次。后来两人重新经常见面，每年都会一起旅行。朋友聚餐时，有人说她们关系保持得真好。何雨笑着说：“我们俩这么多年就没断过，什么时候有事都在。”",
+    "xiangs": [
+      {
+        "branch_id": "branch_O_C1",
+        "activation": 0.521978021978022,
+        "alambana": "在陈溪此刻的经验里，何雨当众笑着说“我们俩这么多年就没断过，什么时候有事都在”，并不是一句普通客套，而是把她放在何雨“有事都在”这句话所覆盖的人的位置上；这个位置是她不能在何雨那里失去的自我位置。可母亲住院一个多月里，何雨正忙着准备婚礼，两人只见过一次，这件事被这句当众承诺照出来，成了这个位置是否仍然被覆盖的检验点。朋友说“她们关系保持得真好”，更把这一位置推到台前；陈溪经验到的是，“真正的好朋友、十年关系就应当什么时候有事都在”这条固定标准正被何雨当众说出，而母亲住院期间的只见过一次则作为落差，等待被这句话重新覆盖或抵消。后来重新经常见面、每年一起旅行，在此刻也进入同一标准的核对之中，而不是独立于这个标准之外的事实。",
+        "xiang": "何雨当众说“什么时候有事都在”，陈溪心里先是一紧：这句话像是在众人面前认下她，把她放在一个不能被替代的位置上；可母亲住院一个多月、何雨忙着婚礼只来过一次的那段，也跟着被这句话照亮，变成她必须在这句话里安放、又不太安得下的地方。她觉得朋友说的“关系保持得真好”不能只是场面话，十年、每年旅行、重新常来往，都应当证明“有事都在”是真的；于是她一边愿意把何雨这句话当成对自己的确认，一边又忍不住用母亲住院那段去量这句话的成色。她不想让这个位置在何雨那里掉下去，也不愿承认那条标准可能本来就有缝；此刻她更倾向于把只见过一次解释成婚礼所迫、后来补上的来往才是关系的正文，好让何雨当众给出的覆盖重新合拢。可这个解释并没有完全落定，她心里仍悬着一个核对：如果真是什么时候有事都在，那母亲住院时那一个多月的空白，到底算不算数。"
+      },
+      {
+        "branch_id": "branch_O_C3",
+        "activation": 0.47802197802197804,
+        "alambana": "在陈溪此刻的经验里，朋友说“她们关系保持得真好”、何雨笑着说“我们俩这么多年就没断过，什么时候有事都在”，把“关系没断、保持得好”具体化为一种固定形态：见面频率不能明显下降，重要时刻不能缺席。母亲住院一个多月里，何雨正忙着准备婚礼，两人只见过一次，这在她所执的形态下成了一个明显缺口；后来两人重新经常见面、每年一起旅行，又被放进同一段关系叙事里，仿佛只有持续见面和共同旅行才算不断。何雨当众的“什么时候有事都在”于是被她经验为对“没断”形态的确认，可母亲住院期间只见过一次仍在同一形态标准下显影，使“保持得好”这句话不再是单纯夸赞，而是对关系固定形态是否成立的当场衡量。",
+        "xiang": "陈溪听着何雨当众说“这么多年就没断过，什么时候有事都在”，心里先是一热，随即这话像一把尺子落到自己身上：没断就该是见面不断、大事在场，这段关系不能被她放到与己无关的位置。她马上想到母亲住院那一个多月，何雨正忙婚礼，两人只见过一次——按这把尺子，那是个缺口。后来重新常常见面、每年一起旅行，也被她放进同一条线里，仿佛只有持续见面和共同旅行才撑得住“不断”。她感到“保持得好”不再只是朋友的夸赞，而是当场对这段关系固定形态是否成立的衡量；她想认下这份好，却又无法让那个缺口在何雨的笑里轻轻滑过去。"
+      }
+    ],
+    "predicted_actions": [
+      {
+        "text": "替何雨解释并强调后来来往",
+        "probability": 0.30864197530864196
+      },
+      {
+        "text": "不接话并低头吃喝",
+        "probability": 0.21722846441947566
+      },
+      {
+        "text": "接话并碰杯",
+        "probability": 0.16292134831460675
+      },
+      {
+        "text": "提起旧事并看着对方",
+        "probability": 0.15688722430295465
+      },
+      {
+        "text": "附和并转移话题",
+        "probability": 0.15432098765432098
+      }
+    ]
+  }
+}

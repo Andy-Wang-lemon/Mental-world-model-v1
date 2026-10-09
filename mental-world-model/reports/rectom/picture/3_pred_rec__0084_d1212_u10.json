@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0084_d1212_u10",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that SEEKER wants good science fiction and not superhero movies. SEEKER has not seen Soylent Green but knows its twist; has seen E.T. and thought it was pretty good; thought Gravity was so-so; mostly prefers 60s/70s/80s science fiction; and now says Interstellar (2014) was very good.\n\nRECOMMENDER has already recommended Soylent Green, E.T., Gravity, and Close Encounters of the Third Kind. RECOMMENDER does **not** know whether SEEKER has seen Close Encounters or what SEEKER thought of it, because SEEKER did not respond to that recommendation. RECOMMENDER also does not know many finer preferences, such as favorite sci-fi themes, directors, or whether SEEKER wants more older or modern recommendations beyond the Interstellar comment.\n\nThe last SEEKER utterance is not a question; it gives a new positive preference example: Interstellar was very good. From RECOMMENDER’s perspective, the natural next move is to continue the recommendation task by offering another relevant science fiction film, possibly asking whether SEEKER has seen it. That corresponds most closely to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "b",
+    "e"
+  ],
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

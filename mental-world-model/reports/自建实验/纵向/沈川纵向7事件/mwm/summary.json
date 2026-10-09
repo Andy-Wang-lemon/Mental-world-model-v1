@@ -1,0 +1,108 @@
+{
+  "protocol": "single_agent_longitudinal_open_rollout",
+  "agent": "沈川",
+  "total_events": 7,
+  "completed_steps": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07"
+  ],
+  "behavior_trajectory": [
+    "E1 → 不使用联系人电话，自主求职",
+    "E2 → 按转岗流程提交申请材料并准备面试和岗位交接",
+    "E3 → 打电话给女友说明决定不变并安慰她",
+    "E4 → 沉默/不回应",
+    "E5 → 翻阅资料并询问父亲风险",
+    "E6 → 沉默后表示需要思考",
+    "E7 → 对父亲表示需要时间思考"
+  ],
+  "steps": [
+    {
+      "event_id": "E1",
+      "predicted_action": "不使用联系人电话，自主求职",
+      "probability": 0.5479656160458453,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E2",
+      "predicted_action": "按转岗流程提交申请材料并准备面试和岗位交接",
+      "probability": 0.3158449542745738,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E3",
+      "predicted_action": "打电话给女友说明决定不变并安慰她",
+      "probability": 0.32227182580131875,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E4",
+      "predicted_action": "沉默/不回应",
+      "probability": 0.78,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 11,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E5",
+      "predicted_action": "翻阅资料并询问父亲风险",
+      "probability": 0.4912331329215882,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 6,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E6",
+      "predicted_action": "沉默后表示需要思考",
+      "probability": 0.4572156996635469,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 9,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    },
+    {
+      "event_id": "E7",
+      "predicted_action": "对父亲表示需要时间思考",
+      "probability": 0.3899517134160235,
+      "behavior_candidate_collapsed": false,
+      "collapse_note": "",
+      "fresh_branch_count": 8,
+      "historical_branch_count": 0,
+      "accommodation_triggered": false,
+      "neutral_fallback": false
+    }
+  ],
+  "final_continuity": {
+    "person_id": "沈川",
+    "event_count": 7,
+    "mental_episode_count": 7,
+    "cognitive_frame_count": 16
+  }
+}

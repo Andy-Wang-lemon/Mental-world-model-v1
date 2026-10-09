@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0106_d1619_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.",
+      "information_available_to_target": "SEEKER knows they have greeted the recommender and asked for drama/thriller movie recommendations. No reply from the recommender is available yet.",
+      "preferences": "SEEKER wants good drama/thriller movies.",
+      "belief_before": "The recommender is available to talk, but SEEKER does not yet know their mood, willingness, or ability to recommend movies.",
+      "belief_update": "No external information from the other speaker yet; SEEKER has expressed a greeting and movie request.",
+      "belief_after": "The recommender has been greeted and asked for drama/thriller movie recommendations.",
+      "emotion": "Friendly, curious, hopeful.",
+      "intention": "Initiate conversation and request drama/thriller movie recommendations.",
+      "reaction_to_other": "No prior recommender turn to react to; SEEKER initiates contact.",
+      "conversational_goal": "Obtain good drama/thriller movie recommendations while opening with a polite greeting.",
+      "changes_previous_interpretation": "Not applicable; this is the first turn and establishes SEEKER's request."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER says: im good yourself?",
+      "information_available_to_target": "SEEKER now knows the recommender reports being good and has asked SEEKER how they are. The recommender has not yet addressed the movie recommendation request.",
+      "preferences": "SEEKER still wants good drama/thriller movies.",
+      "belief_before": "The recommender has been greeted and asked for drama/thriller recommendations; SEEKER expects some reply but does not yet know the recommender's mood or whether they will help.",
+      "belief_update": "The recommender is well and is engaging in reciprocal social greeting, but has not yet answered the movie request.",
+      "belief_after": "The recommender is good and has asked SEEKER how they are; the drama/thriller recommendation request remains unanswered.",
+      "emotion": "Polite and expectant; likely still friendly, possibly mildly waiting for the request to be addressed.",
+      "intention": "Answer the recommender's well-being question and continue steering toward the movie recommendation request.",
+      "reaction_to_other": "Acknowledges the recommender's friendly reply and reciprocal question, while noting the request has not yet been addressed.",
+      "conversational_goal": "Maintain politeness through reciprocal greeting and guide the dialogue back to getting drama/thriller movie recommendations.",
+      "changes_previous_interpretation": "Yes. SEEKER updates from expecting a possible direct response to the movie request to recognizing that the recommender is first engaging in social niceties, with the recommendation request still pending."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER says: Hi how are you?...I am looking for some good drama/thriller movies.\",\n    \"information_available_to_target\": \"SEEKER knows they have greeted the recommender and asked for drama/thriller movie recommendations. No reply from the recommender is available yet.\",\n    \"preferences\": \"SEEKER wants good drama/thriller movies.\",\n    \"belief_before\": \"The recommender is available to talk, but SEEKER does not yet know their mood, willingness, or ability to recommend movies.\",\n    \"belief_update\": \"No external information from the other speaker yet; SEEKER has expressed a greeting and movie request.\",\n    \"belief_after\": \"The recommender has been greeted and asked for drama/thriller movie recommendations.\",\n    \"emotion\": \"Friendly, curious, hopeful.\",\n    \"intention\": \"Initiate conversation and request drama/thriller movie recommendations.\",\n    \"reaction_to_other\": \"No prior recommender turn to react to; SEEKER initiates contact.\",\n    \"conversational_goal\": \"Obtain good drama/thriller movie recommendations while opening with a polite greeting.\",\n    \"changes_previous_interpretation\": \"Not applicable; this is the first turn and establishes SEEKER's request.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER says: im good yourself?\",\n    \"information_available_to_target\": \"SEEKER now knows the recommender reports being good and has asked SEEKER how they are. The recommender has not yet addressed the movie recommendation request.\",\n    \"preferences\": \"SEEKER still wants good drama/thriller movies.\",\n    \"belief_before\": \"The recommender has been greeted and asked for drama/thriller recommendations; SEEKER expects some reply but does not yet know the recommender's mood or whether they will help.\",\n    \"belief_update\": \"The recommender is well and is engaging in reciprocal social greeting, but has not yet answered the movie request.\",\n    \"belief_after\": \"The recommender is good and has asked SEEKER how they are; the drama/thriller recommendation request remains unanswered.\",\n    \"emotion\": \"Polite and expectant; likely still friendly, possibly mildly waiting for the request to be addressed.\",\n    \"intention\": \"Answer the recommender's well-being question and continue steering toward the movie recommendation request.\",\n    \"reaction_to_other\": \"Acknowledges the recommender's friendly reply and reciprocal question, while noting the request has not yet been addressed.\",\n    \"conversational_goal\": \"Maintain politeness through reciprocal greeting and guide the dialogue back to getting drama/thriller movie recommendations.\",\n    \"changes_previous_interpretation\": \"Yes. SEEKER updates from expecting a possible direct response to the movie request to recognizing that the recommender is first engaging in social niceties, with the recommendation request still pending.\"\n  }\n]",
+  "final_response": "ANSWER: C",
+  "prediction": "c",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,45 @@
+{
+  "method": "mwm",
+  "dataset": "4_pred_seeker",
+  "index": 64,
+  "item_id": "d1057_u10",
+  "dialogue_id": "1057",
+  "utterance_pos": 10,
+  "focus_person": "SEEKER",
+  "question": "What strategy will SEEKER use next?",
+  "gold": [
+    "a"
+  ],
+  "gold_output": "A: Give feedback on the previously recommended movie or suggestion",
+  "representation": {
+    "focus_person": "SEEKER",
+    "objects": [
+      {
+        "content": "场景：SEEKER says: Hello!\nRECOMMENDER says: Hello~\nSEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001)  and Beerfest (2006) \nRECOMMENDER says: Tommy Boy (1995)  is one of my favorites\nSEEKER says: but not like Friday  (1995) ...Awesome I love that one  I have seen it a million times\nRECOMMENDER says: Me too. Another good one is Spaceballs (1987) \nSEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\nRECOMMENDER says: Ok；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "probability": 1.0
+      }
+    ],
+    "thoughts": [
+      {
+        "content": "在此所缘下：场景：SEEKER says: Hello!\nRECOMMENDER says: Hello~\nSEEKER says: can you help me find a good comedy today?...I like things like Super Troopers (2001)  and Beerfest (2006) \nRECOMMENDER says: Tommy Boy (1995)  is one of my favorites\nSEEKER says: but not like Friday  (1995) ...Awesome I love that one  I have seen it a million times\nRECOMMENDER says: Me too. Another good one is Spaceballs (1987) \nSEEKER says: I did see that one, but I didn't really like it...I do love 80s movies though\nRECOMMENDER says: Ok；我执侧重：事件与SEEKER相关，执取未明确；法执侧重：相关事物按字面理解",
+        "activation": 1.0
+      }
+    ],
+    "observed_action": "",
+    "predicted_actions": []
+  },
+  "predicted_answer": "c",
+  "adapter_output": "C: Asks for a recommendation or expresses their preference",
+  "option_scores": {
+    "a": 0.2,
+    "b": 0.6,
+    "c": 0.9,
+    "d": 0.1
+  },
+  "score_reason": "SEEKER already gave feedback and a preference, so the most direct next move is to ask for another recommendation.",
+  "selector_correct": false,
+  "correct": false,
+  "mwm_matches_gold": false,
+  "audit_reason": "Predicted next actions are absent; only past dialogue shows feedback, which does not establish the next strategy.",
+  "audit_level": "inferred"
+}

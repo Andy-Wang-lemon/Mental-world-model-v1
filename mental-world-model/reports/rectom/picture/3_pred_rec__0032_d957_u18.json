@@ -1,0 +1,12 @@
+{
+  "id": "3_pred_rec__0032_d957_u18",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows that the SEEKER:\n- Wants funny comedy movies similar to *She’s Out of My League* (2010).\n- Has seen and likes *Step Brothers*, *Life as We Know It*, *Why Him?*, and *Talladega Nights*.\n- Has seen *Deuce Bigalow: Male Gigolo* but does not like those movies.\n- Has seen *Eddie Murphy Raw* but it is not a favorite.\n- Usually enjoys movies with Seth Rogen and Jonah Hill.\n- Has never heard of *Midnight Madness* (1980), thinks it sounds good, and asks whether it has well-known actors.\n\nRECOMMENDER does not know from the dialogue alone:\n- Whether the SEEKER will actually like *Midnight Madness* overall.\n- The SEEKER’s full preferences regarding older movies or specific actors.\n- Whether the SEEKER has seen other films featuring the cast of *Midnight Madness*.\n- It is also not explicitly established in the dialogue whether RECOMMENDER knows the cast of *Midnight Madness*, though as a recommender it may have movie metadata access.\n\nGiven the SEEKER’s last turn is a direct question about the recommended movie’s actors, RECOMMENDER is most likely to respond by providing background information about that recommendation, e.g., naming well-known actors in *Midnight Madness*. This matches the strategy of explaining a recommendation with background rather than simply acknowledging the question or shifting to a new recommendation.\n\nANSWER: D",
+  "prediction": "d",
+  "gold": "b",
+  "correct": false,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

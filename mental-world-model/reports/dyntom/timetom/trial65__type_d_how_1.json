@@ -1,0 +1,61 @@
+{
+  "id": "trial65__type_d_how_1",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "Mason Hurley",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "Mason reviews financial reports and sees discrepancies in healthcare expenses. He questions Martha, who says there may have been a misentry and offers to review and correct any errors.",
+      "belief_before": "Martha might be mismanaging community center funds because the financial discrepancies seem suspicious.",
+      "belief_update": "Partially; Martha provides a plausible clerical-error explanation, but it is not yet verified, so his suspicion is not fully resolved.",
+      "belief_after": "Possible mismanagement remains a concern, but a clerical error is now a credible alternative that requires confirmation.",
+      "emotion": "Suspicious, anxious, and tense.",
+      "intention": "Discuss and verify the discrepancies with Martha, and wait for or check her review and correction."
+    },
+    {
+      "time": 2,
+      "observed": "Mason reviews the report with Martha and learns that the discrepancies were due to a simple clerical error, not mismanagement.",
+      "belief_before": "He suspected possible mismanagement, though Martha had offered a clerical-error explanation.",
+      "belief_update": "Yes; the explanation is confirmed, so his suspicion of Martha is replaced by acceptance that it was a clerical error.",
+      "belief_after": "Martha did not mismanage funds; the discrepancies were an innocent clerical error.",
+      "emotion": "Relieved but embarrassed and apologetic.",
+      "intention": "Apologize to Martha, clear the misunderstanding, and ensure entries are double-checked going forward."
+    },
+    {
+      "time": 3,
+      "observed": "Mason considers recurring clerical errors and discusses them with Martha; they agree the issue is the current financial system, not Martha's management.",
+      "belief_before": "Martha is competent and not responsible for mismanagement; the errors were clerical.",
+      "belief_update": "Yes; he shifts from seeing the errors as isolated clerical mistakes to seeing them as evidence of inadequate financial systems.",
+      "belief_after": "Martha is competent, but the current financial management system is inadequate and needs improvement.",
+      "emotion": "Frustrated with the system and empathetic toward Martha.",
+      "intention": "Draft a proposal for a new, more robust financial system and ask Martha for input."
+    },
+    {
+      "time": 4,
+      "observed": "Mason has drafted the new financial system proposal. Martha supports it, but he is unsure how management will receive it.",
+      "belief_before": "The current financial system is inadequate and a new robust system is needed.",
+      "belief_update": "Yes; he becomes more confident that the proposal is beneficial, but remains uncertain about management approval.",
+      "belief_after": "The proposal can benefit operations, but management approval and implementation are uncertain.",
+      "emotion": "Hopeful, uncertain, and mildly anxious.",
+      "intention": "Prepare a detailed presentation and gather data with Martha to strengthen the case for the proposal."
+    },
+    {
+      "time": 5,
+      "observed": "Mason presents the proposal to management. He feels the presentation went well, and Martha praises his effort while management's decision is pending.",
+      "belief_before": "The proposal is beneficial, but its approval by management is uncertain.",
+      "belief_update": "Yes; he believes he has done everything he can, and the outcome now rests with management.",
+      "belief_after": "He has advocated fully for the new system; management will decide whether to approve and implement it.",
+      "emotion": "Satisfied with his effort but physically and mentally exhausted; also somewhat relieved and anticipatory.",
+      "intention": "Take a few days off to recharge and reflect, then await management's decision."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"Mason reviews financial reports and sees discrepancies in healthcare expenses. He questions Martha, who says there may have been a misentry and offers to review and correct any errors.\",\n    \"belief_before\": \"Martha might be mismanaging community center funds because the financial discrepancies seem suspicious.\",\n    \"belief_update\": \"Partially; Martha provides a plausible clerical-error explanation, but it is not yet verified, so his suspicion is not fully resolved.\",\n    \"belief_after\": \"Possible mismanagement remains a concern, but a clerical error is now a credible alternative that requires confirmation.\",\n    \"emotion\": \"Suspicious, anxious, and tense.\",\n    \"intention\": \"Discuss and verify the discrepancies with Martha, and wait for or check her review and correction.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"Mason reviews the report with Martha and learns that the discrepancies were due to a simple clerical error, not mismanagement.\",\n    \"belief_before\": \"He suspected possible mismanagement, though Martha had offered a clerical-error explanation.\",\n    \"belief_update\": \"Yes; the explanation is confirmed, so his suspicion of Martha is replaced by acceptance that it was a clerical error.\",\n    \"belief_after\": \"Martha did not mismanage funds; the discrepancies were an innocent clerical error.\",\n    \"emotion\": \"Relieved but embarrassed and apologetic.\",\n    \"intention\": \"Apologize to Martha, clear the misunderstanding, and ensure entries are double-checked going forward.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"Mason considers recurring clerical errors and discusses them with Martha; they agree the issue is the current financial system, not Martha's management.\",\n    \"belief_before\": \"Martha is competent and not responsible for mismanagement; the errors were clerical.\",\n    \"belief_update\": \"Yes; he shifts from seeing the errors as isolated clerical mistakes to seeing them as evidence of inadequate financial systems.\",\n    \"belief_after\": \"Martha is competent, but the current financial management system is inadequate and needs improvement.\",\n    \"emotion\": \"Frustrated with the system and empathetic toward Martha.\",\n    \"intention\": \"Draft a proposal for a new, more robust financial system and ask Martha for input.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"Mason has drafted the new financial system proposal. Martha supports it, but he is unsure how management will receive it.\",\n    \"belief_before\": \"The current financial system is inadequate and a new robust system is needed.\",\n    \"belief_update\": \"Yes; he becomes more confident that the proposal is beneficial, but remains uncertain about management approval.\",\n    \"belief_after\": \"The proposal can benefit operations, but management approval and implementation are uncertain.\",\n    \"emotion\": \"Hopeful, uncertain, and mildly anxious.\",\n    \"intention\": \"Prepare a detailed presentation and gather data with Martha to strengthen the case for the proposal.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"Mason presents the proposal to management. He feels the presentation went well, and Martha praises his effort while management's decision is pending.\",\n    \"belief_before\": \"The proposal is beneficial, but its approval by management is uncertain.\",\n    \"belief_update\": \"Yes; he believes he has done everything he can, and the outcome now rests with management.\",\n    \"belief_after\": \"He has advocated fully for the new system; management will decide whether to approve and implement it.\",\n    \"emotion\": \"Satisfied with his effort but physically and mentally exhausted; also somewhat relieved and anticipatory.\",\n    \"intention\": \"Take a few days off to recharge and reflect, then await management's decision.\"\n  }\n]",
+  "final_response": "ANSWER: a",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "dyntom",
+  "source": "trial65"
+}

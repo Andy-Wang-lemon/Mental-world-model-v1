@@ -1,0 +1,44 @@
+{
+  "id": "4_pred_seeker__0133_d2214_u2",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "SEEKER greets the recommender and states they hope to find a movie similar to Alien (1979) or Halloween (1978).",
+      "information_available": "SEEKER knows their own request and the example movies Alien (1979) and Halloween (1978); no recommendation has been received yet.",
+      "preferences": "SEEKER wants a movie similar to Alien (1979) or Halloween (1978), suggesting interest in horror, sci-fi, or suspense-adjacent films.",
+      "belief_before": "SEEKER has not yet found a suitable movie and hopes a recommender can help.",
+      "belief_update": "Making the request clarifies SEEKER's own preference; no new external information is received.",
+      "belief_after": "SEEKER maintains the same preference and awaits a recommendation.",
+      "emotion": "Hopeful, open, perhaps eager.",
+      "intention": "To obtain a movie recommendation similar to Alien or Halloween.",
+      "reaction_to_other_speaker": "None; no other speaker has spoken yet.",
+      "conversational_goal": "Elicit recommendations from the other speaker.",
+      "changes_previous_interpretation": "Not applicable; this is the initial turn."
+    },
+    {
+      "time": 2,
+      "observed": "RECOMMENDER suggests A Nightmare on Elm Street (1984).",
+      "information_available": "SEEKER hears that RECOMMENDER proposes A Nightmare on Elm Street (1984) as a candidate.",
+      "preferences": "Same as before: SEEKER wants a movie similar to Alien (1979) or Halloween (1978).",
+      "belief_before": "After turn 1, SEEKER believes a recommendation may be forthcoming and has not yet been given a specific candidate.",
+      "belief_update": "Learns that RECOMMENDER considers A Nightmare on Elm Street (1984) to be a relevant suggestion.",
+      "belief_after": "SEEKER now holds a candidate to assess against their stated preference.",
+      "emotion": "Curious or interested, possibly uncertain until evaluation.",
+      "intention": "To evaluate the suggested movie and decide whether to accept it, reject it, or ask for more options.",
+      "reaction_to_other_speaker": "No explicit verbal reaction yet; internally treats the suggestion as a candidate to evaluate.",
+      "conversational_goal": "Respond to the recommendation, likely by assessing fit or requesting more suggestions/details.",
+      "changes_previous_interpretation": "Yes: the interaction moves from seeking recommendations to evaluating a specific proposed movie; the original preference remains unchanged."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"SEEKER greets the recommender and states they hope to find a movie similar to Alien (1979) or Halloween (1978).\",\n    \"information_available\": \"SEEKER knows their own request and the example movies Alien (1979) and Halloween (1978); no recommendation has been received yet.\",\n    \"preferences\": \"SEEKER wants a movie similar to Alien (1979) or Halloween (1978), suggesting interest in horror, sci-fi, or suspense-adjacent films.\",\n    \"belief_before\": \"SEEKER has not yet found a suitable movie and hopes a recommender can help.\",\n    \"belief_update\": \"Making the request clarifies SEEKER's own preference; no new external information is received.\",\n    \"belief_after\": \"SEEKER maintains the same preference and awaits a recommendation.\",\n    \"emotion\": \"Hopeful, open, perhaps eager.\",\n    \"intention\": \"To obtain a movie recommendation similar to Alien or Halloween.\",\n    \"reaction_to_other_speaker\": \"None; no other speaker has spoken yet.\",\n    \"conversational_goal\": \"Elicit recommendations from the other speaker.\",\n    \"changes_previous_interpretation\": \"Not applicable; this is the initial turn.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"RECOMMENDER suggests A Nightmare on Elm Street (1984).\",\n    \"information_available\": \"SEEKER hears that RECOMMENDER proposes A Nightmare on Elm Street (1984) as a candidate.\",\n    \"preferences\": \"Same as before: SEEKER wants a movie similar to Alien (1979) or Halloween (1978).\",\n    \"belief_before\": \"After turn 1, SEEKER believes a recommendation may be forthcoming and has not yet been given a specific candidate.\",\n    \"belief_update\": \"Learns that RECOMMENDER considers A Nightmare on Elm Street (1984) to be a relevant suggestion.\",\n    \"belief_after\": \"SEEKER now holds a candidate to assess against their stated preference.\",\n    \"emotion\": \"Curious or interested, possibly uncertain until evaluation.\",\n    \"intention\": \"To evaluate the suggested movie and decide whether to accept it, reject it, or ask for more options.\",\n    \"reaction_to_other_speaker\": \"No explicit verbal reaction yet; internally treats the suggestion as a candidate to evaluate.\",\n    \"conversational_goal\": \"Respond to the recommendation, likely by assessing fit or requesting more suggestions/details.\",\n    \"changes_previous_interpretation\": \"Yes: the interaction moves from seeking recommendations to evaluating a specific proposed movie; the original preference remains unchanged.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

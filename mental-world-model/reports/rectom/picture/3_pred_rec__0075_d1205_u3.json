@@ -1,0 +1,15 @@
+{
+  "id": "3_pred_rec__0075_d1205_u3",
+  "method": "picture",
+  "target_character": "RECOMMENDER",
+  "raw_response": "RECOMMENDER knows:\n- The SEEKER greeted them and asked how they are.\n- RECOMMENDER responded with a greeting and asked what kinds of movies the SEEKER likes.\n- SEEKER said they are into everything and especially like foreign movies.\n\nRECOMMENDER does not know:\n- Specific foreign movies the SEEKER has seen, liked, or disliked.\n- The SEEKER’s favorite foreign languages, directors, actors, or eras.\n- Whether the SEEKER wants a recommendation immediately or wants more conversation first.\n- The SEEKER’s answer to the earlier “How are you?” question.\n- Any future utterances or reactions from the SEEKER.\n\nGiven that the SEEKER has now provided a usable preference — foreign movies — the recommender’s natural next step is to move toward suggesting a movie, either directly or by asking whether the seeker has seen a specific title. This corresponds to providing a recommendation directly or by inquiring further.\n\nANSWER: C",
+  "prediction": "c",
+  "gold": [
+    "c",
+    "d"
+  ],
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "3_pred_rec"
+}

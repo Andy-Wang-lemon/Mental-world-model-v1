@@ -1,0 +1,126 @@
+{
+  "id": "4_pred_seeker__0073_d1127_u11",
+  "method": "timetom",
+  "implementation": "TimeToM-style",
+  "target_character": "SEEKER",
+  "temporal_state_chain": [
+    {
+      "time": 1,
+      "observed": "RECOMMENDER says: Hi, what movies you do like?",
+      "belief_before": "SEEKER has no prior dialogue information from RECOMMENDER.",
+      "belief_update": "SEEKER learns that RECOMMENDER is asking about SEEKER's movie likes; no prior interpretation changes because there is no earlier dialogue state.",
+      "belief_after": "SEEKER believes RECOMMENDER wants to know SEEKER's movie preferences.",
+      "emotion": "Neutral and polite; reaction to RECOMMENDER is cooperative.",
+      "intention": "Respond to the greeting and engage in the recommendation conversation.",
+      "conversational_goal": "Answer the question about movie preferences or state what SEEKER wants."
+    },
+    {
+      "time": 2,
+      "observed": "SEEKER says: Hello I'm looking for a good Christmas movie, any genre.",
+      "belief_before": "SEEKER believes RECOMMENDER wants to know SEEKER's movie preferences.",
+      "belief_update": "SEEKER states a specific request for a good Christmas movie with no genre restriction. This clarifies the earlier general preference question.",
+      "belief_after": "SEEKER believes RECOMMENDER now knows SEEKER wants a good Christmas movie of any genre.",
+      "emotion": "Neutral, friendly, and cooperative toward RECOMMENDER.",
+      "intention": "Obtain Christmas movie recommendations.",
+      "conversational_goal": "Ask for a good Christmas movie recommendation."
+    },
+    {
+      "time": 3,
+      "observed": "RECOMMENDER says: Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990).",
+      "belief_before": "SEEKER wants a good Christmas movie of any genre.",
+      "belief_update": "RECOMMENDER offers Elf as a funny Christmas movie and Home Alone as a classic. This adds two candidate movies to SEEKER's request.",
+      "belief_after": "SEEKER believes Elf is a funny Christmas movie and Home Alone is a classic; both are potential recommendations.",
+      "emotion": "Interested and curious; receptive to RECOMMENDER's suggestions.",
+      "intention": "Evaluate the suggested movies.",
+      "conversational_goal": "Assess whether Elf or Home Alone fits SEEKER's Christmas movie request."
+    },
+    {
+      "time": 4,
+      "observed": "SEEKER says: I haven't seen Elf (2003) but I love Home Alone (1990).",
+      "belief_before": "SEEKER knows Elf and Home Alone were recommended as possible Christmas movies.",
+      "belief_update": "SEEKER reveals no prior viewing of Elf and strong liking for Home Alone. This changes Home Alone from a mere candidate to a known liked movie.",
+      "belief_after": "SEEKER believes Home Alone is a liked movie and Elf remains unseen/unknown.",
+      "emotion": "Positive toward Home Alone; neutral or mildly curious about Elf; cooperative reaction to RECOMMENDER.",
+      "intention": "Give preference feedback to guide the recommendation.",
+      "conversational_goal": "Communicate that Home Alone is liked and Elf has not been seen."
+    },
+    {
+      "time": 5,
+      "observed": "RECOMMENDER says: Elf is a funny movie to lift the spirits. The Holiday (2006) is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas (2000).",
+      "belief_before": "SEEKER likes Home Alone, has not seen Elf, and wants a Christmas movie.",
+      "belief_update": "RECOMMENDER adds that Elf is funny and uplifting, The Holiday is a cute romantic Christmas movie, and Grinch 2000 is another Christmas option. This adds The Holiday and Grinch 2000 as candidates.",
+      "belief_after": "SEEKER believes Elf is funny, The Holiday is a cute romantic Christmas movie, and Grinch 2000 is available; all remain potential but unevaluated options.",
+      "emotion": "Neutral and curious; still receptive to RECOMMENDER.",
+      "intention": "Consider the new recommendations.",
+      "conversational_goal": "Evaluate whether The Holiday, Elf, or Grinch 2000 match SEEKER's preferences."
+    },
+    {
+      "time": 6,
+      "observed": "SEEKER says: I haven't seen The Holiday (2006). I've seen Dr. Seuss' How the Grinch Stole Christmas (2000) and I didn't like it. I prefer the original.",
+      "belief_before": "SEEKER knows The Holiday and Grinch 2000 were recommended; Home Alone is liked; Elf is unseen.",
+      "belief_update": "SEEKER reveals The Holiday is unseen, Grinch 2000 was seen and disliked, and SEEKER prefers the original Grinch. This rules out Grinch 2000 as a good fit.",
+      "belief_after": "SEEKER believes The Holiday remains unseen, Grinch 2000 is disliked, and the original Grinch is preferred.",
+      "emotion": "Negative toward Grinch 2000; positive toward the original; corrective but still cooperative toward RECOMMENDER.",
+      "intention": "Express dislike for Grinch 2000 and clarify preference for the original.",
+      "conversational_goal": "Rule out Grinch 2000 and steer RECOMMENDER toward better options."
+    },
+    {
+      "time": 7,
+      "observed": "RECOMMENDER says: The Holiday (2006) is a cute movie with Jude Law and Cameron Diaz. This Christmas (2007) is another family movie with some drama....The Night Before (2015) is a funny movie but it's more adult and it's with Seth Rogen",
+      "belief_before": "SEEKER likes Home Alone, dislikes Grinch 2000, prefers the original Grinch, has not seen Elf or The Holiday, and wants a Christmas movie.",
+      "belief_update": "RECOMMENDER adds details: The Holiday is cute with Jude Law and Cameron Diaz; This Christmas is a family drama; The Night Before is an adult funny movie with Seth Rogen. This adds This Christmas and The Night Before as candidates.",
+      "belief_after": "SEEKER believes The Holiday is cute, This Christmas is a family drama, and The Night Before is adult humor with Seth Rogen.",
+      "emotion": "Neutral and curious; receptive to further recommendations.",
+      "intention": "Evaluate the new suggestions against known likes and dislikes.",
+      "conversational_goal": "Find a Christmas movie that fits SEEKER's preferences and avoids disliked elements."
+    },
+    {
+      "time": 8,
+      "observed": "SEEKER says: I haven't seen This Christmas (2007) but I love dramas, so I'd probably like it.",
+      "belief_before": "SEEKER knows This Christmas is a family movie with drama; The Night Before is adult funny with Seth Rogen; The Holiday is cute.",
+      "belief_update": "SEEKER reveals no prior viewing of This Christmas and a strong liking for dramas, making This Christmas likely appealing. This adds drama preference to the preference profile.",
+      "belief_after": "SEEKER believes This Christmas is likely a good fit because SEEKER loves dramas.",
+      "emotion": "Positive and optimistic; approving reaction to RECOMMENDER's This Christmas suggestion.",
+      "intention": "Signal interest in This Christmas.",
+      "conversational_goal": "Confirm This Christmas as a promising recommendation."
+    },
+    {
+      "time": 9,
+      "observed": "RECOMMENDER says: That movie also stars Joseph Gordon levitt and Lizzy Caplan",
+      "belief_before": "SEEKER believes This Christmas is a family drama and likely liked; The Night Before is an adult funny movie with Seth Rogen.",
+      "belief_update": "RECOMMENDER adds that 'that movie' also stars Joseph Gordon-Levitt and Lizzy Caplan. Given prior context, SEEKER likely takes this as additional information about The Night Before, not This Christmas.",
+      "belief_after": "SEEKER believes The Night Before also stars Joseph Gordon-Levitt and Lizzy Caplan; This Christmas remains a promising drama option.",
+      "emotion": "Neutral and attentive; no strong positive or negative reaction yet.",
+      "intention": "Process the additional cast information.",
+      "conversational_goal": "Determine whether this new detail affects the recommendation fit."
+    },
+    {
+      "time": 10,
+      "observed": "SEEKER says: I haven't seen that one, but I don't really like adult humor, so I probably wouldn't like it.",
+      "belief_before": "SEEKER believes The Night Before is an adult funny movie with Seth Rogen, Joseph Gordon-Levitt, and Lizzy Caplan.",
+      "belief_update": "SEEKER reveals no prior viewing of The Night Before and a dislike of adult humor, making The Night Before likely unsuitable. This adds adult humor aversion to SEEKER's preferences.",
+      "belief_after": "SEEKER believes The Night Before is probably not a good fit because SEEKER dislikes adult humor.",
+      "emotion": "Negative or averse toward adult humor; polite but declining reaction to that suggestion.",
+      "intention": "Decline The Night Before.",
+      "conversational_goal": "Rule out The Night Before and steer away from adult-humor recommendations."
+    },
+    {
+      "time": 11,
+      "observed": "RECOMMENDER says: What about The Family Stone (2005) with Rachel McAdams...That's sort of a comedy/drama",
+      "belief_before": "SEEKER loves dramas, likes Home Alone, dislikes Grinch 2000, prefers the original Grinch, dislikes adult humor, finds This Christmas promising, and considers The Night Before unsuitable.",
+      "belief_update": "RECOMMENDER suggests The Family Stone as a comedy/drama with Rachel McAdams. This adds a new candidate that may fit SEEKER's drama preference.",
+      "belief_after": "SEEKER believes The Family Stone is a comedy/drama with Rachel McAdams and may be a good option because SEEKER loves dramas.",
+      "emotion": "Curious and mildly positive; open reaction to RECOMMENDER's new suggestion.",
+      "intention": "Evaluate The Family Stone.",
+      "conversational_goal": "See whether The Family Stone matches SEEKER's drama preference and avoids disliked elements."
+    }
+  ],
+  "temporal_state_raw": "[\n  {\n    \"time\": 1,\n    \"observed\": \"RECOMMENDER says: Hi, what movies you do like?\",\n    \"belief_before\": \"SEEKER has no prior dialogue information from RECOMMENDER.\",\n    \"belief_update\": \"SEEKER learns that RECOMMENDER is asking about SEEKER's movie likes; no prior interpretation changes because there is no earlier dialogue state.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER wants to know SEEKER's movie preferences.\",\n    \"emotion\": \"Neutral and polite; reaction to RECOMMENDER is cooperative.\",\n    \"intention\": \"Respond to the greeting and engage in the recommendation conversation.\",\n    \"conversational_goal\": \"Answer the question about movie preferences or state what SEEKER wants.\"\n  },\n  {\n    \"time\": 2,\n    \"observed\": \"SEEKER says: Hello I'm looking for a good Christmas movie, any genre.\",\n    \"belief_before\": \"SEEKER believes RECOMMENDER wants to know SEEKER's movie preferences.\",\n    \"belief_update\": \"SEEKER states a specific request for a good Christmas movie with no genre restriction. This clarifies the earlier general preference question.\",\n    \"belief_after\": \"SEEKER believes RECOMMENDER now knows SEEKER wants a good Christmas movie of any genre.\",\n    \"emotion\": \"Neutral, friendly, and cooperative toward RECOMMENDER.\",\n    \"intention\": \"Obtain Christmas movie recommendations.\",\n    \"conversational_goal\": \"Ask for a good Christmas movie recommendation.\"\n  },\n  {\n    \"time\": 3,\n    \"observed\": \"RECOMMENDER says: Okay, well Elf (2003) is a funny Christmas movie with Will Ferrel. Another classic is Home Alone (1990).\",\n    \"belief_before\": \"SEEKER wants a good Christmas movie of any genre.\",\n    \"belief_update\": \"RECOMMENDER offers Elf as a funny Christmas movie and Home Alone as a classic. This adds two candidate movies to SEEKER's request.\",\n    \"belief_after\": \"SEEKER believes Elf is a funny Christmas movie and Home Alone is a classic; both are potential recommendations.\",\n    \"emotion\": \"Interested and curious; receptive to RECOMMENDER's suggestions.\",\n    \"intention\": \"Evaluate the suggested movies.\",\n    \"conversational_goal\": \"Assess whether Elf or Home Alone fits SEEKER's Christmas movie request.\"\n  },\n  {\n    \"time\": 4,\n    \"observed\": \"SEEKER says: I haven't seen Elf (2003) but I love Home Alone (1990).\",\n    \"belief_before\": \"SEEKER knows Elf and Home Alone were recommended as possible Christmas movies.\",\n    \"belief_update\": \"SEEKER reveals no prior viewing of Elf and strong liking for Home Alone. This changes Home Alone from a mere candidate to a known liked movie.\",\n    \"belief_after\": \"SEEKER believes Home Alone is a liked movie and Elf remains unseen/unknown.\",\n    \"emotion\": \"Positive toward Home Alone; neutral or mildly curious about Elf; cooperative reaction to RECOMMENDER.\",\n    \"intention\": \"Give preference feedback to guide the recommendation.\",\n    \"conversational_goal\": \"Communicate that Home Alone is liked and Elf has not been seen.\"\n  },\n  {\n    \"time\": 5,\n    \"observed\": \"RECOMMENDER says: Elf is a funny movie to lift the spirits. The Holiday (2006) is a cute romantic christmas movie. And of course there is always Dr. Seuss' How the Grinch Stole Christmas (2000).\",\n    \"belief_before\": \"SEEKER likes Home Alone, has not seen Elf, and wants a Christmas movie.\",\n    \"belief_update\": \"RECOMMENDER adds that Elf is funny and uplifting, The Holiday is a cute romantic Christmas movie, and Grinch 2000 is another Christmas option. This adds The Holiday and Grinch 2000 as candidates.\",\n    \"belief_after\": \"SEEKER believes Elf is funny, The Holiday is a cute romantic Christmas movie, and Grinch 2000 is available; all remain potential but unevaluated options.\",\n    \"emotion\": \"Neutral and curious; still receptive to RECOMMENDER.\",\n    \"intention\": \"Consider the new recommendations.\",\n    \"conversational_goal\": \"Evaluate whether The Holiday, Elf, or Grinch 2000 match SEEKER's preferences.\"\n  },\n  {\n    \"time\": 6,\n    \"observed\": \"SEEKER says: I haven't seen The Holiday (2006). I've seen Dr. Seuss' How the Grinch Stole Christmas (2000) and I didn't like it. I prefer the original.\",\n    \"belief_before\": \"SEEKER knows The Holiday and Grinch 2000 were recommended; Home Alone is liked; Elf is unseen.\",\n    \"belief_update\": \"SEEKER reveals The Holiday is unseen, Grinch 2000 was seen and disliked, and SEEKER prefers the original Grinch. This rules out Grinch 2000 as a good fit.\",\n    \"belief_after\": \"SEEKER believes The Holiday remains unseen, Grinch 2000 is disliked, and the original Grinch is preferred.\",\n    \"emotion\": \"Negative toward Grinch 2000; positive toward the original; corrective but still cooperative toward RECOMMENDER.\",\n    \"intention\": \"Express dislike for Grinch 2000 and clarify preference for the original.\",\n    \"conversational_goal\": \"Rule out Grinch 2000 and steer RECOMMENDER toward better options.\"\n  },\n  {\n    \"time\": 7,\n    \"observed\": \"RECOMMENDER says: The Holiday (2006) is a cute movie with Jude Law and Cameron Diaz. This Christmas (2007) is another family movie with some drama....The Night Before (2015) is a funny movie but it's more adult and it's with Seth Rogen\",\n    \"belief_before\": \"SEEKER likes Home Alone, dislikes Grinch 2000, prefers the original Grinch, has not seen Elf or The Holiday, and wants a Christmas movie.\",\n    \"belief_update\": \"RECOMMENDER adds details: The Holiday is cute with Jude Law and Cameron Diaz; This Christmas is a family drama; The Night Before is an adult funny movie with Seth Rogen. This adds This Christmas and The Night Before as candidates.\",\n    \"belief_after\": \"SEEKER believes The Holiday is cute, This Christmas is a family drama, and The Night Before is adult humor with Seth Rogen.\",\n    \"emotion\": \"Neutral and curious; receptive to further recommendations.\",\n    \"intention\": \"Evaluate the new suggestions against known likes and dislikes.\",\n    \"conversational_goal\": \"Find a Christmas movie that fits SEEKER's preferences and avoids disliked elements.\"\n  },\n  {\n    \"time\": 8,\n    \"observed\": \"SEEKER says: I haven't seen This Christmas (2007) but I love dramas, so I'd probably like it.\",\n    \"belief_before\": \"SEEKER knows This Christmas is a family movie with drama; The Night Before is adult funny with Seth Rogen; The Holiday is cute.\",\n    \"belief_update\": \"SEEKER reveals no prior viewing of This Christmas and a strong liking for dramas, making This Christmas likely appealing. This adds drama preference to the preference profile.\",\n    \"belief_after\": \"SEEKER believes This Christmas is likely a good fit because SEEKER loves dramas.\",\n    \"emotion\": \"Positive and optimistic; approving reaction to RECOMMENDER's This Christmas suggestion.\",\n    \"intention\": \"Signal interest in This Christmas.\",\n    \"conversational_goal\": \"Confirm This Christmas as a promising recommendation.\"\n  },\n  {\n    \"time\": 9,\n    \"observed\": \"RECOMMENDER says: That movie also stars Joseph Gordon levitt and Lizzy Caplan\",\n    \"belief_before\": \"SEEKER believes This Christmas is a family drama and likely liked; The Night Before is an adult funny movie with Seth Rogen.\",\n    \"belief_update\": \"RECOMMENDER adds that 'that movie' also stars Joseph Gordon-Levitt and Lizzy Caplan. Given prior context, SEEKER likely takes this as additional information about The Night Before, not This Christmas.\",\n    \"belief_after\": \"SEEKER believes The Night Before also stars Joseph Gordon-Levitt and Lizzy Caplan; This Christmas remains a promising drama option.\",\n    \"emotion\": \"Neutral and attentive; no strong positive or negative reaction yet.\",\n    \"intention\": \"Process the additional cast information.\",\n    \"conversational_goal\": \"Determine whether this new detail affects the recommendation fit.\"\n  },\n  {\n    \"time\": 10,\n    \"observed\": \"SEEKER says: I haven't seen that one, but I don't really like adult humor, so I probably wouldn't like it.\",\n    \"belief_before\": \"SEEKER believes The Night Before is an adult funny movie with Seth Rogen, Joseph Gordon-Levitt, and Lizzy Caplan.\",\n    \"belief_update\": \"SEEKER reveals no prior viewing of The Night Before and a dislike of adult humor, making The Night Before likely unsuitable. This adds adult humor aversion to SEEKER's preferences.\",\n    \"belief_after\": \"SEEKER believes The Night Before is probably not a good fit because SEEKER dislikes adult humor.\",\n    \"emotion\": \"Negative or averse toward adult humor; polite but declining reaction to that suggestion.\",\n    \"intention\": \"Decline The Night Before.\",\n    \"conversational_goal\": \"Rule out The Night Before and steer away from adult-humor recommendations.\"\n  },\n  {\n    \"time\": 11,\n    \"observed\": \"RECOMMENDER says: What about The Family Stone (2005) with Rachel McAdams...That's sort of a comedy/drama\",\n    \"belief_before\": \"SEEKER loves dramas, likes Home Alone, dislikes Grinch 2000, prefers the original Grinch, dislikes adult humor, finds This Christmas promising, and considers The Night Before unsuitable.\",\n    \"belief_update\": \"RECOMMENDER suggests The Family Stone as a comedy/drama with Rachel McAdams. This adds a new candidate that may fit SEEKER's drama preference.\",\n    \"belief_after\": \"SEEKER believes The Family Stone is a comedy/drama with Rachel McAdams and may be a good option because SEEKER loves dramas.\",\n    \"emotion\": \"Curious and mildly positive; open reaction to RECOMMENDER's new suggestion.\",\n    \"intention\": \"Evaluate The Family Stone.\",\n    \"conversational_goal\": \"See whether The Family Stone matches SEEKER's drama preference and avoids disliked elements.\"\n  }\n]",
+  "final_response": "ANSWER: A",
+  "prediction": "a",
+  "gold": "a",
+  "correct": true,
+  "status": "ok",
+  "dataset": "rectom",
+  "source": "4_pred_seeker"
+}

@@ -1,0 +1,66 @@
+数据：3_pred_rec
+题号：16  d895_u10
+焦点：RECOMMENDER
+原题：What strategy will RECOMMENDER use next?
+MWM：
+{
+  "focus_person": "RECOMMENDER",
+  "objects": [
+    {
+      "content": "SEEKER 说喜欢 Lost in Translation、Aliens、Alien: Covenant 并拥有 DVD，在 RECOMMENDER 这里不是对方单方面的偏好清单，而是与自己推荐或品味相连的认同，被放在「我这边」的品味关系里。同时，SEEKER 问 The River Wild 是关于什么，使这部电影被对象化为一个本身有固定「关于什么」的对象，未看过者的提问只能落在这个确定内容上。",
+      "probability": 0.3387
+    },
+    {
+      "content": "SEEKER 问 The River Wild 是关于什么，在 RECOMMENDER 这里不是对方单方起的一个话题，而是被划到「我这边」：这部电影既然由我这边带出或掌握，它的介绍就成了不能与我无关的话题位置。同时，The River Wild 被对象化为一部本身必然有固定「关于什么」的电影，SEEKER 的提问把这一确定内容推到眼前，使回应只能落在这个确定内容上。周围已出现的 Lost in Translation、Aliens 等片名只是当前电影话题中的事实，不改变这一结构。",
+      "probability": 0.3339
+    },
+    {
+      "content": "SEEKER 问 The River Wild 是关于什么，这件事被 RECOMMENDER 纳入「我这边」：它不是一个可以与我无关的话题位置。与此同时，SEEKER 说 Pulp Fiction 不错但不喜欢新版 recall，且新版 recall 缺了点什么，在 RECOMMENDER 这里被按原作或旧作的固定标准来摆放：新版 recall 与 Pulp Fiction 的对照成为尺度，缺少某种东西自然被归入不足的位置。",
+      "probability": 0.3274
+    }
+  ],
+  "thoughts": [
+    {
+      "content": "SEEKER 问 The River Wild 是关于什么，在我这里不是他单方面另起的话题，而是被划到了我这边：这部片子既然是我带出来的，它的介绍就不能与我无关。The River Wild 本身必然有一个固定的“关于什么”，现在这个提问把它推到我眼前，我也就只能沿着这个确定内容去组织该怎么说。前面 Lost in Translation、Aliens 之类的片名只是当前电影话题里的事实，不改变这一层。",
+      "activation": 0.3907
+    },
+    {
+      "content": "他问 The River Wild 是关于什么，这不是一个可以搁在我之外的话题：片子是我这边提出来的，他的追问自然落进我的片单和判断范围里，我便把它当作自己该接住、该有说法的一项。另一头，他说 Pulp Fiction 不错却不接受新版 recall，说缺了点什么；这跟我心里原版或旧作更稳的尺子合得上，新版拿旧作和 Pulp Fiction 来对照，就显出不足，缺的那点东西被归到它不够格的位置，并不奇怪。于是眼前这件事被整理成：我提的 River Wild 需要从我这边被纳入、被看顾；新版 recall 则继续按固定标准放在不足的一边。",
+      "activation": 0.3075
+    },
+    {
+      "content": "SEEKER 喜欢 Lost in Translation、Aliens、Alien: Covenant 还收着 DVD，这让 RECOMMENDER 觉得那些口味不是对方单方面的清单，而像被接到自己这边的推荐脉络里，先前的 Awesome 和继续找片都因此有了着落；眼下 SEEKER 问 The River Wild 是关于什么，RECOMMENDER 认定这部片子必定有一个确定的“关于什么”，未看过者的提问只能落在这个固定内容上，于是内心要把它的题材、故事或卖点收束成一个可以直接讲清的答案，好让推荐从片名推进到对方能判断是否要看的东西。",
+      "activation": 0.3018
+    }
+  ],
+  "observed_action": "RECOMMENDER 打招呼，询问 SEEKER 喜欢的电影，并说会给出推荐；评价 SEEKER 提到的电影，询问 SEEKER 是否看过 The Truman Show (1998) 或 Rushmore (1998)，说自己喜欢第一部 Alien 但没有看续集；说 Awesome，提议 The Big Lebowski、Total Recall (2012) 或 Pulp Fiction (1994)，并说尝试给出跨类型的多项选择，随后更正为 The Big Lebowski；说自己也更喜欢原版，说再找一部 SEEKER 没看过的，提议 Reservoir Dogs (1992) 或 To Die For (1989)；说提到 To Die For 时从没有别人看过，随后提议 Mystic River (2003)、The River Wild (1994) 或 Deep Impact (1998)。",
+  "predicted_actions": [
+    {
+      "content": "说明电影剧情和类型",
+      "probability": 0.3876
+    },
+    {
+      "content": "描述电影 The River Wild 的剧情与类型",
+      "probability": 0.2508
+    },
+    {
+      "content": "介绍电影剧情",
+      "probability": 0.1941
+    },
+    {
+      "content": "简要介绍电影并询问其他电影",
+      "probability": 0.1048
+    },
+    {
+      "content": "对比多部影片并按类型供选择",
+      "probability": 0.0627
+    }
+  ]
+}
+选择：D: Explains a recommendation with background or reasoning
+分数：{"a": 0, "b": 0, "c": 0.1675, "d": 0.8325, "e": 0}
+选择说明：A 0.0000；B 0.0000；C 0.1675 = 简要介绍电影并询问其他电影 0.1048 + 对比多部影片并按类型供选择 0.0627；D 0.8325 = 说明电影剧情和类型 0.3876 + 描述电影 The River Wild 的剧情与类型 0.2508 + 介绍电影剧情 0.1941；E 0.0000。Actions 0-2 explain movie plot/genre as background, while 3-4 provide recommendations by inquiring further or offering choices.
+标准：B: Responds to the seeker's question or statement
+结果：对
+核对：选题不在标准答案里，记录已支持其中一条标准策略，改为对
+核对说明：Predicted actions describe explaining The River Wild's plot and genre, i.e. responding to the seeker's question.
